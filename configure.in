@@ -55,7 +55,17 @@ if test x"$GCONFTOOL" = xno; then
 fi
 
 AM_GCONF_SOURCE_2
-			
+
+dnl ==========================================================================
+
+ALL_LINGUAS=""
+
+GETTEXT_PACKAGE=gnome-user-share
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],"$GETTEXT_PACKAGE", [The gettext package])
+
+AM_GLIB_GNU_GETTEXT
+
 dnl ==========================================================================
 dnl Check for SELinux
     

@@ -1,3 +1,14 @@
+2005-01-10  Alexander Larsson  <alexl@redhat.com>
+
+	* .cvsignore:
+	* configure.in:
+	* po/.cvsignore:
+	* po/Makefile.in.in:
+	* po/POTFILES.in:
+	* po/POTFILES.skip:
+	* po/gnome-user-share.pot:
+	Add gettext support.
+
 2004-12-16  Dan Williams  <dcbw@redhat.com>
 	* user_share.c: (spawn_httpd):
 	Set error = NULL so we don't spew messages.
