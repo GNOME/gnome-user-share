@@ -1,5 +1,16 @@
 2004-11-26  Alexander Larsson  <alexl@redhat.com>
 
+	* configure.in:
+	Post release version bump
+
+	* user_share.c: 
+	* file-share-properties.c:
+	Add copyright headers.
+
+=== gnome-user-share 0.3 ===
+	
+2004-11-26  Alexander Larsson  <alexl@redhat.com>
+	
 	* NEWS:
 	Update for release
 
