@@ -1,0 +1,75 @@
+# Danish translation of Gnome User Share
+# Copyright (C) 2005 Red Hat, Inc.
+# This file is distributed under the same license as the gnome-user-share package.
+# Martin Willemoes Hansen <mwh@sysrq.dk>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-02-01 11:32+0100\n"
+"PO-Revision-Date: 2005-02-01 11:26+0100\n"
+"Last-Translator: Martin Willemoes Hansen <mwh@sysrq.dk>\n"
+"Language-Team: Danish <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home dir will be shared "
+"when the user is logged in."
+msgstr ""
+"Hvis dette er sandt vil den offentlige mappe i brugerens hjemmemappe blive "
+"delt, når brugeren er logget ind."
+
+#: desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr "Del offentlig mappe"
+
+#: desktop_gnome_file_sharing.schemas.in.h:3
+msgid "When to ask for passwords, possible options: never, on_write, always"
+msgstr ""
+"Hvornår skal der spørges om adgangskode? Valgmuligheder: never, on_write, "
+"always"
+
+#: desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr "Hvornår skal der være krav om adgangskode?"
+
+#: file-share-properties.c:290
+msgid "Never"
+msgstr "Aldrig"
+
+#: file-share-properties.c:293
+msgid "When writing files"
+msgstr "Når der skrives til filer"
+
+#: file-share-properties.c:296
+msgid "Always"
+msgstr "Altid"
+
+#: file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr "<b>Del filer</b>"
+
+#: file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr "Indstillinger for fildeling"
+
+#: file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr "Del offentlige filer på netværket"
+
+#: file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "_Adgangskode"
+
+#: file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr "_Krav om adgangskode:"
+
+#: user_share.c:148
+#, c-format
+msgid "%s's public files"
+msgstr "%s's offentlige filer"
