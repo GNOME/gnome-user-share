@@ -1,5 +1,15 @@
 2004-11-26  Alexander Larsson  <alexl@redhat.com>
 
+	* NEWS:
+	Update for release
+
+	* file-share-properties.c: 
+	* dav_user.conf:
+	Change user to guest and realm to something
+	that describes what user to use.
+	
+2004-11-26  Alexander Larsson  <alexl@redhat.com>
+
 	* .cvsignore:
 	Add new files
 

@@ -13,8 +13,8 @@
 #define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
 #define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
 
-#define REALM "realm"
-#define USER "user"
+#define REALM "Please log in as the user guest"
+#define USER "guest"
 
 static GladeXML *ui;
 

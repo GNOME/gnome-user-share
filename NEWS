@@ -1,2 +1,6 @@
-Initial version.
-No user interface, and no gnome-session integration.
+This is gnome-user-share 0.3, a system for easy sharing of user files.
+	
+Major changes since 0.2 are:
+* Added properties dialog
+* Added password protection support
+
