@@ -1,3 +1,7 @@
+2005-01-14	Amanpreet Singh Alam <amanpreetalam@yahoo.com>
+	
+	*configure.in: Added "pa" Punjabi to ALL_LINGUAS
+
 2005-01-12  Tommi Vainikainen  <thv@iki.fi>
 
 	* configure.in: Added "fi" (Finnish) to ALL_LINGUAS.
