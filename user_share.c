@@ -145,6 +145,15 @@ publish_service (sw_discovery session, int port)
     sw_result result;
     char *share_name;
 
+	/* Translators: The %s will get filled in with the user name
+	   of the user, to form a genitive. If this is difficult to
+	   translate correctly so that it will work correctly in your
+	   language, you may use something equivalent to
+	   "Public files of %s", or leave out the %s altogether.
+	   In the latter case, please put "%.0s" somewhere in the string,
+	   which will match the user name string passed by the C code,
+	   but not put the user name in the final string. This is to
+	   avoid the warning that msgfmt might otherwise generate. */
     share_name = g_strdup_printf (_("%s's public files"), g_get_user_name ());
 
     result = sw_discovery_publish (session, 0,

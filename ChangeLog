@@ -1,3 +1,12 @@
+2005-02-04  Alexander Larsson  <alexl@redhat.com>
+
+	* desktop_gnome_file_sharing.schemas.in:
+	* user_share.c: (publish_service):
+	Fix some strings: #163652, #163647, #163646.
+
+	* NEWS:
+	Update for 0.5
+
 2005-02-01  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* configure.in: Added da (Danish) to ALL_LINGUAS.
