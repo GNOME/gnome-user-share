@@ -60,6 +60,12 @@ endif
 
 EXTRA_DIST = $(schema_in_files) \
 	$(app_DATA)		\
-	gnome-user-share.spec 		
+	gnome-user-share.spec 	\
+	intltool-extract.in 	\
+	intltool-merge.in 	\
+	intltool-update.in	
 
-DISTCLEANFILES = $(schema_DATA)
+DISTCLEANFILES = $(schema_DATA) \
+	intltool-extract 	\
+	intltool-merge 		\
+	intltool-update
