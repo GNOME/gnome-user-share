@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-04 09:53+0100\n"
-"PO-Revision-Date: 2005-01-10 21:52+0100\n"
+"POT-Creation-Date: 2005-02-06 14:54+0100\n"
+"PO-Revision-Date: 2005-02-06 17:00+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,24 +17,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: desktop_gnome_file_sharing.schemas.in.h:1
-#, fuzzy
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
-msgstr ""
-"Je-li toto true, adresář Public v uživatelově domovském adresáři bude "
-"sdílen, když se uživatel přihlásí."
+msgstr "Je-li toto true, adresář Public v uživatelově domovském adresáři bude sdílen, když je uživatel přihlášen."
 
 #: desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
 msgstr "Sdílet adresář Public"
 
 #: desktop_gnome_file_sharing.schemas.in.h:3
-#, fuzzy
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "Kdy se ptát na hesla, možné hodnoty: never, on_write, always"
+msgstr "Kdy se ptát na hesla, možné hodnoty jsou \"never\", \"on_write\" a \"always\"."
 
 #: desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
