@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-04 09:53+0100\n"
-"PO-Revision-Date: 2005-01-11 07:29+0200\n"
+"POT-Creation-Date: 2005-02-05 03:52+0200\n"
+"PO-Revision-Date: 2005-02-05 03:53+0200\n"
 "Last-Translator: Marius Karnauskas <marius@esga.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: desktop_gnome_file_sharing.schemas.in.h:1
-#, fuzzy
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr ""
-"Jei nustatyta, viešojo aplanko bylos, esančios vartotojo namų aplanke, bus "
+"Jei teigiama, viešojo aplanko bylos, esančios vartotojo namų aplanke, bus "
 "paviešintos, kai vartotojas bus prisijungęs."
 
 #: desktop_gnome_file_sharing.schemas.in.h:2
@@ -30,12 +29,12 @@ msgid "Share Public directory"
 msgstr "Viešinti viešą aplanką"
 
 #: desktop_gnome_file_sharing.schemas.in.h:3
-#, fuzzy
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kada prašoma slaptažodžių, galimos reikšmės yra: never, on_write, always"
+"Kada prašoma slaptažodžių. Galimos reikšmės yra: „never“, „on_write“ ir "
+"„always“."
 
 #: desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
