@@ -1,3 +1,8 @@
+2004-09-11  Bastien Nocera  <hadess@hadess.net>
+
+	* .cvsignore: added
+	* user_share.c: (spawn_httpd): fix warning
+
 2004-09-09  Alexander Larsson  <alexl@redhat.com>
 
 	* gnome-user-share.spec: 

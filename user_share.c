@@ -193,7 +193,7 @@ spawn_httpd (int port, pid_t *pid_out)
     
     filename = g_build_filename (g_get_home_dir (), ".userdavpid", NULL);
     error = NULL;
-    if (g_file_get_contents (filename, &pidfile, NULL, error)) {
+    if (g_file_get_contents (filename, &pidfile, NULL, &error)) {
 	*pid_out = atoi (pidfile);
 	g_free (pidfile);
     } else {
