@@ -272,6 +272,7 @@ spawn_httpd (int port, pid_t *pid_out)
     /* Remove pid file before spawning to avoid races with child and old pidfile */
     unlink (pid_filename);
     
+    error = NULL;
     res = g_spawn_sync (g_get_home_dir(),
 			argv, env, 0,
 			httpd_child_setup, NULL,
