@@ -1,0 +1,74 @@
+# Canadian English translation for gnome-user-share
+# Copyright (C) 2005 Adam Weinberger and the GNOME Foundation
+# This file is distributed under the same licence as the gnome-user-share package.
+# Adam Weinberger <adamw@gnome.org>, 2005.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-10 20:13-0500\n"
+"PO-Revision-Date: 2005-01-10 20:13-0400\n"
+"Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
+"Language-Team: Canadian English <adamw@FreeBSD.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home dir will be shared "
+"when the user is logged in."
+msgstr ""
+"If this is true, the Public directory in the user's home dir will be shared "
+"when the user is logged in."
+
+#: desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr "Share Public directory"
+
+#: desktop_gnome_file_sharing.schemas.in.h:3
+msgid "When to ask for passwords, possible options: never, on_write, always"
+msgstr "When to ask for passwords. Possible options: never, on_write, always"
+
+#: desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr "When to require passwords"
+
+#: file-share-properties.c:290
+msgid "Never"
+msgstr "Never"
+
+#: file-share-properties.c:293
+msgid "When writing files"
+msgstr "When writing files"
+
+#: file-share-properties.c:296
+msgid "Always"
+msgstr "Always"
+
+#: file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr "<b>Share Files</b>"
+
+#: file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr "File Sharing Preferences"
+
+#: file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr "Share Public files on network"
+
+#: file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "_Password:"
+
+#: file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr "_Require password:"
+
+#: user_share.c:148
+#, c-format
+msgid "%s's public files"
+msgstr "%s's public files"
