@@ -1,0 +1,73 @@
+# Brazilian Portuguese translation of gnome-user-share.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-user-share package.
+# Raphael Higino <raphaelh@uai.com.br>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-13 20:26+0100\n"
+"PO-Revision-Date: 2005-01-14 13:26-0200\n"
+"Last-Translator: Raphael Higino <raphaelh@uai.com.br>\n"
+"Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home dir will be shared "
+"when the user is logged in."
+msgstr ""
+"Se for true, o diretório Público nos diretórios pessoais dos usuários "
+"serão compartilhados quando o usuário estiver logado."
+
+#: desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr "Compartilhar diretório Público"
+
+#: desktop_gnome_file_sharing.schemas.in.h:3
+msgid "When to ask for passwords, possible options: never, on_write, always"
+msgstr "Quando pedir senhas. Valores possíveis: never, on_write, always"
+
+#: desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr "Quando perguntar senhas"
+
+#: file-share-properties.c:290
+msgid "Never"
+msgstr "Nunca"
+
+#: file-share-properties.c:293
+msgid "When writing files"
+msgstr "Ao gravar arquivos"
+
+#: file-share-properties.c:296
+msgid "Always"
+msgstr "Sempre"
+
+#: file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr "<b>Compartilhar Arquivos</b>"
+
+#: file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr "Preferências de Compartilhamento de Arquivos"
+
+#: file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr "Compartilhar arquivos Públicos na rede"
+
+#: file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "_Senha:"
+
+#: file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr "_Perguntar senha:"
+
+#: user_share.c:148
+#, c-format
+msgid "%s's public files"
+msgstr "Arquivos públicos de %s"
