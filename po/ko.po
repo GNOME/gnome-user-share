@@ -1,0 +1,73 @@
+# gnome-user-share korean translation
+# Copyright (C) 2005 gnome-user-share COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# Young-Ho Cha <ganadist@mizi.com>, 2005
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share 0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-13 16:49+0900\n"
+"PO-Revision-Date: 2005-01-13 16:53+0900\n"
+"Last-Translator: Young-Ho Cha <ganadist at mizi.com>\n"
+"Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home dir will be shared "
+"when the user is logged in."
+msgstr ""
+"참이면, 사용자 디렉토리의 Public 디렉토리가 사용자가 로그인 할 때 "
+"공유됩니다."
+
+#: desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr "Public 디렉토리 공유"
+
+#: desktop_gnome_file_sharing.schemas.in.h:3
+msgid "When to ask for passwords, possible options: never, on_write, always"
+msgstr "열쇠글이 필요한지 물어볼 때, 쓸 수 있는 옵션: never, on_write, always"
+
+#: desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr "열쇠글이 필요할 때"
+
+#: file-share-properties.c:290
+msgid "Never"
+msgstr "없음"
+
+#: file-share-properties.c:293
+msgid "When writing files"
+msgstr "파일을 쓸 때만"
+
+#: file-share-properties.c:296
+msgid "Always"
+msgstr "항상"
+
+#: file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr "<b>공유 파일</b>"
+
+#: file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr "파일 공유 기본 설정"
+
+#: file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr "네트워크의 공유된 공용 파일"
+
+#: file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "열쇠글(_P):"
+
+#: file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr "필요한 열쇠글(_R):"
+
+#: user_share.c:148
+#, c-format
+msgid "%s's public files"
+msgstr "%s의 공용 파일"
