@@ -34,6 +34,7 @@ gnome_user_share_SOURCES = \
 
 gnome_user_share_LDADD = \
 	$(USER_SHARE_LIBS)	\
+	$(SELINUX_LIBS)	\
 	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
 
 gnome_file_share_properties_SOURCES = \

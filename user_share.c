@@ -42,6 +42,10 @@
 #include <netinet/in.h>
 #include <sys/stat.h>
 
+#ifdef HAVE_SELINUX
+#include <selinux/selinux.h>
+#endif
+
 #define FILE_SHARING_DIR "/desktop/gnome/file_sharing"
 #define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
 #define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
@@ -152,7 +156,7 @@ publish_service (sw_discovery session, int port)
 				   publish_reply, NULL, &published_id);
     g_free (share_name);
     if (result != SW_OKAY) {
-	return FALSE;
+		return FALSE;
     }
     return TRUE;
 }
@@ -161,7 +165,7 @@ static void
 stop_publishing (void)
 {
     if (published_id != 0)
-	sw_discovery_cancel (howl_session, published_id);
+		sw_discovery_cancel (howl_session, published_id);
     published_id = 0;
 }
 
@@ -172,7 +176,7 @@ ensure_public_dir (void)
 
     dirname = g_build_filename (g_get_home_dir (), "Public", NULL);
     if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
-	mkdir (dirname, 0755);
+		mkdir (dirname, 0755);
     }
     g_free (dirname);
 }
@@ -184,17 +188,35 @@ ensure_conf_dir (void)
 
     dirname = g_build_filename (g_get_home_dir (), ".gnome2", NULL);
     if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
-	mkdir (dirname, 0755);
+		mkdir (dirname, 0755);
     }
     g_free (dirname);
     
     dirname = g_build_filename (g_get_home_dir (), ".gnome2", "user-share", NULL);
     if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
-	mkdir (dirname, 0755);
+		mkdir (dirname, 0755);
     }
     g_free (dirname);
 }
 
+static void
+httpd_child_setup (gpointer user_data)
+{
+	char *mycon;
+
+#ifdef HAVE_SELINUX
+	/* If selinux is enabled, avoid transitioning to the httpd_t context,
+	   as this normally means you can't read the users homedir. */
+	if (is_selinux_enabled()) {
+		if (getcon (&mycon) < 0) {
+			abort ();
+		}
+		if (setexeccon (mycon) < 0)
+			abort ();
+		freecon (mycon);
+	}
+#endif
+}
 
 static gboolean
 spawn_httpd (int port, pid_t *pid_out)
@@ -227,14 +249,14 @@ spawn_httpd (int port, pid_t *pid_out)
 				   FILE_SHARING_REQUIRE_PASSWORD, NULL);
 
     if (str && strcmp (str, "never") == 0) {
-	/* Do nothing */
+		/* Do nothing */
     } else if (str && strcmp (str, "on_write") == 0){
-	argv[i++] = "-D";
-	argv[i++] = "RequirePasswordOnWrite";
+		argv[i++] = "-D";
+		argv[i++] = "RequirePasswordOnWrite";
     } else {
-	/* always, or safe fallback */
-	argv[i++] = "-D";
-	argv[i++] = "RequirePasswordAlways";
+		/* always, or safe fallback */
+		argv[i++] = "-D";
+		argv[i++] = "RequirePasswordAlways";
     }
     
     g_object_unref (client);
@@ -253,7 +275,7 @@ spawn_httpd (int port, pid_t *pid_out)
     
     res = g_spawn_sync (g_get_home_dir(),
 			argv, env, 0,
-			NULL, NULL,
+			httpd_child_setup, NULL,
 			NULL, NULL,
 			&status,
 			&error);
@@ -261,15 +283,15 @@ spawn_httpd (int port, pid_t *pid_out)
     g_free (free2);
     
     if (!res) {
-	fprintf (stderr, "error spawning httpd: %s\n",
-		 error->message);
-	g_error_free (error);
-	return FALSE;
+		fprintf (stderr, "error spawning httpd: %s\n",
+				 error->message);
+		g_error_free (error);
+		return FALSE;
     }
 
     if (status != 0) {
-	g_free (pid_filename);
-	return FALSE;
+		g_free (pid_filename);
+		return FALSE;
     }
 
     got_pidfile = FALSE;
@@ -290,9 +312,9 @@ spawn_httpd (int port, pid_t *pid_out)
     g_free (pid_filename);
     
     if (!got_pidfile) {
-	fprintf (stderr, "error opening httpd pidfile: %s\n", error->message);
-	g_error_free (error);
-	return FALSE;
+		fprintf (stderr, "error opening httpd pidfile: %s\n", error->message);
+		g_error_free (error);
+		return FALSE;
     }
     return TRUE;
 }
@@ -301,11 +323,11 @@ static void
 kill_httpd (void)
 {
     if (httpd_pid != 0) {
-	kill (httpd_pid, SIGTERM);
+		kill (httpd_pid, SIGTERM);
 	
-	/* Allow child time to die, we can't waitpid, because its
-	   not a direct child */
-	sleep (1);
+		/* Allow child time to die, we can't waitpid, because its
+		   not a direct child */
+		sleep (1);
     }
     httpd_pid = 0;
 }
@@ -336,11 +358,11 @@ up (void)
     
     port = get_port ();
     if (!spawn_httpd (port, &httpd_pid)) {
-	fprintf (stderr, "spawning httpd failed\n");
+		fprintf (stderr, "spawning httpd failed\n");
     } else {
-	if (!publish_service (howl_session, port)) {
-	    fprintf (stderr, "publishing failed\n");
-	}
+		if (!publish_service (howl_session, port)) {
+			fprintf (stderr, "publishing failed\n");
+		}
     }
 }
 
@@ -359,8 +381,8 @@ require_password_changed (GConfClient* client,
 {
     /* Need to restart to get new password setting */
     if (httpd_pid != 0) {
-	down ();
-	up ();
+		down ();
+		up ();
     }
 }
 
@@ -373,21 +395,21 @@ file_sharing_enabled_changed (GConfClient* client,
     gboolean enabled;
     
     if (disabled_timeout_tag != 0) {
-	g_source_remove (disabled_timeout_tag);
-	disabled_timeout_tag = 0;
+		g_source_remove (disabled_timeout_tag);
+		disabled_timeout_tag = 0;
     }
-
+	
     enabled = gconf_client_get_bool (client,
-				     FILE_SHARING_ENABLED, NULL);
+									 FILE_SHARING_ENABLED, NULL);
     if (enabled) {
-	if (httpd_pid == 0) {
-	    up ();
-	}
+		if (httpd_pid == 0) {
+			up ();
+		}
     } else {
-	down ();
-	disabled_timeout_tag = g_timeout_add (3*1000,
-					      (GSourceFunc)disabled_timeout_callback,
-					      NULL);
+		down ();
+		disabled_timeout_tag = g_timeout_add (3*1000,
+											  (GSourceFunc)disabled_timeout_callback,
+											  NULL);
     }
 }
 
@@ -408,7 +430,7 @@ x_input (GIOChannel  *io_channel,
 
     xdisplay = callback_data;
     while (XPending (xdisplay)) {
-	XNextEvent (xdisplay, &ignored);
+		XNextEvent (xdisplay, &ignored);
     }
     return TRUE;
 }
@@ -433,27 +455,27 @@ main (int argc, char **argv)
     
     xdisplay = XOpenDisplay (NULL);
     if (xdisplay == NULL) {
-	fprintf (stderr, "Can't open display\n");
-	return 1;
+		fprintf (stderr, "Can't open display\n");
+		return 1;
     }
-
+	
     xatom = XInternAtom (xdisplay, "_GNOME_USER_SHARE", FALSE);
     selection_owner = XGetSelectionOwner (xdisplay, xatom);
-
+	
     if (selection_owner != None) {
-      /* There is an owner already, quit */
-	return 1;
+		/* There is an owner already, quit */
+		return 1;
     }
-
+	
     selection_owner = XCreateSimpleWindow (xdisplay,
-					   RootWindow (xdisplay, 0),
-					   0, 0, 1, 1,
-					   0, 0, 0);
+										   RootWindow (xdisplay, 0),
+										   0, 0, 1, 1,
+										   0, 0, 0);
     XSetSelectionOwner (xdisplay, xatom, selection_owner, CurrentTime);
-
+	
     if (XGetSelectionOwner (xdisplay, xatom) != selection_owner) {
-	/* Didn't get the selection */
-	return 1;
+		/* Didn't get the selection */
+		return 1;
     }
     
     x_fd = ConnectionNumber (xdisplay);
@@ -466,8 +488,8 @@ main (int argc, char **argv)
     g_io_channel_unref (channel);
 	
     if (sw_discovery_init (&howl_session) != SW_OKAY) {
-	fprintf (stderr, "howl init failed\n");
-	return 1;
+		fprintf (stderr, "howl init failed\n");
+		return 1;
     }
     set_up_howl_session (howl_session);
 

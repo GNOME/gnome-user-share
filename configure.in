@@ -57,6 +57,13 @@ fi
 AM_GCONF_SOURCE_2
 			
 dnl ==========================================================================
+dnl Check for SELinux
+    
+AC_CHECK_LIB(selinux, is_selinux_enabled, [ SELINUX_LIBS=-lselinux
+  AC_DEFINE(HAVE_SELINUX,[1],[Found Selinux]) ])
+AC_SUBST(SELINUX_LIBS)
+	
+dnl ==========================================================================
 
 dnl Turn on the additional warnings last, so -Werror doesn't affect other tests.
 

@@ -1,5 +1,14 @@
 2004-11-29  Alexander Larsson  <alexl@redhat.com>
 
+	* Makefile.am:
+	* configure.in:
+	* user_share.c:
+	If selinux availible, make sure we don't go to selinux context
+	when exec:ing apache.
+	Re-indent code.
+
+2004-11-29  Alexander Larsson  <alexl@redhat.com>
+
 	* dav_user.conf:
 	* user_share.c: (get_port), (spawn_httpd):
 	Some generic fixes and BSD port changes from
