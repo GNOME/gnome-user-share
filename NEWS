@@ -1,5 +1,9 @@
-This is gnome-user-share 0.3, a system for easy sharing of user files.
+This is gnome-user-share 0.4, a system for easy sharing of user files.
 	
+Major changes since 0.3 are:
+* Selinux workaround
+* BSD support
+
 Major changes since 0.2 are:
 * Added properties dialog
 * Added password protection support
