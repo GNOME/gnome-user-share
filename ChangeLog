@@ -1,5 +1,19 @@
 2004-09-09  Alexander Larsson  <alexl@redhat.com>
 
+	* Makefile.am:
+	* configure.in:
+	Find and link to X.
+	
+	* dav_user.conf:
+	Set MaxSpareServers to 1
+	
+	* user_share.c: (spawn_httpd), (file_sharing_enabled_changed),
+	(x_io_error_handler), (x_input), (main):
+	Connect to X to follow X session lifetime.
+	Make error spew on stderr.
+
+2004-09-09  Alexander Larsson  <alexl@redhat.com>
+
 	* configure.in:
 	Require howl 0.9.6
 

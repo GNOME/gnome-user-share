@@ -2,6 +2,7 @@
 
 #include <glib.h>
 #include <glib/gi18n.h>
+#include <X11/Xlib.h>
 
 /* Workaround broken howl installing config.h */
 #undef PACKAGE
@@ -9,6 +10,7 @@
 #include <howl.h>
 #include <gconf/gconf-client.h>
 
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
@@ -180,7 +182,7 @@ spawn_httpd (int port, pid_t *pid_out)
     g_free (free2);
     
     if (!res) {
-	g_print ("error spawning httpd: %s\n",
+	fprintf (stderr, "error spawning httpd: %s\n",
 		 error->message);
 	g_error_free (error);
 	return FALSE;
@@ -190,8 +192,13 @@ spawn_httpd (int port, pid_t *pid_out)
       return FALSE;
     
     filename = g_build_filename (g_get_home_dir (), ".userdavpid", NULL);
-    if (g_file_get_contents (filename, &pidfile, NULL, NULL)) {
+    error = NULL;
+    if (g_file_get_contents (filename, &pidfile, NULL, error)) {
 	*pid_out = atoi (pidfile);
+	g_free (pidfile);
+    } else {
+	fprintf (stderr, "error opening httpd pidfile: %s\n", error->message);
+	g_error_free (error);
     }
     
     return TRUE;
@@ -228,10 +235,10 @@ file_sharing_enabled_changed (GConfClient* client,
 	if (httpd_pid == 0) {
 	    port = get_port ();
 	    if (!spawn_httpd (port, &httpd_pid)) {
-		g_print ("spawning httpd failed\n");
+		fprintf (stderr, "spawning httpd failed\n");
 	    }
 	    if (!publish_service (howl_session, port)) {
-		g_print ("publishing failed\n");
+		fprintf (stderr, "publishing failed\n");
 	    }
 	}
     } else {
@@ -240,19 +247,58 @@ file_sharing_enabled_changed (GConfClient* client,
     }
 }
 
+static int
+x_io_error_handler (Display *xdisplay)
+{
+    kill_httpd ();
+    _exit (2);
+}
+
+static gboolean
+x_input (GIOChannel  *io_channel,
+	 GIOCondition cond,
+	 gpointer     callback_data)
+{
+    Display *xdisplay;
+    XEvent ignored;
+
+    xdisplay = callback_data;
+    while (XPending (xdisplay)) {
+	XNextEvent (xdisplay, &ignored);
+    }
+    return TRUE;
+}
+
 int
 main (int argc, char **argv)
 {
     GConfClient *client;
+    Display *xdisplay;
+    int x_fd;
+    GIOChannel *channel;
+    
+    g_type_init ();
+    loop = g_main_loop_new (NULL, FALSE);
     
     signal (SIGPIPE, SIG_IGN);
     signal (SIGINT, cleanup_handler);
     signal (SIGHUP, cleanup_handler);
     signal (SIGTERM, cleanup_handler);
     
-    loop = g_main_loop_new (NULL, FALSE);
-
-    g_type_init ();
+    xdisplay = XOpenDisplay (NULL);
+    if (xdisplay == NULL) {
+	g_print ("Can't open display\n");
+	return 1;
+    }
+    
+    x_fd = ConnectionNumber (xdisplay);
+    XSetIOErrorHandler (x_io_error_handler);
+    
+    channel = g_io_channel_unix_new (x_fd);
+    g_io_add_watch (channel,
+		    G_IO_IN,
+		    x_input, xdisplay);
+    g_io_channel_unref (channel);
 	
     if (sw_discovery_init (&howl_session) != SW_OKAY) {
 	g_print ("howl init failed\n");

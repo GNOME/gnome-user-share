@@ -20,13 +20,15 @@ INCLUDES=	\
 	-DHTTPD_PROGRAM=\""$(HTTPD)"\"	\
 	-I$(top_srcdir) 				\
 	-I$(top_builddir) 				\
-	$(USER_SHARE_CFLAGS)
+	$(USER_SHARE_CFLAGS)				\
+	$(X_CFLAGS)
 
 gnome_user_share_SOURCES = \
 	user_share.c
 
 gnome_user_share_LDADD = \
-	$(USER_SHARE_LIBS)
+	$(USER_SHARE_LIBS)	\
+	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
 
 appdir = $(datadir)/gnome-user-share
 app_DATA = dav_user.conf
