@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/enabled</key>
+      <applyto>/desktop/gnome/file_sharing/enabled</applyto>
+      <owner>gnome-user-share</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Share Public directory</short>
+        <long>If this is true, the Public directory in the users home dir will be shared when the user is logged in.</long>
+      </locale>
+    </schema>
+  </schemalist>
+</gconfschemafile>

@@ -1,0 +1,5 @@
+2004-09-09  Alexander Larsson  <alexl@redhat.com>
+
+	* user_share.c:
+	Create Public dir if needed.
+	Make httpd run in minimal environment.
