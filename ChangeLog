@@ -1,3 +1,10 @@
+2004-11-29  Alexander Larsson  <alexl@redhat.com>
+
+	* dav_user.conf:
+	* user_share.c: (get_port), (spawn_httpd):
+	Some generic fixes and BSD port changes from
+	Joe Marcus Clarke <marcus@FreeBSD.org>
+
 2004-11-26  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.in:

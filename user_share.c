@@ -62,7 +62,7 @@ get_port (void)
     
     sock = socket (PF_INET, SOCK_STREAM, 0);
     if (sock < 0) {
-	return -11;
+		return -1;
     }
     
     memset (&addr, 0, sizeof (addr));
@@ -72,16 +72,24 @@ get_port (void)
     reuse = 1;
     setsockopt (sock, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof (reuse));
     if (bind (sock, (struct sockaddr *)&addr, sizeof (addr)) == -1) {
-	close (sock);
-	return -1;
+		close (sock);
+		return -1;
     }
     
     len = sizeof (addr);
     if (getsockname (sock, (struct sockaddr *)&addr, &len) == -1) {
-	close (sock);
-	return -1;
+		close (sock);
+		return -1;
     }
     
+#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__APPLE__)
+    /* XXX This exposes a potential race condition, but without this,
+     * httpd will not start on the above listed platforms due to the fact
+     * that SO_REUSEADDR is also needed when Apache binds to the listening
+     * socket.  At this time, Apache does not support that socket option.
+     */
+    close (sock);
+#endif
     return ntohs (addr.sin_port);
 }
 
@@ -194,7 +202,7 @@ spawn_httpd (int port, pid_t *pid_out)
     char *free1, *free2;
     gboolean res;
     char *argv[10];
-    char *env[10];;
+    char *env[10];
     int i;
     gint status;
     char *pid_filename;
@@ -218,9 +226,9 @@ spawn_httpd (int port, pid_t *pid_out)
     str = gconf_client_get_string (client,
 				   FILE_SHARING_REQUIRE_PASSWORD, NULL);
 
-    if (strcmp (str, "never") == 0) {
+    if (str && strcmp (str, "never") == 0) {
 	/* Do nothing */
-    } else if (strcmp (str, "on_write") == 0){
+    } else if (str && strcmp (str, "on_write") == 0){
 	argv[i++] = "-D";
 	argv[i++] = "RequirePasswordOnWrite";
     } else {
