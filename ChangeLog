@@ -1,3 +1,7 @@
+2005-01-12  Tommi Vainikainen  <thv@iki.fi>
+
+	* configure.in: Added "fi" (Finnish) to ALL_LINGUAS.
+
 2005-01-11  Christian Rose  <menthos@menthos.com>
 
 	* configure.in: Added "sv" to ALL_LINGUAS.
