@@ -12,5 +12,16 @@
         <long>If this is true, the Public directory in the users home dir will be shared when the user is logged in.</long>
       </locale>
     </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/require_password</key>
+      <applyto>/desktop/gnome/file_sharing/require_password</applyto>
+      <owner>gnome-user-share</owner>
+      <type>string</type>
+      <default>never</default>
+      <locale name="C">
+        <short>When to require passwords</short>
+        <long>When to ask for passwords, possible options: never, on_write, always</long>
+      </locale>
+    </schema>
   </schemalist>
 </gconfschemafile>

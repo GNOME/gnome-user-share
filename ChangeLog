@@ -1,3 +1,27 @@
+2004-11-26  Alexander Larsson  <alexl@redhat.com>
+
+	* .cvsignore:
+	Add new files
+
+	* md5.[ch]:
+	Add md5 checksum implementation, required for the digest auth
+
+	* desktop_gnome_file_sharing.schemas.in:
+	* user_share.c:
+	* dav_user.conf:
+	Implement password support
+
+	* Makefile.am:
+	* file-share-properties.c:
+	* file-share-properties.glade:
+	Add properties ui
+	
+	* configure.in:
+	Bump version to 0.3
+	
+	* gnome-user-share.spec:
+	Update for new version
+	
 2004-09-11  Bastien Nocera  <hadess@hadess.net>
 
 	* .cvsignore: added

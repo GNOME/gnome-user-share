@@ -1,6 +1,6 @@
 AC_INIT(user_share.c)
 
-AM_INIT_AUTOMAKE(gnome-user-share, 0.2)
+AM_INIT_AUTOMAKE(gnome-user-share, 0.3)
 AM_CONFIG_HEADER(config.h)
 	
 AM_SANITY_CHECK
@@ -29,6 +29,10 @@ PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.2.0 howl >= 0.9.6 gconf-2.0)
 AC_SUBST(USER_SHARE_CFLAGS)
 AC_SUBST(USER_SHARE_LIBS)
 
+PKG_CHECK_MODULES(USER_SHARE_CONFIG, glib-2.0 >= 2.2.0 gtk+-2.0 >= 2.4.0 libglade-2.0 gconf-2.0)
+AC_SUBST(USER_SHARE_CONFIG_CFLAGS)
+AC_SUBST(USER_SHARE_CONFIG_LIBS)
+	
 AC_CHECK_LIB(socket, socket)
 
 have_socket=no

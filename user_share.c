@@ -17,19 +17,22 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <sys/stat.h>
 
 #define FILE_SHARING_DIR "/desktop/gnome/file_sharing"
 #define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
+#define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
 
 static GMainLoop *loop = NULL;
 static pid_t httpd_pid = 0;
 static sw_discovery_publish_id published_id = 0;
 static sw_discovery howl_session;
+static guint disabled_timeout_tag = 0;
 
-int
+static int
 get_port (void)
 {
-    int sock, res;
+    int sock;
     struct sockaddr_in addr;
     int reuse;
     socklen_t len;
@@ -101,7 +104,7 @@ publish_reply (sw_discovery			discovery,
 }
 
 
-gboolean
+static gboolean
 publish_service (sw_discovery session, int port)
 {
     sw_result result;
@@ -123,7 +126,7 @@ publish_service (sw_discovery session, int port)
     return TRUE;
 }
 
-void
+static void
 stop_publishing (void)
 {
     if (published_id != 0)
@@ -131,7 +134,7 @@ stop_publishing (void)
     published_id = 0;
 }
 
-void
+static void
 ensure_public_dir (void)
 {
     char *dirname;
@@ -143,7 +146,26 @@ ensure_public_dir (void)
     g_free (dirname);
 }
 
-gboolean
+static void
+ensure_conf_dir (void)
+{
+    char *dirname;
+
+    dirname = g_build_filename (g_get_home_dir (), ".gnome2", NULL);
+    if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
+	mkdir (dirname, 0755);
+    }
+    g_free (dirname);
+    
+    dirname = g_build_filename (g_get_home_dir (), ".gnome2", "user-share", NULL);
+    if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
+	mkdir (dirname, 0755);
+    }
+    g_free (dirname);
+}
+
+
+static gboolean
 spawn_httpd (int port, pid_t *pid_out)
 {
     char *free1, *free2;
@@ -152,25 +174,51 @@ spawn_httpd (int port, pid_t *pid_out)
     char *env[10];;
     int i;
     gint status;
-    char *filename;
+    char *pid_filename;
     char *pidfile;
     GError *error;
+    gboolean got_pidfile;
+    GConfClient *client;
+    char *str;
 
     ensure_public_dir ();
-    
+    ensure_conf_dir ();
+
     i = 0;
     argv[i++] = HTTPD_PROGRAM;
     argv[i++] = "-f";
     argv[i++] = HTTPD_CONFIG;
     argv[i++] = "-C";
     free1 = argv[i++] = g_strdup_printf ("Listen %d", port);
+
+    client = gconf_client_get_default ();
+    str = gconf_client_get_string (client,
+				   FILE_SHARING_REQUIRE_PASSWORD, NULL);
+
+    if (strcmp (str, "never") == 0) {
+	/* Do nothing */
+    } else if (strcmp (str, "on_write") == 0){
+	argv[i++] = "-D";
+	argv[i++] = "RequirePasswordOnWrite";
+    } else {
+	/* always, or safe fallback */
+	argv[i++] = "-D";
+	argv[i++] = "RequirePasswordAlways";
+    }
+    
+    g_object_unref (client);
+    
     argv[i] = NULL;
 
     i = 0;
     free2 = env[i++] = g_strdup_printf("HOME=%s", g_get_home_dir());
     env[i++] = "LANG=C";
     env[i] = NULL;
-    
+
+    pid_filename = g_build_filename (g_get_home_dir (), ".gnome2/user-share/pid", NULL);
+
+    /* Remove pid file before spawning to avoid races with child and old pidfile */
+    unlink (pid_filename);
     
     res = g_spawn_sync (g_get_home_dir(),
 			argv, env, 0,
@@ -188,27 +236,46 @@ spawn_httpd (int port, pid_t *pid_out)
 	return FALSE;
     }
 
-    if (status != 0)
-      return FALSE;
-    
-    filename = g_build_filename (g_get_home_dir (), ".userdavpid", NULL);
+    if (status != 0) {
+	g_free (pid_filename);
+	return FALSE;
+    }
+
+    got_pidfile = FALSE;
     error = NULL;
-    if (g_file_get_contents (filename, &pidfile, NULL, &error)) {
-	*pid_out = atoi (pidfile);
-	g_free (pidfile);
-    } else {
-	fprintf (stderr, "error opening httpd pidfile: %s\n", error->message);
-	g_error_free (error);
+    for (i = 0; i < 5; i++) {
+	if (error != NULL) 
+	    g_error_free (error); 
+	error = NULL;
+	if (g_file_get_contents (pid_filename, &pidfile, NULL, &error)) {
+	    got_pidfile = TRUE;
+	    *pid_out = atoi (pidfile);
+	    g_free (pidfile);
+	    break;
+	}
+	sleep (1);
     }
     
+    g_free (pid_filename);
+    
+    if (!got_pidfile) {
+	fprintf (stderr, "error opening httpd pidfile: %s\n", error->message);
+	g_error_free (error);
+	return FALSE;
+    }
     return TRUE;
 }
 
-void
+static void
 kill_httpd (void)
 {
-    if (httpd_pid != 0)
+    if (httpd_pid != 0) {
 	kill (httpd_pid, SIGTERM);
+	
+	/* Allow child time to die, we can't waitpid, because its
+	   not a direct child */
+	sleep (1);
+    }
     httpd_pid = 0;
 }
 
@@ -220,6 +287,52 @@ cleanup_handler (int sig)
     _exit (2);
 }
 
+/* File sharing was disabled for some time, exit now */
+/* If we re-enable it in the ui, this will be restarted anyway */
+static gboolean
+disabled_timeout_callback (void)
+{
+    kill_httpd ();
+    exit (0);
+    
+    return FALSE;
+}
+
+static void
+up (void)
+{
+    guint port;
+    
+    port = get_port ();
+    if (!spawn_httpd (port, &httpd_pid)) {
+	fprintf (stderr, "spawning httpd failed\n");
+    } else {
+	if (!publish_service (howl_session, port)) {
+	    fprintf (stderr, "publishing failed\n");
+	}
+    }
+}
+
+static void
+down (void)
+{
+    kill_httpd ();
+    stop_publishing ();
+}
+
+static void
+require_password_changed (GConfClient* client,
+			  guint cnxn_id,
+			  GConfEntry *entry,
+			  gpointer data)
+{
+    /* Need to restart to get new password setting */
+    if (httpd_pid != 0) {
+	down ();
+	up ();
+    }
+}
+
 static void
 file_sharing_enabled_changed (GConfClient* client,
 			      guint cnxn_id,
@@ -227,23 +340,23 @@ file_sharing_enabled_changed (GConfClient* client,
 			      gpointer data)
 {
     gboolean enabled;
-    int port;
     
+    if (disabled_timeout_tag != 0) {
+	g_source_remove (disabled_timeout_tag);
+	disabled_timeout_tag = 0;
+    }
+
     enabled = gconf_client_get_bool (client,
 				     FILE_SHARING_ENABLED, NULL);
     if (enabled) {
 	if (httpd_pid == 0) {
-	    port = get_port ();
-	    if (!spawn_httpd (port, &httpd_pid)) {
-		fprintf (stderr, "spawning httpd failed\n");
-	    }
-	    if (!publish_service (howl_session, port)) {
-		fprintf (stderr, "publishing failed\n");
-	    }
+	    up ();
 	}
     } else {
-	kill_httpd ();
-	stop_publishing ();
+	down ();
+	disabled_timeout_tag = g_timeout_add (3*1000,
+					      (GSourceFunc)disabled_timeout_callback,
+					      NULL);
     }
 }
 
@@ -276,6 +389,8 @@ main (int argc, char **argv)
     Display *xdisplay;
     int x_fd;
     GIOChannel *channel;
+    Window selection_owner;
+    Atom xatom;
     
     g_type_init ();
     loop = g_main_loop_new (NULL, FALSE);
@@ -287,7 +402,26 @@ main (int argc, char **argv)
     
     xdisplay = XOpenDisplay (NULL);
     if (xdisplay == NULL) {
-	g_print ("Can't open display\n");
+	fprintf (stderr, "Can't open display\n");
+	return 1;
+    }
+
+    xatom = XInternAtom (xdisplay, "_GNOME_USER_SHARE", FALSE);
+    selection_owner = XGetSelectionOwner (xdisplay, xatom);
+
+    if (selection_owner != None) {
+      /* There is an owner already, quit */
+	return 1;
+    }
+
+    selection_owner = XCreateSimpleWindow (xdisplay,
+					   RootWindow (xdisplay, 0),
+					   0, 0, 1, 1,
+					   0, 0, 0);
+    XSetSelectionOwner (xdisplay, xatom, selection_owner, CurrentTime);
+
+    if (XGetSelectionOwner (xdisplay, xatom) != selection_owner) {
+	/* Didn't get the selection */
 	return 1;
     }
     
@@ -301,7 +435,7 @@ main (int argc, char **argv)
     g_io_channel_unref (channel);
 	
     if (sw_discovery_init (&howl_session) != SW_OKAY) {
-	g_print ("howl init failed\n");
+	fprintf (stderr, "howl init failed\n");
 	return 1;
     }
     set_up_howl_session (howl_session);
@@ -318,6 +452,13 @@ main (int argc, char **argv)
 			     NULL,
 			     NULL,
 			     NULL);
+    gconf_client_notify_add (client,
+			     FILE_SHARING_REQUIRE_PASSWORD,
+			     require_password_changed,
+			     NULL,
+			     NULL,
+			     NULL);
+    g_object_unref (client);
 
     /* Initial setting */
     file_sharing_enabled_changed (client, 0, NULL, NULL);

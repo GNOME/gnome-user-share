@@ -9,5 +9,6 @@ config.status
 configure
 desktop_gnome_file_sharing.schemas
 gnome-user-share
+gnome-file-share-properties
 libtool
 stamp-h1
