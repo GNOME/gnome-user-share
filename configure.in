@@ -58,7 +58,7 @@ AM_GCONF_SOURCE_2
 
 dnl ==========================================================================
 
-ALL_LINGUAS="bg cs de en_CA fi it ja ko lt nl pa pt_BR sv"
+ALL_LINGUAS="bg cs de en_CA fi it ja ko lt nl pa pt_BR sq sv"
 
 GETTEXT_PACKAGE=gnome-user-share
 AC_SUBST(GETTEXT_PACKAGE)
