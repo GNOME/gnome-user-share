@@ -202,9 +202,8 @@ ensure_conf_dir (void)
 static void
 httpd_child_setup (gpointer user_data)
 {
-	char *mycon;
-
 #ifdef HAVE_SELINUX
+	char *mycon;
 	/* If selinux is enabled, avoid transitioning to the httpd_t context,
 	   as this normally means you can't read the users homedir. */
 	if (is_selinux_enabled()) {

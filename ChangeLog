@@ -1,3 +1,9 @@
+2004-12-06  Alexander Larsson  <alexl@redhat.com>
+
+	* file-share-properties.c:
+	* user_share.c: (httpd_child_setup):
+	Build fixes from j@bootlab.org
+
 2004-12-03  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.in:
