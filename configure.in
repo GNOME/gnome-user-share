@@ -58,7 +58,7 @@ AM_GCONF_SOURCE_2
 
 dnl ==========================================================================
 
-ALL_LINGUAS="cs en_CA"
+ALL_LINGUAS="cs en_CA lt"
 
 GETTEXT_PACKAGE=gnome-user-share
 AC_SUBST(GETTEXT_PACKAGE)

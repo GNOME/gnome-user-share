@@ -1,0 +1,74 @@
+# Lithuanian translation of gnome-user-share.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-user-share package.
+# Marius Karnauskas <marius@esga.lt>, 2005.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-01-11 07:27+0200\n"
+"PO-Revision-Date: 2005-01-11 07:29+0200\n"
+"Last-Translator: Marius Karnauskas <marius@esga.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home dir will be shared "
+"when the user is logged in."
+msgstr ""
+"Jei nustatyta, viešojo aplanko bylos, esančios vartotojo namų aplanke, bus "
+"paviešintos, kai vartotojas bus prisijungęs."
+
+#: desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr "Viešinti viešą aplanką"
+
+#: desktop_gnome_file_sharing.schemas.in.h:3
+msgid "When to ask for passwords, possible options: never, on_write, always"
+msgstr "Kada prašoma slaptažodžių, galimos reikšmės yra: never, on_write, always"
+
+#: desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr "Kai reikia slaptažodžių"
+
+#: file-share-properties.c:290
+msgid "Never"
+msgstr "Niekada"
+
+#: file-share-properties.c:293
+msgid "When writing files"
+msgstr "Kai įrašomos bylos"
+
+#: file-share-properties.c:296
+msgid "Always"
+msgstr "Visada"
+
+#: file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr "<b>Bylų viešinimas</b>"
+
+#: file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr "Bylų viešinimo nustatymai"
+
+#: file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr "Dalintis bylomis tinkle"
+
+#: file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "Sla_ptažodis:"
+
+#: file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr "_Reikia slaptažodžio:"
+
+#: user_share.c:148
+#, c-format
+msgid "%s's public files"
+msgstr "%s viešos bylos"
