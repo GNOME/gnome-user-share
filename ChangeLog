@@ -1,5 +1,12 @@
 2004-12-03  Alexander Larsson  <alexl@redhat.com>
 
+	* configure.in:
+	Post release version bump
+
+=== gnome-user-share 0.4 ===
+	
+2004-12-03  Alexander Larsson  <alexl@redhat.com>
+
 	* gnome-user-share.spec: 
 	* NEWS:
 	Update for release.
