@@ -1,5 +1,11 @@
 2004-09-09  Alexander Larsson  <alexl@redhat.com>
 
+	* gnome-user-share.spec: 
+	* configure.in:
+	Bump version to 0.2
+	
+2004-09-09  Alexander Larsson  <alexl@redhat.com>
+
 	* Makefile.am:
 	* configure.in:
 	Find and link to X.
