@@ -121,4 +121,5 @@ fi
 			       
 AC_OUTPUT([
 Makefile
+po/Makefile.in
 ])

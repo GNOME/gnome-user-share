@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-14 10:26+0530\n"
+"POT-Creation-Date: 2005-02-04 09:53+0100\n"
 "PO-Revision-Date: 2005-01-14 10:55+0530\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@redhat.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -18,19 +18,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: desktop_gnome_file_sharing.schemas.in.h:1
+#, fuzzy
 msgid ""
-"If this is true, the Public directory in the users home dir will be shared "
-"when the user is logged in."
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
 msgstr ""
-"ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ ਤਾਂ ਉਪਭੋਗਤਾ ਦੇ ਲਾਗਿੰਨ ਕਰਨ ਤੇ ਉਸ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿਚਲੀ "
-"ਸਰਵਜਨਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਸਾਂਝੀ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
+"ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ ਤਾਂ ਉਪਭੋਗਤਾ ਦੇ ਲਾਗਿੰਨ ਕਰਨ ਤੇ ਉਸ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿਚਲੀ ਸਰਵਜਨਕ ਡਾਇਰੈਕਟਰੀ "
+"ਨੂੰ ਸਾਂਝੀ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
 
 #: desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
 msgstr "ਸਰਵਜਨਕ ਡਾਇਰੈਕਟਰੀ ਸਾਂਝੀ"
 
 #: desktop_gnome_file_sharing.schemas.in.h:3
-msgid "When to ask for passwords, possible options: never, on_write, always"
+#, fuzzy
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
 msgstr "ਗੁਪਤ-ਕੋਡ ਕਦੋਂ ਪੁੱਛਿਆ ਜਾਵੇ, ਸੰਭਵ ਉੱਤਰ ਹਨ: ਕਦੇ ਨਹੀਂ, ਲਿਖਣ ਤੇ, ਹਮੇਸ਼ਾ (_w)"
 
 #: desktop_gnome_file_sharing.schemas.in.h:4
@@ -69,8 +73,16 @@ msgstr "ਗੁਪਤ-ਕੋਡ(_P):"
 msgid "_Require password:"
 msgstr "ਲੋੜੀਦਾ ਗੁਪਤ-ਕੋਡ(_R):"
 
-#: user_share.c:148
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: user_share.c:157
 #, c-format
 msgid "%s's public files"
 msgstr "%s ਦੀਆਂ ਸਰਵਜਨਕ ਫਾਇਲਾਂ"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-18 20:19+0100\n"
+"POT-Creation-Date: 2005-02-04 09:53+0100\n"
 "PO-Revision-Date: 2005-01-19 01:05+0100\n"
 "Last-Translator: Tino Meinen <a.t.meinen@chello.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -16,9 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: desktop_gnome_file_sharing.schemas.in.h:1
+#, fuzzy
 msgid ""
-"If this is true, the Public directory in the users home dir will be shared "
-"when the user is logged in."
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
 msgstr ""
 "Indien dit waar is, zal de Publieke map in de Persoonlijke map (home) van de "
 "gebruiker worden gedeeld wanneer de gebruiker ingelogd is."
@@ -28,7 +29,10 @@ msgid "Share Public directory"
 msgstr "Publieke map delen"
 
 #: desktop_gnome_file_sharing.schemas.in.h:3
-msgid "When to ask for passwords, possible options: never, on_write, always"
+#, fuzzy
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
 msgstr ""
 "Wanneer om wachtwoorden wordt gevraagd, mogelijke opties: never (nooit), "
 "on_write (bij schrijven), always (altijd)"
@@ -69,7 +73,16 @@ msgstr "_Wachtwoord:"
 msgid "_Require password:"
 msgstr "Wachtwoord _vereisen:"
 
-#: user_share.c:148
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: user_share.c:157
 #, c-format
 msgid "%s's public files"
 msgstr "%s's publieke bestanden"

@@ -1,5 +1,10 @@
 2005-02-04  Alexander Larsson  <alexl@redhat.com>
 
+	* Makefile.am (SUBDIRS):
+	Add po subdir.
+
+2005-02-04  Alexander Larsson  <alexl@redhat.com>
+
 	* desktop_gnome_file_sharing.schemas.in:
 	* user_share.c: (publish_service):
 	Fix some strings: #163652, #163647, #163646.

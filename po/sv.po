@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-11 13:09+0100\n"
+"POT-Creation-Date: 2005-02-04 09:53+0100\n"
 "PO-Revision-Date: 2005-01-11 13:09+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -18,8 +18,8 @@ msgstr ""
 
 #: desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
-"If this is true, the Public directory in the users home dir will be shared "
-"when the user is logged in."
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
 msgstr ""
 "Om detta är sant kommer den publika katalogen i användarens hemkatalog att "
 "delas när användaren är inloggad."
@@ -29,9 +29,12 @@ msgid "Share Public directory"
 msgstr "Dela publik katalog"
 
 #: desktop_gnome_file_sharing.schemas.in.h:3
-msgid "When to ask for passwords, possible options: never, on_write, always"
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
 msgstr ""
-"När lösenord ska efterfrågas. Möjliga alternativ: never, on_write, always"
+"När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), "
+"\"on_write\" (vid skrivning) och \"always\" (alltid)."
 
 #: desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
@@ -73,24 +76,30 @@ msgstr "_Kräv lösenord:"
 # skapat, exempelvis "Alexs publika filer" eller "Markuss publika filer".
 # Se även http://bugzilla.gnome.org/show_bug.cgi?id=163652
 #
-#: user_share.c:148
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: user_share.c:157
 #, c-format
 msgid "%s's public files"
 msgstr "%.0sPublika filer"
 
 #~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
+#~ "If this is true, the Public directory in the users home dir will be "
 #~ "shared when the user is logged in."
 #~ msgstr ""
 #~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog "
 #~ "att delas när användaren är inloggad."
 
-#~ msgid ""
-#~ "When to ask for passwords. Possible values are \"never\", \"on_write\", "
-#~ "and \"always\"."
+#~ msgid "When to ask for passwords, possible options: never, on_write, always"
 #~ msgstr ""
-#~ "När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), "
-#~ "\"on_write\" (vid skrivning) och \"always\" (alltid)."
+#~ "När lösenord ska efterfrågas. Möjliga alternativ: never, on_write, always"
 
 #~ msgid "Share Files"
 #~ msgstr "Dela filer"

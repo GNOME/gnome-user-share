@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-01 11:32+0100\n"
+"POT-Creation-Date: 2005-02-04 09:53+0100\n"
 "PO-Revision-Date: 2005-02-01 11:26+0100\n"
 "Last-Translator: Martin Willemoes Hansen <mwh@sysrq.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -16,9 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: desktop_gnome_file_sharing.schemas.in.h:1
+#, fuzzy
 msgid ""
-"If this is true, the Public directory in the users home dir will be shared "
-"when the user is logged in."
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
 msgstr ""
 "Hvis dette er sandt vil den offentlige mappe i brugerens hjemmemappe blive "
 "delt, når brugeren er logget ind."
@@ -28,7 +29,10 @@ msgid "Share Public directory"
 msgstr "Del offentlig mappe"
 
 #: desktop_gnome_file_sharing.schemas.in.h:3
-msgid "When to ask for passwords, possible options: never, on_write, always"
+#, fuzzy
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
 msgstr ""
 "Hvornår skal der spørges om adgangskode? Valgmuligheder: never, on_write, "
 "always"
@@ -69,7 +73,16 @@ msgstr "_Adgangskode"
 msgid "_Require password:"
 msgstr "_Krav om adgangskode:"
 
-#: user_share.c:148
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: user_share.c:157
 #, c-format
 msgid "%s's public files"
 msgstr "%s's offentlige filer"

@@ -4,6 +4,8 @@ schema_in_files = \
 
 schema_DATA = $(schema_in_files:.schemas.in=.schemas)
 
+SUBDIRS = po
+
 #@INTLTOOL_SCHEMAS_RULE@
 %.schemas:   %.schemas.in
 	cp $< $@

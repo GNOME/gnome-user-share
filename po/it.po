@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-01-15 20:37+0100\n"
+"POT-Creation-Date: 2005-02-04 09:53+0100\n"
 "PO-Revision-Date: 2005-01-23 19:14+0100\n"
 "Last-Translator: Ida <vampiria74@tin.it>\n"
 "Language-Team:Italian <tp@lists.linux.it>\n"
@@ -16,16 +16,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: desktop_gnome_file_sharing.schemas.in.h:1
-msgid "If this is true, the Public directory in the users home dir will be shared when the user is logged in."
-msgstr "Se impostata a vero, la directory Public nelle directory home degli utenti sarà condivisa quando l'utente ha fatto il login.\" "
+#, fuzzy
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
+msgstr ""
+"Se impostata a vero, la directory Public nelle directory home degli utenti "
+"sarà condivisa quando l'utente ha fatto il login.\" "
 
 #: desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
 msgstr "Condivisione Directory Public"
 
 #: desktop_gnome_file_sharing.schemas.in.h:3
-msgid "When to ask for passwords, possible options: never, on_write, always"
-msgstr "Quando richiedere la password, opzioni possibili: mai, riscrivere, sempre"
+#, fuzzy
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Quando richiedere la password, opzioni possibili: mai, riscrivere, sempre"
 
 #: desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
@@ -63,8 +72,16 @@ msgstr "_Password:"
 msgid "_Require password:"
 msgstr " _richiesta Password:"
 
-#: user_share.c:148
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: user_share.c:157
 #, c-format
 msgid "%s's public files"
 msgstr "\"%s's file Public"
-
