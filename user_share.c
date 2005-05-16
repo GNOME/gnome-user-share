@@ -161,7 +161,7 @@ publish_service (sw_discovery session, int port)
 				   "_webdav._tcp",
 				   NULL, NULL,
 				   port,
-				   /* text */"", 0,
+				   /* text */ (unsigned char *) "", 0,
 				   publish_reply, NULL, &published_id);
     g_free (share_name);
     if (result != SW_OKAY) {

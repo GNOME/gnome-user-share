@@ -29,7 +29,9 @@ gnome_user_share_md5_string (const char *string, unsigned char digest[16])
     struct GnomeUserShareMD5Context md5_context;
     
     gnome_user_share_md5_init (&md5_context);
-    gnome_user_share_md5_update (&md5_context, string, strlen (string));
+    gnome_user_share_md5_update (&md5_context, 
+				 (unsigned char const *) string, 
+				 strlen (string));
     gnome_user_share_md5_final (digest, &md5_context);
 }
 
@@ -70,7 +72,7 @@ gnome_user_share_md5_digest_to_ascii (unsigned char digest[16])
     
     res[32] = 0;
     
-    return res;
+    return (char *) res;
 }
 
 
