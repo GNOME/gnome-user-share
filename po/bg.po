@@ -8,69 +8,68 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-04 09:53+0100\n"
-"PO-Revision-Date: 2005-01-18 13:20+0200\n"
+"POT-Creation-Date: 2005-10-06 14:16+0300\n"
+"PO-Revision-Date: 2005-10-06 14:15+0300\n"
 "Last-Translator: Rostislav Raykov <zbrox@i-space.org>\n"
 "Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bitPlural-Forms: nplurals=2; plural=n != 1;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: desktop_gnome_file_sharing.schemas.in.h:1
-#, fuzzy
+#: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr ""
-"Ако това е вярно, Публичната папка в домашната папка на потребителя ще бъде "
-"споделена, когато потребителя влезне в системата."
+"Ако това е вярно, публичната папка в домашната папка на потребителя ще бъде "
+"споделена, когато потребителя е влезнал в системата."
 
-#: desktop_gnome_file_sharing.schemas.in.h:2
+#: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
 msgstr "Споделяне на публична папка"
 
-#: desktop_gnome_file_sharing.schemas.in.h:3
-#, fuzzy
+#: ../desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Кога да се пита за пароли, възможите опции са: never(никога), on_write(при "
-"запис), always(винаги)"
+"Кога да се пита за пароли. Възможите опции са: „never“ (никога), "
+"„on_write“ (при запис), „always“ (винаги)"
 
-#: desktop_gnome_file_sharing.schemas.in.h:4
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
 msgstr "Кога да се изискват пароли"
 
-#: file-share-properties.c:290
+#: ../file-share-properties.c:290
 msgid "Never"
 msgstr "Никога"
 
-#: file-share-properties.c:293
+#: ../file-share-properties.c:293
 msgid "When writing files"
 msgstr "При запис на файлове"
 
-#: file-share-properties.c:296
+#: ../file-share-properties.c:296
 msgid "Always"
 msgstr "Винаги"
 
-#: file-share-properties.glade.h:1
+#: ../file-share-properties.glade.h:1
 msgid "<b>Share Files</b>"
 msgstr "<b>Споделяне на файлове</b>"
 
-#: file-share-properties.glade.h:2
+#: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"
 msgstr "Настройки на споделянето на файлове"
 
-#: file-share-properties.glade.h:3
+#: ../file-share-properties.glade.h:3
 msgid "Share Public files on network"
 msgstr "Споделяне на публични файлове по мрежата"
 
-#: file-share-properties.glade.h:4
+#: ../file-share-properties.glade.h:4
 msgid "_Password:"
 msgstr "Парола:"
 
-#: file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:5
 msgid "_Require password:"
 msgstr "Изисква парола:"
 
@@ -83,7 +82,7 @@ msgstr "Изисква парола:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: user_share.c:157
+#: ../user_share.c:157
 #, c-format
 msgid "%s's public files"
 msgstr "Публичните файлове на %s"
