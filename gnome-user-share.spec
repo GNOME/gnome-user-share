@@ -1,15 +1,14 @@
 Summary: Gnome user file sharing
 Name: gnome-user-share
-Version: 0.4
+Version: 0.6
 Release: 1
 License: GPL
 Group: System Environment/Libraries
 URL: http://www.gnome.org
 Source0: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-Requires: howl-libs >= 0.9.6
 Requires: httpd
-BuildRequires: GConf2-devel howl-devel pkgconfig
+BuildRequires: GConf2-devel avahi-glib-devel pkgconfig
 Prereq: GConf2
 
 %description
@@ -29,6 +28,8 @@ export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 make install DESTDIR=$RPM_BUILD_ROOT
 unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
 
+%find_lang gnome-user-share
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -39,7 +40,7 @@ for S in $SCHEMAS; do
   gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/$S > /dev/null
 done
 
-%files
+%files -f gnome-user-share.lang
 %defattr(-,root,root,-)
 %doc README ChangeLog
 %{_bindir}/*
@@ -48,6 +49,10 @@ done
 %{_sysconfdir}/gconf/schemas/*
 
 %changelog
+* Wed Nov  9 2005 Alexander Larsson <alexl@redhat.com> - 0.6-1
+- New version, switch to avahi
+- Handle translations
+
 * Fri Dec  3 2004 Alexander Larsson <alexl@redhat.com> - 0.4-1
 - New version
 

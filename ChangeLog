@@ -1,5 +1,11 @@
 2005-11-09  Alexander Larsson  <alexl@redhat.com>
 
+	* gnome-user-share.spec: 
+	* NEWS: 
+	Update for release.
+
+2005-11-09  Alexander Larsson  <alexl@redhat.com>
+
 	* configure.in: 
 	* Makefile.am:
 	* user_share.c:
