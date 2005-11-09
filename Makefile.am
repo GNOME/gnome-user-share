@@ -27,6 +27,8 @@ INCLUDES=	\
 	-DHTTPD_PROGRAM=\""$(HTTPD)"\"	\
 	-I$(top_srcdir) 				\
 	-I$(top_builddir) 				\
+	$(AVAHI_CFLAGS)					\
+	$(HOWL_CFLAGS)					\
 	$(USER_SHARE_CFLAGS)				\
 	$(USER_SHARE_CONFIG_CFLAGS)			\
 	$(X_CFLAGS)
@@ -35,6 +37,8 @@ gnome_user_share_SOURCES = \
 	user_share.c
 
 gnome_user_share_LDADD = \
+	$(HOWL_LIBS)	\
+	$(AVAHI_LIBS)	\
 	$(USER_SHARE_LIBS)	\
 	$(SELINUX_LIBS)	\
 	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)

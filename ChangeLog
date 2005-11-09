@@ -1,3 +1,10 @@
+2005-11-09  Alexander Larsson  <alexl@redhat.com>
+
+	* configure.in: 
+	* Makefile.am:
+	* user_share.c:
+	Support both avahi and howl.
+
 2005-08-03  Maxim Dziumanenko <mvd@mylinux.ua>
 
         * configure.in: Added "uk" to ALL_LINGUAS.

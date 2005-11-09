@@ -27,16 +27,28 @@
 #include <glib/gi18n.h>
 #include <X11/Xlib.h>
 
+#ifdef HAVE_AVAHI
+#include <avahi-client/client.h>
+#include <avahi-common/alternative.h>
+#include <avahi-common/error.h>
+#include <avahi-glib/glib-watch.h>
+#include <avahi-glib/glib-malloc.h>
+#endif /* HAVE_AVAHI */
+
+#ifdef HAVE_HOWL
 /* Workaround broken howl installing config.h */
 #undef PACKAGE
 #undef VERSION
 #include <howl.h>
+#endif /* HAVE_HOWL */
+
 #include <gconf/gconf-client.h>
 
-#include <unistd.h>
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
+#include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -52,8 +64,6 @@
 
 static GMainLoop *loop = NULL;
 static pid_t httpd_pid = 0;
-static sw_discovery_publish_id published_id = 0;
-static sw_discovery howl_session;
 static guint disabled_timeout_tag = 0;
 
 static int
@@ -97,10 +107,149 @@ get_port (void)
     return ntohs (addr.sin_port);
 }
 
+
+static char *
+get_share_name (void)
+{
+	/* Translators: The %s will get filled in with the user name
+	   of the user, to form a genitive. If this is difficult to
+	   translate correctly so that it will work correctly in your
+	   language, you may use something equivalent to
+	   "Public files of %s", or leave out the %s altogether.
+	   In the latter case, please put "%.0s" somewhere in the string,
+	   which will match the user name string passed by the C code,
+	   but not put the user name in the final string. This is to
+	   avoid the warning that msgfmt might otherwise generate. */
+    return g_strdup_printf (_("%s's public files"), g_get_user_name ());
+}
+
+
+#ifdef HAVE_AVAHI
+
+static AvahiClient *avahi_client = NULL;
+static gboolean avahi_should_publish = FALSE;
+static gboolean avahi_running = FALSE;
+static int avahi_port = 0;
+static AvahiEntryGroup *entry_group = NULL;
+static char *avahi_name = NULL;
+
+
+static gboolean
+create_service (void) {
+    int ret;
+
+	if (avahi_name == NULL) {
+		avahi_name = g_strdup (get_share_name ());
+	}
+
+	ret = avahi_entry_group_add_service (entry_group, AVAHI_IF_UNSPEC, AVAHI_PROTO_UNSPEC, 
+										 avahi_name, "_webdav._tcp", NULL, NULL, 
+										 avahi_port, "u=guest", NULL);
+	if (ret < 0) {
+		return FALSE;
+	}
+
+	ret = avahi_entry_group_commit (entry_group);
+
+    if (ret < 0) {
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
+static void 
+entry_group_callback (AvahiEntryGroup *g, 
+					  AvahiEntryGroupState state, 
+					  void *userdata) 
+{
+    if (state == AVAHI_ENTRY_GROUP_ESTABLISHED) {
+    } else if (state == AVAHI_ENTRY_GROUP_COLLISION) {
+        char *n;
+
+        /* A service name collision happened. Let's pick a new name */
+        n = avahi_alternative_service_name (avahi_name);
+        g_free (avahi_name);
+        avahi_name = n;
+
+        fprintf (stderr, "Service name collision, renaming service to '%s'\n", avahi_name);
+
+        /* And recreate the services */
+        create_service();
+    }
+}
+
+static void
+avahi_client_callback (AvahiClient *client, AvahiClientState state, void *userdata)
+{
+    if (state == AVAHI_CLIENT_S_RUNNING) {
+		avahi_running = TRUE;
+		if (avahi_should_publish) {
+			create_service ();
+		}
+	} else if (state == AVAHI_CLIENT_S_COLLISION) {
+		avahi_entry_group_reset (entry_group);
+    } else if (state == AVAHI_CLIENT_DISCONNECTED) {
+		avahi_running = FALSE;
+    }
+}
+
+static gboolean
+init_avahi (void)
+{
+	AvahiGLibPoll *poll;
+	int error;
+
+    avahi_set_allocator (avahi_glib_allocator ());
+
+	poll = avahi_glib_poll_new (NULL, G_PRIORITY_DEFAULT);
+
+	/* Create a new AvahiClient instance */
+	avahi_client = avahi_client_new (avahi_glib_poll_get (poll),
+									 avahi_client_callback,
+									 NULL,
+									 &error);
+	if (avahi_client == NULL) {
+		return FALSE;
+	}
+
+	entry_group = avahi_entry_group_new (avahi_client, entry_group_callback, NULL);
+	if (entry_group == NULL) {
+		return FALSE;
+	}
+	
+	return TRUE;
+}
+
+
+static gboolean
+publish_service (int port)
+{
+	avahi_should_publish = TRUE;
+	avahi_port = port;
+	if (avahi_running) {
+		create_service ();
+	}
+	return TRUE;
+}
+
+static void
+stop_publishing (void)
+{
+	avahi_should_publish = FALSE;
+	avahi_entry_group_reset (entry_group);
+}
+#endif
+
+#ifdef HAVE_HOWL
+
+static sw_discovery_publish_id published_id = 0;
+static sw_discovery howl_session;
+
 static gboolean
 howl_input (GIOChannel  *io_channel,
-	    GIOCondition cond,
-	    gpointer     callback_data)
+			GIOCondition cond,
+			gpointer     callback_data)
 {
 	sw_discovery session;
 	session = callback_data;
@@ -124,45 +273,34 @@ set_up_howl_session (sw_discovery session)
 
 	channel = g_io_channel_unix_new (fd);
 	g_io_add_watch (channel,
-			G_IO_IN,
-			howl_input, session);
+					G_IO_IN,
+					howl_input, session);
 	g_io_channel_unref (channel);
 }
 
 static sw_result
 publish_reply (sw_discovery			discovery,
-	       sw_discovery_publish_status	status,
-	       sw_discovery_oid			id,
-	       sw_opaque			extra)
+			   sw_discovery_publish_status	status,
+			   sw_discovery_oid			id,
+			   sw_opaque			extra)
 {
 	return SW_OKAY;
 }
 
 
 static gboolean
-publish_service (sw_discovery session, int port)
+publish_service (int port)
 {
     sw_result result;
-    char *share_name;
 
-	/* Translators: The %s will get filled in with the user name
-	   of the user, to form a genitive. If this is difficult to
-	   translate correctly so that it will work correctly in your
-	   language, you may use something equivalent to
-	   "Public files of %s", or leave out the %s altogether.
-	   In the latter case, please put "%.0s" somewhere in the string,
-	   which will match the user name string passed by the C code,
-	   but not put the user name in the final string. This is to
-	   avoid the warning that msgfmt might otherwise generate. */
-    share_name = g_strdup_printf (_("%s's public files"), g_get_user_name ());
-
-    result = sw_discovery_publish (session, 0,
-				   share_name,
-				   "_webdav._tcp",
-				   NULL, NULL,
-				   port,
-				   /* text */ (unsigned char *) "", 0,
-				   publish_reply, NULL, &published_id);
+    result = sw_discovery_publish (howl_session, 0,
+								   get_share_name (),
+								   "_webdav._tcp",
+								   NULL, NULL,
+								   port,
+								   /* TODO: should be u=guest */
+								   /* text */ (unsigned char *) "", 0,
+								   publish_reply, NULL, &published_id);
     g_free (share_name);
     if (result != SW_OKAY) {
 		return FALSE;
@@ -177,6 +315,8 @@ stop_publishing (void)
 		sw_discovery_cancel (howl_session, published_id);
     published_id = 0;
 }
+#endif /* HAVE_HOWL */
+
 
 static void
 ensure_public_dir (void)
@@ -369,7 +509,7 @@ up (void)
     if (!spawn_httpd (port, &httpd_pid)) {
 		fprintf (stderr, "spawning httpd failed\n");
     } else {
-		if (!publish_service (howl_session, port)) {
+		if (!publish_service (port)) {
 			fprintf (stderr, "publishing failed\n");
 		}
     }
@@ -384,9 +524,9 @@ down (void)
 
 static void
 require_password_changed (GConfClient* client,
-			  guint cnxn_id,
-			  GConfEntry *entry,
-			  gpointer data)
+						  guint cnxn_id,
+						  GConfEntry *entry,
+						  gpointer data)
 {
     /* Need to restart to get new password setting */
     if (httpd_pid != 0) {
@@ -397,9 +537,9 @@ require_password_changed (GConfClient* client,
 
 static void
 file_sharing_enabled_changed (GConfClient* client,
-			      guint cnxn_id,
-			      GConfEntry *entry,
-			      gpointer data)
+							  guint cnxn_id,
+							  GConfEntry *entry,
+							  gpointer data)
 {
     gboolean enabled;
     
@@ -431,8 +571,8 @@ x_io_error_handler (Display *xdisplay)
 
 static gboolean
 x_input (GIOChannel  *io_channel,
-	 GIOCondition cond,
-	 gpointer     callback_data)
+		 GIOCondition cond,
+		 gpointer     callback_data)
 {
     Display *xdisplay;
     XEvent ignored;
@@ -496,11 +636,20 @@ main (int argc, char **argv)
 		    x_input, xdisplay);
     g_io_channel_unref (channel);
 	
+#ifdef HAVE_AVAHI
+	if (!init_avahi ()) {    
+		/* Print out the error string */
+		fprintf (stderr, "avahi init failed\n");
+		return 1;
+	}
+#endif
+#ifdef HAVE_HOWL
     if (sw_discovery_init (&howl_session) != SW_OKAY) {
 		fprintf (stderr, "howl init failed\n");
 		return 1;
     }
     set_up_howl_session (howl_session);
+#endif
 
     client = gconf_client_get_default ();
     gconf_client_add_dir (client,
