@@ -1,5 +1,12 @@
 2005-11-09  Alexander Larsson  <alexl@redhat.com>
 
+	* gnome-user-share-properties.desktop.in: 
+	* Makefile.am:
+	* gnome-user-share.spec:
+	Add desktop file.
+
+2005-11-09  Alexander Larsson  <alexl@redhat.com>
+
 	* configure.in: 
 	post release version bump
 	

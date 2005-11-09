@@ -6,6 +6,13 @@ schema_DATA = $(schema_in_files:.schemas.in=.schemas)
 
 SUBDIRS = po
 
+@INTLTOOL_DESKTOP_RULE@
+
+desktopdir = $(datadir)/applications
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+desktop_in_files = gnome-user-share-properties.desktop.in
+
+
 #@INTLTOOL_SCHEMAS_RULE@
 %.schemas:   %.schemas.in
 	cp $< $@
@@ -66,10 +73,13 @@ endif
 
 EXTRA_DIST = $(schema_in_files) \
 	$(app_DATA)		\
+	$(desktop_in_files)	\
 	gnome-user-share.spec 	\
 	intltool-extract.in 	\
 	intltool-merge.in 	\
 	intltool-update.in	
+
+CLEANFILES = $(desktop_DATA)
 
 DISTCLEANFILES = $(schema_DATA) \
 	intltool-extract 	\

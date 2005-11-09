@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+_Name=Personal File Sharing
+_Comment=Preferences for sharing of personal files
+Exec=gnome-file-share-properties
+Icon=apacheconf
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;Application;Settings;
+OnlyShowIn=GNOME;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-user-share
+X-GNOME-Bugzilla-Component=general
+

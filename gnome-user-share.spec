@@ -1,6 +1,6 @@
 Summary: Gnome user file sharing
 Name: gnome-user-share
-Version: 0.6
+Version: 0.7
 Release: 1
 License: GPL
 Group: System Environment/Libraries
@@ -46,9 +46,13 @@ done
 %{_bindir}/*
 %{_libexecdir}/*
 %{_datadir}/gnome-user-share
+%{_datadir}/applications/*
 %{_sysconfdir}/gconf/schemas/*
 
 %changelog
+* Wed Nov  9 2005 Alexander Larsson <alexl@redhat.com> - 0.7-1
+- New version, with desktop file
+
 * Wed Nov  9 2005 Alexander Larsson <alexl@redhat.com> - 0.6-1
 - New version, switch to avahi
 - Handle translations
