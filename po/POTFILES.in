@@ -3,4 +3,5 @@
 desktop_gnome_file_sharing.schemas.in
 file-share-properties.c
 file-share-properties.glade
+gnome-user-share-properties.desktop.in
 user_share.c

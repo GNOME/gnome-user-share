@@ -1,3 +1,8 @@
+2005-11-14  Alexander Larsson  <alexl@redhat.com>
+
+	* POTFILES.in:
+	Add gnome-user-share-properties.desktop.in
+
 === gnome-user-share 0.7 ===
 === gnome-user-share 0.6 ===
 	
