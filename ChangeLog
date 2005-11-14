@@ -1,5 +1,10 @@
 2005-11-14  Alexander Larsson  <alexl@redhat.com>
 
+	* NEWS:
+	Update for release
+
+2005-11-14  Alexander Larsson  <alexl@redhat.com>
+
 	* file-share-properties.c: (main):
 	Connect to clicked, not pressed on close button
 	
