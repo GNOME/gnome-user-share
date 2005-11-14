@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-06-26 22:40+0200\n"
-"PO-Revision-Date: 2005-06-26 22:46+0200\n"
+"POT-Creation-Date: 2005-11-15 00:01+0100\n"
+"PO-Revision-Date: 2005-11-15 00:01+0100\n"
 "Last-Translator: Marcel Telka <marcel@telka.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,8 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr ""
-"Ak je toto true, priečinok Public v domovskom priečinku používateľa bude vyzdieľaný "
-"pri prihlásení používateľa."
+"Ak je toto true, priečinok Public v domovskom priečinku používateľa bude "
+"vyzdieľaný pri prihlásení používateľa."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
@@ -72,6 +72,14 @@ msgstr "_Heslo:"
 msgid "_Require password:"
 msgstr "_Vyžaduje heslo:"
 
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Zdieľanie osobných súborov"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Predvoľby pre zdieľanie osobných súborov"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -81,7 +89,7 @@ msgstr "_Vyžaduje heslo:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:157
+#: ../user_share.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Verejné súbory používateľa %s"
