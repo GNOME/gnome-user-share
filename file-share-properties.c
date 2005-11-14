@@ -310,8 +310,7 @@ main (int argc, char *argv[])
     g_signal_connect (password_combo,
 		      "changed", G_CALLBACK (password_combo_changed), NULL);
     g_signal_connect (glade_xml_get_widget (ui, "close_button"),
-		      "pressed", G_CALLBACK (gtk_main_quit), NULL);
-
+		      "clicked", G_CALLBACK (gtk_main_quit), NULL);
 
     
     gconf_client_notify_add (client,

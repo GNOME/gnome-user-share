@@ -1,3 +1,11 @@
+2005-11-14  Alexander Larsson  <alexl@redhat.com>
+
+	* file-share-properties.c: (main):
+	Connect to clicked, not pressed on close button
+	
+	* user_share.c: (get_share_name), (publish_service):
+	Fix howl build. Don't leak share name.
+
 2005-11-09  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.in: 
