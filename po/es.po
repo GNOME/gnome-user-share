@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-05 16:34+0100\n"
-"PO-Revision-Date: 2005-02-05 16:36+0100\n"
+"POT-Creation-Date: 2005-11-17 22:29+0100\n"
+"PO-Revision-Date: 2005-11-17 22:30+0100\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,9 @@ msgstr "Compartir el directorio «Public»"
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "Cuando pedir contraseñas. Las opciones posibles son: \"never\", \"on_write\" y \"always\"."
+msgstr ""
+"Cuando pedir contraseñas. Las opciones posibles son: \"never\", \"on_write\" "
+"y \"always\"."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
@@ -71,6 +73,14 @@ msgstr "_Contraseña:"
 msgid "_Require password:"
 msgstr "_Requerir contraseña:"
 
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Compartición de archivos personales"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Preferencias para compartir archivos personales"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -80,8 +90,7 @@ msgstr "_Requerir contraseña:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:157
+#: ../user_share.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Archivos públicos de %s"
-
