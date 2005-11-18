@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-04 21:04-0500\n"
+"POT-Creation-Date: 2005-11-17 21:19-0500\n"
 "PO-Revision-Date: 2005-02-04 20:13-0400\n"
 "Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
 "Language-Team: Canadian English <adamw@gnome.org>\n"
@@ -72,6 +72,14 @@ msgstr "_Password:"
 msgid "_Require password:"
 msgstr "_Require password:"
 
+#: gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Personal File Sharing"
+
+#: gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Preferences for sharing of personal files"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -81,7 +89,7 @@ msgstr "_Require password:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: user_share.c:157
+#: user_share.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s's public files"
