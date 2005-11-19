@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-15 00:19+0900\n"
-"PO-Revision-Date: 2005-02-15 00:17+0900\n"
+"POT-Creation-Date: 2005-11-19 22:26+0900\n"
+"PO-Revision-Date: 2005-11-19 22:24+0900\n"
 "Last-Translator: Takeshi AIHANA <aihana@gnome.gr.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -71,6 +71,14 @@ msgstr "パスワード(_P):"
 msgid "_Require password:"
 msgstr "パスワード要求の時期(_R):"
 
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "個人ファイルの共有"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "個人的なファイルの共有を設定します"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -80,7 +88,7 @@ msgstr "パスワード要求の時期(_R):"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:157
+#: ../user_share.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s の Public なファイル"
