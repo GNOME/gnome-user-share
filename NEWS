@@ -1,4 +1,8 @@
-This is gnome-user-share 0.8, a system for easy sharing of user files.
+This is gnome-user-share 0.9, a system for easy sharing of user files.
+
+Major changes since 0.8 are:
+* Updated for avahi 0.6
+* Translations
 
 Major changes since 0.7 are:
 * Fix close button behaviour
