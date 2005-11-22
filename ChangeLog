@@ -1,5 +1,12 @@
 2005-11-22  Alexander Larsson  <alexl@redhat.com>
 
+	* configure.in:
+	Post release version bump
+
+=== gnome-user-share 0.9 ===
+	
+2005-11-22  Alexander Larsson  <alexl@redhat.com>
+
 	* NEWS:
 	Update for release
 	
