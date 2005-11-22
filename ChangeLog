@@ -1,3 +1,9 @@
+2005-11-22  Alexander Larsson  <alexl@redhat.com>
+
+	* configure.in: 
+	* user_share.c: 
+	Update to avahi 0.6
+
 2005-11-14  Alexander Larsson  <alexl@redhat.com>
 
 	* NEWS:

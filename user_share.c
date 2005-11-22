@@ -29,6 +29,7 @@
 
 #ifdef HAVE_AVAHI
 #include <avahi-client/client.h>
+#include <avahi-client/publish.h>
 #include <avahi-common/alternative.h>
 #include <avahi-common/error.h>
 #include <avahi-glib/glib-watch.h>
@@ -147,6 +148,7 @@ create_service (void) {
 	}
 
 	ret = avahi_entry_group_add_service (entry_group, AVAHI_IF_UNSPEC, AVAHI_PROTO_UNSPEC, 
+										 AVAHI_PUBLISH_USE_MULTICAST,
 										 avahi_name, "_webdav._tcp", NULL, NULL, 
 										 avahi_port, "u=guest", NULL);
 	if (ret < 0) {
@@ -193,7 +195,7 @@ avahi_client_callback (AvahiClient *client, AvahiClientState state, void *userda
 		}
 	} else if (state == AVAHI_CLIENT_S_COLLISION) {
 		avahi_entry_group_reset (entry_group);
-    } else if (state == AVAHI_CLIENT_DISCONNECTED) {
+    } else if (state == AVAHI_CLIENT_FAILURE) {
 		avahi_running = FALSE;
     }
 }
@@ -210,6 +212,7 @@ init_avahi (void)
 
 	/* Create a new AvahiClient instance */
 	avahi_client = avahi_client_new (avahi_glib_poll_get (poll),
+									 AVAHI_CLIENT_NO_FAIL,
 									 avahi_client_callback,
 									 NULL,
 									 &error);
