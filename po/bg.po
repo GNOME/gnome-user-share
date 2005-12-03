@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-06 14:16+0300\n"
-"PO-Revision-Date: 2005-10-06 14:15+0300\n"
+"POT-Creation-Date: 2005-12-03 11:22+0200\n"
+"PO-Revision-Date: 2005-12-03 11:22+0200\n"
 "Last-Translator: Rostislav Raykov <zbrox@i-space.org>\n"
-"Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,8 +22,8 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr ""
-"Ако това е вярно, публичната папка в домашната папка на потребителя ще бъде "
-"споделена, когато потребителя е влезнал в системата."
+"Ако е зададено, публичната папка в домашната на потребителя ще бъде "
+"споделена, когато потребителят е влезнал в системата."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
@@ -34,12 +34,12 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Кога да се пита за пароли. Възможите опции са: „never“ (никога), "
-"„on_write“ (при запис), „always“ (винаги)"
+"Кога да се пита за пароли. Възможните опции са: „never“ (никога), "
+"„on_write“ (при запис), „always“ (винаги)."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
-msgstr "Кога да се изискват пароли"
+msgstr "Кога да се изискват пароли?"
 
 #: ../file-share-properties.c:290
 msgid "Never"
@@ -67,11 +67,19 @@ msgstr "Споделяне на публични файлове по мрежа�
 
 #: ../file-share-properties.glade.h:4
 msgid "_Password:"
-msgstr "Парола:"
+msgstr "_Парола:"
 
 #: ../file-share-properties.glade.h:5
 msgid "_Require password:"
-msgstr "Изисква парола:"
+msgstr "_Изискване на парола:"
+
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Споделяне на файлове"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Настройки за споделянето на личните файлове"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -82,7 +90,7 @@ msgstr "Изисква парола:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:157
+#: ../user_share.c:126
 #, c-format
 msgid "%s's public files"
 msgstr "Публичните файлове на %s"
