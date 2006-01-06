@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share 0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-01-06 21:08+0100\n"
+"PO-Revision-Date: 2006-01-06 21:11+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr "Del offentlig katalog"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:3
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr ""
+
+#: ../file-share-properties.c:290
+msgid "Never"
+msgstr "Aldri"
+
+#: ../file-share-properties.c:293
+msgid "When writing files"
+msgstr "Når filer skrives"
+
+#: ../file-share-properties.c:296
+msgid "Always"
+msgstr "Alltid"
+
+#: ../file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr "<b>Del filer</b>"
+
+#: ../file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr "Brukervalg for fildeling"
+
+#: ../file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr "Del filer på nettverket"
+
+#: ../file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "_Passord:"
+
+#: ../file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr "K_rev passord:"
+
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Deling av personlige filer"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Brukervalg for deling av personlige filer"
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../user_share.c:126
+#, c-format
+msgid "%s's public files"
+msgstr "%s's offentlige filer"
