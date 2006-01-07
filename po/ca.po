@@ -1,77 +1,85 @@
 # Catalan translation of gnome-user-share.
-# Copyright (C) 2005 The gnome-user-share's copyright holder
+# Copyright (C) 2005, 2006 The gnome-user-share's copyright holder
 # This file is distributed under the same license as the
 #    gnome-user-share package.
 #
-# Gil Forcada <gilforcada@guifi.net>, 2005.
+# Gil Forcada <gilforcada@guifi.net>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-07 12:07+0100\n"
-"PO-Revision-Date: 2005-03-14 03:16+0100\n"
+"POT-Creation-Date: 2006-01-07 13:28+0100\n"
+"PO-Revision-Date: 2006-01-07 13:32+0100\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: desktop_gnome_file_sharing.schemas.in.h:1
+#: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr ""
-"Si està habilitat, la carpeta pública en la carpeta d'inici de cada usuari "
+"Si està habilitat, la carpeta «Public» de la carpeta d'inici de cada usuari "
 "es compartirà quan l'usuari entri."
 
-#: desktop_gnome_file_sharing.schemas.in.h:2
+#: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
-msgstr "Comparteix directori públic"
+msgstr "Comparteix el directori «Public»"
 
-#: desktop_gnome_file_sharing.schemas.in.h:3
+#: ../desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Quan s'ha de demanar contrasenya. Els possibles valors són \"mai\", "
-"\"en_escriure\", i \"sempre\"."
+"Quan s'ha de demanar contrasenya. Els possibles valors són «never» (mai), "
+"«on_write» (en escriure), i «always» (sempre)."
 
-#: desktop_gnome_file_sharing.schemas.in.h:4
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
 msgstr "Quan s'ha de demanar contrassenya"
 
-#: file-share-properties.c:290
+#: ../file-share-properties.c:290
 msgid "Never"
 msgstr "Mai"
 
-#: file-share-properties.c:293
+#: ../file-share-properties.c:293
 msgid "When writing files"
 msgstr "Quan s'escriguin fitxers"
 
-#: file-share-properties.c:296
+#: ../file-share-properties.c:296
 msgid "Always"
 msgstr "Sempre"
 
-#: file-share-properties.glade.h:1
+#: ../file-share-properties.glade.h:1
 msgid "<b>Share Files</b>"
-msgstr "<b>Compratir fitxers</b>"
+msgstr "<b>Compratició de fitxers</b>"
 
-#: file-share-properties.glade.h:2
+#: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"
 msgstr "Preferències de la compartició de fitxers"
 
-#: file-share-properties.glade.h:3
+#: ../file-share-properties.glade.h:3
 msgid "Share Public files on network"
 msgstr "Comprateix fitxers públics a la xarxa"
 
-#: file-share-properties.glade.h:4
+#: ../file-share-properties.glade.h:4
 msgid "_Password:"
 msgstr "_Contrasenya:"
 
-#: file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:5
 msgid "_Require password:"
 msgstr "_Requereix contrasenya:"
+
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Fitxer personal de compartició"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Preferències quant a la compartició de fitxers personals"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -82,7 +90,7 @@ msgstr "_Requereix contrasenya:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: user_share.c:157
+#: ../user_share.c:126
 #, c-format
 msgid "%s's public files"
-msgstr "fitxers públics de %s"
+msgstr "Fitxers públics de %s"
