@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-17 14:02+0100\n"
-"PO-Revision-Date: 2005-02-17 22:18+0100\n"
+"POT-Creation-Date: 2006-01-12 11:20+0100\n"
+"PO-Revision-Date: 2006-01-12 14:25+0100\n"
 "Last-Translator: Tino Meinen <a.t.meinen@chello.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,57 +17,70 @@ msgstr ""
 
 # ingelogd/aangemeld
 # aangemeld bij wat, zou je je kunnen afvragen
-#: desktop_gnome_file_sharing.schemas.in.h:1
+#: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
-msgstr "Indien dit waar is, zal de Publieke map in de Persoonlijke map (home) van de gebruiker worden gedeeld wanneer de gebruiker ingelogd is."
+msgstr ""
+"Indien dit waar is, zal de Publieke map in de Persoonlijke map (home) van de "
+"gebruiker worden gedeeld wanneer de gebruiker ingelogd is."
 
-#: desktop_gnome_file_sharing.schemas.in.h:2
+#: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
 msgstr "Publieke map delen"
 
-#: desktop_gnome_file_sharing.schemas.in.h:3
+#: ../desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "Wanneer er om wachtwoorden moet worden gevraagd, mogelijke opties: \"never\" (nooit), \"on_write\" (bij schrijven), \"always\" (altijd)"
+msgstr ""
+"Wanneer er om wachtwoorden moet worden gevraagd, mogelijke opties: \"never"
+"\" (nooit), \"on_write\" (bij schrijven), \"always\" (altijd)"
 
-#: desktop_gnome_file_sharing.schemas.in.h:4
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
 msgstr "Wanneer wachtwoorden worden geeist"
 
-#: file-share-properties.c:290
+#: ../file-share-properties.c:290
 msgid "Never"
 msgstr "Nooit"
 
-#: file-share-properties.c:293
+#: ../file-share-properties.c:293
 msgid "When writing files"
 msgstr "Bij het schrijven van bestanden"
 
-#: file-share-properties.c:296
+#: ../file-share-properties.c:296
 msgid "Always"
 msgstr "Altijd"
 
-#: file-share-properties.glade.h:1
+#: ../file-share-properties.glade.h:1
 msgid "<b>Share Files</b>"
 msgstr "<b>Bestanden delen</b>"
 
-#: file-share-properties.glade.h:2
+#: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"
 msgstr "Bestand-delen voorkeuren"
 
-#: file-share-properties.glade.h:3
+#: ../file-share-properties.glade.h:3
 msgid "Share Public files on network"
 msgstr "Publieke bestanden delen op het netwerk"
 
-#: file-share-properties.glade.h:4
+#: ../file-share-properties.glade.h:4
 msgid "_Password:"
 msgstr "_Wachtwoord:"
 
-#: file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:5
 msgid "_Require password:"
 msgstr "Wachtwoord _vereisen:"
+
+# persoonlijk/uw
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Uw bestanden delen"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Voorkeuren voor het delen van uw bestanden"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -78,7 +91,7 @@ msgstr "Wachtwoord _vereisen:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: user_share.c:157
+#: ../user_share.c:126
 #, c-format
 msgid "%s's public files"
 msgstr "%s's publieke bestanden"
