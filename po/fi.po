@@ -2,13 +2,14 @@
 # Copyright (C) 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the package.
 # Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2005.
+# Ilkka Tuohela, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-09 11:21+0200\n"
-"PO-Revision-Date: 2005-02-09 11:22+0200\n"
+"POT-Creation-Date: 2006-01-23 21:27+0200\n"
+"PO-Revision-Date: 2006-01-23 21:32+0200\n"
 "Last-Translator: Tommi Vainikainen <Tommi.Vainikainen@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +21,9 @@ msgstr ""
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
-msgstr "Jos tämä on tosi, Public-hakemisto käyttäjän kotihakemistosta jaetaan kun käyttäjä on kirjautuneena sisään."
+msgstr ""
+"Jos tämä on tosi, Public-hakemisto käyttäjän kotihakemistosta jaetaan kun "
+"käyttäjä on kirjautuneena sisään."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
@@ -30,7 +33,9 @@ msgstr "Jaa Public-hakemisto"
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "Milloin kysytään salasanoja. Mahdolliset arvot ovat: \"never\" (ei koskaan), \"on_write\" (kirjoitettaessa) ja \"always\" (aina)."
+msgstr ""
+"Milloin kysytään salasanoja. Mahdolliset arvot ovat: \"never\" (ei koskaan), "
+"\"on_write\" (kirjoitettaessa) ja \"always\" (aina)."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
@@ -68,6 +73,14 @@ msgstr "_Salasana:"
 msgid "_Require password:"
 msgstr "_Vaadi salasana:"
 
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Henkilökohtaisten tietojen jakaminen"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Asetukset henkilökohtaisten tietojen jakamiselle"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -77,7 +90,7 @@ msgstr "_Vaadi salasana:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:157
+#: ../user_share.c:126
 #, c-format
 msgid "%s's public files"
 msgstr "Käyttäjän %s julkiset tiedostot"
