@@ -1,4 +1,8 @@
-2006-01-06  Kjartan Maraas <kmaraas@gnome.org>
+2006-01-24  Clytie Siddall <clytie@riverland.net.au>
+
+	* configure.in	Added vi in ALL_LINGUAS line.
+	
+	2006-01-06  Kjartan Maraas <kmaraas@gnome.org>
 
 	* configure.in: Add nb and no to ALL_LINGUAS.
 
