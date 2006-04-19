@@ -113,17 +113,29 @@ static char *
 get_share_name (void)
 {
 	static char *name = NULL;
+	const char *host_name;
+	
 	if (name == NULL) {
-		/* Translators: The %s will get filled in with the user name
-		   of the user, to form a genitive. If this is difficult to
-		   translate correctly so that it will work correctly in your
-		   language, you may use something equivalent to
-		   "Public files of %s", or leave out the %s altogether.
-		   In the latter case, please put "%.0s" somewhere in the string,
-		   which will match the user name string passed by the C code,
-		   but not put the user name in the final string. This is to
-		   avoid the warning that msgfmt might otherwise generate. */
-		name = g_strdup_printf (_("%s's public files"), g_get_user_name ());
+		host_name = g_get_host_name ();
+		if (strcmp (host_name, "localhost") == 0) {
+			/* Translators: The %s will get filled in with the user name
+			   of the user, to form a genitive. If this is difficult to
+			   translate correctly so that it will work correctly in your
+			   language, you may use something equivalent to
+			   "Public files of %s", or leave out the %s altogether.
+			   In the latter case, please put "%.0s" somewhere in the string,
+			   which will match the user name string passed by the C code,
+			   but not put the user name in the final string. This is to
+			   avoid the warning that msgfmt might otherwise generate. */
+			name = g_strdup_printf (_("%s's public files"), g_get_user_name ());
+		} else {
+			/* Translators: This is similar to the string before, only it
+			   has the hostname in it too. */
+			name = g_strdup_printf (_("%s's public files on %s"),
+									g_get_user_name (),
+									host_name);
+		}
+			
 	}
 	return name;
 }
