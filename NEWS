@@ -1,4 +1,8 @@
-This is gnome-user-share 0.9, a system for easy sharing of user files.
+This is gnome-user-share 0.10, a system for easy sharing of user files.
+
+Major changes since 0.10 are:
+* Include hostname in published name
+* Support apache 2.2 config file format
 
 Major changes since 0.8 are:
 * Updated for avahi 0.6
