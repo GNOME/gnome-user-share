@@ -57,7 +57,7 @@ gnome_file_share_properties_LDADD = \
 	$(USER_SHARE_CONFIG_LIBS)
 
 appdir = $(datadir)/gnome-user-share
-app_DATA=dav_user.conf file-share-properties.glade
+app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.glade
 
 # don't do this if we are building in eg. rpm
 if GCONF_SCHEMAS_INSTALL
@@ -70,6 +70,7 @@ install-data-local: $(schema_DATA)
 else
 install-data-local:
 endif
+	ln -sf dav_user_$(HTTPD_VERSION).conf $(DESTDIR)$(appdir)/dav_user.conf
 
 EXTRA_DIST = $(schema_in_files) \
 	$(app_DATA)		\

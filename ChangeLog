@@ -1,3 +1,14 @@
+2006-04-19  Alexander Larsson  <alexl@redhat.com>
+
+	* Makefile.am:
+	* configure.in:
+	* dav_groupfile:
+	* dav_user.conf:
+	* dav_user_2.0.conf:
+	* dav_user_2.2.conf:
+	Add configuration for httpd 2.2.
+	Autodetect version or allow manual specification.
+
 2006-04-17  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Remove obsolete entry for no_NO
