@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-12 19:32+0200\n"
-"PO-Revision-Date: 2006-04-16 19:54+0100\n"
+"POT-Creation-Date: 2006-04-23 03:27+0200\n"
+"PO-Revision-Date: 2006-04-23 11:27+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -86,10 +86,21 @@ msgstr "Inställningar för utdelning av personliga filer"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:126
+#: ../user_share.c:130
 #, c-format
 msgid "%s's public files"
 msgstr "%.0sPublika filer"
+
+# Vi undviker på detta sätt problemen som "%ss publika filer" skulle
+# skapat, exempelvis "Alexs publika filer" eller "Markuss publika filer".
+# Se även http://bugzilla.gnome.org/show_bug.cgi?id=163652
+#
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:134
+#, c-format
+msgid "%s's public files on %s"
+msgstr "%.0sPublika filer på %s"
 
 #~ msgid ""
 #~ "If this is true, the Public directory in the users home dir will be "
