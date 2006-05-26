@@ -1,80 +1,80 @@
 # Vietnamese translation for Gnome User Share.
-# Copyright © 2005 Gnome i18n Project for Vietnamese.
-# Clytie Siddall <clytie@riverland.net.au>, 2005.
+# Copyright © 2006 Gnome i18n Project for Vietnamese.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2006.
 # 
 msgid ""
 ""
-msgstr "Project-Id-Version: gnome-user-share 0.5 Gnome HEAD\n"
+msgstr "Project-Id-Version: gnome-user-share 0.10 Gnome HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-11 03:16+0100\n"
-"PO-Revision-Date: 2006-01-11 17:08+1030\n"
+"POT-Creation-Date: 2006-05-26 03:27+0200\n"
+"PO-Revision-Date: 2006-05-26 16:42+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: LocFactoryEditor 1.6b23\n"
+"X-Generator: LocFactoryEditor 1.6b36\n"
 
-#:../desktop_gnome_file_sharing.schemas.in.h:1
+#: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr "Nếu đúng thì thư mục Công trong thư mục chính của người dùng sẽ được chia sẻ "
 "trong khi người dùng được đăng nhập."
 
-#:../desktop_gnome_file_sharing.schemas.in.h:2
+#: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
 msgstr "Chia sẻ thư mục Công"
 
-#:../desktop_gnome_file_sharing.schemas.in.h:3
+#: ../desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr "Khi nào yâu cầu mật khẩu. Giá trị có thể là « never » (không bao giờ ), « "
 "on_write » (khi ghi) và « always » (luôn luôn)."
 
-#:../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
 msgstr "Khi nào yêu cầu mật khẩu"
 
-#:../file-share-properties.c:290
+#: ../file-share-properties.c:290
 msgid "Never"
 msgstr "Không bao giờ"
 
-#:../file-share-properties.c:293
+#: ../file-share-properties.c:293
 msgid "When writing files"
 msgstr "Khi ghi vào tập tin"
 
-#:../file-share-properties.c:296
+#: ../file-share-properties.c:296
 msgid "Always"
 msgstr "Luôn luôn"
 
-#:../file-share-properties.glade.h:1
+#: ../file-share-properties.glade.h:1
 msgid "<b>Share Files</b>"
 msgstr "<b>Chia sẻ tập tin</b>"
 
-#:../file-share-properties.glade.h:2
+#: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"
 msgstr "Tùy thích chia sẻ tập tin"
 
-#:../file-share-properties.glade.h:3
+#: ../file-share-properties.glade.h:3
 msgid "Share Public files on network"
 msgstr "Chia sẻ tập tin Công trên mạng"
 
-#:../file-share-properties.glade.h:4
+#: ../file-share-properties.glade.h:4
 msgid "_Password:"
 msgstr "_Mật khẩu:"
 
-#:../file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:5
 msgid "_Require password:"
 msgstr "_Yêu cầu mật khẩu:"
 
-#:../gnome-user-share-properties.desktop.in.h:1
+#: ../gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Chia sẻ tập tin cá nhân"
 
-#:../gnome-user-share-properties.desktop.in.h:2
+#: ../gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
 msgstr "Tùy thích về khả năng chia sẽ tập tin cá nhân"
 
@@ -87,7 +87,14 @@ msgstr "Tùy thích về khả năng chia sẽ tập tin cá nhân"
 #.which will match the user name string passed by the C code,
 #.but not put the user name in the final string. This is to
 #.avoid the warning that msgfmt might otherwise generate.
-#:../user_share.c:126
-#,c-format
+#: ../user_share.c:130
+#, c-format
 msgid "%s's public files"
 msgstr "Các tập tin công của %s"
+
+#.Translators: This is similar to the string before, only it
+#.has the hostname in it too.
+#: ../user_share.c:134
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Các tập tin công của %s trên %s"
