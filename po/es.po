@@ -1,14 +1,15 @@
+# translation of es.po to Spanish
 # traducción de es.po al Spanish
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005.
+# Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-17 22:29+0100\n"
-"PO-Revision-Date: 2005-11-17 22:30+0100\n"
+"POT-Creation-Date: 2006-05-29 11:28+0200\n"
+"PO-Revision-Date: 2006-05-29 11:29+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@cvs.gnome.org>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +91,15 @@ msgstr "Preferencias para compartir archivos personales"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:125
+#: ../user_share.c:130
 #, c-format
 msgid "%s's public files"
 msgstr "Archivos públicos de %s"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:134
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Archivos públicos de %s en %s"
+
