@@ -76,7 +76,7 @@ msgstr "Chia sẻ tập tin cá nhân"
 
 #: ../gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
-msgstr "Tùy thích về khả năng chia sẽ tập tin cá nhân"
+msgstr "Tùy thích về khả năng chia sẻ tập tin cá nhân"
 
 #.Translators: The %s will get filled in with the user name
 #.of the user, to form a genitive. If this is difficult to
