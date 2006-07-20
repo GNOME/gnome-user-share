@@ -1,3 +1,7 @@
+2006-07-20  Leonid Kanter <leon@asplinux.ru>
+
+        * configure.in: Added "ru" to ALL_LINGUAS
+
 2006-04-19  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.in:
