@@ -1,15 +1,15 @@
 # Czech translation of gnome-user-share.
-# Copyright (C) 2005 gnome-user-share'S COPYRIGHT HOLDER
-# Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
+# Copyright (C) 2005, 2006 gnome-user-share'S COPYRIGHT HOLDER
+# Copyright (C) 2005, 2006 Miloslav Trmac <mitr@volny.cz>
 # This file is distributed under the same license as the gnome-user-share package.
-# Miloslav Trmac <mitr@volny.cz>, 2005
+# Miloslav Trmac <mitr@volny.cz>, 2005, 2006
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-02 19:39+0100\n"
-"PO-Revision-Date: 2005-12-02 20:07+0100\n"
+"POT-Creation-Date: 2006-07-26 12:53+0200\n"
+"PO-Revision-Date: 2006-07-26 17:52+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +90,15 @@ msgstr "Nastavení sdílení osobních souborů"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:126
+#: ../user_share.c:130
 #, c-format
 msgid "%s's public files"
 msgstr "Veřejné soubory uživatele %s"
+
+# Sigh...
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:134
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Veřejné soubory uživatele %s na %s"
