@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 11:05+0100\n"
+"POT-Creation-Date: 2006-08-15 03:55+0200\n"
 "PO-Revision-Date: 2006-01-06 18:40+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.1\n"
-"Plural-Forms:  nplurals=1; plural=0;\n"
+"Plural-Forms:   nplurals=2; plural=(n != 1);\n"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
@@ -91,8 +91,14 @@ msgstr "Személyes fájlok megosztásának beállításai"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:126
+#: ../user_share.c:130
 #, c-format
 msgid "%s's public files"
 msgstr "%s nyilvános fájljai"
 
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:134
+#, fuzzy, c-format
+msgid "%s's public files on %s"
+msgstr "%s nyilvános fájljai"
