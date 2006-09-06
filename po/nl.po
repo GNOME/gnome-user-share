@@ -1,14 +1,14 @@
 # Dutch translation of gnome-user-share.
 # Copyright (C) 2005 The Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
-# Tino Meinen <a.t.meinen@chello.nl>, 2005.
+# Tino Meinen <a.t.meinen@chello.nl>, 2005, 2006
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: GNOME 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-12 11:20+0100\n"
-"PO-Revision-Date: 2006-01-12 14:25+0100\n"
+"POT-Creation-Date: 2006-09-05 13:07+0200\n"
+"PO-Revision-Date: 2006-09-05 15:55+0200\n"
 "Last-Translator: Tino Meinen <a.t.meinen@chello.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
@@ -82,6 +82,7 @@ msgstr "Uw bestanden delen"
 msgid "Preferences for sharing of personal files"
 msgstr "Voorkeuren voor het delen van uw bestanden"
 
+# gedeelde/publieke
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -91,7 +92,15 @@ msgstr "Voorkeuren voor het delen van uw bestanden"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:126
+#: ../user_share.c:130
 #, c-format
 msgid "%s's public files"
 msgstr "%s's publieke bestanden"
+
+# publieke/gedeelde
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:134
+#, c-format
+msgid "%s's public files on %s"
+msgstr "%s's publieke bestanden op %s"
