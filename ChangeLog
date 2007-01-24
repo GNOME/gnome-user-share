@@ -1,3 +1,8 @@
+2007-01-24  Matthias Clasen  <mclasen@redhat.com>
+
+	* gnome-user-share-properties.desktop.in: Remove
+	invalid Applications category, add X-GNOME-NetworkSettings.
+
 2006-12-15  Pema Geyleg  <pgeyleg@gmail.com>
 
 	* cofigure.in: Added 'dz' to ALL_LINGUAS
