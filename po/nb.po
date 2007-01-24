@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-06 21:08+0100\n"
-"PO-Revision-Date: 2006-01-06 21:11+0100\n"
+"POT-Creation-Date: 2007-01-24 16:27+0100\n"
+"PO-Revision-Date: 2007-01-24 16:28+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
-msgstr ""
+msgstr "Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog bli delt når brukeren logger inn."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
@@ -29,21 +29,21 @@ msgstr "Del offentlig katalog"
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr ""
+msgstr "Når passord skal kreves. Mulige verdier er «never», «on_write» og «always»."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
-msgstr ""
+msgstr "Når passord skal kreves"
 
-#: ../file-share-properties.c:290
+#: ../file-share-properties.c:294
 msgid "Never"
 msgstr "Aldri"
 
-#: ../file-share-properties.c:293
+#: ../file-share-properties.c:297
 msgid "When writing files"
 msgstr "Når filer skrives"
 
-#: ../file-share-properties.c:296
+#: ../file-share-properties.c:300
 msgid "Always"
 msgstr "Alltid"
 
@@ -84,7 +84,14 @@ msgstr "Brukervalg for deling av personlige filer"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:126
+#: ../user_share.c:130
 #, c-format
 msgid "%s's public files"
 msgstr "%s's offentlige filer"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:134
+#, c-format
+msgid "%s's public files on %s"
+msgstr "%s's offentlige filer på %s"
