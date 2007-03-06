@@ -1,3 +1,11 @@
+2007-03-06  Alexander Larsson  <alexl@redhat.com>
+
+        * dav_user_2.0.conf:
+        * dav_user_2.2.conf:
+        * user_share.c:
+	Use PUBLICSHARE from xdg-user-dirs as default.
+	Fall back to ~/Public otherwise.
+
 2007-01-24  Matthias Clasen  <mclasen@redhat.com>
 
 	* gnome-user-share-properties.desktop.in: Remove
