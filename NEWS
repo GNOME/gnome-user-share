@@ -1,6 +1,10 @@
-This is gnome-user-share 0.10, a system for easy sharing of user files.
+This is gnome-user-share 0.11, a system for easy sharing of user files.
 
 Major changes since 0.10 are:
+* Show more strings translated in the UI
+* Use xdg-user-dirs for finding public dir
+
+Major changes since 0.9 are:
 * Include hostname in published name
 * Support apache 2.2 config file format
 
