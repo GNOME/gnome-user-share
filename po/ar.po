@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-17 21:14+0000\n"
-"PO-Revision-Date: 2006-11-18 00:42+0100\n"
+"PO-Revision-Date: 2007-04-14 18:21+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,69 +19,59 @@ msgstr ""
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid "If this is true, the Public directory in the users home directory will be shared when the user is logged in."
-msgstr ""
+msgstr "اذا كان هذا صحيحا، سيتم اشراك الدليل المشترك المنزلي عند تسجيل دخول المستخدم"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
-#, fuzzy
 msgid "Share Public directory"
-msgstr "ليس دليل مستخدمين صحيح"
+msgstr "الدليل المشترك"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:3
 msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr ""
+msgstr "متى يتم طلب كلمة السرز القيم الممكنة هي \"ابدا\", \"عند الكتابة\", و \"دائما\"."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:4
-#, fuzzy
 msgid "When to require passwords"
-msgstr "متى تجمّع النوافذ"
+msgstr "متى يتم طلب كلمات السر"
 
 #: ../file-share-properties.c:290
-#, fuzzy
 msgid "Never"
 msgstr "أبداً"
 
 #: ../file-share-properties.c:293
-#, fuzzy
 msgid "When writing files"
-msgstr "كتابة الملفات للقرص"
+msgstr "عند كتابة الملفات"
 
 #: ../file-share-properties.c:296
-#, fuzzy
 msgid "Always"
 msgstr "دائماً"
 
 #: ../file-share-properties.glade.h:1
-#, fuzzy
 msgid "<b>Share Files</b>"
-msgstr "كل الملفّات"
+msgstr "<b>الملفات المشتركة</b>"
 
 #: ../file-share-properties.glade.h:2
-#, fuzzy
 msgid "File Sharing Preferences"
-msgstr "تفضيلات إدارة الملفات"
+msgstr "تفضيلات اشتراك الملفات"
 
 #: ../file-share-properties.glade.h:3
 msgid "Share Public files on network"
-msgstr ""
+msgstr "الملفات المشتركة على الشبكة"
 
 #: ../file-share-properties.glade.h:4
-#, fuzzy
 msgid "_Password:"
-msgstr "_كلمة المرور:"
+msgstr "_كلمة السر:"
 
 #: ../file-share-properties.glade.h:5
-#, fuzzy
 msgid "_Require password:"
-msgstr "جودة كلمة السر:"
+msgstr "ا_طلب كلمة السر:"
 
 #: ../gnome-user-share-properties.desktop.in.h:1
-#, fuzzy
 msgid "Personal File Sharing"
 msgstr "خدمة مشاركة الملفات"
 
 #: ../gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
-msgstr ""
+msgstr "تفضيلات لاشتراك الملفات الشخصية"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -93,14 +83,14 @@ msgstr ""
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
 #: ../user_share.c:130
-#, fuzzy, c-format
+#, c-format
 msgid "%s's public files"
-msgstr "كل الملفّات"
+msgstr "الملفات المشتركة لـ %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
 #: ../user_share.c:134
-#, fuzzy, c-format
+#, c-format
 msgid "%s's public files on %s"
-msgstr "على هذا الحاسوب"
+msgstr "الملفات المشتركة لـ %s على %s"
 
