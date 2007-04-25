@@ -2,16 +2,16 @@
 # Copyright (C) 2005 Alexander Larsson <alexl@redhat.com>
 # This file is distributed under the same license as the gnome-user-share package.
 # Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
-# 
+# Hendrik Richter <hendrikr@gnome.org>, 2007. 
 # 
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-05 21:39+0100\n"
-"PO-Revision-Date: 2005-02-05 21:39+0100\n"
-"Last-Translator: Frank Arnold <frank@scirocco-5v-turbo.de>\n"
+"POT-Creation-Date: 2007-04-25 16:14+0200\n"
+"PO-Revision-Date: 2007-04-25 16:16+0200\n"
+"Last-Translator: Hendrik Richter <hendrikr@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,15 +42,15 @@ msgstr ""
 msgid "When to require passwords"
 msgstr "Passwortschutz"
 
-#: ../file-share-properties.c:290
+#: ../file-share-properties.c:294
 msgid "Never"
 msgstr "Niemals"
 
-#: ../file-share-properties.c:293
+#: ../file-share-properties.c:297
 msgid "When writing files"
 msgstr "Beim Schreiben von Dateien"
 
-#: ../file-share-properties.c:296
+#: ../file-share-properties.c:300
 msgid "Always"
 msgstr "Immer"
 
@@ -74,6 +74,14 @@ msgstr "_Passwort:"
 msgid "_Require password:"
 msgstr "_Benötigt Passwort:"
 
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Dateifreigabe"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Einstellungen zur Freigabe persönlicher Dateien"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -83,7 +91,14 @@ msgstr "_Benötigt Passwort:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:157
+#: ../user_share.c:210
 #, c-format
 msgid "%s's public files"
 msgstr "Öffentliche Dateien von %s"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:214
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Öffentliche Dateien von %s auf %s"
