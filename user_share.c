@@ -139,6 +139,12 @@ lookup_public_dir (void)
       *d = 0;
   }  
   fclose (file);
+
+  /* Don't export the whole homedir (happens if xdg-user-dirs disabled the dir) */
+  if (user_dir && strcmp (user_dir, g_get_home_dir ()) == 0) {
+	  g_free (user_dir);
+	  user_dir = NULL;
+  }
   
   if (user_dir)
 	  return user_dir;

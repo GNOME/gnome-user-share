@@ -1,3 +1,8 @@
+2007-06-14  Alexander Larsson  <alexl@redhat.com>
+
+	* user_share.c (lookup_public_dir):
+	Don't export all of home if PUBLICSHARE points to that (i.e. if disabled)
+
 2007-03-06  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.in:
