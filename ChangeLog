@@ -1,3 +1,10 @@
+2007-07-10  Owen Taylor  <otaylor@redhat.com>
+
+	* configure.ac: Check for DBUS 1.1
+	* user_share.c: When we have DBUS 1.1 export an additional TXT record via
+	Avahi that the GUID of the user's D-BUS session to allow associating the
+	export with other information exported about the user. (#455307)
+
 2007-06-14  Alexander Larsson  <alexl@redhat.com>
 
 	* user_share.c (lookup_public_dir):

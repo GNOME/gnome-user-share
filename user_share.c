@@ -27,6 +27,10 @@
 #include <glib/gi18n.h>
 #include <X11/Xlib.h>
 
+#ifdef HAVE_DBUS_1_1
+#include <dbus/dbus.h>
+#endif
+
 #ifdef HAVE_AVAHI
 #include <avahi-client/client.h>
 #include <avahi-client/publish.h>
@@ -45,6 +49,7 @@
 
 #include <gconf/gconf-client.h>
 
+#include <stdarg.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -62,6 +67,10 @@
 #define FILE_SHARING_DIR "/desktop/gnome/file_sharing"
 #define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
 #define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
+
+#ifdef HAVE_DBUS_1_1
+static char *dbus_session_id;
+#endif
 
 static GMainLoop *loop = NULL;
 static pid_t httpd_pid = 0;
@@ -226,6 +235,42 @@ get_share_name (void)
 	return name;
 }
 
+#ifdef HAVE_DBUS_1_1
+static void
+init_dbus() {
+	/* The only use we make of D-BUS is to fetch the session BUS ID so we can export
+	 * it via mDNS, so we connect and then immediately disconnect. If we were using
+	 * the D-BUS session BUS for something persistent, the following code should use
+	 * dbus_bus_get() and skip the shutdown. (Avahi uses the D-BUS  _system_ bus
+	 * internally.)
+	 */
+	
+	DBusError derror;
+	DBusConnection *connection;
+
+	dbus_error_init(&derror);
+	
+	connection = dbus_bus_get_private(DBUS_BUS_SESSION, &derror);
+	if (connection == NULL) {
+        g_printerr("Failed to connect to session bus: %s", derror.message);
+        dbus_error_free(&derror);
+		return;
+	}
+
+    dbus_session_id = dbus_bus_get_id(connection, &derror);
+    if (dbus_session_id == NULL) {
+		/* This can happen if the D-BUS library has been upgraded to 1.1, but the
+		 * user's session hasn't yet been restarted
+		 */
+        g_printerr("Failed to get session BUS ID: %s", derror.message);
+        dbus_error_free(&derror);
+	}
+		
+	dbus_connection_set_exit_on_disconnect(connection, FALSE);
+	dbus_connection_close(connection);
+	dbus_connection_unref(connection);
+}
+#endif
 
 #ifdef HAVE_AVAHI
 
@@ -236,19 +281,64 @@ static int avahi_port = 0;
 static AvahiEntryGroup *entry_group = NULL;
 static char *avahi_name = NULL;
 
+static AvahiStringList*
+new_text_record_list (const char *first_key,
+					  const char *first_value,
+					  ...)
+{
+    va_list args;
+    const char *k;
+    const char *v;
+    AvahiStringList *list;
+
+    if (first_key == NULL)
+        return NULL;
+
+    list = NULL;
+    
+    list = avahi_string_list_add_pair (list, first_key, first_value);
+    
+    va_start (args, first_value);
+    k = va_arg (args, const char*);
+    if (k)
+        v = va_arg (args, const char*);
+    while (k != NULL) {
+        list = avahi_string_list_add_pair (list, k, v);
+        
+        k = va_arg (args, const char*);
+        if (k)
+            v = va_arg (args, const char*);
+    }
+    
+    va_end(args);
+    
+    return list;
+}
 
 static gboolean
 create_service (void) {
     int ret;
+    AvahiStringList *txt_records;
 
 	if (avahi_name == NULL) {
 		avahi_name = g_strdup (get_share_name ());
 	}
 
-	ret = avahi_entry_group_add_service (entry_group, AVAHI_IF_UNSPEC, AVAHI_PROTO_UNSPEC, 
-										 AVAHI_PUBLISH_USE_MULTICAST,
-										 avahi_name, "_webdav._tcp", NULL, NULL, 
-										 avahi_port, "u=guest", NULL);
+	txt_records = new_text_record_list ("u", "guest",
+#ifdef HAVE_DBUS_1_1
+										/* This must be last */
+										dbus_session_id != NULL ? "org.freedesktop.od.session" : NULL, dbus_session_id,
+#endif									   
+										NULL);
+	
+	ret = avahi_entry_group_add_service_strlst (entry_group, AVAHI_IF_UNSPEC, AVAHI_PROTO_UNSPEC, 
+												 AVAHI_PUBLISH_USE_MULTICAST,
+												 avahi_name, "_webdav._tcp", NULL, NULL, 
+												 avahi_port,
+		                                         txt_records);
+
+	avahi_string_list_free(txt_records);
+	
 	if (ret < 0) {
 		return FALSE;
 	}
@@ -741,6 +831,10 @@ main (int argc, char **argv)
 		    G_IO_IN,
 		    x_input, xdisplay);
     g_io_channel_unref (channel);
+
+#ifdef HAVE_DBUS_1_1
+	init_dbus();
+#endif	
 	
 #ifdef HAVE_AVAHI
 	if (!init_avahi ()) {    

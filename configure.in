@@ -59,11 +59,17 @@ if test "x$msg_avahi" = "xno" -a "x$enable_howl" != "xno"; then
 	AC_SUBST(HOWL_LIBS)
 fi
 
+PKG_CHECK_EXISTS(dbus-1 >= 1.1.1, have_dbus_1_1=true, have_dbus_1_1=false)
+if $have_dbus_1_1 ; then
+   DBUS_MODULES=dbus-1
+   AC_DEFINE(HAVE_DBUS_1_1, 1, [Set to true if we have D-BUS 1.1])
+fi
+
 if test "x$msg_avahi" = "xno" -a "x$msg_howl" = "xno"; then
   AC_MSG_ERROR([Neither avahi nor howl detected. Gnome-user-share needs a mDNS implementation.])
 fi
 
-PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.2.0 gconf-2.0)
+PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.2.0 gconf-2.0 $DBUS_MODULES)
 AC_SUBST(USER_SHARE_CFLAGS)
 AC_SUBST(USER_SHARE_LIBS)
 
