@@ -158,7 +158,7 @@ update_ui (void)
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check),
 				  enabled);
     gtk_widget_set_sensitive (password_combo, enabled);
-    gtk_widget_set_sensitive (password_entry, enabled);
+    gtk_widget_set_sensitive (password_entry, enabled && password_setting != PASSWORD_NEVER);
 
     gtk_combo_box_set_active (GTK_COMBO_BOX (password_combo),
 			      password_setting);
