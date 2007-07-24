@@ -1,3 +1,8 @@
+2007-07-24  Matthias Clasen  <mclasen@redhat.com>
+
+	* file-share-properties.glade: Don't hardcode the invisible
+	character.  (#422047)
+
 2007-07-13  Matthias Clasen  <mclasen@redhat.com>
 
 	* file-share-properties.c: Disable the password entry if
