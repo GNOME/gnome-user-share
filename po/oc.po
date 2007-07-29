@@ -1,0 +1,100 @@
+# Occitan translation of gnome-user-share.
+# Copyright (C) 2005-2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-user-share package.
+#
+# Yannig MARCHEGAY (yannig@marchegay.org) - 2006-2007
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share 0.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-08-26 16:13+0200\n"
+"PO-Revision-Date: 2007-07-29 13:01+0200\n"
+"Last-Translator: Yannig MARCHEGAY <yannig@marchegay.org>\n"
+"Language-Team: Occitan (post 1500) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:3
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr ""
+
+#: ../file-share-properties.c:290
+msgid "Never"
+msgstr "Jamai"
+
+#: ../file-share-properties.c:293
+msgid "When writing files"
+msgstr ""
+
+#: ../file-share-properties.c:296
+msgid "Always"
+msgstr "Totjorn"
+
+#: ../file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr ""
+
+#: ../file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr ""
+
+#: ../file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr ""
+
+#: ../file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "Mot de _pas :"
+
+#: ../file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr ""
+
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr ""
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr ""
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../user_share.c:130
+#, c-format
+msgid "%s's public files"
+msgstr ""
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:134
+#, c-format
+msgid "%s's public files on %s"
+msgstr ""
+
