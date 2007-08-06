@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-02 23:33+0300\n"
+"POT-Creation-Date: 2007-08-06 17:20+0300\n"
 "PO-Revision-Date: 2006-07-02 23:33+0300\n"
 "Last-Translator: Tommi Vainikainen <Tommi.Vainikainen@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
@@ -41,15 +41,15 @@ msgstr ""
 msgid "When to require passwords"
 msgstr "Milloin vaaditaan salasanat"
 
-#: ../file-share-properties.c:290
+#: ../file-share-properties.c:294
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: ../file-share-properties.c:293
+#: ../file-share-properties.c:297
 msgid "When writing files"
 msgstr "Kirjoitettaessa tiedostoja"
 
-#: ../file-share-properties.c:296
+#: ../file-share-properties.c:300
 msgid "Always"
 msgstr "Aina"
 
@@ -90,15 +90,14 @@ msgstr "Asetukset henkilökohtaisten tietojen jakamiselle"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:130
+#: ../user_share.c:225
 #, c-format
 msgid "%s's public files"
 msgstr "Käyttäjän %s julkiset tiedostot"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:134
+#: ../user_share.c:229
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Käyttäjän %s julkiset tiedostot palvelimella %s"
-
