@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share 0.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-08-26 16:13+0200\n"
-"PO-Revision-Date: 2007-07-29 13:01+0200\n"
+"PO-Revision-Date: 2007-08-19 20:06+0200\n"
 "Last-Translator: Yannig MARCHEGAY (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (post 1500) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "Totjorn"
 
 #: ../file-share-properties.glade.h:1
 msgid "<b>Share Files</b>"
-msgstr ""
+msgstr "<b>Partejar de fichièrs</b>"
 
 #: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"
