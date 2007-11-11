@@ -22,12 +22,12 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr ""
-"Jos tämä on tosi, Public-hakemisto käyttäjän kotihakemistosta jaetaan kun "
+"Jos tämä on tosi, kansio Julkinen käyttäjän kotihakemistosta jaetaan, kun "
 "käyttäjä on kirjautuneena sisään."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
-msgstr "Jaa Public-hakemisto"
+msgstr "Jaa Julkinen-kansio"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
@@ -59,11 +59,11 @@ msgstr "<b>Jaa tiedostoja</b>"
 
 #: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"
-msgstr "Tiedostonjakoasetukset"
+msgstr "Tiedostojen jaon asetukset"
 
 #: ../file-share-properties.glade.h:3
 msgid "Share Public files on network"
-msgstr "Jaa Public-tiedostot verkossa"
+msgstr "Jaa tiedostoja verkossa"
 
 #: ../file-share-properties.glade.h:4
 msgid "_Password:"
@@ -75,7 +75,7 @@ msgstr "_Vaadi salasana:"
 
 #: ../gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
-msgstr "Henkilökohtaisten tietojen jakaminen"
+msgstr "Omien tiedostojen jako"
 
 #: ../gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
@@ -101,3 +101,4 @@ msgstr "Käyttäjän %s julkiset tiedostot"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Käyttäjän %s julkiset tiedostot palvelimella %s"
+
