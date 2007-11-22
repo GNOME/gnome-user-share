@@ -1,0 +1,102 @@
+# gnome-user-share's Portuguese translation.
+# Copyright © 2007 gnome-user-share
+# This file is distributed under the same license as the gnome-user-share package.
+# André Neves <drakferion@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.20\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-11-22 23:17+0000\n"
+"PO-Revision-Date: 2007-11-22 23:15+0000\n"
+"Last-Translator: André Neves <drakferion@gmail.com>\n"
+"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared when the user is logged in."
+msgstr ""
+"Se definido como verdadeiro, o directório \"Public\" na pasta pessoal do "
+"utilizador será partilhada quando o utilizador estiver numa sessão."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:2
+msgid "Share Public directory"
+msgstr "Partilhar o directório \"Public\""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:3
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Quando perguntar por senhas. Valores possíveis são \"never\" (nunca), "
+"\"on_write\" (ao gravar), e \"always\" (sempre)."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
+msgid "When to require passwords"
+msgstr "Quando exigir senhas"
+
+#: ../file-share-properties.c:294
+msgid "Never"
+msgstr "Nunca"
+
+#: ../file-share-properties.c:297
+msgid "When writing files"
+msgstr "Quando gravar ficheiros"
+
+#: ../file-share-properties.c:300
+msgid "Always"
+msgstr "Sempre"
+
+#: ../file-share-properties.glade.h:1
+msgid "<b>Share Files</b>"
+msgstr "<b>Partilhar Ficheiros</b>"
+
+#: ../file-share-properties.glade.h:2
+msgid "File Sharing Preferences"
+msgstr "Preferências de Partilha de Ficheiros"
+
+#: ../file-share-properties.glade.h:3
+msgid "Share Public files on network"
+msgstr "Partilhar ficheiros \"Public\" na rede"
+
+# # É assim que se traduz Public? Senão, ver e corrigir acima.
+#: ../file-share-properties.glade.h:4
+msgid "_Password:"
+msgstr "_Senha:"
+
+#: ../file-share-properties.glade.h:5
+msgid "_Require password:"
+msgstr "_Exigir senha:"
+
+#: ../gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Partilha de Ficheiros Pessoais"
+
+#: ../gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Preferências para a partilha de ficheiros pessoais"
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../user_share.c:225
+#, c-format
+msgid "%s's public files"
+msgstr "Ficheiros públicos de %s"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../user_share.c:229
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Ficheiros públicos de %s em %s"
