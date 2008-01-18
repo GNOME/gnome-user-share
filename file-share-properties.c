@@ -255,6 +255,7 @@ main (int argc, char *argv[])
     GtkWidget *check;
     GtkWidget *password_combo;
     GtkWidget *password_entry;
+    GtkWidget *window;
     GtkListStore *store;
     GtkCellRenderer *cell;
     GtkTreeIter iter;
@@ -268,6 +269,10 @@ main (int argc, char *argv[])
     ui = glade_xml_new (DATADIR"file-share-properties.glade",
 			NULL,
 			PACKAGE);
+
+    window = glade_xml_get_widget (ui, "user_share_dialog");
+    g_signal_connect (G_OBJECT (window), "delete_event",
+		      G_CALLBACK (gtk_main_quit), NULL);
 
     client = gconf_client_get_default ();
     gconf_client_add_dir (client,

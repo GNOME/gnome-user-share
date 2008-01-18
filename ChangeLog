@@ -1,5 +1,10 @@
 2008-01-18  Bastien Nocera  <hadess@hadess.net>
 
+	* file-share-properties.c: (main): Exit when the close
+	button from the WM is used (Closes: #397865)
+
+2008-01-18  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am:
 	* configure.in:
 	* gnome-user-share.desktop.in.in:
