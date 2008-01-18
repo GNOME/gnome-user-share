@@ -1,5 +1,10 @@
 2008-01-18  Bastien Nocera  <hadess@hadess.net>
 
+	* gnome-user-share.desktop.in.in: Mark strings
+	for translation
+
+2008-01-18  Bastien Nocera  <hadess@hadess.net>
+
 	* user_share.c: (spawn_httpd): Patch by Matthias
 	Clasen <mclasen@redhat.com> to fix a small leak
 	(Closes: #475994)
