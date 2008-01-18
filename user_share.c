@@ -599,7 +599,7 @@ spawn_httpd (int port, pid_t *pid_out)
 		argv[i++] = "-D";
 		argv[i++] = "RequirePasswordAlways";
     }
-    
+    g_free (str);
     g_object_unref (client);
     
     argv[i] = NULL;

@@ -1,5 +1,11 @@
 2008-01-18  Bastien Nocera  <hadess@hadess.net>
 
+	* user_share.c: (spawn_httpd): Patch by Matthias
+	Clasen <mclasen@redhat.com> to fix a small leak
+	(Closes: #475994)
+
+2008-01-18  Bastien Nocera  <hadess@hadess.net>
+
 	* file-share-properties.c: (main): Exit when the close
 	button from the WM is used (Closes: #397865)
 
