@@ -12,6 +12,9 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 desktop_in_files = gnome-user-share-properties.desktop.in
 
+autostartdir = $(datadir)/gnome/autostart/
+autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
+autostart_in_files = gnome-user-share.desktop.in
 
 #@INTLTOOL_SCHEMAS_RULE@
 %.schemas:   %.schemas.in
@@ -78,7 +81,8 @@ EXTRA_DIST = $(schema_in_files) \
 	gnome-user-share.spec 	\
 	intltool-extract.in 	\
 	intltool-merge.in 	\
-	intltool-update.in	
+	intltool-update.in	\
+	gnome-user-share.desktop.in.in
 
 CLEANFILES = $(desktop_DATA)
 

@@ -100,6 +100,16 @@ fi
 
 AM_GCONF_SOURCE_2
 
+dnl where to install the gnome-user-share binary
+if test "x$prefix" = "xNONE"; then
+  prefix=$ac_default_prefix
+fi
+if test "x$exec_prefix" = "xNONE"; then
+   exec_prefix=$prefix
+fi
+installdir="`eval echo $libexecdir`"
+AC_SUBST(installdir, $installdir)
+
 dnl ==========================================================================
 
 ALL_LINGUAS="ar bg ca cs da de dz el en_CA en_GB fi fr gl gu hu it ja ko lt nb ne nl oc pa pl pt pt_BR ru rw sk sl sq sv uk vi zh_TW"
@@ -165,6 +175,7 @@ fi
 			       
 AC_OUTPUT([
 Makefile
+gnome-user-share.desktop.in
 po/Makefile.in
 ])
 

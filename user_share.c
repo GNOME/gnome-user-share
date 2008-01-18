@@ -822,7 +822,11 @@ main (int argc, char **argv)
 		/* Didn't get the selection */
 		return 1;
     }
-    
+
+    client = gconf_client_get_default ();
+    if (gconf_client_get_bool (client, FILE_SHARING_ENABLED, NULL) == FALSE)
+	    return 1;
+
     x_fd = ConnectionNumber (xdisplay);
     XSetIOErrorHandler (x_io_error_handler);
     
@@ -851,7 +855,6 @@ main (int argc, char **argv)
     set_up_howl_session (howl_session);
 #endif
 
-    client = gconf_client_get_default ();
     gconf_client_add_dir (client,
 			  FILE_SHARING_DIR,
 			  GCONF_CLIENT_PRELOAD_RECURSIVE,

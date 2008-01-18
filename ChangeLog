@@ -1,3 +1,13 @@
+2008-01-18  Bastien Nocera  <hadess@hadess.net>
+
+	* Makefile.am:
+	* configure.in:
+	* gnome-user-share.desktop.in.in:
+	* user_share.c: (main): Use the XDG autostart spec to
+	automatically start gnome-user-share on login, exit
+	straight away if file sharing isn't enabled
+	(Closes: #334173)
+
 2007-11-22  Duarte Loreto <happyguy_pt@hotmail.com>
 
 	* configure.in: Added Portuguese (pt) to ALL_LINGUAS.
