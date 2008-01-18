@@ -1,5 +1,9 @@
 2008-01-18  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am: Fix distcheck
+
+2008-01-18  Bastien Nocera  <hadess@hadess.net>
+
 	* gnome-user-share.desktop.in.in: Mark strings
 	for translation
 

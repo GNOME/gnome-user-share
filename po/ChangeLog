@@ -1,5 +1,10 @@
 2008-01-18  Bastien Nocera  <hadess@hadess.net>
 
+	* POTFILES.skip: Add the .in file to the list,
+	the .in.in is translated
+
+2008-01-18  Bastien Nocera  <hadess@hadess.net>
+
 	* POTFILES.in: Add new autostart desktop file
 	to the list
 

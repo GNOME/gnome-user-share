@@ -84,7 +84,7 @@ EXTRA_DIST = $(schema_in_files) \
 	intltool-update.in	\
 	gnome-user-share.desktop.in.in
 
-CLEANFILES = $(desktop_DATA)
+CLEANFILES = $(desktop_DATA) $(autostart_DATA)
 
 DISTCLEANFILES = $(schema_DATA) \
 	intltool-extract 	\
