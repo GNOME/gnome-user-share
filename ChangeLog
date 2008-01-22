@@ -1,5 +1,26 @@
 2008-01-22  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am: upd
+	* configure.in: Require dbus-glib
+
+	* desktop_gnome_file_sharing.schemas.in:
+	* file-share-properties.c:
+	Add UI for the Bluetooth file sharing
+
+	* http.c:
+	* http.h: Split from user_share.c
+
+	* obexftp.c:
+	* obexftp.h: New files with ObexFTP support
+
+	* user_share.c: Remove HTTP code and add ObexFTP support
+	* user_share.h: new file
+
+	Add ObexFTP server support to gnome-user-share, requires
+	obex-data-server (Closes: #509938)
+
+2008-01-22  Bastien Nocera  <hadess@hadess.net>
+
 	* user_share.c: (lookup_public_dir):
 	Fix some stupidness
 

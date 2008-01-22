@@ -33,7 +33,9 @@
 
 #define FILE_SHARING_DIR "/desktop/gnome/file_sharing"
 #define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
+#define FILE_SHARING_BLUETOOTH_ENABLED "/desktop/gnome/file_sharing/bluetooth_enabled"
 #define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
+#define FILE_SHARING_BLUETOOTH_ALLOW_WRITE "/desktop/gnome/file_sharing/bluetooth_allow_write"
 
 #define REALM "Please log in as the user guest"
 #define USER "guest"
@@ -130,34 +132,50 @@ static void
 update_ui (void)
 {
     GConfClient *client;
-    gboolean enabled;
+    gboolean enabled, bluetooth_enabled, bluetooth_write_enabled;
     char *str;
     PasswordSetting password_setting;
     GtkWidget *check;
     GtkWidget *password_combo;
     GtkWidget *password_entry;
+    GtkWidget *bluetooth_check;
+    GtkWidget *allow_write_bluetooth_check;
 
     client = gconf_client_get_default ();
 
     enabled = gconf_client_get_bool (client,
 				     FILE_SHARING_ENABLED,
 				     NULL);
+    bluetooth_enabled = gconf_client_get_bool (client,
+    					       FILE_SHARING_BLUETOOTH_ENABLED,
+    					       NULL);
+    bluetooth_write_enabled = gconf_client_get_bool (client,
+						     FILE_SHARING_BLUETOOTH_ALLOW_WRITE,
+						     NULL);
+
     str = gconf_client_get_string (client, FILE_SHARING_REQUIRE_PASSWORD, NULL);
     password_setting = password_setting_from_string (str);
     g_free (str);
-    
+
     check = glade_xml_get_widget (ui, "enable_check");
     password_combo = glade_xml_get_widget (ui, "password_combo");
     password_entry = glade_xml_get_widget (ui, "password_entry");
-    
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check),
-				  enabled);
+    bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
+    allow_write_bluetooth_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
+
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check), enabled);
     gtk_widget_set_sensitive (password_combo, enabled);
     gtk_widget_set_sensitive (password_entry, enabled && password_setting != PASSWORD_NEVER);
 
     gtk_combo_box_set_active (GTK_COMBO_BOX (password_combo),
 			      password_setting);
-    
+
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (bluetooth_check), bluetooth_enabled);
+    gtk_widget_set_sensitive (allow_write_bluetooth_check, bluetooth_enabled);
+
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (allow_write_bluetooth_check),
+    				  bluetooth_write_enabled);
+
     g_object_unref (client);
 }
 
@@ -179,6 +197,23 @@ password_required_changed (GConfClient* client,
     update_ui ();
 }
 
+static void
+file_sharing_bluetooth_enabled_changed (GConfClient* client,
+					guint cnxn_id,
+					GConfEntry *entry,
+					gpointer data)
+{
+	update_ui ();
+}
+
+static void
+file_sharing_bluetooth_allow_write_changed (GConfClient* client,
+					    guint cnxn_id,
+					    GConfEntry *entry,
+					    gpointer data)
+{
+	update_ui ();
+}
 
 static void
 password_combo_changed (GtkComboBox *combo_box)
@@ -198,25 +233,11 @@ password_combo_changed (GtkComboBox *combo_box)
 }
 
 static void
-enable_check_toggled (GtkWidget *check)
+launch_share (void)
 {
-    GConfClient *client;
-    gboolean enabled;
-    char *argv[2];
-    int i;
+	char *argv[2];
+	int i;
 
-    enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check));
-    
-    client = gconf_client_get_default ();
-
-    gconf_client_set_bool (client,
-			   FILE_SHARING_ENABLED,
-			   enabled,
-			   NULL);
-    
-    g_object_unref (client);
-
-    if (enabled) {
 	i = 0;
 	argv[i++] = USER_SHARE_PROGRAM;
 	argv[i++] = NULL;
@@ -229,19 +250,77 @@ enable_check_toggled (GtkWidget *check)
 			    NULL,
 			    NULL,
 			    NULL)) {
-	    g_warning ("Unable to start gnome-user-share program");
+		g_warning ("Unable to start gnome-user-share program");
 	}
-    }
+}
+
+static void
+enable_bluetooth_check_toggled (GtkWidget *check)
+{
+	GConfClient *client;
+	gboolean enabled;
+
+	enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check));
+
+	client = gconf_client_get_default ();
+
+	gconf_client_set_bool (client,
+			       FILE_SHARING_BLUETOOTH_ENABLED,
+			       enabled,
+			       NULL);
+
+	g_object_unref (client);
+
+	if (enabled != FALSE)
+		launch_share ();
+}
+
+static void
+enable_check_toggled (GtkWidget *check)
+{
+	GConfClient *client;
+	gboolean enabled;
+
+	enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check));
+
+	client = gconf_client_get_default ();
+
+	gconf_client_set_bool (client,
+			       FILE_SHARING_ENABLED,
+			       enabled,
+			       NULL);
+
+	g_object_unref (client);
+
+	if (enabled != FALSE)
+		launch_share ();
 }
 
 static void
 password_entry_changed (GtkEditable *editable)
 {
-    g_object_set_data (G_OBJECT (editable),
-		       "user_edited", GINT_TO_POINTER (1));
-    flush_password ();
+	g_object_set_data (G_OBJECT (editable),
+			   "user_edited", GINT_TO_POINTER (1));
+	flush_password ();
 }
 
+static void
+bluetooth_allow_write_check_toggled (GtkWidget *check)
+{
+	GConfClient *client;
+	gboolean enabled;
+
+	enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check));
+
+	client = gconf_client_get_default ();
+
+	gconf_client_set_bool (client,
+			       FILE_SHARING_BLUETOOTH_ALLOW_WRITE,
+			       enabled,
+			       NULL);
+
+	g_object_unref (client);
+}
 
 int
 main (int argc, char *argv[])
@@ -250,6 +329,8 @@ main (int argc, char *argv[])
     GtkWidget *check;
     GtkWidget *password_combo;
     GtkWidget *password_entry;
+    GtkWidget *bluetooth_check;
+    GtkWidget *bluetooth_allow_write_check;
     GtkWidget *window;
     GtkListStore *store;
     GtkCellRenderer *cell;
@@ -278,6 +359,8 @@ main (int argc, char *argv[])
     check = glade_xml_get_widget (ui, "enable_check");
     password_combo = glade_xml_get_widget (ui, "password_combo");
     password_entry = glade_xml_get_widget (ui, "password_entry");
+    bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
+    bluetooth_allow_write_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
 
     store = gtk_list_store_new (1, G_TYPE_STRING);
     gtk_combo_box_set_model (GTK_COMBO_BOX (password_combo),
@@ -313,6 +396,11 @@ main (int argc, char *argv[])
 		      "toggled", G_CALLBACK (enable_check_toggled), NULL);
     g_signal_connect (password_combo,
 		      "changed", G_CALLBACK (password_combo_changed), NULL);
+    g_signal_connect (bluetooth_check,
+    		      "toggled", G_CALLBACK (enable_bluetooth_check_toggled), NULL);
+    g_signal_connect (bluetooth_allow_write_check,
+    		      "toggled", G_CALLBACK (bluetooth_allow_write_check_toggled), NULL);
+
     g_signal_connect (glade_xml_get_widget (ui, "close_button"),
 		      "clicked", G_CALLBACK (gtk_main_quit), NULL);
 
@@ -326,6 +414,18 @@ main (int argc, char *argv[])
     gconf_client_notify_add (client,
 			     FILE_SHARING_REQUIRE_PASSWORD,
 			     password_required_changed,
+			     NULL,
+			     NULL,
+			     NULL);
+    gconf_client_notify_add (client,
+			     FILE_SHARING_BLUETOOTH_ENABLED,
+			     file_sharing_bluetooth_enabled_changed,
+			     NULL,
+			     NULL,
+			     NULL);
+    gconf_client_notify_add (client,
+			     FILE_SHARING_BLUETOOTH_ALLOW_WRITE,
+			     file_sharing_bluetooth_allow_write_changed,
 			     NULL,
 			     NULL,
 			     NULL);

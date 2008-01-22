@@ -43,8 +43,13 @@ INCLUDES=	\
 	$(USER_SHARE_CONFIG_CFLAGS)			\
 	$(X_CFLAGS)
 
-gnome_user_share_SOURCES = \
-	user_share.c
+gnome_user_share_SOURCES =	\
+	user_share.c		\
+	user_share.h		\
+	http.c			\
+	http.h			\
+	obexftp.c		\
+	obexftp.h
 
 gnome_user_share_LDADD = \
 	$(HOWL_LIBS)	\

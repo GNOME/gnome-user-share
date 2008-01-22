@@ -5,4 +5,5 @@ file-share-properties.c
 file-share-properties.glade
 gnome-user-share-properties.desktop.in
 gnome-user-share.desktop.in.in
+http.c
 user_share.c

@@ -8,8 +8,8 @@
       <type>bool</type>
       <default>false</default>
       <locale name="C">
-        <short>Share Public directory</short>
-        <long>If this is true, the Public directory in the users home directory will be shared when the user is logged in.</long>
+        <short>Share Public directory over the network</short>
+        <long>If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in.</long>
       </locale>
     </schema>
     <schema>
@@ -21,6 +21,28 @@
       <locale name="C">
         <short>When to require passwords</short>
 	<long>When to ask for passwords. Possible values are "never", "on_write", and "always".</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/bluetooth_enabled</key>
+      <applyto>/desktop/gnome/file_sharing/bluetooth_enabled</applyto>
+      <owner>gnome-user-share</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Share Public directory over Bluetooth</short>
+        <long>If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/bluetooth_allow_write</key>
+      <applyto>/desktop/gnome/file_sharing/bluetooth_allow_write</applyto>
+      <owner>gnome-user-share</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Whether to allow Bluetooth clients to write files.</short>
+        <long>Whether to allow Bluetooth clients to write files, or share the files read-only.</long>
       </locale>
     </schema>
   </schemalist>
