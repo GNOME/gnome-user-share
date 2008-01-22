@@ -79,87 +79,19 @@ static guint disabled_timeout_tag = 0;
 static char *
 lookup_public_dir (void)
 {
-  FILE *file;
-  char *config_file;
-  char buffer[512];
-  char *user_dir;
-  char *p, *d;
-  int len;
-  int relative;
-  
-  config_file = g_build_filename (g_get_user_config_dir (), "user-dirs.dirs", NULL);
-  file = fopen (config_file, "r");
-  free (config_file);
-  if (file == NULL)
-	  goto error;
-  
-  user_dir = NULL;
-  while (fgets (buffer, sizeof (buffer), file)) {
-	  /* Remove newline at end */
-	  len = strlen (buffer);
-      if (len > 0 && buffer[len-1] == '\n')
-		  buffer[len-1] = 0;
-      
-      p = buffer;
-      while (*p == ' ' || *p == '\t')
-		  p++;
-      
-      if (!g_str_has_prefix (p, "XDG_PUBLICSHARE_DIR"))
-		  continue;
-      p += strlen ("XDG_PUBLICSHARE_DIR");
-	  
-      while (*p == ' ' || *p == '\t')
-		  p++;
-	  
-      if (*p != '=')
-		  continue;
-      p++;
-      
-      while (*p == ' ' || *p == '\t')
-		  p++;
-	  
-      if (*p != '"')
-		  continue;
-      p++;
-      
-      relative = 0;
-      if (strncmp (p, "$HOME/", 6) == 0) {
-		  p += 6;
-		  relative = 1;
-	  }
-      else if (*p != '/')
-		  continue;
-      
-      if (relative)	{
-		  user_dir = g_malloc (strlen (g_get_home_dir()) + 1 + strlen (p) + 1);
-		  strcpy (user_dir, g_get_home_dir ());
-		  strcat (user_dir, "/");
-	  } else {
-		  user_dir = g_malloc (strlen (p) + 1);
-		  *user_dir = 0;
-	  }
-      
-      d = user_dir + strlen (user_dir);
-      while (*p && *p != '"') {
-		  if ((*p == '\\') && (*(p+1) != 0))
-			  p++;
-		  *d++ = *p++;
-	  }
-      *d = 0;
-  }  
-  fclose (file);
+	const char *public_dir;
+	char *dir;
 
-  /* Don't export the whole homedir (happens if xdg-user-dirs disabled the dir) */
-  if (user_dir && strcmp (user_dir, g_get_home_dir ()) == 0) {
-	  g_free (user_dir);
-	  user_dir = NULL;
-  }
-  
-  if (user_dir)
-	  return user_dir;
-  
- error:
-  return g_build_filename (g_get_home_dir (), "Public", NULL);
+	public_dir = g_get_user_special_dir (G_USER_DIRECTORY_PUBLIC_SHARE);
+	if (public_dir != NULL && strcmp (public_dir, g_get_home_dir ()) != 0) {
+		g_mkdir_with_parents (public_dir, 0755);
+		return g_strdup (public_dir);
+	}
+	g_free (public_dir);
+
+	dir = g_build_filename (g_get_home_dir (), "Public", NULL);
+	g_mkdir_with_parents (public_dir, 0755);
+	return dir;
 }
 
 static int
@@ -513,28 +445,12 @@ stop_publishing (void)
 
 
 static void
-ensure_public_dir (char *dirname)
-{
-    if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
-		mkdir (dirname, 0755);
-    }
-}
-
-static void
 ensure_conf_dir (void)
 {
     char *dirname;
 
-    dirname = g_build_filename (g_get_home_dir (), ".gnome2", NULL);
-    if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
-		mkdir (dirname, 0755);
-    }
-    g_free (dirname);
-    
     dirname = g_build_filename (g_get_home_dir (), ".gnome2", "user-share", NULL);
-    if (!g_file_test (dirname, G_FILE_TEST_IS_DIR)) {
-		mkdir (dirname, 0755);
-    }
+    g_mkdir_with_parents (dirname, 0755);
     g_free (dirname);
 }
 
@@ -571,11 +487,9 @@ spawn_httpd (int port, pid_t *pid_out)
     gboolean got_pidfile;
     GConfClient *client;
     char *str;
-	char *public_dir;
+    char *public_dir;
 
-	public_dir = lookup_public_dir ();
-	
-    ensure_public_dir (public_dir);
+    public_dir = lookup_public_dir ();
     ensure_conf_dir ();
 
     i = 0;
@@ -625,7 +539,7 @@ spawn_httpd (int port, pid_t *pid_out)
     g_free (free1);
     g_free (free2);
     g_free (free3);
-	g_free (public_dir);
+    g_free (public_dir);
 
     if (!res) {
 		fprintf (stderr, "error spawning httpd: %s\n",

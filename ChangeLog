@@ -1,3 +1,23 @@
+2008-01-22  Bastien Nocera  <hadess@hadess.net>
+
+	* Makefile.am: update for changes
+	* configure.in: update requirements
+
+	* md5.c:
+	* md5.h: Remove
+
+	* file-share-properties.c: (password_string_from_setting),
+	(write_out_password), (enable_check_toggled):
+	Use GChecksum API to get the MD5 version of the password
+
+	* user_share.c: (lookup_public_dir), (get_port), (get_share_name),
+	(new_text_record_list), (create_service), (ensure_conf_dir),
+	(spawn_httpd): 
+	Use g_get_user_special_dir() to get the Public directory,
+	Use g_mkdir_with_parents() to create the directory if missing
+
+	(Closes: #511159)
+
 2008-01-18  Gil Forcada  <gforcada@gnome.org>
 
 	* configure.in: Added es, mk, tr and zh_CN to ALL_LINGUAS.

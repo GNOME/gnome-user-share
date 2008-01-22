@@ -31,8 +31,6 @@
 #include <glade/glade.h>
 #include <gconf/gconf-client.h>
 
-#include "md5.h"
-
 #define FILE_SHARING_DIR "/desktop/gnome/file_sharing"
 #define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
 #define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
@@ -88,17 +86,14 @@ static void
 write_out_password (const char *password)
 {
     char *to_hash;
-    unsigned char digest[16];
     char *ascii_digest;
     char *line;
     char *filename;
     FILE *file;
 
     to_hash = g_strdup_printf ("%s:%s:%s", USER, REALM, password);
-    gnome_user_share_md5_string (to_hash, digest);
+    ascii_digest = g_compute_checksum_for_string (G_CHECKSUM_MD5, to_hash, strlen (to_hash));
     g_free (to_hash);
-    
-    ascii_digest = gnome_user_share_md5_digest_to_ascii (digest);
     line = g_strdup_printf ("%s:%s:%s\n", USER, REALM, ascii_digest);
     g_free (ascii_digest);
 

@@ -54,7 +54,7 @@ gnome_user_share_LDADD = \
 	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
 
 gnome_file_share_properties_SOURCES = \
-	file-share-properties.c md5.c md5.h
+	file-share-properties.c
 
 gnome_file_share_properties_LDADD = \
 	$(USER_SHARE_CONFIG_LIBS)
