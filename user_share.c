@@ -87,10 +87,9 @@ lookup_public_dir (void)
 		g_mkdir_with_parents (public_dir, 0755);
 		return g_strdup (public_dir);
 	}
-	g_free (public_dir);
 
 	dir = g_build_filename (g_get_home_dir (), "Public", NULL);
-	g_mkdir_with_parents (public_dir, 0755);
+	g_mkdir_with_parents (dir, 0755);
 	return dir;
 }
 

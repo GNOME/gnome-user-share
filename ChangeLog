@@ -1,5 +1,10 @@
 2008-01-22  Bastien Nocera  <hadess@hadess.net>
 
+	* user_share.c: (lookup_public_dir):
+	Fix some stupidness
+
+2008-01-22  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am: update for changes
 	* configure.in: update requirements
 
