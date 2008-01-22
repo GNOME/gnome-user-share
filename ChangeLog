@@ -1,3 +1,10 @@
+=== gnome-user-share 0.20 ===
+
+2008-01-22  Bastien Nocera  <hadess@hadess.net>
+
+	* NEWS: upd
+	* configure.in: 0.20
+
 2008-01-22  Bastien Nocera  <hadess@hadess.net>
 
 	* Makefile.am: upd

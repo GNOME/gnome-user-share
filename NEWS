@@ -1,4 +1,13 @@
-This is gnome-user-share 0.11, a system for easy sharing of user files.
+This is gnome-user-share 0.20, a system for easy sharing of user files.
+
+Major changes since 0.11 are:
+* Add ObexFTP sharing through obex-data-server
+* Use XDG autostart to start gnome-user-share on login, exit straight-away
+  if we're not sharing any files
+* Use glib to get the Public directory and set the password for our HTTP share
+* Disable the password entry if the password setting is "never"
+* Exit the configuration tool when the "Close" button from the window
+  manager is pressed
 
 Major changes since 0.10 are:
 * Show more strings translated in the UI
