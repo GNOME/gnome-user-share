@@ -1,3 +1,7 @@
+2008-01-25  Matthias Clasen  <mclasen@redhat.com>
+
+	* file-share-properties.glade: Clarify a string
+
 === gnome-user-share 0.21 ===
 
 2008-01-25  Bastien Nocera  <hadess@hadess.net>
