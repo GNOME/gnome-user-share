@@ -1,4 +1,7 @@
-This is gnome-user-share 0.20, a system for easy sharing of user files.
+This is gnome-user-share 0.21, a system for easy sharing of user files.
+
+Major changes since 0.20 are:
+* Fix ObexFTP sharing allow deletes/writes when it shouldn't
 
 Major changes since 0.11 are:
 * Add ObexFTP sharing through obex-data-server
