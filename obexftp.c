@@ -74,7 +74,7 @@ obexftp_up (void)
 		g_free (session);
 	}
 	if (dbus_g_proxy_call (server_proxy, "Start", &err,
-			   G_TYPE_STRING, public_dir, G_TYPE_BOOLEAN, !allow_write, G_TYPE_INVALID,
+			   G_TYPE_STRING, public_dir, G_TYPE_BOOLEAN, allow_write, G_TYPE_INVALID,
 			   G_TYPE_INVALID) == FALSE) {
 		g_printerr ("Starting Bluetooth server session failed: %s\n",
 			    err->message);

@@ -1,3 +1,8 @@
+2008-01-25  Bastien Nocera  <hadess@hadess.net>
+
+	* obexftp.c: (obexftp_up): Fix allow_write being
+	the wrong way around
+
 === gnome-user-share 0.20 ===
 
 2008-01-22  Bastien Nocera  <hadess@hadess.net>
