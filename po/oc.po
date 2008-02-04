@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-27 13:21+0100\n"
+"POT-Creation-Date: 2008-02-02 21:53+0100\n"
 "PO-Revision-Date: 2007-11-20 14:31+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -20,32 +20,52 @@ msgstr ""
 #: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
+"shared over Bluetooth when the user is logged in."
 msgstr ""
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
 msgstr ""
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:3
+msgid "Share Public directory over Bluetooth"
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over the network"
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:5
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to require passwords"
 msgstr ""
 
-#: ../file-share-properties.c:294
+#: ../desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:8
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr ""
+
+#: ../file-share-properties.c:377
 msgid "Never"
 msgstr "Jamai"
 
-#: ../file-share-properties.c:297
+#: ../file-share-properties.c:380
 msgid "When writing files"
 msgstr ""
 
-#: ../file-share-properties.c:300
+#: ../file-share-properties.c:383
 msgid "Always"
 msgstr "Totjorn"
 
@@ -54,18 +74,26 @@ msgid "<b>Share Files</b>"
 msgstr "<b>Partejar de fichièrs</b>"
 
 #: ../file-share-properties.glade.h:2
-msgid "File Sharing Preferences"
+msgid "Allow remote devices to delete files"
 msgstr ""
 
 #: ../file-share-properties.glade.h:3
-msgid "Share Public files on network"
+msgid "File Sharing Preferences"
 msgstr ""
 
 #: ../file-share-properties.glade.h:4
+msgid "Share Public files on network"
+msgstr ""
+
+#: ../file-share-properties.glade.h:5
+msgid "Share Public files over Bluetooth"
+msgstr ""
+
+#: ../file-share-properties.glade.h:6
 msgid "_Password:"
 msgstr "Mot de _pas :"
 
-#: ../file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:7
 msgid "_Require password:"
 msgstr ""
 
@@ -77,6 +105,14 @@ msgstr ""
 msgid "Preferences for sharing of personal files"
 msgstr ""
 
+#: ../gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr ""
+
+#: ../gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr ""
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -86,14 +122,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:225
+#: ../http.c:136
 #, c-format
 msgid "%s's public files"
 msgstr ""
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:229
+#: ../http.c:140
 #, c-format
 msgid "%s's public files on %s"
 msgstr ""
