@@ -51,7 +51,7 @@ obexftp_up (void)
 							   "org.openobex.Manager");
 		if (dbus_g_proxy_call (manager_proxy, "CreateBluetoothServer",
 				       &err, G_TYPE_STRING, "00:00:00:00:00:00", G_TYPE_STRING, "ftp", G_TYPE_INVALID,
-				       G_TYPE_STRING, &session, G_TYPE_INVALID) == FALSE) {
+				       DBUS_TYPE_G_OBJECT_PATH, &session, G_TYPE_INVALID) == FALSE) {
 			g_printerr ("Creating Bluetooth server failed: %s\n",
 				    err->message);
 			g_error_free (err);

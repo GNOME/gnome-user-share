@@ -1,3 +1,8 @@
+2008-02-11  Bastien Nocera  <hadess@hadess.net>
+
+	* obexftp.c: (obexftp_up): Fix running with newer
+	obex-data-server
+
 2008-01-25  Matthias Clasen  <mclasen@redhat.com>
 
 	* file-share-properties.glade: Clarify a string
