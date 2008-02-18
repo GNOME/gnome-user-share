@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD.ne\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-15 11:28+0200\n"
+"POT-Creation-Date: 2007-01-02 03:12+0000\n"
 "PO-Revision-Date: 2006-09-05 11:14+0545\n"
 "Last-Translator: Mahesh subedi <submanesh@hotmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -28,8 +28,8 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared when the user is logged in."
 msgstr ""
-"यदि यो सहि हो भने, प्रयोगकर्ता लगइन हुँदा प्रयोगकर्ताहरूको गृह डाइरेक्टरीको "
-"सार्वजनिक डाइरेक्टरी साझेदारी हुँनेछ ।"
+"यदि यो सहि हो भने, प्रयोगकर्ता लगइन हुँदा प्रयोगकर्ताहरूको गृह डाइरेक्टरीको सार्वजनिक "
+"डाइरेक्टरी साझेदारी हुँनेछ ।"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
 msgid "Share Public directory"
@@ -39,21 +39,22 @@ msgstr "सार्वजनिक डाइरेक्टरी साझे�
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "पासवर्ड कति बेला माग्ने, संभाव्य मानहरू \"never\", \"on_write\", र \"always\" छन् ।"
+msgstr ""
+"पासवर्ड कति बेला माग्ने, संभाव्य मानहरू \"never\", \"on_write\", र \"always\" छन् ।"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:4
 msgid "When to require passwords"
 msgstr "पासवर्ड कति बेला आवश्यक पर्ला"
 
-#: ../file-share-properties.c:290
+#: ../file-share-properties.c:294
 msgid "Never"
 msgstr "कहिल्यै पनि होइन"
 
-#: ../file-share-properties.c:293
+#: ../file-share-properties.c:297
 msgid "When writing files"
 msgstr "फाइल लेख्दा"
 
-#: ../file-share-properties.c:296
+#: ../file-share-properties.c:300
 msgid "Always"
 msgstr "सधै"
 
@@ -105,4 +106,3 @@ msgstr "%s को सार्वजनिक फाइल"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s मा %s' को सार्वजनिक फाइल"
-
