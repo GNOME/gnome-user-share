@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-06 17:20+0300\n"
+"POT-Creation-Date: 2008-02-19 09:01+0300\n"
 "PO-Revision-Date: 2006-07-02 23:33+0300\n"
 "Last-Translator: Tommi Vainikainen <Tommi.Vainikainen@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
@@ -20,16 +20,28 @@ msgstr ""
 #: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
+"shared over Bluetooth when the user is logged in."
 msgstr ""
-"Jos tämä on tosi, kansio Julkinen käyttäjän kotihakemistosta jaetaan, kun "
-"käyttäjä on kirjautuneena sisään."
+"Jos tämä on tosi, kansio \"Julkinen\" käyttäjän kotihakemistosta jaetaan "
+"Bluetooth-verkossa, kun käyttäjä on kirjautuneena sisään."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "Jaa Julkinen-kansio"
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"Jos tämä on tosi, kansio \"Julkinen\" käyttäjän kotihakemistosta jaetaan "
+"verkossa, kun käyttäjä on kirjautuneena sisään."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:3
+msgid "Share Public directory over Bluetooth"
+msgstr "Jaa julkinen kansio bluetooth-verkossa"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over the network"
+msgstr "Jaa julkinen kansio verkossa"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:5
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -37,39 +49,59 @@ msgstr ""
 "Milloin kysytään salasanoja. Mahdolliset arvot ovat: \"never\" (ei koskaan), "
 "\"on_write\" (kirjoitettaessa) ja \"always\" (aina)."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to require passwords"
 msgstr "Milloin vaaditaan salasanat"
 
-#: ../file-share-properties.c:294
+#: ../desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+"Sallitaanko bluetooth-asiakkaiden kirjoittaa tiedostoja vai vain lukea "
+"jaettuja tiedostoja."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:8
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Sallitaanko bluetooth-käyttäjien kirjoittaa tiedostoja."
+
+#: ../file-share-properties.c:377
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: ../file-share-properties.c:297
+#: ../file-share-properties.c:380
 msgid "When writing files"
 msgstr "Kirjoitettaessa tiedostoja"
 
-#: ../file-share-properties.c:300
+#: ../file-share-properties.c:383
 msgid "Always"
 msgstr "Aina"
 
 #: ../file-share-properties.glade.h:1
 msgid "<b>Share Files</b>"
-msgstr "<b>Jaa tiedostoja</b>"
+msgstr "<b>Tiedostojen jako</b>"
 
 #: ../file-share-properties.glade.h:2
+msgid "Allow remote devices to delete files"
+msgstr "Salli etälaitteiden poistaa tiedostoja"
+
+#: ../file-share-properties.glade.h:3
 msgid "File Sharing Preferences"
 msgstr "Tiedostojen jaon asetukset"
 
-#: ../file-share-properties.glade.h:3
+#: ../file-share-properties.glade.h:4
 msgid "Share Public files on network"
 msgstr "Jaa tiedostoja verkossa"
 
-#: ../file-share-properties.glade.h:4
+#: ../file-share-properties.glade.h:5
+msgid "Share Public files over Bluetooth"
+msgstr "Jaa julkiset tiedosto bluetooth-verkossa"
+
+#: ../file-share-properties.glade.h:6
 msgid "_Password:"
 msgstr "_Salasana:"
 
-#: ../file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:7
 msgid "_Require password:"
 msgstr "_Vaadi salasana:"
 
@@ -81,6 +113,14 @@ msgstr "Omien tiedostojen jako"
 msgid "Preferences for sharing of personal files"
 msgstr "Asetukset henkilökohtaisten tietojen jakamiselle"
 
+#: ../gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "Käynnistä käyttäjän tiedostonjako, jos käytössä"
+
+#: ../gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr "Käyttäjän tiedostojen jako"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -90,15 +130,14 @@ msgstr "Asetukset henkilökohtaisten tietojen jakamiselle"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:225
+#: ../http.c:136
 #, c-format
 msgid "%s's public files"
 msgstr "Käyttäjän %s julkiset tiedostot"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:229
+#: ../http.c:140
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Käyttäjän %s julkiset tiedostot palvelimella %s"
-
