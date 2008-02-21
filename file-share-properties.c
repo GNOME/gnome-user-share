@@ -31,11 +31,7 @@
 #include <glade/glade.h>
 #include <gconf/gconf-client.h>
 
-#define FILE_SHARING_DIR "/desktop/gnome/file_sharing"
-#define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
-#define FILE_SHARING_BLUETOOTH_ENABLED "/desktop/gnome/file_sharing/bluetooth_enabled"
-#define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
-#define FILE_SHARING_BLUETOOTH_ALLOW_WRITE "/desktop/gnome/file_sharing/bluetooth_allow_write"
+#include "user_share-private.h"
 
 #define REALM "Please log in as the user guest"
 #define USER "guest"
@@ -132,7 +128,7 @@ static void
 update_ui (void)
 {
     GConfClient *client;
-    gboolean enabled, bluetooth_enabled, bluetooth_write_enabled;
+    gboolean enabled, bluetooth_enabled, bluetooth_write_enabled, require_pairing_enabled;
     char *str;
     PasswordSetting password_setting;
     GtkWidget *check;
@@ -140,6 +136,7 @@ update_ui (void)
     GtkWidget *password_entry;
     GtkWidget *bluetooth_check;
     GtkWidget *allow_write_bluetooth_check;
+    GtkWidget *require_pairing_check;
 
     client = gconf_client_get_default ();
 
@@ -152,6 +149,9 @@ update_ui (void)
     bluetooth_write_enabled = gconf_client_get_bool (client,
 						     FILE_SHARING_BLUETOOTH_ALLOW_WRITE,
 						     NULL);
+    require_pairing_enabled = gconf_client_get_bool (client,
+    						     FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING,
+    						     NULL);
 
     str = gconf_client_get_string (client, FILE_SHARING_REQUIRE_PASSWORD, NULL);
     password_setting = password_setting_from_string (str);
@@ -162,6 +162,7 @@ update_ui (void)
     password_entry = glade_xml_get_widget (ui, "password_entry");
     bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
     allow_write_bluetooth_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
+    require_pairing_check = glade_xml_get_widget (ui, "require_pairing_check");
 
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check), enabled);
     gtk_widget_set_sensitive (password_combo, enabled);
@@ -172,9 +173,12 @@ update_ui (void)
 
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (bluetooth_check), bluetooth_enabled);
     gtk_widget_set_sensitive (allow_write_bluetooth_check, bluetooth_enabled);
+    gtk_widget_set_sensitive (require_pairing_check, bluetooth_enabled);
 
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (allow_write_bluetooth_check),
     				  bluetooth_write_enabled);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (require_pairing_check),
+    				  require_pairing_enabled);
 
     g_object_unref (client);
 }
@@ -211,6 +215,15 @@ file_sharing_bluetooth_allow_write_changed (GConfClient* client,
 					    guint cnxn_id,
 					    GConfEntry *entry,
 					    gpointer data)
+{
+	update_ui ();
+}
+
+static void
+file_sharing_bluetooth_require_pairing_changed (GConfClient* client,
+						guint cnxn_id,
+						GConfEntry *entry,
+						gpointer data)
 {
 	update_ui ();
 }
@@ -426,6 +439,12 @@ main (int argc, char *argv[])
     gconf_client_notify_add (client,
 			     FILE_SHARING_BLUETOOTH_ALLOW_WRITE,
 			     file_sharing_bluetooth_allow_write_changed,
+			     NULL,
+			     NULL,
+			     NULL);
+    gconf_client_notify_add (client,
+			     FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING,
+			     file_sharing_bluetooth_require_pairing_changed,
 			     NULL,
 			     NULL,
 			     NULL);

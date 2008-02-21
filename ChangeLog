@@ -1,3 +1,20 @@
+2008-02-21  Bastien Nocera  <hadess@hadess.net>
+
+	* Makefile.am:
+	* desktop_gnome_file_sharing.schemas.in:
+	* file-share-properties.c (password_string_from_setting),
+	(update_ui), (file_sharing_bluetooth_require_pairing_changed),
+	(launch_share), (main):
+	* file-share-properties.glade:
+	* http.c (get_share_name):
+	* obexftp.c (obexftp_up):
+	* user_share-private.h:
+	* user_share.c (lookup_download_dir),
+	(file_sharing_bluetooth_require_pairing_changed), (main):
+	* user_share.h:
+	Add support for the new "Require pairing" from obex-data-server
+	0.2, update API usage for 0.3
+
 2008-02-11  Bastien Nocera  <hadess@hadess.net>
 
 	* obexftp.c: (obexftp_up): Fix running with newer

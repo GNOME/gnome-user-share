@@ -30,6 +30,7 @@
 
 #include "obexftp.h"
 #include "user_share.h"
+#include "user_share-private.h"
 
 static DBusGConnection *connection = NULL;
 static DBusGProxy *manager_proxy = NULL;
@@ -41,7 +42,10 @@ obexftp_up (void)
 	GError *err = NULL;
 	GConfClient *client;
 	char *public_dir, *session;
-	gboolean allow_write;
+	gboolean allow_write, require_pairing;
+
+	client = gconf_client_get_default ();
+	require_pairing = gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING, NULL);
 
 	session = NULL;
 	if (manager_proxy == NULL) {
@@ -50,7 +54,7 @@ obexftp_up (void)
 							   "/org/openobex",
 							   "org.openobex.Manager");
 		if (dbus_g_proxy_call (manager_proxy, "CreateBluetoothServer",
-				       &err, G_TYPE_STRING, "00:00:00:00:00:00", G_TYPE_STRING, "ftp", G_TYPE_INVALID,
+				       &err, G_TYPE_STRING, "00:00:00:00:00:00", G_TYPE_STRING, "ftp", G_TYPE_BOOLEAN, require_pairing, G_TYPE_INVALID,
 				       DBUS_TYPE_G_OBJECT_PATH, &session, G_TYPE_INVALID) == FALSE) {
 			g_printerr ("Creating Bluetooth server failed: %s\n",
 				    err->message);
@@ -62,7 +66,6 @@ obexftp_up (void)
 	}
 
 	public_dir = lookup_public_dir ();
-	client = gconf_client_get_default ();
 	allow_write = gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ALLOW_WRITE, NULL);
 	g_object_unref (client);
 
@@ -74,7 +77,7 @@ obexftp_up (void)
 		g_free (session);
 	}
 	if (dbus_g_proxy_call (server_proxy, "Start", &err,
-			   G_TYPE_STRING, public_dir, G_TYPE_BOOLEAN, allow_write, G_TYPE_INVALID,
+			   G_TYPE_STRING, public_dir, G_TYPE_BOOLEAN, allow_write, G_TYPE_BOOLEAN, TRUE, G_TYPE_INVALID,
 			   G_TYPE_INVALID) == FALSE) {
 		g_printerr ("Starting Bluetooth server session failed: %s\n",
 			    err->message);

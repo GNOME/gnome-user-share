@@ -46,6 +46,7 @@ INCLUDES=	\
 gnome_user_share_SOURCES =	\
 	user_share.c		\
 	user_share.h		\
+	user_share-private.h	\
 	http.c			\
 	http.h			\
 	obexftp.c		\
@@ -58,8 +59,9 @@ gnome_user_share_LDADD = \
 	$(SELINUX_LIBS)	\
 	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
 
-gnome_file_share_properties_SOURCES = \
-	file-share-properties.c
+gnome_file_share_properties_SOURCES =	\
+	file-share-properties.c		\
+	user_share-private.h
 
 gnome_file_share_properties_LDADD = \
 	$(USER_SHARE_CONFIG_LIBS)

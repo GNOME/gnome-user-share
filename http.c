@@ -65,6 +65,7 @@
 #endif
 
 #include "user_share.h"
+#include "user_share-private.h"
 #include "http.h"
 
 #ifdef HAVE_DBUS_1_1

@@ -21,11 +21,6 @@
  *
  */
 
-#define FILE_SHARING_DIR "/desktop/gnome/file_sharing"
-#define FILE_SHARING_ENABLED "/desktop/gnome/file_sharing/enabled"
-#define FILE_SHARING_BLUETOOTH_ENABLED "/desktop/gnome/file_sharing/bluetooth_enabled"
-#define FILE_SHARING_REQUIRE_PASSWORD "/desktop/gnome/file_sharing/require_password"
-#define FILE_SHARING_BLUETOOTH_ALLOW_WRITE "/desktop/gnome/file_sharing/bluetooth_allow_write"
-
 char *lookup_public_dir (void);
+char *lookup_download_dir (void);
 

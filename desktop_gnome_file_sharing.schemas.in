@@ -45,5 +45,16 @@
         <long>Whether to allow Bluetooth clients to write files, or share the files read-only.</long>
       </locale>
     </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/bluetooth_require_pairing</key>
+      <applyto>/desktop/gnome/file_sharing/bluetooth_require_pairing</applyto>
+      <owner>gnome-user-share</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Whether Bluetooth clients need to pair with the computer to send files.</short>
+        <long>Whether Bluetooth clients need to pair with the computer to send files.</long>
+      </locale>
+    </schema>
   </schemalist>
 </gconfschemafile>

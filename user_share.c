@@ -28,6 +28,7 @@
 #include <X11/Xlib.h>
 
 #include "user_share.h"
+#include "user_share-private.h"
 #include "http.h"
 #include "obexftp.h"
 
@@ -56,6 +57,23 @@ lookup_public_dir (void)
 	}
 
 	dir = g_build_filename (g_get_home_dir (), "Public", NULL);
+	g_mkdir_with_parents (dir, 0755);
+	return dir;
+}
+
+char *
+lookup_download_dir (void)
+{
+	const char *download_dir;
+	char *dir;
+
+	download_dir = g_get_user_special_dir (G_USER_DIRECTORY_DOWNLOAD);
+	if (download_dir != NULL && strcmp (download_dir, g_get_home_dir ()) != 0) {
+		g_mkdir_with_parents (download_dir, 0755);
+		return g_strdup (download_dir);
+	}
+
+	dir = g_build_filename (g_get_home_dir (), "Download", NULL);
 	g_mkdir_with_parents (dir, 0755);
 	return dir;
 }
@@ -119,6 +137,15 @@ file_sharing_bluetooth_allow_write_changed (GConfClient* client,
 					    guint cnxn_id,
 					    GConfEntry *entry,
 					    gpointer data)
+{
+	obexftp_restart ();
+}
+
+static void
+file_sharing_bluetooth_require_pairing_changed (GConfClient* client,
+						guint cnxn_id,
+						GConfEntry *entry,
+						gpointer data)
 {
 	obexftp_restart ();
 }
@@ -263,6 +290,13 @@ main (int argc, char **argv)
 				 NULL,
 				 NULL,
 				 NULL);
+	gconf_client_notify_add (client,
+				 FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING,
+				 file_sharing_bluetooth_require_pairing_changed,
+				 NULL,
+				 NULL,
+				 NULL);
+
 	g_object_unref (client);
 
 	/* Initial setting */
