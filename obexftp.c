@@ -101,7 +101,7 @@ obexftp_stop (gboolean stop_manager)
 	if (server_proxy == NULL)
 		return;
 
-	if (dbus_g_proxy_call (server_proxy, "Stop", &err, G_TYPE_INVALID, G_TYPE_INVALID) == FALSE) {
+	if (dbus_g_proxy_call (server_proxy, "Close", &err, G_TYPE_INVALID, G_TYPE_INVALID) == FALSE) {
 		const gchar *error_name = NULL;
 
 		if (err != NULL && err->code == DBUS_GERROR_REMOTE_EXCEPTION)

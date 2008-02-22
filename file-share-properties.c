@@ -335,6 +335,24 @@ bluetooth_allow_write_check_toggled (GtkWidget *check)
 	g_object_unref (client);
 }
 
+static void
+bluetooth_require_pairing_check_toggled (GtkWidget *check)
+{
+	GConfClient *client;
+	gboolean enabled;
+
+	enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check));
+
+	client = gconf_client_get_default ();
+
+	gconf_client_set_bool (client,
+			       FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING,
+			       enabled,
+			       NULL);
+
+	g_object_unref (client);
+}
+
 int
 main (int argc, char *argv[])
 {
@@ -344,6 +362,7 @@ main (int argc, char *argv[])
     GtkWidget *password_entry;
     GtkWidget *bluetooth_check;
     GtkWidget *bluetooth_allow_write_check;
+    GtkWidget *require_pairing_check;
     GtkWidget *window;
     GtkListStore *store;
     GtkCellRenderer *cell;
@@ -374,6 +393,7 @@ main (int argc, char *argv[])
     password_entry = glade_xml_get_widget (ui, "password_entry");
     bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
     bluetooth_allow_write_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
+    require_pairing_check = glade_xml_get_widget (ui, "require_pairing_check");
 
     store = gtk_list_store_new (1, G_TYPE_STRING);
     gtk_combo_box_set_model (GTK_COMBO_BOX (password_combo),
@@ -413,6 +433,8 @@ main (int argc, char *argv[])
     		      "toggled", G_CALLBACK (enable_bluetooth_check_toggled), NULL);
     g_signal_connect (bluetooth_allow_write_check,
     		      "toggled", G_CALLBACK (bluetooth_allow_write_check_toggled), NULL);
+    g_signal_connect (require_pairing_check,
+    		      "toggled", G_CALLBACK (bluetooth_require_pairing_check_toggled), NULL);
 
     g_signal_connect (glade_xml_get_widget (ui, "close_button"),
 		      "clicked", G_CALLBACK (gtk_main_quit), NULL);

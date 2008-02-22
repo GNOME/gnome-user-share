@@ -1,3 +1,16 @@
+2008-02-22  Bastien Nocera  <hadess@hadess.net>
+
+	* file-share-properties.c:
+	(bluetooth_require_pairing_check_toggled), (main):
+	Make the toggle button for "require pairing" actually work
+
+	* user_share.c: (file_sharing_bluetooth_require_pairing_changed):
+	Fully restart the obex manager, as we need to tear down to
+	use "require pairing"
+
+	* obexftp.c: (obexftp_up), (obexftp_stop): Call "Close" instead
+	of "Stop" to tear down the server object
+
 2008-02-21  Bastien Nocera  <hadess@hadess.net>
 
 	* Makefile.am:

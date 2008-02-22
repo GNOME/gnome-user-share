@@ -147,7 +147,10 @@ file_sharing_bluetooth_require_pairing_changed (GConfClient* client,
 						GConfEntry *entry,
 						gpointer data)
 {
-	obexftp_restart ();
+	/* We need to fully reset the session,
+	 * otherwise the new setting isn't taken into account */
+	obexftp_down ();
+	obexftp_up ();
 }
 
 static void
