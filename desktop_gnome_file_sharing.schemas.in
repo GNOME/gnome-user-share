@@ -50,7 +50,7 @@
       <applyto>/desktop/gnome/file_sharing/bluetooth_require_pairing</applyto>
       <owner>gnome-user-share</owner>
       <type>bool</type>
-      <default>false</default>
+      <default>true</default>
       <locale name="C">
         <short>Whether Bluetooth clients need to pair with the computer to send files.</short>
         <long>Whether Bluetooth clients need to pair with the computer to send files.</long>

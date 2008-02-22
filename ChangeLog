@@ -1,5 +1,10 @@
 2008-02-22  Bastien Nocera  <hadess@hadess.net>
 
+	* desktop_gnome_file_sharing.schemas.in: Require pairing by
+	default for better security by default
+
+2008-02-22  Bastien Nocera  <hadess@hadess.net>
+
 	* file-share-properties.c:
 	(bluetooth_require_pairing_check_toggled), (main):
 	Make the toggle button for "require pairing" actually work
