@@ -1,16 +1,14 @@
 # Swedish messages for gnome-user-share.
-# Copyright (C) 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2005, 2006, 2008 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2005.
-# Daniel Nylander <po@danielnylander.se>, 2006.
-#
-# $Id$
+# Daniel Nylander <po@danielnylander.se>, 2006, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-23 03:27+0200\n"
-"PO-Revision-Date: 2006-04-23 11:27+0100\n"
+"POT-Creation-Date: 2008-02-22 12:30+0100\n"
+"PO-Revision-Date: 2008-02-22 12:40+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -18,50 +16,135 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:1
-msgid "If this is true, the Public directory in the users home directory will be shared when the user is logged in."
-msgstr "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas när användaren är inloggad."
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "Om detta är sant kan blåtandsenheter skicka filer till användarens katalog Hämtat när användaren är inloggad."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "Dela publik katalog"
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas ut över Bluetooth när användaren är inloggad."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:3
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas ut på nätverket när användaren är inloggad."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over Bluetooth"
+msgstr "Dela ut publik katalog över Bluetooth"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:5
+msgid "Share Public directory over the network"
+msgstr "Dela ut publik katalog över nätverket"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "När filer skickade över Bluetooth ska accepteras"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:7
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr "När filer skickad över Bluetooth ska accepteras. Möjliga värden är \"always\" (alltid), \"bonded\" (ihopparad), \"bonded_trusted\" (ihopparad och pålitlig) och \"ask\" (fråga)."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:8
 msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
 msgstr "När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), \"on_write\" (vid skrivning) och \"always\" (alltid)."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
 msgstr "När lösenord ska krävas"
 
-#: ../file-share-properties.c:290
+#: ../desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Huruvida blåtandsklienter kan skicka filer med ObexPush."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "Huruvida blåtandsklienter behöver paras ihop med datorn för att skicka filer."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:12
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "Huruvida blåtandsklienter ska tillåtas att skriva filer, eller dela ut filerna skrivskyddade."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Huruvida blåtandsklienter ska tillåtas att skriva filer."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "Huruvida notifiering om nyligen mottagna filer ska göras."
+
+#: ../file-share-properties.c:491
 msgid "Never"
 msgstr "Aldrig"
 
-#: ../file-share-properties.c:293
+#: ../file-share-properties.c:494
 msgid "When writing files"
 msgstr "När filer skrivs"
 
-#: ../file-share-properties.c:296
+#: ../file-share-properties.c:497
+#: ../file-share-properties.c:520
 msgid "Always"
 msgstr "Alltid"
 
+#: ../file-share-properties.c:523
+msgid "Only for Bonded devices"
+msgstr "Endast för ihopparade enheter"
+
+#: ../file-share-properties.c:526
+msgid "Only for Paired and Trusted devices"
+msgstr "Endast för ihopparade och pålitliga enheter"
+
+#: ../file-share-properties.c:531
+msgid "Ask"
+msgstr "Fråga"
+
 #: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Dela filer</b>"
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Ta emot filer över Bluetooth</b>"
 
 #: ../file-share-properties.glade.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Dela filer över Bluetooth</b>"
+
+#: ../file-share-properties.glade.h:3
+msgid "<b>Share Files over the network</b>"
+msgstr "<b>Dela filer över nätverket</b>"
+
+#: ../file-share-properties.glade.h:4
+msgid "Accept files: "
+msgstr "Acceptera filer: "
+
+#: ../file-share-properties.glade.h:5
+msgid "Allow remote devices to delete files"
+msgstr "Tillåt fjärrenheter att ta bort filer"
+
+#: ../file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr "Inställningar för fildelning"
 
-#: ../file-share-properties.glade.h:3
-msgid "Share Public files on network"
-msgstr "Dela publika filer på nätverket"
+#: ../file-share-properties.glade.h:7
+msgid "Notify about received files"
+msgstr "Notifiera om mottagna filer"
 
-#: ../file-share-properties.glade.h:4
+#: ../file-share-properties.glade.h:8
+msgid "Receive files in Downloads folder over Bluetooth"
+msgstr "Ta emot filer i mappen Hämtat över Bluetooth"
+
+#: ../file-share-properties.glade.h:9
+msgid "Require remote devices to bond with this computer"
+msgstr "Kräv att fjärrenheter paras ihop med denna dator"
+
+#: ../file-share-properties.glade.h:10
+msgid "Share Public files on network"
+msgstr "Dela ut publika filer på nätverket"
+
+#: ../file-share-properties.glade.h:11
+msgid "Share Public files over Bluetooth"
+msgstr "Dela publika filer över Bluetooth"
+
+#: ../file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "_Lösenord:"
 
-#: ../file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:13
 msgid "_Require password:"
 msgstr "_Kräv lösenord:"
 
@@ -72,6 +155,14 @@ msgstr "Utdelning av personliga filer"
 #: ../gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
 msgstr "Inställningar för utdelning av personliga filer"
+
+#: ../gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "Starta Användardelning om aktiverat"
+
+#: ../gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr "Användardelning"
 
 # Vi undviker på detta sätt problemen som "%ss publika filer" skulle
 # skapat, exempelvis "Alexs publika filer" eller "Markuss publika filer".
@@ -86,7 +177,7 @@ msgstr "Inställningar för utdelning av personliga filer"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:130
+#: ../http.c:137
 #, c-format
 msgid "%s's public files"
 msgstr "%.0sPublika filer"
@@ -97,7 +188,7 @@ msgstr "%.0sPublika filer"
 #
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:134
+#: ../http.c:141
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%.0sPublika filer på %s"
@@ -115,8 +206,6 @@ msgstr "%.0sPublika filer på %s"
 #~ msgstr "Dela filer"
 #~ msgid "Share files"
 #~ msgstr "Dela filer"
-#~ msgid "File sharing"
-#~ msgstr "Fildelning"
 #~ msgid "Preferences"
 #~ msgstr "Inställningar"
 #~ msgid "Password:"
