@@ -56,5 +56,39 @@
         <long>Whether Bluetooth clients need to pair with the computer to send files.</long>
       </locale>
     </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/bluetooth_obexpush_enabled</key>
+      <applyto>/desktop/gnome/file_sharing/bluetooth_obexpush_enabled</applyto>
+      <owner>gnome-user-share</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Whether Bluetooth clients can send files using ObexPush.</short>
+        <long>If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/bluetooth_accept_files</key>
+      <applyto>/desktop/gnome/file_sharing/bluetooth_accept_files</applyto>
+      <owner>gnome-user-share</owner>
+      <type>string</type>
+      <default>bonded</default>
+      <locale name="C">
+        <short>When to accept files sent over Bluetooth</short>
+	<long>When to accept files sent over Bluetooth. Possible values are "always", "bonded", "bonded_trusted" and "ask".</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/file_sharing/bluetooth_notify</key>
+      <applyto>/desktop/gnome/file_sharing/bluetooth_notify</applyto>
+      <owner>gnome-user-share</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Whether to notify about newly received files.</short>
+        <long>Whether to notify about newly received files.</long>
+      </locale>
+    </schema>
   </schemalist>
 </gconfschemafile>
+

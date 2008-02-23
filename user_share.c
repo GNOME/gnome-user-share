@@ -23,7 +23,7 @@
 
 #include "config.h"
 
-#include <glib.h>
+#include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <X11/Xlib.h>
 
@@ -31,6 +31,7 @@
 #include "user_share-private.h"
 #include "http.h"
 #include "obexftp.h"
+#include "obexpush.h"
 
 #include <gconf/gconf-client.h>
 
@@ -99,8 +100,8 @@ disabled_timeout_callback (gpointer user_data)
 	GConfClient* client = (GConfClient *) user_data;
 	http_down ();
 
-	if (gconf_client_get_bool (client,
-				   FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE)
+	if (gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE &&
+	    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, NULL) == FALSE)
 		_exit (0);
 	return FALSE;
 }
@@ -138,7 +139,8 @@ file_sharing_bluetooth_allow_write_changed (GConfClient* client,
 					    GConfEntry *entry,
 					    gpointer data)
 {
-	obexftp_restart ();
+	if (gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) != FALSE)
+		obexftp_restart ();
 }
 
 static void
@@ -147,10 +149,12 @@ file_sharing_bluetooth_require_pairing_changed (GConfClient* client,
 						GConfEntry *entry,
 						gpointer data)
 {
-	/* We need to fully reset the session,
-	 * otherwise the new setting isn't taken into account */
-	obexftp_down ();
-	obexftp_up ();
+	if (gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) != FALSE) {
+		/* We need to fully reset the session,
+		 * otherwise the new setting isn't taken into account */
+		obexftp_down ();
+		obexftp_up ();
+	}
 }
 
 static void
@@ -162,13 +166,56 @@ file_sharing_bluetooth_enabled_changed (GConfClient* client,
 	if (gconf_client_get_bool (client,
 				   FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE) {
 		obexftp_down ();
-		if (gconf_client_get_bool (client,
-					   FILE_SHARING_ENABLED, NULL) == FALSE) {
+		if (gconf_client_get_bool (client, FILE_SHARING_ENABLED, NULL) == FALSE &&
+		    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, NULL) == FALSE) {
 			_exit (0);
 		}
 	} else {
 		obexftp_up ();
 	}
+}
+
+static void
+file_sharing_bluetooth_obexpush_enabled_changed (GConfClient* client,
+						 guint cnxn_id,
+						 GConfEntry *entry,
+						 gpointer data)
+{
+	if (gconf_client_get_bool (client,
+				   FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, NULL) == FALSE) {
+		obexpush_down ();
+		if (gconf_client_get_bool (client, FILE_SHARING_ENABLED, NULL) == FALSE &&
+		    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE) {
+			_exit (0);
+		}
+	} else {
+		obexpush_up ();
+	}
+}
+
+static void
+file_sharing_bluetooth_obexpush_accept_files_changed (GConfClient* client,
+						      guint cnxn_id,
+						      GConfEntry *entry,
+						      gpointer data)
+{
+	AcceptSetting setting;
+	char *str;
+
+	str = gconf_client_get_string (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ACCEPT_FILES, NULL);
+	setting = accept_setting_from_string (str);
+	g_free (str);
+
+	obexpush_set_accept_files_policy (setting);
+}
+
+static void
+file_sharing_bluetooth_obexpush_notify_changed (GConfClient* client,
+						guint cnxn_id,
+						GConfEntry *entry,
+						gpointer data)
+{
+	obexpush_set_notify (gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY, NULL));
 }
 
 static RETSIGTYPE
@@ -247,7 +294,8 @@ main (int argc, char **argv)
 
 	client = gconf_client_get_default ();
 	if (gconf_client_get_bool (client, FILE_SHARING_ENABLED, NULL) == FALSE &&
-	    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE)
+	    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE &&
+	    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, NULL) == FALSE)
 		return 1;
 
 	x_fd = ConnectionNumber (xdisplay);
@@ -259,9 +307,13 @@ main (int argc, char **argv)
 			x_input, xdisplay);
 	g_io_channel_unref (channel);
 
+	gtk_init (&argc, &argv);
+
 	if (http_init () == FALSE)
 		return 1;
 	if (obexftp_init () == FALSE)
+		return 1;
+	if (obexpush_init () == FALSE)
 		return 1;
 
 	gconf_client_add_dir (client,
@@ -299,12 +351,33 @@ main (int argc, char **argv)
 				 NULL,
 				 NULL,
 				 NULL);
+	gconf_client_notify_add (client,
+				 FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED,
+				 file_sharing_bluetooth_obexpush_enabled_changed,
+				 NULL,
+				 NULL,
+				 NULL);
+	gconf_client_notify_add (client,
+				 FILE_SHARING_BLUETOOTH_OBEXPUSH_ACCEPT_FILES,
+				 file_sharing_bluetooth_obexpush_accept_files_changed,
+				 NULL,
+				 NULL,
+				 NULL);
+	gconf_client_notify_add (client,
+				 FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY,
+				 file_sharing_bluetooth_obexpush_notify_changed,
+				 NULL,
+				 NULL,
+				 NULL);
 
 	g_object_unref (client);
 
 	/* Initial setting */
 	file_sharing_enabled_changed (client, 0, NULL, NULL);
 	file_sharing_bluetooth_enabled_changed (client, 0, NULL, NULL);
+	file_sharing_bluetooth_obexpush_accept_files_changed (client, 0, NULL, NULL);
+	file_sharing_bluetooth_obexpush_notify_changed (client, 0, NULL, NULL);
+	file_sharing_bluetooth_obexpush_enabled_changed (client, 0, NULL, NULL);
 
 	g_main_loop_run (loop);
 

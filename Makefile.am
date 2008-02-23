@@ -4,7 +4,7 @@ schema_in_files = \
 
 schema_DATA = $(schema_in_files:.schemas.in=.schemas)
 
-SUBDIRS = po
+SUBDIRS = icons po
 
 @INTLTOOL_DESKTOP_RULE@
 
@@ -15,6 +15,15 @@ desktop_in_files = gnome-user-share-properties.desktop.in
 autostartdir = $(datadir)/gnome/autostart/
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 autostart_in_files = gnome-user-share.desktop.in
+
+MARSHALFILES = marshal.c marshal.h
+BUILT_SOURCES = $(MARSHALFILES)
+
+marshal.c: marshal.h
+	 ( $(GLIB_GENMARSHAL) --prefix=marshal $(srcdir)/marshal.list --header --body > marshal.c )
+marshal.h: marshal.list
+	( $(GLIB_GENMARSHAL) --prefix=marshal $(srcdir)/marshal.list --header > marshal.h )
+
 
 #@INTLTOOL_SCHEMAS_RULE@
 %.schemas:   %.schemas.in
@@ -47,10 +56,14 @@ gnome_user_share_SOURCES =	\
 	user_share.c		\
 	user_share.h		\
 	user_share-private.h	\
+	user_share-private.c	\
 	http.c			\
 	http.h			\
 	obexftp.c		\
-	obexftp.h
+	obexftp.h		\
+	obexpush.c		\
+	obexpush.h		\
+	$(MARSHALFILES)
 
 gnome_user_share_LDADD = \
 	$(HOWL_LIBS)	\
@@ -61,7 +74,8 @@ gnome_user_share_LDADD = \
 
 gnome_file_share_properties_SOURCES =	\
 	file-share-properties.c		\
-	user_share-private.h
+	user_share-private.h		\
+	user_share-private.c
 
 gnome_file_share_properties_LDADD = \
 	$(USER_SHARE_CONFIG_LIBS)
@@ -91,7 +105,7 @@ EXTRA_DIST = $(schema_in_files) \
 	intltool-update.in	\
 	gnome-user-share.desktop.in.in
 
-CLEANFILES = $(desktop_DATA) $(autostart_DATA)
+CLEANFILES = $(desktop_DATA) $(autostart_DATA) $(BUILT_SOURCES)
 
 DISTCLEANFILES = $(schema_DATA) \
 	intltool-extract 	\

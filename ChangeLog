@@ -1,3 +1,48 @@
+2008-02-23  Bastien Nocera  <hadess@hadess.net>
+
+	* Makefile.am:
+	* configure.in:
+	* desktop_gnome_file_sharing.schemas.in:
+	* file-share-properties.c (update_ui),
+	(file_sharing_bluetooth_obexpush_enabled_changed),
+	(file_sharing_bluetooth_obexpush_accept_files_changed),
+	(file_sharing_bluetooth_obexpush_notify_changed), (launch_share),
+	(enable_obexpush_check_toggled), (accept_obexpush_combo_changed),
+	(notify_received_obexpush_check_toggled), (main):
+	* file-share-properties.glade:
+	* marshal.list:
+	* obexpush.c (show_icon), (device_is_authorised),
+	(transfer_started_cb), (transfer_completed_cb), (cancelled_cb),
+	(error_occurred_cb), (session_created_cb), (obexpush_up),
+	(obexpush_stop), (obexpush_down), (obexpush_restart),
+	(obexpush_init), (obexpush_set_accept_files_policy),
+	(obexpush_set_notify):
+	* obexpush.h:
+	* user_share-private.c (password_string_from_setting),
+	(password_setting_from_string), (accept_string_from_setting),
+	(accept_setting_from_string):
+	* user_share-private.h:
+	* user_share.c (disabled_timeout_callback),
+	(file_sharing_bluetooth_allow_write_changed),
+	(file_sharing_bluetooth_require_pairing_changed),
+	(file_sharing_bluetooth_enabled_changed),
+	(file_sharing_bluetooth_obexpush_enabled_changed),
+	(file_sharing_bluetooth_obexpush_accept_files_changed),
+	(file_sharing_bluetooth_obexpush_notify_changed), (main):
+
+	Add an ObexPush server, notifications when transfers have finished,
+	or on errors and "Ask" accept methods aren't implemented yet
+
+	Fix the ObexFTP being starting when changing one of its settings, and
+	the service isn't actually enabled (only possible via GConf, when
+	gnome-user-share is running for another service)
+
+	* obexftp.c (obexftp_up), (obexftp_stop): Better error messages, now
+	that we have ObexPush support
+
+	* icons/*: Add new icons from Andreas Nilsson <nisses.mail@home.se>
+	(Closes: #484403)
+
 2008-02-22  Bastien Nocera  <hadess@hadess.net>
 
 	* desktop_gnome_file_sharing.schemas.in: Require pairing by

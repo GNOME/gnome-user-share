@@ -41,13 +41,13 @@ obexftp_up (void)
 {
 	GError *err = NULL;
 	GConfClient *client;
-	char *public_dir, *session;
+	char *public_dir, *server;
 	gboolean allow_write, require_pairing;
 
 	client = gconf_client_get_default ();
 	require_pairing = gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING, NULL);
 
-	session = NULL;
+	server = NULL;
 	if (manager_proxy == NULL) {
 		manager_proxy = dbus_g_proxy_new_for_name (connection,
 							   "org.openobex",
@@ -55,8 +55,8 @@ obexftp_up (void)
 							   "org.openobex.Manager");
 		if (dbus_g_proxy_call (manager_proxy, "CreateBluetoothServer",
 				       &err, G_TYPE_STRING, "00:00:00:00:00:00", G_TYPE_STRING, "ftp", G_TYPE_BOOLEAN, require_pairing, G_TYPE_INVALID,
-				       DBUS_TYPE_G_OBJECT_PATH, &session, G_TYPE_INVALID) == FALSE) {
-			g_printerr ("Creating Bluetooth server failed: %s\n",
+				       DBUS_TYPE_G_OBJECT_PATH, &server, G_TYPE_INVALID) == FALSE) {
+			g_printerr ("Creating Bluetooth ObexFTP server failed: %s\n",
 				    err->message);
 			g_error_free (err);
 			g_object_unref (manager_proxy);
@@ -72,14 +72,14 @@ obexftp_up (void)
 	if (server_proxy == NULL) {
 		server_proxy = dbus_g_proxy_new_for_name (connection,
 							   "org.openobex",
-							   session,
+							   server,
 							   "org.openobex.Server");
-		g_free (session);
+		g_free (server);
 	}
 	if (dbus_g_proxy_call (server_proxy, "Start", &err,
 			   G_TYPE_STRING, public_dir, G_TYPE_BOOLEAN, allow_write, G_TYPE_BOOLEAN, TRUE, G_TYPE_INVALID,
 			   G_TYPE_INVALID) == FALSE) {
-		g_printerr ("Starting Bluetooth server session failed: %s\n",
+		g_printerr ("Starting Bluetooth ObexFTP server failed: %s\n",
 			    err->message);
 		g_error_free (err);
 		g_free (public_dir);
@@ -108,7 +108,7 @@ obexftp_stop (gboolean stop_manager)
 			error_name = dbus_g_error_get_name (err);
 		if (error_name == NULL ||
 		    (error_name != NULL && strcmp (error_name, "org.openobex.Error.NotStarted") != 0)) {
-			g_printerr ("Stopping Bluetooth server session failed: %s\n",
+			g_printerr ("Stopping Bluetooth ObexFTP server failed: %s\n",
 				    err->message);
 			g_error_free (err);
 			return;

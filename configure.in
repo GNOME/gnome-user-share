@@ -69,7 +69,7 @@ if test "x$msg_avahi" = "xno" -a "x$msg_howl" = "xno"; then
   AC_MSG_ERROR([Neither avahi nor howl detected. Gnome-user-share needs a mDNS implementation.])
 fi
 
-PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.15.2 gconf-2.0 dbus-glib-1 $DBUS_MODULES)
+PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.15.2 gtk+-2.0 gconf-2.0 dbus-glib-1 $DBUS_MODULES)
 AC_SUBST(USER_SHARE_CFLAGS)
 AC_SUBST(USER_SHARE_LIBS)
 
@@ -91,6 +91,8 @@ if test $have_socket = no; then
 	  break])
   done
 fi
+
+AC_PATH_PROG([GLIB_GENMARSHAL],[glib-genmarshal])
 
 AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
 
@@ -175,6 +177,11 @@ fi
 			       
 AC_OUTPUT([
 Makefile
+icons/Makefile
+icons/16x16/Makefile
+icons/22x22/Makefile
+icons/32x32/Makefile
+icons/48x48/Makefile
 gnome-user-share.desktop.in
 po/Makefile.in
 ])

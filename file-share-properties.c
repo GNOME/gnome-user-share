@@ -38,48 +38,6 @@
 
 static GladeXML *ui;
 
-typedef enum {
-    PASSWORD_NEVER,
-    PASSWORD_ON_WRITE,
-    PASSWORD_ALWAYS
-} PasswordSetting;
-
-static char *password_setting_strings[] = {
-    "never",
-    "on_write",
-    "always"
-};
-
-static const char *
-password_string_from_setting (PasswordSetting setting)
-{
-    
-    if (setting >= 0 && setting <= PASSWORD_ALWAYS)
-	return password_setting_strings[setting];
-    
-    /* Fallback on secure pref */
-    return "always";
-}
-
-static PasswordSetting
-password_setting_from_string (const char *str)
-{
-    if (str != NULL) {
-	if (strcmp (str, "never") == 0) {
-	    return PASSWORD_NEVER;
-	}
-	if (strcmp (str, "always") == 0) {
-	    return PASSWORD_ALWAYS;
-	}
-	if (strcmp (str, "on_write") == 0) {
-	    return PASSWORD_ON_WRITE;
-	}
-    }
-	
-    /* Fallback on secure pref */
-    return PASSWORD_ALWAYS;
-}
-
 static void
 write_out_password (const char *password)
 {
@@ -129,14 +87,19 @@ update_ui (void)
 {
     GConfClient *client;
     gboolean enabled, bluetooth_enabled, bluetooth_write_enabled, require_pairing_enabled;
+    gboolean bluetooth_obexpush_enabled, bluetooth_obexpush_notify;
     char *str;
     PasswordSetting password_setting;
+    AcceptSetting accept_setting;
     GtkWidget *check;
     GtkWidget *password_combo;
     GtkWidget *password_entry;
     GtkWidget *bluetooth_check;
     GtkWidget *allow_write_bluetooth_check;
     GtkWidget *require_pairing_check;
+    GtkWidget *enable_obexpush_check;
+    GtkWidget *accept_obexpush_combo;
+    GtkWidget *notify_received_obexpush_check;
 
     client = gconf_client_get_default ();
 
@@ -152,9 +115,19 @@ update_ui (void)
     require_pairing_enabled = gconf_client_get_bool (client,
     						     FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING,
     						     NULL);
+    bluetooth_obexpush_enabled = gconf_client_get_bool (client,
+    							FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED,
+    							NULL);
+    bluetooth_obexpush_notify = gconf_client_get_bool (client,
+    						       FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY,
+    						       NULL);
 
     str = gconf_client_get_string (client, FILE_SHARING_REQUIRE_PASSWORD, NULL);
     password_setting = password_setting_from_string (str);
+    g_free (str);
+
+    str = gconf_client_get_string (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ACCEPT_FILES, NULL);
+    accept_setting = accept_setting_from_string (str);
     g_free (str);
 
     check = glade_xml_get_widget (ui, "enable_check");
@@ -163,7 +136,11 @@ update_ui (void)
     bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
     allow_write_bluetooth_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
     require_pairing_check = glade_xml_get_widget (ui, "require_pairing_check");
+    enable_obexpush_check = glade_xml_get_widget (ui, "enable_obexpush_check");
+    accept_obexpush_combo = glade_xml_get_widget (ui, "accept_obexpush_combo");
+    notify_received_obexpush_check = glade_xml_get_widget (ui, "notify_received_obexpush_check");
 
+    /* Network */
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check), enabled);
     gtk_widget_set_sensitive (password_combo, enabled);
     gtk_widget_set_sensitive (password_entry, enabled && password_setting != PASSWORD_NEVER);
@@ -171,6 +148,7 @@ update_ui (void)
     gtk_combo_box_set_active (GTK_COMBO_BOX (password_combo),
 			      password_setting);
 
+    /* Bluetooth ObexFTP */
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (bluetooth_check), bluetooth_enabled);
     gtk_widget_set_sensitive (allow_write_bluetooth_check, bluetooth_enabled);
     gtk_widget_set_sensitive (require_pairing_check, bluetooth_enabled);
@@ -179,6 +157,17 @@ update_ui (void)
     				  bluetooth_write_enabled);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (require_pairing_check),
     				  require_pairing_enabled);
+
+    /* Bluetooth ObexPush */
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (enable_obexpush_check), bluetooth_obexpush_enabled);
+    gtk_widget_set_sensitive (accept_obexpush_combo, bluetooth_obexpush_enabled);
+    gtk_widget_set_sensitive (notify_received_obexpush_check, bluetooth_obexpush_enabled);
+
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (notify_received_obexpush_check),
+    				  bluetooth_obexpush_notify);
+
+    gtk_combo_box_set_active (GTK_COMBO_BOX (accept_obexpush_combo),
+    			      accept_setting);
 
     g_object_unref (client);
 }
@@ -221,6 +210,33 @@ file_sharing_bluetooth_allow_write_changed (GConfClient* client,
 
 static void
 file_sharing_bluetooth_require_pairing_changed (GConfClient* client,
+						guint cnxn_id,
+						GConfEntry *entry,
+						gpointer data)
+{
+	update_ui ();
+}
+
+static void
+file_sharing_bluetooth_obexpush_enabled_changed (GConfClient* client,
+						 guint cnxn_id,
+						 GConfEntry *entry,
+						 gpointer data)
+{
+	update_ui ();
+}
+
+static void
+file_sharing_bluetooth_obexpush_accept_files_changed (GConfClient* client,
+						      guint cnxn_id,
+						      GConfEntry *entry,
+						      gpointer data)
+{
+	update_ui ();
+}
+
+static void
+file_sharing_bluetooth_obexpush_notify_changed (GConfClient* client,
 						guint cnxn_id,
 						GConfEntry *entry,
 						gpointer data)
@@ -353,6 +369,62 @@ bluetooth_require_pairing_check_toggled (GtkWidget *check)
 	g_object_unref (client);
 }
 
+static void
+enable_obexpush_check_toggled (GtkWidget *check)
+{
+	GConfClient *client;
+	gboolean enabled;
+
+	enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check));
+
+	client = gconf_client_get_default ();
+
+	gconf_client_set_bool (client,
+			       FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED,
+			       enabled,
+			       NULL);
+
+	g_object_unref (client);
+
+	if (enabled != FALSE)
+		launch_share ();
+}
+
+static void
+accept_obexpush_combo_changed (GtkComboBox *combo_box)
+{
+    GConfClient *client;
+    guint setting;
+
+    setting = gtk_combo_box_get_active (combo_box);
+    
+    client = gconf_client_get_default ();
+
+    gconf_client_set_string (client,
+			     FILE_SHARING_BLUETOOTH_OBEXPUSH_ACCEPT_FILES,
+			     accept_string_from_setting (setting),
+			     NULL);
+    g_object_unref (client);
+}
+
+static void
+notify_received_obexpush_check_toggled (GtkWidget *check)
+{
+	GConfClient *client;
+	gboolean enabled;
+
+	enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check));
+
+	client = gconf_client_get_default ();
+
+	gconf_client_set_bool (client,
+			       FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY,
+			       enabled,
+			       NULL);
+
+	g_object_unref (client);
+}
+
 int
 main (int argc, char *argv[])
 {
@@ -363,6 +435,9 @@ main (int argc, char *argv[])
     GtkWidget *bluetooth_check;
     GtkWidget *bluetooth_allow_write_check;
     GtkWidget *require_pairing_check;
+    GtkWidget *enable_obexpush_check;
+    GtkWidget *accept_obexpush_combo;
+    GtkWidget *notify_received_obexpush_check;
     GtkWidget *window;
     GtkListStore *store;
     GtkCellRenderer *cell;
@@ -394,6 +469,12 @@ main (int argc, char *argv[])
     bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
     bluetooth_allow_write_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
     require_pairing_check = glade_xml_get_widget (ui, "require_pairing_check");
+    enable_obexpush_check = glade_xml_get_widget (ui, "enable_obexpush_check");
+    accept_obexpush_combo = glade_xml_get_widget (ui, "accept_obexpush_combo");
+    notify_received_obexpush_check = glade_xml_get_widget (ui, "notify_received_obexpush_check");
+
+    //FIXME implement notifications
+    gtk_widget_hide (notify_received_obexpush_check);
 
     store = gtk_list_store_new (1, G_TYPE_STRING);
     gtk_combo_box_set_model (GTK_COMBO_BOX (password_combo),
@@ -423,6 +504,34 @@ main (int argc, char *argv[])
     g_signal_connect (password_entry,
 		      "changed", G_CALLBACK (password_entry_changed), NULL);
 
+    /* Accept files combo */
+    store = gtk_list_store_new (1, G_TYPE_STRING);
+    gtk_combo_box_set_model (GTK_COMBO_BOX (accept_obexpush_combo),
+			     GTK_TREE_MODEL (store));
+    cell = gtk_cell_renderer_text_new ();
+    gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (accept_obexpush_combo), cell, TRUE);
+    gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (accept_obexpush_combo), cell,
+				    "text", 0,
+				    NULL);
+
+    /* Keep in same order as enum */
+    gtk_list_store_append (store, &iter);
+    gtk_list_store_set (store, &iter, 0,
+			_("Always"), -1);
+    gtk_list_store_append (store, &iter);
+    gtk_list_store_set (store, &iter, 0,
+			_("Only for Bonded devices"), -1);
+    gtk_list_store_append (store, &iter);
+    gtk_list_store_set (store, &iter, 0,
+			_("Only for Paired and Trusted devices"), -1);
+    //FIXME implement
+#if 0
+    gtk_list_store_append (store, &iter);
+    gtk_list_store_set (store, &iter, 0,
+    			_("Ask"), -1);
+#endif
+    g_object_unref (store);
+
     update_ui ();
 
     g_signal_connect (check,
@@ -435,11 +544,16 @@ main (int argc, char *argv[])
     		      "toggled", G_CALLBACK (bluetooth_allow_write_check_toggled), NULL);
     g_signal_connect (require_pairing_check,
     		      "toggled", G_CALLBACK (bluetooth_require_pairing_check_toggled), NULL);
+    g_signal_connect (enable_obexpush_check,
+    		      "toggled", G_CALLBACK (enable_obexpush_check_toggled), NULL);
+    g_signal_connect (accept_obexpush_combo,
+    		      "changed", G_CALLBACK (accept_obexpush_combo_changed), NULL);
+    g_signal_connect (notify_received_obexpush_check,
+    		      "toggled", G_CALLBACK (notify_received_obexpush_check_toggled), NULL);
 
     g_signal_connect (glade_xml_get_widget (ui, "close_button"),
 		      "clicked", G_CALLBACK (gtk_main_quit), NULL);
 
-    
     gconf_client_notify_add (client,
 			     FILE_SHARING_ENABLED,
 			     file_sharing_enabled_changed,
@@ -467,6 +581,24 @@ main (int argc, char *argv[])
     gconf_client_notify_add (client,
 			     FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING,
 			     file_sharing_bluetooth_require_pairing_changed,
+			     NULL,
+			     NULL,
+			     NULL);
+    gconf_client_notify_add (client,
+    			     FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED,
+    			     file_sharing_bluetooth_obexpush_enabled_changed,
+    			     NULL,
+    			     NULL,
+    			     NULL);
+    gconf_client_notify_add (client,
+    			     FILE_SHARING_BLUETOOTH_OBEXPUSH_ACCEPT_FILES,
+    			     file_sharing_bluetooth_obexpush_accept_files_changed,
+    			     NULL,
+    			     NULL,
+    			     NULL);
+    gconf_client_notify_add (client,
+    			     FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY,
+			     file_sharing_bluetooth_obexpush_notify_changed,
 			     NULL,
 			     NULL,
 			     NULL);
