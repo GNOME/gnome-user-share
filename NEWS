@@ -1,4 +1,11 @@
-This is gnome-user-share 0.21, a system for easy sharing of user files.
+This is gnome-user-share 0.22, a system for easy sharing of user files.
+
+Major changes since 0.21 are:
+* Add a simple ObexPush server
+* Add support for "Require pairing" for ObexFTP, for better
+  security
+* Update to run with obex-data-server 0.3
+* Clarify a string in the UI
 
 Major changes since 0.20 are:
 * Fix ObexFTP sharing allow deletes/writes when it shouldn't

@@ -217,6 +217,7 @@ cancelled_cb (DBusGProxy *session,
 	      gpointer user_data)
 {
 	//FIXME implement properly
+	g_message ("transfered was cancelled by the sender");
 	transfer_completed_cb (session, user_data);
 }
 

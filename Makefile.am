@@ -103,6 +103,7 @@ EXTRA_DIST = $(schema_in_files) \
 	intltool-extract.in 	\
 	intltool-merge.in 	\
 	intltool-update.in	\
+	marshal.list		\
 	gnome-user-share.desktop.in.in
 
 CLEANFILES = $(desktop_DATA) $(autostart_DATA) $(BUILT_SOURCES)
