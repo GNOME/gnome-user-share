@@ -8,7 +8,7 @@ PKG_NAME="gnome-user-share"
 REQUIRED_AUTOMAKE_VERSION=1.6
 
 (test -f $srcdir/configure.in \
-  && test -f $srcdir/user_share.c) || {
+  && test -f $srcdir/src/user_share.c) || {
     echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
     echo " top-level $PKG_NAME directory"
     exit 1

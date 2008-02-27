@@ -1,10 +1,13 @@
-AC_INIT(user_share.c)
+AC_INIT(gnome-user-share, 0.22)
 
-AM_INIT_AUTOMAKE(gnome-user-share, 0.22)
+AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
 AM_CONFIG_HEADER(config.h)
 	
 AM_SANITY_CHECK
 AM_MAINTAINER_MODE
+
+IT_PROG_INTLTOOL([0.35.0])
+
 
 AC_C_CONST
 AC_ISC_POSIX
@@ -114,15 +117,12 @@ AC_SUBST(installdir, $installdir)
 
 dnl ==========================================================================
 
-ALL_LINGUAS="ar bg ca cs da de dz el en_CA en_GB es fi fr gl gu hu it ja ko lt mk nb ne nl oc pa pl pt pt_BR ru rw sk sl sq sv tr uk vi zh_CN zh_TW"
-
 GETTEXT_PACKAGE=gnome-user-share
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],"$GETTEXT_PACKAGE", [The gettext package])
 
 AM_GLIB_GNU_GETTEXT
 
-AC_PROG_INTLTOOL
 	
 dnl ==========================================================================
 dnl Check for SELinux
@@ -177,13 +177,15 @@ fi
 			       
 AC_OUTPUT([
 Makefile
-icons/Makefile
-icons/16x16/Makefile
-icons/22x22/Makefile
-icons/32x32/Makefile
-icons/48x48/Makefile
-gnome-user-share.desktop.in
+data/Makefile
+data/icons/Makefile
+data/icons/16x16/Makefile
+data/icons/22x22/Makefile
+data/icons/32x32/Makefile
+data/icons/48x48/Makefile
+data/gnome-user-share.desktop.in
 po/Makefile.in
+src/Makefile
 ])
 
 echo "
