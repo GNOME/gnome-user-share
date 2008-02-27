@@ -1,5 +1,9 @@
 2008-02-27  Jaap Haitsma  <jaap@haitsma.org>
 
+	* .cvsignore: Remove
+
+2008-02-27  Jaap Haitsma  <jaap@haitsma.org>
+
 	Major restructuring of directory structure. Fixes bug #518472
 	Use po/LINGUAS for translations
 
