@@ -1,5 +1,9 @@
 2008-02-29  Bastien Nocera  <hadess@hadess.net>
 
+	* gnome-user-share.spec: Remove, it's outdated
+
+2008-02-29  Bastien Nocera  <hadess@hadess.net>
+
 	* data/Makefile.am: Fix installation of the dav_user.conf
 	file
 
