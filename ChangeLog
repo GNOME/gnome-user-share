@@ -1,3 +1,12 @@
+2008-02-29  Michael Monreal  <mmonreal@svn.gnome.org>
+
+	* data/file-share-properties.glade: use new icon
+	* data/gnome-user-share-properties.desktop.in: use new icon
+
+	Use folder-remote instead of the deprecated apacheconf icon for 
+	now. If someone can come up with a nicer metaphor, we can do a 
+	new icon for gnome-user-share. Fixes bug #519116.
+
 2008-02-27  Jaap Haitsma  <jaap@haitsma.org>
 
 	* .cvsignore: Remove
