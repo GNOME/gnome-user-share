@@ -1,3 +1,8 @@
+2008-02-29  Bastien Nocera  <hadess@hadess.net>
+
+	* data/Makefile.am: Fix installation of the dav_user.conf
+	file
+
 2008-02-29  Michael Monreal  <mmonreal@svn.gnome.org>
 
 	* data/file-share-properties.glade: use new icon

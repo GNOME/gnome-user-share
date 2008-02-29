@@ -27,8 +27,9 @@ if GCONF_SCHEMAS_INSTALL
 uninstall-local:
 	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
 	$(GCONFTOOL) --makefile-uninstall-rule $(schema_DATA)
+else
+install-data-local:
 endif
-
 	ln -sf dav_user_$(HTTPD_VERSION).conf $(DESTDIR)$(appdir)/dav_user.conf
 
 
