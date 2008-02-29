@@ -1,7 +1,6 @@
 SUBDIRS = data po src
 
 EXTRA_DIST = \ 
-	gnome-user-share.spec 	\
 	intltool-extract.in 	\
 	intltool-merge.in 	\
 	intltool-update.in	
