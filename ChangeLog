@@ -1,3 +1,7 @@
+2008-02-29  Jaap Haitsma  <jaap@haitsma.org>
+
+	* README: Add to readme that also Avahi can be used
+
 2008-02-29  Bastien Nocera  <hadess@hadess.net>
 
 	* gnome-user-share.spec: Remove, it's outdated
