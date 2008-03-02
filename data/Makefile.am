@@ -10,7 +10,7 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 desktop_in_files = gnome-user-share-properties.desktop.in
 
-autostartdir = $(datadir)/gnome/autostart/
+autostartdir = $(sysconfdir)/xdg/autostart/
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 autostart_in_files = gnome-user-share.desktop.in
 
