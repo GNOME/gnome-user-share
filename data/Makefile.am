@@ -17,21 +17,18 @@ autostart_in_files = gnome-user-share.desktop.in
 appdir = $(datadir)/gnome-user-share
 app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.glade
 
-if GCONF_SCHEMAS_INSTALL
 install-data-local:
+if GCONF_SCHEMAS_INSTALL
 	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
 	$(GCONFTOOL) --makefile-install-rule $(schema_DATA)
 endif
+	ln -sf dav_user_$(HTTPD_VERSION).conf $(DESTDIR)$(appdir)/dav_user.conf
 
 if GCONF_SCHEMAS_INSTALL
 uninstall-local:
 	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
 	$(GCONFTOOL) --makefile-uninstall-rule $(schema_DATA)
 else
-install-data-local:
-endif
-	ln -sf dav_user_$(HTTPD_VERSION).conf $(DESTDIR)$(appdir)/dav_user.conf
-
 
 EXTRA_DIST = $(schema_in_files) \
 	$(app_DATA)		\
