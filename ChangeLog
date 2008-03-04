@@ -1,5 +1,9 @@
 2008-03-04  Bastien Nocera  <hadess@hadess.net>
 
+	* data/Makefile.am: Fix more stupidness
+
+2008-03-04  Bastien Nocera  <hadess@hadess.net>
+
 	* data/Makefile.am: Fix dav configuration linking, again
 
 2008-03-02  Bastien Nocera  <hadess@hadess.net>

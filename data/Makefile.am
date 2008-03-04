@@ -28,7 +28,7 @@ if GCONF_SCHEMAS_INSTALL
 uninstall-local:
 	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
 	$(GCONFTOOL) --makefile-uninstall-rule $(schema_DATA)
-else
+endif
 
 EXTRA_DIST = $(schema_in_files) \
 	$(app_DATA)		\
