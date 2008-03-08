@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-19 20:23+0100\n"
+"POT-Creation-Date: 2008-03-07 10:21+0100\n"
 "PO-Revision-Date: 2007-11-20 14:31+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -17,100 +17,166 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:2
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:5
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr ""
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr ""
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:6
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:7
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr ""
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr ""
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr ""
 
-#: ../file-share-properties.c:377
-msgid "Never"
-msgstr "Jamai"
-
-#: ../file-share-properties.c:380
-msgid "When writing files"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
 msgstr ""
 
-#: ../file-share-properties.c:383
-msgid "Always"
-msgstr "Totjorn"
+#: ../data/file-share-properties.glade.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr ""
 
-#: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Partejar de fichièrs</b>"
+#
+#: ../data/file-share-properties.glade.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Partejar de fichièrs amb Bluetooth</b>"
 
-#: ../file-share-properties.glade.h:2
+#
+#: ../data/file-share-properties.glade.h:3
+msgid "<b>Share Files over the network</b>"
+msgstr "<b>Partejar de fichièrs sus la ret</b>"
+
+#: ../data/file-share-properties.glade.h:4
+msgid "Accept files: "
+msgstr ""
+
+#: ../data/file-share-properties.glade.h:5
 msgid "Allow remote devices to delete files"
 msgstr ""
 
-#: ../file-share-properties.glade.h:3
+#: ../data/file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr ""
 
-#: ../file-share-properties.glade.h:4
+#: ../data/file-share-properties.glade.h:7
+msgid "Notify about received files"
+msgstr ""
+
+#: ../data/file-share-properties.glade.h:8
+msgid "Receive files in Downloads folder over Bluetooth"
+msgstr ""
+
+#: ../data/file-share-properties.glade.h:9
+msgid "Require remote devices to bond with this computer"
+msgstr ""
+
+#: ../data/file-share-properties.glade.h:10
 msgid "Share Public files on network"
 msgstr ""
 
-#: ../file-share-properties.glade.h:5
+#: ../data/file-share-properties.glade.h:11
 msgid "Share Public files over Bluetooth"
 msgstr ""
 
-#: ../file-share-properties.glade.h:6
+#: ../data/file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "Mot de _pas :"
 
-#: ../file-share-properties.glade.h:7
+#: ../data/file-share-properties.glade.h:13
 msgid "_Require password:"
 msgstr ""
 
-#: ../gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr ""
 
-#: ../gnome-user-share-properties.desktop.in.h:2
+#: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
 msgstr ""
 
-#: ../gnome-user-share.desktop.in.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:1
 msgid "Launch User Sharing if enabled"
 msgstr ""
 
-#: ../gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "User Sharing"
+msgstr ""
+
+#: ../src/file-share-properties.c:491
+msgid "Never"
+msgstr "Jamai"
+
+#: ../src/file-share-properties.c:494
+msgid "When writing files"
+msgstr ""
+
+#: ../src/file-share-properties.c:497 ../src/file-share-properties.c:520
+msgid "Always"
+msgstr "Totjorn"
+
+#: ../src/file-share-properties.c:523
+msgid "Only for Bonded devices"
+msgstr ""
+
+#: ../src/file-share-properties.c:526
+msgid "Only for Paired and Trusted devices"
+msgstr ""
+
+#: ../src/file-share-properties.c:531
+msgid "Ask"
 msgstr ""
 
 #. Translators: The %s will get filled in with the user name
@@ -122,14 +188,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../http.c:136
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files"
 msgstr ""
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../http.c:140
+#: ../src/http.c:141
 #, c-format
 msgid "%s's public files on %s"
 msgstr ""
