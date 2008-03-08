@@ -28,7 +28,6 @@
 
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
-#include <glade/glade.h>
 #include <gconf/gconf-client.h>
 
 #include "user_share-private.h"
@@ -36,7 +35,8 @@
 #define REALM "Please log in as the user guest"
 #define USER "guest"
 
-static GladeXML *ui;
+static GtkBuilder* builder;
+
 
 static void
 write_out_password (const char *password)
@@ -72,7 +72,7 @@ flush_password (void)
     GtkWidget *password_entry;
     const char *password;
 
-    password_entry = glade_xml_get_widget (ui, "password_entry");
+    password_entry = GTK_WIDGET (gtk_builder_get_object (builder, "password_entry"));
 
     if (g_object_get_data (G_OBJECT( password_entry), "user_edited")) {
 	password = gtk_entry_get_text (GTK_ENTRY (password_entry));
@@ -130,15 +130,15 @@ update_ui (void)
     accept_setting = accept_setting_from_string (str);
     g_free (str);
 
-    check = glade_xml_get_widget (ui, "enable_check");
-    password_combo = glade_xml_get_widget (ui, "password_combo");
-    password_entry = glade_xml_get_widget (ui, "password_entry");
-    bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
-    allow_write_bluetooth_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
-    require_pairing_check = glade_xml_get_widget (ui, "require_pairing_check");
-    enable_obexpush_check = glade_xml_get_widget (ui, "enable_obexpush_check");
-    accept_obexpush_combo = glade_xml_get_widget (ui, "accept_obexpush_combo");
-    notify_received_obexpush_check = glade_xml_get_widget (ui, "notify_received_obexpush_check");
+    check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_check"));
+    password_combo = GTK_WIDGET (gtk_builder_get_object (builder, "password_combo"));
+    password_entry = GTK_WIDGET (gtk_builder_get_object (builder, "password_entry"));
+    bluetooth_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_bluetooth_check"));
+    allow_write_bluetooth_check = GTK_WIDGET (gtk_builder_get_object (builder, "allow_write_bluetooth_check"));
+    require_pairing_check = GTK_WIDGET (gtk_builder_get_object (builder, "require_pairing_check"));
+    enable_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_obexpush_check"));
+    accept_obexpush_combo = GTK_WIDGET (gtk_builder_get_object (builder, "accept_obexpush_combo"));
+    notify_received_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "notify_received_obexpush_check"));
 
     /* Network */
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check), enabled);
@@ -428,6 +428,7 @@ notify_received_obexpush_check_toggled (GtkWidget *check)
 int
 main (int argc, char *argv[])
 {
+    GError *error = NULL;
     GConfClient *client;
     GtkWidget *check;
     GtkWidget *password_combo;
@@ -449,11 +450,15 @@ main (int argc, char *argv[])
     
     gtk_init (&argc, &argv);
 
-    ui = glade_xml_new (DATADIR"file-share-properties.glade",
-			NULL,
-			PACKAGE);
+    builder = gtk_builder_new ();
+    gtk_builder_add_from_file (builder, DATADIR"file-share-properties.ui", &error);
 
-    window = glade_xml_get_widget (ui, "user_share_dialog");
+    if (error) {
+      g_error ("building ui from %s failed: %s", DATADIR"file-share-properties.ui", error->message);
+      g_clear_error (&error);
+    }
+
+    window = GTK_WIDGET (gtk_builder_get_object (builder, "user_share_dialog"));
     g_signal_connect (G_OBJECT (window), "delete_event",
 		      G_CALLBACK (gtk_main_quit), NULL);
 
@@ -463,15 +468,15 @@ main (int argc, char *argv[])
 			  GCONF_CLIENT_PRELOAD_RECURSIVE,
 			  NULL);
 
-    check = glade_xml_get_widget (ui, "enable_check");
-    password_combo = glade_xml_get_widget (ui, "password_combo");
-    password_entry = glade_xml_get_widget (ui, "password_entry");
-    bluetooth_check = glade_xml_get_widget (ui, "enable_bluetooth_check");
-    bluetooth_allow_write_check = glade_xml_get_widget (ui, "allow_write_bluetooth_check");
-    require_pairing_check = glade_xml_get_widget (ui, "require_pairing_check");
-    enable_obexpush_check = glade_xml_get_widget (ui, "enable_obexpush_check");
-    accept_obexpush_combo = glade_xml_get_widget (ui, "accept_obexpush_combo");
-    notify_received_obexpush_check = glade_xml_get_widget (ui, "notify_received_obexpush_check");
+    check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_check"));
+    password_combo = GTK_WIDGET (gtk_builder_get_object (builder, "password_combo"));
+    password_entry = GTK_WIDGET (gtk_builder_get_object (builder, "password_entry"));
+    bluetooth_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_bluetooth_check"));
+    bluetooth_allow_write_check = GTK_WIDGET (gtk_builder_get_object (builder, "allow_write_bluetooth_check"));
+    require_pairing_check = GTK_WIDGET (gtk_builder_get_object (builder, "require_pairing_check"));
+    enable_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_obexpush_check"));
+    accept_obexpush_combo = GTK_WIDGET (gtk_builder_get_object (builder, "accept_obexpush_combo"));
+    notify_received_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "notify_received_obexpush_check"));
 
     //FIXME implement notifications
     gtk_widget_hide (notify_received_obexpush_check);
@@ -551,7 +556,7 @@ main (int argc, char *argv[])
     g_signal_connect (notify_received_obexpush_check,
     		      "toggled", G_CALLBACK (notify_received_obexpush_check_toggled), NULL);
 
-    g_signal_connect (glade_xml_get_widget (ui, "close_button"),
+    g_signal_connect (GTK_WIDGET (gtk_builder_get_object (builder, "close_button")),
 		      "clicked", G_CALLBACK (gtk_main_quit), NULL);
 
     gconf_client_notify_add (client,
@@ -605,7 +610,7 @@ main (int argc, char *argv[])
 
     g_object_unref (client);
 
-    gtk_widget_show (glade_xml_get_widget (ui, "user_share_dialog"));
+    gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (builder, "user_share_dialog")));
     
     gtk_main ();
 

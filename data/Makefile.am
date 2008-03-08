@@ -14,8 +14,11 @@ autostartdir = $(sysconfdir)/xdg/autostart/
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 autostart_in_files = gnome-user-share.desktop.in
 
+file-share-properties.ui : file-share-properties.glade
+	$(GTK_BUILDER_CONVERT) file-share-properties.glade file-share-properties.ui
+
 appdir = $(datadir)/gnome-user-share
-app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.glade
+app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.ui
 
 install-data-local:
 if GCONF_SCHEMAS_INSTALL
@@ -33,8 +36,9 @@ endif
 EXTRA_DIST = $(schema_in_files) \
 	$(app_DATA)		\
 	$(desktop_in_files)	\
-	gnome-user-share.desktop.in.in
+	gnome-user-share.desktop.in.in \
+	file-share-properties.glade
 
-CLEANFILES = $(desktop_DATA) $(autostart_DATA)
+CLEANFILES = $(desktop_DATA) $(autostart_DATA) file-share-properties.ui
 
 DISTCLEANFILES = $(schema_DATA) 

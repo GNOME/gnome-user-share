@@ -1,3 +1,11 @@
+2008-03-08  Jaap Haitsma  <jaap@haitsma.org>
+
+	* configure.in:
+	* data/Makefile.am:
+	* src/file-share-properties.c: (flush_password), (update_ui),
+	(main):
+	Move from libglade to gtkbuilder. Fixes bug #519634
+
 2008-03-04  Bastien Nocera  <hadess@hadess.net>
 
 	* data/Makefile.am: Fix more stupidness
