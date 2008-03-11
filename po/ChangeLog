@@ -1,3 +1,8 @@
+2008-03-11  Inaki Larranaga Murgoitio  <dooteo@euskalgnu.org>
+
+	* LINGUAS: Added 'eu' (Basque) entry.
+	* eu.po: Add Basque translation.
+
 2008-03-09  Philip Withnall  <pwithnall@svn.gnome.org>
 
 	* en_GB.po: Updated British English translation.
