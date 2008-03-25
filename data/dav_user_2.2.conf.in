@@ -25,7 +25,7 @@ DocumentRoot ${XDG_PUBLICSHARE_DIR}
 
   AuthDigestProvider file
   AuthUserFile ${HOME}/.gnome2/user-share/passwd
-  AuthGroupFile /usr/share/gnome-user-share/dav_groupfile
+  AuthGroupFile @DATADIR@/gnome-user-share/dav_groupfile
 
 
   <IfDefine RequirePasswordAlways>
