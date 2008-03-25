@@ -23,6 +23,7 @@
 
 #include "config.h"
 
+#include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <X11/Xlib.h>
@@ -42,7 +43,6 @@
 #include <signal.h>
 #include <unistd.h>
 
-static GMainLoop *loop = NULL;
 static guint disabled_timeout_tag = 0;
 
 char *
@@ -234,21 +234,6 @@ x_io_error_handler (Display *xdisplay)
 	_exit (2);
 }
 
-static gboolean
-x_input (GIOChannel  *io_channel,
-	 GIOCondition cond,
-	 gpointer     callback_data)
-{
-	Display *xdisplay;
-	XEvent ignored;
-
-	xdisplay = callback_data;
-	while (XPending (xdisplay)) {
-		XNextEvent (xdisplay, &ignored);
-	}
-	return TRUE;
-}
-
 int
 main (int argc, char **argv)
 {
@@ -259,15 +244,14 @@ main (int argc, char **argv)
 	Window selection_owner;
 	Atom xatom;
 
-	g_type_init ();
-	loop = g_main_loop_new (NULL, FALSE);
+	gtk_init (&argc, &argv);
 
 	signal (SIGPIPE, SIG_IGN);
 	signal (SIGINT, cleanup_handler);
 	signal (SIGHUP, cleanup_handler);
 	signal (SIGTERM, cleanup_handler);
 
-	xdisplay = XOpenDisplay (NULL);
+	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
 	if (xdisplay == NULL) {
 		fprintf (stderr, "Can't open display\n");
 		return 1;
@@ -300,14 +284,6 @@ main (int argc, char **argv)
 
 	x_fd = ConnectionNumber (xdisplay);
 	XSetIOErrorHandler (x_io_error_handler);
-
-	channel = g_io_channel_unix_new (x_fd);
-	g_io_add_watch (channel,
-			G_IO_IN,
-			x_input, xdisplay);
-	g_io_channel_unref (channel);
-
-	gtk_init (&argc, &argv);
 
 	if (http_init () == FALSE)
 		return 1;
@@ -379,7 +355,7 @@ main (int argc, char **argv)
 	file_sharing_bluetooth_obexpush_notify_changed (client, 0, NULL, NULL);
 	file_sharing_bluetooth_obexpush_enabled_changed (client, 0, NULL, NULL);
 
-	g_main_loop_run (loop);
+	gtk_main ();
 
 	return 0;
 }

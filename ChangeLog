@@ -1,6 +1,14 @@
 2008-03-25  Bastien Nocera  <hadess@hadess.net>
 
 	* configure.in:
+	* src/user_share.c (main): Use the GTK+ main loop, not our own,
+	re-use the X Display opened by GTK+ for ourselves, rather than opening
+	a different one, fixes httpd children not getting killed properly
+	when exiting the session (Closes: #519804)
+
+2008-03-25  Bastien Nocera  <hadess@hadess.net>
+
+	* configure.in:
 	* data/Makefile.am:
 	* data/dav_user_2.2.conf.in: Allow users and distributions
 	to change the default location for HTTPD modules with
