@@ -21,7 +21,8 @@ appdir = $(datadir)/gnome-user-share
 app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.ui
 
 dav_user_2.2.conf: dav_user_2.2.conf.in
-	sed "s,@DATADIR@,$(datadir)," dav_user_2.2.conf.in > $@
+	sed "s,@DATADIR@,$(datadir)," dav_user_2.2.conf.in | \
+	sed "s,@HTTP_MODULES_PATH@,$(MODULES_PATH)," > $@
 
 install-data-local:
 if GCONF_SCHEMAS_INSTALL

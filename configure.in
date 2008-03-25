@@ -131,11 +131,26 @@ AM_GLIB_GNU_GETTEXT
 	
 dnl ==========================================================================
 dnl Check for SELinux
-    
+
 AC_CHECK_LIB(selinux, is_selinux_enabled, [ SELINUX_LIBS=-lselinux
   AC_DEFINE(HAVE_SELINUX,[1],[Found Selinux]) ])
 AC_SUBST(SELINUX_LIBS)
-	
+
+dnl ==========================================================================
+dnl Check for the HTTPD modules path
+
+
+
+AC_ARG_WITH([modules-path],
+	    [AS_HELP_STRING([--with-modules-path],[Path where the httpd modules are located (default: /etc/httpd/modules/)])],
+	    [with_modules_path=$withval])
+if test "x$with_modules_path" = "x" ; then
+	with_modules_path=/etc/httpd/modules/
+fi
+
+MODULES_PATH=$with_modules_path
+AC_SUBST(MODULES_PATH)
+
 dnl ==========================================================================
 
 dnl Turn on the additional warnings last, so -Werror doesn't affect other tests.
@@ -195,4 +210,5 @@ src/Makefile
 
 echo "
 	httpd version:               $HTTPD_VERSION
+	httpd modules path:          $MODULES_PATH
 "

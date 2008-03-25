@@ -1,10 +1,20 @@
 2008-03-25  Bastien Nocera  <hadess@hadess.net>
 
+	* configure.in:
+	* data/Makefile.am:
+	* data/dav_user_2.2.conf.in: Allow users and distributions
+	to change the default location for HTTPD modules with
+	--with-modules-path=..., still defaults to /etc/httpd/modules/
+	(Closes: #518647)
+
+2008-03-25  Bastien Nocera  <hadess@hadess.net>
+
 	* data/Makefile.am: Generate the dav_user_2.2.conf
 	file so the location of the dav_groupfile is the
 	one used in the installation
 	* data/dav_user_2.2.conf: Rename to...
 	* data/dav_user_2.2.conf.in: ... this
+	(Closes: #518681)
 
 2008-03-08  Jaap Haitsma  <jaap@haitsma.org>
 
