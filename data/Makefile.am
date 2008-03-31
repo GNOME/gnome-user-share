@@ -18,7 +18,10 @@ file-share-properties.ui : file-share-properties.glade
 	$(GTK_BUILDER_CONVERT) file-share-properties.glade file-share-properties.ui
 
 appdir = $(datadir)/gnome-user-share
-app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.ui
+app_DATA=dav_user_2.0.conf dav_groupfile file-share-properties.ui
+
+appconfdir = $(datadir)/gnome-user-share
+appconf_DATA = dav_user_2.2.conf
 
 dav_user_2.2.conf: dav_user_2.2.conf.in
 	sed "s,@DATADIR@,$(datadir)," dav_user_2.2.conf.in | \
@@ -46,4 +49,4 @@ EXTRA_DIST = $(schema_in_files) \
 
 CLEANFILES = $(desktop_DATA) $(autostart_DATA) file-share-properties.ui dav_user_2.2.conf
 
-DISTCLEANFILES = $(schema_DATA) 
+DISTCLEANFILES = $(schema_DATA) dav_user_2.2.conf
