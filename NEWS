@@ -1,4 +1,12 @@
-This is gnome-user-share 0.22, a system for easy sharing of user files.
+This is gnome-user-share 0.30, a system for easy sharing of user files.
+
+Major changes since 0.22 are:
+* Allow distributors to set the location of their httpd modules,
+  so that they don't need to create their own configuration file
+  See --with-modules-path in the configure output
+* Use GtkBuilder instead of libglade
+* Fix the httpd daemon being left running when logging out
+* Misc UI and build fixes
 
 Major changes since 0.21 are:
 * Add a simple ObexPush server

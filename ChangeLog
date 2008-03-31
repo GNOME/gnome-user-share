@@ -1,3 +1,10 @@
+=== gnome-user-share 0.30 ===
+
+2008-03-31  Bastien Nocera  <hadess@hadess.net>
+
+	* NEWS: upd
+	* configure.in: 0.30
+
 2008-03-25  Bastien Nocera  <hadess@hadess.net>
 
 	* configure.in:
