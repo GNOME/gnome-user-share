@@ -1,5 +1,9 @@
 2008-04-03  Bastien Nocera  <hadess@hadess.net>
 
+	* src/user_share.c (main): Revert, you can't catch SIGKILL (duh!)
+
+2008-04-03  Bastien Nocera  <hadess@hadess.net>
+
 	* src/user_share.c (main): Handle SIGKILL as well
 
 2008-03-31  Bastien Nocera  <hadess@hadess.net>

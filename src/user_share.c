@@ -250,7 +250,6 @@ main (int argc, char **argv)
 	signal (SIGINT, cleanup_handler);
 	signal (SIGHUP, cleanup_handler);
 	signal (SIGTERM, cleanup_handler);
-	signal (SIGKILL, cleanup_handler);
 
 	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
 	if (xdisplay == NULL) {
