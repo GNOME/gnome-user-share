@@ -24,6 +24,7 @@
 #include "config.h"
 
 #include <dbus/dbus-glib.h>
+#include <dbus/dbus-glib-lowlevel.h>
 #include <gconf/gconf-client.h>
 
 #include <string.h>
@@ -150,6 +151,7 @@ obexftp_init (void)
 		return FALSE;
 	}
 
+	dbus_connection_set_exit_on_disconnect (dbus_g_connection_get_connection (connection), FALSE);
 	return TRUE;
 }
 

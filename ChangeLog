@@ -1,3 +1,7 @@
+2008-04-04  Matthias Clasen  <mclasen@redhat.com>
+
+	* src/obexftp.c: Don't exit when dbus goes away.
+
 2008-04-03  Bastien Nocera  <hadess@hadess.net>
 
 	* src/user_share.c (main): Revert, you can't catch SIGKILL (duh!)
