@@ -1,3 +1,7 @@
+2008-04-04  Bastien Nocera  <hadess@hadess.net>
+
+	* src/obexpush.c (obexpush_init): And the same thing in ObexPush
+
 2008-04-04  Matthias Clasen  <mclasen@redhat.com>
 
 	* src/obexftp.c: Don't exit when dbus goes away.

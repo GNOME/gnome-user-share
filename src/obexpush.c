@@ -26,6 +26,7 @@
 #include <gtk/gtk.h>
 #include <dbus/dbus-glib.h>
 #include <gconf/gconf-client.h>
+#include <dbus/dbus-glib-lowlevel.h>
 
 #include <string.h>
 
@@ -376,6 +377,8 @@ obexpush_init (void)
 	dbus_g_object_register_marshaller (marshal_VOID__STRING_STRING_UINT64,
 					   G_TYPE_NONE,
 					   G_TYPE_STRING, G_TYPE_STRING, G_TYPE_UINT64, G_TYPE_INVALID);
+
+	dbus_connection_set_exit_on_disconnect (dbus_g_connection_get_connection (connection), FALSE);
 
 	return TRUE;
 }
