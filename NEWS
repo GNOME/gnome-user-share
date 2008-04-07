@@ -1,4 +1,9 @@
-This is gnome-user-share 0.30, a system for easy sharing of user files.
+This is gnome-user-share 0.31, a system for easy sharing of user files.
+
+Major changes since 0.30 are:
+* Don't exit when the d-bus session bus goes away, fixes httpd processes
+  lying around after logout when Bluetooth sharing is enabled
+* Small build fix when using custom modules path
 
 Major changes since 0.22 are:
 * Allow distributors to set the location of their httpd modules,

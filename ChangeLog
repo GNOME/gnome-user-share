@@ -1,3 +1,10 @@
+=== gnome-user-share 0.31 ===
+
+2008-04-07  Bastien Nocera  <hadess@hadess.net>
+
+	* NEWS: upd
+	* configure.in: 0.31
+
 2008-04-04  Bastien Nocera  <hadess@hadess.net>
 
 	* src/obexpush.c (obexpush_init): And the same thing in ObexPush
