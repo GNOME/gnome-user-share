@@ -42,6 +42,21 @@ DocumentRoot ${XDG_PUBLICSHARE_DIR}
 </Directory>
 
 StartServers 1
-MinSpareServers 1
-MaxSpareServers 1
 MaxClients 3
+
+<IfModule mpm_prefork_module>
+  MinSpareServers 1
+  MaxSpareServers 1
+</IfModule>
+
+<IfModule mpm_worker_module>
+  MinSpareThreads 1
+  MaxSpareThreads 1
+  ThreadsPerChild 3
+</IfModule>
+
+<IfModule mpm_event_module>
+  MinSpareThreads 1
+  MaxSpareThreads 1
+  ThreadsPerChild 3
+</IfModule>
