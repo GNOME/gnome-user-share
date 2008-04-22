@@ -429,7 +429,7 @@ ensure_conf_dir (void)
 {
 	char *dirname;
 
-	dirname = g_build_filename (g_get_home_dir (), ".gnome2", "user-share", NULL);
+	dirname = g_build_filename (g_get_user_config_dir (), "user-share", NULL);
 	g_mkdir_with_parents (dirname, 0755);
 	g_free (dirname);
 }
@@ -455,7 +455,7 @@ httpd_child_setup (gpointer user_data)
 static gboolean
 spawn_httpd (int port, pid_t *pid_out)
 {
-	char *free1, *free2, *free3;
+	char *free1, *free2, *free3, *free4;
 	gboolean res;
 	char *argv[10];
 	char *env[10];
@@ -499,12 +499,13 @@ spawn_httpd (int port, pid_t *pid_out)
 	argv[i] = NULL;
 
 	i = 0;
-	free2 = env[i++] = g_strdup_printf("HOME=%s", g_get_home_dir());
-	free3 = env[i++] = g_strdup_printf("XDG_PUBLICSHARE_DIR=%s", public_dir);
+	free2 = env[i++] = g_strdup_printf ("HOME=%s", g_get_home_dir());
+	free3 = env[i++] = g_strdup_printf ("XDG_PUBLICSHARE_DIR=%s", public_dir);
+	free4 = env[i++] = g_strdup_printf ("XDG_CONFIG_HOME=%s", g_get_user_config_dir ());
 	env[i++] = "LANG=C";
 	env[i] = NULL;
 
-	pid_filename = g_build_filename (g_get_home_dir (), ".gnome2/user-share/pid", NULL);
+	pid_filename = g_build_filename (g_get_user_config_dir (), "user-share", "pid", NULL);
 
 	/* Remove pid file before spawning to avoid races with child and old pidfile */
 	unlink (pid_filename);
@@ -519,6 +520,7 @@ spawn_httpd (int port, pid_t *pid_out)
 	g_free (free1);
 	g_free (free2);
 	g_free (free3);
+	g_free (free4);
 	g_free (public_dir);
 
 	if (!res) {

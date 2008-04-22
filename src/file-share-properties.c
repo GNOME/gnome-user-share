@@ -53,7 +53,7 @@ write_out_password (const char *password)
     line = g_strdup_printf ("%s:%s:%s\n", USER, REALM, ascii_digest);
     g_free (ascii_digest);
 
-    filename = g_build_filename (g_get_home_dir (), ".gnome2/user-share/passwd", NULL);
+    filename = g_build_filename (g_get_user_config_dir (), "user-share", "passwd", NULL);
 
     file = fopen (filename, "w");
     if (file != NULL) {

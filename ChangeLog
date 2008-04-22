@@ -1,3 +1,13 @@
+2008-04-15  Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+
+	* data/dav_user_2.0.conf:
+	* data/dav_user_2.2.conf.in:
+	* src/file-share-properties.c (write_out_password):
+	* src/http.c (ensure_conf_dir), (spawn_httpd):
+	* src/user_share.c (migrate_old_configuration), (main):
+	move the configuration to Freedesktop
+	compliant location (Closes: #519058)
+
 === gnome-user-share 0.31 ===
 
 2008-04-07  Bastien Nocera  <hadess@hadess.net>

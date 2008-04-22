@@ -80,6 +80,20 @@ lookup_download_dir (void)
 }
 
 static void
+migrate_old_configuration (void)
+{
+	const char *old_config_dir;
+	const char *new_config_dir;
+
+	old_config_dir = g_build_filename (g_get_home_dir (), ".gnome2", "user-share", NULL);
+	new_config_dir = g_build_filename (g_get_user_config_dir (), "user-share", NULL);
+	if (g_file_test (old_config_dir, G_FILE_TEST_IS_DIR)) {
+	    g_rename (old_config_dir, new_config_dir);
+	}
+
+}
+
+static void
 require_password_changed (GConfClient* client,
 			  guint cnxn_id,
 			  GConfEntry *entry,
@@ -275,6 +289,8 @@ main (int argc, char **argv)
 		/* Didn't get the selection */
 		return 1;
 	}
+
+	migrate_old_configuration ();
 
 	client = gconf_client_get_default ();
 	if (gconf_client_get_bool (client, FILE_SHARING_ENABLED, NULL) == FALSE &&
