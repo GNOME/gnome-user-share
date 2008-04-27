@@ -1,76 +1,168 @@
 # translation of gnome-user-share to Hungarian
 # This file is distributed under the same license as the gnome-user-share package.
-# Copyright (C) 2005, Free Software Foundation, Inc.
+# Copyright (C) 2005, 2008, Free Software Foundation, Inc.
 #
 # Szabolcs Varga <shirokuma@shirokuma.hu>, 2005.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2005, 2006.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2005, 2006, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-15 03:55+0200\n"
-"PO-Revision-Date: 2006-01-06 18:40+0100\n"
+"POT-Creation-Date: 2008-02-23 01:03+0000\n"
+"PO-Revision-Date: 2008-04-27 16:42+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
-"Language-Team: Hungarian <gnome@gnome.hu>\n"
+"Language-Team: Hungarian <gnome@fsf.hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.1\n"
-"Plural-Forms:   nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
-msgstr ""
-"Ha az érték igaz, akkor a felhasználók saját könyvtárában a Public könyvtár "
-"megosztásra kerül, ha a felhasználó bejelentkezik."
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr "Ha ez az érték igaz, akkor Bluetooth eszközök fájlokat küldhetnek a felhasználó Letöltések könyvtárába, ha a felhasználó bejelentkezett."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "Public könyvtár megosztása"
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"Ha ez az érték igaz, akkor a felhasználó saját könyvtárában a Nyilvános könyvtár "
+"Bluetooth-on keresztül megosztásra kerül, ha a felhasználó bejelentkezett."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
 msgstr ""
-"Mikor történjen a jelszavak bekérése. A lehetséges értékek: \"never"
-"\" (soha), \"on_write\" (íráskor) és \"always\" (mindig)."
+"Ha ez az érték igaz, akkor a felhasználók saját könyvtárában a Nyilvános könyvtár "
+"a hálózaton megosztásra kerül, ha a felhasználó bejelentkezett."
 
 #: ../desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over Bluetooth"
+msgstr "A Nyilvános könyvtár megosztása Bluetooth-on"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:5
+msgid "Share Public directory over the network"
+msgstr "A Nyilvános mappa megosztása a hálózaton"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "A Bluetooth-on küldött fájlok elfogadása"
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr "A Bluetooth-on küldött fájlok elfogadása. A lehetséges értékek: „always” (mindig) „bonded” (párosítva), „bonded_trusted” (megbízhatóan párosítva) és „ask” (kérdezzen)."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:8
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr "Mikor történjen a jelszavak bekérése. A lehetséges értékek: „never” (soha), „on_write” (íráskor) és „always” (mindig)."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
 msgstr "Mikor történjen a jelszavak bekérése"
 
-#: ../file-share-properties.c:290
+#: ../desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "A Bluetooth kliensek küldhetnek-e fájlokat az ObexPush használatával."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "A Bluetooth klienseket kell-e párosítani a számítógéppel a fájlok küldéséhez."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:12
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr "A Bluetooth klienseknek engedélyezett-e a fájlok írása, vagy a fájlok írásvédetten osztandók meg."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "A Bluetooth klienseknek engedélyezett-e a fájlok írása."
+
+#: ../desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "Küldendő-e értesítés az újonnan fogadott fájlokról."
+
+#: ../file-share-properties.c:491
 msgid "Never"
 msgstr "Soha"
 
-#: ../file-share-properties.c:293
+#: ../file-share-properties.c:494
 msgid "When writing files"
 msgstr "Fájlok írásakor"
 
-#: ../file-share-properties.c:296
+#: ../file-share-properties.c:497 ../file-share-properties.c:520
 msgid "Always"
 msgstr "Mindig"
 
+#: ../file-share-properties.c:523
+msgid "Only for Bonded devices"
+msgstr "Csak párosított eszközöknek"
+
+#: ../file-share-properties.c:526
+msgid "Only for Paired and Trusted devices"
+msgstr "Csak párosított és megbízható eszközöknek"
+
+#: ../file-share-properties.c:531
+msgid "Ask"
+msgstr "Kérdezzen"
+
 #: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Fájlok megosztása</b>"
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Fájlok fogadása Bluetooth-on</b>"
 
 #: ../file-share-properties.glade.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Fájlok megosztása Bluetooth-on</b>"
+
+#: ../file-share-properties.glade.h:3
+msgid "<b>Share Files over the network</b>"
+msgstr "<b>Fájlok megosztása a hálózaton</b>"
+
+#: ../file-share-properties.glade.h:4
+msgid "Accept files: "
+msgstr "Fájlok elfogadása: "
+
+#: ../file-share-properties.glade.h:5
+msgid "Allow remote devices to delete files"
+msgstr "Fájlok törlésének engedélyezése távoli eszközöknek"
+
+#: ../file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr "Fájlmegosztás beállításai"
 
-#: ../file-share-properties.glade.h:3
+#: ../file-share-properties.glade.h:7
+msgid "Notify about received files"
+msgstr "Értesítés fogadott fájlokról"
+
+#: ../file-share-properties.glade.h:8
+msgid "Receive files in Downloads folder over Bluetooth"
+msgstr "Fájlok fogadása a Letöltések mappába Bluetooth-on"
+
+#: ../file-share-properties.glade.h:9
+msgid "Require remote devices to bond with this computer"
+msgstr "Távoli eszközök a számítógéppel való párosításának megkövetelése"
+
+#: ../file-share-properties.glade.h:10
 msgid "Share Public files on network"
 msgstr "Nyilvános fájlok megosztása a hálózaton"
 
-#: ../file-share-properties.glade.h:4
+#: ../file-share-properties.glade.h:11
+msgid "Share Public files over Bluetooth"
+msgstr "Nyilvános fájlok megosztása Bluetooth-on"
+
+#: ../file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "_Jelszó:"
 
-#: ../file-share-properties.glade.h:5
+#: ../file-share-properties.glade.h:13
 msgid "_Require password:"
 msgstr "Jelszó _kötelező:"
 
@@ -82,6 +174,14 @@ msgstr "Személyes fájlmegosztás"
 msgid "Preferences for sharing of personal files"
 msgstr "Személyes fájlok megosztásának beállításai"
 
+#: ../gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "Felhasználói megosztás indítása, ha engedélyezett"
+
+#: ../gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr "Felhasználói megosztás"
+
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -91,14 +191,15 @@ msgstr "Személyes fájlok megosztásának beállításai"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:130
+#: ../http.c:137
 #, c-format
 msgid "%s's public files"
 msgstr "%s nyilvános fájljai"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:134
-#, fuzzy, c-format
+#: ../http.c:141
+#, c-format
 msgid "%s's public files on %s"
-msgstr "%s nyilvános fájljai"
+msgstr "%s nyilvános fájljai ezen: %s"
+
