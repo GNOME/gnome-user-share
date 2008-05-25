@@ -1,3 +1,14 @@
+2008-05-25  Bastien Nocera  <hadess@hadess.net>
+
+	* configure.in:
+	* src/file-share-properties.c (main):
+	* src/obexpush.c (hide_statusicon), (on_close_notification),
+	(launch_viewer_for_file), (show_notification), (show_icon),
+	(transfer_completed_cb), (obexpush_init), (obexpush_set_notify):
+	Implement notifications when transfers are received, so people
+	can open the received files, based on work by Baptiste Mille-Mathias
+	<baptiste.millemathias@gmail.com> (Closes: #519060)
+
 2008-04-22  Bastien Nocera  <hadess@hadess.net>
 
 	* data/dav_user_2.2.conf.in: Patch from Thorsten Vollmer

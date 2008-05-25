@@ -478,9 +478,6 @@ main (int argc, char *argv[])
     accept_obexpush_combo = GTK_WIDGET (gtk_builder_get_object (builder, "accept_obexpush_combo"));
     notify_received_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "notify_received_obexpush_check"));
 
-    //FIXME implement notifications
-    gtk_widget_hide (notify_received_obexpush_check);
-
     store = gtk_list_store_new (1, G_TYPE_STRING);
     gtk_combo_box_set_model (GTK_COMBO_BOX (password_combo),
 			     GTK_TREE_MODEL (store));

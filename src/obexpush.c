@@ -23,7 +23,12 @@
 
 #include "config.h"
 
+#include <glib.h>
+#include <glib/gi18n.h>
+#include <gio/gio.h>
+#include <gdk/gdk.h>
 #include <gtk/gtk.h>
+#include <libnotify/notify.h>
 #include <dbus/dbus-glib.h>
 #include <gconf/gconf-client.h>
 #include <dbus/dbus-glib-lowlevel.h>
@@ -33,6 +38,7 @@
 #include "marshal.h"
 #include "obexpush.h"
 #include "user_share.h"
+#include "user_share-private.h"
 
 #define DBUS_TYPE_G_STRING_VARIANT_HASHTABLE (dbus_g_type_get_map ("GHashTable", G_TYPE_STRING, G_TYPE_STRING))
 
@@ -41,7 +47,85 @@ static DBusGProxy *manager_proxy = NULL;
 static DBusGProxy *server_proxy = NULL;
 static AcceptSetting accept_setting = -1;
 static gboolean show_notifications = FALSE;
+
 static GtkStatusIcon *statusicon = NULL;
+static guint num_notifications = 0;
+
+static void
+hide_statusicon (void)
+{
+	num_notifications--;
+	if (num_notifications == 0)
+		gtk_status_icon_set_visible (statusicon, FALSE);
+}
+
+static void
+on_close_notification (NotifyNotification *notification)
+{
+	hide_statusicon ();
+	g_object_unref (notification);
+}
+
+static void
+launch_viewer_for_file (NotifyNotification *notification, const char *action, const char *file_uri)
+{
+	GdkScreen *screen;
+	GAppLaunchContext *ctx;
+	GTimeVal val;
+
+	g_assert (action != NULL);
+
+	g_get_current_time (&val);
+
+#if GTK_CHECK_VERSION(2,13,2)
+	ctx = G_APP_LAUNCH_CONTEXT (gdk_app_launch_context_new ());
+	screen = gdk_screen_get_default ();
+	gdk_app_launch_context_set_screen (GDK_APP_LAUNCH_CONTEXT (ctx), screen);
+	gdk_app_launch_context_set_timestamp (GDK_APP_LAUNCH_CONTEXT (ctx), val.tv_sec);
+#else
+	ctx = NULL;
+	screen = NULL;
+#endif
+
+	if (!g_app_info_launch_default_for_uri (file_uri, ctx, NULL)) {
+		g_warning ("Failed to launch the file viewer\n");
+	}
+	notify_notification_close (notification, NULL);
+	g_object_unref (notification);
+	hide_statusicon ();
+}
+
+static void
+show_notification (const char *filename)
+{
+	char *file_uri, *notification_text, *display;
+	NotifyNotification *notification;
+
+	file_uri = g_filename_to_uri (filename, NULL, NULL);
+	if (file_uri == NULL) {
+		g_warning ("Couldn't make a filename from '%s'", filename);
+		return;
+	}
+
+	display = g_filename_display_basename (filename);
+	notification_text = g_strdup_printf(_("You received \"%s\" via Bluetooh"), display);
+	g_free (display);
+	notification = notify_notification_new_with_status_icon (_("You received a file"),
+								 notification_text,
+								 "dialog-information",
+								 GTK_STATUS_ICON (statusicon));
+
+	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_DEFAULT);
+	notify_notification_add_action (notification, "display", _("Open File"),
+					(NotifyActionCallback) launch_viewer_for_file, (gpointer) file_uri, (GFreeFunc) g_free);
+	
+	g_signal_connect (G_OBJECT (notification), "closed", G_CALLBACK (on_close_notification), notification);
+
+	if (!notify_notification_show (notification, NULL)) {
+		g_warning ("failed to send notification\n");
+	}
+	g_free (notification_text);
+}
 
 static void
 show_icon (void)
@@ -51,6 +135,7 @@ show_icon (void)
 	} else {
 		gtk_status_icon_set_visible (statusicon, TRUE);
 	}
+	num_notifications++;
 }
 
 static gboolean
@@ -204,13 +289,22 @@ static void
 transfer_completed_cb (DBusGProxy *session,
 		       gpointer user_data)
 {
+	GConfClient *client;
+	gboolean display_notify; 
+
 	g_message ("file finish transfer: %s",
 		   (char *) g_object_get_data (G_OBJECT (session), "filename"));
-	//FIXME display a notification if "show_notifications" is TRUE
+	
+	client = gconf_client_get_default ();	
+	display_notify = gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY, NULL);
+	g_object_unref (client);
+	
+	if (display_notify) {
+		show_notification (g_object_get_data (G_OBJECT (session), "filename"));
+	} else {
+		hide_statusicon ();
+	}
 	g_object_set_data (G_OBJECT (session), "filename", NULL);
-
-	//FIXME only hide it when the popup's been dismissed or timed out
-	gtk_status_icon_set_visible (statusicon, FALSE);
 }
 
 static void
@@ -378,6 +472,10 @@ obexpush_init (void)
 					   G_TYPE_NONE,
 					   G_TYPE_STRING, G_TYPE_STRING, G_TYPE_UINT64, G_TYPE_INVALID);
 
+	if (!notify_init("gnome-user-share")) {
+		g_warning("Unable to initialize the notification system\n");    
+        }
+	
 	dbus_connection_set_exit_on_disconnect (dbus_g_connection_get_connection (connection), FALSE);
 
 	return TRUE;
@@ -394,4 +492,3 @@ obexpush_set_notify (gboolean enabled)
 {
 	show_notifications = enabled;
 }
-
