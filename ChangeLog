@@ -1,3 +1,10 @@
+2008-06-13  Baptiste Mille-Mathias
+
+	* src/user-share.c (consolekit_init), (sessionchanged_cb):
+	Check Active session using ConsolerKit, and disable obex sharing
+	if the session is not the action one.
+	<baptiste.millemathias@gmail.com> (Closes: #515553)
+
 2008-06-12  Bastien Nocera  <hadess@hadess.net>
 
 	* src/obexpush.c (notification_launch_action_on_file_cb),
