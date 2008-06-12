@@ -67,7 +67,9 @@ on_close_notification (NotifyNotification *notification)
 }
 
 static void
-launch_viewer_for_file (NotifyNotification *notification, const char *action, const char *file_uri)
+notification_launch_action_on_file_cb (NotifyNotification *notification,
+				       const char *action,
+				       const char *file_uri)
 {
 	GdkScreen *screen;
 	GAppLaunchContext *ctx;
@@ -87,27 +89,52 @@ launch_viewer_for_file (NotifyNotification *notification, const char *action, co
 	screen = NULL;
 #endif
 
-	if (!g_app_info_launch_default_for_uri (file_uri, ctx, NULL)) {
-		g_warning ("Failed to launch the file viewer\n");
+	/* We launch the file viewer for the file */
+	if (g_str_equal (action, "display") != FALSE) {
+		if (g_app_info_launch_default_for_uri (file_uri, ctx, NULL) == FALSE) {
+			g_warning ("Failed to launch the file viewer\n");
+		}
 	}
+
+	/* we open the Downloads folder */
+	if (g_str_equal (action, "reveal") != FALSE) {
+		GFile *file;
+		GFile *parent;
+		gchar *parent_uri;
+
+		file = g_file_new_for_uri (file_uri);
+		parent = g_file_get_parent (file);
+		parent_uri = g_file_get_uri (parent);
+		g_object_unref (file);
+		g_object_unref (parent);
+
+		if (!g_app_info_launch_default_for_uri (parent_uri, ctx, NULL)) {
+			g_warning ("Failed to launch the file manager\n");
+		}
+
+		g_free (parent_uri);
+	}
+
 	notify_notification_close (notification, NULL);
-	g_object_unref (notification);
-	hide_statusicon ();
+	/* No need to call hide_statusicon(), closing the notification
+	 * will call the close callback */
 }
 
 static void
 show_notification (const char *filename)
 {
-	char *file_uri, *notification_text, *display;
+	char *file_uri, *notification_text, *display, *mime_type;
 	NotifyNotification *notification;
+	GAppInfo *app;
 
 	file_uri = g_filename_to_uri (filename, NULL, NULL);
 	if (file_uri == NULL) {
-		g_warning ("Couldn't make a filename from '%s'", filename);
+		g_warning ("Could not make a filename from '%s'", filename);
 		return;
 	}
 
 	display = g_filename_display_basename (filename);
+	/* Translators: %s is the name of the filename received */
 	notification_text = g_strdup_printf(_("You received \"%s\" via Bluetooh"), display);
 	g_free (display);
 	notification = notify_notification_new_with_status_icon (_("You received a file"),
@@ -116,8 +143,21 @@ show_notification (const char *filename)
 								 GTK_STATUS_ICON (statusicon));
 
 	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_DEFAULT);
-	notify_notification_add_action (notification, "display", _("Open File"),
-					(NotifyActionCallback) launch_viewer_for_file, (gpointer) file_uri, (GFreeFunc) g_free);
+
+	mime_type = g_content_type_guess (filename, NULL, 0, NULL);
+	app = g_app_info_get_default_for_type (mime_type, FALSE);
+	if (app != NULL) {
+		/* FIXME duplicate the uri, otherwise libnotify crashes */
+		char *uri;
+		g_object_unref (app);
+		uri = g_strdup (file_uri);
+		notify_notification_add_action (notification, "display", _("Open File"),
+						(NotifyActionCallback) notification_launch_action_on_file_cb,
+						(gpointer) uri, (GFreeFunc) g_free);
+	}
+	notify_notification_add_action (notification, "reveal", _("Reveal File"),
+					(NotifyActionCallback) notification_launch_action_on_file_cb,
+					(gpointer) file_uri, (GFreeFunc) g_free);
 	
 	g_signal_connect (G_OBJECT (notification), "closed", G_CALLBACK (on_close_notification), notification);
 

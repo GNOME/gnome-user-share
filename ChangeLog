@@ -1,3 +1,10 @@
+2008-06-12  Bastien Nocera  <hadess@hadess.net>
+
+	* src/obexpush.c (notification_launch_action_on_file_cb),
+	(show_notification): Add a "Reveal File" button on the transfer
+	notifications, patch by Baptiste Mille-Mathias
+	<baptiste.millemathias@gmail.com> (Closes: #534794)
+
 2008-05-25  Bastien Nocera  <hadess@hadess.net>
 
 	* configure.in:
