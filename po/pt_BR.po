@@ -1,17 +1,18 @@
 # Brazilian Portuguese translation of gnome-user-share.
 # Copyright (C) 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
-# Raphael Higino <raphaelh@uai.com.br>, 2005.
+# Raphael Higino (In Memoriam), 2005.
 # Og Maciel <ogmaciel@ubuntu.com>, 2007.
 # Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2008.
+# Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-01 16:33-0300\n"
-"PO-Revision-Date: 2008-03-01 16:33-0300\n"
-"Last-Translator: Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>\n"
+"POT-Creation-Date: 2008-06-20 09:49-0300\n"
+"PO-Revision-Date: 2008-06-19 18:32-0300\n"
+"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +31,7 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"Se isso for verdadeiro, o diretório Público no diretório pessoal dos "
+"Se isso for verdadeiro, o diretório público no diretório pessoal dos "
 "usuários será compartilhado via Bluetooth quando o usuário tiver realizado "
 "login."
 
@@ -39,17 +40,17 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"Se isso for verdadeiro, o diretório Público no diretório pessoal dos "
+"Se isso for verdadeiro, o diretório público no diretório pessoal dos "
 "usuários será compartilhado através da rede quando o usuário tiver realizado "
 "login."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
-msgstr "Compartilhar diretório Público via Bluetooth"
+msgstr "Compartilhar diretório público via Bluetooth"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
-msgstr "Compartilhar diretório Público na rede"
+msgstr "Compartilhar diretório público na rede"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to accept files sent over Bluetooth"
@@ -102,15 +103,15 @@ msgstr "Notifica ou não sobre arquivos recebidos recentemente."
 
 #: ../data/file-share-properties.glade.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Receber Arquivos via Bluetooth</b>"
+msgstr "<b>Receber arquivos via Bluetooth</b>"
 
 #: ../data/file-share-properties.glade.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Compartilhar Arquivos via Bluetooth</b>"
+msgstr "<b>Compartilhar arquivos via Bluetooth</b>"
 
 #: ../data/file-share-properties.glade.h:3
 msgid "<b>Share Files over the network</b>"
-msgstr "<b>Compartilhar Arquivos via Rede</b>"
+msgstr "<b>Compartilhar arquivos via rede</b>"
 
 #: ../data/file-share-properties.glade.h:4
 msgid "Accept files: "
@@ -122,7 +123,7 @@ msgstr "Permitir que dispositivos remotos excluam arquivos"
 
 #: ../data/file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
-msgstr "Preferências de Compartilhamento de Arquivos"
+msgstr "Preferências de compartilhamento de arquivos"
 
 #: ../data/file-share-properties.glade.h:7
 msgid "Notify about received files"
@@ -130,19 +131,19 @@ msgstr "Notificar sobre arquivos recebidos"
 
 #: ../data/file-share-properties.glade.h:8
 msgid "Receive files in Downloads folder over Bluetooth"
-msgstr "Receber arquivos na parta de downloads via Bluetooth"
+msgstr "Receber arquivos na pasta de downloads via Bluetooth"
 
 #: ../data/file-share-properties.glade.h:9
 msgid "Require remote devices to bond with this computer"
-msgstr ""
+msgstr "Exigir aos dispositivos remotos vínculo com este computador"
 
 #: ../data/file-share-properties.glade.h:10
 msgid "Share Public files on network"
-msgstr "Compartilhar arquivos Públicos na rede"
+msgstr "Compartilhar arquivos públicos na rede"
 
 #: ../data/file-share-properties.glade.h:11
 msgid "Share Public files over Bluetooth"
-msgstr "Compartilhar arquivos Públicos via Bluetooth"
+msgstr "Compartilhar arquivos públicos via Bluetooth"
 
 #: ../data/file-share-properties.glade.h:12
 msgid "_Password:"
@@ -154,7 +155,7 @@ msgstr "_Perguntar senha:"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
-msgstr "Compartilhamento de Arquivos Pessoais"
+msgstr "Compartilhamento de arquivos pessoais"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
@@ -162,33 +163,33 @@ msgstr "Preferências para o compartilhamento de arquivos pessoais"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
 msgid "Launch User Sharing if enabled"
-msgstr "Lança Compartilhamento do Usuário, se habilitado"
+msgstr "Lança compartilhamento do usuário, se habilitado"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "User Sharing"
-msgstr "Compartilhamento do Usuário"
+msgstr "Compartilhamento do usuário"
 
-#: ../src/file-share-properties.c:491
+#: ../src/file-share-properties.c:493
 msgid "Never"
 msgstr "Nunca"
 
-#: ../src/file-share-properties.c:494
+#: ../src/file-share-properties.c:496
 msgid "When writing files"
 msgstr "Ao gravar arquivos"
 
-#: ../src/file-share-properties.c:497 ../src/file-share-properties.c:520
+#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
 msgid "Always"
 msgstr "Sempre"
 
-#: ../src/file-share-properties.c:523
+#: ../src/file-share-properties.c:525
 msgid "Only for Bonded devices"
-msgstr ""
+msgstr "Somente para dispositivos laçados"
 
-#: ../src/file-share-properties.c:526
+#: ../src/file-share-properties.c:528
 msgid "Only for Paired and Trusted devices"
-msgstr ""
+msgstr "Somente para dispositivos emparelhados e confiáveis"
 
-#: ../src/file-share-properties.c:531
+#: ../src/file-share-properties.c:533
 msgid "Ask"
 msgstr "Perguntar"
 
