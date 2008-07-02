@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-07 10:21+0100\n"
+"POT-Creation-Date: 2008-07-02 08:59+0200\n"
 "PO-Revision-Date: 2007-11-20 14:31+0100\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -155,27 +155,27 @@ msgstr ""
 msgid "User Sharing"
 msgstr ""
 
-#: ../src/file-share-properties.c:491
+#: ../src/file-share-properties.c:493
 msgid "Never"
 msgstr "Jamai"
 
-#: ../src/file-share-properties.c:494
+#: ../src/file-share-properties.c:496
 msgid "When writing files"
 msgstr ""
 
-#: ../src/file-share-properties.c:497 ../src/file-share-properties.c:520
+#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
 msgid "Always"
 msgstr "Totjorn"
 
-#: ../src/file-share-properties.c:523
+#: ../src/file-share-properties.c:525
 msgid "Only for Bonded devices"
 msgstr ""
 
-#: ../src/file-share-properties.c:526
+#: ../src/file-share-properties.c:528
 msgid "Only for Paired and Trusted devices"
 msgstr ""
 
-#: ../src/file-share-properties.c:531
+#: ../src/file-share-properties.c:533
 msgid "Ask"
 msgstr ""
 
