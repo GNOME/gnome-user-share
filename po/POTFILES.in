@@ -6,4 +6,5 @@ data/gnome-user-share-properties.desktop.in
 data/gnome-user-share.desktop.in.in
 src/file-share-properties.c
 src/http.c
+src/obexpush.c
 src/user_share.c

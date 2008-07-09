@@ -1,3 +1,8 @@
+2008-07-09  Kjartan Maraas <kmaraas@gnome.org>
+
+	* POTFILES.in: Add missing file.
+	* nb.po: Updated Norwegian bokmål translation.
+
 2008-07-02  Yannig Marchegay <yannig@marchegay.org>
 
 	* oc.po: Updated Occitan translation.
