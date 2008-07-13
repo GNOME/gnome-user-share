@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Kjartan Maraas <kmaraas@gnome.org>, 2007-2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-09 23:34+0200\n"
-"PO-Revision-Date: 2008-07-09 23:36+0200\n"
+"POT-Creation-Date: 2008-07-13 11:55+0200\n"
+"PO-Revision-Date: 2008-07-13 11:59+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -16,22 +16,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-#, fuzzy
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-msgstr ""
-"Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog "
-"bli delt når brukeren logger inn."
+msgstr "Hvis denne settes til «true» kan Bluetooth-enheter sende filer til katalogen Downloads i brukerens hjemmekatalog når brukeren er logget inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-#, fuzzy
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr ""
-"Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog "
-"bli delt når brukeren logger inn."
+msgstr "Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog bli delt via Bluetooth når brukeren logger inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 #, fuzzy
@@ -99,7 +93,7 @@ msgstr ""
 
 #: ../data/file-share-properties.glade.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
-msgstr ""
+msgstr "<b>Motta filer via Bluetooth</b>"
 
 #: ../data/file-share-properties.glade.h:2
 msgid "<b>Share Files over Bluetooth</b>"
@@ -127,11 +121,11 @@ msgstr "Varsle om mottatte filer"
 
 #: ../data/file-share-properties.glade.h:8
 msgid "Receive files in Downloads folder over Bluetooth"
-msgstr ""
+msgstr "Motta filer i katalogen Downloads via Bluetooth"
 
 #: ../data/file-share-properties.glade.h:9
 msgid "Require remote devices to bond with this computer"
-msgstr ""
+msgstr "Krev at eksterne enheter binder seg til denne datamaskinen"
 
 #: ../data/file-share-properties.glade.h:10
 msgid "Share Public files on network"
@@ -179,7 +173,7 @@ msgstr "Alltid"
 
 #: ../src/file-share-properties.c:525
 msgid "Only for Bonded devices"
-msgstr ""
+msgstr "Kune for bundete enheter"
 
 #: ../src/file-share-properties.c:528
 msgid "Only for Paired and Trusted devices"
