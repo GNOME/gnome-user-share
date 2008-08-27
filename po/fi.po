@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-09 08:10+0300\n"
-"PO-Revision-Date: 2008-03-09 08:30+0300\n"
+"POT-Creation-Date: 2008-08-27 15:15+0300\n"
+"PO-Revision-Date: 2008-08-27 15:00+0300\n"
 "Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -79,7 +79,8 @@ msgstr "Voivatko bluetooth-asiakkaat lähettää tiedostoja ObexPush:illa."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Tuleeko bluetooth-asiakkaiden pariutua tietokoneen kanssa lähettääkseen "
+msgstr ""
+"Tuleeko bluetooth-asiakkaiden pariutua tietokoneen kanssa lähettääkseen "
 "tiedostoja."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
@@ -166,27 +167,27 @@ msgstr "Käynnistä käyttäjän tiedostonjako, jos käytössä"
 msgid "User Sharing"
 msgstr "Käyttäjän tiedostojen jako"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:493
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: ../src/file-share-properties.c:499
+#: ../src/file-share-properties.c:496
 msgid "When writing files"
 msgstr "Kirjoitettaessa tiedostoja"
 
-#: ../src/file-share-properties.c:502 ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
 msgid "Always"
 msgstr "Aina"
 
-#: ../src/file-share-properties.c:528
+#: ../src/file-share-properties.c:525
 msgid "Only for Bonded devices"
 msgstr "Salli vain sidotut laitteet"
 
-#: ../src/file-share-properties.c:531
+#: ../src/file-share-properties.c:528
 msgid "Only for Paired and Trusted devices"
 msgstr "Salli vain paritetut ja luotetut laitteet"
 
-#: ../src/file-share-properties.c:536
+#: ../src/file-share-properties.c:533
 msgid "Ask"
 msgstr "Kysy"
 
@@ -210,3 +211,21 @@ msgstr "Käyttäjän %s julkiset tiedostot"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Käyttäjän %s julkiset tiedostot palvelimella %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooh"
+msgstr "Vastaanotit tiedoston \"%s\" bluetoothilla"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "Vastaanotit tiedoston"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "Avaa tiedosto"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "Paljasta tiedosto"
