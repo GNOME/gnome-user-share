@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the gnome-user-share package.
 # Raphael Higino (In Memoriam), 2005.
 # Og Maciel <ogmaciel@ubuntu.com>, 2007.
-# Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+# Djavan Fagundes <dnoway@gmail.com>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-20 09:49-0300\n"
-"PO-Revision-Date: 2008-06-19 18:32-0300\n"
-"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
+"POT-Creation-Date: 2008-07-09 21:38+0000\n"
+"PO-Revision-Date: 2008-08-28 17:49-0300\n"
+"Last-Translator: Djavan Fagundes <dnoway@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -213,3 +214,21 @@ msgstr "Arquivos públicos de %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Arquivos públicos de %s em %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooh"
+msgstr "Você recebeu \"%s\" via Bluetooh"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "Você recebeu um arquivo"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "Abrir arquivo"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "Revelar arquivo"
