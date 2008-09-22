@@ -1,4 +1,4 @@
-AC_INIT(gnome-user-share, 0.31)
+AC_INIT(gnome-user-share, 0.40)
 
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
 AM_CONFIG_HEADER(config.h)

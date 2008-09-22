@@ -1,5 +1,13 @@
 This is gnome-user-share 0.31, a system for easy sharing of user files.
 
+Major changes since 0.31 are:
+* Notify when receiving files via ObexPush, and allow opening
+  or revealing the received file
+* Disable Bluetooth file sharing when the user isn't at the console
+  (fast-user switching)
+* Better support for other Apache httpd MPMs
+* Move the configuration files to XDG locations
+
 Major changes since 0.30 are:
 * Don't exit when the d-bus session bus goes away, fixes httpd processes
   lying around after logout when Bluetooth sharing is enabled
