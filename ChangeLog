@@ -1,3 +1,8 @@
+2008-09-22  Bastien Nocera  <hadess@hadess.net>
+
+	* src/obexpush.c (device_is_authorised), (cancelled_cb):
+	Port to the BlueZ 4.x API (Closes: #522404)
+
 === gnome-user-share 0.40 ===
 
 2008-09-22  Bastien Nocera  <hadess@hadess.net>

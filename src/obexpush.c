@@ -184,7 +184,7 @@ device_is_authorised (const char *bdaddr)
 	DBusGConnection *connection;
 	DBusGProxy *manager;
 	GError *error = NULL;
-	char **adapters;
+	GPtrArray *adapters;
 	gboolean retval = FALSE;
 	guint i;
 
@@ -193,52 +193,74 @@ device_is_authorised (const char *bdaddr)
 		return FALSE;
 
 	manager = dbus_g_proxy_new_for_name (connection, "org.bluez",
-					     "/org/bluez", "org.bluez.Manager");
+					     "/", "org.bluez.Manager");
 	if (manager == NULL) {
 		dbus_g_connection_unref (connection);
 		return FALSE;
 	}
 
-	if (dbus_g_proxy_call (manager, "ListAdapters", &error, G_TYPE_INVALID, G_TYPE_STRV, &adapters, G_TYPE_INVALID) == FALSE) {
+	if (dbus_g_proxy_call (manager, "ListAdapters", &error, G_TYPE_INVALID, dbus_g_type_get_collection ("GPtrArray", DBUS_TYPE_G_OBJECT_PATH), &adapters, G_TYPE_INVALID) == FALSE) {
 		g_object_unref (manager);
 		dbus_g_connection_unref (connection);
 		return FALSE;
 	}
 
-	for (i = 0; adapters[i] != NULL; i++) {
-		DBusGProxy *adapter;
-		gboolean bonded, trusted;
+	for (i = 0; i < adapters->len; i++) {
+		DBusGProxy *adapter, *device;
+		char *device_path;
+		GHashTable *props;
 
-		g_message ("checking adapter %s", adapters[i]);
+		g_message ("checking adapter %s", g_ptr_array_index (adapters, i));
 
 		adapter = dbus_g_proxy_new_for_name (connection, "org.bluez",
-						    adapters[i], "org.bluez.Adapter");
-		if (dbus_g_proxy_call (adapter, "HasBonding", NULL,
-				      G_TYPE_STRING, bdaddr, G_TYPE_INVALID,
-				      G_TYPE_BOOLEAN, &bonded, G_TYPE_INVALID) != FALSE) {
-			g_message ("%s is %s", bdaddr, bonded ? "bonded" : "not bonded");
-			if (bonded != FALSE) {
-				retval = TRUE;
-				g_object_unref (adapter);
-				break;
-			}
-		}
-		if (accept_setting == ACCEPT_BONDED_AND_TRUSTED &&
-		    dbus_g_proxy_call (adapter, "IsTrusted", NULL,
+						    g_ptr_array_index (adapters, i), "org.bluez.Adapter");
+
+		if (dbus_g_proxy_call (adapter, "FindDevice", NULL,
 				       G_TYPE_STRING, bdaddr, G_TYPE_INVALID,
-				       G_TYPE_BOOLEAN, &trusted, G_TYPE_INVALID) != FALSE) {
-			g_message ("%s is %s", bdaddr, trusted ? "trusted" : "not trusted");
-			if (trusted != FALSE) {
-				retval = TRUE;
-				g_object_unref (adapter);
-				break;
-			}
+				       DBUS_TYPE_G_OBJECT_PATH, &device_path, G_TYPE_INVALID) == FALSE)
+		{
+			g_object_unref (adapter);
+			continue;
 		}
 
+		device = dbus_g_proxy_new_for_name (connection, "org.bluez", device_path, "org.bluez.Device");
+
+		if (dbus_g_proxy_call (device, "GetProperties", NULL,
+				       G_TYPE_INVALID, dbus_g_type_get_map ("GHashTable", G_TYPE_STRING, G_TYPE_VALUE),
+				       &props, G_TYPE_INVALID) != FALSE)
+		{
+			GValue *value;
+			gboolean bonded, trusted;
+
+			value = g_hash_table_lookup (props, "Paired");
+			bonded = g_value_get_boolean (value);
+			g_message ("%s is %s", bdaddr, bonded ? "bonded" : "not bonded");
+
+			if (bonded) {
+				g_hash_table_destroy (props);
+				g_object_unref (device);
+				g_object_unref (adapter);
+				retval = TRUE;
+				break;
+			}
+			value = g_hash_table_lookup (props, "Trusted");
+			trusted = g_value_get_boolean (value);
+			g_message ("%s is %s", bdaddr, trusted ? "trusted" : "not trusted");
+
+			if (accept_setting == ACCEPT_BONDED_AND_TRUSTED
+			    && trusted) {
+				g_hash_table_destroy (props);
+				g_object_unref (device);
+				g_object_unref (adapter);
+				retval = TRUE;
+				break;
+			}
+		}
 		g_object_unref(adapter);
 	}
 
-	g_strfreev(adapters);
+	g_ptr_array_free (adapters, TRUE);
+
 	g_object_unref(manager);
 	dbus_g_connection_unref(connection);
 
@@ -351,7 +373,7 @@ static void
 cancelled_cb (DBusGProxy *session,
 	      gpointer user_data)
 {
-	//FIXME implement properly
+	//FIXME implement properly, we never actually finished the transfer
 	g_message ("transfered was cancelled by the sender");
 	transfer_completed_cb (session, user_data);
 }
