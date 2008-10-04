@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-02 23:09+0900\n"
-"PO-Revision-Date: 2008-04-02 23:08+0900\n"
+"POT-Creation-Date: 2008-10-04 16:02+0900\n"
+"PO-Revision-Date: 2008-10-04 16:02+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -166,27 +166,27 @@ msgstr "ユーザ共有の機能を起動します (可能ならば)"
 msgid "User Sharing"
 msgstr "ユーザ共有"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:493
 msgid "Never"
 msgstr "しない"
 
-#: ../src/file-share-properties.c:499
+#: ../src/file-share-properties.c:496
 msgid "When writing files"
 msgstr "ファイルを書き込む時"
 
-#: ../src/file-share-properties.c:502 ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
 msgid "Always"
 msgstr "常に"
 
-#: ../src/file-share-properties.c:528
+#: ../src/file-share-properties.c:525
 msgid "Only for Bonded devices"
 msgstr "ペアにしたデバイスのみ"
 
-#: ../src/file-share-properties.c:531
+#: ../src/file-share-properties.c:528
 msgid "Only for Paired and Trusted devices"
 msgstr "ペアでかつ信頼できるデバイスのみ"
 
-#: ../src/file-share-properties.c:536
+#: ../src/file-share-properties.c:533
 msgid "Ask"
 msgstr "問い合わせる"
 
@@ -210,3 +210,21 @@ msgstr "%s の共有ファイル"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s にある %1$s の共有ファイル"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooh"
+msgstr "Bluetooh 経由でファイルを受信しました: %s"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "ファイルを受信しました"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "ファイルを開く"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "ファイルを表示する"
