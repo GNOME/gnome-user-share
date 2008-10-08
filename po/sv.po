@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-25 22:53+0200\n"
-"PO-Revision-Date: 2008-07-25 22:54+0100\n"
+"POT-Creation-Date: 2008-10-08 19:08+0200\n"
+"PO-Revision-Date: 2008-10-08 19:10+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -77,51 +77,51 @@ msgstr "<b>Ta emot filer över Bluetooth</b>"
 
 #: ../data/file-share-properties.glade.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Dela filer över Bluetooth</b>"
+msgstr "<b>Dela ut filer över Bluetooth</b>"
 
 #: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the network</b>"
-msgstr "<b>Dela filer över nätverket</b>"
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Dela ut filer över nätverket</b>"
 
 #: ../data/file-share-properties.glade.h:4
-msgid "Accept files: "
-msgstr "Acceptera filer: "
+msgid "Allo_w remote devices to delete files"
+msgstr "Till_åt fjärrenheter att ta bort filer"
 
 #: ../data/file-share-properties.glade.h:5
-msgid "Allow remote devices to delete files"
-msgstr "Tillåt fjärrenheter att ta bort filer"
-
-#: ../data/file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr "Inställningar för fildelning"
 
+#: ../data/file-share-properties.glade.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Ta emot filer i mappen _Hämtat över Bluetooth"
+
 #: ../data/file-share-properties.glade.h:7
-msgid "Notify about received files"
-msgstr "Notifiera om mottagna filer"
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Kräv att fjärrenheter _paras ihop med denna dator"
 
 #: ../data/file-share-properties.glade.h:8
-msgid "Receive files in Downloads folder over Bluetooth"
-msgstr "Ta emot filer i mappen Hämtat över Bluetooth"
+msgid "Share public files over _Bluetooth"
+msgstr "Dela ut publika filer över _Bluetooth"
 
 #: ../data/file-share-properties.glade.h:9
-msgid "Require remote devices to bond with this computer"
-msgstr "Kräv att fjärrenheter paras ihop med denna dator"
+msgid "_Accept files: "
+msgstr "_Acceptera filer: "
 
 #: ../data/file-share-properties.glade.h:10
-msgid "Share Public files on network"
-msgstr "Dela ut publika filer på nätverket"
+msgid "_Notify about received files"
+msgstr "_Notifiera om mottagna filer"
 
 #: ../data/file-share-properties.glade.h:11
-msgid "Share Public files over Bluetooth"
-msgstr "Dela publika filer över Bluetooth"
-
-#: ../data/file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "_Lösenord:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.glade.h:12
 msgid "_Require password:"
 msgstr "_Kräv lösenord:"
+
+#: ../data/file-share-properties.glade.h:13
+msgid "_Share public files on network"
+msgstr "_Dela ut publika filer på nätverket"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
