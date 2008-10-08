@@ -1,3 +1,10 @@
+2008-10-08  Christian Persch  <chpe@gnome.org>
+
+	Bug 555555 – minor HIG layout problems in the prefs dialogue
+
+	* data/file-share-properties.glade: Fix prefs dialogue border,
+	spacings, strings to be HIG compliant. Add mnemonics.
+
 2008-10-08  Bastien Nocera  <hadess@hadess.net>
 
 	* src/obexpush.c (notification_launch_action_on_file_cb):
