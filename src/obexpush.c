@@ -79,7 +79,7 @@ notification_launch_action_on_file_cb (NotifyNotification *notification,
 
 	g_get_current_time (&val);
 
-#if GTK_CHECK_VERSION(2,13,2)
+#if GTK_CHECK_VERSION(2,14,0)
 	ctx = G_APP_LAUNCH_CONTEXT (gdk_app_launch_context_new ());
 	screen = gdk_screen_get_default ();
 	gdk_app_launch_context_set_screen (GDK_APP_LAUNCH_CONTEXT (ctx), screen);

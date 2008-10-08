@@ -1,3 +1,8 @@
+2008-10-08  Bastien Nocera  <hadess@hadess.net>
+
+	* src/obexpush.c (notification_launch_action_on_file_cb):
+	Require gtk+ 2.14.0 now that it's out
+
 2008-09-22  Bastien Nocera  <hadess@hadess.net>
 
 	* src/obexpush.c (device_is_authorised), (cancelled_cb):
