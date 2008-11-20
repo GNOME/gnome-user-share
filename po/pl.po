@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-09 21:38+0000\n"
-"PO-Revision-Date: 2008-09-09 23:23+0100\n"
+"POT-Creation-Date: 2008-11-20 21:05+0100\n"
+"PO-Revision-Date: 2008-11-20 21:09+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -84,48 +84,48 @@ msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Współdzielenie plików przez Bluetooth</b>"
 
 #: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the network</b>"
+msgid "<b>Share Files over the Network</b>"
 msgstr "<b>Współdzielenie plików przez sieć</b>"
 
 #: ../data/file-share-properties.glade.h:4
-msgid "Accept files: "
-msgstr "Akceptowanie plików:"
+msgid "Allo_w remote devices to delete files"
+msgstr "_Zezwolenie na usuwanie plików przez zdalne urządzenia"
 
 #: ../data/file-share-properties.glade.h:5
-msgid "Allow remote devices to delete files"
-msgstr "Zezwolenie na usuwanie plików przez zdalne urządzenia"
-
-#: ../data/file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr "Preferencje współdzielenia plików"
 
+#: ../data/file-share-properties.glade.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Odbieranie plików przez Bluetooth do katalogu _Pobrania"
+
 #: ../data/file-share-properties.glade.h:7
-msgid "Notify about received files"
-msgstr "Powiadamianie o odbieranych plikach"
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Wy_maganie powiązania zdalnych urządzeń z tym komputerem"
 
 #: ../data/file-share-properties.glade.h:8
-msgid "Receive files in Downloads folder over Bluetooth"
-msgstr "Odbieranie plików przez Bluetooth do katalogu Pobrania"
+msgid "Share public files over _Bluetooth"
+msgstr "Współdzielenie plików publicznych przez _Bluetooth"
 
 #: ../data/file-share-properties.glade.h:9
-msgid "Require remote devices to bond with this computer"
-msgstr "Wymaganie powiązania zdalnych urządzeń z tym komputerem"
+msgid "_Accept files: "
+msgstr "Ak_ceptowanie plików:"
 
 #: ../data/file-share-properties.glade.h:10
-msgid "Share Public files on network"
-msgstr "Współdzielenie plików publicznych w sieci"
+msgid "_Notify about received files"
+msgstr "P_owiadamianie o odbieranych plikach"
 
 #: ../data/file-share-properties.glade.h:11
-msgid "Share Public files over Bluetooth"
-msgstr "Współdzielenie plików publicznych przez Bluetooth"
-
-#: ../data/file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "_Hasło:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.glade.h:12
 msgid "_Require password:"
 msgstr "_Wymaganie hasła:"
+
+#: ../data/file-share-properties.glade.h:13
+msgid "_Share public files on network"
+msgstr "Współdzielenie plików publicznych w _sieci"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
