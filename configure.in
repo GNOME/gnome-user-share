@@ -31,14 +31,33 @@ AC_TYPE_SIGNAL
 AC_TYPE_SIZE_T
 AC_TYPE_UID_T
 
-AC_PATH_PROG([HTTPD], [httpd],,
-                  [$PATH:/usr/sbin])
+AC_ARG_WITH([httpd],
+	    [AS_HELP_STRING([--with-httpd],[Specify the binary used for the Apache httpd binary (default: httpd)])],
+	    [HTTPD=$withval])
+if test -z "$HTTPD" ; then
+	AC_PATH_PROG([HTTPD], [httpd],,
+		     [$PATH:/usr/sbin])
+	if test -z "$HTTPD" ; then
+		# As used in SUSE
+		AC_PATH_PROG([HTTPD], [apache2],,
+			     [$PATH:/usr/sbin])
+	fi
+	if test -z "$HTTPD" ; then
+		# As used in Ubuntu
+		AC_PATH_PROG([HTTPD], [httpd2],,
+			     [$PATH:/usr/sbin])
+	fi
+fi
 
-default_httpd_version=`$HTTPD -v | head -1 | sed "s#.*/##" | cut -f 1-2 -d .` 		  	
+default_httpd_version=`$HTTPD -v | head -1 | sed "s#^.*Apache/\([^ ]*\).*#\1#" | cut -f 1-2 -d .`
 AC_ARG_WITH(httpd-version, [  --with-httpd-version=VERSION         	Httpd version used.],
 	HTTPD_VERSION="$withval", HTTPD_VERSION="$default_httpd_version")
 	
 AC_SUBST(HTTPD_VERSION)
+
+if test "x$HTTPD_VERSION" != "x2.0" && test "x$HTTPD_VERSION" != "x2.2" ; then
+	AC_MSG_ERROR([Could not detect a supported HTTPD version (2.0 or 2.2)])
+fi
 	
 AM_CONDITIONAL(HAVE_AVAHI, false)
 AM_CONDITIONAL(HAVE_HOWL, false)

@@ -1,5 +1,14 @@
 2008-11-27  Bastien Nocera  <hadess@hadess.net>
 
+	* configure.in:
+	- detect httpd, apache2 and httpd2 for SUSE and Ubuntu compat
+	- Better parsing of httpd versions from Vincent Untz
+	<vuntz@gnome.org>
+	- Bail out if the httpd version isn't supported, or badly detected
+	(Closes: #542513)
+
+2008-11-27  Bastien Nocera  <hadess@hadess.net>
+
 	* data/dav_user_2.2.conf.in: Fix httpd startup error when
 	the module_path doesn't have a trailing slash (Closes: #561621)
 
