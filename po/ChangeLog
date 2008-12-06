@@ -1,3 +1,8 @@
+2008-12-06  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
+
+	* pt_BR.po: Updated Brazilian Portuguese translation. Contributed by
+	Fábio Nogueira.
+
 2008-11-28  Claude Paroz  <claude@2xlibre.net>
 
 	* fr.po: Updated French translation.
@@ -14,7 +19,7 @@
 
 	* it.po: Updated Italian translation by Gianvito Cavasoli.
 
-a2008-10-08  Daniel Nylander <po@danielnylander.se>
+2008-10-08  Daniel Nylander <po@danielnylander.se>
 
         * sv.po: Updated Swedish translation.
 	
