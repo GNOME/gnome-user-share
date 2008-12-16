@@ -1,5 +1,5 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Norwegian bokmål translation of gnome-user-share.
+# Copyright (C) YEAR, THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Kjartan Maraas <kmaraas@gnome.org>, 2007-2008.
 #
@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-13 11:55+0200\n"
-"PO-Revision-Date: 2008-07-13 11:59+0200\n"
+"POT-Creation-Date: 2008-12-16 12:48+0100\n"
+"PO-Revision-Date: 2008-12-16 12:58+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -19,44 +19,41 @@ msgstr ""
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-msgstr "Hvis denne settes til «true» kan Bluetooth-enheter sende filer til katalogen Downloads i brukerens hjemmekatalog når brukeren er logget inn."
+msgstr ""
+"Hvis denne settes til «true» kan Bluetooth-enheter sende filer til katalogen "
+"Downloads i brukerens hjemmekatalog når brukeren er logget inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr "Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog bli delt via Bluetooth når brukeren logger inn."
+msgstr ""
+"Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog "
+"bli delt via Bluetooth når brukeren logger inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
-#, fuzzy
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr ""
-"Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog "
-"bli delt når brukeren logger inn."
+msgstr "Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog bli delt over nettverket når brukeren logger inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-#, fuzzy
 msgid "Share Public directory over Bluetooth"
-msgstr "Del offentlig katalog"
+msgstr "Del Public-mappen over Bluetooth"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
-#, fuzzy
 msgid "Share Public directory over the network"
-msgstr "Del filer på nettverket"
+msgstr "Del Public-mappen på nettverket"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to accept files sent over Bluetooth"
-msgstr ""
+msgstr "Når filer sendt over Bluetooth skal godtas"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-#, fuzzy
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
-msgstr ""
-"Når passord skal kreves. Mulige verdier er «never», «on_write» og «always»."
+msgstr "Når filer sendt over Bluetooth skal godtas. Mulige verdier er «always», «bonded», «bonded_trusted», og «ask»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -71,25 +68,25 @@ msgstr "Når passord skal kreves"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
+msgstr "Om Bluetooth-klienter kan sende filer med ObexPush."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
+msgstr "Om Bluetooth-klienter må være bundet med datamaskinen for å sende filer."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
-msgstr ""
+msgstr "Om Bluetooth-klienter kan skrive filer eller må dele dem skrivebeskyttet."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
-msgstr ""
+msgstr "Om Bluetooth-klienter får skrive filer."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
-msgstr ""
+msgstr "Om nylig mottatte filer skal varsles."
 
 #: ../data/file-share-properties.glade.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
@@ -100,48 +97,48 @@ msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Del filer via Bluetooth</b>"
 
 #: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the network</b>"
-msgstr "<b>Del filer via nettverket</b>"
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Del filer over nettverket</b>"
 
 #: ../data/file-share-properties.glade.h:4
-msgid "Accept files: "
-msgstr "Godta filer: "
+msgid "Allo_w remote devices to delete files"
+msgstr "La e_ksterne enheter slette filer"
 
 #: ../data/file-share-properties.glade.h:5
-msgid "Allow remote devices to delete files"
-msgstr "Tillat at eksterne enheter sletter filer"
-
-#: ../data/file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr "Brukervalg for fildeling"
 
+#: ../data/file-share-properties.glade.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Motta filer i katalogen _Downloads via Bluetooth"
+
 #: ../data/file-share-properties.glade.h:7
-msgid "Notify about received files"
-msgstr "Varsle om mottatte filer"
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Krev at eksterne enheter binder seg til denne data_maskinen"
 
 #: ../data/file-share-properties.glade.h:8
-msgid "Receive files in Downloads folder over Bluetooth"
-msgstr "Motta filer i katalogen Downloads via Bluetooth"
+msgid "Share public files over _Bluetooth"
+msgstr "Del offentlige filer via _Bluetooth"
 
 #: ../data/file-share-properties.glade.h:9
-msgid "Require remote devices to bond with this computer"
-msgstr "Krev at eksterne enheter binder seg til denne datamaskinen"
+msgid "_Accept files: "
+msgstr "Godt_a filer: "
 
 #: ../data/file-share-properties.glade.h:10
-msgid "Share Public files on network"
-msgstr "Del filer på nettverket"
+msgid "_Notify about received files"
+msgstr "Varsle om _mottatte filer"
 
 #: ../data/file-share-properties.glade.h:11
-msgid "Share Public files over Bluetooth"
-msgstr "Del offentlige filer via Bluetooth"
-
-#: ../data/file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "_Passord:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.glade.h:12
 msgid "_Require password:"
 msgstr "K_rev passord:"
+
+#: ../data/file-share-properties.glade.h:13
+msgid "_Share public files on network"
+msgstr "_Del offentlige filer på nettverket"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
@@ -177,7 +174,7 @@ msgstr "Kune for bundete enheter"
 
 #: ../src/file-share-properties.c:528
 msgid "Only for Paired and Trusted devices"
-msgstr ""
+msgstr "Kun for enheter som er bundet og enheter vi stoler på"
 
 #: ../src/file-share-properties.c:533
 msgid "Ask"
