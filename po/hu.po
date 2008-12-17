@@ -216,7 +216,7 @@ msgstr "%s nyilvános fájljai ezen: %s"
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
-msgid "You received \"%s\" via Bluetooh"
+msgid "You received \"%s\" via Bluetooth"
 msgstr "„%s” érkezett Bluetooth-on"
 
 #: ../src/obexpush.c:140

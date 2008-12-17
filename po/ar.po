@@ -219,7 +219,7 @@ msgstr "الملفات المشتركة لـ %s على %s"
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
-msgid "You received \"%s\" via Bluetooh"
+msgid "You received \"%s\" via Bluetooth"
 msgstr ""
 
 #: ../src/obexpush.c:140

@@ -214,8 +214,8 @@ msgstr "%2$s にある %1$s の共有ファイル"
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
-msgid "You received \"%s\" via Bluetooh"
-msgstr "Bluetooh 経由でファイルを受信しました: %s"
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Bluetooth 経由でファイルを受信しました: %s"
 
 #: ../src/obexpush.c:140
 msgid "You received a file"

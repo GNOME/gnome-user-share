@@ -1,3 +1,9 @@
+2008-12-16  Baptiste Mille-Mathias  <baptiste.millemathias@gmail.com>
+
+	* src/obexpush.c:
+	* po/*.po: correct a typo (Bluetooh instead of Bluetooth).
+	(Closes bug 564784)
+
 2008-11-27  Bastien Nocera  <hadess@hadess.net>
 
 	* configure.in:

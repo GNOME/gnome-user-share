@@ -135,7 +135,7 @@ show_notification (const char *filename)
 
 	display = g_filename_display_basename (filename);
 	/* Translators: %s is the name of the filename received */
-	notification_text = g_strdup_printf(_("You received \"%s\" via Bluetooh"), display);
+	notification_text = g_strdup_printf(_("You received \"%s\" via Bluetooth"), display);
 	g_free (display);
 	notification = notify_notification_new_with_status_icon (_("You received a file"),
 								 notification_text,

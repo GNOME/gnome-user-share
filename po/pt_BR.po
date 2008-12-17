@@ -218,8 +218,8 @@ msgstr "Arquivos públicos de %s em %s"
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
-msgid "You received \"%s\" via Bluetooh"
-msgstr "Você recebeu \"%s\" via Bluetooh"
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Você recebeu \"%s\" via Bluetooth"
 
 #: ../src/obexpush.c:140
 msgid "You received a file"

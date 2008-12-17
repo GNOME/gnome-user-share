@@ -221,7 +221,7 @@ msgstr "Fichiers publics de %s sur %s"
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
-msgid "You received \"%s\" via Bluetooh"
+msgid "You received \"%s\" via Bluetooth"
 msgstr "Vous avez reçu « %s » par Bluetooth"
 
 #: ../src/obexpush.c:140
