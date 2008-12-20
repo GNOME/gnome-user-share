@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-04 16:02+0900\n"
-"PO-Revision-Date: 2008-10-04 16:02+0900\n"
+"POT-Creation-Date: 2008-12-20 20:55+0900\n"
+"PO-Revision-Date: 2008-12-20 20:54+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -104,51 +104,51 @@ msgstr "<b>Bluetooth を使ったファイルの受信</b>"
 
 #: ../data/file-share-properties.glade.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Bluetooth 上でのファイルの共有</b>"
+msgstr "<b>Bluetooth 越しのファイル共有</b>"
 
 #: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the network</b>"
-msgstr "<b>ネットワーク上でのファイルの共有</b>"
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>ネットワーク越しのファイル共有</b>"
 
 #: ../data/file-share-properties.glade.h:4
-msgid "Accept files: "
-msgstr "許可するファイル: "
+msgid "Allo_w remote devices to delete files"
+msgstr "リモートのデバイスからファイルを削除できるようにする(_W)"
 
 #: ../data/file-share-properties.glade.h:5
-msgid "Allow remote devices to delete files"
-msgstr "リモートのデバイスからファイルを削除できるようにする"
-
-#: ../data/file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr "ファイル共有の設定"
 
+#: ../data/file-share-properties.glade.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Bluetooth 越しに受信したファイルをダウンロード・フォルダに格納する(_D)"
+
 #: ../data/file-share-properties.glade.h:7
-msgid "Notify about received files"
-msgstr "ファイルを受信したら通知する"
+msgid "Require re_mote devices to bond with this computer"
+msgstr "リモートのデバイスとこのコンピュータをペアにする(_M)"
 
 #: ../data/file-share-properties.glade.h:8
-msgid "Receive files in Downloads folder over Bluetooth"
-msgstr "Bluetooth が受信したファイルをダウンロード・フォルダに格納する"
+msgid "Share public files over _Bluetooth"
+msgstr "Bluetooth 越しにファイルを共有する(_B)"
 
 #: ../data/file-share-properties.glade.h:9
-msgid "Require remote devices to bond with this computer"
-msgstr "リモートのデバイスとこのコンピュータをペアにする"
+msgid "_Accept files: "
+msgstr "許可するファイル(_A): "
 
 #: ../data/file-share-properties.glade.h:10
-msgid "Share Public files on network"
-msgstr "Public なファイルをネットワーク上で共有する"
+msgid "_Notify about received files"
+msgstr "ファイルを受信したら通知する(_N)"
 
 #: ../data/file-share-properties.glade.h:11
-msgid "Share Public files over Bluetooth"
-msgstr "Public なファイルを Bluetooth 上で共有する"
-
-#: ../data/file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "パスワード(_P):"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.glade.h:12
 msgid "_Require password:"
 msgstr "パスワード要求の時期(_R):"
+
+#: ../data/file-share-properties.glade.h:13
+msgid "_Share public files on network"
+msgstr "ネットワーク越しにファイルを共有する(_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
@@ -215,7 +215,7 @@ msgstr "%2$s にある %1$s の共有ファイル"
 #: ../src/obexpush.c:138
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr "Bluetooth 経由でファイルを受信しました: %s"
+msgstr "Bluetooh 経由で \"%s\" を受信しました"
 
 #: ../src/obexpush.c:140
 msgid "You received a file"
