@@ -1,71 +1,168 @@
-# SOME DESCRIPTIVE TITLE.
+# gnome-user-share的简体中文翻译.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Funda Wang <fundawang@linux.net.cn>, 2005.
-#
+# 甘露(Gan Lu) <rhythm.gan@gmail.com>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-16 03:03+0200\n"
-"PO-Revision-Date: 2005-10-16 17:55+0800\n"
-"Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&amp;component=general\n"
+"POT-Creation-Date: 2008-12-17 07:49+0000\n"
+"PO-Revision-Date: 2009-01-01 22:00+0700\n"
+"Last-Translator: 甘露(Gan Lu) <rhythm.gan@gmail.com>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:1
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
-msgstr "如果为 true，则用户主目录中的公开目录将在用户登录的时候被共享。"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "如果为真(true)，则用户登录时，蓝牙设备能发送文件到用户的“下载“目录。"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "共享公开目录"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "如果为真(true)，则用户登录时，用户主目录中的“公共”目录将在蓝牙中共享。"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:3
-msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr "何时询问密码，可供选择的选项是：“never”、“on_write”、“always”。"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "如果为真(true)，则用户登录时，用户主目录中的“公共”目录将在网络中共享。"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over Bluetooth"
+msgstr "在蓝牙中共享“公共“目录"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+msgid "Share Public directory over the network"
+msgstr "在网络中共享“公共“目录"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "何时接收通过蓝牙发送的文件"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr "何时接受通过蓝牙发送的文件，可能的选项是 \"永远如此\"，\"绑定的\"，\"绑定并信任的\" 及 \"询问\"。"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "何时询问密码，可供选择的选项是： \"永不\"，\"写入时\"，和 \"永远如此\"。"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
 msgstr "何时请求密码"
 
-#: ../file-share-properties.c:290
-msgid "Never"
-msgstr "从不"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "是否蓝牙客户端能使用 ObexPus 发送文件。"
 
-#: ../file-share-properties.c:293
-msgid "When writing files"
-msgstr "写入文件时"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "是否蓝牙客户端需要和电脑配对发送文件。"
 
-#: ../file-share-properties.c:296
-msgid "Always"
-msgstr "总是"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "是否允许蓝牙客户端写入文件，或只允许读取共享文件。"
 
-#: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>共享文件</b>"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "是否允许蓝牙客户端写入文件。"
 
-#: ../file-share-properties.glade.h:2
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "是否通知关于新收到的文件。"
+
+#: ../data/file-share-properties.glade.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>通过蓝牙接收文件</b>"
+
+#: ../data/file-share-properties.glade.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>在蓝牙中共享文件</b>"
+
+#: ../data/file-share-properties.glade.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>在网络中共享文件</b>"
+
+#: ../data/file-share-properties.glade.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "允许远端设备删除文件(_w)"
+
+#: ../data/file-share-properties.glade.h:5
 msgid "File Sharing Preferences"
 msgstr "文件共享首选项"
 
-#: ../file-share-properties.glade.h:3
-msgid "Share Public files on network"
-msgstr "在网络中共享公开文件"
+#: ../data/file-share-properties.glade.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "在蓝牙中接收在“下载“文件夹中文件"
 
-#: ../file-share-properties.glade.h:4
+#: ../data/file-share-properties.glade.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "要求远端设备和该电脑绑定(_m)"
+
+#: ../data/file-share-properties.glade.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "在蓝牙中共享公开文件(_B)"
+
+#: ../data/file-share-properties.glade.h:9
+msgid "_Accept files: "
+msgstr "接受文件(_A)："
+
+#: ../data/file-share-properties.glade.h:10
+msgid "_Notify about received files"
+msgstr "通知关于接收到的文件"
+
+#: ../data/file-share-properties.glade.h:11
 msgid "_Password:"
 msgstr "密码(_P)："
 
-#: ../file-share-properties.glade.h:5
+#: ../data/file-share-properties.glade.h:12
 msgid "_Require password:"
 msgstr "需要密码(_R)："
+
+#: ../data/file-share-properties.glade.h:13
+msgid "_Share public files on network"
+msgstr "在网络中共享公共文件(_S)"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "个人文件共享"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "共享个人文件首选项"
+
+#: ../data/gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "如果启用则启动用户共享"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr "用户共享"
+
+#: ../src/file-share-properties.c:493
+msgid "Never"
+msgstr "从不"
+
+#: ../src/file-share-properties.c:496
+msgid "When writing files"
+msgstr "写入文件时"
+
+#: ../src/file-share-properties.c:499
+#: ../src/file-share-properties.c:522
+msgid "Always"
+msgstr "总是"
+
+#: ../src/file-share-properties.c:525
+msgid "Only for Bonded devices"
+msgstr "仅为绑定设备"
+
+#: ../src/file-share-properties.c:528
+msgid "Only for Paired and Trusted devices"
+msgstr "仅为配对并信任的设备"
+
+#: ../src/file-share-properties.c:533
+msgid "Ask"
+msgstr "询问"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -76,7 +173,33 @@ msgstr "需要密码(_R)："
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:157
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files"
-msgstr "%s 的公开文件"
+msgstr "%s 的公共文件"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../src/http.c:141
+#, c-format
+msgid "%s's public files on %s"
+msgstr "%s 的公共文件在 %s 之上"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "你已由蓝牙接受到 \"%s\""
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "你已接收到一个文件"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "打开文件"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "显示文件"
+
