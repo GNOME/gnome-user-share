@@ -1,3 +1,14 @@
+2009-01-13  Bastien Nocera  <hadess@hadess.net>
+
+	* configure.in:
+	* data/dav_user_2.2.conf.in:
+	* src/Makefile.am:
+	* src/http.c (spawn_httpd), (http_up), (http_down), (http_init):
+	Remove loads of code and direct Avahi/Howl dependency by using
+	mod_dnssd to advertise the share (Closes: #567442)
+	Disable Apache 2.0 support, somebody with access to it will have
+	to fix this
+
 === gnome-user-share 0.41 ===
 
 2008-12-17  Bastien Nocera  <hadess@hadess.net>

@@ -13,33 +13,43 @@ LoadModule dav_fs_module @HTTP_MODULES_PATH@/mod_dav_fs.so
 LoadModule authn_file_module @HTTP_MODULES_PATH@/mod_authn_file.so
 LoadModule auth_digest_module @HTTP_MODULES_PATH@/mod_auth_digest.so
 LoadModule authz_groupfile_module @HTTP_MODULES_PATH@/mod_authz_groupfile.so
+LoadModule dnssd_module @HTTP_MODULES_PATH@/mod_dnssd.so
 
-DocumentRoot ${XDG_PUBLICSHARE_DIR}
-<Directory "${XDG_PUBLICSHARE_DIR}">
-  AllowOverride None
-  DAV On
+DNSSDEnable on
+DNSSDAutoRegisterVHosts Off
+DNSSDAutoRegisterUserDir Off
 
-  AuthType Digest
-  AuthName "Please log in as the user guest"
-  AuthDigestDomain /
+<VirtualHost *>
+  DocumentRoot ${XDG_PUBLICSHARE_DIR}
 
-  AuthDigestProvider file
-  AuthUserFile ${XDG_CONFIG_HOME}/user-share/passwd
-  AuthGroupFile @DATADIR@/gnome-user-share/dav_groupfile
+  <Location />
+    AllowOverride None
+    DAV On
 
+    AuthType Digest
+    AuthName "${GUS_LOGIN_LABEL}"
+    AuthDigestDomain /
 
-  <IfDefine RequirePasswordAlways>
-    Require user guest
-    Require group guest
-  </IfDefine>
+    AuthDigestProvider file
+    AuthUserFile ${XDG_CONFIG_HOME}/user-share/passwd
+    AuthGroupFile /usr/share/gnome-user-share/dav_groupfile
 
-  <IfDefine RequirePasswordOnWrite>
-    <LimitExcept GET OPTIONS PROPFIND>
+    <IfDefine RequirePasswordAlways>
       Require user guest
       Require group guest
-    </LimitExcept>
-  </IfDefine>
-</Directory>
+    </IfDefine>
+
+    <IfDefine RequirePasswordOnWrite>
+      <LimitExcept GET OPTIONS PROPFIND>
+        Require user guest
+        Require group guest
+      </LimitExcept>
+    </IfDefine>
+
+    DNSSDServiceName "${GUS_SHARE_NAME}"
+    DNSSDServiceTypes _webdav._tcp
+  </Location>
+</VirtualHost>
 
 StartServers 1
 MaxClients 3

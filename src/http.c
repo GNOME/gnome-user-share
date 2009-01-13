@@ -31,22 +31,6 @@
 #include <dbus/dbus.h>
 #endif
 
-#ifdef HAVE_AVAHI
-#include <avahi-client/client.h>
-#include <avahi-client/publish.h>
-#include <avahi-common/alternative.h>
-#include <avahi-common/error.h>
-#include <avahi-glib/glib-watch.h>
-#include <avahi-glib/glib-malloc.h>
-#endif /* HAVE_AVAHI */
-
-#ifdef HAVE_HOWL
-/* Workaround broken howl installing config.h */
-#undef PACKAGE
-#undef VERSION
-#include <howl.h>
-#endif /* HAVE_HOWL */
-
 #include <gconf/gconf-client.h>
 
 #include <stdarg.h>
@@ -184,246 +168,6 @@ init_dbus() {
 }
 #endif
 
-#ifdef HAVE_AVAHI
-
-static AvahiClient *avahi_client = NULL;
-static gboolean avahi_should_publish = FALSE;
-static gboolean avahi_running = FALSE;
-static int avahi_port = 0;
-static AvahiEntryGroup *entry_group = NULL;
-static char *avahi_name = NULL;
-
-static AvahiStringList*
-new_text_record_list (const char *first_key,
-		      const char *first_value,
-		      ...)
-{
-	va_list args;
-	const char *k;
-	const char *v;
-	AvahiStringList *list;
-
-	if (first_key == NULL)
-		return NULL;
-
-	list = NULL;
-
-	list = avahi_string_list_add_pair (list, first_key, first_value);
-
-	va_start (args, first_value);
-	k = va_arg (args, const char*);
-	if (k)
-		v = va_arg (args, const char*);
-	while (k != NULL) {
-		list = avahi_string_list_add_pair (list, k, v);
-
-		k = va_arg (args, const char*);
-		if (k)
-			v = va_arg (args, const char*);
-	}
-
-	va_end(args);
-
-	return list;
-}
-
-static gboolean
-create_service (void) {
-	int ret;
-	AvahiStringList *txt_records;
-
-	if (avahi_name == NULL) {
-		avahi_name = g_strdup (get_share_name ());
-	}
-
-	txt_records = new_text_record_list ("u", "guest",
-#ifdef HAVE_DBUS_1_1
-					    /* This must be last */
-					    dbus_session_id != NULL ? "org.freedesktop.od.session" : NULL, dbus_session_id,
-#endif									   
-					    NULL);
-
-	ret = avahi_entry_group_add_service_strlst (entry_group, AVAHI_IF_UNSPEC, AVAHI_PROTO_UNSPEC, 
-						    AVAHI_PUBLISH_USE_MULTICAST,
-						    avahi_name, "_webdav._tcp", NULL, NULL, 
-						    avahi_port,
-						    txt_records);
-
-	avahi_string_list_free(txt_records);
-
-	if (ret < 0) {
-		return FALSE;
-	}
-
-	ret = avahi_entry_group_commit (entry_group);
-
-	if (ret < 0) {
-		return FALSE;
-	}
-
-	return TRUE;
-}
-
-static void 
-entry_group_callback (AvahiEntryGroup *g, 
-		      AvahiEntryGroupState state, 
-		      void *userdata) 
-{
-	if (state == AVAHI_ENTRY_GROUP_ESTABLISHED) {
-	} else if (state == AVAHI_ENTRY_GROUP_COLLISION) {
-		char *n;
-
-		/* A service name collision happened. Let's pick a new name */
-		n = avahi_alternative_service_name (avahi_name);
-		g_free (avahi_name);
-		avahi_name = n;
-
-		fprintf (stderr, "Service name collision, renaming service to '%s'\n", avahi_name);
-
-		/* And recreate the services */
-		create_service();
-	}
-}
-
-static void
-avahi_client_callback (AvahiClient *client, AvahiClientState state, void *userdata)
-{
-	if (state == AVAHI_CLIENT_S_RUNNING) {
-		avahi_running = TRUE;
-		if (avahi_should_publish) {
-			create_service ();
-		}
-	} else if (state == AVAHI_CLIENT_S_COLLISION) {
-		avahi_entry_group_reset (entry_group);
-	} else if (state == AVAHI_CLIENT_FAILURE) {
-		avahi_running = FALSE;
-	}
-}
-
-static gboolean
-init_avahi (void)
-{
-	AvahiGLibPoll *poll;
-	int error;
-
-	avahi_set_allocator (avahi_glib_allocator ());
-
-	poll = avahi_glib_poll_new (NULL, G_PRIORITY_DEFAULT);
-
-	/* Create a new AvahiClient instance */
-	avahi_client = avahi_client_new (avahi_glib_poll_get (poll),
-					 AVAHI_CLIENT_NO_FAIL,
-					 avahi_client_callback,
-					 NULL,
-					 &error);
-	if (avahi_client == NULL) {
-		return FALSE;
-	}
-
-	entry_group = avahi_entry_group_new (avahi_client, entry_group_callback, NULL);
-	if (entry_group == NULL) {
-		return FALSE;
-	}
-
-	return TRUE;
-}
-
-
-static gboolean
-publish_service (int port)
-{
-	avahi_should_publish = TRUE;
-	avahi_port = port;
-	if (avahi_running) {
-		create_service ();
-	}
-	return TRUE;
-}
-
-static void
-stop_publishing (void)
-{
-	avahi_should_publish = FALSE;
-	avahi_entry_group_reset (entry_group);
-}
-#endif
-
-#ifdef HAVE_HOWL
-
-static sw_discovery_publish_id published_id = 0;
-static sw_discovery howl_session;
-
-static gboolean
-howl_input (GIOChannel  *io_channel,
-	    GIOCondition cond,
-	    gpointer     callback_data)
-{
-	sw_discovery session;
-	session = callback_data;
-	sw_salt salt;
-
-	if (sw_discovery_salt (session, &salt) == SW_OKAY) {
-		sw_salt_lock (salt);
-		sw_discovery_read_socket (session);
-		sw_salt_unlock (salt);
-	}
-	return TRUE;
-}
-
-static void
-set_up_howl_session (sw_discovery session)
-{
-	int fd;
-	GIOChannel *channel;
-
-	fd = sw_discovery_socket (session);
-
-	channel = g_io_channel_unix_new (fd);
-	g_io_add_watch (channel,
-			G_IO_IN,
-			howl_input, session);
-	g_io_channel_unref (channel);
-}
-
-static sw_result
-publish_reply (sw_discovery			discovery,
-	       sw_discovery_publish_status	status,
-	       sw_discovery_oid			id,
-	       sw_opaque			extra)
-{
-	return SW_OKAY;
-}
-
-
-static gboolean
-publish_service (int port)
-{
-	sw_result result;
-
-	result = sw_discovery_publish (howl_session, 0,
-				       get_share_name (),
-				       "_webdav._tcp",
-				       NULL, NULL,
-				       port,
-				       /* TODO: should be u=guest */
-				       /* text */ (unsigned char *) "", 0,
-				       publish_reply, NULL, &published_id);
-	if (result != SW_OKAY) {
-		return FALSE;
-	}
-	return TRUE;
-}
-
-static void
-stop_publishing (void)
-{
-	if (published_id != 0)
-		sw_discovery_cancel (howl_session, published_id);
-	published_id = 0;
-}
-#endif /* HAVE_HOWL */
-
-
 static void
 ensure_conf_dir (void)
 {
@@ -455,7 +199,7 @@ httpd_child_setup (gpointer user_data)
 static gboolean
 spawn_httpd (int port, pid_t *pid_out)
 {
-	char *free1, *free2, *free3, *free4;
+	char *free1, *free2, *free3, *free4, *free5, *free6;
 	gboolean res;
 	char *argv[10];
 	char *env[10];
@@ -502,6 +246,8 @@ spawn_httpd (int port, pid_t *pid_out)
 	free2 = env[i++] = g_strdup_printf ("HOME=%s", g_get_home_dir());
 	free3 = env[i++] = g_strdup_printf ("XDG_PUBLICSHARE_DIR=%s", public_dir);
 	free4 = env[i++] = g_strdup_printf ("XDG_CONFIG_HOME=%s", g_get_user_config_dir ());
+	free5 = env[i++] = g_strdup_printf ("GUS_SHARE_NAME=%s", get_share_name ());
+	free6 = env[i++] = g_strdup_printf ("GUS_LOGIN_LABEL=%s", _("Please log in as the user guest"));
 	env[i++] = "LANG=C";
 	env[i] = NULL;
 
@@ -521,6 +267,8 @@ spawn_httpd (int port, pid_t *pid_out)
 	g_free (free2);
 	g_free (free3);
 	g_free (free4);
+	g_free (free5);
+	g_free (free6);
 	g_free (public_dir);
 
 	if (!res) {
@@ -581,10 +329,6 @@ http_up (void)
 	port = get_port ();
 	if (!spawn_httpd (port, &httpd_pid)) {
 		fprintf (stderr, "spawning httpd failed\n");
-	} else {
-		if (!publish_service (port)) {
-			fprintf (stderr, "publishing failed\n");
-		}
 	}
 }
 
@@ -592,7 +336,6 @@ void
 http_down (void)
 {
 	kill_httpd ();
-	stop_publishing ();
 }
 
 gboolean
@@ -601,21 +344,6 @@ http_init (void)
 #ifdef HAVE_DBUS_1_1
 	init_dbus();
 #endif	
-
-#ifdef HAVE_AVAHI
-	if (!init_avahi ()) {
-		/* Print out the error string */
-		fprintf (stderr, "avahi init failed\n");
-		return FALSE;
-	}
-#endif
-#ifdef HAVE_HOWL
-	if (sw_discovery_init (&howl_session) != SW_OKAY) {
-		fprintf (stderr, "howl init failed\n");
-		return FALSE;
-	}
-	set_up_howl_session (howl_session);
-#endif
 
 	return TRUE;
 }
