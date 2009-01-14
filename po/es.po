@@ -3,13 +3,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
-# Jorge González <jorgegonz@svn.gnome.org>, 2008.
+# Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-08 14:40+0000\n"
-"PO-Revision-Date: 2008-10-16 23:26+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-01-13 12:20+0000\n"
+"PO-Revision-Date: 2009-01-14 20:10+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -203,17 +204,21 @@ msgstr "Preguntar"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "Archivos públicos de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Archivos públicos de %s en %s"
+
+#: ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "Inicie sesión como usuario invitado"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
