@@ -1,15 +1,15 @@
 # Finnish translations for gnome-user-share package.
-# Copyright (C) 2005-2008 Free Software Foundation, Inc.
+# Copyright (C) 2005-2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the package.
 # Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2005-2008.
-# Ilkka Tuohela, 2006-2008.
+# Ilkka Tuohela <hile@iki.fi>, 2006-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-27 15:15+0300\n"
-"PO-Revision-Date: 2008-08-27 15:00+0300\n"
+"POT-Creation-Date: 2009-01-18 13:41+0300\n"
+"PO-Revision-Date: 2009-01-18 13:50+0300\n"
 "Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -108,48 +108,48 @@ msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Tiedostojen jako bluetoothilla</b>"
 
 #: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the network</b>"
-msgstr "<b>Tiedostojen jako verkon yli</b>"
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Jaa tiedostoja verkon yli</b>"
 
 #: ../data/file-share-properties.glade.h:4
-msgid "Accept files: "
-msgstr "Hyväksy tiedostot: "
+msgid "Allo_w remote devices to delete files"
+msgstr "_Salli etälaitteiden poistaa tiedostoja"
 
 #: ../data/file-share-properties.glade.h:5
-msgid "Allow remote devices to delete files"
-msgstr "Salli etälaitteiden poistaa tiedostoja"
-
-#: ../data/file-share-properties.glade.h:6
 msgid "File Sharing Preferences"
 msgstr "Tiedostojen jaon asetukset"
 
+#: ../data/file-share-properties.glade.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Vastaanota tiedostoja bluetoothin avulla _Noudot-kansioon"
+
 #: ../data/file-share-properties.glade.h:7
-msgid "Notify about received files"
-msgstr "Huomauta vastaanotetuista tiedostoista"
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Vaadi _laitteilta sidosta tähän tietokoneeseen"
 
 #: ../data/file-share-properties.glade.h:8
-msgid "Receive files in Downloads folder over Bluetooth"
-msgstr "Vastaanota tiedostoja bluetoothin avulla Noudot-kansioon"
+msgid "Share public files over _Bluetooth"
+msgstr "Jaa julkiset tiedostot _bluetoothilla"
 
 #: ../data/file-share-properties.glade.h:9
-msgid "Require remote devices to bond with this computer"
-msgstr "Vaadi laitteilta sidosta tähän tietokoneeseen"
+msgid "_Accept files: "
+msgstr "H_yväksy tiedostot: "
 
 #: ../data/file-share-properties.glade.h:10
-msgid "Share Public files on network"
-msgstr "Jaa tiedostoja verkossa"
+msgid "_Notify about received files"
+msgstr "_Huomauta vastaanotetuista tiedostoista"
 
 #: ../data/file-share-properties.glade.h:11
-msgid "Share Public files over Bluetooth"
-msgstr "Jaa julkiset tiedosto bluetooth-verkossa"
-
-#: ../data/file-share-properties.glade.h:12
 msgid "_Password:"
 msgstr "_Salasana:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.glade.h:12
 msgid "_Require password:"
 msgstr "_Vaadi salasana:"
+
+#: ../data/file-share-properties.glade.h:13
+msgid "_Share public files on network"
+msgstr "_Jaa julkiset tiedostot verkossa"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
@@ -200,17 +200,21 @@ msgstr "Kysy"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "Käyttäjän %s julkiset tiedostot"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Käyttäjän %s julkiset tiedostot palvelimella %s"
+
+#: ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "Kirjaudu sisään käyttäjänä guest"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
