@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of gnome-user-share.
 # Copyright (C) YEAR, THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Kjartan Maraas <kmaraas@gnome.org>, 2007-2008.
+# Kjartan Maraas <kmaraas@gnome.org>, 2007-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-16 12:48+0100\n"
-"PO-Revision-Date: 2008-12-16 12:58+0100\n"
+"POT-Creation-Date: 2009-01-19 13:17+0100\n"
+"PO-Revision-Date: 2009-01-19 13:17+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,9 @@ msgstr ""
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr "Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog bli delt over nettverket når brukeren logger inn."
+msgstr ""
+"Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog "
+"bli delt over nettverket når brukeren logger inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -53,7 +55,9 @@ msgstr "Når filer sendt over Bluetooth skal godtas"
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
-msgstr "Når filer sendt over Bluetooth skal godtas. Mulige verdier er «always», «bonded», «bonded_trusted», og «ask»."
+msgstr ""
+"Når filer sendt over Bluetooth skal godtas. Mulige verdier er «always», "
+"«bonded», «bonded_trusted», og «ask»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -72,13 +76,15 @@ msgstr "Om Bluetooth-klienter kan sende filer med ObexPush."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Om Bluetooth-klienter må være bundet med datamaskinen for å sende filer."
+msgstr ""
+"Om Bluetooth-klienter må være bundet med datamaskinen for å sende filer."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
-msgstr "Om Bluetooth-klienter kan skrive filer eller må dele dem skrivebeskyttet."
+msgstr ""
+"Om Bluetooth-klienter kan skrive filer eller må dele dem skrivebeskyttet."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -189,17 +195,21 @@ msgstr "Spør"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "%s's offentlige filer"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s's offentlige filer på %s"
+
+#: ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "Vennligst logg inn som bruker «guest»"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
