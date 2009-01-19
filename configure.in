@@ -32,9 +32,17 @@ AC_TYPE_SIGNAL
 AC_TYPE_SIZE_T
 AC_TYPE_UID_T
 
+I_KNOW=no
+AC_ARG_WITH([i-know-i-need-apache-httpd-installed-to-make-this-work],
+	    [AS_HELP_STRING([--with-i-know-i-need-apache-httpd-installed-to-make-this-work],[Don't require httpd and mod_dnssd at build-time (default: no)])],
+	    I_KNOW="$withval", I_KNOW="no")
+
 AC_ARG_WITH([httpd],
 	    [AS_HELP_STRING([--with-httpd],[Specify the binary used for the Apache httpd binary (default: httpd)])],
 	    [HTTPD=$withval])
+if test -z "$HTTPD" && test "x$I_KNOW" != "xno" ; then
+	AC_MSG_ERROR([You need to provide the httpd binary name when building without httpd installed])
+fi
 if test -z "$HTTPD" ; then
 	AC_PATH_PROG([HTTPD], [httpd],,
 		     [$PATH:/usr/sbin])
@@ -50,15 +58,19 @@ if test -z "$HTTPD" ; then
 	fi
 fi
 
-default_httpd_version=`$HTTPD -v | head -1 | sed "s#^.*Apache/\([^ ]*\).*#\1#" | cut -f 1-2 -d .`
+if test "x$I_KNOW" = "xno" ; then
+	default_httpd_version=`$HTTPD -v | head -1 | sed "s#^.*Apache/\([^ ]*\).*#\1#" | cut -f 1-2 -d .`
+else
+	default_httpd_version="unknown"
+fi
 AC_ARG_WITH(httpd-version, [  --with-httpd-version=VERSION         	Httpd version used.],
 	HTTPD_VERSION="$withval", HTTPD_VERSION="$default_httpd_version")
-	
-AC_SUBST(HTTPD_VERSION)
 
 if test "x$HTTPD_VERSION" != "x2.2" ; then
 	AC_MSG_ERROR([Could not detect a supported HTTPD version (2.2)])
 fi
+
+AC_SUBST(HTTPD_VERSION)
 
 # FIXME disabled for now, as the configuration for 2.0 hasn't been ported to
 # use mod_dnssd
@@ -149,7 +161,7 @@ AC_SUBST(MODULES_PATH)
 dnl ==========================================================================
 dnl Check for mod_dnssd
 
-if test ! -f $with_modules_path/mod_dnssd.so ; then
+if test "x$I_KNOW" = "xno" && test ! -f $with_modules_path/mod_dnssd.so ; then
 	AC_MSG_ERROR([mod_dnssd is required to use gnome-user-share])
 fi
 

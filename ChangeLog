@@ -1,5 +1,12 @@
 2009-01-19  Bastien Nocera  <hadess@hadess.net>
 
+	* configure.in: Allow disabling httpd binary name and version
+	checks for use in build systems, using
+	--with-i-know-i-need-apache-httpd-installed-to-make-this-work
+	With help from Frederic Peters
+
+2009-01-19  Bastien Nocera  <hadess@hadess.net>
+
 	* data/Makefile.am:
 	* data/file-share-properties.glade: Remove
 	* data/file-share-properties.ui: add, and add help button
