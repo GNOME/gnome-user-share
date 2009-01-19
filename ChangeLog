@@ -1,3 +1,9 @@
+2009-01-19  Bastien Nocera  <hadess@hadess.net>
+
+	* src/user_share.c (main): gnome-user-share cannot
+	run as root, there's the potential for sharing files that
+	shouldn't be shared, such as system files
+
 2009-01-13  Bastien Nocera  <hadess@hadess.net>
 
 	* configure.in:

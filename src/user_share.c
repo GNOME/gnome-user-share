@@ -427,6 +427,11 @@ main (int argc, char **argv)
 
 	gtk_init (&argc, &argv);
 
+	if (g_strcmp0 (g_get_real_name (), "root") == 0) {
+		g_warning ("gnome-user-share cannot be started as root for security reasons.");
+		return 1;
+	}
+
 	signal (SIGPIPE, SIG_IGN);
 	signal (SIGINT, cleanup_handler);
 	signal (SIGHUP, cleanup_handler);
