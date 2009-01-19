@@ -1,5 +1,10 @@
 2009-01-19  Bastien Nocera  <hadess@hadess.net>
 
+	* data/dav_user_2.2.conf.in: Revert unneeded changes
+	to the configuration
+
+2009-01-19  Bastien Nocera  <hadess@hadess.net>
+
 	* Makefile.am:
 	* configure.in:
 	* data/dav_user_2.2.conf.in:
