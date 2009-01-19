@@ -1,5 +1,17 @@
 2009-01-19  Bastien Nocera  <hadess@hadess.net>
 
+	* Makefile.am:
+	* configure.in:
+	* data/dav_user_2.2.conf.in:
+	* help/C/gnome-user-share.xml:
+	* help/C/legal.xml:
+	* help/Makefile.am:
+	* help/Makefile.in:
+	* help/gnome-user-share.omf.in: Patch from Matthias Clasen
+	to add some documentation
+
+2009-01-19  Bastien Nocera  <hadess@hadess.net>
+
 	* src/user_share.c (main): gnome-user-share cannot
 	run as root, there's the potential for sharing files that
 	shouldn't be shared, such as system files
