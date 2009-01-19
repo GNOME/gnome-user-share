@@ -1,5 +1,14 @@
 2009-01-19  Bastien Nocera  <hadess@hadess.net>
 
+	* data/Makefile.am:
+	* data/file-share-properties.glade: Remove
+	* data/file-share-properties.ui: add, and add help button
+	* src/file-share-properties.c (write_out_password), (error_dialog),
+	(help_button_clicked), (main): Add a button to launch the
+	gnome-user-share help
+
+2009-01-19  Bastien Nocera  <hadess@hadess.net>
+
 	* data/dav_user_2.2.conf.in: Revert unneeded changes
 	to the configuration
 

@@ -32,7 +32,7 @@
 
 #include "user_share-private.h"
 
-#define REALM "Please log in as the user guest"
+#define REALM N_("Please log in as the user guest")
 #define USER "guest"
 
 static GtkBuilder* builder;
@@ -47,10 +47,10 @@ write_out_password (const char *password)
     char *filename;
     FILE *file;
 
-    to_hash = g_strdup_printf ("%s:%s:%s", USER, REALM, password);
+    to_hash = g_strdup_printf ("%s:%s:%s", USER, _(REALM), password);
     ascii_digest = g_compute_checksum_for_string (G_CHECKSUM_MD5, to_hash, strlen (to_hash));
     g_free (to_hash);
-    line = g_strdup_printf ("%s:%s:%s\n", USER, REALM, ascii_digest);
+    line = g_strdup_printf ("%s:%s:%s\n", USER, _(REALM), ascii_digest);
     g_free (ascii_digest);
 
     filename = g_build_filename (g_get_user_config_dir (), "user-share", "passwd", NULL);
@@ -63,7 +63,6 @@ write_out_password (const char *password)
 
     g_free (filename);
     g_free (line);
-    
 }
 
 static void
@@ -251,7 +250,7 @@ password_combo_changed (GtkComboBox *combo_box)
     guint setting;
 
     setting = gtk_combo_box_get_active (combo_box);
-    
+
     client = gconf_client_get_default ();
 
     gconf_client_set_string (client,
@@ -397,7 +396,7 @@ accept_obexpush_combo_changed (GtkComboBox *combo_box)
     guint setting;
 
     setting = gtk_combo_box_get_active (combo_box);
-    
+
     client = gconf_client_get_default ();
 
     gconf_client_set_string (client,
@@ -423,6 +422,51 @@ notify_received_obexpush_check_toggled (GtkWidget *check)
 			       NULL);
 
 	g_object_unref (client);
+}
+
+static GtkWidget *
+error_dialog (const char *title,
+	      const char *reason,
+	      GtkWindow *parent)
+{
+	GtkWidget *error_dialog;
+
+	if (reason == NULL)
+		reason = _("No reason");
+
+	error_dialog =
+		gtk_message_dialog_new (parent,
+					GTK_DIALOG_MODAL,
+					GTK_MESSAGE_ERROR,
+					GTK_BUTTONS_OK,
+					"%s", title);
+	gtk_message_dialog_format_secondary_text
+		(GTK_MESSAGE_DIALOG (error_dialog), "%s", reason);
+
+	gtk_window_set_title (GTK_WINDOW (error_dialog), ""); /* as per HIG */
+	gtk_container_set_border_width (GTK_CONTAINER (error_dialog), 5); 
+	gtk_dialog_set_default_response (GTK_DIALOG (error_dialog),
+					 GTK_RESPONSE_OK);
+	gtk_window_set_modal (GTK_WINDOW (error_dialog), TRUE);
+
+	return error_dialog;
+}
+
+static void
+help_button_clicked (GtkButton *button, GtkWidget *window)
+{
+	GError *error = NULL;
+
+	if (gtk_show_uri (gtk_widget_get_screen (window), "ghelp:gnome-user-share", gtk_get_current_event_time (), &error) == FALSE) {
+		GtkWidget *dialog;
+
+		dialog = error_dialog (_("Could not display the help contents."), error->message, GTK_WINDOW (window));
+		g_signal_connect (G_OBJECT (dialog), "response", G_CALLBACK
+				  (gtk_widget_destroy), error_dialog);
+		gtk_window_present (GTK_WINDOW (dialog));
+
+		g_error_free (error);
+	}
 }
 
 int
@@ -454,8 +498,14 @@ main (int argc, char *argv[])
     gtk_builder_add_from_file (builder, DATADIR"file-share-properties.ui", &error);
 
     if (error) {
-      g_error ("building ui from %s failed: %s", DATADIR"file-share-properties.ui", error->message);
-      g_clear_error (&error);
+      GtkWidget *dialog;
+
+      dialog = error_dialog (_("Could not build interface."), error->message, NULL);
+      gtk_dialog_run (GTK_DIALOG (dialog));
+      gtk_widget_destroy (dialog);
+
+      g_error_free (error);
+      return 1;
     }
 
     window = GTK_WIDGET (gtk_builder_get_object (builder, "user_share_dialog"));
@@ -555,6 +605,9 @@ main (int argc, char *argv[])
 
     g_signal_connect (GTK_WIDGET (gtk_builder_get_object (builder, "close_button")),
 		      "clicked", G_CALLBACK (gtk_main_quit), NULL);
+    g_signal_connect (GTK_WIDGET (gtk_builder_get_object (builder, "help_button")),
+		      "clicked", G_CALLBACK (help_button_clicked),
+		      gtk_builder_get_object (builder, "user_share_dialog"));
 
     gconf_client_notify_add (client,
 			     FILE_SHARING_ENABLED,
