@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&component=general\n"
-"POT-Creation-Date: 2009-01-19 14:24+0000\n"
-"PO-Revision-Date: 2009-01-19 19:22+0100\n"
+"POT-Creation-Date: 2009-01-19 18:23+0000\n"
+"PO-Revision-Date: 2009-01-19 19:52+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -61,15 +61,15 @@ msgid ""
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
 "Cuándo aceptar archivos enviados por Bluetooth. Los valores posibles son: "
-"\"always\", \"bonded\", \"bonded_trusted\" y \"ask\"."
+"«siempre», «vinculados», «emparejados_y_de_confianza» y «preguntar»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Cuando pedir contraseñas. Las opciones posibles son: \"never\", \"on_write\" "
-"y \"always\"."
+"Cuando pedir contraseñas. Las opciones posibles son: «nunca», «al escribir» y "
+"«siempre»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -151,7 +151,7 @@ msgstr "Sólo para dispositivos vinculados"
 
 #: ../src/file-share-properties.c:578
 msgid "Only for Paired and Trusted devices"
-msgstr "Sólo para dispositivos Emparejados y De confianza"
+msgstr "Sólo para dispositivos emparejados y de confianza"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
