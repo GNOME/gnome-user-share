@@ -5,10 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&component=general\n"
-"POT-Creation-Date: 2009-01-01 14:06+0000\n"
-"PO-Revision-Date: 2009-01-15 21:37+0700\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-22 20:17+0700\n"
+"PO-Revision-Date: 2009-01-22 20:38+0700\n"
 "Last-Translator: Manatsawin <whs@whsgroup.ath.cx>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -57,9 +56,9 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"จะรับแฟ้มที่ส่งทาง Bluetooth เมื่อใด ค่าที่เป็นไปได้คือ \"always\" (รับเสมอ), \"bonded\" "
-"(เฉพาะจากอุปกรณ์ที่จับคู่ไว้), \"bonded_trusted\" (เฉพาะจากอุปกรณ์ที่จับคู่ไว้และเชื่อถือ) และ "
-"\"ask\" (ถามก่อนรับ)"
+"จะรับแฟ้มที่ส่งทาง Bluetooth เมื่อใด ค่าที่เป็นไปได้คือ \"always\" (รับเสมอ), \"bonded"
+"\" (เฉพาะจากอุปกรณ์ที่จับคู่ไว้), \"bonded_trusted\" (เฉพาะจากอุปกรณ์ที่จับคู่ไว้และเชื่อถือ) "
+"และ \"ask\" (ถามก่อนรับ)"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -95,58 +94,6 @@ msgstr "อนุญาตให้ลูกข่าย Bluetooth เขีย�
 msgid "Whether to notify about newly received files."
 msgstr "ต้องการให้แจ้งเตือนเมื่อได้รับแฟ้มหรือไม่"
 
-#: ../data/file-share-properties.glade.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>รับแฟ้มทาง Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>แบ่งปันแฟ้มทาง Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>แบ่งปันแฟ้มทางเครือข่าย</b>"
-
-#: ../data/file-share-properties.glade.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "_อนุญาตให้อุปกรณ์ระยะไกลลบแฟ้ม"
-
-#: ../data/file-share-properties.glade.h:5
-msgid "File Sharing Preferences"
-msgstr "ปรับแต่งการแบ่งปันแฟ้ม"
-
-#: ../data/file-share-properties.glade.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "รับแฟ้มในโฟลเดอร์ดา_วน์โหลดผ่าน Bluetooth"
-
-#: ../data/file-share-properties.glade.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "อุปกรณ์ระ_ยะไกลต้องจับคู่กับคอมพิวเตอร์ก่อน"
-
-#: ../data/file-share-properties.glade.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "แบ่งปันแฟ้มสาธารณะผ่าน _Bluetooth"
-
-#: ../data/file-share-properties.glade.h:9
-msgid "_Accept files: "
-msgstr "_รับแฟ้ม:"
-
-#: ../data/file-share-properties.glade.h:10
-msgid "_Notify about received files"
-msgstr "แ_จ้งเตือนเกี่ยวกับแฟ้มที่ได้รับ"
-
-#: ../data/file-share-properties.glade.h:11
-msgid "_Password:"
-msgstr "รหัส_ผ่าน:"
-
-#: ../data/file-share-properties.glade.h:12
-msgid "_Require password:"
-msgstr "_ต้องการรหัสผ่าน:"
-
-#: ../data/file-share-properties.glade.h:13
-msgid "_Share public files on network"
-msgstr "แ_บ่งปันแฟ้มสาธารณะในเครือข่าย"
-
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "แบ่งปันแฟ้มส่วนตัว"
@@ -163,28 +110,44 @@ msgstr "เรียกใช้การแบ่งปันแฟ้มขอ
 msgid "User Sharing"
 msgstr "การแบ่งปันแฟ้มของผู้ใช้"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "โปรดเข้าระบบในนามผู้ใช้ guest"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "ไม่ทราบเหตุผล"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "ไม่สามารถแสดงวิธีใช้"
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "ไม่สามารถสร้างส่วนติดต่อผู้ใช้"
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "ไม่"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "เมื่อเขียนแฟ้ม"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "เสมอ"
 
 # ใน Windows ใช้คำว่า pair ครับ
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "เฉพาะอุปกรณ์ที่จับคู่ไว้"
 
-#: ../src/file-share-properties.c:528
+#: ../src/file-share-properties.c:578
 msgid "Only for Paired and Trusted devices"
 msgstr "เฉพาะอุปกรณ์ที่จับคู่ไว้และเชื่อถือ"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "ถาม"
 
@@ -197,14 +160,14 @@ msgstr "ถาม"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "แฟ้มสาธารณะของ %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "แฟ้มสาธารณะของ %s ที่ %s"
@@ -225,4 +188,43 @@ msgstr "เปิดแฟ้ม"
 
 #: ../src/obexpush.c:158
 msgid "Reveal File"
-msgstr ""
+msgstr "แสดงแฟ้ม"
+
+#~ msgid "<b>Receive Files over Bluetooth</b>"
+#~ msgstr "<b>รับแฟ้มทาง Bluetooth</b>"
+
+#~ msgid "<b>Share Files over Bluetooth</b>"
+#~ msgstr "<b>แบ่งปันแฟ้มทาง Bluetooth</b>"
+
+#~ msgid "<b>Share Files over the Network</b>"
+#~ msgstr "<b>แบ่งปันแฟ้มทางเครือข่าย</b>"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "_อนุญาตให้อุปกรณ์ระยะไกลลบแฟ้ม"
+
+#~ msgid "File Sharing Preferences"
+#~ msgstr "ปรับแต่งการแบ่งปันแฟ้ม"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "รับแฟ้มในโฟลเดอร์ดา_วน์โหลดผ่าน Bluetooth"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "อุปกรณ์ระ_ยะไกลต้องจับคู่กับคอมพิวเตอร์ก่อน"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "แบ่งปันแฟ้มสาธารณะผ่าน _Bluetooth"
+
+#~ msgid "_Accept files: "
+#~ msgstr "_รับแฟ้ม:"
+
+#~ msgid "_Notify about received files"
+#~ msgstr "แ_จ้งเตือนเกี่ยวกับแฟ้มที่ได้รับ"
+
+#~ msgid "_Password:"
+#~ msgstr "รหัส_ผ่าน:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_ต้องการรหัสผ่าน:"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "แ_บ่งปันแฟ้มสาธารณะในเครือข่าย"
