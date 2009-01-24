@@ -1,3 +1,8 @@
+2009-01-24  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* data/Makefile.am: Don't remove the ui file with make clean
+	as it breaks make clean; make.
+
 2009-01-19  Bastien Nocera  <hadess@hadess.net>
 
 	* configure.in: Allow disabling httpd binary name and version

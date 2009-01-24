@@ -44,6 +44,6 @@ EXTRA_DIST = $(schema_in_files) \
 	gnome-user-share.desktop.in.in \
 	file-share-properties.ui
 
-CLEANFILES = $(desktop_DATA) $(autostart_DATA) file-share-properties.ui dav_user_2.2.conf
+CLEANFILES = $(desktop_DATA) $(autostart_DATA) dav_user_2.2.conf
 
 DISTCLEANFILES = $(schema_DATA) dav_user_2.2.conf
