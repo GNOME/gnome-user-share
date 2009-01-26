@@ -1,3 +1,9 @@
+2009-01-26  Daniel Nylander <po@danielnylander.se>
+
+	* help/sv/sv.po: Adding Swedish translation.
+	* help/Makefile.am: Added sv to DOC_LINGUAS
+	* po/sv.po: Updated Swedish translation.
+
 2009-01-24  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* data/Makefile.am: Don't remove the ui file with make clean

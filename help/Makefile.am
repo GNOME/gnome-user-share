@@ -9,4 +9,4 @@ DOC_FIGURES = figures/file-sharing-preferences.png \
 	figures/sharing-over-bluetooth.png \
 	figures/receiving-over-bluetooth.png
 
-DOC_LINGUAS = de es
+DOC_LINGUAS = de es sv
