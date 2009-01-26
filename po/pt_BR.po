@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-07 13:51+0100\n"
-"PO-Revision-Date: 2008-11-24 13:43-0300\n"
-"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
+"POT-Creation-Date: 2009-01-26 16:47-0300\n"
+"PO-Revision-Date: 2009-01-21 11:48-0300\n"
+"Last-Translator: Djavan Fagundes <dnoway@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +25,7 @@ msgid ""
 "directory when logged in."
 msgstr ""
 "Se isso for verdadeiro, dispositivos Bluetooth poderão enviar arquivos para "
-"o diretório de downloads do usuário quando este tiver realizado login."
+"o diretório de downloads do usuário quando este tiver iniciado sessão."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
@@ -33,8 +33,8 @@ msgid ""
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 "Se isso for verdadeiro, o diretório público no diretório pessoal dos "
-"usuários será compartilhado via Bluetooth quando o usuário tiver realizado "
-"login."
+"usuários será compartilhado via Bluetooth quando o usuário tiver iniciado "
+"sessão."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
@@ -42,8 +42,8 @@ msgid ""
 "shared over the network when the user is logged in."
 msgstr ""
 "Se isso for verdadeiro, o diretório público no diretório pessoal dos "
-"usuários será compartilhado através da rede quando o usuário tiver realizado "
-"login."
+"usuários será compartilhado através da rede quando o usuário tiver iniciado "
+"sessão."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -102,58 +102,6 @@ msgstr "Permite ou não que clientes Bluetooth escrevam em arquivos."
 msgid "Whether to notify about newly received files."
 msgstr "Notifica ou não sobre arquivos recebidos recentemente."
 
-#: ../data/file-share-properties.glade.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Receber arquivos via Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Compartilhar arquivos via Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Compartilhar arquivos via rede</b>"
-
-#: ../data/file-share-properties.glade.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "Permi_tir que dispositivos remotos excluam arquivos"
-
-#: ../data/file-share-properties.glade.h:5
-msgid "File Sharing Preferences"
-msgstr "Preferências de compartilhamento de arquivos"
-
-#: ../data/file-share-properties.glade.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Receber arquivos na pasta de _downloads via Bluetooth"
-
-#: ../data/file-share-properties.glade.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Exigir aos dispositivos re_motos vínculo com este computador"
-
-#: ../data/file-share-properties.glade.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Compartilhar arquivos públicos via _Bluetooth"
-
-#: ../data/file-share-properties.glade.h:9
-msgid "_Accept files: "
-msgstr "_Aceitar arquivos: "
-
-#: ../data/file-share-properties.glade.h:10
-msgid "_Notify about received files"
-msgstr "_Notificar sobre arquivos recebidos"
-
-#: ../data/file-share-properties.glade.h:11
-msgid "_Password:"
-msgstr "_Senha:"
-
-#: ../data/file-share-properties.glade.h:12
-msgid "_Require password:"
-msgstr "_Exigir senha:"
-
-#: ../data/file-share-properties.glade.h:13
-msgid "_Share public files on network"
-msgstr "_Compartilhar arquivos públicos na rede"
-
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Compartilhamento de arquivos pessoais"
@@ -170,27 +118,43 @@ msgstr "Lança compartilhamento do usuário, se habilitado"
 msgid "User Sharing"
 msgstr "Compartilhamento do usuário"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "Por favor, inicie sessão como um usuário convidado"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Nenhuma razão"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Não foi possível exibir o conteúdo da ajuda."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Não foi possível construir a interface."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "Nunca"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "Ao gravar arquivos"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Sempre"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "Somente para dispositivos laçados"
 
-#: ../src/file-share-properties.c:528
+#: ../src/file-share-properties.c:578
 msgid "Only for Paired and Trusted devices"
 msgstr "Somente para dispositivos emparelhados e confiáveis"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "Perguntar"
 
@@ -203,14 +167,14 @@ msgstr "Perguntar"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "Arquivos públicos de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Arquivos públicos de %s em %s"
@@ -232,3 +196,42 @@ msgstr "Abrir arquivo"
 #: ../src/obexpush.c:158
 msgid "Reveal File"
 msgstr "Revelar arquivo"
+
+#~ msgid "<b>Receive Files over Bluetooth</b>"
+#~ msgstr "<b>Receber arquivos via Bluetooth</b>"
+
+#~ msgid "<b>Share Files over Bluetooth</b>"
+#~ msgstr "<b>Compartilhar arquivos via Bluetooth</b>"
+
+#~ msgid "<b>Share Files over the Network</b>"
+#~ msgstr "<b>Compartilhar arquivos via rede</b>"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "Permi_tir que dispositivos remotos excluam arquivos"
+
+#~ msgid "File Sharing Preferences"
+#~ msgstr "Preferências de compartilhamento de arquivos"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Receber arquivos na pasta de _downloads via Bluetooth"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "Exigir aos dispositivos re_motos vínculo com este computador"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Compartilhar arquivos públicos via _Bluetooth"
+
+#~ msgid "_Accept files: "
+#~ msgstr "_Aceitar arquivos: "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_Notificar sobre arquivos recebidos"
+
+#~ msgid "_Password:"
+#~ msgstr "_Senha:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_Exigir senha:"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "_Compartilhar arquivos públicos na rede"
