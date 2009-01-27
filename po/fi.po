@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-18 13:41+0300\n"
-"PO-Revision-Date: 2009-01-18 13:50+0300\n"
+"POT-Creation-Date: 2009-01-27 17:53+0300\n"
+"PO-Revision-Date: 2009-01-27 17:55+0300\n"
 "Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -99,58 +99,6 @@ msgstr "Sallitaanko bluetooth-käyttäjien kirjoittaa tiedostoja."
 msgid "Whether to notify about newly received files."
 msgstr "Huomautetaanko vastaanotetuista tiedostoista."
 
-#: ../data/file-share-properties.glade.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Tiedostojen vastaanotto bluetoothilla</b>"
-
-#: ../data/file-share-properties.glade.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Tiedostojen jako bluetoothilla</b>"
-
-#: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Jaa tiedostoja verkon yli</b>"
-
-#: ../data/file-share-properties.glade.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "_Salli etälaitteiden poistaa tiedostoja"
-
-#: ../data/file-share-properties.glade.h:5
-msgid "File Sharing Preferences"
-msgstr "Tiedostojen jaon asetukset"
-
-#: ../data/file-share-properties.glade.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Vastaanota tiedostoja bluetoothin avulla _Noudot-kansioon"
-
-#: ../data/file-share-properties.glade.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Vaadi _laitteilta sidosta tähän tietokoneeseen"
-
-#: ../data/file-share-properties.glade.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Jaa julkiset tiedostot _bluetoothilla"
-
-#: ../data/file-share-properties.glade.h:9
-msgid "_Accept files: "
-msgstr "H_yväksy tiedostot: "
-
-#: ../data/file-share-properties.glade.h:10
-msgid "_Notify about received files"
-msgstr "_Huomauta vastaanotetuista tiedostoista"
-
-#: ../data/file-share-properties.glade.h:11
-msgid "_Password:"
-msgstr "_Salasana:"
-
-#: ../data/file-share-properties.glade.h:12
-msgid "_Require password:"
-msgstr "_Vaadi salasana:"
-
-#: ../data/file-share-properties.glade.h:13
-msgid "_Share public files on network"
-msgstr "_Jaa julkiset tiedostot verkossa"
-
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Omien tiedostojen jako"
@@ -167,27 +115,43 @@ msgstr "Käynnistä käyttäjän tiedostonjako, jos käytössä"
 msgid "User Sharing"
 msgstr "Käyttäjän tiedostojen jako"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "Kirjaudu sisään käyttäjänä guest"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Ei syytä"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Ei voitu näyttää ohjeen sisältöä."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Käyttöliittymää ei voitu luoda."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "Kirjoitettaessa tiedostoja"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Aina"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "Salli vain sidotut laitteet"
 
-#: ../src/file-share-properties.c:528
+#: ../src/file-share-properties.c:578
 msgid "Only for Paired and Trusted devices"
 msgstr "Salli vain paritetut ja luotetut laitteet"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "Kysy"
 
@@ -212,10 +176,6 @@ msgstr "Käyttäjän %s julkiset tiedostot"
 msgid "%s's public files on %s"
 msgstr "Käyttäjän %s julkiset tiedostot palvelimella %s"
 
-#: ../src/http.c:250
-msgid "Please log in as the user guest"
-msgstr "Kirjaudu sisään käyttäjänä guest"
-
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
@@ -233,3 +193,42 @@ msgstr "Avaa tiedosto"
 #: ../src/obexpush.c:158
 msgid "Reveal File"
 msgstr "Paljasta tiedosto"
+
+#~ msgid "<b>Receive Files over Bluetooth</b>"
+#~ msgstr "<b>Tiedostojen vastaanotto bluetoothilla</b>"
+
+#~ msgid "<b>Share Files over Bluetooth</b>"
+#~ msgstr "<b>Tiedostojen jako bluetoothilla</b>"
+
+#~ msgid "<b>Share Files over the Network</b>"
+#~ msgstr "<b>Jaa tiedostoja verkon yli</b>"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "_Salli etälaitteiden poistaa tiedostoja"
+
+#~ msgid "File Sharing Preferences"
+#~ msgstr "Tiedostojen jaon asetukset"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Vastaanota tiedostoja bluetoothin avulla _Noudot-kansioon"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "Vaadi _laitteilta sidosta tähän tietokoneeseen"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Jaa julkiset tiedostot _bluetoothilla"
+
+#~ msgid "_Accept files: "
+#~ msgstr "H_yväksy tiedostot: "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_Huomauta vastaanotetuista tiedostoista"
+
+#~ msgid "_Password:"
+#~ msgstr "_Salasana:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_Vaadi salasana:"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "_Jaa julkiset tiedostot verkossa"
