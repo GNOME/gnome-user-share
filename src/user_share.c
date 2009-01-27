@@ -421,7 +421,6 @@ main (int argc, char **argv)
 	GConfClient *client;
 	Display *xdisplay;
 	int x_fd;
-	GIOChannel *channel;
 	Window selection_owner;
 	Atom xatom;
 

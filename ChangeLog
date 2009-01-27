@@ -1,3 +1,7 @@
+2009-01-27  Bastien Nocera  <hadess@hadess.net>
+
+	* src/user_share.c (main): Remove unused variable
+
 === gnome-user-share 2.25.5 ===
 
 2009-01-27  Bastien Nocera  <hadess@hadess.net>
