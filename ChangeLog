@@ -1,3 +1,10 @@
+=== gnome-user-share 2.25.5 ===
+
+2009-01-27  Bastien Nocera  <hadess@hadess.net>
+
+	* NEWS: upd
+	* configure.in: 2.25.5
+
 2009-01-27  Bastien Nocera  <hadess@hadess.net>
 
 	* configure.in: don't check for gtk-builder-convert, we

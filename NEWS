@@ -1,4 +1,10 @@
-This is gnome-user-share 0.41, a system for easy sharing of user files.
+This is gnome-user-share 2.25.5, a system for easy sharing of user files.
+
+Major changes since 0.41 are:
+* Use Apache's mod_dnssd module instead of doing the work ourselves
+* Refuse to run as root, so as to avoid sensitive files being shared
+* Add end-user documentation, and UI changes to match
+* Make it possible for build daemons to build without Apache installed
 
 Major changes since 0.40 are:
 * Port to BlueZ 4.x API
