@@ -1,5 +1,10 @@
 2009-01-27  Bastien Nocera  <hadess@hadess.net>
 
+	* configure.in: don't check for gtk-builder-convert, we
+	don't use it anymore
+
+2009-01-27  Bastien Nocera  <hadess@hadess.net>
+
 	* help/Makefile.in: Remove
 
 	* src/file-share-properties.c (main): Remove use of "Paired"
