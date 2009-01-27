@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share-help.HEAD\n"
-"POT-Creation-Date: 2009-01-19 18:23+0000\n"
-"PO-Revision-Date: 2009-01-19 20:21+0100\n"
+"POT-Creation-Date: 2009-01-27 15:33+0000\n"
+"PO-Revision-Date: 2009-01-27 20:49+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-user-share.xml:86(None)
+#: C/gnome-user-share.xml:81(None)
 msgid ""
 "@@image: 'figures/file-sharing-preferences.png'; "
 "md5=7ae616b8043b36be1f4943ba06d8a5ed"
@@ -25,7 +25,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-user-share.xml:104(None)
+#: C/gnome-user-share.xml:99(None)
 msgid ""
 "@@image: 'figures/sharing-over-the-network.png'; "
 "md5=ee8b44eb1290e4d1ae9b1e8fe8501860"
@@ -35,7 +35,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-user-share.xml:147(None)
+#: C/gnome-user-share.xml:143(None)
 msgid ""
 "@@image: 'figures/sharing-over-bluetooth.png'; "
 "md5=0a950502b42b1e7fdb9a57d5017e919c"
@@ -45,7 +45,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-user-share.xml:172(None)
+#: C/gnome-user-share.xml:168(None)
 msgid ""
 "@@image: 'figures/receiving-over-bluetooth.png'; "
 "md5=f292daef06767f39e346b222d3c448be"
@@ -126,11 +126,11 @@ msgstr "compartición de archivos"
 msgid "sharing"
 msgstr "compartir"
 
-#: C/gnome-user-share.xml:55(title)
+#: C/gnome-user-share.xml:50(title)
 msgid "Introduction"
 msgstr "Introducción"
 
-#: C/gnome-user-share.xml:56(para)
+#: C/gnome-user-share.xml:51(para)
 msgid ""
 "<application>gnome-user-share</application> is a session service that "
 "exports the contents of the <filename>Public</filename> folder in your home "
@@ -149,36 +149,44 @@ msgstr ""
 "<application>Nautilus</application>, donde <replaceable>usuario</"
 "replaceable> se reemplazará por su nombre de usuario."
 
-#: C/gnome-user-share.xml:59(para)
+#: C/gnome-user-share.xml:54(para)
+#| msgid ""
+#| "<application>gnome-user-share</application> uses a WebDAV server to share "
+#| "the <filename>Public</filename> folder, and publishes the share on the "
+#| "local network using mDNS."
 msgid ""
 "<application>gnome-user-share</application> uses a WebDAV server to share "
-"the <filename>Public</filename> folder, and publishes the share on the local "
-"network using mDNS."
+"the <filename>Public</filename> folder, and advertises the share on the "
+"local network using mDNS."
 msgstr ""
 "<application>Compartición de archivos personales</application> usa un "
 "servidor WebDAV para compartir la carpeta <filename>Public</filename> y "
 "publica la compartición en la red local usando mDNS."
 
-#: C/gnome-user-share.xml:62(para)
+#: C/gnome-user-share.xml:57(para)
+#| msgid ""
+#| "Additionally, <application>gnome-user-share</application> can make the "
+#| "shared files available via ObexFTP over Bluetooth, and receive files that "
+#| "are send to your computer via Bluetooth."
 msgid ""
 "Additionally, <application>gnome-user-share</application> can make the "
 "shared files available via ObexFTP over Bluetooth, and receive files that "
-"are send to your computer via Bluetooth."
+"are sent to your computer via Bluetooth via ObexPush."
 msgstr ""
 "Además, <application>Compartición de archivos personales</application> puede "
-"hacer que los archivos compartidos estén disponible a través de ObexFTP "
+"hacer que los archivos compartidos estén disponibles a través de ObexFTP "
 "sobre Bluetooth, y recibir archivos enviados a su equipo a través de "
-"Bluetooth."
+"ObexPush sobre Bluetooth."
 
-#: C/gnome-user-share.xml:68(title)
+#: C/gnome-user-share.xml:63(title)
 msgid "Getting started"
 msgstr "Para empezar"
 
-#: C/gnome-user-share.xml:71(title)
+#: C/gnome-user-share.xml:66(title)
 msgid "Starting <application>gnome-user-share</application>"
 msgstr "Iniciar <application>Compartición de archivos personales</application>"
 
-#: C/gnome-user-share.xml:73(para)
+#: C/gnome-user-share.xml:68(para)
 msgid ""
 "The <application>gnome-user-share</application> service is normally started "
 "by <application>gnome-session</application> when you log in. You can change "
@@ -193,7 +201,7 @@ msgstr ""
 "<guimenu>Sistema</guimenu>, y modificar la entrada «Comparticiones de "
 "usuario» en la lista de programas de inicio."
 
-#: C/gnome-user-share.xml:77(para)
+#: C/gnome-user-share.xml:72(para)
 msgid ""
 "To configure various aspects of file sharing, use the File Sharing "
 "Preferences, which can be found in the <guimenu>System</guimenu> menu under "
@@ -205,16 +213,16 @@ msgstr ""
 "<guimenu>Sistema</guimenu> bajo <menuchoice><guimenu>Preferencias</"
 "guimenu><guimenu>Compartición de archivos personales</guimenu></menuchoice>."
 
-#: C/gnome-user-share.xml:82(title)
+#: C/gnome-user-share.xml:77(title)
 msgid "File Sharing Preferences"
 msgstr "Preferencias de compartición de archivos"
 
-#: C/gnome-user-share.xml:94(title)
+#: C/gnome-user-share.xml:89(title)
 msgid "Enabling file sharing over the network"
 msgstr "Activar la compartición de archivos en la red"
 
-#: C/gnome-user-share.xml:95(para) C/gnome-user-share.xml:138(para)
-#: C/gnome-user-share.xml:163(para)
+#: C/gnome-user-share.xml:90(para) C/gnome-user-share.xml:134(para)
+#: C/gnome-user-share.xml:159(para)
 msgid ""
 "Open the File Sharing Preferences using <menuchoice><guimenu>Preferences</"
 "guimenu><guimenu>Personal File Sharing</guimenu></menuchoice> in the "
@@ -224,11 +232,11 @@ msgstr ""
 "<menuchoice><guimenu>Preferencias</guimenu><guimenu>Compartición de archivos "
 "personales</guimenu></menuchoice> en el menú <guimenu>Sistema</guimenu>."
 
-#: C/gnome-user-share.xml:100(title)
+#: C/gnome-user-share.xml:95(title)
 msgid "Share Files over the Network"
 msgstr "Compartir archivos en la red"
 
-#: C/gnome-user-share.xml:113(para)
+#: C/gnome-user-share.xml:109(para)
 msgid ""
 "Select <guilabel>Never</guilabel> to allow everybody to freely read or write "
 "files in the shared folder."
@@ -236,7 +244,7 @@ msgstr ""
 "Seleccione <guilabel>Nunca</guilabel> para permitir que todo el mundo pueda "
 "leer o escribir archivos en la carpetas compartidas."
 
-#: C/gnome-user-share.xml:119(para)
+#: C/gnome-user-share.xml:115(para)
 msgid ""
 "Select <guilabel>Always</guilabel> to require the password to read or write "
 "files in the shared folder."
@@ -244,7 +252,7 @@ msgstr ""
 "Seleccione <guilabel>Siempre</guilabel> para requerir contraseña para leer o "
 "escribir archivos en la carpetas compartidas."
 
-#: C/gnome-user-share.xml:125(para)
+#: C/gnome-user-share.xml:121(para)
 msgid ""
 "Select <guilabel>When writing files</guilabel> to allow everybody to freely "
 "read files in the shared folder, but require the password when writing files."
@@ -253,43 +261,68 @@ msgstr ""
 "el mundo pueda leer libremente archivos en las carpetas compartidas, pero se "
 "requiera una contraseña al escribir archivos."
 
-#: C/gnome-user-share.xml:109(para)
+#: C/gnome-user-share.xml:104(para)
+#| msgid ""
+#| "To enable file sharing via WebDAV, use the <guilabel>Share public files "
+#| "on network</guilabel> checkbox. When file sharing it enabled, the "
+#| "controls for password protection allow to set a password that needs to be "
+#| "specified before a user on another computer is granted access to the "
+#| "shared files. <placeholder-1/><note>When you set a password, you have to "
+#| "give the password to all users that you want to have access to the shared "
+#| "files. Therefore, you should use a password that is different from other "
+#| "passwords you use.</note>"
 msgid ""
 "To enable file sharing via WebDAV, use the <guilabel>Share public files on "
 "network</guilabel> checkbox. When file sharing it enabled, the controls for "
 "password protection allow to set a password that needs to be specified "
 "before a user on another computer is granted access to the shared files. "
-"<placeholder-1/><note>When you set a password, you have to give the password "
-"to all users that you want to have access to the shared files. Therefore, "
-"you should use a password that is different from other passwords you use.</"
-"note>"
+"<note>Some firewall configurations on the local machine might cause problems "
+"with the advertisment, as well as the access to the shared files. Consult "
+"your system administrator for more details.</note><placeholder-1/><note>When "
+"you set a password, you have to give the password to all users that you want "
+"to have access to the shared files. Therefore, you should use a password "
+"that is different from other passwords you use.</note>"
 msgstr ""
 "Para activar la compartición a través de WebDAV, use la casilla de selección "
 "<guilabel>Compartir archivos públicos por red</guilabel>. Cuando la "
 "compartición de archivos está activada, los controles de contraseña permiten "
-"establecer una contraseña que debe ser especificada antes de que se "
-"garantice el acceso de los archivos compartidos a otro equipo. <placeholder-"
-"1/><note>Cuando establece una contraseña tiene que proporcionar la "
-"contraseña a todos los usuarios que quiera que tengan acceso a sus archivos "
-"compartidos. Por ello, debería usar una contraseña diferente a las "
-"contraseñas que usa.</note>"
+"establecer una contraseña que se debe especificar antes de que se garantice "
+"el acceso a los archivos compartidos a otro equipo. <note>Algunas "
+"configuraciones de cortafuegos en el equipo local pueden causar problemas "
+"con el anuncio de conexión, así como con el acceso a los archivos "
+"compartidos. Consulte al administrador de su sistema para obtener más "
+"detalles.</note><placeholder-1/><note>Cuando establece una contraseña tiene "
+"que proporcionar la contraseña a todos los usuarios que quiera que tengan "
+"acceso a sus archivos compartidos. Por ello, debería usar una contraseña "
+"diferente a las contraseñas que usa.</note>"
 
-#: C/gnome-user-share.xml:137(title)
+#: C/gnome-user-share.xml:133(title)
 msgid "Enabling file sharing over the Bluetooth"
 msgstr "Activar la compartición por Bluetooth"
 
-#: C/gnome-user-share.xml:143(title)
+#: C/gnome-user-share.xml:139(title)
 msgid "Share Files over Bluetooth"
 msgstr "Compartir archivos por Bluetooth"
 
-#: C/gnome-user-share.xml:152(para)
+#: C/gnome-user-share.xml:148(para)
+#| msgid ""
+#| "To enable file sharing via Bluetooth, use the <guilabel>Share public "
+#| "files over Bluetooth</guilabel> checkbox. To allow remote Bluetooth "
+#| "devices to delete files in your shared folder, use the <guilabel>Allow "
+#| "remote devices to delete files</guilabel> checkbox. To allow remote "
+#| "Bluetooth devices to access your shared files even when they are not "
+#| "bonded with your computer, use the <guilabel>Require remote devices to "
+#| "bond with this computer</guilabel> checkbox. <note>When you allow "
+#| "unbonded remote devices to access your shared files, anybody with a "
+#| "Bluetooth-enabled cell phone in the vicinity of your computer can access "
+#| "and perhaps even modify your shared files. </note>"
 msgid ""
 "To enable file sharing via Bluetooth, use the <guilabel>Share public files "
 "over Bluetooth</guilabel> checkbox. To allow remote Bluetooth devices to "
 "delete files in your shared folder, use the <guilabel>Allow remote devices "
 "to delete files</guilabel> checkbox. To allow remote Bluetooth devices to "
 "access your shared files even when they are not bonded with your computer, "
-"use the <guilabel>Require remote devices to bond with this computer</"
+"use the <guilabel>Require remote devices to pair with this computer</"
 "guilabel> checkbox. <note>When you allow unbonded remote devices to access "
 "your shared files, anybody with a Bluetooth-enabled cell phone in the "
 "vicinity of your computer can access and perhaps even modify your shared "
@@ -308,38 +341,41 @@ msgstr ""
 "móvil con Bluetooth cerca de su equipo pueda acceder, e incluso modificar, "
 "sus archivos compartidos.</note>"
 
-#: C/gnome-user-share.xml:162(title)
+#: C/gnome-user-share.xml:158(title)
 msgid "Receiving Files over Bluetooth"
 msgstr "Recibir archivos por Bluetooth"
 
-#: C/gnome-user-share.xml:168(title)
+#: C/gnome-user-share.xml:164(title)
 msgid "Receive Files over Bluetooth"
 msgstr "Recibir archivos por Bluetooth"
 
-#: C/gnome-user-share.xml:181(para)
+#: C/gnome-user-share.xml:177(para)
 msgid ""
 "Select <guilabel>Always</guilabel> to allow any remote device to send files."
 msgstr ""
 "Seleccione <guilabel>Siempre</guilabel> para permitir que cualquier "
 "dispositivo remoto envíe archivos."
 
-#: C/gnome-user-share.xml:186(para)
+#: C/gnome-user-share.xml:182(para)
 msgid ""
 "Select <guilabel>Only for Bonded devices</guilabel> to accept files only "
-"from bonded devices."
+"from bonded devices. <note>Bonded devices are the ones that were connected "
+"to your computer, and had to enter a PIN code to connect to or from.</note>"
 msgstr ""
 "Seleccione <guilabel>Sólo para dispositivos vinculados</guilabel> para "
-"aceptar archivos sólo de dispositivos vinculados."
+"aceptar archivos sólo desde los dispositivos vinculados. <note>Los "
+"dispositivos vinculados son los que se conectaron con su equipo y hubo que "
+"introducir un código PIN para conectarse con ellos.</note>"
 
-#: C/gnome-user-share.xml:191(para)
+#: C/gnome-user-share.xml:189(para)
 msgid ""
-"Select <guilabel>Only for Paired and Trusted devices</guilabel> to accept "
-"files only from paired devices."
-msgstr ""
-"Seleccione <guilabel>Sólo para dispositivos emparejados y de confianza</"
-"guilabel> para aceptar archivos sólo de dispositivos emparejados."
+"Select <guilabel>Only for Bonded and Trusted devices</guilabel> to accept "
+"files only from bonded devices. <note>Devices can be marked as trusted in "
+"the <application>bluetooth-properties</application>'s <guilabel>Known "
+"devices</guilabel> section.</note>"
+msgstr "Seleccione <guilabel>"
 
-#: C/gnome-user-share.xml:177(para)
+#: C/gnome-user-share.xml:173(para)
 msgid ""
 "To let remote Bluetooth devices send files to your computer, use the "
 "<guilabel>Receive files in Downloads folder over Bluetooth</guilabel> "
@@ -356,7 +392,7 @@ msgstr ""
 "guilabel> le permitirá determinar qué dispositivos remotos pueden enviar "
 "archivos. <placeholder-1/>"
 
-#: C/gnome-user-share.xml:197(para)
+#: C/gnome-user-share.xml:196(para)
 msgid ""
 "Use the <guilabel>Notify about received files</guilabel> checkbox to select "
 "whether you want to be notified whenever a file is received via Bluetooth."
@@ -369,3 +405,17 @@ msgstr ""
 #: C/gnome-user-share.xml:0(None)
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2009"
+
+#~ msgid ""
+#~ "Select <guilabel>Only for Bonded devices</guilabel> to accept files only "
+#~ "from bonded devices."
+#~ msgstr ""
+#~ "Seleccione <guilabel>Sólo para dispositivos vinculados</guilabel> para "
+#~ "aceptar archivos sólo de dispositivos vinculados."
+
+#~ msgid ""
+#~ "Select <guilabel>Only for Paired and Trusted devices</guilabel> to accept "
+#~ "files only from paired devices."
+#~ msgstr ""
+#~ "Seleccione <guilabel>Sólo para dispositivos emparejados y de confianza</"
+#~ "guilabel> para aceptar archivos sólo de dispositivos emparejados."
