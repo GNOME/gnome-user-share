@@ -1,3 +1,13 @@
+2009-01-27  Bastien Nocera  <hadess@hadess.net>
+
+	* help/Makefile.in: Remove
+
+	* src/file-share-properties.c (main): Remove use of "Paired"
+	in the UI
+
+	* help/C/gnome-user-share.xml: Add notes about firewalls,
+	and what trusted and bonded mean, and changes for the above
+
 2009-01-26  Daniel Nylander <po@danielnylander.se>
 
 	* help/sv/sv.po: Adding Swedish translation.
