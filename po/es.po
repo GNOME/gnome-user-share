@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&component=general\n"
-"POT-Creation-Date: 2009-01-19 18:23+0000\n"
-"PO-Revision-Date: 2009-01-19 19:52+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
+"POT-Creation-Date: 2009-01-27 15:33+0000\n"
+"PO-Revision-Date: 2009-01-27 20:46+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -61,7 +60,7 @@ msgid ""
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
 "Cuándo aceptar archivos enviados por Bluetooth. Los valores posibles son: "
-"«siempre», «vinculados», «emparejados_y_de_confianza» y «preguntar»."
+"«siempre», «vinculados», «vinculados_y_de_confianza» y «preguntar»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -150,8 +149,9 @@ msgid "Only for Bonded devices"
 msgstr "Sólo para dispositivos vinculados"
 
 #: ../src/file-share-properties.c:578
-msgid "Only for Paired and Trusted devices"
-msgstr "Sólo para dispositivos emparejados y de confianza"
+#| msgid "Only for Paired and Trusted devices"
+msgid "Only for Bonded and Trusted devices"
+msgstr "Sólo para dispositivos vinculados y de confianza"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
@@ -196,43 +196,3 @@ msgstr "Abrir archivo"
 msgid "Reveal File"
 msgstr "Revelar archivo"
 
-#~ msgid "<b>Receive Files over Bluetooth</b>"
-#~ msgstr "<b>Recibir archivos por Bluetooth</b>"
-
-#~ msgid "<b>Share Files over Bluetooth</b>"
-#~ msgstr ""
-#~ "<b>Compartir archivos por "
-#~ "Bluetooth                                         </b>"
-
-#~ msgid "<b>Share Files over the Network</b>"
-#~ msgstr "<b>Compartir archivos en la red</b>"
-
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "_Permitir que los dispositivos remotos borren archivos"
-
-#~ msgid "File Sharing Preferences"
-#~ msgstr "Preferencias de compartición de archivos"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "Recibir los archivos por Bluetooth en la carpeta _Descargas"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "Requerir que los dispositivos re_motos se vinculen con este equipo"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Compartir archivos públicos por _Bluetooth"
-
-#~ msgid "_Accept files: "
-#~ msgstr "_Aceptar archivos: "
-
-#~ msgid "_Notify about received files"
-#~ msgstr "_Notificar acerca de los archivos recibidos"
-
-#~ msgid "_Password:"
-#~ msgstr "_Contraseña:"
-
-#~ msgid "_Require password:"
-#~ msgstr "_Requerir contraseña:"
-
-#~ msgid "_Share public files on network"
-#~ msgstr "C_ompartir archivos públicos por red"
