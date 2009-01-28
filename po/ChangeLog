@@ -1,3 +1,8 @@
+2009-01-28  Runa Bhattacharjee  <runab@redhat.com>
+
+	* bn_IN.po: Added Bengali India Translations
+	* LINGUAS: Added Entry for Bengali India to the list of languages
+
 2009-01-27  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
