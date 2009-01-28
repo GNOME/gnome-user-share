@@ -62,15 +62,16 @@ msgid ""
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
 "Πότε θα γίνεται αποδοχή των αρχείων που στέλνονται μέσω bluetooth. Οι πιθανές τιμές είναι "
-"\"πάντα\", \"όταν συνδεδεμένη\", και \"ερώτηση\"."
+"\"always\" (πάντα), \"bonded\" (συνδεδεμένη), \"bonded_trusted\" "
+"(συνδεδεμένη και επιστευόμενη) και \"ask\" (ερώτηση)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Ποτέ θα απαιτείται κωδικός. Οι πιθανές τιμές είναι \"ποτέ\", \"στην εγγραφή"
-"\", και \"πάντα\"."
+"Ποτέ θα απαιτείται κωδικός. Οι πιθανές τιμές είναι \"never\" (ποτέ), \"on_write\" (στην εγγραφή)"
+", και \"always\" (πάντα)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
