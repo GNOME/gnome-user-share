@@ -47,6 +47,7 @@ DNSSDAutoRegisterUserDir Off
 
     DNSSDServiceName "${GUS_SHARE_NAME}"
     DNSSDServiceTypes _webdav._tcp
+    DNSSDServiceTxtRecord u=guest
   </Location>
 </VirtualHost>
 

@@ -157,7 +157,9 @@ dnl ==========================================================================
 dnl Check for mod_dnssd
 
 if test "x$I_KNOW" = "xno" && test ! -f $with_modules_path/mod_dnssd.so ; then
-	AC_MSG_ERROR([mod_dnssd is required to use gnome-user-share])
+	AC_MSG_ERROR([mod_dnssd 0.6 is required to use gnome-user-share])
+else
+	grep -q DNSSDServiceTxtRecord $with_modules_path/mod_dnssd.so || AC_MSG_ERROR([mod_dnssd 0.6 is required to use gnome-user-share])
 fi
 
 dnl ==========================================================================

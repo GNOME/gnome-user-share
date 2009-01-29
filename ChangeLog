@@ -1,3 +1,10 @@
+2009-01-29  Bastien Nocera  <hadess@hadess.net>
+
+	* configure.in: Require mod_dnssd 0.6
+	* data/dav_user_2.2.conf.in: Set the u=guest TXT record
+	as we used to do in the past, before the mod_dnssd move
+	(Closes: #567587)
+
 2009-01-27  Bastien Nocera  <hadess@hadess.net>
 
 	* src/user_share.c (main): Remove unused variable
