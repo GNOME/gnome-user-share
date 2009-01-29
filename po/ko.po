@@ -1,84 +1,145 @@
 # gnome-user-share korean translation
-# Copyright (C) 2005 gnome-user-share COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-share package.
-# Young-Ho Cha <ganadist@mizi.com>, 2005
-# Young-Ho Cha <ganadist at mizi.com>, 2007.
-# 
-# 
+#
+# Young-Ho Cha <ganadist at mizi.com>, 2005, 2007.
+# Namhyung Kim <namhyung@gmail.com>, 2007.
+# Changwoo Ryu <cwryu@debian.org>, 2009.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share 0.5\n"
+"Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-02 03:12+0000\n"
-"PO-Revision-Date: 2007-12-07 17:20+0900\n"
-"Last-Translator: Namhyung Kim <namhyung@gmail.com>\n"
+"POT-Creation-Date: 2009-01-29 21:41+0900\n"
+"PO-Revision-Date: 2009-01-29 22:30+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr "참이면, 사용자가 로그인하면 블루투스를 통해 \"다운로드\" 디렉터리로 파일을 보낼 수 있습니다."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
-msgstr ""
-"참이면, 사용자가 로그인 할 때 사용자 디렉토리 내의 "
-"Public 디렉토리가 공유됩니다."
+"shared over Bluetooth when the user is logged in."
+msgstr "참이면, 사용자가 로그인하면 홈 디렉토리의 \"공개\" 디렉터리를 블루투스를 통해 공유합니다."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "Public 디렉토리 공유"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr "참이면, 사용자가 로그인하면 홈 디렉토리의 \"공개\" 디렉터리를 공유합니다."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over Bluetooth"
+msgstr "\"공개\" 디렉터리를 블루투스를 통해 공유"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+msgid "Share Public directory over the network"
+msgstr "\"공개\" 디렉터리를 네트워크를 통해 공유"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "블루투스를 통해 보낸 파일 허용하는 방법"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr "언제 블루투스를 통해 보낸 파일을 허용할 지 지정. 가능한 값은 \"always\", \"bonded\", \"bonded_trusted\", \"ask\"."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr ""
-"암호가 필요한지 물어볼 때 쓸 수 있는 옵션: \"없음\", \"파일을 쓸 때만\", \"항상\"."
+msgstr "언제 암호를 물어볼 지 지정. 가능한 값은 \"never\", \"on_write\", \"always\"."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
 msgstr "암호가 필요한 경우"
 
-#: ../file-share-properties.c:294
-msgid "Never"
-msgstr "없음"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "블루투스 클라이언트가 ObexPush를 사용해 파일을 보낼 수 있는 지 여부."
 
-#: ../file-share-properties.c:297
-msgid "When writing files"
-msgstr "파일을 쓸 때만"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "블루투스 클라이언트가 파일을 보낼 때 컴퓨터에 연결해야 하는 지 여부."
 
-#: ../file-share-properties.c:300
-msgid "Always"
-msgstr "항상"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr "블루투스 클라이언트의 파일 쓰기를 허용할 지, 아니면 읽기 전용으로만 공유할 지 여부."
 
-#: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>공유 파일</b>"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "블루투스 클라이언트의 파일 쓰기를 허용할 지 여부."
 
-#: ../file-share-properties.glade.h:2
-msgid "File Sharing Preferences"
-msgstr "파일 공유 기본 설정"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "새로 받은 파일을 알릴 지 여부."
 
-#: ../file-share-properties.glade.h:3
-msgid "Share Public files on network"
-msgstr "네트워크에 공유된 공용 파일"
-
-#: ../file-share-properties.glade.h:4
-msgid "_Password:"
-msgstr "암호(_P):"
-
-#: ../file-share-properties.glade.h:5
-msgid "_Require password:"
-msgstr "암호 필요(_R):"
-
-#: ../gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "개인 파일 공유"
 
-#: ../gnome-user-share-properties.desktop.in.h:2
+#: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
 msgstr "개일 파일 공유에 대한 기본 설정"
+
+#: ../data/gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "사용자 공유를 실행합니다"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr "사용자 공유"
+
+#: ../src/file-share-properties.c:35 ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "guest 사용자로 로그인하십시오"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "이유 없음"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "도움말 차례를 표시할 수 없습니다."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "인터페이스를 만들 수 없습니다."
+
+#: ../src/file-share-properties.c:543
+msgid "Never"
+msgstr "없음"
+
+#: ../src/file-share-properties.c:546
+msgid "When writing files"
+msgstr "파일을 쓸 때만"
+
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+msgid "Always"
+msgstr "항상"
+
+#: ../src/file-share-properties.c:575
+msgid "Only for Bonded devices"
+msgstr "연결한 장치만"
+
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
+msgstr "연결하고 신뢰할 수 있는 장치만"
+
+#: ../src/file-share-properties.c:583
+msgid "Ask"
+msgstr "물어보기"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -89,15 +150,44 @@ msgstr "개일 파일 공유에 대한 기본 설정"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:130
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "%s의 공용 파일"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:134
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s에 있는 %1$s의 공용 파일"
 
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "블루투스를 통해 \"%s\" 파일을 받았습니다"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "파일을 받았습니다"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "파일 열기"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "파일 보기"
+
+#~ msgid "<b>Share Files</b>"
+#~ msgstr "<b>공유 파일</b>"
+
+#~ msgid "File Sharing Preferences"
+#~ msgstr "파일 공유 기본 설정"
+
+#~ msgid "_Password:"
+#~ msgstr "암호(_P):"
+
+#~ msgid "_Require password:"
+#~ msgstr "암호 필요(_R):"
