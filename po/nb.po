@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-19 13:17+0100\n"
-"PO-Revision-Date: 2009-01-19 13:17+0100\n"
+"POT-Creation-Date: 2009-01-29 19:24+0100\n"
+"PO-Revision-Date: 2009-01-29 19:24+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -94,58 +94,6 @@ msgstr "Om Bluetooth-klienter får skrive filer."
 msgid "Whether to notify about newly received files."
 msgstr "Om nylig mottatte filer skal varsles."
 
-#: ../data/file-share-properties.glade.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Motta filer via Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Del filer via Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Del filer over nettverket</b>"
-
-#: ../data/file-share-properties.glade.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "La e_ksterne enheter slette filer"
-
-#: ../data/file-share-properties.glade.h:5
-msgid "File Sharing Preferences"
-msgstr "Brukervalg for fildeling"
-
-#: ../data/file-share-properties.glade.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Motta filer i katalogen _Downloads via Bluetooth"
-
-#: ../data/file-share-properties.glade.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Krev at eksterne enheter binder seg til denne data_maskinen"
-
-#: ../data/file-share-properties.glade.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Del offentlige filer via _Bluetooth"
-
-#: ../data/file-share-properties.glade.h:9
-msgid "_Accept files: "
-msgstr "Godt_a filer: "
-
-#: ../data/file-share-properties.glade.h:10
-msgid "_Notify about received files"
-msgstr "Varsle om _mottatte filer"
-
-#: ../data/file-share-properties.glade.h:11
-msgid "_Password:"
-msgstr "_Passord:"
-
-#: ../data/file-share-properties.glade.h:12
-msgid "_Require password:"
-msgstr "K_rev passord:"
-
-#: ../data/file-share-properties.glade.h:13
-msgid "_Share public files on network"
-msgstr "_Del offentlige filer på nettverket"
-
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Deling av personlige filer"
@@ -162,27 +110,44 @@ msgstr "Start brukerdeling hvis aktivert"
 msgid "User Sharing"
 msgstr "Brukerdeling"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "Vennligst logg inn som bruker «guest»"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Ingen årsak"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Kunne ikke vise hjelpinnhold."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Kunne ikke bygge grensesnitt."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "Aldri"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "Når filer skrives"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Alltid"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "Kune for bundete enheter"
 
-#: ../src/file-share-properties.c:528
-msgid "Only for Paired and Trusted devices"
+#: ../src/file-share-properties.c:578
+#, fuzzy
+msgid "Only for Bonded and Trusted devices"
 msgstr "Kun for enheter som er bundet og enheter vi stoler på"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "Spør"
 
@@ -206,10 +171,6 @@ msgstr "%s's offentlige filer"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s's offentlige filer på %s"
-
-#: ../src/http.c:250
-msgid "Please log in as the user guest"
-msgstr "Vennligst logg inn som bruker «guest»"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
