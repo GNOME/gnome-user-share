@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-23 00:35+0100\n"
-"PO-Revision-Date: 2009-01-23 00:35+0100\n"
+"POT-Creation-Date: 2009-01-29 20:03+0100\n"
+"PO-Revision-Date: 2009-01-29 09:25+0100\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -102,7 +102,7 @@ msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
-msgstr "Fitxer personal de compartició"
+msgstr "Compartició de fitxers personals"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
@@ -149,8 +149,8 @@ msgid "Only for Bonded devices"
 msgstr "Només per a dispositius vinculats"
 
 #: ../src/file-share-properties.c:578
-msgid "Only for Paired and Trusted devices"
-msgstr "Només per a dispositius aparellats de confiança"
+msgid "Only for Bonded and Trusted devices"
+msgstr "Només per a dispositius aparellats i de confiança"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
