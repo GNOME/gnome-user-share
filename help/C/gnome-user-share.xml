@@ -103,7 +103,7 @@
        </figure>
        <para>
 	       To enable file sharing via WebDAV, use the <guilabel>Share public files on network</guilabel> checkbox. When file sharing it enabled, the controls for password protection allow to set a password that needs to be specified before a user on another computer is granted access to the shared files. 
-	 <note>Some firewall configurations on the local machine might cause problems with the advertisment, as well as the access to the shared files. Consult your system administrator for more details.</note>
+	 <note><para>Some firewall configurations on the local machine might cause problems with the advertisment, as well as the access to the shared files. Consult your system administrator for more details.</para></note>
          <itemizedlist>
            <listitem>
               <para>
@@ -125,12 +125,12 @@
               </para>
            </listitem>
          </itemizedlist>
-        <note>When you set a password, you have to give the password to all users that you want to have access to the shared files. Therefore, you should use a password that is different from other passwords you use.</note>
+        <note><para>When you set a password, you have to give the password to all users that you want to have access to the shared files. Therefore, you should use a password that is different from other passwords you use.</para></note>
        </para>  
      </sect2>
 
      <sect2 id="gnome-user-share-enabling-bluetooth">
-       <title>Enabling file sharing over the Bluetooth</title>
+       <title>Enabling file sharing over Bluetooth</title>
        <para>
          Open the File Sharing Preferences using
          <menuchoice><guimenu>Preferences</guimenu><guimenu>Personal File Sharing</guimenu></menuchoice> in the <guimenu>System</guimenu> menu.  
@@ -149,8 +149,8 @@
          To enable file sharing via Bluetooth, use the <guilabel>Share public files over Bluetooth</guilabel> checkbox.
          To allow remote Bluetooth devices to delete files in your shared folder, use the <guilabel>Allow remote devices to delete files</guilabel> checkbox.
          To allow remote Bluetooth devices to access your shared files even when they are not bonded with your computer, use the <guilabel>Require remote devices to pair with this computer</guilabel> checkbox.
-         <note>When you allow unbonded remote devices to access your shared files, anybody with a Bluetooth-enabled cell phone in the vicinity of your computer can access and perhaps even modify your shared files.
-         </note>
+         <note><para>When you allow unbonded remote devices to access your shared files, anybody with a Bluetooth-enabled cell phone in the vicinity of your computer can access and perhaps even modify your shared files.
+         </para></note>
        </para>
      </sect2>
 
@@ -171,7 +171,7 @@
          </screenshot>
        </figure>
        <para>
-         To let remote Bluetooth devices send files to your computer, use the <guilabel>Receive files in Downloads folder over Bluetooth</guilabel> checkbox. Received files will be stored in the <filename>Downloads</filename> folder in your home directory. When receiving files is enabled, the <guilabel>Accept files</guilabel> selection allows you to determine which remote devices are allowed to sednd files.
+         To let remote Bluetooth devices send files to your computer, use the <guilabel>Receive files in Downloads folder over Bluetooth</guilabel> checkbox. Received files will be stored in the <filename>Downloads</filename> folder in your home directory. When receiving files is enabled, the <guilabel>Accept files</guilabel> selection allows you to determine which remote devices are allowed to send files.
           <itemizedlist>
             <listitem>
               <para>
@@ -181,14 +181,14 @@
             <listitem>
               <para>
                   Select <guilabel>Only for Bonded devices</guilabel> to accept files only from bonded devices.
-		  <note>Bonded devices are the ones that were connected to your computer, and had to enter a PIN code to connect to or from.</note>
+		  <note><para>Bonded devices are the ones that were connected to your computer, and had to enter a PIN code to connect to or from.</para></note>
                     
 	      </para>
             </listitem>
             <listitem>
               <para>
                   Select <guilabel>Only for Bonded and Trusted devices</guilabel> to accept files only from bonded devices.
-		  <note>Devices can be marked as trusted in the <application>bluetooth-properties</application>'s <guilabel>Known devices</guilabel> section.</note>
+		  <note><para>Devices can be marked as trusted in the <application>bluetooth-properties</application>'s <guilabel>Known devices</guilabel> section.</para></note>
               </para>
             </listitem>
           </itemizedlist>
