@@ -1,18 +1,18 @@
 # French translation of gnome-user-share.
-# Copyright (C) 2005-2008 Free Software Foundation, Inc.
+# Copyright (C) 2005-2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Bieuzent Cyrille <bieuzent@gmail.com>, 2005
 # Damien Durand <splinux@fedoraproject.org>, 2006
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008
-# Claude Paroz <claude@2xlibre.net>, 2008
+# Claude Paroz <claude@2xlibre.net>, 2008-2009
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-28 09:02+0100\n"
-"PO-Revision-Date: 2008-11-28 09:09+0100\n"
+"POT-Creation-Date: 2009-01-31 14:01+0100\n"
+"PO-Revision-Date: 2009-01-31 14:04+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -105,58 +105,6 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Indique s'il faut signaler les fichiers nouvellement reçus."
 
-#: ../data/file-share-properties.glade.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Réception de fichiers par Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Partage de fichiers par Bluetooth</b>"
-
-#: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Partage de fichiers sur le réseau</b>"
-
-#: ../data/file-share-properties.glade.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "_Permettre aux périphériques distants de supprimer des fichiers"
-
-#: ../data/file-share-properties.glade.h:5
-msgid "File Sharing Preferences"
-msgstr "Préférences du partage de fichiers"
-
-#: ../data/file-share-properties.glade.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Recevoir les fichiers par Bluetooth dans le dossier _Téléchargements"
-
-#: ../data/file-share-properties.glade.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "E_xiger que les périphériques distants se lient à cet ordinateur"
-
-#: ../data/file-share-properties.glade.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Partager les fichiers publics par _Bluetooth"
-
-#: ../data/file-share-properties.glade.h:9
-msgid "_Accept files: "
-msgstr "_Accepter les fichiers : "
-
-#: ../data/file-share-properties.glade.h:10
-msgid "_Notify about received files"
-msgstr "_Signaler les fichiers reçus"
-
-#: ../data/file-share-properties.glade.h:11
-msgid "_Password:"
-msgstr "_Mot de passe :"
-
-#: ../data/file-share-properties.glade.h:12
-msgid "_Require password:"
-msgstr "_Exiger un mot de passe :"
-
-#: ../data/file-share-properties.glade.h:13
-msgid "_Share public files on network"
-msgstr "Partager les fichiers publics sur le _réseau"
-
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Partage de fichiers personnels"
@@ -173,27 +121,43 @@ msgstr "Lance le partage utilisateur s'il est activé"
 msgid "User Sharing"
 msgstr "Partage utilisateur"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "Veuillez vous connecter en tant qu'utilisateur invité"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Aucune raison"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Impossible d'afficher le sommaire de l'aide."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Impossible de construire l'interface."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "Jamais"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "Au moment d'écrire les fichiers"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Toujours"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "Seulement pour les périphériques liés"
 
-#: ../src/file-share-properties.c:528
-msgid "Only for Paired and Trusted devices"
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
 msgstr "Seulement pour les périphériques sûrs et liés"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "Demander"
 
@@ -206,14 +170,14 @@ msgstr "Demander"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "Fichiers publics de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Fichiers publics de %s sur %s"
@@ -235,3 +199,4 @@ msgstr "Ouvrir le fichier"
 #: ../src/obexpush.c:158
 msgid "Reveal File"
 msgstr "Montrer le fichier"
+
