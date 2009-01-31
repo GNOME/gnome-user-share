@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-31 14:01+0100\n"
-"PO-Revision-Date: 2009-01-31 14:04+0100\n"
+"POT-Creation-Date: 2009-01-31 15:00+0100\n"
+"PO-Revision-Date: 2009-01-31 15:11+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -104,6 +104,58 @@ msgstr ""
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Indique s'il faut signaler les fichiers nouvellement reçus."
+
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Réception de fichiers par Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Partage de fichiers par Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Partage de fichiers sur le réseau</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "Aut_oriser les périphériques externes à supprimer des fichiers"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "File Sharing Preferences"
+msgstr "Préférences du partage de fichiers"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Recevoir les fichiers par Bluetooth dans le dossier _Téléchargements"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Exiger que les périphériques e_xternes se lient à cet ordinateur"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Partager les fichiers publics par _Bluetooth"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "_Accepter les fichiers :"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "A_vertir quand des fichiers ont été reçus"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "_Password:"
+msgstr "_Mot de passe :"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Require password:"
+msgstr "_Exiger le mot de passe :"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "_Partager les fichiers publics sur le réseau"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
@@ -199,4 +251,3 @@ msgstr "Ouvrir le fichier"
 #: ../src/obexpush.c:158
 msgid "Reveal File"
 msgstr "Montrer le fichier"
-

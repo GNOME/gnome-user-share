@@ -1,5 +1,11 @@
 2009-01-31  Claude Paroz  <claude@2xlibre.net>
 
+	* POTFILES.in: Prefix .ui file with [type: gettext/glade] so as strings
+	are correctly extracted.
+	* fr.po: Updated French translation.
+
+2009-01-31  Claude Paroz  <claude@2xlibre.net>
+
 	* fr.po: Updated French translation.
 
 2009-01-29  Gil Forcada  <gforcada@gnome.org>
