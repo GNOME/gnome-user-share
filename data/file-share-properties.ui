@@ -335,7 +335,7 @@
             </child>
             <child>
               <object class="GtkButton" id="help_button">
-                <property name="label" translatable="yes">gtk-help</property>
+                <property name="label">gtk-help</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>

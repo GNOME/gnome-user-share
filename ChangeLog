@@ -1,5 +1,10 @@
 2009-01-31  Claude Paroz  <claude@2xlibre.net>
 
+	* data/file-share-properties.ui: Removed translatable property on stock
+	label (gtk-help).
+
+2009-01-31  Claude Paroz  <claude@2xlibre.net>
+
 	* help/Makefile.am: legal.xml should be in DOC_INCLUDES when it is
 	included through xi:include.
 	(Closes #569962)
