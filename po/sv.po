@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-26 19:01+0100\n"
-"PO-Revision-Date: 2009-01-26 19:02+0100\n"
+"POT-Creation-Date: 2009-02-01 12:11+0100\n"
+"PO-Revision-Date: 2009-02-01 12:11+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -71,6 +71,58 @@ msgstr "Huruvida blåtandsklienter ska tillåtas att skriva filer."
 msgid "Whether to notify about newly received files."
 msgstr "Huruvida notifiering om nyligen mottagna filer ska göras."
 
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Ta emot filer över Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Dela ut filer över Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Dela ut filer över nätverket</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "Till_åt fjärrenheter att ta bort filer"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "File Sharing Preferences"
+msgstr "Inställningar för fildelning"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Ta emot filer i mappen _Hämtat över Bluetooth"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Kräv att fjärrenheter _paras ihop med denna dator"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Dela ut publika filer över _Bluetooth"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "_Acceptera filer: "
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "_Notifiera om mottagna filer"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "_Password:"
+msgstr "_Lösenord:"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Require password:"
+msgstr "_Kräv lösenord:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "_Dela ut publika filer på nätverket"
+
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Utdelning av personliga filer"
@@ -122,7 +174,7 @@ msgid "Only for Bonded devices"
 msgstr "Endast för ihopparade enheter"
 
 #: ../src/file-share-properties.c:578
-msgid "Only for Paired and Trusted devices"
+msgid "Only for Bonded and Trusted devices"
 msgstr "Endast för ihopparade och pålitliga enheter"
 
 #: ../src/file-share-properties.c:583
@@ -176,32 +228,6 @@ msgstr "Öppna fil"
 msgid "Reveal File"
 msgstr "Visa fil"
 
-#~ msgid "<b>Receive Files over Bluetooth</b>"
-#~ msgstr "<b>Ta emot filer över Bluetooth</b>"
-#~ msgid "<b>Share Files over Bluetooth</b>"
-#~ msgstr "<b>Dela ut filer över Bluetooth</b>"
-#~ msgid "<b>Share Files over the Network</b>"
-#~ msgstr "<b>Dela ut filer över nätverket</b>"
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "Till_åt fjärrenheter att ta bort filer"
-#~ msgid "File Sharing Preferences"
-#~ msgstr "Inställningar för fildelning"
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "Ta emot filer i mappen _Hämtat över Bluetooth"
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "Kräv att fjärrenheter _paras ihop med denna dator"
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Dela ut publika filer över _Bluetooth"
-#~ msgid "_Accept files: "
-#~ msgstr "_Acceptera filer: "
-#~ msgid "_Notify about received files"
-#~ msgstr "_Notifiera om mottagna filer"
-#~ msgid "_Password:"
-#~ msgstr "_Lösenord:"
-#~ msgid "_Require password:"
-#~ msgstr "_Kräv lösenord:"
-#~ msgid "_Share public files on network"
-#~ msgstr "_Dela ut publika filer på nätverket"
 #~ msgid ""
 #~ "If this is true, the Public directory in the users home dir will be "
 #~ "shared when the user is logged in."
