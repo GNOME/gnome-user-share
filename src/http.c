@@ -196,10 +196,106 @@ httpd_child_setup (gpointer user_data)
 #endif
 }
 
+static const char *known_httpd_locations [] = {
+	HTTPD_PROGRAM,
+	"/usr/sbin/httpd",
+	"/usr/sbin/httpd2",
+	"/usr/sbin/apache2",
+	NULL
+};
+
+static char*
+get_httpd_program ()
+{
+	int i;
+
+	for (i = 0; known_httpd_locations[i]; i++) {
+		if (known_httpd_locations[i][0] == '\0') {
+			/* empty string as first element, happens when
+			 * configured --with-httpd=auto */
+			continue;
+		}
+		if (g_file_test (known_httpd_locations[i], G_FILE_TEST_IS_EXECUTABLE)
+				&& ! g_file_test (known_httpd_locations[i], G_FILE_TEST_IS_DIR)) {
+			return g_strdup (known_httpd_locations[i]);
+		}
+	}
+	return NULL;
+}
+
+static const char *known_httpd_modules_locations [] = {
+	HTTPD_MODULES_PATH,
+	"/etc/httpd/modules",
+	"/usr/lib/apache2/modules",
+	NULL
+};
+
+static gchar*
+get_httpd_modules_path ()
+{
+	int i;
+
+	for (i = 0; known_httpd_modules_locations[i]; i++) {
+		if (known_httpd_modules_locations[i][0] == '\0') {
+			/* empty string as first element, happens when
+			 * configured --with-httpd=auto */
+			continue;
+		}
+		if (g_file_test (known_httpd_modules_locations[i], G_FILE_TEST_IS_EXECUTABLE)
+				&& g_file_test (known_httpd_modules_locations[i], G_FILE_TEST_IS_DIR)) {
+			return g_strdup (known_httpd_modules_locations[i]);
+		}
+	}
+	return NULL;
+}
+
+static GRegex *version_regex = NULL;
+
+static char*
+get_httpd_config (const char *httpd_program)
+{
+	gchar *standard_output;
+	gchar *cmd_line;
+	GMatchInfo *match_info;
+	gchar *version_number = NULL;
+	gchar *config;
+
+	cmd_line = g_strdup_printf ("%s -v", httpd_program);
+	if (! g_spawn_command_line_sync (cmd_line, &standard_output, NULL, NULL, NULL)) {
+		g_free (cmd_line);
+		return NULL;
+	}
+	g_free (cmd_line);
+
+	if (version_regex == NULL) {
+		version_regex = g_regex_new ("\\d\\.\\d", 0, 0, NULL);
+	}
+
+	if (g_regex_match (version_regex, standard_output, 0, &match_info)) {
+		while (g_match_info_matches (match_info)) {
+			version_number = g_match_info_fetch (match_info, 0);
+			break;
+		}
+		g_match_info_free (match_info);
+		g_free (standard_output);
+	} else {
+		/* Failed to parse httpd version number */
+		g_warning ("Could not parse '%s' as a version for httpd", standard_output);
+		g_free (standard_output);
+		/* assume it is 2.2 */
+		version_number = g_strdup ("2.2");
+	}
+
+	config = g_strdup_printf (HTTPD_CONFIG_TEMPLATE, version_number);
+	g_free (version_number);
+
+	return config;
+}
+
 static gboolean
 spawn_httpd (int port, pid_t *pid_out)
 {
-	char *free1, *free2, *free3, *free4, *free5, *free6;
+	char *free1, *free2, *free3, *free4, *free5, *free6, *free7, *free8, *free9;
 	gboolean res;
 	char *argv[10];
 	char *env[10];
@@ -217,11 +313,16 @@ spawn_httpd (int port, pid_t *pid_out)
 	ensure_conf_dir ();
 
 	i = 0;
-	argv[i++] = HTTPD_PROGRAM;
+	free1 = argv[i++] = get_httpd_program ();
+	if (argv[0] == NULL) {
+		fprintf (stderr, "error finding httpd server\n");
+		return FALSE;
+	}
+
 	argv[i++] = "-f";
-	argv[i++] = HTTPD_CONFIG;
+	free2 = argv[i++] = get_httpd_config (argv[0]);
 	argv[i++] = "-C";
-	free1 = argv[i++] = g_strdup_printf ("Listen %d", port);
+	free3 = argv[i++] = g_strdup_printf ("Listen %d", port);
 
 	client = gconf_client_get_default ();
 	str = gconf_client_get_string (client,
@@ -243,11 +344,12 @@ spawn_httpd (int port, pid_t *pid_out)
 	argv[i] = NULL;
 
 	i = 0;
-	free2 = env[i++] = g_strdup_printf ("HOME=%s", g_get_home_dir());
-	free3 = env[i++] = g_strdup_printf ("XDG_PUBLICSHARE_DIR=%s", public_dir);
-	free4 = env[i++] = g_strdup_printf ("XDG_CONFIG_HOME=%s", g_get_user_config_dir ());
-	free5 = env[i++] = g_strdup_printf ("GUS_SHARE_NAME=%s", get_share_name ());
-	free6 = env[i++] = g_strdup_printf ("GUS_LOGIN_LABEL=%s", _("Please log in as the user guest"));
+	free4 = env[i++] = g_strdup_printf ("HOME=%s", g_get_home_dir());
+	free5 = env[i++] = g_strdup_printf ("XDG_PUBLICSHARE_DIR=%s", public_dir);
+	free6 = env[i++] = g_strdup_printf ("XDG_CONFIG_HOME=%s", g_get_user_config_dir ());
+	free7 = env[i++] = g_strdup_printf ("GUS_SHARE_NAME=%s", get_share_name ());
+	free8 = env[i++] = g_strdup_printf ("GUS_LOGIN_LABEL=%s", _("Please log in as the user guest"));
+	free9 = env[i++] = g_strdup_printf ("HTTP_MODULES_PATH=%s",get_httpd_modules_path ());
 	env[i++] = "LANG=C";
 	env[i] = NULL;
 
@@ -269,6 +371,9 @@ spawn_httpd (int port, pid_t *pid_out)
 	g_free (free4);
 	g_free (free5);
 	g_free (free6);
+	g_free (free7);
+	g_free (free8);
+	g_free (free9);
 	g_free (public_dir);
 
 	if (!res) {

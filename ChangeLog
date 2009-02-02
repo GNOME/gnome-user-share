@@ -1,3 +1,18 @@
+2009-02-02  Frederic Peters  <fpeters@0d.be>
+
+	* configure.in: remove buildtime checks for Apache.
+
+	* src/Makefile.am:
+	* src/http.c: (get_httpd_program), (get_httpd_modules_path),
+	(get_httpd_config), (spawn_httpd): lookup Apache at runtime, with
+	checks for its version number and mod_dnssd.
+
+	* data/Makefile.am:
+	* data/dav_user_2.2.conf.in: no longer generate dav_user_2.2.conf at
+	build time.
+
+	(Closes: #569669)
+
 2009-01-31  Claude Paroz  <claude@2xlibre.net>
 
 	* help/C/gnome-user-share.xml: Contents in <node> tag have to be enclosed

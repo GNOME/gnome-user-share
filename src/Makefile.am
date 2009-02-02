@@ -21,8 +21,9 @@ INCLUDES=	\
 	-DUSER_SHARE_PROGRAM=\""$(libexecdir)/gnome-user-share"\" \
 	-DGNOMELOCALEDIR=\""$(datadir)/locale"\"	\
 	-DDATADIR=\""$(datadir)/gnome-user-share/"\"	\
-	-DHTTPD_CONFIG=\""$(datadir)/gnome-user-share/dav_user.conf"\"	\
+	-DHTTPD_CONFIG_TEMPLATE=\""$(datadir)/gnome-user-share/dav_user_%s.conf"\"	\
 	-DHTTPD_PROGRAM=\""$(HTTPD)"\"	\
+	-DHTTPD_MODULES_PATH=\""$(MODULES_PATH)"\"	\
 	-I$(top_srcdir) 				\
 	-I$(top_builddir) 				\
 	$(USER_SHARE_CFLAGS)				\
