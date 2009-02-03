@@ -1,3 +1,8 @@
+2009-02-03  Frederic Peters  <fpeters@0d.be>
+
+	* data/dav_user_2.2.conf: fixed runtime substitution of
+	HTTP_MODULES_PATH in configuration file.
+
 === gnome-user-share 2.25.90 ===
 
 2009-02-03  Bastien Nocera  <hadess@hadess.net>
