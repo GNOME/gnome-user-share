@@ -1,4 +1,7 @@
-This is gnome-user-share 2.25.90, a system for easy sharing of user files.
+This is gnome-user-share 2.25.91, a system for easy sharing of user files.
+
+Major changes since 2.25.90 are:
+* Fix httpd configuration file
 
 Major changes since 2.25.5 are:
 * Use mod_dnssd 0.6 to export the user TXT record, necessary to work
