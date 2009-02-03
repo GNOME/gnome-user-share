@@ -1,3 +1,14 @@
+=== gnome-user-share 2.25.90 ===
+
+2009-02-03  Bastien Nocera  <hadess@hadess.net>
+
+	* NEWS: upd
+	* configure.in: 2.25.90
+	* help/C/gnome-user-share.xml: Fix build
+	* help/de/legal.xml:
+	* help/es/legal.xml:
+	* help/sv/legal.xml: Update from the tools
+
 2009-02-02  Frederic Peters  <fpeters@0d.be>
 
 	* configure.in: remove buildtime checks for Apache.
