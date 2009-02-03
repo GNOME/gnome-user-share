@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-20 21:05+0100\n"
-"PO-Revision-Date: 2008-11-20 21:09+0100\n"
+"POT-Creation-Date: 2009-02-03 21:03+0100\n"
+"PO-Revision-Date: 2009-02-03 21:08+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -75,61 +75,61 @@ msgstr "Określa, czy zdalne klienty Bluetooth mogą zapisywać pliki."
 msgid "Whether to notify about newly received files."
 msgstr "Określa, czy powiadamiać o odbieranych plikach."
 
-#: ../data/file-share-properties.glade.h:1
+#: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
 msgstr "<b>Odbieranie plików przez Bluetooth</b>"
 
-#: ../data/file-share-properties.glade.h:2
+#: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Współdzielenie plików przez Bluetooth</b>"
 
-#: ../data/file-share-properties.glade.h:3
+#: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
 msgstr "<b>Współdzielenie plików przez sieć</b>"
 
-#: ../data/file-share-properties.glade.h:4
+#: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
 msgstr "_Zezwolenie na usuwanie plików przez zdalne urządzenia"
 
-#: ../data/file-share-properties.glade.h:5
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "Preferencje współdzielenia plików"
 
-#: ../data/file-share-properties.glade.h:6
+#: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
 msgstr "Odbieranie plików przez Bluetooth do katalogu _Pobrania"
 
-#: ../data/file-share-properties.glade.h:7
+#: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
 msgstr "Wy_maganie powiązania zdalnych urządzeń z tym komputerem"
 
-#: ../data/file-share-properties.glade.h:8
+#: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
 msgstr "Współdzielenie plików publicznych przez _Bluetooth"
 
-#: ../data/file-share-properties.glade.h:9
+#: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
 msgstr "Ak_ceptowanie plików:"
 
-#: ../data/file-share-properties.glade.h:10
+#: ../data/file-share-properties.ui.h:10
 msgid "_Notify about received files"
 msgstr "P_owiadamianie o odbieranych plikach"
 
-#: ../data/file-share-properties.glade.h:11
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "_Hasło:"
 
-#: ../data/file-share-properties.glade.h:12
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "_Wymaganie hasła:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
 msgstr "Współdzielenie plików publicznych w _sieci"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
-msgstr "Prywatne współdzielenie plików"
+msgstr "Współdzielenie prywatnych plików"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
@@ -137,34 +137,51 @@ msgstr "Preferencje prywatnego współdzielenia plików"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
 msgid "Launch User Sharing if enabled"
-msgstr "Włącza współdzielenie użytkownika, jeśli włączone"
+msgstr "Uruchamia współdzielenie użytkownika, jeśli włączone"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "User Sharing"
 msgstr "Współdzielenie użytkownika"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35
+#: ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "Proszę się zalogować jako gość (użytkownik \"guest\")"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Brak powodu"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Nie można wyświetlić zawartości pomocy."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Nie można utworzyć interfejsu."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "Nigdy"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "Podczas zapisywania plików"
 
-#: ../src/file-share-properties.c:499
-#: ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549
+#: ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Zawsze"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "Tylko dla powiązanych urządzeń"
 
-#: ../src/file-share-properties.c:528
-msgid "Only for Paired and Trusted devices"
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
 msgstr "Tylko dla powiązanych i zaufanych urządzeń"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "Pytanie"
 
@@ -177,14 +194,14 @@ msgstr "Pytanie"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "Pliki publiczne użytkownika %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Pliki publiczne użytkownika %s na %s"
