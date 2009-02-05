@@ -2,85 +2,230 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
-# Amanpreet Singh Alam <aalam@redhat.com>, 2005.
-# A S Alam <apbrar@gmail.com>, 2006.
+# Amanpreet Singh Alam <aalam@users.sf.net>, 2005, 2006, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-12 13:16+0100\n"
-"PO-Revision-Date: 2006-12-12 23:14+0530\n"
-"Last-Translator: A S Alam <apbrar@gmail.com>\n"
-"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=gnome-user-share&component=general\n"
+"POT-Creation-Date: 2009-01-31 14:14+0000\n"
+"PO-Revision-Date: 2009-02-05 07:41+0530\n"
+"Last-Translator: Amanpreet Singh Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjab-l10n@list.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+#| msgid ""
+#| "If this is true, the Public directory in the users home directory will be "
+#| "shared when the user is logged in."
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"ਜੇ ਸਹੀਂ ਹੈ ਤਾਂ ਬਲਿਊਟੁੱਥ ਜੰਤਰ ਯੂਜ਼ਰ ਦੇ ਲਾਗਇਨ ਹੋਣ ਨਾਲ ਉਸ ਦੇ ਡਾਊਨਲੋਡ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ "
+"ਫਾਇਲਾਂ ਭੇਜ ਸਕਦੇ ਹਨ।"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+#| msgid ""
+#| "If this is true, the Public directory in the users home directory will be "
+#| "shared when the user is logged in."
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
+"shared over Bluetooth when the user is logged in."
 msgstr ""
-"ਜੇਕਰ ਇਹ ਸੱਚ ਹੈ ਤਾਂ ਉਪਭੋਗੀ ਦੇ ਲਾਗਇਨ ਕਰਨ ਉੱਤੇ ਉਸ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ "
-"ਵਿਚਲੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਸਾਂਝੀ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
+"ਜੇ ਸਹੀਂ ਹੈ ਤਾਂ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਬਲਿਊਟੁੱਥ ਉੱਤੇ "
+"ਸਾਂਝੀ ਕੀਤਾ ਜਾਵੇਗਾ, ਜਦੋਂ ਵੀ ਯੂਜ਼ਰ ਲਾਗਇਨ ਹੋਵੇਗਾ।"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਸਾਂਝੀ"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#| msgid ""
+#| "If this is true, the Public directory in the users home directory will be "
+#| "shared when the user is logged in."
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"ਜੇ ਸਹੀਂ ਹੈ ਤਾਂ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਨੈੱਟਵਰਕ ਉੱਤੇ "
+"ਸਾਂਝੀ ਕੀਤਾ ਜਾਵੇਗਾ, ਜਦੋਂ ਵੀ ਯੂਜ਼ਰ ਲਾਗਇਨ ਹੋਵੇਗਾ।"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+#| msgid "Share Public directory"
+msgid "Share Public directory over Bluetooth"
+msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਸਾਂਝੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+#| msgid "Share Public files on network"
+msgid "Share Public directory over the network"
+msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "ਜਦੋਂ ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਭੇਜੀਆਂ ਫਾਇਲਾਂ ਪ੍ਰਾਪਤ ਕਰਨੀਆਂ ਹੋਣ"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+#| msgid ""
+#| "When to ask for passwords. Possible values are \"never\", \"on_write\", "
+#| "and \"always\"."
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr ""
+"ਜਦੋਂ ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਭੇਜੀਆਂ ਫਾਇਲਾਂ ਪ੍ਰਾਪਤ ਕਰਨੀਆਂ ਹੋਣ ਤਾਂ ਸੰਭਵ ਮੁੱਲ ਹਨ \"always\", "
+"\"bonded\", \"bonded_trusted\" ਅਤੇ \"ask\""
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"ਗੁਪਤ-ਕੋਡ ਕਦੋਂ ਪੁੱਛਿਆ ਜਾਵੇ। ਸੰਭਵ ਉੱਤਰ ਹਨ, \"ਕਦੇ ਨਹੀਂ\", \"ਲਿਖਣ ਤੇ\", "
-"\"ਹਮੇਸ਼ਾ\" (_w)।"
+"ਜਦੋਂ ਪਾਸਵਰਡ ਪੁੱਛਿਆ ਜਾਵੇ ਤਾਂ ਸੰਭਵ ਮੁੱਲ ਹਨ \"never\", \"on_write\", ਅਤੇ "
+"\"always\"।"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
-msgstr "ਗੁਪਤ-ਕੋਡ ਕਦੋਂ ਪੁੱਛਿਆ ਜਾਵੇ"
+msgstr "ਜਦੋਂ ਪਾਸਵਰਪ ਲੋੜੀਦਾ ਹੋਵੇ"
 
-#: ../file-share-properties.c:294
-msgid "Never"
-msgstr "ਕਦੇ ਨਹੀਂ"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr ""
 
-#: ../file-share-properties.c:297
-msgid "When writing files"
-msgstr "ਫਾਇਲਾਂ ਲਿਖਣ ਸਮੇਂ"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
 
-#: ../file-share-properties.c:300
-msgid "Always"
-msgstr "ਹਮੇਸ਼ਾ"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
 
-#: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>ਸਾਂਝੀਆਂ ਫਾਇਲਾਂ</b>"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr ""
 
-#: ../file-share-properties.glade.h:2
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr ""
+
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣੀਆਂ ਹੋਣ</b>"
+
+#: ../data/file-share-properties.ui.h:2
+#| msgid "<b>Share Files</b>"
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ</b>"
+
+#: ../data/file-share-properties.ui.h:3
+#| msgid "<b>Share Files</b>"
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>ਨੈੱਟਵਰਕ ਉੱਤੇ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "ਰਿਮੋਟ ਜੰਤਰਾਂ ਨੂੰ ਫਾਇਲਾਂ ਹਟਾਉਣ ਦਿਓ(_w)"
+
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "ਫਾਇਲ ਸਾਂਝ ਪਸੰਦ"
 
-#: ../file-share-properties.glade.h:3
-msgid "Share Public files on network"
-msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਪਬਲਿਕ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰੋ"
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr ""
 
-#: ../file-share-properties.glade.h:4
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr ""
+
+#: ../data/file-share-properties.ui.h:8
+#| msgid "Share Public files on network"
+msgid "Share public files over _Bluetooth"
+msgstr "ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਸਾਂਝੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ(_B)"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "ਫਾਇਲਾਂ ਮਨਜ਼ੂਰ(_A):"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "ਲਈਆਂ ਫਾਇਲਾਂ ਬਾਰੇ ਸੂਚਨਾ ਲਵੋ(_N)"
+
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
-msgstr "ਗੁਪਤ-ਕੋਡ(_P):"
+msgstr "ਪਾਸਵਰਡ(_P):"
 
-#: ../file-share-properties.glade.h:5
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "ਲੋੜੀਦਾ ਗੁਪਤ-ਕੋਡ(_R):"
 
-#: ../gnome-user-share-properties.desktop.in.h:1
+#: ../data/file-share-properties.ui.h:13
+#| msgid "Share Public files on network"
+msgid "_Share public files on network"
+msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ(_S)"
+
+#: ../data/file-share-properties.ui.h:14
+msgid "gtk-help"
+msgstr "gtk-help"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ"
 
-#: ../gnome-user-share-properties.desktop.in.h:2
+#: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
 msgstr "ਨਿੱਜੀ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰਨ ਲਈ ਪਸੰਦ"
+
+#: ../data/gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "ਜੇ ਚਾਲੂ ਹੋਵੇ ਤਾਂ ਯੂਜ਼ਰ ਸਾਂਝ ਚਲਾਓ"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+#| msgid "Personal File Sharing"
+msgid "User Sharing"
+msgstr "ਯੂਜ਼ਰ ਸਾਂਝ"
+
+#: ../src/file-share-properties.c:35 ../src/http.c:250
+msgid "Please log in as the user guest"
+msgstr "ਮਹਿਮਾਨ ਯੂਜ਼ਰ ਵਲੋਂ ਲਾਗਇਨ ਕਰੋ ਜੀ"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "ਕੋਈ ਕਾਰਨ ਨਹੀਂ"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "ਮੱਦਦ ਸਮੱਗਰੀ ਵੇਖਾਈ ਨਹੀਂ ਜਾ ਸਕੀ।"
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "ਬਿਲਡ ਇੰਟਰਫੇਸ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: ../src/file-share-properties.c:543
+msgid "Never"
+msgstr "ਕਦੇ ਨਹੀਂ"
+
+#: ../src/file-share-properties.c:546
+msgid "When writing files"
+msgstr "ਫਾਇਲਾਂ ਲਿਖਣ ਸਮੇਂ"
+
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+msgid "Always"
+msgstr "ਹਮੇਸ਼ਾ"
+
+#: ../src/file-share-properties.c:575
+msgid "Only for Bonded devices"
+msgstr "ਕੇਵਲ ਬਾਊਂਡ ਕੀਤੇ ਜੰਤਰ ਹੀ"
+
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
+msgstr "ਕੇਵਲ ਬਾਊਂਡ ਅਤੇ ਟਰੱਸਟ ਕੀਤੇ ਜੰਤਰ ਹੀ"
+
+#: ../src/file-share-properties.c:583
+msgid "Ask"
+msgstr "ਪੁੱਛੋ"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -91,15 +236,33 @@ msgstr "ਨਿੱਜੀ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰਨ ਲ�
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:130
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "%s ਦੀਆਂ ਸਰਵਜਨਕ ਫਾਇਲਾਂ"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:134
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s ਦੀਆਂ %s ਉੱਤੇ ਪਬਲਿਕ ਫਾਇਲਾਂ"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "ਤੁਸੀਂ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ \"%s\" ਲਏ"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "ਇੱਕ ਫਾਇਲ ਮਿਲੀ"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "ਫਾਇਲ ਖੋਲ੍ਹੋ"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr ""
 
