@@ -1,4 +1,4 @@
-# Traditional Chinese translation of gnome-user-share.HEAD
+# Chinese (Hong Kong) translation of gnome-user-share.HEAD
 # Copyright (C) 1999, 2002, 2003 Free Software Foundation, Inc.
 # Kevin Tse <kevinkit@netvigator.com>, 2005.
 #
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: gnome-user-share 2.25.91\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-09 06:52+0800\n"
-"PO-Revision-Date: 2009-02-07 15:21+0800\n"
+"PO-Revision-Date: 2009-02-09 06:53+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,22 +19,19 @@ msgstr ""
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-msgstr ""
-"如果設定為 true，藍牙裝置就可以在使用者登入時傳送檔案到他的下載目錄中。"
+msgstr "如果設定為 true，藍牙裝置就可以在使用者登入時傳送檔案到他的下載目錄中。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr ""
-"如果設定為 true，使用者的家目錄裡之公用目錄會在他/她登入時透過藍牙分享出來。"
+msgstr "如果設定為 true，使用者的家目錄裏之公用目錄會在他/她登入時透過藍牙分享出來。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr ""
-"如果設定為 true，使用者的家目錄裡之公用目錄會在他/她登入時透過網路分享出來。"
+msgstr "如果設定為 true，使用者的家目錄裏之公用目錄會在他/她登入時透過網絡分享出來。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -42,7 +39,7 @@ msgstr "以藍牙分享公用目錄"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
-msgstr "以網路分享公用目錄"
+msgstr "以網絡分享公用目錄"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to accept files sent over Bluetooth"
@@ -52,9 +49,7 @@ msgstr "何時接受透過藍牙傳送的檔案"
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
-msgstr ""
-"何時接受透過藍牙傳送的檔案。可能的數值是「永遠」、「繫結」、「繫結且信任」和"
-"「詢問」。"
+msgstr "何時接受透過藍牙傳送的檔案。可能的數值是「永遠」、「繫結」、「繫結且信任」和「詢問」。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -98,7 +93,7 @@ msgstr "<b>以藍牙分享檔案</b>"
 
 #: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
-msgstr "<b>以網路分享檔案</b>"
+msgstr "<b>以網絡分享檔案</b>"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
@@ -138,7 +133,7 @@ msgstr "需要密碼(_R):"
 
 #: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
-msgstr "以網路分享公用檔案(_S)"
+msgstr "以網絡分享公用檔案(_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
@@ -221,11 +216,11 @@ msgstr "%s 的公開檔案於 %s"
 #: ../src/obexpush.c:138
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr "您已經透過藍牙接收到「%s」"
+msgstr "你已經透過藍牙接收到「%s」"
 
 #: ../src/obexpush.c:140
 msgid "You received a file"
-msgstr "您已經接收到檔案"
+msgstr "你已經接收到檔案"
 
 #: ../src/obexpush.c:154
 msgid "Open File"
