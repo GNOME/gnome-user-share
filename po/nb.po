@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-29 19:24+0100\n"
-"PO-Revision-Date: 2009-01-29 19:24+0100\n"
+"POT-Creation-Date: 2009-02-10 07:52+0100\n"
+"PO-Revision-Date: 2009-02-10 07:56+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -94,6 +94,58 @@ msgstr "Om Bluetooth-klienter får skrive filer."
 msgid "Whether to notify about newly received files."
 msgstr "Om nylig mottatte filer skal varsles."
 
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Motta filer over Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Del filer over Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Del filer over nettverket</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "La e_ksterne enheter slette filer"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "File Sharing Preferences"
+msgstr "Brukervalg for deling av filer"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Motta filer over Bluetooth i mappen Ne_dlasting"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Krev at ekster_ne enheter kobler seg til denne datamaskinen"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Del offentlige filer over Bluetooth"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "Godt_a filer: "
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "Varsle om _mottatte filer"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "_Password:"
+msgstr "_Passord:"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Require password:"
+msgstr "K_rev passord:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "Del offentlige filer på nettverket"
+
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Deling av personlige filer"
@@ -110,7 +162,7 @@ msgstr "Start brukerdeling hvis aktivert"
 msgid "User Sharing"
 msgstr "Brukerdeling"
 
-#: ../src/file-share-properties.c:35 ../src/http.c:250
+#: ../src/file-share-properties.c:35 ../src/http.c:351
 msgid "Please log in as the user guest"
 msgstr "Vennligst logg inn som bruker «guest»"
 
@@ -140,12 +192,11 @@ msgstr "Alltid"
 
 #: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
-msgstr "Kune for bundete enheter"
+msgstr "Kun for tilkoblede enheter"
 
 #: ../src/file-share-properties.c:578
-#, fuzzy
 msgid "Only for Bonded and Trusted devices"
-msgstr "Kun for enheter som er bundet og enheter vi stoler på"
+msgstr "Kun for enheter som er koblet til og som vi stoler på"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
