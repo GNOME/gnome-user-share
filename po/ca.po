@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-29 20:03+0100\n"
-"PO-Revision-Date: 2009-01-29 09:25+0100\n"
+"POT-Creation-Date: 2009-02-17 18:37+0100\n"
+"PO-Revision-Date: 2009-02-17 18:37+0100\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -100,6 +100,59 @@ msgstr "Si es permet escriure fitxers als clients del Bluetooth."
 msgid "Whether to notify about newly received files."
 msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
 
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Recepció de fitxers a través del Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Compartició de fitxers a través del Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Compartició de fitxers a través de la xarxa</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "Permet que els dispositius remots suprimeixin _fitxers"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "File Sharing Preferences"
+msgstr "Preferències de la compartició de fitxers"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr ""
+"Desa els fitxers rebuts a través del Bluetooth a la carpeta de _baixades"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Requereix que els dispositius _remots es vinculin amb aquest ordinador"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Comparteix els fitxers públics a través del _Bluetooth"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "_Accepta els fitxers: "
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "_Notifica en rebre fitxers"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "_Password:"
+msgstr "_Contrasenya:"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Require password:"
+msgstr "_Requereix contrasenya:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "_Comparteix els fitxers públics a la xarxa"
+
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Compartició de fitxers personals"
@@ -116,7 +169,7 @@ msgstr "Executa la compartició d'usuari si està habilitat"
 msgid "User Sharing"
 msgstr "Compartició d'usuari"
 
-#: ../src/file-share-properties.c:35 ../src/http.c:250
+#: ../src/file-share-properties.c:35 ../src/http.c:351
 msgid "Please log in as the user guest"
 msgstr "Entreu com a usuari convidat"
 
@@ -150,7 +203,7 @@ msgstr "Només per a dispositius vinculats"
 
 #: ../src/file-share-properties.c:578
 msgid "Only for Bonded and Trusted devices"
-msgstr "Només per a dispositius aparellats i de confiança"
+msgstr "Només per a dispositius vinculats i de confiança"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
@@ -194,33 +247,3 @@ msgstr "Obre el fitxer"
 #: ../src/obexpush.c:158
 msgid "Reveal File"
 msgstr "Revela el fitxer"
-
-#~ msgid "<b>Share Files over Bluetooth</b>"
-#~ msgstr "<b>Compartició de fitxers a través del Bluetooth</b>"
-
-#~ msgid "<b>Share Files over the network</b>"
-#~ msgstr "<b>Compartició de fitxers a través de la xarxa</b>"
-
-#~ msgid "Accept files: "
-#~ msgstr "Accepta els fitxers: "
-
-#~ msgid "Allow remote devices to delete files"
-#~ msgstr "Permet que els dispositius remots suprimeixin fitxers"
-
-#~ msgid "File Sharing Preferences"
-#~ msgstr "Preferències de la compartició de fitxers"
-
-#~ msgid "Receive files in Downloads folder over Bluetooth"
-#~ msgstr "Rep els fitxers a la carpeta de baixades a través del Bluetooth"
-
-#~ msgid "Share Public files on network"
-#~ msgstr "Comparteix fitxers públics a la xarxa"
-
-#~ msgid "Share Public files over Bluetooth"
-#~ msgstr "Comparteix fitxers públics a través del Bluetooth"
-
-#~ msgid "_Password:"
-#~ msgstr "_Contrasenya:"
-
-#~ msgid "_Require password:"
-#~ msgstr "_Requereix contrasenya:"
