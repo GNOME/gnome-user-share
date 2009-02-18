@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-01 12:11+0100\n"
-"PO-Revision-Date: 2009-02-01 12:11+0100\n"
+"POT-Creation-Date: 2009-02-18 11:32+0100\n"
+"PO-Revision-Date: 2009-02-18 11:32+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -89,7 +89,7 @@ msgstr "Till_åt fjärrenheter att ta bort filer"
 
 #: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
-msgstr "Inställningar för fildelning"
+msgstr "Inställningar för filutdelning"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -140,7 +140,7 @@ msgid "User Sharing"
 msgstr "Användarutdelning"
 
 #: ../src/file-share-properties.c:35
-#: ../src/http.c:250
+#: ../src/http.c:351
 msgid "Please log in as the user guest"
 msgstr "Logga in som användaren guest"
 
