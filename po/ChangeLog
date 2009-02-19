@@ -1,3 +1,8 @@
+2009-02-19  I. Felix <ifelix@redhat.com>
+
+	* ta.po:  Tamil Translation updated by Tirumurthi Vasudevan
+	* LINGUAS: Added Tamil (ta) to The List of Languages.
+
 2009-02-19  Ilkka Tuohela <hile@iki.fi>
 
 	* fi.po: Updated Finnish translation.
