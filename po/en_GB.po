@@ -1,14 +1,14 @@
 # English (British) translation for gnome-user-share
 # Copyright (C) 2005 The Gnome Foundation
 # This file is distributed under the same license as the gnome-user-share package.
-# David Lodge <dave@cirt.net>, 2005.
 #
+# David Lodge <dave@cirt.net>, 2005, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-09 17:55+0000\n"
-"PO-Revision-Date: 2008-03-09 17:55+0000\n"
+"POT-Creation-Date: 2009-02-23 17:59+0000\n"
+"PO-Revision-Date: 2009-02-23 18:00+0000\n"
 "Last-Translator: David Lodge <dave@cirt.net>\n"
 "Language-Team: English (British) <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -96,57 +96,57 @@ msgstr "Whether to allow Bluetooth clients to write files."
 msgid "Whether to notify about newly received files."
 msgstr "Whether to notify about newly-received files."
 
-#: ../data/file-share-properties.glade.h:1
+#: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
 msgstr "<b>Receive Files over Bluetooth</b>"
 
-#: ../data/file-share-properties.glade.h:2
+#: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Share Files over Bluetooth</b>"
 
-#: ../data/file-share-properties.glade.h:3
-msgid "<b>Share Files over the network</b>"
-msgstr "<b>Share Files over the network</b>"
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Share Files over the Network</b>"
 
-#: ../data/file-share-properties.glade.h:4
-msgid "Accept files: "
-msgstr "Accept files: "
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "Allo_w remote devices to delete files"
 
-#: ../data/file-share-properties.glade.h:5
-msgid "Allow remote devices to delete files"
-msgstr "Allow remote devices to delete files"
-
-#: ../data/file-share-properties.glade.h:6
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "File Sharing Preferences"
 
-#: ../data/file-share-properties.glade.h:7
-msgid "Notify about received files"
-msgstr "Notify about received files"
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Receive files in _Downloads folder over Bluetooth"
 
-#: ../data/file-share-properties.glade.h:8
-msgid "Receive files in Downloads folder over Bluetooth"
-msgstr "Receive files in Downloads folder over Bluetooth"
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Require re_mote devices to bond with this computer"
 
-#: ../data/file-share-properties.glade.h:9
-msgid "Require remote devices to bond with this computer"
-msgstr "Require remote devices to bond with this computer"
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Share public files over _Bluetooth"
 
-#: ../data/file-share-properties.glade.h:10
-msgid "Share Public files on network"
-msgstr "Share Public files on network"
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "_Accept files: "
 
-#: ../data/file-share-properties.glade.h:11
-msgid "Share Public files over Bluetooth"
-msgstr "Share Public files over Bluetooth"
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "_Notify about received files"
 
-#: ../data/file-share-properties.glade.h:12
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "_Password:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "_Require password:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "_Share public files on network"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
@@ -164,27 +164,43 @@ msgstr "Launch User Sharing if enabled"
 msgid "User Sharing"
 msgstr "User Sharing"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:35 ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "Please log in as the guest user"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "No reason"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Could not display the help contents."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Could not build interface."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "Never"
 
-#: ../src/file-share-properties.c:499
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "When writing files"
 
-#: ../src/file-share-properties.c:502 ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Always"
 
-#: ../src/file-share-properties.c:528
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "Only for Bonded devices"
 
-#: ../src/file-share-properties.c:531
-msgid "Only for Paired and Trusted devices"
-msgstr "Only for Paired and Trusted devices"
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
+msgstr "Only for Bonded and Trusted devices"
 
-#: ../src/file-share-properties.c:536
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "Ask"
 
@@ -197,14 +213,32 @@ msgstr "Ask"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "%s's public files"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s's public files on %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "You received \"%s\" via Bluetooth"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "You received a file"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "Open File"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "Reveal File"
