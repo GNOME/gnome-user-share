@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2009-01-15 14:41+0000\n"
-"PO-Revision-Date: 2009-01-16 11:20+0100\n"
+"POT-Creation-Date: 2009-02-23 20:28+0000\n"
+"PO-Revision-Date: 2009-02-24 08:54+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -74,55 +74,55 @@ msgstr "Možnost omogoča, da Bluetooth odjemalci zapisujejo datoteke."
 msgid "Whether to notify about newly received files."
 msgstr "Možnost omogoča, da sistem obvesti o novo prispelih datotekah."
 
-#: ../data/file-share-properties.glade.h:1
+#: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
 msgstr "<b>Prejete datoteke preko Bluetooth načina</b>"
 
-#: ../data/file-share-properties.glade.h:2
+#: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Souporaba datotek preko Bluetooth</b>"
 
-#: ../data/file-share-properties.glade.h:3
+#: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
 msgstr "<b>Souporaba datotek preko omrežja</b>"
 
-#: ../data/file-share-properties.glade.h:4
+#: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
 msgstr "Omogoči _oddaljenim napravam brisanje datotek."
 
-#: ../data/file-share-properties.glade.h:5
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "Nastavitve souporabe"
 
-#: ../data/file-share-properties.glade.h:6
+#: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
 msgstr "Prejmi datoteke poslane preko Bluetooth sistema v mapo _prenosov."
 
-#: ../data/file-share-properties.glade.h:7
+#: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
 msgstr "Zahtevaj od _oddaljenih naprav povezavo z računalnikom"
 
-#: ../data/file-share-properties.glade.h:8
+#: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
 msgstr "Souporaba javnih datotek preko _Bluetooth načina"
 
-#: ../data/file-share-properties.glade.h:9
+#: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
 msgstr "_Sprejmi datoteke:"
 
-#: ../data/file-share-properties.glade.h:10
+#: ../data/file-share-properties.ui.h:10
 msgid "_Notify about received files"
 msgstr "_Opozori na prejete datoteke"
 
-#: ../data/file-share-properties.glade.h:11
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "_Geslo:"
 
-#: ../data/file-share-properties.glade.h:12
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "_Zahtevano geslo:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
 msgstr "_Souporaba javnih datotek na omrežju"
 
@@ -142,28 +142,45 @@ msgstr "Zaženi uporabniško souporabo, kadar je omogočena"
 msgid "User Sharing"
 msgstr "Osebna souporaba"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35
+#: ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "Prosim, prijavite se kot gost"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Ni vzroka"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Ni mogoče prikazati vsebine pomoči."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Ni mogoče izgraditi vmesnika."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "Nikoli"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "Med pisanjem datotek"
 
-#: ../src/file-share-properties.c:499
-#: ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549
+#: ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Vedno"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "Le za vezane naprave"
 
-#: ../src/file-share-properties.c:528
-msgid "Only for Paired and Trusted devices"
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
 msgstr "Le za povezane in varne naprave"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "Vprašaj"
 
@@ -187,10 +204,6 @@ msgstr "%s - Javno dostopne datoteke"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s - javno dostopne datoteke na %s"
-
-#: ../src/http.c:250
-msgid "Please log in as the user guest"
-msgstr "Prosim, prijavite se kot gost"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
