@@ -1,14 +1,14 @@
 # gnome-user-share ja.po.
-# Copyright (C) 2005,2007,2008 Free Software Foundation, Inc.
+# Copyright (C) 2005,2007-2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
-# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005,2007,2008.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005,2007-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-20 20:55+0900\n"
-"PO-Revision-Date: 2008-12-20 20:54+0900\n"
+"POT-Creation-Date: 2009-02-27 08:33+0900\n"
+"PO-Revision-Date: 2009-02-27 08:32+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -98,55 +98,55 @@ msgstr "Bluetooth のクライアントがファイルを作成できるかど�
 msgid "Whether to notify about newly received files."
 msgstr "新たに受信したファイルについて通知するかどうか"
 
-#: ../data/file-share-properties.glade.h:1
+#: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
 msgstr "<b>Bluetooth を使ったファイルの受信</b>"
 
-#: ../data/file-share-properties.glade.h:2
+#: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Bluetooth 越しのファイル共有</b>"
 
-#: ../data/file-share-properties.glade.h:3
+#: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
 msgstr "<b>ネットワーク越しのファイル共有</b>"
 
-#: ../data/file-share-properties.glade.h:4
+#: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
 msgstr "リモートのデバイスからファイルを削除できるようにする(_W)"
 
-#: ../data/file-share-properties.glade.h:5
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "ファイル共有の設定"
 
-#: ../data/file-share-properties.glade.h:6
+#: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
 msgstr "Bluetooth 越しに受信したファイルをダウンロード・フォルダに格納する(_D)"
 
-#: ../data/file-share-properties.glade.h:7
+#: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
 msgstr "リモートのデバイスとこのコンピュータをペアにする(_M)"
 
-#: ../data/file-share-properties.glade.h:8
+#: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
 msgstr "Bluetooth 越しにファイルを共有する(_B)"
 
-#: ../data/file-share-properties.glade.h:9
+#: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
 msgstr "許可するファイル(_A): "
 
-#: ../data/file-share-properties.glade.h:10
+#: ../data/file-share-properties.ui.h:10
 msgid "_Notify about received files"
 msgstr "ファイルを受信したら通知する(_N)"
 
-#: ../data/file-share-properties.glade.h:11
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "パスワード(_P):"
 
-#: ../data/file-share-properties.glade.h:12
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "パスワード要求の時期(_R):"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
 msgstr "ネットワーク越しにファイルを共有する(_S)"
 
@@ -166,27 +166,43 @@ msgstr "ユーザ共有の機能を起動します (可能ならば)"
 msgid "User Sharing"
 msgstr "ユーザ共有"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "ゲスト・ユーザでログインして下さい"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "原因不明"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "ヘルプを表示できませんでした"
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "インタフェースを構築できませんでした"
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "しない"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "ファイルを書き込む時"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "常に"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
 msgstr "ペアにしたデバイスのみ"
 
-#: ../src/file-share-properties.c:528
-msgid "Only for Paired and Trusted devices"
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
 msgstr "ペアでかつ信頼できるデバイスのみ"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "問い合わせる"
 
@@ -199,17 +215,17 @@ msgstr "問い合わせる"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
-msgstr "%s の共有ファイル"
+msgstr "%s の公開ファイル"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
-msgstr "%2$s にある %1$s の共有ファイル"
+msgstr "%s@%s の公開ファイル"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
