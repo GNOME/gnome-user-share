@@ -1,3 +1,8 @@
+2009-03-01  Simos Xenitellis  <simos@gnome.org>
+
+	* help/Makefile.am: Added el to DOC_LINGUAS.
+	* help/el/el.po: Added Greek translation by Michael Kotsarinis.
+
 2009-02-18  Daniel Nylander <po@danielnylander.se>
 
 	* help/sv/sv.po: Updating Swedish translation.
