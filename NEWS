@@ -1,4 +1,7 @@
-This is gnome-user-share 2.25.91, a system for easy sharing of user files.
+This is gnome-user-share 2.25.92, a system for easy sharing of user files.
+
+Major changes since 2.25.91 are:
+* Update Swedish help manual, add Greek manual
 
 Major changes since 2.25.90 are:
 * Fix httpd configuration file
