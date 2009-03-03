@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-27 21:07+0700\n"
-"PO-Revision-Date: 2009-02-27 21:11+0700\n"
+"PO-Revision-Date: 2009-03-03 15:41+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -124,7 +124,7 @@ msgstr "อุปกรณ์ระ_ยะไกลต้องจับคู�
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
-msgstr "แบ่งปันแฟ้มสาธารณะผ่าน_บลูทูท
+msgstr "แบ่งปันแฟ้มสาธารณะผ่าน_บลูทูท"
 
 #: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
