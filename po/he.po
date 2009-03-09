@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&amp;component=general\n"
-"POT-Creation-Date: 2008-12-06 12:30+0000\n"
-"PO-Revision-Date: 2008-12-06 12:30+0000\n"
-"Last-Translator: Yair Hershkovitz <yairhr@gmail.com>\n"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-03-07 15:03+0000\n"
+"PO-Revision-Date: 2009-03-08 00:30+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,8 +22,6 @@ msgid ""
 msgstr ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
@@ -32,16 +30,12 @@ msgid ""
 msgstr ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 
@@ -83,7 +77,8 @@ msgstr "Whether Bluetooth clients can send files using ObexPush."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Whether Bluetooth clients need to pair with the computer to send files."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
@@ -101,95 +96,111 @@ msgstr "Whether to allow Bluetooth clients to write files."
 msgid "Whether to notify about newly received files."
 msgstr "Whether to notify about newly received files."
 
-#: ../data/file-share-properties.glade.h:1
+#: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>קבל קבצים מעל Bluetooth</b>"
+msgstr "<b>קבל קבצים דרך Bluetooth</b>"
 
-#: ../data/file-share-properties.glade.h:2
+#: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>שתף קבצים מעל Bluetooth</b>"
+msgstr "<b>שתף קבצים דרך Bluetooth</b>"
 
-#: ../data/file-share-properties.glade.h:3
+#: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
 msgstr "<b>שתף קבצים ברשת</b>"
 
-#: ../data/file-share-properties.glade.h:4
+#: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
 msgstr "_אפשר להתקנים מרוחקים למחוק קבצים"
 
-#: ../data/file-share-properties.glade.h:5
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "העדפות שיתוף קבצים"
 
-#: ../data/file-share-properties.glade.h:6
+#: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr ""
+msgstr "קבל _קבצים אל תיקיית ההורדות דרך Bluetooth"
 
-#: ../data/file-share-properties.glade.h:7
+#: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
-msgstr ""
+msgstr "דרוש מהתקנים מרוחקים ליצור _איגוד עם מחשב זה"
 
-#: ../data/file-share-properties.glade.h:8
+#: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
-msgstr ""
+msgstr "שתף קבצים _ציבוריים דרך Bluetooth"
 
-#: ../data/file-share-properties.glade.h:9
+#: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
-msgstr ""
+msgstr "_קבל קבצים:"
 
-#: ../data/file-share-properties.glade.h:10
+#: ../data/file-share-properties.ui.h:10
 msgid "_Notify about received files"
-msgstr ""
+msgstr "ה_ודע אודות קבצים שהתקבלו"
 
-#: ../data/file-share-properties.glade.h:11
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "סיסמה:"
 
-#: ../data/file-share-properties.glade.h:12
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
-msgstr ""
+msgstr "_דרוש סיסמה:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
-msgstr ""
+msgstr "_שתף קבצים ציבוריים ברשת"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
-msgstr ""
+msgstr "שיתוף קבצים אישי"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
-msgstr ""
+msgstr "העדפות לשיתוף קבצים אישיים"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
 msgid "Launch User Sharing if enabled"
-msgstr ""
+msgstr "הפעל שיתוף משתמשים במידה שפעיל"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "User Sharing"
-msgstr ""
+msgstr "שיתוף משתמשים"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "אנא התחבר כאורח"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "ללא סיבה"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "לא ניתן להציג את תכני העזרה"
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "לא ניתן לבנות את המנשק."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "לעולם לא"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "בכתיבת קבצים"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "תמיד"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
-msgstr ""
+msgstr "רק עבור התקנים מאוגדים"
 
-#: ../src/file-share-properties.c:528
-msgid "Only for Paired and Trusted devices"
-msgstr ""
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
+msgstr "רק עבור התקנים מאוגדים ומהימנים"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
 msgstr "שאל"
 
@@ -202,23 +213,23 @@ msgstr "שאל"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
-msgstr ""
+msgstr "הקבצים הציבוריים של %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
-msgstr ""
+msgstr "הקבצים הציבוריים של %s על %s"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr ""
+msgstr "קיבלת \"%s\" דרך Bluetooth"
 
 #: ../src/obexpush.c:140
 msgid "You received a file"
