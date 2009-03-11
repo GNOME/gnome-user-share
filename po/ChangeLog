@@ -1,3 +1,8 @@
+2009-03-11  Ani Peter  <apeter@redhat.com>
+
+	* ml.po: Updated Malayalam Translation
+	* LINGUAS: Added Malayalam (ml) language.
+
 2009-03-11  Krishnababu K  <kkrothap@redhat.com>
 
 	* te.po: Updated Telugu Translation.
