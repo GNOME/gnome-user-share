@@ -1,3 +1,8 @@
+2009-03-11  Krishnababu K  <kkrothap@redhat.com>
+
+	* te.po: Updated Telugu Translation.
+	* LINGUAS: Added telugu [te] language.
+
 2009-03-09  Yair Hershkovitz  <yairhr@gmail.com>
 
 	* he.po: Updated Hebrew translation by Yaron Sharabani.
