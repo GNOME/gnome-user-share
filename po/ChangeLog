@@ -1,3 +1,8 @@
+2009-03-12  Sandeep Shedmake  <sshedmak@redhat.com>
+
+	* mr.po: Added Marathi Translations
+	* LINGUAS: Added Marathi (mr) locale
+
 2009-03-11  Ani Peter  <apeter@redhat.com>
 
 	* ml.po: Updated Malayalam Translation
