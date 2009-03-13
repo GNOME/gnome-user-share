@@ -6,77 +6,206 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-20 15:00+0300\n"
-"PO-Revision-Date: 2006-07-20 15:12+0300\n"
-"Last-Translator: Leonid Kanter <leon@asplinux.ru>\n"
+"POT-Creation-Date: 2009-03-14 01:36+0300\n"
+"PO-Revision-Date: 2009-03-13 19:06+0300\n"
+"Last-Translator: Yuriy Penkin <yuriy.penkin@gmail.com>\n"
 "Language-Team:  <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Если этот параметр установлен, устройства Bluetooth могут отправлять файлы в "
+"каталог Downloads пользователя после его входа в систему."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
-msgstr "Если этот параметр установлен, файлы в каталоге Public пользователя станут доступны по сети после регистрации пользователя в системе."
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"Если этот параметр установлен, файлы в каталоге Public пользователя станут "
+"доступны через Bluetooth, когда пользователь войдёт в систему."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "Сделать файлы в каталоге Public общими"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"Если этот параметр установлен, файлы в каталоге Public пользователя станут "
+"доступны по сети, когда он войдёт в систему."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over Bluetooth"
+msgstr ""
+"Сделать файлы в каталоге Public общими через для доступа через Bluetooth"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+msgid "Share Public directory over the network"
+msgstr "Сделать файлы в каталоге Public общими через для доступа по сети"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "Действие при приёме файлов, отправленных через Bluetooth"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr ""
+"Действие при получении файлов через Bluetooth. Возможные значения: «always"
+"», «bonded», «bonded_trusted» и «ask»."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Когда запрашивать пароль. Возможные значения \"never\", \"on_write\", и "
-"\"always\"."
+"Когда запрашивать пароль. Возможные значения «never», «on_write», и "
+"«always»."
 
-#: ../desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
 msgstr "Когда запрашивать пароль"
 
-#: ../file-share-properties.c:290
-msgid "Never"
-msgstr "Никогда"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Разрешить клиентам Bluetooth посылать файлы с помощью ObexPush."
 
-#: ../file-share-properties.c:293
-msgid "When writing files"
-msgstr "При записи файлов"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Требовать от клиентов Bluetooth соединения с компьютером для передачи файлов."
 
-#: ../file-share-properties.c:296
-msgid "Always"
-msgstr "Всегда"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+"Будут ли клиенты Bluetooth записывать файлы или файлы будут доступны только "
+"для чтения."
 
-#: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Общий доступ к файлам</b>"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Разрешить клиентам Bluetooth записывать файлы."
 
-#: ../file-share-properties.glade.h:2
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "Сообщать о получаемых файлах"
+
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Получать файлы через Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Общий доступ к файлам через Bluetooth</b>"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Общий доступ к файлам по сети</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "Ра_зрешить удалённым устройствам удалять файлы"
+
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "Настройка общего доступа к файлам"
 
-#: ../file-share-properties.glade.h:3
-msgid "Share Public files on network"
-msgstr "Открыть доступ к файлам по сети"
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Принимать _файлы через Bluetooth в каталог _Downloads"
 
-#: ../file-share-properties.glade.h:4
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Требовать от у_далённых устройств соединения с компьютером"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Отк_рыть доступ к файлам через Bluetooth"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "_Принимать файлы:"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "И_звещать пользователя о получаемых файлах"
+
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "_Пароль:"
 
-#: ../file-share-properties.glade.h:5
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "_Требовать пароль:"
 
-#: ../gnome-user-share-properties.desktop.in.h:1
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "От_крыть доступ к файлам по сети"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Общий доступ к личным файлам"
 
-#: ../gnome-user-share-properties.desktop.in.h:2
+#: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of personal files"
 msgstr "Параметры общего доступа к личным файлам"
+
+#: ../data/gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "Включить общий доступ, если это возможно"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr "Общий доступ к личным файлам"
+
+#: ../src/file-share-properties.c:35 ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "Зайдите в систему как гость"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Нет причины"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Не удалось отобразить справочную информацию."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Не удалось создать интерфейс пользователя"
+
+#: ../src/file-share-properties.c:543
+msgid "Never"
+msgstr "Никогда"
+
+#: ../src/file-share-properties.c:546
+msgid "When writing files"
+msgstr "При записи файлов"
+
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+msgid "Always"
+msgstr "Всегда"
+
+#: ../src/file-share-properties.c:575
+msgid "Only for Bonded devices"
+msgstr "Только для подключённых устройств"
+
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
+msgstr "Только для подключенных и доверяемых устройств"
+
+#: ../src/file-share-properties.c:583
+msgid "Ask"
+msgstr "Спрашивать пользователя"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -87,15 +216,32 @@ msgstr "Параметры общего доступа к личным файл�
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../user_share.c:130
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "Общие файлы пользователя %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../user_share.c:134
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Общие файлы пользователя %s на %s"
 
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Через Bluetooth получен файл «%s»"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "Получен файл"
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "Открыть файл"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "Показать файл"
