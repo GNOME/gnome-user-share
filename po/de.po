@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-22 18:18+0100\n"
-"PO-Revision-Date: 2009-01-25 17:35+0100\n"
+"POT-Creation-Date: 2009-03-12 21:50-0700\n"
+"PO-Revision-Date: 2009-03-11 23:46-0700\n"
 "Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
-"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -100,6 +100,58 @@ msgstr "Legt fest, ob Bluetooth-Clients Dateien schreiben dürfen."
 msgid "Whether to notify about newly received files."
 msgstr "Legt fest, ob über neu empfangene Dateien informiert werden soll."
 
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Dateien über Bluetooth empfangen</b>"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Dateien über Bluetooth freigeben</b>"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Dateien über das Netzwerk freigeben</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "Entfernten Geräten das Löschen von Dateien _erlauben"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "File Sharing Preferences"
+msgstr "Einstellungen zur Dateifreigabe"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Dateien im _Download-Ordner über Bluetooth empfangen"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Das Verbinden en_tfernter Geräte mit diesem Computer voraussetzen"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Öffentliche Dateien über _Bluetooth freigeben"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "Dateien _annehmen:"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "Über _empfangene Dateien benachrichtigen"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "_Password:"
+msgstr "_Passwort:"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Require password:"
+msgstr "_Benötigt Passwort:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "Öffentlichen Ordner im Netzwerk _freigeben"
+
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
 msgstr "Persönliche Dateifreigabe"
@@ -116,7 +168,7 @@ msgstr "Benutzerfreigabe starten wenn aktiv"
 msgid "User Sharing"
 msgstr "Benutzerfreigabe"
 
-#: ../src/file-share-properties.c:35 ../src/http.c:250
+#: ../src/file-share-properties.c:35 ../src/http.c:351
 msgid "Please log in as the user guest"
 msgstr "Bitte melden Sie sich als Gastbenutzer an"
 
@@ -149,8 +201,8 @@ msgid "Only for Bonded devices"
 msgstr "Nur für verbundene Geräte"
 
 #: ../src/file-share-properties.c:578
-msgid "Only for Paired and Trusted devices"
-msgstr "Nur für angebundene und vertrauenswürdige Geräte"
+msgid "Only for Bonded and Trusted devices"
+msgstr "Nur für verbundene und vertrauenswürdige Geräte"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
@@ -194,15 +246,3 @@ msgstr "Datei öffnen"
 #: ../src/obexpush.c:158
 msgid "Reveal File"
 msgstr "Datei zeigen"
-
-#~ msgid "<b>Share Files</b>"
-#~ msgstr "<b>Dateifreigabe</b>"
-
-#~ msgid "File Sharing Preferences"
-#~ msgstr "Einstellungen zur Dateifreigabe"
-
-#~ msgid "_Password:"
-#~ msgstr "_Passwort:"
-
-#~ msgid "_Require password:"
-#~ msgstr "_Benötigt Passwort:"
