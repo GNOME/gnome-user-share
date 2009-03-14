@@ -2,75 +2,207 @@
 # Copyright (C) 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Marius Karnauskas <marius@esga.lt>, 2005.
-# 
-# 
+# Vytautas Rėkus <v.rekus@gmail.com>, 2009.
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-05 03:52+0200\n"
-"PO-Revision-Date: 2005-02-05 03:53+0200\n"
-"Last-Translator: Marius Karnauskas <marius@esga.lt>\n"
+"POT-Creation-Date: 2009-03-14 23:16+0200\n"
+"PO-Revision-Date: 2009-03-14 23:16+0200\n"
+"Last-Translator: Vytautas Rėkus <v.rekus@gmail.com>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Jei teisinga, Bluetooth įrenginiai gali siųsti failus į vartotojo "
+"parsisiuntimų katalogą, kai vartotojas bus prisijungęs."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
-"shared when the user is logged in."
+"shared over Bluetooth when the user is logged in."
 msgstr ""
-"Jei teigiama, viešojo aplanko bylos, esančios vartotojo namų aplanke, bus "
-"paviešintos, kai vartotojas bus prisijungęs."
+"Jei teisinga, vartotojo viešasis katalogas, esantis jo namų kataloge, bus "
+"bendrinamas Bluetooth ryšiu, kai vartotojas bus prisijungęs."
 
-#: desktop_gnome_file_sharing.schemas.in.h:2
-msgid "Share Public directory"
-msgstr "Viešinti viešą aplanką"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"Jei teisinga, vartotojo viešasis katalogas, esantis jo namų kataloge, bus "
+"bendrinamas tinkle, kai vartotojas bus prisijungęs."
 
-#: desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over Bluetooth"
+msgstr "Bendrinti viešąjį aplanką Bluetooth ryšiu"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+msgid "Share Public directory over the network"
+msgstr "Bendrinti viešąjį aplanką tinkle"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "Kada priimti failus, siųstus Bluetooth ryšiu"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr ""
+"Kada priimti failus, siunčiamus Bluetooth ryšiu. Galimos reikšmės yra: "
+"„visada“, „susietiems“, „susietiems_patikimiems“ ir „klausti“."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kada prašoma slaptažodžių. Galimos reikšmės yra: „never“, „on_write“ ir "
-"„always“."
+"Kada prašoma slaptažodžių. Galimos reikšmės: „never“, „on_write“ ir „always“."
 
-#: desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
-msgstr "Kai reikia slaptažodžių"
+msgstr "Kada reikia slaptažodžių"
 
-#: file-share-properties.c:290
-msgid "Never"
-msgstr "Niekada"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Ar Bluetooth klientai gali siųsti failus, naudodami ObexPush."
 
-#: file-share-properties.c:293
-msgid "When writing files"
-msgstr "Kai įrašomos bylos"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "Ar Bluetooth klientus reikia suporinti su kompiuteriu failų siuntimui."
 
-#: file-share-properties.c:296
-msgid "Always"
-msgstr "Visada"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+"Ar Bluetooth klientams leisti įrašyti failus, ar bendrinti failus tik "
+"skaitymui."
 
-#: file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Bylų viešinimas</b>"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Ar Bluetooth klientams leisti įrašyti failus."
 
-#: file-share-properties.glade.h:2
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "Ar įspėti apie naujai gautus failus."
+
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<b>Gauti failus Bluetooth ryšiu</b>"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<b>Bendrinti failus Bluetooth ryšiu</b>"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>Bendrinti failus tinkle</b>"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "_Nuotoliniams įrenginiams leisti trinti failus"
+
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "Bylų viešinimo nustatymai"
 
-#: file-share-properties.glade.h:3
-msgid "Share Public files on network"
-msgstr "Dalintis bylomis tinkle"
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Gauti failus Bluetooth ryšiu į  parsisiuntimų aplanką"
 
-#: file-share-properties.glade.h:4
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Reikalauti nuotolinius įrenginius susieti su šiuo kompiuteriu"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "Bendrinti viešuosius failus _Bluetooth ryšiu"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "P_riimti failus:"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "Į_spėti apie gautus failus"
+
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "Sla_ptažodis:"
 
-#: file-share-properties.glade.h:5
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "_Reikia slaptažodžio:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "Bendrinti viešuo_sius failus tinkle"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Asmeninių failų bendrinimas"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of personal files"
+msgstr "Asmeninių failų bendrinimo nuostatos"
+
+#: ../data/gnome-user-share.desktop.in.in.h:1
+msgid "Launch User Sharing if enabled"
+msgstr "Paleisti naudotojo bendrinimą, jei įjungtas"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+msgid "User Sharing"
+msgstr "Naudotojo bendrinimas"
+
+#: ../src/file-share-properties.c:35 ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "Paršome prisijungti naudotoju „guest“"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "Nepateikta priežastis"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "Nepavyko parodyti pagalbos turinio."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "Nepavyko sukurti sąsajos."
+
+#: ../src/file-share-properties.c:543
+msgid "Never"
+msgstr "Niekada"
+
+#: ../src/file-share-properties.c:546
+msgid "When writing files"
+msgstr "Kai įrašomi failai"
+
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+msgid "Always"
+msgstr "Visada"
+
+#: ../src/file-share-properties.c:575
+msgid "Only for Bonded devices"
+msgstr "Tik susietiems įrenginiams"
+
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
+msgstr "Tik susietiems ir patikimiems įrenginiams"
+
+#: ../src/file-share-properties.c:583
+msgid "Ask"
+msgstr "Klausti"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -81,7 +213,32 @@ msgstr "_Reikia slaptažodžio:"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: user_share.c:157
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
-msgstr "%s viešos bylos"
+msgstr "%s viešieji failai"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../src/http.c:125
+#, c-format
+msgid "%s's public files on %s"
+msgstr "%s's viešųjų failų pas %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:138
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Gavote „%s“ Bluetooth ryšiu"
+
+#: ../src/obexpush.c:140
+msgid "You received a file"
+msgstr "Gavote failą "
+
+#: ../src/obexpush.c:154
+msgid "Open File"
+msgstr "Atverti failą"
+
+#: ../src/obexpush.c:158
+msgid "Reveal File"
+msgstr "Parodyti failą"
