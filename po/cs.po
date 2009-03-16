@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-02 16:50+0100\n"
-"PO-Revision-Date: 2009-03-02 16:48+0100\n"
-"Last-Translator: Petr Kovar <pknbe@volny.cz>\n"
+"POT-Creation-Date: 2009-03-16 05:51+0100\n"
+"PO-Revision-Date: 2009-03-15 16:55+0100\n"
+"Last-Translator: Martin Picek <picek.martin@gnome-cesko.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -200,11 +200,11 @@ msgstr "Vždy"
 
 #: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
-msgstr "Pouze pro svázaná zařízení"
+msgstr "Pouze ze svázaných zařízení"
 
 #: ../src/file-share-properties.c:578
 msgid "Only for Bonded and Trusted devices"
-msgstr "Pouze pro svázaná a důvěryhodná zařízení"
+msgstr "Pouze ze svázaných a důvěryhodných zařízení"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
