@@ -1,3 +1,10 @@
+=== gnome-user-share 2.26.0 ===
+
+2009-03-16  Bastien Nocera  <hadess@hadess.net>
+
+	* NEWS: upd
+	* configure.in: 2.26.0
+
 2009-03-14  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* help/en_GB/en_GB.po: Updated British English translation by Jen
