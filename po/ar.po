@@ -1,69 +1,67 @@
 # Arabic translations for PACKAGE package.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2006.
 #
+# Automatically generated, 2006, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: Project\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-31 11:07+0100\n"
-"PO-Revision-Date: 2007-04-14 18:21+0100\n"
-"Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-03-17 02:28+0000\n"
+"PO-Revision-Date: 2009-02-09 22:24+0300\n"
+"Last-Translator: Osama Khalid <osamak.wfm@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n == 0 ? 0 : n == 1 ? 1 : n == 2 ? 2 : n >= "
-"3 && n <= 10 ? 3 : n >= 11 && n <= 99 ? 4 : 5;\n"
-"X-Poedit-Language: Arabic\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-#, fuzzy
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
-"اذا كان هذا صحيحا، سيتم اشراك الدليل المشترك المنزلي عند تسجيل دخول المستخدم"
+"إذا كان هذا صحيحا، سوف ترسل أجهزة البلوتوث الملفات إلى دليل تنزيلات المستخدم "
+"عند الولوج."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-#, fuzzy
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"اذا كان هذا صحيحا، سيتم اشراك الدليل المشترك المنزلي عند تسجيل دخول المستخدم"
+"إذا كان هذا صحيحا، مجلد العام في دليل منزل المستخدمين سيشارك عبر البلوتوث "
+"عندما يلج المستخدم."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
-#, fuzzy
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"اذا كان هذا صحيحا، سيتم اشراك الدليل المشترك المنزلي عند تسجيل دخول المستخدم"
+"إذا كان هذا صحيحا، مجلد العام في دليل منزل المستخدمين سيشارك عبر الشبكة "
+"عندما يلج المستخدم."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-#, fuzzy
 msgid "Share Public directory over Bluetooth"
-msgstr "الدليل المشترك"
+msgstr "دليل المشاركة العام عبر البلوتوث"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
-#, fuzzy
 msgid "Share Public directory over the network"
-msgstr "الملفات المشتركة على الشبكة"
+msgstr "دليل المشاركة العام عبر الشبكة"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to accept files sent over Bluetooth"
-msgstr ""
+msgstr "متى أقبل الملفات المرسلة عبر البلوتوث"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-#, fuzzy
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"متى يتم طلب كلمة السرز القيم الممكنة هي \"ابدا\", \"عند الكتابة\", و \"دائما"
-"\"."
+"متى تقبل الملفات المرسلة عبر البلوتوث. القيم الممكنة هي \"دائما\"، و"
+"\"المربوطة\"، و \"المربوطة_الموثوقة\" و \"اسأل\""
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -79,80 +77,79 @@ msgstr "متى يتم طلب كلمات السر"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
+msgstr "فيما إذا كان عملاء البلوتوث يستطيعون إرسال الملفات باستخدام ObexPush."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
+msgstr "فيما إذا كان عملاء البلوتوث يحتاجون الارتباط بالحاسوب لإرسال الملفات."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr ""
+"فيما إذا كان يسمح لعملاء البلوتوث بكتابة الملفات، أو مشاركة الملفات للقراءة "
+"فقط."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
-msgstr ""
+msgstr "فيما إذا كان يسمح لعملاء البلوتوث بكتابة الملفات."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
-msgstr ""
+msgstr "فيما إذا كان يشعر عن الملفات المتلقاة."
 
-#: ../data/file-share-properties.glade.h:1
+#: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
-msgstr ""
+msgstr "<b>تلقَ ملفات عبر البلوتوث</b>"
 
-#: ../data/file-share-properties.glade.h:2
-#, fuzzy
+#: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>الملفات المشتركة</b>"
+msgstr "<b>الملفات المشتركة عبر البلوتوث</b>"
 
-#: ../data/file-share-properties.glade.h:3
-#, fuzzy
-msgid "<b>Share Files over the network</b>"
-msgstr "<b>الملفات المشتركة</b>"
+#: ../data/file-share-properties.ui.h:3
+msgid "<b>Share Files over the Network</b>"
+msgstr "<b>الملفات المشتركة عبر الشبكة</b>"
 
-#: ../data/file-share-properties.glade.h:4
-msgid "Accept files: "
-msgstr ""
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "ا_سمح للأجهزة البعيدة بحذف الملفات"
 
-#: ../data/file-share-properties.glade.h:5
-msgid "Allow remote devices to delete files"
-msgstr ""
-
-#: ../data/file-share-properties.glade.h:6
+#: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
 msgstr "تفضيلات اشتراك الملفات"
 
-#: ../data/file-share-properties.glade.h:7
-msgid "Notify about received files"
-msgstr ""
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "اسقبل الملفات في مجلد ال_تنزيلات عبر البلوتوث"
 
-#: ../data/file-share-properties.glade.h:8
-msgid "Receive files in Downloads folder over Bluetooth"
-msgstr ""
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "طالب الأجهزة البعيدة بالارتباط بهذا الحاسوب"
 
-#: ../data/file-share-properties.glade.h:9
-msgid "Require remote devices to bond with this computer"
-msgstr ""
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "ملفات المشاركة العامة عبر ال_بلوتوث"
 
-#: ../data/file-share-properties.glade.h:10
-msgid "Share Public files on network"
-msgstr "الملفات المشتركة على الشبكة"
+#: ../data/file-share-properties.ui.h:9
+msgid "_Accept files: "
+msgstr "ا_قبل الملفات:"
 
-#: ../data/file-share-properties.glade.h:11
-#, fuzzy
-msgid "Share Public files over Bluetooth"
-msgstr "الملفات المشتركة على الشبكة"
+#: ../data/file-share-properties.ui.h:10
+msgid "_Notify about received files"
+msgstr "أ_شعر عن الملفات المتلقاة"
 
-#: ../data/file-share-properties.glade.h:12
+#: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
 msgstr "_كلمة السر:"
 
-#: ../data/file-share-properties.glade.h:13
+#: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
 msgstr "ا_طلب كلمة السر:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Share public files on network"
+msgstr "_شارك الملفات العامة عبر الشبكة"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 msgid "Personal File Sharing"
@@ -164,36 +161,51 @@ msgstr "تفضيلات لاشتراك الملفات الشخصية"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
 msgid "Launch User Sharing if enabled"
-msgstr ""
+msgstr "شغل مشاركة المستخدمين إذا كانت مفعلة"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
-#, fuzzy
 msgid "User Sharing"
-msgstr "خدمة مشاركة الملفات"
+msgstr "مشاركة المستخدمين"
 
-#: ../src/file-share-properties.c:493
+#: ../src/file-share-properties.c:35 ../src/http.c:351
+msgid "Please log in as the user guest"
+msgstr "من فضلك لج كمستخدم ضيف"
+
+#: ../src/file-share-properties.c:435
+msgid "No reason"
+msgstr "لا سبب"
+
+#: ../src/file-share-properties.c:463
+msgid "Could not display the help contents."
+msgstr "تعذر عرض محتويات المساعدة."
+
+#: ../src/file-share-properties.c:503
+msgid "Could not build interface."
+msgstr "تعذر بناء الواجهة."
+
+#: ../src/file-share-properties.c:543
 msgid "Never"
 msgstr "أبداً"
 
-#: ../src/file-share-properties.c:496
+#: ../src/file-share-properties.c:546
 msgid "When writing files"
 msgstr "عند كتابة الملفات"
 
-#: ../src/file-share-properties.c:499 ../src/file-share-properties.c:522
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "دائماً"
 
-#: ../src/file-share-properties.c:525
+#: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
-msgstr ""
+msgstr "فقط للأجوة المربوطة"
 
-#: ../src/file-share-properties.c:528
-msgid "Only for Paired and Trusted devices"
-msgstr ""
+#: ../src/file-share-properties.c:578
+msgid "Only for Bonded and Trusted devices"
+msgstr "فقط للأجهزة المربوطة والموثوقة"
 
-#: ../src/file-share-properties.c:533
+#: ../src/file-share-properties.c:583
 msgid "Ask"
-msgstr ""
+msgstr "اسأل"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -204,14 +216,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:137
+#: ../src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "الملفات المشتركة لـ %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:141
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "الملفات المشتركة لـ %s على %s"
@@ -220,16 +232,19 @@ msgstr "الملفات المشتركة لـ %s على %s"
 #: ../src/obexpush.c:138
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr ""
+msgstr "لقد تلقيت \"%s\" عبر البلوتوث"
 
 #: ../src/obexpush.c:140
 msgid "You received a file"
-msgstr ""
+msgstr "لقد تلقيت ملفا"
 
 #: ../src/obexpush.c:154
 msgid "Open File"
-msgstr ""
+msgstr "افتح ملفا"
 
 #: ../src/obexpush.c:158
 msgid "Reveal File"
-msgstr ""
+msgstr "أظهر ملفا"
+
+#~ msgid "gtk-help"
+#~ msgstr "مساعدة"
