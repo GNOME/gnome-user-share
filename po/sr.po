@@ -217,7 +217,7 @@ msgstr "Јавне датотеке корисника „%s“"
 #: ../src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
-msgstr "Јавне датотеке на домаћину „%s“"
+msgstr "Јавне датотеке корисника „%s“ на рачунару „%s“"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
