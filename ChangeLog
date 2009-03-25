@@ -1,3 +1,10 @@
+2009-03-25  Claude Paroz  <claude@2xlibre.net>
+
+	* help/fr/figures/*.png:
+	* help/fr/fr.po: Added French translation, by Claude Paroz and Bruno
+	Brouard.
+	* help/Makefile.am: Added fr to DOC_LINGUAS.
+
 2009-03-16  Andre Klapper  <a9016009@gmx.de>
 
 	* help/cs/cs.po: Added Czech translation by Martin Picek.
