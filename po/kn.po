@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
 "POT-Creation-Date: 2009-03-21 19:29+0000\n"
-"PO-Revision-Date: 2009-03-25 17:50+0530\n"
+"PO-Revision-Date: 2009-03-26 23:59+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,42 +22,48 @@ msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
+"true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಪ್ರವೇಶಿಸಿದಾಗ ಬ್ಲೂಟೂತ್ ಸಾಧನಗಳು ಕಡತಗಳನ್ನು ಅವರ ಡೌನ್‌ಲೋಡ್‌ "
+"ಕೋಶಕ್ಕೆ ಕಳುಹಿಸುತ್ತದೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr ""
+msgstr "ಇದು true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಒಳಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಬ್ಲೂಟೂತ್ ಮೂಲಕ ಹಂಚಲ್ಪಡುತ್ತದೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr ""
+msgstr "ಇದು true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಒಳಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಜಾಲಬಂಧದ ಮೂಲಕ ಹಂಚಲ್ಪಡುತ್ತದೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
-msgstr ""
+msgstr "ಬ್ಲೂಟೂತ್ ಮೂಲಕ ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
-msgstr ""
+msgstr "ಜಾಲಬಂಧದ ಮೂಲಕ ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to accept files sent over Bluetooth"
-msgstr ""
+msgstr "ಬ್ಲೂಟೂತ್‌ನಲ್ಲಿ ಕಳುಹಿಸಲಾದ ಕಡತಗಳನ್ನು ಯಾವಾಗ ಅಂಗೀಕರಿಸಬೇಕು"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
+"ಬ್ಲೂಟೂತ್‌ನಲ್ಲಿ ಕಳುಹಿಸಲಾದ ಕಡತಗಳನ್ನು ಯಾವಾಗ ಅಂಗೀಕರಿಸಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ \"always\", "
+"\"bonded\", \"bonded_trusted\" ಹಾಗು \"ask\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
+"ಯಾವಾಗ ಗುಪ್ತಪದಗಳಿಗಾಗಿ ಕೇಳಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ \"never\", \"on_write\", ಹಾಗು "
+"\"always\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -65,41 +71,41 @@ msgstr "ಗುಪ್ತಪದಗಳ ಅಗತ್ಯವಿದ್ದಾಗ"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
+msgstr "ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ObexPush ಅನ್ನು ಬಳಸಿಕೊಂಡು ಕಡತಗಳನ್ನು ಕಳುಹಿಸಬಹುದೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
+msgstr "ಕಡತಗಳನ್ನು ಕಳುಹಿಸಲು ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಗಣಕದೊಂದಿಗೆ ಜೋಡಿ ಮಾಡಲ್ಪಡಬೇಕೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
-msgstr ""
+msgstr "ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಕಡತಗಳಿಗೆ ಬರೆಯುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ ಅಥವ ಕೇವಲ ಓದಲು ಮಾತ್ರವಾದ ಸ್ಥಿತಿಯಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಬೇಕೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
-msgstr ""
+msgstr "ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಕಡತಗಳಿಗೆ ಬರೆಯುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
-msgstr ""
+msgstr "ಹೊಸದಾಗಿ ಸ್ವೀಕರಿಸಲಾದ ಕಡತಗಳ ಬಗ್ಗೆ ಸೂಚನೆ ನೀಡಬೇಕೆ."
 
 #: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
-msgstr ""
+msgstr "<b>ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಸ್ವೀಕರಿಸು</b>"
 
 #: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr ""
+msgstr "<b>ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು</b>"
 
 #: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
-msgstr ""
+msgstr "<b>ಜಾಲಬಂಧದ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು</b>"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
-msgstr ""
+msgstr "ದೂರಸ್ಥ ಸಾಧನಗಳು ಕಡತಗಳನ್ನು ಅಳಿಸುವುದನ್ನು ಅನುಮತಿಸು(_w)"
 
 #: ../data/file-share-properties.ui.h:5
 msgid "File Sharing Preferences"
@@ -107,11 +113,11 @@ msgstr "ಕಡತ ಹಂಚಿಕೆಯ ಆದ್ಯತೆಗಳು"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr ""
+msgstr "ಬ್ಲೂಟೂತ್‌ ಮೂಲಕ ಕಡತಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಕಡತಕೋಶಕ್ಕೆ ಸ್ವೀಕರಿಸು(_D)"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
-msgstr ""
+msgstr "ದೂರಸ್ಥ ಸಾಧನಗಳು ಈ ಗಣಕದೊಂದಿಗೆ ಜೋಡಿಸಲ್ಪಡುವ ಅಗತ್ಯವಿದೆ(_m)"
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
