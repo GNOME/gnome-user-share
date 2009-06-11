@@ -147,17 +147,16 @@ show_notification (const char *filename)
 	mime_type = g_content_type_guess (filename, NULL, 0, NULL);
 	app = g_app_info_get_default_for_type (mime_type, FALSE);
 	if (app != NULL) {
-		/* FIXME duplicate the uri, otherwise libnotify crashes */
-		char *uri;
 		g_object_unref (app);
-		uri = g_strdup (file_uri);
 		notify_notification_add_action (notification, "display", _("Open File"),
 						(NotifyActionCallback) notification_launch_action_on_file_cb,
-						(gpointer) uri, (GFreeFunc) g_free);
+						g_strdup (file_uri), (GFreeFunc) g_free);
 	}
 	notify_notification_add_action (notification, "reveal", _("Reveal File"),
 					(NotifyActionCallback) notification_launch_action_on_file_cb,
-					(gpointer) file_uri, (GFreeFunc) g_free);
+					g_strdup (file_uri), (GFreeFunc) g_free);
+
+	g_free (file_uri);
 	
 	g_signal_connect (G_OBJECT (notification), "closed", G_CALLBACK (on_close_notification), notification);
 

@@ -1,3 +1,9 @@
+2009-06-11  Bastien Nocera  <hadess@hadess.net>
+
+	* src/obexpush.c (show_notification): Fix work-around
+	for possible double-free, as seen in:
+	https://bugzilla.redhat.com/show_bug.cgi?id=451001
+
 2009-03-25  Claude Paroz  <claude@2xlibre.net>
 
 	* help/fr/figures/*.png:
