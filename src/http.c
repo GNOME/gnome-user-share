@@ -52,6 +52,9 @@
 #include "user_share-private.h"
 #include "http.h"
 
+/* From avahi-common/domain.h */
+#define AVAHI_LABEL_MAX 64
+
 #ifdef HAVE_DBUS_1_1
 static char *dbus_session_id;
 #endif
@@ -99,12 +102,22 @@ get_port (void)
 	return ntohs (addr.sin_port);
 }
 
+static char *
+truncate_name (const char *name)
+{
+	const char *end;
+
+	end = g_utf8_find_prev_char (name, name + 64);
+	g_assert (end != NULL);
+	return g_strndup (name, end - name);
+}
 
 static char *
 get_share_name (void)
 {
 	static char *name = NULL;
 	const char *host_name;
+	char *str;
 
 	if (name == NULL) {
 		host_name = g_get_host_name ();
@@ -128,6 +141,14 @@ get_share_name (void)
 		}
 
 	}
+	/* And truncate */
+	if (strlen (name) < AVAHI_LABEL_MAX)
+		return name;
+
+	str = truncate_name (name);
+	g_free (name);
+	name = str;
+
 	return name;
 }
 
