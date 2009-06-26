@@ -4,7 +4,7 @@
   <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkDialog" id="user_share_dialog">
     <property name="border_width">5</property>
-    <property name="title" translatable="yes">File Sharing Preferences</property>
+    <property name="title" translatable="yes">Personal File Sharing Preferences</property>
     <property name="resizable">False</property>
     <property name="icon_name">folder-remote</property>
     <property name="type_hint">dialog</property>
