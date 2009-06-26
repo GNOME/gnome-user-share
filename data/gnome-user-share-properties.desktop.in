@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 _Name=Personal File Sharing
-_Comment=Preferences for sharing of files
+_Comment=Preferences for sharing of personal files
 Exec=gnome-file-share-properties
 Icon=folder-remote
 StartupNotify=true

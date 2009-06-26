@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-_Name=Personal File Sharing
-_Comment=Launch Personal File Sharing if enabled
+_Name=User Sharing
+_Comment=Launch User Sharing if enabled
 Icon=apacheconf
 Exec=@installdir@/gnome-user-share
 Terminal=false
