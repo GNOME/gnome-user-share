@@ -32,7 +32,7 @@
 
 #include "user_share-private.h"
 
-#define REALM N_("Please log in as the user guest")
+#define REALM "Please log in as the user guest"
 #define USER "guest"
 
 static GtkBuilder* builder;
@@ -47,10 +47,10 @@ write_out_password (const char *password)
     char *filename;
     FILE *file;
 
-    to_hash = g_strdup_printf ("%s:%s:%s", USER, _(REALM), password);
+    to_hash = g_strdup_printf ("%s:%s:%s", USER, REALM, password);
     ascii_digest = g_compute_checksum_for_string (G_CHECKSUM_MD5, to_hash, strlen (to_hash));
     g_free (to_hash);
-    line = g_strdup_printf ("%s:%s:%s\n", USER, _(REALM), ascii_digest);
+    line = g_strdup_printf ("%s:%s:%s\n", USER, REALM, ascii_digest);
     g_free (ascii_digest);
 
     filename = g_build_filename (g_get_user_config_dir (), "user-share", "passwd", NULL);
