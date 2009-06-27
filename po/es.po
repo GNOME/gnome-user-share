@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&component=general\n"
-"POT-Creation-Date: 2009-01-31 14:14+0000\n"
-"PO-Revision-Date: 2009-01-31 20:04+0100\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
+"PO-Revision-Date: 2009-06-27 14:54+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -103,17 +103,14 @@ msgid "Whether to notify about newly received files."
 msgstr "Si notificar acerca de los nuevos archivos recibidos."
 
 #: ../data/file-share-properties.ui.h:1
-#| msgid "When to accept files sent over Bluetooth"
 msgid "<b>Receive Files over Bluetooth</b>"
 msgstr "<b>Recibir archivos por Bluetooth</b>"
 
 #: ../data/file-share-properties.ui.h:2
-#| msgid "Share Public directory over Bluetooth"
 msgid "<b>Share Files over Bluetooth</b>"
 msgstr "<b>Compartir archivos por Bluetooth</b>"
 
 #: ../data/file-share-properties.ui.h:3
-#| msgid "Share Public directory over the network"
 msgid "<b>Share Files over the Network</b>"
 msgstr "<b>Compartir archivos en la red</b>"
 
@@ -122,11 +119,11 @@ msgid "Allo_w remote devices to delete files"
 msgstr "_Permitir que los dispositivos remotos borren archivos"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Preferencias de compartición de archivos"
+#| msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
+msgstr "Preferencias de compartición de archivos personales"
 
 #: ../data/file-share-properties.ui.h:6
-#| msgid "When to accept files sent over Bluetooth"
 msgid "Receive files in _Downloads folder over Bluetooth"
 msgstr "Recibir los archivos por Bluetooth en la carpeta _Descargas"
 
@@ -135,7 +132,6 @@ msgid "Require re_mote devices to bond with this computer"
 msgstr "Requerir que los dispositivos re_motos se vinculen con este equipo"
 
 #: ../data/file-share-properties.ui.h:8
-#| msgid "Share Public directory over Bluetooth"
 msgid "Share public files over _Bluetooth"
 msgstr "Compartir archivos públicos por _Bluetooth"
 
@@ -144,7 +140,6 @@ msgid "_Accept files: "
 msgstr "_Aceptar archivos: "
 
 #: ../data/file-share-properties.ui.h:10
-#| msgid "Whether to notify about newly received files."
 msgid "_Notify about received files"
 msgstr "_Notificar acerca de los archivos recibidos"
 
@@ -153,38 +148,27 @@ msgid "_Password:"
 msgstr "_Contraseña:"
 
 #: ../data/file-share-properties.ui.h:12
-#| msgid "When to require passwords"
 msgid "_Require password:"
 msgstr "_Requerir contraseña:"
 
 #: ../data/file-share-properties.ui.h:13
-#| msgid "Share Public directory over the network"
 msgid "_Share public files on network"
 msgstr "C_ompartir archivos públicos por red"
 
-#: ../data/file-share-properties.ui.h:14
-msgid "gtk-help"
-msgstr "gtk-help"
-
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Compartición de archivos personales"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Preferencias para compartir archivos personales"
+#| msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
+msgstr "Preferencias para la compartición de archivos"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Lanzar las comparticiones de usuario si están activadas"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Comparticiones de usuario"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:250
-msgid "Please log in as the user guest"
-msgstr "Inicie sesión como usuario invitado"
+#| msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Lanzar la compartición de archivos personales si están activadas"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -231,17 +215,21 @@ msgstr "Preguntar"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "Archivos públicos de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Archivos públicos de %s en %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Inicie sesión como usuario invitado"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -253,10 +241,16 @@ msgstr "Ha recibido «%s» a través de Bluetooth"
 msgid "You received a file"
 msgstr "Recibió un archivo"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Abrir archivo"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Revelar archivo"
+
+#~ msgid "gtk-help"
+#~ msgstr "gtk-help"
+
+#~ msgid "User Sharing"
+#~ msgstr "Comparticiones de usuario"
