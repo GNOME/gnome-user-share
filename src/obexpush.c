@@ -458,6 +458,13 @@ obexpush_up (void)
 	if (dbus_g_proxy_call (server_proxy, "Start", &err,
 			   G_TYPE_STRING, download_dir, G_TYPE_BOOLEAN, TRUE, G_TYPE_BOOLEAN, FALSE, G_TYPE_INVALID,
 			   G_TYPE_INVALID) == FALSE) {
+		if (g_error_matches (err, DBUS_GERROR, DBUS_GERROR_REMOTE_EXCEPTION) != FALSE &&
+		    dbus_g_error_has_name (err, "org.openobex.Error.Started") != FALSE) {
+		    	g_error_free (err);
+		    	g_message ("already started, ignoring error");
+		    	g_free (download_dir);
+		    	return;
+		}
 		g_printerr ("Starting Bluetooth ObexPush server failed: %s\n",
 			    err->message);
 		g_error_free (err);
@@ -481,12 +488,8 @@ obexpush_stop (gboolean stop_manager)
 		return;
 
 	if (dbus_g_proxy_call (server_proxy, "Close", &err, G_TYPE_INVALID, G_TYPE_INVALID) == FALSE) {
-		const gchar *error_name = NULL;
-
-		if (err != NULL && err->code == DBUS_GERROR_REMOTE_EXCEPTION)
-			error_name = dbus_g_error_get_name (err);
-		if (error_name == NULL ||
-		    (error_name != NULL && strcmp (error_name, "org.openobex.Error.NotStarted") != 0)) {
+		if (g_error_matches (err, DBUS_GERROR, DBUS_GERROR_REMOTE_EXCEPTION) == FALSE ||
+		    dbus_g_error_has_name (err, "org.openobex.Error.NotStarted") == FALSE) {
 			g_printerr ("Stopping Bluetooth ObexPush server failed: %s\n",
 				    err->message);
 			g_error_free (err);
@@ -501,6 +504,8 @@ obexpush_stop (gboolean stop_manager)
 		g_object_unref (manager_proxy);
 		manager_proxy = NULL;
 	}
+
+	//FIXME stop all the notifications
 }
 
 void
