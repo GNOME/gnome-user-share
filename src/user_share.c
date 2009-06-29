@@ -26,6 +26,7 @@
 #include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#include <bluetooth-client.h>
 #include <X11/Xlib.h>
 
 #include "user_share.h"
@@ -55,11 +56,21 @@
 #define CK_SESSION_INTERFACE	"org.freedesktop.ConsoleKit.Session"
 
 static guint disabled_timeout_tag = 0;
+static gboolean has_console = TRUE;
+
+static BluetoothClient *client = NULL;
+static gboolean bluetoothd_enabled = FALSE;
+
+#define OBEX_ENABLED (bluetoothd_enabled && has_console)
 
 static void
 obex_services_start (void)
 {
 	GConfClient *client;
+
+	if (bluetoothd_enabled == FALSE ||
+	    has_console == FALSE)
+	    	return;
 
 	client = gconf_client_get_default ();
 	
@@ -72,7 +83,7 @@ obex_services_start (void)
 
 	g_object_unref (client);
 }
-    
+
 static void
 obex_services_shutdown (void)
 {
@@ -133,6 +144,7 @@ sessionchanged_cb (void)
 	    return;
 	}
 	
+	has_console = is_active;
 	if (is_active) {
 		obex_services_start ();
 	} else {
@@ -210,6 +222,44 @@ consolekit_init (void)
 	g_object_unref (proxy_ck_session);
 	g_free (ck_seat_path);
 	dbus_g_connection_unref (dbus_connection);
+}
+
+static void
+default_adapter_changed (GObject    *gobject,
+			 GParamSpec *pspec,
+			 gpointer    user_data)
+{
+	char *adapter;
+	gboolean adapter_powered;
+
+	g_object_get (G_OBJECT (client),
+		      "default-adapter", &adapter,
+		      "default-adapter-powered", &adapter_powered,
+		      NULL);
+	if (adapter != NULL && *adapter != '\0') {
+		bluetoothd_enabled = adapter_powered;
+	} else {
+		bluetoothd_enabled = FALSE;
+	}
+
+	/* Were we called as init, or as a callback */
+	if (gobject != NULL) {
+		if (bluetoothd_enabled != FALSE)
+			obex_services_start ();
+		else
+			obex_services_shutdown ();
+	}
+}
+
+static void
+bluez_init (void)
+{
+	client = bluetooth_client_new ();
+	default_adapter_changed (NULL, NULL, NULL);
+	g_signal_connect (G_OBJECT (client), "notify::default-adapter",
+			  G_CALLBACK (default_adapter_changed), NULL);
+	g_signal_connect (G_OBJECT (client), "notify::default-adapter-powered",
+			  G_CALLBACK (default_adapter_changed), NULL);
 }
 
 char *
@@ -351,7 +401,7 @@ file_sharing_bluetooth_enabled_changed (GConfClient* client,
 		    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, NULL) == FALSE) {
 			_exit (0);
 		}
-	} else {
+	} else if (OBEX_ENABLED) {
 		obexftp_up ();
 	}
 }
@@ -369,7 +419,7 @@ file_sharing_bluetooth_obexpush_enabled_changed (GConfClient* client,
 		    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE) {
 			_exit (0);
 		}
-	} else {
+	} else if (OBEX_ENABLED) {
 		obexpush_up ();
 	}
 }
@@ -404,6 +454,7 @@ cleanup_handler (int sig)
 {
 	http_down ();
 	obexftp_down ();
+	obexpush_down ();
 	_exit (2);
 }
 
@@ -535,14 +586,15 @@ main (int argc, char **argv)
 
 	g_object_unref (client);
 
+	bluez_init ();
+	consolekit_init ();
+
 	/* Initial setting */
 	file_sharing_enabled_changed (client, 0, NULL, NULL);
 	file_sharing_bluetooth_enabled_changed (client, 0, NULL, NULL);
 	file_sharing_bluetooth_obexpush_accept_files_changed (client, 0, NULL, NULL);
 	file_sharing_bluetooth_obexpush_notify_changed (client, 0, NULL, NULL);
 	file_sharing_bluetooth_obexpush_enabled_changed (client, 0, NULL, NULL);
-
-	consolekit_init ();
 
 	gtk_main ();
 
