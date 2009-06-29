@@ -343,6 +343,7 @@ transfer_started_cb (DBusGProxy *session,
 			return;
 		}
 		g_message ("rejected transfer");
+		g_object_set_data (G_OBJECT (session), "filename", NULL);
 	}
 }
 
@@ -352,16 +353,21 @@ transfer_completed_cb (DBusGProxy *session,
 {
 	GConfClient *client;
 	gboolean display_notify; 
+	const char *filename;
 
-	g_message ("file finish transfer: %s",
-		   (char *) g_object_get_data (G_OBJECT (session), "filename"));
+	filename = (const char *) g_object_get_data (G_OBJECT (session), "filename");
+
+	g_message ("file finish transfer: %s", filename);
+
+	if (filename == NULL)
+		return;
 	
 	client = gconf_client_get_default ();	
 	display_notify = gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY, NULL);
 	g_object_unref (client);
 	
 	if (display_notify) {
-		show_notification (g_object_get_data (G_OBJECT (session), "filename"));
+		show_notification (filename);
 	} else {
 		hide_statusicon ();
 	}
@@ -375,6 +381,7 @@ cancelled_cb (DBusGProxy *session,
 	//FIXME implement properly, we never actually finished the transfer
 	g_message ("transfered was cancelled by the sender");
 	transfer_completed_cb (session, user_data);
+	hide_statusicon ();
 }
 
 static void
