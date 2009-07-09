@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the gnome-sharing package. 
 # Maxim Dziumanenko <mvd@mylinux.ua>, 2005 
 #
+# wanderlust <wanderlust@ukr.net>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-27 17:03+0300\n"
-"PO-Revision-Date: 2009-04-27 00:05+0300\n"
-"Last-Translator: Maxim V. Dziumanenko <mvd@mylinux.com.ua>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-07-07 19:21+0000\n"
+"PO-Revision-Date: 2009-07-08 10:29+0300\n"
+"Last-Translator: wanderlust <wanderlust@ukr.net>\n"
+"Language-Team: ukrainian <Ukrainian <uk@li.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,29 +22,28 @@ msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
-"Якщо відмічено, пристрої Bluetooth можуть надсилати файли у "
-"каталог Downloads користувача після його входу у систему."
+"Якщо відмічено, пристрої Bluetooth можуть надсилати файли у каталог "
+"Downloads користувача після його входу у систему."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"Якщо встановлено, файли у каталозі Public користувача стануть "
-"доступні через Bluetooth, коли користувач увійде до системи."
+"Якщо встановлено, файли у каталозі Public користувача стануть доступні через "
+"Bluetooth, коли користувач увійде до системи."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"Якщо відмічено, файли у каталозі Public користувача стануть "
-"доступні у мережі, коли він увійде у систему."
+"Якщо відмічено, файли у каталозі Public користувача стануть доступні у "
+"мережі, коли він увійде у систему."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
-msgstr ""
-"Зробити файли у каталозі Public спільними для доступу через Bluetooth"
+msgstr "Зробити файли у каталозі Public спільними для доступу через Bluetooth"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
@@ -57,8 +58,8 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"Дії при отриманні файлів через Bluetooth. Можливі значення: «always"
-"», «bonded», «bonded_trusted» та «ask»."
+"Дії при отриманні файлів через Bluetooth. Можливі значення: «always», "
+"«bonded», «bonded_trusted» та «ask»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -114,8 +115,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "_Дозволити віддаленим пристроям  видаляти файли"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Параметри спільного доступу"
+msgid "Personal File Sharing Preferences"
+msgstr "Параметри спільного доступу до особистих файлів"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -150,24 +151,17 @@ msgid "_Share public files on network"
 msgstr "Від_крити доступ до файлів з мережі"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Спільний доступ до особистих файлів"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Параметри спільного доступу до особистих файлів"
+msgid "Preferences for sharing of files"
+msgstr "Параметри спільного доступу до файлів"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Увімкнути спільний доступ, якщо це можливо"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Спільний доступ до особистих файлів"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Зайдіть у систему як гість"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Увімкнути спільний доступ, якщо можливо"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -214,17 +208,21 @@ msgstr "Запитувати"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "Спільні файли %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Спільні файли %s на %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Зайдіть у систему як гість"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -236,10 +234,13 @@ msgstr "Через Bluetooth отримано файл «%s»"
 msgid "You received a file"
 msgstr "Отримано файл"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Відкрити файл"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Показати файл"
+
+#~ msgid "User Sharing"
+#~ msgstr "Спільний доступ до особистих файлів"
