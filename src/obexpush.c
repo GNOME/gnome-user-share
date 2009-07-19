@@ -32,6 +32,7 @@
 #include <dbus/dbus-glib.h>
 #include <gconf/gconf-client.h>
 #include <dbus/dbus-glib-lowlevel.h>
+#include <canberra-gtk.h>
 
 #include <string.h>
 
@@ -125,6 +126,7 @@ show_notification (const char *filename)
 {
 	char *file_uri, *notification_text, *display, *mime_type;
 	NotifyNotification *notification;
+	ca_context *ctx;
 	GAppInfo *app;
 
 	file_uri = g_filename_to_uri (filename, NULL, NULL);
@@ -164,6 +166,13 @@ show_notification (const char *filename)
 		g_warning ("failed to send notification\n");
 	}
 	g_free (notification_text);
+
+	/* Now we do the audio notification */
+	ctx = ca_gtk_context_get ();
+	ca_context_play (ctx, 0,
+			 CA_PROP_EVENT_ID, "complete-download",
+			 CA_PROP_EVENT_DESCRIPTION, _("File reception complete"),
+			 NULL);
 }
 
 static void
