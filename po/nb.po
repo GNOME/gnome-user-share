@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-10 07:52+0100\n"
-"PO-Revision-Date: 2009-02-10 07:56+0100\n"
+"POT-Creation-Date: 2009-08-04 18:34+0200\n"
+"PO-Revision-Date: 2009-08-04 18:35+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -111,8 +111,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "La e_ksterne enheter slette filer"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Brukervalg for deling av filer"
+msgid "Personal File Sharing Preferences"
+msgstr "Brukervalg for deling av personlige filer"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -147,24 +147,17 @@ msgid "_Share public files on network"
 msgstr "Del offentlige filer på nettverket"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Deling av personlige filer"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Brukervalg for deling av personlige filer"
+msgid "Preferences for sharing of files"
+msgstr "Brukervalg for deling av filer"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
 msgstr "Start brukerdeling hvis aktivert"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Brukerdeling"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Vennligst logg inn som bruker «guest»"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -211,17 +204,21 @@ msgstr "Spør"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%s's offentlige filer"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s's offentlige filer på %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Vennligst logg inn som bruker «guest»"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -233,10 +230,10 @@ msgstr "Du mottok «%s» via Bluetooth"
 msgid "You received a file"
 msgstr "Du mottok en fil"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Åpne fil"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Vis fil"
