@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share\n"
+"Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-11 08:03+0200\n"
-"PO-Revision-Date: 2009-02-11 08:01+0200\n"
+"POT-Creation-Date: 2009-08-14 08:12+0300\n"
+"PO-Revision-Date: 2009-08-14 08:11+0300\n"
 "Last-Translator: Alexander Shopov <ash@contact.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -119,8 +119,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "_Позволяване на отдалечените устройства да трият файлове"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Настройки на споделянето на файлове"
+msgid "Personal File Sharing Preferences"
+msgstr "Настройки на споделянето на личните файлове"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -156,24 +156,17 @@ msgid "_Share public files on network"
 msgstr "_Споделяне на публичните файлове по мрежата"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Споделяне на файлове"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Настройки за споделянето на личните файлове"
+msgid "Preferences for sharing of files"
+msgstr "Настройки за споделянето на файлове"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Стартиране на споделянето на файлове, ако то е позволено"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Споделяне на файлове"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Влезте като гост (потребител guest)"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Стартиране на споделянето на файлове, ако е позволено"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -220,17 +213,21 @@ msgstr "Питане"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "Публичните файлове на %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Публичните файлове на %s върху %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Влезте като гост (потребител guest)"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -242,10 +239,10 @@ msgstr "Получихте „%s“ по Bluetooth"
 msgid "You received a file"
 msgstr "Получихте файл"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Отваряне на файл"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Показване на файл"
