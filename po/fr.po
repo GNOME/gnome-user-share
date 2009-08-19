@@ -10,9 +10,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-31 15:00+0100\n"
-"PO-Revision-Date: 2009-01-31 15:11+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
+"PO-Revision-Date: 2009-08-19 21:14+0200\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -122,8 +123,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Aut_oriser les périphériques externes à supprimer des fichiers"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Préférences du partage de fichiers"
+msgid "Personal File Sharing Preferences"
+msgstr "Préférences du partage de fichiers personnels"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -158,24 +159,17 @@ msgid "_Share public files on network"
 msgstr "_Partager les fichiers publics sur le réseau"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Partage de fichiers personnels"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Préférences pour le partage de fichiers personnels"
+msgid "Preferences for sharing of files"
+msgstr "Préférences pour le partage de fichiers"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Lance le partage utilisateur s'il est activé"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Partage utilisateur"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:250
-msgid "Please log in as the user guest"
-msgstr "Veuillez vous connecter en tant qu'utilisateur invité"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Lance le partage de fichiers personnels s'il est activé"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -222,17 +216,21 @@ msgstr "Demander"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "Fichiers publics de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Fichiers publics de %s sur %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Veuillez vous connecter en tant qu'utilisateur invité"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -244,10 +242,10 @@ msgstr "Vous avez reçu « %s » par Bluetooth"
 msgid "You received a file"
 msgstr "Vous avez reçu un fichier"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Ouvrir le fichier"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Montrer le fichier"
