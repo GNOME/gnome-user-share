@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-20 09:51-0600\n"
-"PO-Revision-Date: 2009-08-20 10:12-0600\n"
+"PO-Revision-Date: 2009-08-21 03:21-0600\n"
 "Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -162,7 +162,7 @@ msgstr "_Comhroinn comhaid poiblí ar an líonra"
 #: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
-msgstr "Chomhroinnt Comhad Pearsanta"
+msgstr "Comhroinnt Chomhad Pearsanta"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of files"
