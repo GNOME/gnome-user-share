@@ -2,12 +2,14 @@
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Manatsawin <whs@whsgroup.ath.cx>, 2009.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2009."
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-27 21:07+0700\n"
-"PO-Revision-Date: 2009-03-03 15:41+0700\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
+"PO-Revision-Date: 2009-08-24 14:12+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -111,8 +113,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "_อนุญาตให้อุปกรณ์ระยะไกลลบแฟ้ม"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "ปรับแต่งการแบ่งปันแฟ้ม"
+msgid "Personal File Sharing Preferences"
+msgstr "ปรับแต่งการแบ่งปันแฟ้มส่วนตัว"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -147,24 +149,17 @@ msgid "_Share public files on network"
 msgstr "แ_บ่งปันแฟ้มสาธารณะในเครือข่าย"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "แบ่งปันแฟ้มส่วนตัว"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "ปรับแต่งค่าการแบ่งปันแฟ้มส่วนตัว"
+msgid "Preferences for sharing of files"
+msgstr "ปรับแต่งค่าการแบ่งปันแฟ้ม"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "เรียกใช้การแบ่งปันแฟ้มของผู้ใช้หากถูกเปิดใช้"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "การแบ่งปันแฟ้มของผู้ใช้"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "โปรดเข้าระบบในนามผู้ใช้ guest"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "เรียกใช้การแบ่งปันแฟ้มส่วนตัวหากถูกเปิดใช้"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -212,17 +207,21 @@ msgstr "ถาม"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "แฟ้มสาธารณะของ %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "แฟ้มสาธารณะของ %s ที่ %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "โปรดเข้าระบบในนามผู้ใช้ guest"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -234,10 +233,13 @@ msgstr "คุณได้รับแฟ้ม \"%s\" ผ่านทางบ�
 msgid "You received a file"
 msgstr "คุณได้รับแฟ้ม"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "เปิดแฟ้ม"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "แสดงแฟ้ม"
+
+#~ msgid "User Sharing"
+#~ msgstr "การแบ่งปันแฟ้มของผู้ใช้"
