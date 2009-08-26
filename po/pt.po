@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.26\n"
+"Project-Id-Version: 2.28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-26 00:32+0000\n"
-"PO-Revision-Date: 2009-02-26 00:40+0000\n"
+"POT-Creation-Date: 2009-08-26 09:03+0100\n"
+"PO-Revision-Date: 2009-08-26 09:05+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,8 @@ msgid ""
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 "Se definido como verdadeiro, o directório \"Public\" na pasta pessoal do "
-"utilizador será partilhado por Bluetooth quando o utilizador estiver numa sessão."
+"utilizador será partilhado por Bluetooth quando o utilizador estiver numa "
+"sessão."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
@@ -57,8 +58,8 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"Quando aceitar ficheiros enviados por Bluetooth. Valores possíveis são \""
-"always\", \"bonded\", \"bonded_trusted\" e \"ask\"."
+"Quando aceitar ficheiros enviados por Bluetooth. Valores possíveis são "
+"\"always\", \"bonded\", \"bonded_trusted\" e \"ask\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -74,11 +75,14 @@ msgstr "Quando exigir senhas"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Se os clientes Bluetooth podem ou não enviar ficheiros utilizando ObexPush."
+msgstr ""
+"Se os clientes Bluetooth podem ou não enviar ficheiros utilizando ObexPush."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Se os clientes Bluetooth precisão ou não de emparelhar com o computador para enviar ficheiros."
+msgstr ""
+"Se os clientes Bluetooth precisão ou não de emparelhar com o computador para "
+"enviar ficheiros."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
@@ -90,7 +94,8 @@ msgstr ""
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Se permitir ou não que os clientes Bluetooth tenham permissões de escrita."
+msgstr ""
+"Se permitir ou não que os clientes Bluetooth tenham permissões de escrita."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
@@ -113,8 +118,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "P_ermitir que dispositivos remotos apaguem ficheiros"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Preferências de Partilha de Ficheiros"
+msgid "Personal File Sharing Preferences"
+msgstr "Preferências de Partilha de Ficheiros Pessoais"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -122,7 +127,8 @@ msgstr "Receber ficheiros por Bluetooth na pasta _Downloads"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
-msgstr "Requerer que os dispositivos re_motos se emparelhem com este computador"
+msgstr ""
+"Requerer que os dispositivos re_motos se emparelhem com este computador"
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
@@ -150,24 +156,17 @@ msgid "_Share public files on network"
 msgstr "_Partilhar ficheiros da pasta \"Public\" pela rede"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Partilha de Ficheiros Pessoais"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Preferências para a partilha de ficheiros pessoais"
+msgid "Preferences for sharing of files"
+msgstr "Preferências para a partilha de ficheiros"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Iniciar a Partilha Pessoal, se activa"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Partilha Pessoal"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Inicie uma sessão como utilizador guest"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Inicia a Partilha de Ficheiros Pessoais, se activa"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -214,17 +213,21 @@ msgstr "Perguntar"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "Ficheiros públicos de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Ficheiros públicos de %s em %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Inicie uma sessão como utilizador guest"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -236,10 +239,13 @@ msgstr "Recebeu \"%s\" por Bluetooth"
 msgid "You received a file"
 msgstr "Recebeu um ficheiro"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Abrir o Ficheiro"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Revelar o Ficheiro"
+
+#~ msgid "User Sharing"
+#~ msgstr "Partilha Pessoal"
