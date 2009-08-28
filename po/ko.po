@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-18 05:26+0900\n"
-"PO-Revision-Date: 2009-02-18 05:29+0900\n"
+"POT-Creation-Date: 2009-08-29 01:08+0900\n"
+"PO-Revision-Date: 2009-08-29 01:09+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
 "MIME-Version: 1.0\n"
@@ -112,8 +112,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "원격 장치에서 파일 삭제 허용(_W)"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "파일 공유 기본 설정"
+msgid "Personal File Sharing Preferences"
+msgstr "개인 파일 공유 기본 설정"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -148,24 +148,17 @@ msgid "_Share public files on network"
 msgstr "네트워크를 통해 공개 디렉터리 공유(_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "개인 파일 공유"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "개일 파일 공유에 대한 기본 설정"
+msgid "Preferences for sharing of files"
+msgstr "파일 공유에 대한 기본 설정"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "사용자 공유를 실행합니다"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "사용자 공유"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "guest 사용자로 로그인하십시오"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "사용자 공유를 (사용할 경우) 시작합니다"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -212,17 +205,21 @@ msgstr "물어보기"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%s의 공용 파일"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s에 있는 %1$s의 공용 파일"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "guest 사용자로 로그인하십시오"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -234,10 +231,10 @@ msgstr "블루투스를 통해 \"%s\" 파일을 받았습니다"
 msgid "You received a file"
 msgstr "파일을 받았습니다"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "파일 열기"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "파일 보기"
