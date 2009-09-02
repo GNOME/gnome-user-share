@@ -11,3 +11,14 @@ DISTCLEANFILES = \
 	intltool-update
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-schemas-install
+
+# Build ChangeLog from GIT history
+ChangeLog:
+	@if test -f $(top_srcdir)/.git/HEAD; then \
+		git log --stat --after="Thu Jun 11 22:19:01 2009" > $@; \
+	fi
+
+dist: ChangeLog
+
+.PHONY: ChangeLog
+
