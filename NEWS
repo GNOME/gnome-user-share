@@ -1,4 +1,12 @@
-This is gnome-user-share 2.26.0, a system for easy sharing of user files.
+This is gnome-user-share 2.27.0, a system for easy sharing of user files.
+
+Major changes since 2.26.0 are:
+* Fix WebDAV sharing not working when service names are too long
+* Fix login problems to WebDAV
+* Don't error out if the Obex services are already started
+* Fix Obex services not working any more when bluetoothd is exited
+* UI fixes for rejected ObexPush transfers
+* Updated translations
 
 Major changes since 2.25.92 are:
 * Updated translations
