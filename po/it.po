@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share 2.25.91\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&component=general\n"
-"POT-Creation-Date: 2009-03-03 23:08+0000\n"
-"PO-Revision-Date: 2009-03-07 14:15+0100\n"
+"POT-Creation-Date: 2009-09-02 12:31+0000\n"
+"PO-Revision-Date: 2009-08-26 18:26+0200\n"
 "Last-Translator: Gianvito Cavasoli <janvitus@ubuntu-it.org>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -59,8 +59,8 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"Quando accettare file inviati tramite Bluetooth. Le opzioni opzioni "
-"possibili sono \"always\", \"bonded\", \"bonded_trusted\" e \"ask\"."
+"Quando accettare file inviati tramite Bluetooth. Le opzioni possibili sono "
+"\"always\", \"bonded\", \"bonded_trusted\" e \"ask\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -118,8 +118,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Con_sentire ai dispositivi remoti di eliminare file"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Preferenze di condivisione dei file"
+msgid "Personal File Sharing Preferences"
+msgstr "Preferenze di condivisione di file personali"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -147,31 +147,24 @@ msgstr "Pass_word:"
 
 #: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
-msgstr "_Richiedere password:"
+msgstr "_Richiedere la password:"
 
 #: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
 msgstr "C_ondividere i file pubblici sulla rete"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Condivisione di file personali"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Preferenze per la condivisione di file personali"
+msgid "Preferences for sharing of files"
+msgstr "Preferenze per la condivisione dei file"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Lancia la condivisione utente se abilitata"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Condivisione utente"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Accedere come utente ospite"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Lancia la condivisione di file personali se abilitata"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -199,7 +192,7 @@ msgstr "Sempre"
 
 #: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
-msgstr "Solo per dispositivi associati"
+msgstr "Solo da dispositivi associati"
 
 #: ../src/file-share-properties.c:578
 msgid "Only for Bonded and Trusted devices"
@@ -218,17 +211,21 @@ msgstr "Chiedere"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "File pubblici di %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "File pubblici di %s su %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Accedere come utente ospite"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -240,14 +237,10 @@ msgstr "Ricevuto «%s» tramite Bluetooth"
 msgid "You received a file"
 msgstr "Ricevuto un file"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Apri file"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Rivela file"
-
-# FIXME
-#~ msgid "gtk-help"
-#~ msgstr "gtk-help"
