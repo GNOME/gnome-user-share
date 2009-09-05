@@ -38,3 +38,5 @@ EXTRA_DIST = $(schema_in_files) \
 CLEANFILES = $(desktop_DATA) $(autostart_DATA)
 
 DISTCLEANFILES = $(schema_DATA)
+
+-include $(top_srcdir)/git.mk

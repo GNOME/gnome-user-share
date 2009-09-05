@@ -61,3 +61,5 @@ EXTRA_DIST = marshal.list
 
 CLEANFILES = $(BUILT_SOURCES)
 
+
+-include $(top_srcdir)/git.mk
