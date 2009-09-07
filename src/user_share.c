@@ -475,6 +475,10 @@ main (int argc, char **argv)
 	Window selection_owner;
 	Atom xatom;
 
+	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
+	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+	textdomain (GETTEXT_PACKAGE);
+
 	gtk_init (&argc, &argv);
 
 	if (g_strcmp0 (g_get_real_name (), "root") == 0) {
@@ -489,7 +493,7 @@ main (int argc, char **argv)
 
 	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
 	if (xdisplay == NULL) {
-		fprintf (stderr, "Can't open display\n");
+		g_warning ("Can't open display");
 		return 1;
 	}
 
