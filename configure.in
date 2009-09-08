@@ -127,6 +127,14 @@ AC_ARG_WITH([modules-path],
 MODULES_PATH=$with_modules_path
 AC_SUBST(MODULES_PATH)
 
+dnl===========================================================================
+dnl Check for nautilus for the share bar
+
+PKG_CHECK_MODULES(EXTENSION,
+		   libnautilus-extension)
+NAUTILUSDIR=`pkg-config --variable=extensiondir libnautilus-extension`
+AC_SUBST(NAUTILUSDIR)
+
 dnl ==========================================================================
 
 dnl Turn on the additional warnings last, so -Werror doesn't affect other tests.

@@ -26,6 +26,7 @@ INCLUDES=	\
 	-DHTTPD_MODULES_PATH=\""$(MODULES_PATH)"\"	\
 	-I$(top_srcdir) 				\
 	-I$(top_builddir) 				\
+	$(EXTENSION_CFLAGS)				\
 	$(USER_SHARE_CFLAGS)				\
 	$(USER_SHARE_CONFIG_CFLAGS)			\
 	$(X_CFLAGS)
@@ -56,6 +57,17 @@ gnome_file_share_properties_SOURCES =	\
 gnome_file_share_properties_LDADD = \
 	$(USER_SHARE_CONFIG_LIBS)
 
+nautilus_extensiondir = $(NAUTILUSDIR)
+nautilus_extension_LTLIBRARIES = libnautilus-share-extension.la
+
+libnautilus_share_extension_la_SOURCES =         \
+	nautilus-share-bar.c                     \
+	nautilus-share-bar.h                     \
+	share-extension.c                        \
+	$(NULL)
+
+libnautilus_share_extension_la_LIBADD = $(EXTENSION_LIBS)
+libnautilus_share_extension_la_LDFLAGS = -avoid-version -module -no-undefined
 
 EXTRA_DIST = marshal.list
 
