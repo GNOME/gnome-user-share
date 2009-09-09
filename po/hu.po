@@ -1,17 +1,17 @@
-# translation of gnome-user-share to Hungarian
+# Hungarian translation of gnome-user-share
 # This file is distributed under the same license as the gnome-user-share package.
 # Copyright (C) 2005, 2008, 2009, Free Software Foundation, Inc.
 #
-# Szabolcs Varga <shirokuma@shirokuma.hu>, 2005.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2005, 2006, 2008, 2009.
+# Szabolcs Varga <shirokuma at shirokuma dot hu>, 2005.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2005, 2006, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2009-01-31 14:14+0000\n"
-"PO-Revision-Date: 2009-02-14 03:17+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
-"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-09 03:21+0200\n"
+"PO-Revision-Date: 2009-09-09 03:20+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -82,7 +82,8 @@ msgstr "A Bluetooth kliensek küldhetnek-e fájlokat az ObexPush használatával
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "A Bluetooth klienseket kell-e párosítani a számítógéppel a fájlok küldéséhez."
+msgstr ""
+"A Bluetooth klienseket kell-e párosítani a számítógéppel a fájlok küldéséhez."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
@@ -117,8 +118,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Fájlok _törlésének engedélyezése távoli eszközöknek"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Fájlmegosztás beállításai"
+msgid "Personal File Sharing Preferences"
+msgstr "Személyes fájlmegosztás beállításai"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -152,29 +153,18 @@ msgstr "Jelszó _kötelező:"
 msgid "_Share public files on network"
 msgstr "Nyilvános fájlok megosztása a _hálózaton"
 
-#: ../data/file-share-properties.ui.h:14
-msgid "gtk-help"
-msgstr ""
-
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Személyes fájlmegosztás"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Személyes fájlok megosztásának beállításai"
+msgid "Preferences for sharing of files"
+msgstr "Fájlmegosztás beállításai"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Felhasználói megosztás indítása, ha engedélyezett"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Felhasználói megosztás"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:250
-msgid "Please log in as the user guest"
-msgstr "Jelentkezzen be vendég felhasználóként"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Személyes fájlmegosztás indítása, ha engedélyezett"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -205,7 +195,6 @@ msgid "Only for Bonded devices"
 msgstr "Csak párosított eszközöknek"
 
 #: ../src/file-share-properties.c:578
-#| msgid "Only for Paired and Trusted devices"
 msgid "Only for Bonded and Trusted devices"
 msgstr "Csak párosított és megbízható eszközöknek"
 
@@ -222,17 +211,21 @@ msgstr "Kérdezzen"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%s nyilvános fájljai"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s nyilvános fájljai ezen: %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Jelentkezzen be vendég felhasználóként"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -244,11 +237,10 @@ msgstr "„%s” érkezett Bluetooth-on"
 msgid "You received a file"
 msgstr "Fájl érkezett"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Fájl megnyitása"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Fájl felfedése"
-
