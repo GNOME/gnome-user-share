@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&component=general\n"
-"POT-Creation-Date: 2009-03-18 09:20+0100\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
 "PO-Revision-Date: 2009-04-21 20:25+0100\n"
 "Last-Translator: Goran Rakic <grakic@devbase.net>\n"
 "Language-Team: Serbian (sr) <gnom@prevod.org>\n"
@@ -26,19 +26,25 @@ msgstr ""
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-msgstr "Blutut uređaji mogu poslati daoteke u korisničku fasciklu „Preuzeto“ kada je korisnik prijavljen."
+msgstr ""
+"Blutut uređaji mogu poslati daoteke u korisničku fasciklu „Preuzeto“ kada je "
+"korisnik prijavljen."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr "Fascikla „Javno“ u korisničkoj fascikli je deljena preko blutut veze kada je korisnik prijavljen."
+msgstr ""
+"Fascikla „Javno“ u korisničkoj fascikli je deljena preko blutut veze kada je "
+"korisnik prijavljen."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr "Fascikla „Javno“ u korisničkoj fasckili je deljena preko mreže kada je korisnik prijavljen."
+msgstr ""
+"Fascikla „Javno“ u korisničkoj fasckili je deljena preko mreže kada je "
+"korisnik prijavljen."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -56,13 +62,18 @@ msgstr "Dozvoljeno prihvatanje datoteka sa blutut veze"
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
-msgstr "Određuje kada je dozvoljeno prihvatanje datoteka sa blutut veze. Moguće vrednosti su „always“ (uvek), „bonded“ (upareni), „bonded_trusted“ (poverljivi i upareni) i „ask“ (postavi pitanje)."
+msgstr ""
+"Određuje kada je dozvoljeno prihvatanje datoteka sa blutut veze. Moguće "
+"vrednosti su „always“ (uvek), „bonded“ (upareni), "
+"„bonded_trusted“ (poverljivi i upareni) i „ask“ (postavi pitanje)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "Određuje kada je zahtevan unos lozinke. Moguće vrednosti su „never“ (nikada), „on_write“ (pri upisu) i „always“ (uvek)."
+msgstr ""
+"Određuje kada je zahtevan unos lozinke. Moguće vrednosti su "
+"„never“ (nikada), „on_write“ (pri upisu) i „always“ (uvek)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -80,7 +91,9 @@ msgstr "Blutut klijenti moraju biti upareni sa računarom za slanje datoteka."
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
-msgstr "Određuje da li blutut klijenti mogu da upisuju datoteke ili se datoteke dele samo kao neupisive."
+msgstr ""
+"Određuje da li blutut klijenti mogu da upisuju datoteke ili se datoteke dele "
+"samo kao neupisive."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -107,8 +120,9 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Udaljeni uređaji mogu da _brišu datoteke"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Postavke deljenja datoteka"
+#| msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
+msgstr "Postavke deljenja ličnih datoteka"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -143,24 +157,19 @@ msgid "_Share public files on network"
 msgstr "Deli javne datoteke preko _mreže"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Deljenje ličnih datoteka"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Postavke za deljenje ličnih datoteka"
+#| msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
+msgstr "Postavke za deljenje datoteka"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Pokreće korisničko deljenje ako je omogućeno"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Korisničko deljenje"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Prijavite se kao korisnik „guest“"
+#| msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Pokreće deljenje ličnih datoteka ako je omogućeno"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -207,17 +216,21 @@ msgstr "Pitaj"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "Javne datoteke korisnika „%s“"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Javne datoteke korisnika „%s“ na računaru „%s“"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Prijavite se kao korisnik „guest“"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -229,10 +242,13 @@ msgstr "Priimili ste „%s“ preko blutut veze"
 msgid "You received a file"
 msgstr "Primili ste datoteku"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Otvori datoteku"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Prikaži datoteku"
+
+#~ msgid "User Sharing"
+#~ msgstr "Korisničko deljenje"
