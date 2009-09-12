@@ -1,16 +1,17 @@
-# translation of gnome-user-share.HEAD.po to marathi
+# translation of mr.po to Marathi
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share.HEAD\n"
+"Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2009-03-07 15:03+0000\n"
-"PO-Revision-Date: 2009-03-11 09:46+0530\n"
-"Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
-"Language-Team: marathi\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
+"PO-Revision-Date: 2009-09-12 13:28+0530\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,20 +23,24 @@ msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
-"true असल्यास, प्रवेश केल्यावर Bluetooth साधन वापरकर्त्याचे डाऊनलोड "
-"डिरेक्ट्री करीता फाइल पाठवू शकते."
+"true असल्यास, प्रवेश केल्यावर Bluetooth साधन वापरकर्त्याचे डाऊनलोड डिरेक्ट्री करीता "
+"फाइल पाठवू शकते."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr "true असल्यास, प्रवेश केल्यावर वापरकर्त्याची मुख्य डिरेक्ट्री अंतर्गत Public डिरेक्ट्री Bluetooth वर सहभागीय केले जाईल."
+msgstr ""
+"true असल्यास, प्रवेश केल्यावर वापरकर्त्याची मुख्य डिरेक्ट्री अंतर्गत Public डिरेक्ट्री "
+"Bluetooth वर सहभागीय केले जाईल."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr "true असल्यास, प्रवेश केल्यावर वापरकर्त्याची मुख्य डिरेक्ट्री अंतर्गत Public डिरेक्ट्री जाळंवर सहभागीय केले जाईल."
+msgstr ""
+"true असल्यास, प्रवेश केल्यावर वापरकर्त्याची मुख्य डिरेक्ट्री अंतर्गत Public डिरेक्ट्री जाळंवर "
+"सहभागीय केले जाईल."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -62,8 +67,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"परवलीचा शब्द करीता कधी विचारायचे. संभाव्य मूल्य खालिल नुरूप आहे \"never\", \"on_write\", व"
-"\"always\"."
+"परवलीचा शब्द करीता कधी विचारायचे. संभाव्य मूल्य खालिल नुरूप आहे \"never\", \"on_write"
+"\", व\"always\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -81,7 +86,9 @@ msgstr "फाइल पाठवण्याकरीता Bluetooth क्ल
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
-msgstr "Bluetooth क्लाऐंटला फाइल लेखन, किंवा केवळ-वाचनीय या नुरूप सहभागीय करण्यास परवानगी द्यायची का."
+msgstr ""
+"Bluetooth क्लाऐंटला फाइल लेखन, किंवा केवळ-वाचनीय या नुरूप सहभागीय करण्यास परवानगी "
+"द्यायची का."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -108,8 +115,9 @@ msgid "Allo_w remote devices to delete files"
 msgstr "दूरस्थ साधनला फाइल नष्ट करण्यास परवानगी द्या (_w)"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "फाइल सहभागीय करण्याकरीता आवड निवड"
+#| msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
+msgstr "व्यक्तिगत फाइल शेअरींग पसंती"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -144,24 +152,19 @@ msgid "_Share public files on network"
 msgstr "जाळं वरील public फाइल सहभागीय करा (_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "वैयक्तिक फाइल सहभागीय करा"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "वैयक्तिक फाइल सहभागीय करण्याकरीता आवड निवड"
+#| msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
+msgstr "फाइल शेअर करण्यासाठी पसंती"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "कार्यान्वीत असल्यास वापरकर्ता सहभाग दाखल करा"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "वापरकर्ता सहभाग"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "कृपया वापरकर्ता अतिथी नुरूप प्रवेश करा"
+#| msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "कार्यक्षम असल्यास व्यक्तिगत फाइल शेअरींग प्रक्षेपीत करा"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -208,17 +211,21 @@ msgstr "विचारा"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%s चे public फाइल"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s वरील %1$s चे public फाइल"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "कृपया वापरकर्ता अतिथी नुरूप प्रवेश करा"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -230,11 +237,11 @@ msgstr "तुमच्याकडे Bluetooth द्वारे \"%s\" प�
 msgid "You received a file"
 msgstr "तुम्हाला फाइल प्राप्त झाले"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "फाइल उघडा"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "फाइल निश्चित करा"
 
