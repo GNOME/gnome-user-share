@@ -4,47 +4,69 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=l10n&component=Romanian%20[ro]\n"
-"POT-Creation-Date: 2009-02-15 16:41+0000\n"
-"PO-Revision-Date: 2009-02-17 02:44+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-09-07 13:12+0000\n"
+"PO-Revision-Date: 2009-09-16 16:46+0300\n"
 "Last-Translator: Adi Roiban <adi@roiban.ro>\n"
 "Language-Team: Gnome Romanian Team <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1))\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
-msgstr "Dacă este definit ca „true”, dispozitivele Bluetooth pot trimite fișiere în dosarul „Descărcări” când utilizatorul este autentificat."
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"La activare, dispozitivele Bluetooth pot trimite fișiere în dosarul "
+"„Descărcări” când utilizatorul este autentificat."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
-msgstr "Dacă este definit ca „true”, dosarul „Public” din dosarul personal al utilizatorului va fi partajat prin Bluetooth, la autentificarea utilizatorului."
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"La activare, dosarul „Public” din dosarul personal al utilizatorului va "
+"fi partajat prin Bluetooth când utilizatorul este autentificat."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
-msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
-msgstr "Dacă este definit ca „true”, dosarul „Public” din dosarul personal al utilizatorului va fi partajat prin rețea, la autentificarea utilizatorului."
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"La activare, dosarul „Public” din dosarul personal al utilizatorului va "
+"fi partajat prin rețea când utilizatorul este autentificat."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
-msgstr "Partajează dosar public prin Bluetooth"
+msgstr "Partajează prin Bluetooth dosarul „Public”"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
-msgstr "Partajează dosar public prin rețea"
+msgstr "Partajează în rețea dosarul „Public”"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to accept files sent over Bluetooth"
 msgstr "Când să fie acceptate fișierele trimise prin Bluetooth"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\", \"bonded_trusted\" and \"ask\"."
-msgstr "Când să fie acceptate fișierele trimise prin Bluetooth. Valorile posibile sunt „always”, „bonded”, „bonded_trusted” și „ask”."
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr ""
+"Când să fie acceptate fișierele trimise prin Bluetooth. Valorile posibile "
+"sunt „always”, „bonded”, „bonded_trusted” și „ask”."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
-msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr "Când să se ceară parole. Valorile posibile sunt „never”, „on_write” și „always”."
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Când să se ceară parole. Valorile posibile sunt „never”, „on_write” și "
+"„always”."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -52,15 +74,21 @@ msgstr "Când să se ceară parole"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Dacă clienții Bluetooth pot trimite fișiere folosind ObexPush."
+msgstr "Specifică dacă clienții Bluetooth pot trimite fișiere folosind "
+"ObexPush."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Dacă clienții Bluetooth trebuie să se asocieze cu acest calculator pentru a trimite fișiere."
+msgstr "Specifică dacă clienții Bluetooth trebuie să se asocieze cu acest "
+"calculator pentru a trimite fișiere."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
-msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
-msgstr "Dacă se permite scrierea de fișiere clienților Bluetooth, sau fișiere să fie partajate doar pentru citire."
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+"Specifică dacă se permite scrierea de fișiere clienților Bluetooth sau dacă"
+"fișierele să fie partajate doar pentru citire."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -68,27 +96,27 @@ msgstr "Dacă se permite scrierea de fișiere clienților Bluetooth."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
-msgstr "Dacă să fie notificate noile fișiere primite."
+msgstr "Dacă să se notifice noile fișiere primite."
 
 #: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Primire fișiere prin Bluetooth</b>"
+msgstr "<b>Primire de fișiere prin Bluetooth</b>"
 
 #: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Partajare fișiere prin Bluetooth</b>"
+msgstr "<b>Partajare de fișiere prin Bluetooth</b>"
 
 #: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Partajare fișiere prin rețea</b>"
+msgstr "<b>Partajare de fișiere în rețea</b>"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
 msgstr "_Permite dispozitivelor la distanță să șteargă fișiere"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Preferințe partajare fișiere"
+msgid "Personal File Sharing Preferences"
+msgstr "Preferințe partajare fișiere personale"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -96,11 +124,11 @@ msgstr "Primește fișiere prin Bluetooth în dosarul _Descărcări"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
-msgstr "_Cere dispozitivelor la distantă să se asocieze cu acest calculator"
+msgstr "_Cere dispozitivelor la distanță să se asocieze cu acest calculator"
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
-msgstr "Partajează fișiere publice prin _Bluetooth"
+msgstr "Partajați fișiere publice prin _Bluetooth"
 
 #: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
@@ -120,28 +148,20 @@ msgstr "Necesită pa_rolă:"
 
 #: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
-msgstr "Partajare fișiere publice prin _rețea"
+msgstr "Partajare de fișiere publice în _rețea"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
-msgstr "Partajare personală fișiere"
+msgstr "Partajare de fișiere personale"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Preferințe pentru partajarea fișierelor personale"
+msgid "Preferences for sharing of files"
+msgstr "Preferințe pentru partajarea fișierelor"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Pornește Partajare utilizator dacă este activată"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Partajare utilizator"
-
-#: ../src/file-share-properties.c:35
-#: ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Vă rugăm să vă atentificați ca utilizator oaspete"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "La activare, pornește partajarea de fișiere personale"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -163,8 +183,7 @@ msgstr "Niciodată"
 msgid "When writing files"
 msgstr "La scrierea fișierelor"
 
-#: ../src/file-share-properties.c:549
-#: ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Întotdeauna"
 
@@ -189,17 +208,21 @@ msgstr "Întreabă"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
-msgstr "Fișierele publice %s"
+msgstr "Fișierele publice ale utilizatorului %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
-msgstr "Fișierele publice %s pe %s"
+msgstr "Fișierele publice ale utilizatorului %s pe %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Autentificați-vă ca utilizator oaspete"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -211,11 +234,11 @@ msgstr "Ați primit „%s” prin Bluetooth"
 msgid "You received a file"
 msgstr "Ați primit un fișier"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Deschide fișier"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
-msgstr "Dezvălui fișier"
+msgstr "Dezvăluie fișier"
 
