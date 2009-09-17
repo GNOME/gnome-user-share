@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2009-04-17 11:53+0000\n"
-"PO-Revision-Date: 2009-05-14 18:44+0530\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
+"PO-Revision-Date: 2009-09-17 18:00+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,30 +17,29 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
+"\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-msgstr ""
-"ఇది నిజమైతే, లాగిన్ అయినప్పుడు బ్లూటూత్ పరికరాలు దస్త్రాలను వినియోగదారి డౌన్‌లోడ్సు "
-"డైరెక్టరీకు పంపగలగుతాయి."
+msgstr "ఇది నిజమైతే, లాగిన్ అయినప్పుడు బ్లూటూత్ పరికరాలు దస్త్రాలను వినియోగదారి డౌన్‌లోడ్సు డైరెక్టరీకు పంపగలగుతాయి."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు బ్లూటూత్ ద్వారా వినియోగదారి డైరెక్టరీనందలి "
-"పబ్లిక్ డైరెక్టరీ పంచుకొనబడుతుంది."
+"నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు బ్లూటూత్ ద్వారా వినియోగదారి డైరెక్టరీనందలి పబ్లిక్ డైరెక్టరీ "
+"పంచుకొనబడుతుంది."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు నెట్వర్కు ద్వారా వినియోగదారి డైరెక్టరీనందలి "
-"పబ్లిక్ డైరెక్టరీ పంచుకొనబడుతుంది."
+"నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు నెట్వర్కు ద్వారా వినియోగదారి డైరెక్టరీనందలి పబ్లిక్ డైరెక్టరీ "
+"పంచుకొనబడుతుంది."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -59,16 +58,16 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"బ్లూటూత్ ద్వారా పంపిన దస్త్రములు యెప్పుడు ఆమోదించాలి. సాధ్యమగు విలువలు \"always\", "
-"\"bonded\", \"bonded_trusted\" మరియు \"ask\"."
+"బ్లూటూత్ ద్వారా పంపిన దస్త్రములు యెప్పుడు ఆమోదించాలి. సాధ్యమగు విలువలు \"always\", \"bonded"
+"\", \"bonded_trusted\" మరియు \"ask\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"సంకేతపదముల కొరకు యెప్పుడు అడగాలి. సాధ్యమగు విలువలు \"never\", \"on_write\", "
-"మరియు \"always\"."
+"సంకేతపదముల కొరకు యెప్పుడు అడగాలి. సాధ్యమగు విలువలు \"never\", \"on_write\", మరియు "
+"\"always\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -87,8 +86,8 @@ msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr ""
-"బ్లూటూత్ కక్షిదారులను దస్త్రములను వ్రాయుటకు అనుమతించాలా, లేక చదువుటకు-మాత్రమే "
-"దస్త్రములను పంచుకొనవలెనా."
+"బ్లూటూత్ కక్షిదారులను దస్త్రములను వ్రాయుటకు అనుమతించాలా, లేక చదువుటకు-మాత్రమే దస్త్రములను "
+"పంచుకొనవలెనా."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -115,8 +114,9 @@ msgid "Allo_w remote devices to delete files"
 msgstr "దస్త్రములను తొలగించుటకు దూరస్థ పరికరములను అనుమతించుము (_w)"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "దస్త్ర భాగస్వామ్య అభీష్టాలు"
+#| msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
+msgstr "వ్యక్తిగత ఫైలు భాగస్వామ్యపు అభీష్టాలు"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -151,24 +151,19 @@ msgid "_Share public files on network"
 msgstr "నెట్వర్కునందు పబ్లిక్ దస్త్రములను పంచుకొనుము (_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "వ్యక్తిగత దస్త్ర భాగస్వామ్యం"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "వ్యక్తిగత దస్త్రములను పంచుకొనుటకు అభీష్టాలు"
+#| msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
+msgstr "ఫైళ్ళను భాగస్వామ్యపరచుటకు అభీష్టాలు"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "చేతనపరిచినట్లైతే వినియోగదారి భాగస్వామ్యమును ఆరంభించుము"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "వినియోగదారి భాగస్వామ్యం"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "దయచేసి అతిధి వినియోగదారిలా లాగిన్ అవ్వండి"
+#| msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "చేతనపరిస్తే వ్యక్తిగత ఫైళ్ళ భాగస్వామ్యమును ఆరంభిస్తుంది"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -215,17 +210,21 @@ msgstr "అడుగు"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%sయొక్క పబ్లిక్ దస్త్రములు"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s పైన %1$sయొక్క పబ్లిక్ దస్త్రములు"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "దయచేసి అతిధి వినియోగదారిలా లాగిన్ అవ్వండి"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -237,11 +236,11 @@ msgstr "మీరు \"%s\"ను బ్లూటూత్ ద్వారా �
 msgid "You received a file"
 msgstr "మీరు వొక దస్త్రమును పొందినారు"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "దస్త్రాన్ని తెరువుము"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "దస్త్రమును బయటపెట్టుము"
 
