@@ -1,14 +1,14 @@
-# translation of or.po to Oriya
+# translation of gnome-user-share.master.or.po to Oriya
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Manoj Kumar Giri <mgiri@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: or\n"
+"Project-Id-Version: gnome-user-share.master.or\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2009-03-09 15:44+0000\n"
-"PO-Revision-Date: 2009-03-12 13:22+0530\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
+"PO-Revision-Date: 2009-09-17 20:34+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,30 +17,32 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 "\n"
+"\n"
+"\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
-"ଯଦି ଏହା true, ଚାଳକ ମୂଖ୍ୟ ପଞ୍ଜିକାରେ ସାର୍ବଜନିକ ଡିରେକ୍ଟୋରୀ ଚାଳକ "
-"ଲଗଇନ ହେବାମାତ୍ରେ ଆହରଣ ଡିରେକ୍ଟୋରୀ ମାଧ୍ଯମରେ ସହଭାଗ ହୋଇଥାଏ।"
+"ଯଦି ଏହା true, ଚାଳକ ମୂଖ୍ୟ ପଞ୍ଜିକାରେ ସାର୍ବଜନିକ ଡିରେକ୍ଟୋରୀ ଚାଳକ ଲଗଇନ ହେବାମାତ୍ରେ ଆହରଣ "
+"ଡିରେକ୍ଟୋରୀ ମାଧ୍ଯମରେ ସହଭାଗ ହୋଇଥାଏ।"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"ଯଦି ଏହା true, ଚାଳକ ମୂଖ୍ୟ ପଞ୍ଜିକାରେ ସାର୍ବଜନିକ ଡିରେକ୍ଟୋରୀ ଚାଳକ "
-"ଲଗଇନ ହେବାମାତ୍ରେ ବ୍ଲୁଟୁଥ ମାଧ୍ଯମରେ ସହଭାଗ ହୋଇଥାଏ।"
+"ଯଦି ଏହା true, ଚାଳକ ମୂଖ୍ୟ ପଞ୍ଜିକାରେ ସାର୍ବଜନିକ ଡିରେକ୍ଟୋରୀ ଚାଳକ ଲଗଇନ ହେବାମାତ୍ରେ ବ୍ଲୁଟୁଥ "
+"ମାଧ୍ଯମରେ ସହଭାଗ ହୋଇଥାଏ।"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"ଯଦି ଏହା true, ଚାଳକ ମୂଖ୍ୟ ପଞ୍ଜିକାରେ ସାର୍ବଜନିକ ଡିରେକ୍ଟୋରୀ ନେଟୱର୍କରେ ଚାଳକ "
-"ଲଗଇନ ହେବାମାତ୍ରେ ସହଭାଗ ହୋଇଥାଏ।"
+"ଯଦି ଏହା true, ଚାଳକ ମୂଖ୍ୟ ପଞ୍ଜିକାରେ ସାର୍ବଜନିକ ଡିରେକ୍ଟୋରୀ ନେଟୱର୍କରେ ଚାଳକ ଲଗଇନ ହେବାମାତ୍ରେ "
+"ସହଭାଗ ହୋଇଥାଏ।"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -59,16 +61,16 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"ବ୍ଲୁଟୁଥ ଉପରେ ପଠାଯାଇଥିବା ଫାଇଲଗୁଡ଼ିକୁ କେତେବେଳେ ଗ୍ରହଣ କରିବା ଉଚିତ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି \"always\", "
-"\"bonded\", \"bonded_trusted\" ଏବଂ \"ask\"।"
+"ବ୍ଲୁଟୁଥ ଉପରେ ପଠାଯାଇଥିବା ଫାଇଲଗୁଡ଼ିକୁ କେତେବେଳେ ଗ୍ରହଣ କରିବା ଉଚିତ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି "
+"\"always\", \"bonded\", \"bonded_trusted\" ଏବଂ \"ask\"।"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"ପ୍ରବେଶ ସଂକେତ ପାଇଁ କେତେବେଳେ ପଚାରିବା ଉଚିତ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି \"never\", \"on_write\", ଏବଂ"
-"\"always\"।"
+"ପ୍ରବେଶ ସଂକେତ ପାଇଁ କେତେବେଳେ ପଚାରିବା ଉଚିତ। ସମ୍ଭାବ୍ୟ ମୂଲ୍ୟଗୁଡ଼ିକ ହେଉଛି \"never\", \"on_write"
+"\", ଏବଂ\"always\"।"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -87,8 +89,8 @@ msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr ""
-"ଫାଇଲ ଲେଖିବା ପାଇଁ ବ୍ୱୁଟୁଥ ଫାଇଲଗୁଡ଼ିକୁ ଅନୁମତି ଦେବା ଉଚିତ କି, କିମ୍ବା କେବଳ ପଠନୀୟ ଫାଇଲଗୁଡ଼ିକୁ "
-"ସହଭାଗ କରନ୍ତୁ।"
+"ଫାଇଲ ଲେଖିବା ପାଇଁ ବ୍ୱୁଟୁଥ ଫାଇଲଗୁଡ଼ିକୁ ଅନୁମତି ଦେବା ଉଚିତ କି, କିମ୍ବା କେବଳ ପଠନୀୟ ଫାଇଲଗୁଡ଼ିକୁ ସହଭାଗ "
+"କରନ୍ତୁ।"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -115,8 +117,9 @@ msgid "Allo_w remote devices to delete files"
 msgstr "ସୂଦୂର ଉଫକରଣକୁ ଫାଇଲ ଅପସାରଣ କରିବା ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ (_w)"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "ଫାଇଲ ସହଭାଗ ପସନ୍ଦଗୁଡ଼ିକ"
+#| msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
+msgstr "ବ୍ୟକ୍ତିଗତ ଫାଇଲ ସହଭାଗ ପସନ୍ଦଗୁଡ଼ିକ"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -151,24 +154,19 @@ msgid "_Share public files on network"
 msgstr "ନେଟୱର୍କରେ ସାର୍ବଜନିକ ଫାଇଲଗୁଡ଼ିକୁ ସହଭାଗ କରନ୍ତୁ (_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "ବ୍ୟକ୍ତିଗତ ଫାଇଲ ସହଭାଗ"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "ବ୍ୟକ୍ତିଗତ ଫାଇଲଗୁଡ଼ିକୁ ସହଭାଗ କରିବା ପାଇଁ ପସନ୍ଦ"
+#| msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
+msgstr "ଫାଇଲଗୁଡ଼ିକୁ ସହଭାଗ କରିବା ପାଇଁ ପସନ୍ଦ"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "ଯଦି ସକ୍ରିୟ ଥାଏ ତେବେ ଚାଳକ ସହଭାଗକୁ ଆରମ୍ଭ କରନ୍ତୁ"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "ଚାଳକ ସହଭାଗ"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "ଅତିଥି ଚାଳକ ଭାବରେ ଲରଇନ କରନ୍ତୁ"
+#| msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "ଯଦି ସକ୍ରିୟ ଥାଏ ତେବେ ବ୍ୟକ୍ତିଗତ ଫାଇଲ ସହଭାଗକୁ ଆରମ୍ଭ କରନ୍ତୁ"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -215,17 +213,21 @@ msgstr "ପଚାର"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%sର ସାର୍ବଜନିକ ଫାଇଲଗୁଡ଼ିକ"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s ଉପରେ %sର ସାର୍ବଜନିକ ଫାଇଲଗୁଡ଼ିକ"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "ଅତିଥି ଚାଳକ ଭାବରେ ଲରଇନ କରନ୍ତୁ"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -237,11 +239,11 @@ msgstr "ଆପଣ ବ୍ଲୁଟୁଥ ମାଧ୍ଯମରେ \"%s\" କୁ �
 msgid "You received a file"
 msgstr "ଆପଣ ଗୋଟିଏ ଫାଇଲ ଗ୍ରହଣ କରିଛନ୍ତି"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "ଫାଇଲକୁ ଖୋଲନ୍ତୁ"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "ଫାଇଲ ପ୍ରକଟକରନ୍ତୁ"
 
