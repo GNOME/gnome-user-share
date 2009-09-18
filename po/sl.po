@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2009-02-23 20:28+0000\n"
-"PO-Revision-Date: 2009-02-24 08:54+0100\n"
+"POT-Creation-Date: 2009-09-17 16:18+0000\n"
+"PO-Revision-Date: 2009-09-18 13:38+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -44,11 +44,11 @@ msgstr "Kdaj sprejeti datoteke poslane preko Bluetooth."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
 msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\", \"bonded_trusted\" and \"ask\"."
-msgstr "Kdaj zahtevati geslo. Mogoče vrednosti so \"vedno\", \"ob_povezavi\", \"ob_povezavi_in_ob_zaupanju\" in \"vprašaj\"."
+msgstr "Kdaj zahtevati geslo. Mogoče vrednosti so \"always\" (vedno), \"bonded\" (ob povezavi), \"bonded_trusted\" (ob povezavi in obzaupanju) in \"ask\" (vprašaj)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr "Kdaj zahtevati geslo. Mogoče vrednosti so \"nikoli\", \"ob_pisanju\", in \"vedno\"."
+msgstr "Kdaj zahtevati geslo. Mogoče vrednosti so \"never\" (nikoli), \"on_write\" (ob pisanju), and \"always\" (vedno)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -91,7 +91,7 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Omogoči _oddaljenim napravam brisanje datotek."
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
 msgstr "Nastavitve souporabe"
 
 #: ../data/file-share-properties.ui.h:6
@@ -127,25 +127,17 @@ msgid "_Share public files on network"
 msgstr "_Souporaba javnih datotek na omrežju"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Osebna souporaba"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
 msgstr "Nastavitve souporabe osebnih datotek"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
 msgstr "Zaženi uporabniško souporabo, kadar je omogočena"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Osebna souporaba"
-
-#: ../src/file-share-properties.c:35
-#: ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Prosim, prijavite se kot gost"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -193,33 +185,40 @@ msgstr "Vprašaj"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
-msgstr "%s - Javno dostopne datoteke"
+msgstr "%s - javno dostopne datoteke"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s - javno dostopne datoteke na %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Prosim, prijavite se kot gost"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr "Prejeli ste datoteko \"%s\" preho Bluetooth načina"
+msgstr "Prejeli ste datoteko \"%s\" preko Bluetooth načina"
 
 #: ../src/obexpush.c:140
 msgid "You received a file"
 msgstr "Prejeli ste datoteko"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Odpri datoteko"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Razkrij datoteko"
+
+#~ msgid "User Sharing"
+#~ msgstr "Osebna souporaba"
 
