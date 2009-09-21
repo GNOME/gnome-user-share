@@ -1,14 +1,14 @@
-# translation of gnome-user-share.HEAD.po to Kannada
+# translation of gnome-user-share.master.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Shankar Prasad <svenkate@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share.HEAD\n"
+"Project-Id-Version: gnome-user-share.master.kn\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2009-03-21 19:29+0000\n"
-"PO-Revision-Date: 2009-03-26 23:59+0530\n"
+"POT-Creation-Date: 2009-06-26 10:10+0000\n"
+"PO-Revision-Date: 2009-09-18 23:30+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,20 +22,24 @@ msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
-"true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಪ್ರವೇಶಿಸಿದಾಗ ಬ್ಲೂಟೂತ್ ಸಾಧನಗಳು ಕಡತಗಳನ್ನು ಅವರ ಡೌನ್‌ಲೋಡ್‌ "
-"ಕೋಶಕ್ಕೆ ಕಳುಹಿಸುತ್ತದೆ."
+"true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಪ್ರವೇಶಿಸಿದಾಗ ಬ್ಲೂಟೂತ್ ಸಾಧನಗಳು ಕಡತಗಳನ್ನು ಅವರ ಡೌನ್‌ಲೋಡ್‌ ಕೋಶಕ್ಕೆ "
+"ಕಳುಹಿಸುತ್ತದೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr "ಇದು true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಒಳಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಬ್ಲೂಟೂತ್ ಮೂಲಕ ಹಂಚಲ್ಪಡುತ್ತದೆ."
+msgstr ""
+"ಇದು true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಒಳಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ "
+"ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಬ್ಲೂಟೂತ್ ಮೂಲಕ ಹಂಚಲ್ಪಡುತ್ತದೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr "ಇದು true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಒಳಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಜಾಲಬಂಧದ ಮೂಲಕ ಹಂಚಲ್ಪಡುತ್ತದೆ."
+msgstr ""
+"ಇದು true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಒಳಗೆ ಪ್ರವೇಶಿಸಿದಾಗ ಬಳಕೆದಾರರ ನೆಲೆ ಕಡತಕೋಶದಲ್ಲಿನ "
+"ಸಾರ್ವಜನಿಕ ಕೋಶವನ್ನು ಜಾಲಬಂಧದ ಮೂಲಕ ಹಂಚಲ್ಪಡುತ್ತದೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -54,16 +58,16 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"ಬ್ಲೂಟೂತ್‌ನಲ್ಲಿ ಕಳುಹಿಸಲಾದ ಕಡತಗಳನ್ನು ಯಾವಾಗ ಅಂಗೀಕರಿಸಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ \"always\", "
-"\"bonded\", \"bonded_trusted\" ಹಾಗು \"ask\"."
+"ಬ್ಲೂಟೂತ್‌ನಲ್ಲಿ ಕಳುಹಿಸಲಾದ ಕಡತಗಳನ್ನು ಯಾವಾಗ ಅಂಗೀಕರಿಸಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ "
+"\"always\", \"bonded\", \"bonded_trusted\" ಹಾಗು \"ask\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"ಯಾವಾಗ ಗುಪ್ತಪದಗಳಿಗಾಗಿ ಕೇಳಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ \"never\", \"on_write\", ಹಾಗು "
-"\"always\"."
+"ಯಾವಾಗ ಗುಪ್ತಪದಗಳಿಗಾಗಿ ಕೇಳಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ \"never\", \"on_write\", "
+"ಹಾಗು \"always\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -81,7 +85,9 @@ msgstr "ಕಡತಗಳನ್ನು ಕಳುಹಿಸಲು ಬ್ಲೂಟೂ�
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
-msgstr "ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಕಡತಗಳಿಗೆ ಬರೆಯುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ ಅಥವ ಕೇವಲ ಓದಲು ಮಾತ್ರವಾದ ಸ್ಥಿತಿಯಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಬೇಕೆ."
+msgstr ""
+"ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಕಡತಗಳಿಗೆ ಬರೆಯುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ ಅಥವ ಕೇವಲ ಓದಲು ಮಾತ್ರವಾದ "
+"ಸ್ಥಿತಿಯಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಬೇಕೆ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -108,8 +114,9 @@ msgid "Allo_w remote devices to delete files"
 msgstr "ದೂರಸ್ಥ ಸಾಧನಗಳು ಕಡತಗಳನ್ನು ಅಳಿಸುವುದನ್ನು ಅನುಮತಿಸು(_w)"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "ಕಡತ ಹಂಚಿಕೆಯ ಆದ್ಯತೆಗಳು"
+#| msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
+msgstr "ವೈಯಕ್ತಿಕ ಕಡತ ಹಂಚಿಕೆಯ ಆದ್ಯತೆಗಳು"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -144,24 +151,19 @@ msgid "_Share public files on network"
 msgstr "ಸಾರ್ವಜನಿಕೆ ಕಡತಗಳನ್ನು ಜಾಲಬಂಧದಲ್ಲಿ ಹಂಚಿಕೊ(_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "ವೈಯಕ್ತಿಕ ಕಡತ ಹಂಚಿಕೆ"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "ವೈಯಕ್ತಿಕ ಕಡತಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಆದ್ಯತೆಗಳು"
+#| msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
+msgstr "ಕಡತಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಆದ್ಯತೆಗಳು"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "ಶಕ್ತಗೊಂಡಿದ್ದಲ್ಲಿ ಬಳಕೆದಾರರ ಹಂಚಿಕೆಯನ್ನು ಆರಂಭಿಸು"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "ಬಳಕೆದಾರರ ಹಂಚಿಕೆ"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "ದಯವಿಟ್ಟು ಬಳಕೆದಾರ ಅತಿಥಿಯಾಗಿ ಪ್ರವೇಶಿಸಿ"
+#| msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "ಶಕ್ತಗೊಂಡಿದ್ದಲ್ಲಿ ವೈಯಕ್ತಿಕ ಕಡತ ಹಂಚಿಕೆಯನ್ನು ಆರಂಭಿಸು"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -208,17 +210,21 @@ msgstr "ಅನುಮತಿಯನ್ನು ಕೇಳು"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%s ನ ಸಾರ್ವಜನಿಕ ಕಡತಗಳು"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s ನ ಸಾರ್ವಜನಿಕ ಕಡತಗಳು %s ನಲ್ಲಿವೆ"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "ದಯವಿಟ್ಟು ಬಳಕೆದಾರ ಅತಿಥಿಯಾಗಿ ಪ್ರವೇಶಿಸಿ"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -230,11 +236,11 @@ msgstr "ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ನಿಮಗೆ \"%s\" ಬ�
 msgid "You received a file"
 msgstr "ನೀವು ಕಡತವನ್ನು ಸ್ವೀಕರಿಸಿದ್ದೀರಿ"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "ಕಡತವನ್ನು ತೆರೆ"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "ಕಡತವನ್ನು ತೋರಿಸು"
 
