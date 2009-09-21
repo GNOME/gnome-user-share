@@ -1,4 +1,8 @@
-This is gnome-user-share 2.27.0, a system for easy sharing of user files.
+This is gnome-user-share 2.28.0, a system for easy sharing of user files.
+
+Major changes since 2.27.0 are:
+* Fix WebDAV share name being untranslated
+* Updated translations
 
 Major changes since 2.26.0 are:
 * Fix WebDAV sharing not working when service names are too long
