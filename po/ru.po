@@ -5,10 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-14 01:36+0300\n"
-"PO-Revision-Date: 2009-03-13 19:06+0300\n"
-"Last-Translator: Yuriy Penkin <yuriy.penkin@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&component=general\n"
+"POT-Creation-Date: 2009-09-24 13:12+0000\n"
+"PO-Revision-Date: 2009-10-08 09:56+0300\n"
+"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
 "Language-Team:  <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,20 +60,19 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"Действие при получении файлов через Bluetooth. Возможные значения: «always"
-"», «bonded», «bonded_trusted» и «ask»."
+"Действие при получении файлов через Bluetooth. Возможные значения: «always», "
+"«bonded», «bonded_trusted» и «ask»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Когда запрашивать пароль. Возможные значения «never», «on_write», и "
-"«always»."
+"Когда запрашивать пароль. Возможные значения «never», «on_write», и «always»."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
-msgstr "Когда запрашивать пароль"
+msgstr "Когда запрашивать пароли"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
@@ -116,8 +116,8 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Ра_зрешить удалённым устройствам удалять файлы"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Настройка общего доступа к файлам"
+msgid "Personal File Sharing Preferences"
+msgstr "Параметры общего доступа к личным файлам"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -152,24 +152,17 @@ msgid "_Share public files on network"
 msgstr "От_крыть доступ к файлам по сети"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Общий доступ к личным файлам"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Параметры общего доступа к личным файлам"
+msgid "Preferences for sharing of files"
+msgstr "Параметры общего доступа к файлам"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Включить общий доступ, если это возможно"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Общий доступ к личным файлам"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Зайдите в систему как гость"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Открыть общий доступ к личным файлам, если включено"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -181,7 +174,7 @@ msgstr "Не удалось отобразить справочную инфор
 
 #: ../src/file-share-properties.c:503
 msgid "Could not build interface."
-msgstr "Не удалось создать интерфейс пользователя"
+msgstr "Не удалось создать интерфейс пользователя."
 
 #: ../src/file-share-properties.c:543
 msgid "Never"
@@ -201,7 +194,7 @@ msgstr "Только для подключённых устройств"
 
 #: ../src/file-share-properties.c:578
 msgid "Only for Bonded and Trusted devices"
-msgstr "Только для подключенных и доверяемых устройств"
+msgstr "Только для подключённых и доверяемых устройств"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
@@ -216,17 +209,21 @@ msgstr "Спрашивать пользователя"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "Общие файлы пользователя %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Общие файлы пользователя %s на %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Зайдите в систему как гость"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -238,10 +235,13 @@ msgstr "Через Bluetooth получен файл «%s»"
 msgid "You received a file"
 msgstr "Получен файл"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
 msgstr "Открыть файл"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
 msgstr "Показать файл"
+
+#~ msgid "User Sharing"
+#~ msgstr "Общий доступ к личным файлам"
