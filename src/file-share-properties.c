@@ -572,7 +572,7 @@ main (int argc, char *argv[])
 			_("Always"), -1);
     gtk_list_store_append (store, &iter);
     gtk_list_store_set (store, &iter, 0,
-			_("Only for Bonded devices"), -1);
+			_("Only for set up devices"), -1);
     //FIXME implement
 #if 0
     gtk_list_store_append (store, &iter);
