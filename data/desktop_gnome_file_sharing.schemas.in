@@ -75,7 +75,7 @@
       <default>bonded</default>
       <locale name="C">
         <short>When to accept files sent over Bluetooth</short>
-	<long>When to accept files sent over Bluetooth. Possible values are "always", "bonded", "bonded_trusted" and "ask".</long>
+	<long>When to accept files sent over Bluetooth. Possible values are "always", "bonded" and "ask".</long>
       </locale>
     </schema>
     <schema>

@@ -45,7 +45,6 @@ typedef enum {
 typedef enum {
 	ACCEPT_ALWAYS,
 	ACCEPT_BONDED,
-	ACCEPT_BONDED_AND_TRUSTED,
 	ACCEPT_ASK
 } AcceptSetting;
 

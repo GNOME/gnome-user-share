@@ -238,25 +238,13 @@ device_is_authorised (const char *bdaddr)
 				       &props, G_TYPE_INVALID) != FALSE)
 		{
 			GValue *value;
-			gboolean bonded, trusted;
+			gboolean bonded;
 
 			value = g_hash_table_lookup (props, "Paired");
 			bonded = g_value_get_boolean (value);
 			g_message ("%s is %s", bdaddr, bonded ? "bonded" : "not bonded");
 
 			if (bonded) {
-				g_hash_table_destroy (props);
-				g_object_unref (device);
-				g_object_unref (adapter);
-				retval = TRUE;
-				break;
-			}
-			value = g_hash_table_lookup (props, "Trusted");
-			trusted = g_value_get_boolean (value);
-			g_message ("%s is %s", bdaddr, trusted ? "trusted" : "not trusted");
-
-			if (accept_setting == ACCEPT_BONDED_AND_TRUSTED
-			    && trusted) {
 				g_hash_table_destroy (props);
 				g_object_unref (device);
 				g_object_unref (adapter);
@@ -325,7 +313,7 @@ transfer_started_cb (DBusGProxy *session,
 			authorise = FALSE;
 		} else if (accept_setting == ACCEPT_ALWAYS) {
 			authorise = TRUE;
-		} else if (accept_setting == ACCEPT_BONDED || accept_setting == ACCEPT_BONDED_AND_TRUSTED) {
+		} else if (accept_setting == ACCEPT_BONDED) {
 			authorise = device_is_authorised (bdaddr);
 		} else {
 			//FIXME implement

@@ -37,7 +37,6 @@ static char *password_setting_strings[] = {
 static char *accept_file_strings[] = {
     "always",
     "bonded",
-    "bonded_and_trusted",
     "ask"
 };
 
@@ -89,11 +88,9 @@ accept_setting_from_string (const char *str)
 	if (strcmp (str, "always") == 0) {
 	    return ACCEPT_ALWAYS;
 	}
-	if (strcmp (str, "bonded") == 0) {
+	if (strcmp (str, "bonded") == 0 ||
+	    strcmp (str, "bonded_and_trusted") == 0) {
 	    return ACCEPT_BONDED;
-	}
-	if (strcmp (str, "bonded_and_trusted") == 0) {
-	    return ACCEPT_BONDED_AND_TRUSTED;
 	}
 	if (strcmp (str, "ask") == 0) {
 	    return ACCEPT_ASK;
