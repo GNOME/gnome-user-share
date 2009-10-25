@@ -33,7 +33,6 @@ static void nautilus_share_bar_finalize   (GObject *object);
 
 struct NautilusShareBarPrivate
 {
-        GtkTooltips *tooltips;
         GtkWidget   *button;
         GtkWidget   *label;
         char        *str;
@@ -154,10 +153,6 @@ nautilus_share_bar_init (NautilusShareBar *bar)
 
         bar->priv = NAUTILUS_SHARE_BAR_GET_PRIVATE (bar);
 
-        bar->priv->tooltips = gtk_tooltips_new ();
-        g_object_ref (bar->priv->tooltips);
-        gtk_object_sink (GTK_OBJECT (bar->priv->tooltips));
-
         hbox = GTK_WIDGET (bar);
 
         vbox = gtk_vbox_new (FALSE, 6);
@@ -188,10 +183,8 @@ nautilus_share_bar_init (NautilusShareBar *bar)
                           G_CALLBACK (button_clicked_cb),
                           bar);
 
-        gtk_tooltips_set_tip (GTK_TOOLTIPS (bar->priv->tooltips),
-                              bar->priv->button,
-                              _("Launch Personal File Sharing Preferences"),
-                              NULL);
+        gtk_widget_set_tooltip_text (bar->priv->button,
+                                     _("Launch Personal File Sharing Preferences"));
 }
 
 static void
@@ -205,10 +198,6 @@ nautilus_share_bar_finalize (GObject *object)
         bar = NAUTILUS_SHARE_BAR (object);
 
         g_return_if_fail (bar->priv != NULL);
-
-        if (bar->priv->tooltips != NULL) {
-                g_object_unref (bar->priv->tooltips);
-        }
 
         G_OBJECT_CLASS (nautilus_share_bar_parent_class)->finalize (object);
 }
