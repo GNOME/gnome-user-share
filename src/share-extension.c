@@ -137,10 +137,21 @@ nautilus_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	NautilusShare *share;
 	guint          i;
 	gboolean       enable = FALSE;
+	GFile         *home;
 	const GUserDirectory special_dirs[] = { G_USER_DIRECTORY_PUBLIC_SHARE, G_USER_DIRECTORY_DOWNLOAD };
 	gboolean is_dir[] = { FALSE, FALSE };
 
 	file = g_file_new_for_uri (uri);
+	home = g_file_new_for_path (g_get_home_dir ());
+
+	/* We don't show anything in $HOME */
+	if (g_file_equal (home, file)) {
+		g_object_unref (home);
+		g_object_unref (file);
+		return NULL;
+	}
+
+	g_object_unref (home);
 
 	for (i = 0; i < G_N_ELEMENTS (special_dirs); i++) {
 		const char *path;
