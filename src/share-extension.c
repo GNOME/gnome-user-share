@@ -31,6 +31,7 @@
 #include <libnautilus-extension/nautilus-location-widget-provider.h>
 
 #include "nautilus-share-bar.h"
+#include "user_share-common.h"
 
 #define NAUTILUS_TYPE_SHARE  (nautilus_share_get_type ())
 #define NAUTILUS_SHARE(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), NAUTILUS_TYPE_SHARE, NautilusShare))
@@ -154,18 +155,13 @@ nautilus_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	g_object_unref (home);
 
 	for (i = 0; i < G_N_ELEMENTS (special_dirs); i++) {
-		const char *path;
-
-		path = g_get_user_special_dir (special_dirs[i]);
-		if (path != NULL) {
-			GFile *dir;
-			dir = g_file_new_for_path (path);
-			if (g_file_equal (dir, file)) {
-				enable = TRUE;
-				is_dir[i] = TRUE;
-			}
-			g_object_unref (dir);
+		GFile *dir;
+		dir = lookup_dir_with_fallback (special_dirs[i]);
+		if (g_file_equal (dir, file)) {
+			enable = TRUE;
+			is_dir[i] = TRUE;
 		}
+		g_object_unref (dir);
 	}
 
 	if (enable == FALSE)

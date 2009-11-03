@@ -31,6 +31,7 @@
 
 #include "user_share.h"
 #include "user_share-private.h"
+#include "user_share-common.h"
 #include "http.h"
 #include "obexftp.h"
 #include "obexpush.h"
@@ -260,40 +261,6 @@ bluez_init (void)
 			  G_CALLBACK (default_adapter_changed), NULL);
 	g_signal_connect (G_OBJECT (client), "notify::default-adapter-powered",
 			  G_CALLBACK (default_adapter_changed), NULL);
-}
-
-char *
-lookup_public_dir (void)
-{
-	const char *public_dir;
-	char *dir;
-
-	public_dir = g_get_user_special_dir (G_USER_DIRECTORY_PUBLIC_SHARE);
-	if (public_dir != NULL && strcmp (public_dir, g_get_home_dir ()) != 0) {
-		g_mkdir_with_parents (public_dir, 0755);
-		return g_strdup (public_dir);
-	}
-
-	dir = g_build_filename (g_get_home_dir (), "Public", NULL);
-	g_mkdir_with_parents (dir, 0755);
-	return dir;
-}
-
-char *
-lookup_download_dir (void)
-{
-	const char *download_dir;
-	char *dir;
-
-	download_dir = g_get_user_special_dir (G_USER_DIRECTORY_DOWNLOAD);
-	if (download_dir != NULL && strcmp (download_dir, g_get_home_dir ()) != 0) {
-		g_mkdir_with_parents (download_dir, 0755);
-		return g_strdup (download_dir);
-	}
-
-	dir = g_build_filename (g_get_home_dir (), "Download", NULL);
-	g_mkdir_with_parents (dir, 0755);
-	return dir;
 }
 
 static void

@@ -30,7 +30,7 @@
 #include <string.h>
 
 #include "obexftp.h"
-#include "user_share.h"
+#include "user_share-common.h"
 #include "user_share-private.h"
 
 static DBusGConnection *connection = NULL;
