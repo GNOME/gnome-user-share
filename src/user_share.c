@@ -358,9 +358,9 @@ file_sharing_enabled_changed (GConfClient* client,
 		}
 	} else {
 		http_down ();
-		disabled_timeout_tag = g_timeout_add (3*1000,
-						      (GSourceFunc)disabled_timeout_callback,
-						      client);
+		disabled_timeout_tag = g_timeout_add_seconds (3,
+							      (GSourceFunc)disabled_timeout_callback,
+							      client);
 	}
 }
 
