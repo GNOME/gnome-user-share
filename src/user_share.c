@@ -304,9 +304,8 @@ migrate_old_configuration (void)
 
 	old_config_dir = g_build_filename (g_get_home_dir (), ".gnome2", "user-share", NULL);
 	new_config_dir = g_build_filename (g_get_user_config_dir (), "user-share", NULL);
-	if (g_file_test (old_config_dir, G_FILE_TEST_IS_DIR)) {
-	    g_rename (old_config_dir, new_config_dir);
-	}
+	if (g_file_test (old_config_dir, G_FILE_TEST_IS_DIR))
+		g_rename (old_config_dir, new_config_dir);
 
 }
 
