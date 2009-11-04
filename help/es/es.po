@@ -1,10 +1,10 @@
-# translation of gnome-user-share-help.HEAD.po to Español
+# translation of gnome-user-share-help.master.po to Español
 # Jorge González <jorgegonz@svn.gnome.org>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share-help.HEAD\n"
-"POT-Creation-Date: 2009-02-03 10:51+0000\n"
-"PO-Revision-Date: 2009-02-03 20:42+0100\n"
+"Project-Id-Version: gnome-user-share-help.master\n"
+"POT-Creation-Date: 2009-10-21 11:54+0000\n"
+"PO-Revision-Date: 2009-11-04 20:26+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -181,23 +181,14 @@ msgid "Matthias Clasen <email>mclasen@redhat.com</email>"
 msgstr "Matthias Clasen <email>mclasen@redhat.com</email>"
 
 #: C/gnome-user-share.xml:35(releaseinfo)
-#| msgid ""
-#| "This manual describes version 2.26 of <application>gnome-user-share</"
-#| "application>."
 msgid "This manual describes version 2.26 of gnome-user-share."
-msgstr ""
-"Este manual describe la versión 2.26 de Compartición de archivos personales."
+msgstr "Este manual describe la versión 2.26 de Compartición de archivos personales."
 
 #: C/gnome-user-share.xml:37(title)
 msgid "Feedback"
 msgstr "Comentarios"
 
 #: C/gnome-user-share.xml:38(para)
-#| msgid ""
-#| "To report a bug or make a suggestion regarding the <application>gnome-"
-#| "user-share</application> application or this manual, follow the "
-#| "directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
-#| "\"help\">GNOME Feedback Page</ulink>."
 msgid ""
 "To report a bug or make a suggestion regarding the gnome-user-share "
 "application or this manual, follow the directions in the <ulink url=\"ghelp:"
@@ -209,9 +200,6 @@ msgstr ""
 "comentarios de GNOME</ulink>."
 
 #: C/gnome-user-share.xml:41(para)
-#| msgid ""
-#| "<application>gnome-user-share</application> is a session service that "
-#| "enables easy sharing of files between several computers."
 msgid ""
 "gnome-user-share is a session service that enables easy sharing of files "
 "between several computers."
@@ -236,14 +224,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: C/gnome-user-share.xml:51(para)
-#| msgid ""
-#| "<application>gnome-user-share</application> is a session service that "
-#| "exports the contents of the <filename>Public</filename> folder in your "
-#| "home directory, so that they can easily be accessed from other computers "
-#| "on the same local network. On the other computers, the shared folder will "
-#| "appear with a name like '<replaceable>user</replaceable>'s shared files' "
-#| "in the <application>nautilus</application> Network window, where "
-#| "<replaceable>user</replaceable> will be replaced by your user name."
 msgid ""
 "gnome-user-share is a session service that exports the contents of the "
 "<filename>Public</filename> folder in your home directory, so that they can "
@@ -263,10 +243,6 @@ msgstr ""
 "usuario."
 
 #: C/gnome-user-share.xml:54(para)
-#| msgid ""
-#| "<application>gnome-user-share</application> uses a WebDAV server to share "
-#| "the <filename>Public</filename> folder, and advertises the share on the "
-#| "local network using mDNS."
 msgid ""
 "gnome-user-share uses a WebDAV server to share the <filename>Public</"
 "filename> folder, and advertises the share on the local network using mDNS."
@@ -276,10 +252,6 @@ msgstr ""
 "local usando mDNS."
 
 #: C/gnome-user-share.xml:57(para)
-#| msgid ""
-#| "Additionally, <application>gnome-user-share</application> can make the "
-#| "shared files available via ObexFTP over Bluetooth, and receive files that "
-#| "are sent to your computer via Bluetooth via ObexPush."
 msgid ""
 "Additionally, gnome-user-share can make the shared files available via "
 "ObexFTP over Bluetooth, and receive files that are sent to your computer via "
@@ -294,28 +266,26 @@ msgid "Getting started"
 msgstr "Para empezar"
 
 #: C/gnome-user-share.xml:66(title)
-#| msgid "gnome-user-share"
 msgid "Starting gnome-user-share"
 msgstr "Iniciar Compartición de archivos personales"
 
 #: C/gnome-user-share.xml:68(para)
 #| msgid ""
-#| "The <application>gnome-user-share</application> service is normally "
-#| "started by <application>gnome-session</application> when you log in. You "
-#| "can change this by opening <menuchoice><guimenu>Preferences</"
-#| "guimenu><guimenu>Sessions</guimenu></menuchoice> in the <guimenu>System</"
-#| "guimenu> menu, and modifying the 'User Sharing' entry in the list of "
-#| "startup programs."
+#| "The gnome-user-share service is normally started by <application>gnome-"
+#| "session</application> when you log in. You can change this by opening "
+#| "<menuchoice><guimenu>Preferences</guimenu><guimenu>Sessions</guimenu></"
+#| "menuchoice> in the <guimenu>System</guimenu> menu, and modifying the "
+#| "'User Sharing' entry in the list of startup programs."
 msgid ""
 "The gnome-user-share service is normally started by <application>gnome-"
 "session</application> when you log in. You can change this by opening "
-"<menuchoice><guimenu>Preferences</guimenu><guimenu>Sessions</guimenu></"
-"menuchoice> in the <guimenu>System</guimenu> menu, and modifying the 'User "
-"Sharing' entry in the list of startup programs."
+"<menuchoice><guimenu>Preferences</guimenu><guimenu>Startup Applications</"
+"guimenu></menuchoice> in the <guimenu>System</guimenu> menu, and modifying "
+"the 'User Sharing' entry in the list of startup programs."
 msgstr ""
 "Generalmente el servicio Compartición de archivos personales lo inicia "
 "<application>gnome-session</application> al iniciar su sesión. Puede cambiar "
-"esto abriendo <menuchoice><guimenu>Preferencias</guimenu><guimenu>Sesiones</"
+"esto abriendo <menuchoice><guimenu>Preferencias</guimenu><guimenu>Aplicaciones al inicio</"
 "guimenu></menuchoice> en el menú <guimenu>Sistema</guimenu>, y modificar la "
 "entrada «Comparticiones de usuario» en la lista de programas de inicio."
 
@@ -462,8 +432,7 @@ msgid "Receive Files over Bluetooth"
 msgstr "Recibir archivos por Bluetooth"
 
 #: C/gnome-user-share.xml:177(para)
-msgid ""
-"Select <guilabel>Always</guilabel> to allow any remote device to send files."
+msgid "Select <guilabel>Always</guilabel> to allow any remote device to send files."
 msgstr ""
 "Seleccione <guilabel>Siempre</guilabel> para permitir que cualquier "
 "dispositivo remoto envíe archivos."
@@ -528,18 +497,8 @@ msgstr ""
 "recibidos</guilabel> para seleccionar si quiere ser notificado siempre que "
 "se reciba un archivo a través de Bluetooth."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/gnome-user-share.xml:0(None)
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2009"
 
-#~ msgid "Starting <application>gnome-user-share</application>"
-#~ msgstr ""
-#~ "Iniciar <application>Compartición de archivos personales</application>"
-
-#~ msgid ""
-#~ "Select <guilabel>Only for Paired and Trusted devices</guilabel> to accept "
-#~ "files only from paired devices."
-#~ msgstr ""
-#~ "Seleccione <guilabel>Sólo para dispositivos emparejados y de confianza</"
-#~ "guilabel> para aceptar archivos sólo de dispositivos emparejados."
