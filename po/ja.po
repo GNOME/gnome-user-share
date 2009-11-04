@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share trunk\n"
+"Project-Id-Version: gnome-user-share gnome-2-28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-27 08:33+0900\n"
-"PO-Revision-Date: 2009-02-27 08:32+0900\n"
+"POT-Creation-Date: 2009-11-04 22:58+0900\n"
+"PO-Revision-Date: 2009-11-04 22:58+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\", \"bonded_trusted\" and \"ask\"."
 msgstr ""
-"Bluetooth 経由でファイル送信を許可する時期です。設定可能な値: \"always\"、"
+"Bluetooth 経由でファイル送信を可能にする時期です。設定可能な値: \"always\"、"
 "\"bonded\"、\"bonded_trusted\"、\"ask\""
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
@@ -104,23 +104,23 @@ msgstr "<b>Bluetooth を使ったファイルの受信</b>"
 
 #: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Bluetooth 越しのファイル共有</b>"
+msgstr "<b>Bluetooth 経由のファイル共有</b>"
 
 #: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
-msgstr "<b>ネットワーク越しのファイル共有</b>"
+msgstr "<b>ネットワーク経由のファイル共有</b>"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
 msgstr "リモートのデバイスからファイルを削除できるようにする(_W)"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "ファイル共有の設定"
+msgid "Personal File Sharing Preferences"
+msgstr "個人的なファイル共有の設定"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Bluetooth 越しに受信したファイルをダウンロード・フォルダに格納する(_D)"
+msgstr "Bluetooth 経由で受信したファイルをダウンロード・フォルダに格納する(_D)"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
@@ -128,7 +128,7 @@ msgstr "リモートのデバイスとこのコンピュータをペアにする
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
-msgstr "Bluetooth 越しにファイルを共有する(_B)"
+msgstr "Bluetooth 経由でファイルを共有する(_B)"
 
 #: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
@@ -144,31 +144,24 @@ msgstr "パスワード(_P):"
 
 #: ../data/file-share-properties.ui.h:12
 msgid "_Require password:"
-msgstr "パスワード要求の時期(_R):"
+msgstr "パスワードの要求(_R):"
 
 #: ../data/file-share-properties.ui.h:13
 msgid "_Share public files on network"
-msgstr "ネットワーク越しにファイルを共有する(_S)"
+msgstr "ネットワーク経由でファイルを共有する(_S)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "個人的なファイルの共有"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "個人的なファイルの共有を設定します"
+msgid "Preferences for sharing of files"
+msgstr "ファイル共有を設定します"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "ユーザ共有の機能を起動します (可能ならば)"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "ユーザ共有"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "ゲスト・ユーザでログインして下さい"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "個人的なファイル共有の機能を起動します (可能ならば)"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -196,11 +189,11 @@ msgstr "常に"
 
 #: ../src/file-share-properties.c:575
 msgid "Only for Bonded devices"
-msgstr "ペアにしたデバイスのみ"
+msgstr "ボンディングしたデバイスのみ"
 
 #: ../src/file-share-properties.c:578
 msgid "Only for Bonded and Trusted devices"
-msgstr "ペアでかつ信頼できるデバイスのみ"
+msgstr "ボンディングし信頼のあるデバイスのみ"
 
 #: ../src/file-share-properties.c:583
 msgid "Ask"
@@ -215,32 +208,36 @@ msgstr "問い合わせる"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%s の公開ファイル"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s@%s の公開ファイル"
 
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "ゲスト・ユーザでログインして下さい"
+
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:138
+#: ../src/obexpush.c:140
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Bluetooh 経由で \"%s\" を受信しました"
 
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:142
 msgid "You received a file"
 msgstr "ファイルを受信しました"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:153
 msgid "Open File"
 msgstr "ファイルを開く"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:157
 msgid "Reveal File"
 msgstr "ファイルを表示する"
