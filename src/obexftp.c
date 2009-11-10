@@ -110,11 +110,14 @@ obexftp_stop (gboolean stop_manager)
 		return;
 
 	if (dbus_g_proxy_call (server_proxy, "Close", &err, G_TYPE_INVALID, G_TYPE_INVALID) == FALSE) {
-		if (g_error_matches (err, DBUS_GERROR, DBUS_GERROR_REMOTE_EXCEPTION) == FALSE ||
+		if (err == NULL ||
+		    g_error_matches (err, DBUS_GERROR, DBUS_GERROR_REMOTE_EXCEPTION) == FALSE ||
 		    dbus_g_error_has_name (err, "org.openobex.Error.NotStarted") == FALSE) {
-			g_printerr ("Stopping Bluetooth ObexFTP server failed: %s\n",
-				    err->message);
-			g_error_free (err);
+			if (err != NULL) {
+				g_printerr ("Stopping Bluetooth ObexFTP server failed: %s\n",
+					    err->message);
+				g_error_free (err);
+			}
 			return;
 		}
 		g_error_free (err);
