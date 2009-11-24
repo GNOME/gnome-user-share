@@ -8,10 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-15 17:59+0200\n"
-"PO-Revision-Date: 2009-03-15 15:57+0200\n"
-"Last-Translator: Pierros Papadeas <ppapadeas@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
+"POT-Creation-Date: 2009-10-21 12:23+0000\n"
+"PO-Revision-Date: 2009-11-24 03:22+0200\n"
+"Last-Translator: nikosCharonitakis <nikosx@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,28 +22,16 @@ msgstr ""
 "X-Poedit-Country: GREECE\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Αν αυτό είναι  αληθές, οι συσκευές bluetooth μπορούν να στέλνουν αρχεία στον "
-"κατάλογο λήψης αρχείων του χρήστη όταν ο χρήστης συνδεθεί."
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "Αν αυτό είναι  αληθές, οι συσκευές bluetooth μπορούν να στέλνουν αρχεία στον κατάλογο λήψης αρχείων του χρήστη όταν ο χρήστης συνδεθεί."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Αν αυτό είναι  αληθές, ο δημόσιος κατάλογος στον αρχικό κατάλογο του χρήστη "
-"θα μπορεί να διανεμηθεί μέσω bluetooth όταν ο χρήστης συνδεθεί."
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "Αν αυτό είναι  αληθές, ο δημόσιος κατάλογος στον αρχικό κατάλογο του χρήστη θα μπορεί να διανεμηθεί μέσω bluetooth όταν ο χρήστης συνδεθεί."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Αν αυτό είναι  αληθές, θα γίνεται κοινή χρήση στο δίκτυο του δημόσιου "
-"κατάλογου στον αρχικό κατάλογο των χρηστών όταν ο χρήστης συνδεθεί."
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "Αν αυτό είναι  αληθές, θα γίνεται κοινή χρήση στο δίκτυο του δημόσιου κατάλογου στον αρχικό κατάλογο των χρηστών όταν ο χρήστης συνδεθεί."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -58,21 +46,12 @@ msgid "When to accept files sent over Bluetooth"
 msgstr "Πότε θα γίνεται αποδοχή των αρχείων που στέλνονται μέσω bluetooth"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\", \"bonded_trusted\" and \"ask\"."
-msgstr ""
-"Πότε θα γίνεται αποδοχή των αρχείων που στέλνονται μέσω bluetooth. Οι "
-"πιθανές τιμές είναι \"always\" (πάντα), \"bonded\" (συνδεδεμένη), "
-"\"bonded_trusted\" (συνδεδεμένη και εμπιστευόμενη) και \"ask\" (ερώτηση)."
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\", \"bonded_trusted\" and \"ask\"."
+msgstr "Πότε θα γίνεται αποδοχή των αρχείων που στέλνονται μέσω bluetooth. Οι πιθανές τιμές είναι \"always\" (πάντα), \"bonded\" (συνδεδεμένη), \"bonded_trusted\" (συνδεδεμένη και εμπιστευόμενη) και \"ask\" (ερώτηση)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
-msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr ""
-"Ποτέ θα απαιτείται κωδικός. Οι πιθανές τιμές είναι \"never\" (ποτέ), "
-"\"on_write\" (στην εγγραφή), και \"always\" (πάντα)."
+msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "Ποτέ θα απαιτείται κωδικός. Οι πιθανές τιμές είναι \"never\" (ποτέ), \"on_write\" (στην εγγραφή), και \"always\" (πάντα)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -80,23 +59,15 @@ msgstr "Πότε θα απαιτούνται κωδικοί"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Αν οι πελάτες bluetooth θα μπορούν να στέλνουν αρχεία χρησιμοποιώντας το "
-"obexPush."
+msgstr "Αν οι πελάτες bluetooth θα μπορούν να στέλνουν αρχεία χρησιμοποιώντας το obexPush."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Αν οι πελάτες bluetooth πρέπει να ταιριάζουν με τον υπολογιστή για να "
-"στέλνουν αρχεία."
+msgstr "Αν οι πελάτες bluetooth πρέπει να ταιριάζουν με τον υπολογιστή για να στέλνουν αρχεία."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Αν θα επιτρέπεται στους πελάτες bluetooth να εγγράφουν αρχεία, ή να "
-"μοιράζονται τα αρχεία που είναι μόνο για ανάγνωση."
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "Αν θα επιτρέπεται στους πελάτες bluetooth να εγγράφουν αρχεία, ή να μοιράζονται τα αρχεία που είναι μόνο για ανάγνωση."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -108,7 +79,7 @@ msgstr "Αν θα υπάρχει ειδοποίηση σχετικά με τα �
 
 #: ../data/file-share-properties.ui.h:1
 msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>ΠΑραλαβή αρχείων μέσω bluetooth</b>"
+msgstr "<b>Παραλαβή αρχείων μέσω bluetooth</b>"
 
 #: ../data/file-share-properties.ui.h:2
 msgid "<b>Share Files over Bluetooth</b>"
@@ -123,8 +94,9 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Να _επιτρέπεται σε απομακρυσμένες συσκευές να διαγράφουν αρχεία"
 
 #: ../data/file-share-properties.ui.h:5
-msgid "File Sharing Preferences"
-msgstr "Προτιμήσεις κοινής χρήσης αρχείων"
+#| msgid "File Sharing Preferences"
+msgid "Personal File Sharing Preferences"
+msgstr "Προτιμήσεις διανομής προσωπικών αρχείων"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
@@ -132,9 +104,7 @@ msgstr "Παραλαβή αρχείων στο φάκελο _λήψης αρχε
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
-msgstr ""
-" Να απαιτείται από τις _απομακρυσμένες συσκευές να συνδέονται με αυτόν τον "
-"υπολογιστή"
+msgstr " Να απαιτείται από τις _απομακρυσμένες συσκευές να συνδέονται με αυτόν τον υπολογιστή"
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
@@ -161,24 +131,19 @@ msgid "_Share public files on network"
 msgstr "_Κοινή χρήση δημόσιων αρχείων στο δίκτυο"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Personal File Sharing"
 msgstr "Διανομή προσωπικών αρχείων"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of personal files"
-msgstr "Προτιμήσεις για τη διανομή προσωπικών αρχείων"
+#| msgid "Preferences for sharing of personal files"
+msgid "Preferences for sharing of files"
+msgstr "Προτιμήσεις για τη διανομή  αρχείων"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-msgid "Launch User Sharing if enabled"
-msgstr "Εκτέλεση της διανομής από το χρήστη αν είναι ενεργοποιημένο"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "User Sharing"
-msgstr "Διανομή από το χρήστη"
-
-#: ../src/file-share-properties.c:35 ../src/http.c:351
-msgid "Please log in as the user guest"
-msgstr "Παρακαλώ συνδεθείτε ως χρήστης guest"
+#| msgid "Launch User Sharing if enabled"
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Εκτέλεση της διανομής  προσωπικών αρχείων αν είναι ενεργοποιημένο"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -200,7 +165,8 @@ msgstr "Ποτέ"
 msgid "When writing files"
 msgstr "Κατά την εγγραφή αρχείων"
 
-#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:549
+#: ../src/file-share-properties.c:572
 msgid "Always"
 msgstr "Πάντα"
 
@@ -225,17 +191,21 @@ msgstr "Ερώτηση"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:121
+#: ../src/http.c:134
 #, c-format
 msgid "%s's public files"
 msgstr "%s's δημόσια αρχεία"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:125
+#: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s's δημόσια αρχεία στον %s"
+
+#: ../src/http.c:372
+msgid "Please log in as the user guest"
+msgstr "Παρακαλώ συνδεθείτε ως χρήστης guest"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:138
@@ -247,10 +217,14 @@ msgstr "Λάβατε το \"%s\" μέσω Bluetooth"
 msgid "You received a file"
 msgstr "Λάβατε ένα αρχείο"
 
-#: ../src/obexpush.c:154
+#: ../src/obexpush.c:151
 msgid "Open File"
-msgstr "Άνοιγμα Αρχείου"
+msgstr "Άνοιγμα αρχείου"
 
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:155
 msgid "Reveal File"
-msgstr "Εμφάνιση Αρχείου"
+msgstr "Εμφάνιση αρχείου"
+
+#~ msgid "User Sharing"
+#~ msgstr "Διανομή από το χρήστη"
+
