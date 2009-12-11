@@ -1,4 +1,8 @@
-This is gnome-user-share 2.28.1, a system for easy sharing of user files.
+This is gnome-user-share 2.28.2, a system for easy sharing of user files.
+
+Major changes since 2.28.1 are:
+* Avoid crashing on exit()
+* Make preferences single-instance
 
 Major changes since 2.28.0 are:
 * Play a sound when receiving a file over ObexPush
