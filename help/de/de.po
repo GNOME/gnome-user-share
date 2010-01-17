@@ -1,11 +1,11 @@
 # German translation of the gnome-user-share manual.
-# Mario Blättermann <mariobl@gnome.org>, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2009-04-17 11:53+0000\n"
-"PO-Revision-Date: 2009-07-26 00:05+0100\n"
+"POT-Creation-Date: 2009-12-14 21:47+0000\n"
+"PO-Revision-Date: 2010-01-17 13:21+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -284,16 +284,16 @@ msgstr "Persönliche Dateifreigabe starten"
 msgid ""
 "The gnome-user-share service is normally started by <application>gnome-"
 "session</application> when you log in. You can change this by opening "
-"<menuchoice><guimenu>Preferences</guimenu><guimenu>Sessions</guimenu></"
-"menuchoice> in the <guimenu>System</guimenu> menu, and modifying the 'User "
-"Sharing' entry in the list of startup programs."
+"<menuchoice><guimenu>Preferences</guimenu><guimenu>Startup Applications</"
+"guimenu></menuchoice> in the <guimenu>System</guimenu> menu, and modifying "
+"the 'User Sharing' entry in the list of startup programs."
 msgstr ""
 "Der Dienst zur <application>Persönliche Dateifreigabe</application> wird "
 "normalerweise bereits durch <application>gnome-session</application> nach "
 "Ihrer Anmeldung gestartet. Sie können dies ändern, indem Sie "
-"<menuchoice><guimenu>Einstellungen</guimenu><guimenu>Sitzungen</guimenu></"
-"menuchoice> im Menü  <guimenu>System</guimenu> öffnen. Ändern Sie hier den "
-"Eintrag »Benutzerfreigabe« in der Liste der Startprogramme."
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenu>Startprogramme</"
+"guimenu></menuchoice> im Menü  <guimenu>System</guimenu> öffnen. Ändern Sie "
+"hier den Eintrag »Benutzerfreigabe« in der Liste der Startprogramme."
 
 #: C/gnome-user-share.xml:72(para)
 msgid ""
@@ -506,7 +506,7 @@ msgstr ""
 "benachrichtigen</guilabel>, um festzulegen, ob Sie beim Empfang von Dateien "
 "über Bluetooth benachrichtigt werden wollen."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/gnome-user-share.xml:0(None)
 msgid "translator-credits"
-msgstr "Mario Blättermann <mariobl@gnome.org>, 2009"
+msgstr "Mario Blättermann <mariobl@gnome.org>, 2009, 2010"
