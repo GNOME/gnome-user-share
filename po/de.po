@@ -3,22 +3,24 @@
 # This file is distributed under the same license as the gnome-user-share package.
 # Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
 # Hendrik Richter <hendrikr@gnome.org>, 2007.
-# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
-# Mario Blättermann <mariobl@gnome.org>, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&component=general\n"
-"POT-Creation-Date: 2009-06-26 10:10+0000\n"
-"PO-Revision-Date: 2009-09-05 14:07+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
-"Language-Team: German <gnome-de@gnome.org>\n"
+"POT-Creation-Date: 2010-02-16 02:15+0000\n"
+"PO-Revision-Date: 2010-02-19 21:43+0100\n"
+"Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
+"Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
 msgid ""
@@ -59,11 +61,10 @@ msgstr "Wann über Bluetooth gesendete Dateien angenommen werden"
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\", \"bonded_trusted\" and \"ask\"."
+"\"bonded\" and \"ask\"."
 msgstr ""
-"Wann über Bluetooth gesendete Dateien angenommen werden. Mögliche Werte sind "
-"»always« (immer), »bonded« (verbunden), »bonded_trusted« (vertrauenswürdig "
-"verbunden) und »ask«.(nachfragen)."
+"Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. Mögliche "
+"Werte sind »always« (immer), »bonded« (verbunden) und »ask« (nachfragen)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -119,7 +120,6 @@ msgid "Allo_w remote devices to delete files"
 msgstr "Entfernten Geräten das Löschen von Dateien _erlauben"
 
 #: ../data/file-share-properties.ui.h:5
-#| msgid "File Sharing Preferences"
 msgid "Personal File Sharing Preferences"
 msgstr "Einstellungen zur persönlichen Dateifreigabe"
 
@@ -156,53 +156,76 @@ msgid "_Share public files on network"
 msgstr "Öffentlichen Ordner im Netzwerk _freigeben"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:162
 msgid "Personal File Sharing"
 msgstr "Persönliche Dateifreigabe"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
-#| msgid "Preferences for sharing of personal files"
 msgid "Preferences for sharing of files"
 msgstr "Einstellungen zur Freigabe von Dateien"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
-#| msgid "Launch User Sharing if enabled"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Persönliche Dateifreigabe starten, wenn aktiv"
 
-#: ../src/file-share-properties.c:435
+#: ../src/nautilus-share-bar.c:174
+msgid "Launch Preferences"
+msgstr "Einstellungen aufrufen"
+
+#: ../src/nautilus-share-bar.c:187
+msgid "Launch Personal File Sharing Preferences"
+msgstr "Einstellungen zur persönlichen Dateifreigabe aufrufen"
+
+#: ../src/share-extension.c:82
+msgid "Unable to launch the Personal File Sharing preferences"
+msgstr ""
+"Einstellungen zur persönlichen Dateifreigabe konnten nicht aufgerufen werden"
+
+#: ../src/share-extension.c:173
+msgid "You can share files from this folder and receive files to it"
+msgstr ""
+"Sie können Dateien in diesem Ordner freigeben und Dateien in diesem Ordner "
+"empfangen"
+
+#: ../src/share-extension.c:175
+msgid "You can share files from this folder over the network and Bluetooth"
+msgstr ""
+"Sie können Dateien in diesem Ordner über das Netzwerk und über Bluetooth "
+"freigeben"
+
+#: ../src/share-extension.c:177
+msgid "You can receive files over Bluetooth into this folder"
+msgstr "Sie können Dateien über Bluetooth in diesem Ordner empfangen"
+
+#: ../src/file-share-properties.c:436
 msgid "No reason"
 msgstr "Kein Grund"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:464
 msgid "Could not display the help contents."
 msgstr "Das Hilfedokument konnte nicht angezeigt werden."
 
-#: ../src/file-share-properties.c:503
+#: ../src/file-share-properties.c:524
 msgid "Could not build interface."
 msgstr "Die Oberfläche konnte nicht erstellt werden."
 
-#: ../src/file-share-properties.c:543
+#: ../src/file-share-properties.c:566
 msgid "Never"
 msgstr "Niemals"
 
-#: ../src/file-share-properties.c:546
+#: ../src/file-share-properties.c:569
 msgid "When writing files"
 msgstr "Beim Schreiben von Dateien"
 
-#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:572 ../src/file-share-properties.c:595
 msgid "Always"
 msgstr "Immer"
 
-#: ../src/file-share-properties.c:575
-msgid "Only for Bonded devices"
-msgstr "Nur für verbundene Geräte"
+#: ../src/file-share-properties.c:598
+msgid "Only for set up devices"
+msgstr "Nur für eingerichtete Geräte"
 
-#: ../src/file-share-properties.c:578
-msgid "Only for Bonded and Trusted devices"
-msgstr "Nur für verbundene und vertrauenswürdige Geräte"
-
-#: ../src/file-share-properties.c:583
+#: ../src/file-share-properties.c:603
 msgid "Ask"
 msgstr "Nachfragen"
 
@@ -232,22 +255,29 @@ msgid "Please log in as the user guest"
 msgstr "Bitte melden Sie sich als Gastbenutzer an"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:138
+#: ../src/obexpush.c:140
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Sie haben »%s« über Bluetooth erhalten"
 
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:142
 msgid "You received a file"
 msgstr "Sie haben eine Datei erhalten"
 
-#: ../src/obexpush.c:151
+#: ../src/obexpush.c:153
 msgid "Open File"
 msgstr "Datei öffnen"
 
-#: ../src/obexpush.c:155
+#: ../src/obexpush.c:157
 msgid "Reveal File"
 msgstr "Datei zeigen"
+
+#: ../src/obexpush.c:174
+msgid "File reception complete"
+msgstr "Dateiempfang ist abgeschlossen"
+
+#~ msgid "Only for Bonded and Trusted devices"
+#~ msgstr "Nur für verbundene und vertrauenswürdige Geräte"
 
 #~ msgid "User Sharing"
 #~ msgstr "Benutzerfreigabe"
