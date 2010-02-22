@@ -369,7 +369,7 @@ spawn_httpd (int port, pid_t *pid_out)
 	free5 = env[i++] = g_strdup_printf ("XDG_PUBLICSHARE_DIR=%s", public_dir);
 	free6 = env[i++] = g_strdup_printf ("XDG_CONFIG_HOME=%s", g_get_user_config_dir ());
 	free7 = env[i++] = g_strdup_printf ("GUS_SHARE_NAME=%s", get_share_name ());
-	free8 = env[i++] = g_strdup_printf ("GUS_LOGIN_LABEL=%s", _("Please log in as the user guest"));
+	free8 = env[i++] = g_strdup_printf ("GUS_LOGIN_LABEL=%s", "Please log in as the user guest");
 	free9 = env[i++] = g_strdup_printf ("HTTP_MODULES_PATH=%s",get_httpd_modules_path ());
 	env[i++] = "LANG=C";
 	env[i] = NULL;
