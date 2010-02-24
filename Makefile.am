@@ -10,7 +10,7 @@ DISTCLEANFILES =		\
 	intltool-merge		\
 	intltool-update
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-schemas-install
+DISTCHECK_CONFIGURE_FLAGS = --disable-schemas-install --with-nautilusdir='$${libdir}/nautilus/extensions-2.0-distcheck'
 
 # Build ChangeLog from GIT history
 ChangeLog:

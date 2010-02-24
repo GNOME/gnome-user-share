@@ -130,10 +130,19 @@ AC_SUBST(MODULES_PATH)
 dnl===========================================================================
 dnl Check for nautilus for the share bar
 
+AC_ARG_WITH(nautilusdir,
+	    AS_HELP_STRING([--with-nautilusdir=DIR],[Installation path for Nautilus extension @<:@auto@:>@]),
+	    [ac_with_nautilusdir=$withval],
+	    [ac_with_nautilusdir=""])
+
 PKG_CHECK_MODULES(EXTENSION,
 		   libnautilus-extension)
-NAUTILUSDIR=`pkg-config --variable=extensiondir libnautilus-extension`
+if test "${ac_with_nautilusdir}" = ""; then
+	ac_with_nautilusdir=`pkg-config --variable=extensiondir libnautilus-extension`
+fi
 AC_SUBST(NAUTILUSDIR)
+AC_MSG_NOTICE([installing nautilus plugin in ${ac_with_nautilusdir}])
+AC_SUBST([NAUTILUSDIR],[${ac_with_nautilusdir}])
 
 dnl ==========================================================================
 
