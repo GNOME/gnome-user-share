@@ -1,4 +1,10 @@
-This is gnome-user-share 2.28.0, a system for easy sharing of user files.
+This is gnome-user-share 2.29.91, a system for easy sharing of user files.
+
+Major changes since 2.28.0 are:
+* Add a helper bar in nautilus to enable/disable sharing
+* Add sound notification of files being received
+* Don't use Bonded and trusted terms in the UI
+and many other fixes
 
 Major changes since 2.27.0 are:
 * Fix WebDAV share name being untranslated
