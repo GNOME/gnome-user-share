@@ -33,32 +33,32 @@
 #include "nautilus-share-bar.h"
 #include "user_share-common.h"
 
-#define NAUTILUS_TYPE_SHARE  (nautilus_share_get_type ())
-#define NAUTILUS_SHARE(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), NAUTILUS_TYPE_SHARE, NautilusShare))
-#define NAUTILUS_IS_SHARE(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), NAUTILUS_TYPE_SHARE))
+#define NAUTILUS_TYPE_USER_SHARE  (nautilus_user_share_get_type ())
+#define NAUTILUS_USER_SHARE(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), NAUTILUS_TYPE_USER_SHARE, NautilusUserShare))
+#define NAUTILUS_IS_USER_SHARE(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), NAUTILUS_TYPE_USER_SHARE))
 
-typedef struct _NautilusSharePrivate NautilusSharePrivate;
+typedef struct _NautilusUserSharePrivate NautilusUserSharePrivate;
 
 typedef struct
 {
         GObject              parent_slot;
-        NautilusSharePrivate *priv;
-} NautilusShare;
+        NautilusUserSharePrivate *priv;
+} NautilusUserShare;
 
 typedef struct
 {
         GObjectClass parent_slot;
-} NautilusShareClass;
+} NautilusUserShareClass;
 
-#define NAUTILUS_SHARE_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), NAUTILUS_TYPE_SHARE, NautilusSharePrivate))
+#define NAUTILUS_USER_SHARE_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), NAUTILUS_TYPE_USER_SHARE, NautilusUserSharePrivate))
 
-struct _NautilusSharePrivate
+struct _NautilusUserSharePrivate
 {
         GSList       *widget_list;
 };
 
-static GType nautilus_share_get_type      (void);
-static void  nautilus_share_register_type (GTypeModule *module);
+static GType nautilus_user_share_get_type      (void);
+static void  nautilus_user_share_register_type (GTypeModule *module);
 
 static GObjectClass *parent_class;
 
@@ -112,14 +112,14 @@ bar_activated_cb (NautilusShareBar *bar,
 
 static void
 destroyed_callback (GtkWidget    *widget,
-                    NautilusShare *share)
+                    NautilusUserShare *share)
 {
         share->priv->widget_list = g_slist_remove (share->priv->widget_list, widget);
 }
 
 static void
-add_widget (NautilusShare *share,
-              GtkWidget    *widget)
+add_widget (NautilusUserShare *share,
+            GtkWidget         *widget)
 {
         share->priv->widget_list = g_slist_prepend (share->priv->widget_list, widget);
 
@@ -129,16 +129,16 @@ add_widget (NautilusShare *share,
 }
 
 static GtkWidget *
-nautilus_share_get_location_widget (NautilusLocationWidgetProvider *iface,
-                                   const char                     *uri,
-                                   GtkWidget                      *window)
+nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
+                                         const char                     *uri,
+                                         GtkWidget                      *window)
 {
-	GFile         *file;
-	GtkWidget     *bar;
-	NautilusShare *share;
-	guint          i;
-	gboolean       enable = FALSE;
-	GFile         *home;
+	GFile             *file;
+	GtkWidget         *bar;
+	NautilusUserShare *share;
+	guint              i;
+	gboolean           enable = FALSE;
+	GFile             *home;
 	const GUserDirectory special_dirs[] = { G_USER_DIRECTORY_PUBLIC_SHARE, G_USER_DIRECTORY_DOWNLOAD };
 	gboolean is_dir[] = { FALSE, FALSE };
 
@@ -167,7 +167,7 @@ nautilus_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	if (enable == FALSE)
 		return NULL;
 
-	share = NAUTILUS_SHARE (iface);
+	share = NAUTILUS_USER_SHARE (iface);
 
 	if (is_dir[0] != FALSE && is_dir[1] != FALSE) {
 		bar = nautilus_share_bar_new (_("You can share files from this folder and receive files to it"));
@@ -191,26 +191,26 @@ nautilus_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 }
 
 static void
-nautilus_share_location_widget_provider_iface_init (NautilusLocationWidgetProviderIface *iface)
+nautilus_user_share_location_widget_provider_iface_init (NautilusLocationWidgetProviderIface *iface)
 {
-        iface->get_widget = nautilus_share_get_location_widget;
+        iface->get_widget = nautilus_user_share_get_location_widget;
 }
 
 static void
-nautilus_share_instance_init (NautilusShare *share)
+nautilus_user_share_instance_init (NautilusUserShare *share)
 {
-        share->priv = NAUTILUS_SHARE_GET_PRIVATE (share);
+        share->priv = NAUTILUS_USER_SHARE_GET_PRIVATE (share);
 }
 
 static void
-nautilus_share_finalize (GObject *object)
+nautilus_user_share_finalize (GObject *object)
 {
-        NautilusShare *share;
+        NautilusUserShare *share;
 
         g_return_if_fail (object != NULL);
         g_return_if_fail (NAUTILUS_IS_SHARE (object));
 
-        share = NAUTILUS_SHARE (object);
+        share = NAUTILUS_USER_SHARE (object);
 
         g_return_if_fail (share->priv != NULL);
 
@@ -222,49 +222,49 @@ nautilus_share_finalize (GObject *object)
 }
 
 static void
-nautilus_share_class_init (NautilusShareClass *klass)
+nautilus_user_share_class_init (NautilusUserShareClass *klass)
 {
         GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
         parent_class = g_type_class_peek_parent (klass);
 
-        object_class->finalize = nautilus_share_finalize;
+        object_class->finalize = nautilus_user_share_finalize;
 
-        g_type_class_add_private (klass, sizeof (NautilusSharePrivate));
+        g_type_class_add_private (klass, sizeof (NautilusUserSharePrivate));
 }
 
 static GType share_type = 0;
 
 static GType
-nautilus_share_get_type (void)
+nautilus_user_share_get_type (void)
 {
         return share_type;
 }
 
 static void
-nautilus_share_register_type (GTypeModule *module)
+nautilus_user_share_register_type (GTypeModule *module)
 {
         static const GTypeInfo info = {
-                sizeof (NautilusShareClass),
+                sizeof (NautilusUserShareClass),
                 (GBaseInitFunc) NULL,
                 (GBaseFinalizeFunc) NULL,
-                (GClassInitFunc) nautilus_share_class_init,
+                (GClassInitFunc) nautilus_user_share_class_init,
                 NULL,
                 NULL,
-                sizeof (NautilusShare),
+                sizeof (NautilusUserShare),
                 0,
-                (GInstanceInitFunc) nautilus_share_instance_init,
+                (GInstanceInitFunc) nautilus_user_share_instance_init,
         };
 
         static const GInterfaceInfo location_widget_provider_iface_info = {
-                (GInterfaceInitFunc) nautilus_share_location_widget_provider_iface_init,
+                (GInterfaceInitFunc) nautilus_user_share_location_widget_provider_iface_init,
                 NULL,
                 NULL
         };
 
         share_type = g_type_module_register_type (module,
                                                  G_TYPE_OBJECT,
-                                                 "NautilusShare",
+                                                 "NautilusUserShare",
                                                  &info, 0);
 
         g_type_module_add_interface (module,
@@ -276,7 +276,7 @@ nautilus_share_register_type (GTypeModule *module)
 void
 nautilus_module_initialize (GTypeModule *module)
 {
-        nautilus_share_register_type (module);
+        nautilus_user_share_register_type (module);
         bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
         bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 }
@@ -292,7 +292,7 @@ nautilus_module_list_types (const GType **types,
 {
         static GType type_list [1];
 
-        type_list[0] = NAUTILUS_TYPE_SHARE;
+        type_list[0] = NAUTILUS_TYPE_USER_SHARE;
 
         *types = type_list;
         *num_types = 1;
