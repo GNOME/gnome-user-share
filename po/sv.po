@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-09 17:18+0100\n"
-"PO-Revision-Date: 2010-01-09 17:21+0100\n"
+"POT-Creation-Date: 2010-03-19 19:35+0100\n"
+"PO-Revision-Date: 2010-03-19 19:35+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -139,7 +139,7 @@ msgstr "Starta personlig filutdelning om aktiverat"
 
 #: ../src/nautilus-share-bar.c:174
 msgid "Launch Preferences"
-msgstr "Startinställningar"
+msgstr "Starta inställningar"
 
 #: ../src/nautilus-share-bar.c:187
 msgid "Launch Personal File Sharing Preferences"
@@ -223,10 +223,6 @@ msgstr "%.0sPublika filer"
 msgid "%s's public files on %s"
 msgstr "%.0sPublika filer på %s"
 
-#: ../src/http.c:372
-msgid "Please log in as the user guest"
-msgstr "Logga in som användaren guest"
-
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:140
 #, c-format
@@ -249,6 +245,8 @@ msgstr "Visa fil"
 msgid "File reception complete"
 msgstr "Filmottagningen är färdig"
 
+#~ msgid "Please log in as the user guest"
+#~ msgstr "Logga in som användaren guest"
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "Endast för ihopparade och pålitliga enheter"
 #~ msgid "User Sharing"
