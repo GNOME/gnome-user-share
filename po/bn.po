@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&component=general\n"
-"POT-Creation-Date: 2009-12-14 21:47+0000\n"
+"POT-Creation-Date: 2010-03-23 17:10+0000\n"
 "PO-Revision-Date: 2010-01-24 11:12+0600\n"
 "Last-Translator: Sadia Afroz <sadia@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -283,11 +283,6 @@ msgid "%s's public files on %s"
 msgstr "%s-এর পাবলিক ফাইল %s-এ"
 
 # Translated by sadia
-#: ../src/http.c:372
-msgid "Please log in as the user guest"
-msgstr "অনুগ্রহ করে অতিথি ব্যবহারকারী হিসেবে লগইন করুন"
-
-# Translated by sadia
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:140
 #, c-format
@@ -311,6 +306,10 @@ msgstr "ফাইল প্রকাশ করা হবে"
 #: ../src/obexpush.c:174
 msgid "File reception complete"
 msgstr "ফাইল গ্রহণ প্রক্রিয়া সম্পন্ন"
+
+# Translated by sadia
+#~ msgid "Please log in as the user guest"
+#~ msgstr "অনুগ্রহ করে অতিথি ব্যবহারকারী হিসেবে লগইন করুন"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "শুধুমাত্র Bonded (যুক্ত) ও Trusted (বিশ্বস্ত) ডিভাইসের ক্ষেত্রে"
