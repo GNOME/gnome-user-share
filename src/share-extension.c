@@ -208,7 +208,7 @@ nautilus_user_share_finalize (GObject *object)
         NautilusUserShare *share;
 
         g_return_if_fail (object != NULL);
-        g_return_if_fail (NAUTILUS_IS_SHARE (object));
+        g_return_if_fail (NAUTILUS_IS_USER_SHARE (object));
 
         share = NAUTILUS_USER_SHARE (object);
 
