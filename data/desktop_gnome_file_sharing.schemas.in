@@ -9,7 +9,7 @@
       <default>false</default>
       <locale name="C">
         <short>Share Public directory over the network</short>
-        <long>If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in.</long>
+        <long>If this is true, the Public directory in the user's home directory will be shared over the network when the user is logged in.</long>
       </locale>
     </schema>
     <schema>
@@ -31,7 +31,7 @@
       <default>false</default>
       <locale name="C">
         <short>Share Public directory over Bluetooth</short>
-        <long>If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in.</long>
+        <long>If this is true, the Public directory in the user's home directory will be shared over Bluetooth when the user is logged in.</long>
       </locale>
     </schema>
     <schema>
@@ -64,7 +64,7 @@
       <default>false</default>
       <locale name="C">
         <short>Whether Bluetooth clients can send files using ObexPush.</short>
-        <long>If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in.</long>
+        <long>If this is true, Bluetooth devices can send files to the user's Downloads directory when the user is logged in.</long>
       </locale>
     </schema>
     <schema>
