@@ -4,13 +4,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: metacity\n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2009-11-06 19:17+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
+"POT-Creation-Date: 2010-05-02 21:10+0000\n"
+"PO-Revision-Date: 2010-05-12 18:36 -0400\n"
 "Last-Translator: Thomas Thurman <tthurman@gnome.org>\n"
-"Language-Team: Shavian <ubuntu-l10n-en-shaw@lists.launchpad.net>\n"
+"Language-Team: Shavian <ubuntu-l10n-en-shaw@launchpad.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"𐑦𐑓 𐑞𐑦𐑕 𐑦𐑟 𐑑𐑮𐑵, Bluetooth 𐑛𐑦𐑝𐑲𐑕𐑩𐑟 𐑒𐑨𐑯 𐑕𐑧𐑯𐑛 𐑓𐑲𐑤𐑟 𐑑 𐑞 𐑿𐑟𐑼'𐑟 𐑛𐑬𐑯𐑤𐑴𐑛𐑟 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦 𐑢𐑧𐑯 "
+"𐑤𐑪𐑜𐑛 𐑦𐑯."
+
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"𐑦𐑓 𐑞𐑦𐑕 𐑦𐑟 𐑑𐑮𐑵, 𐑞 𐑐𐑳𐑚𐑤𐑦𐑒 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦 𐑦𐑯 𐑞 𐑿𐑟𐑼𐑟 𐑣𐑴𐑥 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦 𐑢𐑦𐑤 𐑚𐑰 𐑖𐑺𐑛 𐑴𐑝𐑼 "
+"Bluetooth 𐑢𐑧𐑯 𐑞 𐑿𐑟𐑼 𐑦𐑟 𐑤𐑪𐑜𐑛 𐑦𐑯."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
@@ -20,9 +40,28 @@ msgstr ""
 "𐑦𐑓 𐑞𐑦𐑕 𐑦𐑟 𐑑𐑮𐑵, 𐑞 𐑐𐑳𐑚𐑤𐑦𐑒 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦 𐑦𐑯 𐑞 𐑿𐑟𐑼𐑟 𐑣𐑴𐑥 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦 𐑢𐑦𐑤 𐑚𐑰 𐑖𐑺𐑛 𐑴𐑝𐑼 𐑞 "
 "𐑯𐑧𐑑𐑢𐑻𐑒 𐑢𐑧𐑯 𐑞 𐑿𐑟𐑼 𐑦𐑟 𐑤𐑪𐑜𐑛 𐑦𐑯."
 
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+msgid "Share Public directory over Bluetooth"
+msgstr "𐑖𐑺 𐑐𐑳𐑚𐑤𐑦𐑒 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦 𐑴𐑝𐑼 Bluetooth"
+
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
 msgstr "𐑖𐑺 𐑐𐑳𐑚𐑤𐑦𐑒 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦 𐑴𐑝𐑼 𐑞 𐑯𐑧𐑑𐑢𐑻𐑒"
+
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid "When to accept files sent over Bluetooth"
+msgstr "𐑢𐑧𐑯 𐑑 𐑨𐑒𐑕𐑧𐑐𐑑 𐑓𐑲𐑤𐑟 𐑕𐑧𐑯𐑑 𐑴𐑝𐑼 Bluetooth"
+
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"𐑢𐑧𐑯 𐑑 𐑨𐑒𐑕𐑧𐑐𐑑 𐑓𐑲𐑤𐑟 𐑕𐑧𐑯𐑑 𐑴𐑝𐑼 Bluetooth. 𐑐𐑪𐑕𐑩𐑚𐑩𐑤 𐑝𐑨𐑤𐑿𐑟 𐑸 \"𐑷𐑤𐑢𐑱𐑟\", \"𐑚𐑪𐑯𐑛𐑩𐑛\" 𐑯 "
+"\"𐑭𐑕𐑒\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
@@ -35,17 +74,70 @@ msgstr ""
 msgid "When to require passwords"
 msgstr "𐑢𐑧𐑯 𐑑 𐑮𐑦𐑒𐑢𐑲𐑼 𐑐𐑭𐑕𐑢𐑼𐑛𐑟"
 
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "𐑢𐑧𐑞𐑼 Bluetooth 𐑒𐑤𐑲𐑩𐑯𐑑𐑕 𐑒𐑨𐑯 𐑕𐑧𐑯𐑛 𐑓𐑲𐑤𐑟 𐑿𐑟𐑦𐑙 ObexPush."
+
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid ""
+"Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "𐑢𐑧𐑞𐑼 Bluetooth 𐑒𐑤𐑲𐑩𐑯𐑑𐑕 𐑯𐑰𐑛 𐑑 𐑐𐑺 𐑢𐑦𐑞 𐑞 𐑒𐑩𐑥𐑐𐑿𐑑𐑼 𐑑 𐑕𐑧𐑯𐑛 𐑓𐑲𐑤𐑟."
+
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files "
+"read-only."
+msgstr "𐑢𐑧𐑞𐑼 𐑑 𐑩𐑤𐑬 Bluetooth 𐑒𐑤𐑲𐑩𐑯𐑑𐑕 𐑑 𐑮𐑲𐑑 𐑓𐑲𐑤𐑟, 𐑹 𐑖𐑺 𐑞 𐑓𐑲𐑤𐑟 𐑮𐑧𐑛-𐑴𐑯𐑤𐑦."
+
+#, fuzzy
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "𐑢𐑧𐑞𐑼 𐑑 𐑩𐑤𐑬 Bluetooth 𐑒𐑤𐑲𐑩𐑯𐑑𐑕 𐑑 𐑮𐑲𐑑 𐑓𐑲𐑤𐑟."
+
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "𐑢𐑧𐑞𐑼 𐑑 𐑯𐑴𐑑𐑦𐑓𐑲 𐑩𐑚𐑬𐑑 𐑯𐑿𐑤𐑦 𐑮𐑦𐑕𐑰𐑝𐑛 𐑓𐑲𐑤𐑟."
+
+#, fuzzy
+#: ../data/file-share-properties.ui.h:1
+msgid "<b>Receive Files over Bluetooth</b>"
+msgstr "<𐑚𐑰>𐑮𐑦𐑕𐑰𐑝 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 Bluetooth</𐑚𐑰>"
+
+#, fuzzy
+#: ../data/file-share-properties.ui.h:2
+msgid "<b>Share Files over Bluetooth</b>"
+msgstr "<𐑚𐑰>𐑖𐑺 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 Bluetooth</𐑚𐑰>"
 
 #: ../data/file-share-properties.ui.h:3
 msgid "<b>Share Files over the Network</b>"
 msgstr "<b>𐑖𐑺 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 𐑞 𐑯𐑧𐑑𐑢𐑻𐑒</b>"
 
+#, fuzzy
+#: ../data/file-share-properties.ui.h:4
+msgid "Allo_w remote devices to delete files"
+msgstr "Allo_w 𐑮𐑦𐑥𐑴𐑑 𐑛𐑦𐑝𐑲𐑕𐑩𐑟 𐑑 𐑛𐑦𐑤𐑰𐑑 𐑓𐑲𐑤𐑟"
+
 #: ../data/file-share-properties.ui.h:5
 msgid "Personal File Sharing Preferences"
 msgstr "𐑐𐑻𐑕𐑩𐑯𐑩𐑤 𐑓𐑲𐑤 𐑖𐑺𐑦𐑙 𐑐𐑮𐑧𐑓𐑼𐑩𐑯𐑕𐑩𐑟"
+
+#, fuzzy
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "𐑮𐑦𐑕𐑰𐑝 𐑓𐑲𐑤𐑟 𐑦𐑯 _Downloads 𐑓𐑴𐑤𐑛𐑼 𐑴𐑝𐑼 Bluetooth"
+
+#, fuzzy
+#: ../data/file-share-properties.ui.h:7
+msgid "Require re_mote devices to bond with this computer"
+msgstr "𐑮𐑦𐑒𐑢𐑲𐑼 re_mote 𐑛𐑦𐑝𐑲𐑕𐑩𐑟 𐑑 𐑚𐑪𐑯𐑛 𐑢𐑦𐑞 𐑞𐑦𐑕 𐑒𐑩𐑥𐑐𐑿𐑑𐑼"
+
+#, fuzzy
+#: ../data/file-share-properties.ui.h:8
+msgid "Share public files over _Bluetooth"
+msgstr "𐑖𐑺 𐑐𐑳𐑚𐑤𐑦𐑒 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 _Bluetooth"
 
 #: ../data/file-share-properties.ui.h:9
 msgid "_Accept files: "
@@ -88,43 +180,53 @@ msgstr "𐑤𐑷𐑯𐑗 𐑐𐑮𐑧𐑓𐑼𐑩𐑯𐑕𐑩𐑟"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "𐑤𐑷𐑯𐑗 𐑐𐑻𐑕𐑩𐑯𐑩𐑤 𐑓𐑲𐑤 𐑖𐑺𐑦𐑙 𐑐𐑮𐑧𐑓𐑼𐑩𐑯𐑕𐑩𐑟"
 
-#: ../src/share-extension.c:81
+#: ../src/share-extension.c:82
 msgid "Unable to launch the Personal File Sharing preferences"
 msgstr "𐑳𐑯𐑱𐑚𐑩𐑤 𐑑 𐑤𐑷𐑯𐑗 𐑞 𐑐𐑻𐑕𐑩𐑯𐑩𐑤 𐑓𐑲𐑤 𐑖𐑺𐑦𐑙 𐑐𐑮𐑧𐑓𐑼𐑩𐑯𐑕𐑩𐑟"
 
-#: ../src/share-extension.c:166
+#: ../src/share-extension.c:173
 msgid "You can share files from this folder and receive files to it"
 msgstr "𐑿 𐑒𐑨𐑯 𐑖𐑺 𐑓𐑲𐑤𐑟 𐑓𐑮𐑪𐑥 𐑞𐑦𐑕 𐑓𐑴𐑤𐑛𐑼 𐑯 𐑮𐑦𐑕𐑰𐑝 𐑓𐑲𐑤𐑟 𐑑 𐑦𐑑"
 
-#: ../src/file-share-properties.c:435
+#, fuzzy
+#: ../src/share-extension.c:175
+msgid "You can share files from this folder over the network and Bluetooth"
+msgstr "𐑿 𐑒𐑨𐑯 𐑖𐑺 𐑓𐑲𐑤𐑟 𐑓𐑮𐑪𐑥 𐑞𐑦𐑕 𐑓𐑴𐑤𐑛𐑼 𐑴𐑝𐑼 𐑞 𐑯𐑧𐑑𐑢𐑻𐑒 𐑯 Bluetooth"
+
+#, fuzzy
+#: ../src/share-extension.c:177
+msgid "You can receive files over Bluetooth into this folder"
+msgstr "𐑿 𐑒𐑨𐑯 𐑮𐑦𐑕𐑰𐑝 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 Bluetooth 𐑦𐑯𐑑𐑫 𐑞𐑦𐑕 𐑓𐑴𐑤𐑛𐑼"
+
+#: ../src/file-share-properties.c:436
 msgid "No reason"
 msgstr "𐑯𐑴 𐑮𐑰𐑟𐑩𐑯"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:464
 msgid "Could not display the help contents."
 msgstr "𐑒𐑫𐑛 𐑯𐑪𐑑 𐑛𐑩𐑕𐑐𐑤𐑱 𐑞 𐑣𐑧𐑤𐑐 𐑒𐑪𐑯𐑑𐑩𐑯𐑑𐑕."
 
-#: ../src/file-share-properties.c:503
+#: ../src/file-share-properties.c:524
 msgid "Could not build interface."
 msgstr "𐑒𐑫𐑛 𐑯𐑪𐑑 𐑚𐑦𐑤𐑛 𐑦𐑯𐑑𐑼𐑓𐑱𐑕."
 
-#: ../src/file-share-properties.c:543
+#: ../src/file-share-properties.c:566
 msgid "Never"
 msgstr "𐑯𐑧𐑝𐑼"
 
-#: ../src/file-share-properties.c:546
+#: ../src/file-share-properties.c:569
 msgid "When writing files"
 msgstr "𐑢𐑧𐑯 𐑮𐑲𐑑𐑦𐑙 𐑓𐑲𐑤𐑟"
 
-#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:572 ../src/file-share-properties.c:595
 msgid "Always"
 msgstr "𐑷𐑤𐑢𐑱𐑟"
 
-#: ../src/file-share-properties.c:575
+#: ../src/file-share-properties.c:598
 msgid "Only for set up devices"
 msgstr "𐑴𐑯𐑤𐑦 𐑓𐑹 𐑕𐑧𐑑 𐑳𐑐 𐑛𐑦𐑝𐑲𐑕𐑩𐑟"
 
-#: ../src/file-share-properties.c:580
+#: ../src/file-share-properties.c:603
 msgid "Ask"
 msgstr "𐑭𐑕𐑒"
 
@@ -137,21 +239,23 @@ msgstr "𐑭𐑕𐑒"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:134
 #, c-format
+#: ../src/http.c:134
 msgid "%s's public files"
 msgstr "%s'𐑟 𐑐𐑳𐑚𐑤𐑦𐑒 𐑓𐑲𐑤𐑟"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:138
 #, c-format
+#: ../src/http.c:138
 msgid "%s's public files on %s"
 msgstr "%s'𐑟 𐑐𐑳𐑚𐑤𐑦𐑒 𐑓𐑲𐑤𐑟 𐑪𐑯 %s"
 
-#: ../src/http.c:372
-msgid "Please log in as the user guest"
-msgstr "𐑐𐑤𐑰𐑟 𐑤𐑪𐑜 𐑦𐑯 𐑨𐑟 𐑞 𐑿𐑟𐑼 𐑜𐑧𐑕𐑑"
+#. Translators: %s is the name of the filename received
+#, fuzzy, c-format
+#: ../src/obexpush.c:140
+msgid "You received \"%s\" via Bluetooth"
+msgstr "𐑿 𐑮𐑦𐑕𐑰𐑝𐑛 𐑩 𐑓𐑲𐑤"
 
 #: ../src/obexpush.c:142
 msgid "You received a file"
@@ -168,3 +272,4 @@ msgstr "𐑮𐑦𐑝𐑰𐑤 𐑓𐑲𐑤"
 #: ../src/obexpush.c:174
 msgid "File reception complete"
 msgstr "𐑓𐑲𐑤 𐑮𐑦𐑕𐑧𐑐𐑖𐑩𐑯 𐑒𐑩𐑥𐑐𐑤𐑰𐑑"
+
