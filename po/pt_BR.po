@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-29 09:11-0500\n"
+"POT-Creation-Date: 2010-05-18 08:09-0300\n"
 "PO-Revision-Date: 2009-10-24 14:25-0200\n"
 "Last-Translator: Flamarion Jorge <jorge.flamarion@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
@@ -139,7 +139,7 @@ msgstr "_Aceitar arquivos: "
 
 #: ../data/file-share-properties.ui.h:10
 msgid "_Notify about received files"
-msgstr "_Notificar sobre arquvos recebidos"
+msgstr "_Notificar sobre arquivos recebidos"
 
 #: ../data/file-share-properties.ui.h:11
 msgid "_Password:"
@@ -245,10 +245,6 @@ msgstr "Arquivos públicos de %s"
 msgid "%s's public files on %s"
 msgstr "Arquivos públicos de %s em %s"
 
-#: ../src/http.c:372
-msgid "Please log in as the user guest"
-msgstr "Por favor inicie a sessão como usuário convidado"
-
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:140
 #, c-format
@@ -270,6 +266,9 @@ msgstr "Revelar arquivo"
 #: ../src/obexpush.c:174
 msgid "File reception complete"
 msgstr "Recebimento de arquivo completo"
+
+#~ msgid "Please log in as the user guest"
+#~ msgstr "Por favor inicie a sessão como usuário convidado"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "Somente para dispositivos emparelhados e confiáveis"
