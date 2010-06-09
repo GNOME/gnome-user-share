@@ -249,7 +249,7 @@ msgstr "Δημόσια αρχεία%.0s"
 #: ../src/http.c:138
 #, c-format
 msgid "%s's public files on %s"
-msgstr "Δημόσια αρχεία του/της %s στο %s"
+msgstr "Δημόσια αρχεία του/της %.0s στο %s"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:140
