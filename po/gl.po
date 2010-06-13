@@ -17,19 +17,20 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-15 18:33+0100\n"
-"PO-Revision-Date: 2010-01-17 20:44+0100\n"
+"POT-Creation-Date: 2010-06-13 19:47+0200\n"
+"PO-Revision-Date: 2010-06-13 19:47+0200\n"
 "Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
+"Language-Team: Galician <gnome@g11.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: gl\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
@@ -185,11 +186,11 @@ msgstr "Preferencias de inicio"
 
 #: ../src/nautilus-share-bar.c:187
 msgid "Launch Personal File Sharing Preferences"
-msgstr "Lanzar as Preferencias de compartir ficheiros persoais"
+msgstr "Iniciar as Preferencias de compartir ficheiros persoais"
 
 #: ../src/share-extension.c:82
 msgid "Unable to launch the Personal File Sharing preferences"
-msgstr "Non é posíbel lanzar as Preferencias de compartir ficheiros persoais"
+msgstr "Non é posíbel iniciar as Preferencias de compartir ficheiros persoais"
 
 #: ../src/share-extension.c:173
 msgid "You can share files from this folder and receive files to it"
@@ -260,10 +261,6 @@ msgstr "Ficheiros públicos de %s"
 msgid "%s's public files on %s"
 msgstr "Ficheiros públicos de %s en %s"
 
-#: ../src/http.c:372
-msgid "Please log in as the user guest"
-msgstr "Inicie unha sesión como usuario convidado"
-
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:140
 #, c-format
@@ -285,6 +282,9 @@ msgstr "Mostrar o ficheiro"
 #: ../src/obexpush.c:174
 msgid "File reception complete"
 msgstr "Recepción de ficheiro completada"
+
+#~ msgid "Please log in as the user guest"
+#~ msgstr "Inicie unha sesión como usuario convidado"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "Só para dispositivos vinculados ou fiábeis"
