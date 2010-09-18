@@ -1,17 +1,18 @@
 # gnome-user-share ja.po.
-# Copyright (C) 2005,2007-2009 Free Software Foundation, Inc.
+# Copyright (C) 2005,2007-2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005,2007-2009.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&component=general\n"
-"POT-Creation-Date: 2010-03-29 16:27+0000\n"
-"PO-Revision-Date: 2009-02-27 08:32+0900\n"
-"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"POT-Creation-Date: 2010-09-07 18:34+0000\n"
+"PO-Revision-Date: 2010-09-17 13:18+0900\n"
+"Last-Translator: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,23 +54,21 @@ msgstr "Public フォルダをネットワーク上で共有するかどうか"
 msgid "When to accept files sent over Bluetooth"
 msgstr "Bluetooth でファイルを送信できる時期"
 
-# FIXME: 原文がおかしいと思われる。「bonded」はもう存在しない。
-# "Only for set up devices"=「設定したデバイスのみ」が適当？
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
 msgstr ""
-"いつ Bluetooth 経由でファイル送信を許可するか。設定可能な値: \"常に\"、\"設定"
-"したデバイスのみ\"、\"問い合わせる\"."
+"いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: "
+"\"always\"、\"bonded\"、\"ask\"。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"いつパスワードの問い合わせを受け取るか。設定可能な値: \"確認しない\"、\"ファ"
-"イル書き込み時\"、\"常に\""
+"いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write\"、"
+"\"always\"。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -267,4 +266,4 @@ msgid "File reception complete"
 msgstr "ファイルの受信が完了しました"
 
 #~ msgid "Please log in as the user guest"
-#~ msgstr "ゲストユーザでログインして下さい"
+#~ msgstr "ゲストユーザでログインしてください"
