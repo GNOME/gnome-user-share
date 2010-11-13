@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&component=general\n"
-"POT-Creation-Date: 2010-04-25 21:04+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
+"POT-Creation-Date: 2010-05-02 21:10+0000\n"
 "PO-Revision-Date: 2009-02-27 08:32+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -20,25 +19,19 @@ msgstr ""
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-msgstr ""
-"TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن Bluetooth ئۈسكۈنىسى ئىشلەتكۈچىنىڭ "
-"مۇندەرىجىسىگەھۆججەت ئەۋەتىدۇ."
+msgstr "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن Bluetooth ئۈسكۈنىسى ئىشلەتكۈچىنىڭ مۇندەرىجىسىگە ھۆججەت ئەۋەتىدۇ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr ""
-"TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى "
-"ئىچىدىكى  Public مۇندەرىجىسى Bluetooth ئۈسكۈنىسى ئارقىلىق ھەمبەھىر قىلىنىدۇ."
+msgstr "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى ئىچىدىكى  Public مۇندەرىجىسى Bluetooth ئۈسكۈنىسى ئارقىلىق ھەمبەھىر قىلىنىدۇ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
-msgstr ""
-"TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى "
-"ئىچىدىكى  Public مۇندەرىجىسى تور ئارقىلىق ھەمبەھىر قىلىنىدۇ."
+msgstr "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى ئىچىدىكى  Public مۇندەرىجىسى تور ئارقىلىق ھەمبەھىر قىلىنىدۇ."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
@@ -58,17 +51,13 @@ msgstr "Bluetooth ئارقىلىق ھۆججەت ئەۋەتىدىغان ۋاقى�
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
-msgstr ""
-"Bluetooth ئارقىلىق ھۆججەت ئەۋەتىدىغان ۋاقىتنى بەلگىلەڭ. بەلگىلىگىلى "
-"بولىدىغان قىممەتلەر: \"ھەمىشە\"،\"بېكىتىلگەن ئۈسكىنە\"، \"سوراش\"."
+msgstr "Bluetooth ئارقىلىق ھۆججەت ئەۋەتىدىغان ۋاقىتنى بەلگىلەڭ. بەلگىلىگىلى بولىدىغان قىممەتلەر: \"ھەمىشە\"،\"بېكىتىلگەن ئۈسكىنە\"، \"سوراش\"."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr ""
-"ئىمنى سورايدىغان ۋاقىت. بەلگىلىگىلى بولىدىغان قىممەتلەر: \"سورىمىسۇن\"،"
-"\"ھۆججەتنى ساقلايدىغان ۋاقىتتا\"،\"ھەمىشە\""
+msgstr "ئىمنى سورايدىغان ۋاقىت. بەلگىلىگىلى بولىدىغان قىممەتلەر: \"سورىمىسۇن\"،\"ھۆججەتنى ساقلايدىغان ۋاقىتتا\"،\"ھەمىشە\""
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:9
 msgid "When to require passwords"
@@ -76,22 +65,17 @@ msgstr "ئىم تەلەپ قىلىدىغان ۋاقىت"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Bluetooth client پروگراممىلىرى ObexPush نى ئىشلىتىپ ھۆججەت ئەۋەتەلەمدۇ يوق."
+msgstr "Bluetooth client پروگراممىلىرى ObexPush نى ئىشلىتىپ ھۆججەت ئەۋەتەلەمدۇ يوق."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Bluetooth client پروگراممىلىرى ھۆججەت ئەۋەتىلىدىغان چاغدا كومپيۇتېر بىلەن "
-"ھەمكارلىشامدۇ يوق."
+msgstr "Bluetooth client پروگراممىلىرى ھۆججەت ئەۋەتىلىدىغان چاغدا كومپيۇتېر بىلەن ھەمكارلىشامدۇ يوق."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
-msgstr ""
-"Bluetooth client پروگراممىلىرى ھۆججەتكە يازالامدۇ، ئوقۇشقىلا بولىدىغان "
-"ھۆججەتنى ھەمبەھىر قىلالامدۇ يوق."
+msgstr "Bluetooth client پروگراممىلىرى ھۆججەتكە يازالامدۇ، ئوقۇشقىلا بولىدىغان ھۆججەتنى ھەمبەھىر قىلالامدۇ يوق."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
@@ -123,8 +107,7 @@ msgstr "خۇسۇسىي ھۆججەت ھەمبەھىرى تەڭشىكى"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr ""
-"Bluetooth ئارقىلىق قوبۇل قىلغان ھۆججەتلەرنى چۈشۈرۈش مۇندەرىجىسىگە قويۇش(_D)"
+msgstr "Bluetooth ئارقىلىق قوبۇل قىلغان ھۆججەتلەرنى چۈشۈرۈش مۇندەرىجىسىگە قويۇش(_D)"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
@@ -181,14 +164,11 @@ msgstr "خۇسۇسىي ھۆججەت ھەمبەھىرىنىڭ تەڭشىكىنى 
 
 #: ../src/share-extension.c:173
 msgid "You can share files from this folder and receive files to it"
-msgstr ""
-"بۇ مۇندەرىجىدىكى ھۆججەتلەرنى ھەمبەھىر قىلالايسىز ۋە قوبۇل قىلغان ھۆججەتلەرنى "
-"بۇ يەرگە قويالايسىز."
+msgstr "بۇ مۇندەرىجىدىكى ھۆججەتلەرنى ھەمبەھىر قىلالايسىز ۋە قوبۇل قىلغان ھۆججەتلەرنى بۇ يەرگە قويالايسىز."
 
 #: ../src/share-extension.c:175
 msgid "You can share files from this folder over the network and Bluetooth"
-msgstr ""
-"بۇ مۇندەرىجىدىكى ھۆججەتلەرنى Bluetooth ياكى تور ئارقىلىق ھەمبەھىر قىلالايسىز"
+msgstr "بۇ مۇندەرىجىدىكى ھۆججەتلەرنى Bluetooth ياكى تور ئارقىلىق ھەمبەھىر قىلالايسىز"
 
 #: ../src/share-extension.c:177
 msgid "You can receive files over Bluetooth into this folder"
@@ -208,7 +188,7 @@ msgstr "interface قۇرغىلى بولمىدى."
 
 #: ../src/file-share-properties.c:566
 msgid "Never"
-msgstr "ھېچقاچان"
+msgstr "ھەرگىز"
 
 #: ../src/file-share-properties.c:569
 msgid "When writing files"
