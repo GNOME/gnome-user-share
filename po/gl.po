@@ -22,14 +22,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 13:42+0200\n"
+"POT-Creation-Date: 2011-01-27 03:30+0100\n"
 "PO-Revision-Date: 2010-07-20 13:43+0200\n"
 "Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
 "Language-Team: Galician <gnome-gl-list@gnome.org>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
@@ -271,14 +271,14 @@ msgstr "Recibiu «%s» mediante Bluetooth"
 msgid "You received a file"
 msgstr "Recibiu un ficheiro"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:152
 msgid "Open File"
 msgstr "Abrir o ficheiro"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:156
 msgid "Reveal File"
 msgstr "Mostrar o ficheiro"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:173
 msgid "File reception complete"
 msgstr "Recepción de ficheiro completada"
