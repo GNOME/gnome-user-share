@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2010-11-20 10:49+0000\n"
+"POT-Creation-Date: 2010-12-23 18:10+0000\n"
 "PO-Revision-Date: 2009-02-27 08:32+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -204,7 +204,7 @@ msgstr "بېكىتىلگەن ئۈسكۈنىلەرلا"
 
 #: ../src/file-share-properties.c:603
 msgid "Ask"
-msgstr "كۆرۈشۈپ بېقىڭ"
+msgstr "سورا"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -237,15 +237,15 @@ msgstr "Bluetooh نى ئىشلىتىپ \"%s\" نى قوبۇل قىلدىڭىز"
 msgid "You received a file"
 msgstr "بىر ھۆججەت قوبۇل قىلدىڭىز"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:152
 msgid "Open File"
-msgstr "ھۆججەت ئېچىش"
+msgstr "ھۆججەت ئاچ"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:156
 msgid "Reveal File"
 msgstr "ھۆججەت كۆرسىتىش"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:173
 msgid "File reception complete"
 msgstr "ھۆججەت قوبۇل قىلىش تاماملاندى."
 
