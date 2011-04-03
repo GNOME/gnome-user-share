@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-13 18:00+0100\n"
-"PO-Revision-Date: 2010-03-13 18:00+0100\n"
+"PO-Revision-Date: 2011-04-04 00:30+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,7 @@ msgstr "Si els clients del Bluetooth poden enviar fitxers amb ObexPush."
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr ""
-"Si cal que els clients del Bluetooth s'aparellin amb l'ordinador per a poder "
+"Si cal que els clients del Bluetooth s'aparellin amb l'ordinador per poder "
 "enviar fitxers."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
@@ -159,7 +159,7 @@ msgstr "Compartició de fitxers personals"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:2
 msgid "Preferences for sharing of files"
-msgstr "Preferències per a compartir fitxers"
+msgstr "Preferències per compartir fitxers"
 
 #: ../data/gnome-user-share.desktop.in.in.h:1
 msgid "Launch Personal File Sharing if enabled"
@@ -176,7 +176,7 @@ msgstr "Inicia les preferències de la compartició de fitxers personals"
 #: ../src/share-extension.c:82
 msgid "Unable to launch the Personal File Sharing preferences"
 msgstr ""
-"No s'ha pogut iniciar les preferències de la compartició de fitxers personals"
+"No s'han pogut iniciar les preferències de la compartició de fitxers personals"
 
 #: ../src/share-extension.c:173
 msgid "You can share files from this folder and receive files to it"
