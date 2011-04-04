@@ -1,4 +1,7 @@
-This is gnome-user-share 2.91.6, a system for easy sharing of user files.
+This is gnome-user-share 3.0.0, a system for easy sharing of user files.
+
+Major changes since 2.91.6 are:
+- Updated translations
 
 Major changes since 2.30.2 are:
 * Build against GTK+ 3.x
