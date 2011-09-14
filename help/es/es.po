@@ -1,17 +1,19 @@
 # translation of gnome-user-share-help.master.po to Español
 # Jorge González <jorgegonz@svn.gnome.org>, 2009.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share-help.master\n"
-"POT-Creation-Date: 2009-10-21 11:54+0000\n"
-"PO-Revision-Date: 2009-11-04 20:26+0100\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"POT-Creation-Date: 2010-05-01 06:41+0000\n"
+"PO-Revision-Date: 2011-09-14 18:17+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: C/legal.xml:2(para)
 msgid ""
@@ -182,7 +184,8 @@ msgstr "Matthias Clasen <email>mclasen@redhat.com</email>"
 
 #: C/gnome-user-share.xml:35(releaseinfo)
 msgid "This manual describes version 2.26 of gnome-user-share."
-msgstr "Este manual describe la versión 2.26 de Compartición de archivos personales."
+msgstr ""
+"Este manual describe la versión 2.26 de Compartición de archivos personales."
 
 #: C/gnome-user-share.xml:37(title)
 msgid "Feedback"
@@ -234,13 +237,12 @@ msgid ""
 "replaceable> will be replaced by your user name."
 msgstr ""
 "Compartición de archivos personales es un servicio de sesión que exporta el "
-"contenido de la carpeta <filename>Public</filename> en su directorio "
-"personal, de tal forma que pueden ser fácilmente accesibles desde otros "
-"equipos en la misma red local. En los otros equipos, la carpeta compartida "
-"aparecerá con un nombre como «Archivos compartidos de <replaceable>usuario</"
-"replaceable>» en la ventana de Red de <application>Nautilus</application>, "
-"donde <replaceable>usuario</replaceable> se reemplazará por su nombre de "
-"usuario."
+"contenido de la carpeta <filename>Public</filename> en su carpeta personal, "
+"de tal forma que pueden ser fácilmente accesibles desde otros equipos en la "
+"misma red local. En los otros equipos, la carpeta compartida aparecerá con "
+"un nombre como «Archivos compartidos de <replaceable>usuario</replaceable>» "
+"en la ventana de Red de <application>Nautilus</application>, donde "
+"<replaceable>usuario</replaceable> se reemplazará por su nombre de usuario."
 
 #: C/gnome-user-share.xml:54(para)
 msgid ""
@@ -270,12 +272,6 @@ msgid "Starting gnome-user-share"
 msgstr "Iniciar Compartición de archivos personales"
 
 #: C/gnome-user-share.xml:68(para)
-#| msgid ""
-#| "The gnome-user-share service is normally started by <application>gnome-"
-#| "session</application> when you log in. You can change this by opening "
-#| "<menuchoice><guimenu>Preferences</guimenu><guimenu>Sessions</guimenu></"
-#| "menuchoice> in the <guimenu>System</guimenu> menu, and modifying the "
-#| "'User Sharing' entry in the list of startup programs."
 msgid ""
 "The gnome-user-share service is normally started by <application>gnome-"
 "session</application> when you log in. You can change this by opening "
@@ -285,9 +281,10 @@ msgid ""
 msgstr ""
 "Generalmente el servicio Compartición de archivos personales lo inicia "
 "<application>gnome-session</application> al iniciar su sesión. Puede cambiar "
-"esto abriendo <menuchoice><guimenu>Preferencias</guimenu><guimenu>Aplicaciones al inicio</"
-"guimenu></menuchoice> en el menú <guimenu>Sistema</guimenu>, y modificar la "
-"entrada «Comparticiones de usuario» en la lista de programas de inicio."
+"esto abriendo <menuchoice><guimenu>Preferencias</"
+"guimenu><guimenu>Aplicaciones al inicio</guimenu></menuchoice> en el menú "
+"<guimenu>Sistema</guimenu>, y modificar la entrada «Comparticiones de "
+"usuario» en la lista de programas de inicio."
 
 #: C/gnome-user-share.xml:72(para)
 msgid ""
@@ -432,7 +429,8 @@ msgid "Receive Files over Bluetooth"
 msgstr "Recibir archivos por Bluetooth"
 
 #: C/gnome-user-share.xml:177(para)
-msgid "Select <guilabel>Always</guilabel> to allow any remote device to send files."
+msgid ""
+"Select <guilabel>Always</guilabel> to allow any remote device to send files."
 msgstr ""
 "Seleccione <guilabel>Siempre</guilabel> para permitir que cualquier "
 "dispositivo remoto envíe archivos."
@@ -501,4 +499,3 @@ msgstr ""
 #: C/gnome-user-share.xml:0(None)
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2009"
-
