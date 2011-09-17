@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&component=general\n"
-"POT-Creation-Date: 2010-09-07 18:34+0000\n"
-"PO-Revision-Date: 2010-09-17 13:18+0900\n"
-"Last-Translator: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-07-29 14:48+0000\n"
+"PO-Revision-Date: 2011-09-11 07:40+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,32 +23,32 @@ msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
-"TRUE にすると、ユーザがログインした後に Bluetooth デバイスがユーザのダウン"
-"ロード・フォルダにファイルを送信できるようになります。"
+"TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダウ"
+"ンロード・フォルダーにファイルを送信できるようになります。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"TRUE にすると、ユーザがログインした後にユーザのホーム・フォルダにある Public "
-"フォルダが Bluetooth のデバイスによって共有されるようになります。"
+"TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある "
+"Public フォルダーが Bluetooth のデバイスによって共有されるようになります。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"TRUE にすると、ユーザがログインした後にユーザのホーム・フォルダにある Public "
-"フォルダがネットワークのデバイスによって共有されるようになります。"
+"TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある "
+"Public フォルダーがネットワークのデバイスによって共有されるようになります。"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:4
 msgid "Share Public directory over Bluetooth"
-msgstr "Public フォルダを Bluetooth デバイス上で共有するかどうか"
+msgstr "Public フォルダーを Bluetooth デバイス上で共有するかどうか"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
-msgstr "Public フォルダをネットワーク上で共有するかどうか"
+msgstr "Public フォルダーをネットワーク上で共有するかどうか"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid "When to accept files sent over Bluetooth"
@@ -82,8 +82,8 @@ msgstr ""
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr ""
-"Bluetooth のクライアントがファイルを送信するためにコンピュータとペアになるべ"
-"きかどうか"
+"Bluetooth のクライアントがファイルを送信するためにコンピューターとペアになる"
+"べきかどうか"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid ""
@@ -123,11 +123,12 @@ msgstr "個人のファイルを共有の設定"
 
 #: ../data/file-share-properties.ui.h:6
 msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Bluetooth 越しに受信したファイルをダウンロード・フォルダに格納する(_D)"
+msgstr ""
+"Bluetooth 越しに受信したファイルをダウンロード・フォルダーに格納する(_D)"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Require re_mote devices to bond with this computer"
-msgstr "リモートのデバイスとこのコンピュータをペアにする(_M)"
+msgstr "リモートのデバイスとこのコンピューターをペアにする(_M)"
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
@@ -180,15 +181,15 @@ msgstr "個人的なファイルの共有設定を起動できません"
 
 #: ../src/share-extension.c:173
 msgid "You can share files from this folder and receive files to it"
-msgstr "このフォルダのファイル共有とフォルダへのファイルの受信ができます"
+msgstr "このフォルダーのファイル共有とフォルダーへのファイルの受信ができます"
 
 #: ../src/share-extension.c:175
 msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "ネットワークと Bluetooth 経由でこのフォルダのファイルを共有できます"
+msgstr "ネットワークと Bluetooth 経由でこのフォルダーのファイルを共有できます"
 
 #: ../src/share-extension.c:177
 msgid "You can receive files over Bluetooth into this folder"
-msgstr "このフォルダに Bluetooth 経由でファイルを受信できます"
+msgstr "このフォルダーに Bluetooth 経由でファイルを受信できます"
 
 #: ../src/file-share-properties.c:436
 msgid "No reason"
@@ -200,7 +201,7 @@ msgstr "ヘルプを表示できませんでした"
 
 #: ../src/file-share-properties.c:524
 msgid "Could not build interface."
-msgstr "インタフェースを構築できませんでした"
+msgstr "インターフェースを構築できませんでした"
 
 #: ../src/file-share-properties.c:566
 msgid "Never"
@@ -253,17 +254,17 @@ msgstr "Bluetooh 経由で \"%s\" を受信しました"
 msgid "You received a file"
 msgstr "ファイルを受信しました"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:152
 msgid "Open File"
 msgstr "ファイルを開く"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:156
 msgid "Reveal File"
 msgstr "ファイルを表示する"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:173
 msgid "File reception complete"
 msgstr "ファイルの受信が完了しました"
 
 #~ msgid "Please log in as the user guest"
-#~ msgstr "ゲストユーザでログインしてください"
+#~ msgstr "ゲストユーザーでログインしてください"
