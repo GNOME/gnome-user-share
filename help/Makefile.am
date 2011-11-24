@@ -9,6 +9,6 @@ DOC_FIGURES = figures/file-sharing-preferences.png \
 	figures/sharing-over-bluetooth.png \
 	figures/receiving-over-bluetooth.png
 
-DOC_LINGUAS = ca cs de el en_GB es eu fr it pt_BR ro sl sv zh_CN
+DOC_LINGUAS = ca cs de el en_GB es eu fr it pt_BR ro ru sl sv zh_CN
 
 -include $(top_srcdir)/git.mk
