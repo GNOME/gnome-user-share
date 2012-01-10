@@ -29,7 +29,6 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <gconf/gconf-client.h>
-#include <unique/uniqueapp.h>
 
 #include "user_share-private.h"
 
@@ -470,20 +469,8 @@ help_button_clicked (GtkButton *button, GtkWidget *window)
 	}
 }
 
-static UniqueResponse
-message_received_cb (UniqueApp         *app,
-		     int                command,
-		     UniqueMessageData *message_data,
-		     guint              time_,
-		     gpointer           user_data)
-{
-  gtk_window_present (GTK_WINDOW (user_data));
-
-  return UNIQUE_RESPONSE_OK;
-}
-
-int
-main (int argc, char *argv[])
+static GtkWidget *
+create_window (void)
 {
     GError *error = NULL;
     GConfClient *client;
@@ -500,20 +487,6 @@ main (int argc, char *argv[])
     GtkListStore *store;
     GtkCellRenderer *cell;
     GtkTreeIter iter;
-    UniqueApp *app;
-    
-    bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
-    
-    gtk_init (&argc, &argv);
-
-    app = unique_app_new ("org.gnome.user-share.properties", NULL);
-    if (unique_app_is_running (app)) {
-      gdk_notify_startup_complete ();
-      unique_app_send_message (app, UNIQUE_ACTIVATE, NULL);
-      return 0;
-    }
 
     builder = gtk_builder_new ();
     gtk_builder_add_from_file (builder, DATADIR"file-share-properties.ui", &error);
@@ -526,14 +499,10 @@ main (int argc, char *argv[])
       gtk_widget_destroy (dialog);
 
       g_error_free (error);
-      return 1;
+      return NULL;
     }
 
     window = GTK_WIDGET (gtk_builder_get_object (builder, "user_share_dialog"));
-    g_signal_connect (G_OBJECT (window), "delete_event",
-		      G_CALLBACK (gtk_main_quit), NULL);
-    g_signal_connect (app, "message-received",
-		      G_CALLBACK (message_received_cb), window);
 
     client = gconf_client_get_default ();
     gconf_client_add_dir (client,
@@ -623,8 +592,8 @@ main (int argc, char *argv[])
     g_signal_connect (notify_received_obexpush_check,
     		      "toggled", G_CALLBACK (notify_received_obexpush_check_toggled), NULL);
 
-    g_signal_connect (GTK_WIDGET (gtk_builder_get_object (builder, "close_button")),
-		      "clicked", G_CALLBACK (gtk_main_quit), NULL);
+    g_signal_connect_swapped (GTK_WIDGET (gtk_builder_get_object (builder, "close_button")),
+                              "clicked", G_CALLBACK (gtk_widget_destroy), window);
     g_signal_connect (GTK_WIDGET (gtk_builder_get_object (builder, "help_button")),
 		      "clicked", G_CALLBACK (help_button_clicked),
 		      gtk_builder_get_object (builder, "user_share_dialog"));
@@ -680,9 +649,43 @@ main (int argc, char *argv[])
 
     g_object_unref (client);
 
-    gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (builder, "user_share_dialog")));
-    
-    gtk_main ();
+    return window;
+}
 
-    return 0;
+static void
+activate (GtkApplication *app)
+{
+    GList *list;
+    GtkWidget *window;
+
+    list = gtk_application_get_windows (app);
+
+    if (list) {
+        gtk_window_present (GTK_WINDOW (list->data));
+    } else {
+        window = create_window ();
+        gtk_window_set_application (GTK_WINDOW (window), app);
+        gtk_widget_show (window);
+    }
+}
+
+int
+main (int argc, char *argv[])
+{
+    GtkApplication *app;
+    gint status;
+
+    bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
+    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
+
+    app = gtk_application_new ("org.gnome.user-share.properties",
+                               G_APPLICATION_FLAGS_NONE);
+    g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);
+
+    status = g_application_run (G_APPLICATION (app), argc, argv);
+
+    g_object_unref (app);
+
+    return status;
 }
