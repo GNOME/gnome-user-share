@@ -1,4 +1,10 @@
-This is gnome-user-share 3.0.1, a system for easy sharing of user files.
+This is gnome-user-share 3.0.2, a system for easy sharing of user files.
+
+Major changes since 3.0.1 are:
+- Port from libunique to GtkApplication
+- Add missing string.h include
+- Build cleanups
+- Updated translations
 
 Major changes since 3.0.0 are:
 - Work-around Linux 3.0 regression that caused the
