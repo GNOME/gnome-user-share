@@ -415,7 +415,7 @@ file_sharing_bluetooth_obexpush_notify_changed (GConfClient* client,
 	obexpush_set_notify (gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY, NULL));
 }
 
-static RETSIGTYPE
+static void
 cleanup_handler (int sig)
 {
 	http_down ();
