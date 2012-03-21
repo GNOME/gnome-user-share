@@ -1,4 +1,7 @@
-AC_INIT(gnome-user-share, 3.0.1)
+AC_INIT([gnome-user-share],
+        [3.0.1],
+        [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share],
+        [gnome-user-share])
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])
