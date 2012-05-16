@@ -101,16 +101,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Vai informēt par tikko saņemtiem failiem."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Saņemt failus izmantojot Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Saņemt failus izmantojot Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Koplietot failus izmantojot Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Koplietot failus izmantojot Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Koplietot failus izmantojot tīklu</b>"
+msgid "Share Files over the Network"
+msgstr "Koplietot failus izmantojot tīklu"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

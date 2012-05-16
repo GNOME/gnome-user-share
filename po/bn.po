@@ -116,18 +116,18 @@ msgid "Whether to notify about newly received files."
 msgstr "নতুন গৃহীত ফাইল সম্পর্কে ঘোষনা প্রদান করা হবে কি না।"
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>ব্লু-টুথের মাধ্যমে ফাইল গ্রহণ করা হবে</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "ব্লু-টুথের মাধ্যমে ফাইল গ্রহণ করা হবে"
 
 # Translated by sadia
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>ব্লু-টুথের মাধ্যমে ফাইল শেয়ার করা হবে</b>"
+msgid "Share Files over Bluetooth"
+msgstr "ব্লু-টুথের মাধ্যমে ফাইল শেয়ার করা হবে"
 
 # Translated by sadia
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>নেটওয়ার্কের মাধ্যমে ফাইল শেয়ার করা হবে</b>"
+msgid "Share Files over the Network"
+msgstr "নেটওয়ার্কের মাধ্যমে ফাইল শেয়ার করা হবে"
 
 # Translated by sadia
 #: ../data/file-share-properties.ui.h:4

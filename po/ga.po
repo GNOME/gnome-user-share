@@ -108,16 +108,16 @@ msgstr ""
 "gcuirfear."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Faigh Comhaid trí Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Faigh Comhaid trí Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Comhroinn Comhaid trí Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Comhroinn Comhaid trí Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Comhroinn Comhaid Tríd an Líonra</b>"
+msgid "Share Files over the Network"
+msgstr "Comhroinn Comhaid Tríd an Líonra"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

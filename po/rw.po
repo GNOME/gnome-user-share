@@ -77,7 +77,7 @@ msgstr "Buri gihe"
 
 #: file-share-properties.glade.h:1
 #, fuzzy
-msgid "<b>Share Files</b>"
+msgid "Share Files"
 msgstr "<B B"
 
 #: file-share-properties.glade.h:2

@@ -94,16 +94,16 @@ msgid "Whether to notify about newly received files."
 msgstr "𐑢𐑧𐑞𐑼 𐑑 𐑯𐑴𐑑𐑦𐑓𐑲 𐑩𐑚𐑬𐑑 𐑯𐑿𐑤𐑦 𐑮𐑦𐑕𐑰𐑝𐑛 𐑓𐑲𐑤𐑟."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>𐑮𐑦𐑕𐑰𐑝 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 ·𐑚𐑤𐑵𐑑𐑵𐑔</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "𐑮𐑦𐑕𐑰𐑝 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 ·𐑚𐑤𐑵𐑑𐑵𐑔"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>𐑖𐑺 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 ·𐑚𐑤𐑵𐑑𐑵𐑔</b>"
+msgid "Share Files over Bluetooth"
+msgstr "𐑖𐑺 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 ·𐑚𐑤𐑵𐑑𐑵𐑔"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>𐑖𐑺 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 𐑞 𐑯𐑧𐑑𐑢𐑻𐑒</b>"
+msgid "Share Files over the Network"
+msgstr "𐑖𐑺 𐑓𐑲𐑤𐑟 𐑴𐑝𐑼 𐑞 𐑯𐑧𐑑𐑢𐑻𐑒"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

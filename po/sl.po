@@ -77,16 +77,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Možnost omogoča, da sistem obvesti o novo prispelih datotekah."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Prejemanje datotek preko Bluetooth vmesnika</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Prejemanje datotek preko Bluetooth vmesnika"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Souporaba datotek preko Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Souporaba datotek preko Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Souporaba datotek preko omrežja</b>"
+msgid "Share Files over the Network"
+msgstr "Souporaba datotek preko omrežja"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

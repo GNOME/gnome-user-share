@@ -53,8 +53,8 @@ msgid "Always"
 msgstr "Always"
 
 #: file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Share Files</b>"
+msgid "Share Files"
+msgstr "Share Files"
 
 #: file-share-properties.glade.h:2
 msgid "File Sharing Preferences"

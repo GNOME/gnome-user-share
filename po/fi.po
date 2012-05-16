@@ -100,16 +100,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Huomautetaanko vastaanotetuista tiedostoista."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Tiedostojen vastaanotto bluetoothilla</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Tiedostojen vastaanotto bluetoothilla"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Tiedostojen jako bluetoothilla</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Tiedostojen jako bluetoothilla"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Jaa tiedostoja verkon yli</b>"
+msgid "Share Files over the Network"
+msgstr "Jaa tiedostoja verkon yli"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

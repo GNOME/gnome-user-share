@@ -86,16 +86,16 @@ msgid "Whether to notify about newly received files."
 msgstr "يېڭى ھۆججەت قوبۇل قىلغاندا ئۇقتۇرۇش قىلامدۇ يوق."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Bluetooth ئارقىلىق ھۆججەت قوبۇل قىلىش</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Bluetooth ئارقىلىق ھۆججەت قوبۇل قىلىش"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Bluetooth ئارقىلىق ھۆججەت ھەمبەھىر قىلىش</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Bluetooth ئارقىلىق ھۆججەت ھەمبەھىر قىلىش"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>تور ئارقىلىق ھۆججەت ھەمبەھىر قىلىش</b>"
+msgid "Share Files over the Network"
+msgstr "تور ئارقىلىق ھۆججەت ھەمبەھىر قىلىش"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

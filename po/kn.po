@@ -98,16 +98,16 @@ msgid "Whether to notify about newly received files."
 msgstr "ಹೊಸದಾಗಿ ಸ್ವೀಕರಿಸಲಾದ ಕಡತಗಳ ಬಗ್ಗೆ ಸೂಚನೆ ನೀಡಬೇಕೆ."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಸ್ವೀಕರಿಸು</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಸ್ವೀಕರಿಸು"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು</b>"
+msgid "Share Files over Bluetooth"
+msgstr "ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>ಜಾಲಬಂಧದ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು</b>"
+msgid "Share Files over the Network"
+msgstr "ಜಾಲಬಂಧದ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

@@ -73,16 +73,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Menegiñ a ra hag-eñ e vo kemennet a-fet restroù nevez degemeret"
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Degemer restroù dre vBluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Degemer restroù dre vBluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Rannañ restroù dre vBluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Rannañ restroù dre vBluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Rannañ restroù dre ar rouedad</b>"
+msgid "Share Files over the Network"
+msgstr "Rannañ restroù dre ar rouedad"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

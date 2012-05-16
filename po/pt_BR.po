@@ -102,16 +102,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Notificar sobre arquivos recebidos recentemente."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Receber arquivos pelo Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Receber arquivos pelo Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Compartilhar arquivos pelo Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Compartilhar arquivos pelo Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Compartilhar arquivos pela rede</b>"
+msgid "Share Files over the Network"
+msgstr "Compartilhar arquivos pela rede"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

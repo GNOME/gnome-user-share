@@ -86,15 +86,15 @@ msgid "Whether to notify about newly received files."
 msgstr ""
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
 msgstr ""
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
+msgid "Share Files over Bluetooth"
 msgstr ""
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
+msgid "Share Files over the Network"
 msgstr ""
 
 #: ../data/file-share-properties.ui.h:4

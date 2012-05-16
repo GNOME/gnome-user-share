@@ -96,16 +96,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Whether to notify about newly received files."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>קבל קבצים דרך Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "קבל קבצים דרך Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>שתף קבצים דרך Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "שתף קבצים דרך Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>שתף קבצים ברשת</b>"
+msgid "Share Files over the Network"
+msgstr "שתף קבצים ברשת"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

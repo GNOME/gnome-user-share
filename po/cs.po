@@ -107,16 +107,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Jestli oznamovat, že byly přijaty nové soubory."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Příjem souborů přes Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Příjem souborů přes Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Sdílení souborů přes Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Sdílení souborů přes Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Sdílení souborů přes síť</b>"
+msgid "Share Files over the Network"
+msgstr "Sdílení souborů přes síť"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

@@ -100,8 +100,8 @@ msgid "Personal File Sharing Preferences"
 msgstr "Brukervalg for deling av personlige filer"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Del filer over nettverket</b>"
+msgid "Share Files over the Network"
+msgstr "Del filer over nettverket"
 
 #: ../data/file-share-properties.ui.h:3
 msgid "_Share public files on network"
@@ -116,8 +116,8 @@ msgid "_Require password:"
 msgstr "K_rev passord:"
 
 #: ../data/file-share-properties.ui.h:6
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Del filer over Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Del filer over Bluetooth"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Share public files over _Bluetooth"
@@ -132,8 +132,8 @@ msgid "Require re_mote devices to bond with this computer"
 msgstr "Krev at ekster_ne enheter kobler seg til denne datamaskinen"
 
 #: ../data/file-share-properties.ui.h:10
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Motta filer over Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Motta filer over Bluetooth"
 
 #: ../data/file-share-properties.ui.h:11
 msgid "Receive files in _Downloads folder over Bluetooth"

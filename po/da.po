@@ -99,16 +99,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Hvorvidt der påmindes om nyligt modtagne filer."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Modtag filer over Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Modtag filer over Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Del filer over Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Del filer over Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Del filer over netværket</b>"
+msgid "Share Files over the Network"
+msgstr "Del filer over netværket"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

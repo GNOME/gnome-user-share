@@ -48,8 +48,8 @@ msgid "Always"
 msgstr "ཨ་རྟག་རང་"
 
 #: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>ཡིག་སྣོད་ཚུ་རུབ་སྤྱོད་འབད་</b>"
+msgid "Share Files"
+msgstr "ཡིག་སྣོད་ཚུ་རུབ་སྤྱོད་འབད་"
 
 #: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"

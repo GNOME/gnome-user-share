@@ -52,8 +52,8 @@ msgid "Always"
 msgstr "Gjithmonë"
 
 #: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Ndaj Skeda me të Tjerë</b>"
+msgid "Share Files"
+msgstr "Ndaj Skeda me të Tjerë"
 
 #: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"

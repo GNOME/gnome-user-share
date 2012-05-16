@@ -102,16 +102,16 @@ msgid "Whether to notify about newly received files."
 msgstr "নতুন প্ৰাপ্ত নথিপত্ৰ সম্পৰ্কে সূচনা প্ৰদান কৰা হ'ব নে নাই।"
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>ব্লুটুথৰ মাধ্যমে নথিপত্ৰ গ্ৰহণ কৰক</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "ব্লুটুথৰ মাধ্যমে নথিপত্ৰ গ্ৰহণ কৰক"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>ব্লুটুথৰ মাধ্যমে যৌথৰূপে নথিপত্ৰ ব্যৱহাৰ কৰক</b>"
+msgid "Share Files over Bluetooth"
+msgstr "ব্লুটুথৰ মাধ্যমে যৌথৰূপে নথিপত্ৰ ব্যৱহাৰ কৰক"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>নেটৱাৰ্কৰ মাধ্যমে যৌথৰূপে নথিপত্ৰ ব্যৱহাৰ কৰক</b>"
+msgid "Share Files over the Network"
+msgstr "নেটৱাৰ্কৰ মাধ্যমে যৌথৰূপে নথিপত্ৰ ব্যৱহাৰ কৰক"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

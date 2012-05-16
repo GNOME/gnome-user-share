@@ -101,16 +101,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Küldendő-e értesítés az újonnan fogadott fájlokról."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Fájlok fogadása Bluetooth-on</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Fájlok fogadása Bluetooth-on"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Fájlok megosztása Bluetooth-on</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Fájlok megosztása Bluetooth-on"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Fájlok megosztása a hálózaton</b>"
+msgid "Share Files over the Network"
+msgstr "Fájlok megosztása a hálózaton"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

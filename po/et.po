@@ -94,14 +94,14 @@ msgstr "Kas Bluetoothi klientidel on lubatud faile kirjutada või mitte."
 msgid "Whether to notify about newly received files."
 msgstr "Kas uutest vastuvõetud failidest teada anda või mitte."
 
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Failide vastuvõtmine Bluetoothi kaudu</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Failide vastuvõtmine Bluetoothi kaudu"
 
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Failide jagamine Bluetoothi kaudu</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Failide jagamine Bluetoothi kaudu"
 
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Failide jagamine võrku</b>"
+msgid "Share Files over the Network"
+msgstr "Failide jagamine võrku"
 
 msgid "Allo_w remote devices to delete files"
 msgstr "Kaugseadmetel on lubatud faile _kustutada"

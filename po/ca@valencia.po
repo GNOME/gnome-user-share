@@ -101,16 +101,16 @@ msgid "Whether to notify about newly received files."
 msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Recepció de fitxers a través del Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Recepció de fitxers a través del Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Compartició de fitxers a través del Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Compartició de fitxers a través del Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Compartició de fitxers a través de la xarxa</b>"
+msgid "Share Files over the Network"
+msgstr "Compartició de fitxers a través de la xarxa"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

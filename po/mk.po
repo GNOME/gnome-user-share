@@ -53,8 +53,8 @@ msgid "Always"
 msgstr "Секогаш"
 
 #: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>Споделени датотеки</b>"
+msgid "Share Files"
+msgstr "Споделени датотеки"
 
 #: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"

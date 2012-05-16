@@ -21,16 +21,16 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Ontvang lêers oor Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Ontvang lêers oor Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Deel lêers oor Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Deel lêers oor Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Deel lêers oor die netwerk</b>"
+msgid "Share Files over the Network"
+msgstr "Deel lêers oor die netwerk"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

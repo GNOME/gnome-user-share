@@ -59,8 +59,8 @@ msgid "Always"
 msgstr "सधै"
 
 #: ../file-share-properties.glade.h:1
-msgid "<b>Share Files</b>"
-msgstr "<b>साझेदारी फाइल</b>"
+msgid "Share Files"
+msgstr "साझेदारी फाइल"
 
 #: ../file-share-properties.glade.h:2
 msgid "File Sharing Preferences"

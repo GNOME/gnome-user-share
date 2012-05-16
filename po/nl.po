@@ -107,16 +107,16 @@ msgstr ""
 "Of de gebruiker gewaarschuwd moet worden bij nieuw ontvangen bestanden."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Bestanden ontvangen via Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Bestanden ontvangen via Bluetooth"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Bestanden delen via Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Bestanden delen via Bluetooth"
 
 #: ../data/file-share-properties.ui.h:3
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Bestanden delen op het netwerk</b>"
+msgid "Share Files over the Network"
+msgstr "Bestanden delen op het netwerk"
 
 #: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"

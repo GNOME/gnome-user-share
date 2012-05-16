@@ -103,8 +103,8 @@ msgid "Personal File Sharing Preferences"
 msgstr "Настройкі супольнага доступу да ўласных файлаў"
 
 #: ../data/file-share-properties.ui.h:2
-msgid "<b>Share Files over the Network</b>"
-msgstr "<b>Публікацыя файлаў у сетцы</b>"
+msgid "Share Files over the Network"
+msgstr "Публікацыя файлаў у сетцы"
 
 #: ../data/file-share-properties.ui.h:3
 msgid "_Share public files on network"
@@ -119,8 +119,8 @@ msgid "_Require password:"
 msgstr "Па_трабаваць пароль:"
 
 #: ../data/file-share-properties.ui.h:6
-msgid "<b>Share Files over Bluetooth</b>"
-msgstr "<b>Публікацыя файлаў праз Bluetooth</b>"
+msgid "Share Files over Bluetooth"
+msgstr "Публікацыя файлаў праз Bluetooth"
 
 #: ../data/file-share-properties.ui.h:7
 msgid "Share public files over _Bluetooth"
@@ -135,8 +135,8 @@ msgid "Require re_mote devices to bond with this computer"
 msgstr "Патрабаваць _ад аддаленых прыстасаванняў сувязі з камп'ютарам"
 
 #: ../data/file-share-properties.ui.h:10
-msgid "<b>Receive Files over Bluetooth</b>"
-msgstr "<b>Атрыманне файлаў праз Bluetooth</b>"
+msgid "Receive Files over Bluetooth"
+msgstr "Атрыманне файлаў праз Bluetooth"
 
 #: ../data/file-share-properties.ui.h:11
 msgid "Receive files in _Downloads folder over Bluetooth"
