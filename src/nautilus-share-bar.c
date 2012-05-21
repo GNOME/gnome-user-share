@@ -169,12 +169,8 @@ nautilus_share_bar_init (NautilusShareBar *bar)
 GtkWidget *
 nautilus_share_bar_new (const char *label)
 {
-        GObject *result;
-
-        result = g_object_new (NAUTILUS_TYPE_SHARE_BAR,
-                               "message-type", GTK_MESSAGE_QUESTION,
-			       "label", label,
-                               NULL);
-
-        return GTK_WIDGET (result);
+        return g_object_new (NAUTILUS_TYPE_SHARE_BAR,
+                             "message-type", GTK_MESSAGE_QUESTION,
+                             "label", label,
+                             NULL);
 }
