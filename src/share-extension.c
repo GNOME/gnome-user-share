@@ -54,7 +54,6 @@ typedef struct
 
 struct _NautilusUserSharePrivate
 {
-        GSList       *widget_list;
 };
 
 static GType nautilus_user_share_get_type      (void);
@@ -113,24 +112,6 @@ bar_response_cb (NautilusShareBar *bar,
         }
 }
 
-static void
-destroyed_callback (GtkWidget    *widget,
-                    NautilusUserShare *share)
-{
-        share->priv->widget_list = g_slist_remove (share->priv->widget_list, widget);
-}
-
-static void
-add_widget (NautilusUserShare *share,
-            GtkWidget         *widget)
-{
-        share->priv->widget_list = g_slist_prepend (share->priv->widget_list, widget);
-
-        g_signal_connect (widget, "destroy",
-                          G_CALLBACK (destroyed_callback),
-                          share);
-}
-
 static GtkWidget *
 nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
                                          const char                     *uri,
@@ -138,7 +119,6 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 {
 	GFile             *file;
 	GtkWidget         *bar;
-	NautilusUserShare *share;
 	guint              i;
 	gboolean           enable = FALSE;
 	GFile             *home;
@@ -170,8 +150,6 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	if (enable == FALSE)
 		return NULL;
 
-	share = NAUTILUS_USER_SHARE (iface);
-
 	if (is_dir[0] != FALSE && is_dir[1] != FALSE) {
 		bar = nautilus_share_bar_new (_("You can share files from this folder and receive files to it"));
 	} else if (is_dir[0] != FALSE) {
@@ -179,8 +157,6 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	} else {
 		bar = nautilus_share_bar_new (_("You can receive files over Bluetooth into this folder"));
 	}
-
-	add_widget (share, nautilus_share_bar_get_button (NAUTILUS_SHARE_BAR (bar)));
 
 	g_signal_connect (bar, "response",
 			  G_CALLBACK (bar_response_cb),
@@ -216,10 +192,6 @@ nautilus_user_share_finalize (GObject *object)
         share = NAUTILUS_USER_SHARE (object);
 
         g_return_if_fail (share->priv != NULL);
-
-        if (share->priv->widget_list != NULL) {
-                g_slist_free (share->priv->widget_list);
-        }
 
         G_OBJECT_CLASS (parent_class)->finalize (object);
 }
