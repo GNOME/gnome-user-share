@@ -37,24 +37,15 @@
 #define NAUTILUS_USER_SHARE(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), NAUTILUS_TYPE_USER_SHARE, NautilusUserShare))
 #define NAUTILUS_IS_USER_SHARE(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), NAUTILUS_TYPE_USER_SHARE))
 
-typedef struct _NautilusUserSharePrivate NautilusUserSharePrivate;
-
 typedef struct
 {
         GObject              parent_slot;
-        NautilusUserSharePrivate *priv;
 } NautilusUserShare;
 
 typedef struct
 {
         GObjectClass parent_slot;
 } NautilusUserShareClass;
-
-#define NAUTILUS_USER_SHARE_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), NAUTILUS_TYPE_USER_SHARE, NautilusUserSharePrivate))
-
-struct _NautilusUserSharePrivate
-{
-};
 
 static GType nautilus_user_share_get_type      (void);
 static void  nautilus_user_share_register_type (GTypeModule *module);
@@ -175,17 +166,13 @@ nautilus_user_share_location_widget_provider_iface_init (NautilusLocationWidgetP
 static void
 nautilus_user_share_instance_init (NautilusUserShare *share)
 {
-        share->priv = NAUTILUS_USER_SHARE_GET_PRIVATE (share);
-}
 
 }
 
 static void
 nautilus_user_share_class_init (NautilusUserShareClass *klass)
 {
-        parent_class = g_type_class_peek_parent (klass);
 
-        g_type_class_add_private (klass, sizeof (NautilusUserSharePrivate));
 }
 
 static GType share_type = 0;
