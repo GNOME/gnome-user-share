@@ -59,9 +59,6 @@ struct _NautilusUserSharePrivate
 static GType nautilus_user_share_get_type      (void);
 static void  nautilus_user_share_register_type (GTypeModule *module);
 
-static GObjectClass *parent_class;
-
-
 static void
 launch_process (char **argv, GtkWindow *parent)
 {
@@ -181,29 +178,12 @@ nautilus_user_share_instance_init (NautilusUserShare *share)
         share->priv = NAUTILUS_USER_SHARE_GET_PRIVATE (share);
 }
 
-static void
-nautilus_user_share_finalize (GObject *object)
-{
-        NautilusUserShare *share;
-
-        g_return_if_fail (object != NULL);
-        g_return_if_fail (NAUTILUS_IS_USER_SHARE (object));
-
-        share = NAUTILUS_USER_SHARE (object);
-
-        g_return_if_fail (share->priv != NULL);
-
-        G_OBJECT_CLASS (parent_class)->finalize (object);
 }
 
 static void
 nautilus_user_share_class_init (NautilusUserShareClass *klass)
 {
-        GObjectClass *object_class = G_OBJECT_CLASS (klass);
-
         parent_class = g_type_class_peek_parent (klass);
-
-        object_class->finalize = nautilus_user_share_finalize;
 
         g_type_class_add_private (klass, sizeof (NautilusUserSharePrivate));
 }
