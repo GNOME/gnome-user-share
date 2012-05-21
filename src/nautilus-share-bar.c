@@ -32,7 +32,6 @@
 struct NautilusShareBarPrivate
 {
         GtkWidget   *label;
-        char        *str;
 };
 
 enum {
@@ -55,32 +54,11 @@ nautilus_share_bar_set_property (GObject            *object,
         switch (prop_id) {
 	case PROP_LABEL: {
 		char *str;
-		g_free (self->priv->str);
 		str = g_strdup_printf ("<i>%s</i>", g_value_get_string (value));
 		gtk_label_set_markup (GTK_LABEL (self->priv->label), str);
-		self->priv->str = g_value_dup_string (value);
+                g_free (str);
 		break;
 	}
-        default:
-                G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-                break;
-        }
-}
-
-static void
-nautilus_share_bar_get_property (GObject    *object,
-                                guint       prop_id,
-                                GValue     *value,
-                                GParamSpec *pspec)
-{
-        NautilusShareBar *self;
-
-        self = NAUTILUS_SHARE_BAR (object);
-
-        switch (prop_id) {
-	case PROP_LABEL:
-		g_value_set_string (value, self->priv->str);
-		break;
         default:
                 G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
                 break;
@@ -92,14 +70,15 @@ nautilus_share_bar_class_init (NautilusShareBarClass *klass)
 {
         GObjectClass   *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->get_property = nautilus_share_bar_get_property;
         object_class->set_property = nautilus_share_bar_set_property;
 
         g_type_class_add_private (klass, sizeof (NautilusShareBarPrivate));
 
-        g_object_class_install_property (G_OBJECT_CLASS(klass),
-					 PROP_LABEL, g_param_spec_string ("label",
-									  "label", "The widget's main label", NULL, G_PARAM_READWRITE));
+        g_object_class_install_property (G_OBJECT_CLASS(klass), PROP_LABEL,
+                                         g_param_spec_string ("label", "label", 
+                                                              "The widget's main label",
+                                                              NULL, 
+                                                              G_PARAM_WRITABLE));
 }
 
 static void
