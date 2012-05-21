@@ -53,10 +53,7 @@ nautilus_share_bar_set_property (GObject            *object,
 
         switch (prop_id) {
 	case PROP_LABEL: {
-		char *str;
-		str = g_strdup_printf ("<i>%s</i>", g_value_get_string (value));
-		gtk_label_set_markup (GTK_LABEL (self->priv->label), str);
-                g_free (str);
+		gtk_label_set_text (GTK_LABEL (self->priv->label), g_value_get_string (value));
 		break;
 	}
         default:
@@ -90,7 +87,6 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         GtkWidget *vbox;
         GtkWidget *image;
         GtkWidget *button;
-        char      *hint;
         PangoAttrList *attrs;
 
         bar->priv = NAUTILUS_SHARE_BAR_GET_PRIVATE (bar);
@@ -112,10 +108,8 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         gtk_widget_show (label);
         gtk_container_add (GTK_CONTAINER (vbox), label);
 
-        bar->priv->label = gtk_label_new ("");
+        bar->priv->label = gtk_label_new (NULL);
         gtk_widget_set_halign (bar->priv->label, GTK_ALIGN_START);
-        hint = g_strdup_printf ("<i>%s</i>", "");
-        gtk_label_set_markup (GTK_LABEL (bar->priv->label), hint);
         gtk_widget_show (bar->priv->label);
         gtk_container_add (GTK_CONTAINER (vbox), bar->priv->label);
 
