@@ -31,7 +31,6 @@
 
 struct NautilusShareBarPrivate
 {
-        GtkWidget   *button;
         GtkWidget   *label;
         char        *str;
 };
@@ -42,18 +41,6 @@ enum {
 };
 
 G_DEFINE_TYPE (NautilusShareBar, nautilus_share_bar, GTK_TYPE_INFO_BAR)
-
-GtkWidget *
-nautilus_share_bar_get_button (NautilusShareBar *bar)
-{
-        GtkWidget *button;
-
-        g_return_val_if_fail (bar != NULL, NULL);
-
-        button = bar->priv->button;
-
-        return button;
-}
 
 static void
 nautilus_share_bar_set_property (GObject            *object,
@@ -120,10 +107,11 @@ nautilus_share_bar_init (NautilusShareBar *bar)
 {
         GtkWidget *content_area;
         GtkWidget *action_area;
-	GtkWidget   *label;
-        GtkWidget   *vbox;
-        GtkWidget   *image;
-        char        *hint;
+	GtkWidget *label;
+        GtkWidget *vbox;
+        GtkWidget *image;
+        GtkWidget *button;
+        char      *hint;
         PangoAttrList *attrs;
 
         bar->priv = NAUTILUS_SHARE_BAR_GET_PRIVATE (bar);
@@ -152,15 +140,15 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         gtk_widget_show (bar->priv->label);
         gtk_container_add (GTK_CONTAINER (vbox), bar->priv->label);
 
-        bar->priv->button = gtk_info_bar_add_button (GTK_INFO_BAR (bar),
-                                                     _("Launch Preferences"),
-                                                     NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES);
+        button = gtk_info_bar_add_button (GTK_INFO_BAR (bar),
+                                          _("Launch Preferences"),
+                                          NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES);
 
         image = gtk_image_new_from_icon_name ("folder-remote", GTK_ICON_SIZE_BUTTON);
         gtk_widget_show (image);
-        gtk_button_set_image (GTK_BUTTON (bar->priv->button), image);
+        gtk_button_set_image (GTK_BUTTON (button), image);
 
-        gtk_widget_set_tooltip_text (bar->priv->button,
+        gtk_widget_set_tooltip_text (button,
                                      _("Launch Personal File Sharing Preferences"));
 
         gtk_widget_show_all (vbox);

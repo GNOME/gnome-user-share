@@ -56,8 +56,6 @@ typedef struct
 GType       nautilus_share_bar_get_type          (void);
 GtkWidget  *nautilus_share_bar_new               (const char *label);
 
-GtkWidget  *nautilus_share_bar_get_button        (NautilusShareBar *bar);
-
 G_END_DECLS
 
 #endif /* __GS_SHARE_BAR_H */
