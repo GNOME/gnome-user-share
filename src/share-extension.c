@@ -104,10 +104,13 @@ launch_prefs_on_window (GtkWindow *window)
 }
 
 static void
-bar_activated_cb (NautilusShareBar *bar,
-                  gpointer         data)
+bar_response_cb (NautilusShareBar *bar,
+                 gint response,
+                 gpointer         data)
 {
-        launch_prefs_on_window (GTK_WINDOW (data));
+        if (response == NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES) {
+                launch_prefs_on_window (GTK_WINDOW (data));
+        }
 }
 
 static void
@@ -179,8 +182,8 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 
 	add_widget (share, nautilus_share_bar_get_button (NAUTILUS_SHARE_BAR (bar)));
 
-	g_signal_connect (bar, "activate",
-			  G_CALLBACK (bar_activated_cb),
+	g_signal_connect (bar, "response",
+			  G_CALLBACK (bar_response_cb),
 			  window);
 
 	gtk_widget_show (bar);

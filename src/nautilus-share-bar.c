@@ -43,14 +43,7 @@ enum {
 	PROP_LABEL
 };
 
-enum {
-       ACTIVATE,
-       LAST_SIGNAL
-};
-
-static guint           signals [LAST_SIGNAL] = { 0, };
-
-G_DEFINE_TYPE (NautilusShareBar, nautilus_share_bar, GTK_TYPE_HBOX)
+G_DEFINE_TYPE (NautilusShareBar, nautilus_share_bar, GTK_TYPE_INFO_BAR)
 
 GtkWidget *
 nautilus_share_bar_get_button (NautilusShareBar *bar)
@@ -123,68 +116,57 @@ nautilus_share_bar_class_init (NautilusShareBarClass *klass)
         g_object_class_install_property (G_OBJECT_CLASS(klass),
 					 PROP_LABEL, g_param_spec_string ("label",
 									  "label", "The widget's main label", NULL, G_PARAM_READWRITE));
-
-
-        signals [ACTIVATE] = g_signal_new ("activate",
-                                           G_TYPE_FROM_CLASS (klass),
-                                           G_SIGNAL_RUN_LAST,
-                                           G_STRUCT_OFFSET (NautilusShareBarClass, activate),
-                                           NULL, NULL,
-                                           g_cclosure_marshal_VOID__VOID,
-                                           G_TYPE_NONE, 0);
-
-}
-
-static void
-button_clicked_cb (GtkWidget       *button,
-                   NautilusShareBar *bar)
-{
-        g_signal_emit (bar, signals [ACTIVATE], 0);
 }
 
 static void
 nautilus_share_bar_init (NautilusShareBar *bar)
 {
+        GtkWidget *content_area;
+        GtkWidget *action_area;
 	GtkWidget   *label;
-        GtkWidget   *hbox;
         GtkWidget   *vbox;
         GtkWidget   *image;
         char        *hint;
+        PangoAttrList *attrs;
 
         bar->priv = NAUTILUS_SHARE_BAR_GET_PRIVATE (bar);
 
-        hbox = GTK_WIDGET (bar);
+	content_area = gtk_info_bar_get_content_area (GTK_INFO_BAR (bar));
+	action_area = gtk_info_bar_get_action_area (GTK_INFO_BAR (bar));
+        gtk_button_box_set_layout (GTK_BUTTON_BOX (action_area), GTK_BUTTONBOX_CENTER);
 
-        vbox = gtk_vbox_new (FALSE, 6);
-        gtk_widget_show (vbox);
-        gtk_box_pack_start (GTK_BOX (hbox), vbox, TRUE, TRUE, 0);
+        vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 3);
+        gtk_container_add (GTK_CONTAINER (content_area), vbox);
 
+	attrs = pango_attr_list_new ();
+	pango_attr_list_insert (attrs, pango_attr_weight_new (PANGO_WEIGHT_BOLD));
         label = gtk_label_new (_("Personal File Sharing"));
-        gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+	gtk_label_set_attributes (GTK_LABEL (label), attrs);
+	pango_attr_list_unref (attrs);
+
+        gtk_widget_set_halign (label, GTK_ALIGN_START);
         gtk_widget_show (label);
-        gtk_box_pack_start (GTK_BOX (vbox), label, TRUE, TRUE, 0);
+        gtk_container_add (GTK_CONTAINER (vbox), label);
 
         bar->priv->label = gtk_label_new ("");
+        gtk_widget_set_halign (bar->priv->label, GTK_ALIGN_START);
         hint = g_strdup_printf ("<i>%s</i>", "");
         gtk_label_set_markup (GTK_LABEL (bar->priv->label), hint);
-        gtk_misc_set_alignment (GTK_MISC (bar->priv->label), 0.0, 0.5);
         gtk_widget_show (bar->priv->label);
-        gtk_box_pack_start (GTK_BOX (vbox), bar->priv->label, TRUE, TRUE, 0);
+        gtk_container_add (GTK_CONTAINER (vbox), bar->priv->label);
 
-        bar->priv->button = gtk_button_new_with_label (_("Launch Preferences"));
-        gtk_widget_show (bar->priv->button);
-        gtk_box_pack_end (GTK_BOX (hbox), bar->priv->button, FALSE, FALSE, 0);
+        bar->priv->button = gtk_info_bar_add_button (GTK_INFO_BAR (bar),
+                                                     _("Launch Preferences"),
+                                                     NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES);
 
         image = gtk_image_new_from_icon_name ("folder-remote", GTK_ICON_SIZE_BUTTON);
         gtk_widget_show (image);
         gtk_button_set_image (GTK_BUTTON (bar->priv->button), image);
 
-        g_signal_connect (bar->priv->button, "clicked",
-                          G_CALLBACK (button_clicked_cb),
-                          bar);
-
         gtk_widget_set_tooltip_text (bar->priv->button,
                                      _("Launch Personal File Sharing Preferences"));
+
+        gtk_widget_show_all (vbox);
 }
 
 static void
@@ -208,6 +190,7 @@ nautilus_share_bar_new (const char *label)
         GObject *result;
 
         result = g_object_new (NAUTILUS_TYPE_SHARE_BAR,
+                               "message-type", GTK_MESSAGE_QUESTION,
 			       "label", label,
                                NULL);
 

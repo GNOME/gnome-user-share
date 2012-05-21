@@ -34,18 +34,20 @@ G_BEGIN_DECLS
 #define NAUTILUS_IS_SHARE_BAR_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), NAUTILUS_TYPE_SHARE_BAR))
 #define NAUTILUS_SHARE_BAR_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), NAUTILUS_TYPE_SHARE_BAR, NautilusShareBarClass))
 
+#define NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES 1
+
 typedef struct NautilusShareBarPrivate NautilusShareBarPrivate;
 
 typedef struct
 {
-        GtkHBox                 box;
+        GtkInfoBar parent;
 
         NautilusShareBarPrivate *priv;
 } NautilusShareBar;
 
 typedef struct
 {
-        GtkHBoxClass            parent_class;
+        GtkInfoBarClass  parent_class;
 
 	void (* activate) (NautilusShareBar *bar);
 
