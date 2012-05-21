@@ -27,8 +27,6 @@
 
 #include "nautilus-share-bar.h"
 
-static void nautilus_share_bar_finalize   (GObject *object);
-
 #define NAUTILUS_SHARE_BAR_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), NAUTILUS_TYPE_SHARE_BAR, NautilusShareBarPrivate))
 
 struct NautilusShareBarPrivate
@@ -107,7 +105,6 @@ nautilus_share_bar_class_init (NautilusShareBarClass *klass)
 {
         GObjectClass   *object_class = G_OBJECT_CLASS (klass);
 
-        object_class->finalize     = nautilus_share_bar_finalize;
         object_class->get_property = nautilus_share_bar_get_property;
         object_class->set_property = nautilus_share_bar_set_property;
 
@@ -167,21 +164,6 @@ nautilus_share_bar_init (NautilusShareBar *bar)
                                      _("Launch Personal File Sharing Preferences"));
 
         gtk_widget_show_all (vbox);
-}
-
-static void
-nautilus_share_bar_finalize (GObject *object)
-{
-        NautilusShareBar *bar;
-
-        g_return_if_fail (object != NULL);
-        g_return_if_fail (NAUTILUS_IS_SHARE_BAR (object));
-
-        bar = NAUTILUS_SHARE_BAR (object);
-
-        g_return_if_fail (bar->priv != NULL);
-
-        G_OBJECT_CLASS (nautilus_share_bar_parent_class)->finalize (object);
 }
 
 GtkWidget *
