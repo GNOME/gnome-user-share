@@ -72,7 +72,7 @@ notification_launch_action_on_file_cb (NotifyNotification *notification,
 				       const char *action,
 				       const char *file_uri)
 {
-	GdkScreen *screen;
+	GdkDisplay *display;
 	GAppLaunchContext *ctx;
 	GTimeVal val;
 
@@ -80,9 +80,8 @@ notification_launch_action_on_file_cb (NotifyNotification *notification,
 
 	g_get_current_time (&val);
 
-	ctx = G_APP_LAUNCH_CONTEXT (gdk_app_launch_context_new ());
-	screen = gdk_screen_get_default ();
-	gdk_app_launch_context_set_screen (GDK_APP_LAUNCH_CONTEXT (ctx), screen);
+	display = gdk_display_get_default ();
+	ctx = G_APP_LAUNCH_CONTEXT (gdk_display_get_app_launch_context (display));
 	gdk_app_launch_context_set_timestamp (GDK_APP_LAUNCH_CONTEXT (ctx), val.tv_sec);
 
 	/* We launch the file viewer for the file */
