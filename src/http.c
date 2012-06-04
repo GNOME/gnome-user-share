@@ -31,8 +31,6 @@
 #include <dbus/dbus.h>
 #endif
 
-#include <gconf/gconf-client.h>
-
 #include <stdarg.h>
 #include <string.h>
 #include <stdio.h>
@@ -327,7 +325,7 @@ spawn_httpd (int port, pid_t *pid_out)
 	char *pidfile;
 	GError *error;
 	gboolean got_pidfile;
-	GConfClient *client;
+	GSettings *settings;
 	char *str;
 	char *public_dir;
 
@@ -346,9 +344,9 @@ spawn_httpd (int port, pid_t *pid_out)
 	argv[i++] = "-C";
 	free3 = argv[i++] = g_strdup_printf ("Listen %d", port);
 
-	client = gconf_client_get_default ();
-	str = gconf_client_get_string (client,
-				       FILE_SHARING_REQUIRE_PASSWORD, NULL);
+	settings = g_settings_new (GSETTINGS_DOMAIN);
+	str = g_settings_get_string (settings,
+				       FILE_SHARING_REQUIRE_PASSWORD);
 
 	if (str && strcmp (str, "never") == 0) {
 		/* Do nothing */
@@ -361,7 +359,7 @@ spawn_httpd (int port, pid_t *pid_out)
 		argv[i++] = "RequirePasswordAlways";
 	}
 	g_free (str);
-	g_object_unref (client);
+	g_object_unref (settings);
 
 	argv[i] = NULL;
 

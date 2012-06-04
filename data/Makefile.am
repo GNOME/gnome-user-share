@@ -1,10 +1,5 @@
 SUBDIRS = icons
 
-@INTLTOOL_SCHEMAS_RULE@
-schemadir = $(GCONF_SCHEMA_FILE_DIR)
-schema_in_files = desktop_gnome_file_sharing.schemas.in
-schema_DATA = $(schema_in_files:.schemas.in=.schemas)
-	
 @INTLTOOL_DESKTOP_RULE@
 desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
@@ -17,26 +12,26 @@ autostart_in_files = gnome-user-share.desktop.in
 appdir = $(datadir)/gnome-user-share
 app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.ui
 
+gsettingsdir = $(datadir)/glib-2.0/schemas
+gsettings_in_files = org.gnome.desktop.file-sharing.gschema.xml.in
+gsettings_DATA = $(gsettings_in_files:.xml.in=.xml)
+@INTLTOOL_XML_NOMERGE_RULE@
+@GSETTINGS_RULES@
+
 install-data-local:
-if GCONF_SCHEMAS_INSTALL
-	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
-	$(GCONFTOOL) --makefile-install-rule $(schema_DATA)
-endif
+	-$(GLIB_COMPILE_SCHEMAS) $(DESTDIR)/$(datadir)/glib-2.0/schemas
 
-if GCONF_SCHEMAS_INSTALL
 uninstall-local:
-	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
-	$(GCONFTOOL) --makefile-uninstall-rule $(schema_DATA)
-endif
+	-$(GLIB_COMPILE_SCHEMAS) $(DESTDIR)/$(datadir)/glib-2.0/schemas
 
-EXTRA_DIST = $(schema_in_files) \
-	$(app_DATA)		\
-	$(desktop_in_files)	\
+EXTRA_DIST = $(app_DATA)  \
+	$(desktop_in_files)   \
+	$(gsettings_in_files) \
 	gnome-user-share.desktop.in.in \
 	file-share-properties.ui
 
-CLEANFILES = $(desktop_DATA) $(autostart_DATA)
+CLEANFILES = $(desktop_DATA) $(autostart_DATA) $(gsettings_DATA)
 
-DISTCLEANFILES = $(schema_DATA)
+DISTCLEANFILES = $(gsettings_DATA)
 
 -include $(top_srcdir)/git.mk

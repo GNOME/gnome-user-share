@@ -30,7 +30,6 @@
 #include <gtk/gtk.h>
 #include <libnotify/notify.h>
 #include <dbus/dbus-glib.h>
-#include <gconf/gconf-client.h>
 #include <dbus/dbus-glib-lowlevel.h>
 #include <canberra-gtk.h>
 
@@ -341,8 +340,8 @@ static void
 transfer_completed_cb (DBusGProxy *session,
 		       gpointer user_data)
 {
-	GConfClient *client;
-	gboolean display_notify; 
+	GSettings *settings;
+	gboolean display_notify;
 	const char *filename;
 
 	filename = (const char *) g_object_get_data (G_OBJECT (session), "filename");
@@ -351,11 +350,11 @@ transfer_completed_cb (DBusGProxy *session,
 
 	if (filename == NULL)
 		return;
-	
-	client = gconf_client_get_default ();	
-	display_notify = gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY, NULL);
-	g_object_unref (client);
-	
+
+	settings = g_settings_new (GSETTINGS_DOMAIN);
+	display_notify = g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY);
+	g_object_unref (settings);
+
 	if (display_notify) {
 		show_notification (filename);
 	} else {
@@ -536,9 +535,9 @@ obexpush_init (void)
 					   G_TYPE_STRING, G_TYPE_STRING, G_TYPE_UINT64, G_TYPE_INVALID);
 
 	if (!notify_init("gnome-user-share")) {
-		g_warning("Unable to initialize the notification system\n");    
+		g_warning("Unable to initialize the notification system\n");
         }
-	
+
 	dbus_connection_set_exit_on_disconnect (dbus_g_connection_get_connection (connection), FALSE);
 
 	return TRUE;
