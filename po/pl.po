@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-16 18:29+0200\n"
-"PO-Revision-Date: 2012-05-16 18:30+0200\n"
+"POT-Creation-Date: 2012-08-03 23:12+0200\n"
+"PO-Revision-Date: 2012-08-03 23:13+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -27,7 +27,7 @@ msgstr "Współdzielenie katalogu Publiczny przez sieć"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
-"If this is true, the Public directory in the users home directory will be "
+"If this is true, the Public directory in the user's home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
 "Jeśli ustawione na \"true\", katalog Publiczny w katalogu domowym "
@@ -51,7 +51,7 @@ msgstr "Współdzielenie katalogu Publiczny przez Bluetooth"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid ""
-"If this is true, the Public directory in the users home directory will be "
+"If this is true, the Public directory in the user's home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 "Jeśli ustawione na \"true\", katalog Publiczny w katalogu domowym "
@@ -84,7 +84,7 @@ msgstr ""
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
+"directory when the user is logged in."
 msgstr ""
 "Jeśli ustawione na \"true\", urządzenia Bluetooth mogą wysyłać pliki do "
 "katalogu Pobrane użytkownika po zalogowaniu."
@@ -159,7 +159,7 @@ msgid "_Notify about received files"
 msgstr "P_owiadamianie o odebranych plikach"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:103
 msgid "Personal File Sharing"
 msgstr "Współdzielenie osobistych plików"
 
@@ -171,27 +171,27 @@ msgstr "Preferencje współdzielenia plików"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Uruchamia współdzielenie osobistych plików, jeśli włączone"
 
-#: ../src/nautilus-share-bar.c:174
+#: ../src/nautilus-share-bar.c:117
 msgid "Launch Preferences"
 msgstr "Uruchom preferencje"
 
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:125
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Uruchamia preferencje współdzielenia osobistych plików"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
+#: ../src/share-extension.c:69
+msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Nie można uruchomić preferencji współdzielenia osobistych plików"
 
-#: ../src/share-extension.c:173
+#: ../src/share-extension.c:142
 msgid "You can share files from this folder and receive files to it"
 msgstr "Można współdzielić pliki z tego katalogu i odbierać do niego pliki"
 
-#: ../src/share-extension.c:175
+#: ../src/share-extension.c:144
 msgid "You can share files from this folder over the network and Bluetooth"
 msgstr "Można współdzielić pliki z tego katalogu przez sieć i Bluetooth"
 
-#: ../src/share-extension.c:177
+#: ../src/share-extension.c:146
 msgid "You can receive files over Bluetooth into this folder"
 msgstr "Można odbierać pliki przez Bluetooth do tego katalogu"
 
@@ -249,23 +249,23 @@ msgid "%s's public files on %s"
 msgstr "Pliki publiczne użytkownika %s na %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:134
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Odebrano plik \"%s\" przez Bluetooth"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:136
 msgid "You received a file"
 msgstr "Odebrano plik"
 
-#: ../src/obexpush.c:152
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Otwórz plik"
 
-#: ../src/obexpush.c:156
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Wyświetl plik"
 
-#: ../src/obexpush.c:173
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Ukończono odbiór pliku"
