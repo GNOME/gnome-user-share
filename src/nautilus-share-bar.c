@@ -85,7 +85,6 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         GtkWidget *action_area;
 	GtkWidget *label;
         GtkWidget *vbox;
-        GtkWidget *image;
         GtkWidget *button;
         PangoAttrList *attrs;
 
@@ -114,12 +113,8 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         gtk_container_add (GTK_CONTAINER (vbox), bar->priv->label);
 
         button = gtk_info_bar_add_button (GTK_INFO_BAR (bar),
-                                          _("Launch Preferences"),
+                                          _("Preferences"),
                                           NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES);
-
-        image = gtk_image_new_from_icon_name ("folder-remote", GTK_ICON_SIZE_BUTTON);
-        gtk_widget_show (image);
-        gtk_button_set_image (GTK_BUTTON (button), image);
 
         gtk_widget_set_tooltip_text (button,
                                      _("Launch Personal File Sharing Preferences"));

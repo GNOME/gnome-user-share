@@ -139,11 +139,11 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 		return NULL;
 
 	if (is_dir[0] != FALSE && is_dir[1] != FALSE) {
-		bar = nautilus_share_bar_new (_("You can share files from this folder and receive files to it"));
+		bar = nautilus_share_bar_new (_("May be used to share or receive files"));
 	} else if (is_dir[0] != FALSE) {
-		bar = nautilus_share_bar_new (_("You can share files from this folder over the network and Bluetooth"));
+		bar = nautilus_share_bar_new (_("May be shared over the network or Bluetooth"));
 	} else {
-		bar = nautilus_share_bar_new (_("You can receive files over Bluetooth into this folder"));
+		bar = nautilus_share_bar_new (_("May be used to receive files over Bluetooth"));
 	}
 
 	g_signal_connect (bar, "response",
