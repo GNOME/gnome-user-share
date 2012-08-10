@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.master.gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-03 20:07+0000\n"
-"PO-Revision-Date: 2012-08-06 12:56+0530\n"
+"POT-Creation-Date: 2012-08-08 10:15+0000\n"
+"PO-Revision-Date: 2012-08-10 12:23+0530\n"
 "Last-Translator: \n"
 "Language-Team: gu_IN <kde-i18n-doc@kde.org>\n"
 "Language: \n"
@@ -26,9 +26,6 @@ msgid "Share Public directory over the network"
 msgstr "નેટવર્ક પર જાહેર ડિરેક્ટરીને વહેંચો"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-#| msgid ""
-#| "If this is true, the Public directory in the users home directory will be "
-#| "shared over the network when the user is logged in."
 msgid ""
 "If this is true, the Public directory in the user's home directory will be "
 "shared over the network when the user is logged in."
@@ -52,9 +49,6 @@ msgid "Share Public directory over Bluetooth"
 msgstr "બ્લુટુથ પર જાહેર ડિરેક્ટરી વહેંચો"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
-#| msgid ""
-#| "If this is true, the Public directory in the users home directory will be "
-#| "shared over Bluetooth when the user is logged in."
 msgid ""
 "If this is true, the Public directory in the user's home directory will be "
 "shared over Bluetooth when the user is logged in."
@@ -83,15 +77,12 @@ msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ક્યાંતો ObexPush ની મદદથી બ્લુટુથ ક્લાઇન્ટો ફાઇલો ને મોકલી શકે છે."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
-#| msgid ""
-#| "If this is true, Bluetooth devices can send files to the user's Downloads "
-#| "directory when logged in."
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when the user is logged in."
 msgstr ""
-"જો આ true હોય, તો વપરાશકર્તાઓ ડાઉનલોડ ડિરેક્ટરીમાં બ્લુટુથ ઉપકરણો એ ફાઇલો ને મોકલી શકે "
-"છે જ્યારે વપરાશકર્તા પ્રવેશ કરે."
+"જો આ true હોય, તો વપરાશકર્તાઓ ડાઉનલોડ ડિરેક્ટરીમાં બ્લુટુથ ઉપકરણો એ ફાઇલો ને મોકલી "
+"શકે છે જ્યારે વપરાશકર્તા પ્રવેશ કરે."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid "When to accept files sent over Bluetooth"
@@ -162,7 +153,7 @@ msgid "_Notify about received files"
 msgstr "મળેલ ફાઇલો વિશે સૂચિત કરો (_N)"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:103
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "ખાનગી ફાઈલ વહેંચણી"
 
@@ -174,30 +165,32 @@ msgstr "ફાઇલોની વહેંચણી માટે પસંદગ
 msgid "Launch Personal File Sharing if enabled"
 msgstr "વ્યક્તિગત ફાઇલ વહેંચણીને પ્રકાશિત કરો જો સક્રિય હોય તો"
 
-#: ../src/nautilus-share-bar.c:117
-msgid "Launch Preferences"
-msgstr "શરૂ કરવાની પસંદગીઓ"
+#: ../src/nautilus-share-bar.c:116
+#| msgid "Launch Preferences"
+msgid "Preferences"
+msgstr "પસંદગીઓ"
 
-#: ../src/nautilus-share-bar.c:125
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "વ્યક્તિગત ફાઈલ વહેંચણી પસંદગીઓને શરૂ કરો"
 
 #: ../src/share-extension.c:69
-#| msgid "Unable to launch the Personal File Sharing preferences"
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "વ્યક્તિગત ફાઈલ વહેંચણી પસંદગીઓ ને શરૂ કરવાનું અસમર્થ"
 
 #: ../src/share-extension.c:142
-msgid "You can share files from this folder and receive files to it"
-msgstr "આ ફાઇલમાંથી તમે ફાઇલોને વહેંચી શકો છો અને તેની માટે ફાઇલોને મેળવો"
+msgid "May be used to share or receive files"
+msgstr "ફાઇલોને વહેંચવા અથવા મેળવવા માટે વાપરી શકાય છે"
 
 #: ../src/share-extension.c:144
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "નેટવર્ક અને બ્લૂટુથ પર આ ફોલ્ડર માંથી ફાઇલોને તમે વહેંચી શકો છો"
+#| msgid "You can share files from this folder over the network and Bluetooth"
+msgid "May be shared over the network or Bluetooth"
+msgstr "નેટવર્ક અથવા બ્લુટુથ પર વહેંચી શકાય છે"
 
 #: ../src/share-extension.c:146
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "આ ફોલ્ડરમાં બ્લૂટુથ પર ફાઇલોને મેળવી શકો છો"
+#| msgid "Receive Files over Bluetooth"
+msgid "May be used to receive files over Bluetooth"
+msgstr "બ્લુટુથ પર ફાઇલોને મેળવવા માટે વાપરી શકાય છે"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -273,6 +266,12 @@ msgstr "ફાઇલને બતાવો"
 #: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "ફાઇલ રિસેપ્શન સમાપ્ત"
+
+#~ msgid "You can share files from this folder and receive files to it"
+#~ msgstr "આ ફાઇલમાંથી તમે ફાઇલોને વહેંચી શકો છો અને તેની માટે ફાઇલોને મેળવો"
+
+#~ msgid "You can receive files over Bluetooth into this folder"
+#~ msgstr "આ ફોલ્ડરમાં બ્લૂટુથ પર ફાઇલોને મેળવી શકો છો"
 
 #~ msgid "Please log in as the user guest"
 #~ msgstr "વપરાશકર્તા મહેમાન તરીકે મહેરબાની કરીને પ્રવેશો"
