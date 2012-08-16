@@ -1,31 +1,27 @@
-# translation of gnome-user-share.master.gl.po to Galician
-# Galician translation of gnome-utils.
+# Galician translation of gnome-user-share.
 # Copyright (C) 2000-2001 Jesús Bravo Álvarez.
 # Copyright (C) 1999 Ruben Lopez Gomez.
 #
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en http://www.trasno.net
 #
-# First Version: 2000-04-09 18:45+0200
-#
-# Jesús Bravo Álvarez <jba@pobox.com>, 2000-2001.
 # Ruben Lopez Gomez <ryu@mundivia.es>, 1999. (logview from gnome-admin).
+# Jesús Bravo Álvarez <jba@pobox.com>, 2000, 2001.
 # Ignacio Casal Quinteiro <adorador_del_heavy@hotmail.com>, 2004.
 # Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
 # Ignacio Casal Quinteiro <icq@cvs.gnome.org>, 2007, 2008.
 # Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
-# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
-# Fran Dieguez <frandieguez@gnome.org>, 2012.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-05 16:17+0200\n"
-"PO-Revision-Date: 2012-08-05 16:18+0200\n"
-"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"POT-Creation-Date: 2012-08-17 00:51+0200\n"
+"PO-Revision-Date: 2012-08-15 19:03+0100\n"
+"Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -169,7 +165,7 @@ msgid "_Notify about received files"
 msgstr "_Informar sobre os ficheiros recibidos"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:103
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Compartir ficheiros persoais"
 
@@ -181,11 +177,11 @@ msgstr "Preferencias para compartir ficheiros"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Iniciar Compartir ficheiros persoais, se está activado"
 
-#: ../src/nautilus-share-bar.c:117
-msgid "Launch Preferences"
-msgstr "Preferencias de inicio"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Preferencias"
 
-#: ../src/nautilus-share-bar.c:125
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Iniciar as Preferencias de compartir ficheiros persoais"
 
@@ -195,20 +191,16 @@ msgstr ""
 "Non é posíbel iniciar as Preferencias de compartición de ficheiros persoais"
 
 #: ../src/share-extension.c:142
-msgid "You can share files from this folder and receive files to it"
-msgstr ""
-"Vostede pode compartir ficheiros desde o seu cartafol e recibir ficheiros "
-"cara el"
+msgid "May be used to share or receive files"
+msgstr "Pode empregarse para compartir ou recibir ficheiros"
 
 #: ../src/share-extension.c:144
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr ""
-"Vostede pode compartir ficheiros desde o seu cartafol pola rede ou mediante "
-"Bluetooth"
+msgid "May be shared over the network or Bluetooth"
+msgstr "Pode compartirse pola rede ou mediante Bluetooth"
 
 #: ../src/share-extension.c:146
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Vostede pode recibir ficheiros por Bluetooth neste cartafol"
+msgid "May be used to receive files over Bluetooth"
+msgstr "Pode empregarse para recibir ficheiros mediante Bluetooth"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -284,3 +276,11 @@ msgstr "Mostrar o ficheiro"
 #: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Recepción de ficheiro completada"
+
+#~ msgid "You can share files from this folder and receive files to it"
+#~ msgstr ""
+#~ "Vostede pode compartir ficheiros desde o seu cartafol e recibir ficheiros "
+#~ "cara el"
+
+#~ msgid "You can receive files over Bluetooth into this folder"
+#~ msgstr "Vostede pode recibir ficheiros por Bluetooth neste cartafol"
