@@ -3,9 +3,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-26 13:15+0300\n"
-"PO-Revision-Date: 2012-02-26 13:15+0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-08 10:15+0000\n"
+"PO-Revision-Date: 2012-08-19 00:03+0300\n"
 "Last-Translator: Kasia Bondarava <kasia.bondarava@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
@@ -23,7 +24,7 @@ msgstr "Публікаваць каталог \"Публічныя файлы\" 
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
-"If this is true, the Public directory in the users home directory will be "
+"If this is true, the Public directory in the user's home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
 "Калі ўключана, каталог \"Публічныя файлы\" ў дамашнім каталогу карыстальніка "
@@ -47,7 +48,7 @@ msgstr "Публікаваць каталог \"Публічныя файлы\" 
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid ""
-"If this is true, the Public directory in the users home directory will be "
+"If this is true, the Public directory in the user's home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 "Калі ўключана, каталог \"Публічныя файлы\" ў дамашнім каталогу карыстальніка "
@@ -77,10 +78,10 @@ msgstr "Ці кліенты Bluetooth могуць паслаць файлы п�
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
+"directory when the user is logged in."
 msgstr ""
 "Калі ўключана, прыстасаванні Bluetooth могуць пасылаць файлы ў каталог "
-"\"Сцягнутыя файлы\", калі карыстальнік увайшоў у сеанс."
+"карыстальніка \"Сцягнутыя файлы\", калі ён увайшоў у сеанс."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:12
 msgid "When to accept files sent over Bluetooth"
@@ -151,7 +152,7 @@ msgid "_Notify about received files"
 msgstr "_Апавяшчаць аб атрыманых файлах"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Супольны доступ да ўласных файлаў"
 
@@ -164,31 +165,29 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr ""
 "Запуск праграмы арганізацыі супольнага доступу да файлаў (калі ўключана)"
 
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "Запусціць настройку"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Настройкі"
 
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Запусціць настройку супольнага доступу да файлаў"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
+#: ../src/share-extension.c:69
+msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Не ўдалося запусціць настройку супольнага доступу да файлаў"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr ""
-"Вы можаце публікаваць файлы з гэтай папкі і атрымліваць файлы, кладучы іх "
-"сюды"
+#: ../src/share-extension.c:142
+msgid "May be used to share or receive files"
+msgstr "Прыдатна для арганізацыі супольнага доступу і перадачы файлаў"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "Вы можаце публікаваць файлы з гэтай папкі ў сетцы і праз Bluetooth"
+#: ../src/share-extension.c:144
+msgid "May be shared over the network or Bluetooth"
+msgstr "Можа быць апублікавана ў сетцы ці праз Bluetooth"
 
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Вы можаце атрымліваць у гэту папку файлы праз Bluetooth"
+#: ../src/share-extension.c:146
+msgid "May be used to receive files over Bluetooth"
+msgstr "Прыдатна для атрымання файлаў праз Bluetooth"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -244,23 +243,23 @@ msgid "%s's public files on %s"
 msgstr "%s: публічныя файлы на %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:134
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Вы атрымалі \"%s\" праз Bluetooth"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:136
 msgid "You received a file"
 msgstr "Вы атрымалі файл"
 
-#: ../src/obexpush.c:152
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Адкрыць файл"
 
-#: ../src/obexpush.c:156
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Паказаць файл"
 
-#: ../src/obexpush.c:173
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Атрыманне файла закончана"
