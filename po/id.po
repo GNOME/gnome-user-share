@@ -1,133 +1,165 @@
 # Indonesian translation for gnome-user-share.
 # Copyright (C) 2010 gnome-user-share's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-share package.
-# Ekasari <iin@informatika.lipi.go.id>, 2010.
 #
+# Ekasari <iin@informatika.lipi.go.id>, 2010.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&component=general\n"
-"POT-Creation-Date: 2010-04-21 21:17+0000\n"
-"PO-Revision-Date: 2010-04-23 15:44+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-12 15:17+0000\n"
+"PO-Revision-Date: 2012-08-13 21:03+0700\n"
+"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
+"Language-Team: Indonesian <gnome@i15n.org>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Indonesian\n"
 "X-Poedit-Country: Indonesia\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
-msgstr "Jika ini benar, perangkat Bluetooth dapat mengirim berkas-berkas ke direktori Downloads pengguna ketika login."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
-msgstr "Jika ini benar, direktori Publik pada direktori home pengguna akan dibagi melalui Bluetooth bila pengguna tersebut login."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
-msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
-msgstr "Jika ini benar, direktori Publik pada direktori home pengguna akan berbagi melalui jaringan ketika pengguna login."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-msgid "Share Public directory over Bluetooth"
-msgstr "Berbagi direktori Publik melalui Bluetooth"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
 msgid "Share Public directory over the network"
 msgstr "Berbagi direktori Publik melalui jaringan"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
-msgid "When to accept files sent over Bluetooth"
-msgstr "Kapan menerima berkas yang dikirim melalui Bluetooth"
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+msgid ""
+"If this is true, the Public directory in the user's home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"Apabila berisi \"true\", maka direktori Publik pada folder beranda pengguna "
+"akan dibagikan pula pada jaringan saat pengguna tersebut log masuk."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
-msgstr "Kapan menerima berkas yang dikirim melalui Bluetooth. nilai-nilai yang mungkin adalah \"never\" (selalu), \"bonded\" (terikat) dan \"ask\" (bertanya)."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
-msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr "Kapan meminta kata kunci. nilai-nilai yang mungkin adalah \"never\" (tidak pernah), \"on_write\" (saat menulis), dan \"always\" (selalu)."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid "When to require passwords"
 msgstr "Kapan meminta kata kunci"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Apakah klien Bluetooth dapat mengirim berkas-berkas menggunakan ObexPush."
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Kapan meminta kata kunci. nilai-nilai yang mungkin adalah \"never\" (tidak "
+"pernah), \"on_write\" (saat menulis), dan \"always\" (selalu)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Apakah klien Bluetooth perlu dipasangkan dengan komputer untuk mengirimkan berkas-berkas."
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "Berbagi direktori Publik melalui Bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
-msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
-msgstr "Apakah memperbolehkan klien Bluetooth untuk menulis berkas, atau berbagi berkas hanya untuk baca."
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+msgid ""
+"If this is true, the Public directory in the user's home directory will be "
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"Apabila berisi \"true\", maka direktori Publik pada folder beranda pengguna "
+"akan dibagikan melalui Bluetooth apabila pengguna tersebut log masuk."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "Apakah memungkinkan klien Bluetooth untuk menulis berkas."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+"Apakah memperbolehkan klien Bluetooth untuk menulis berkas, atau berbagi "
+"berkas hanya untuk baca."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Apakah klien Bluetooth perlu dipasangkan dengan komputer untuk mengirimkan "
+"berkas-berkas."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr ""
+"Apakah klien Bluetooth dapat mengirim berkas-berkas menggunakan ObexPush."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when the user is logged in."
+msgstr ""
+"Apabila berisi \"true\", maka perangkat Bluetooth dapat mengirim berkas ke "
+"folder Unduhan saat pengguna tersebut log masuk."
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "Kapan menerima berkas yang dikirim melalui Bluetooth"
+
+#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Kapan menerima berkas yang dikirim melalui Bluetooth. nilai-nilai yang "
+"mungkin adalah \"never\" (selalu), \"bonded\" (terikat) dan \"ask"
+"\" (bertanya)."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Apakah akan memberitahu tentang berkas yang baru diterima."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "Receive Files over Bluetooth"
-msgstr "Menerima Berkas melalui Bluetooth"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over Bluetooth"
-msgstr "Berbagi Berkas melalui Bluetooth"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "Share Files over the Network"
-msgstr "Berbagi Berkas melalui Jaringan"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "M_engijinkan perangkat remote untuk menghapus berkas"
-
-#: ../data/file-share-properties.ui.h:5
 msgid "Personal File Sharing Preferences"
 msgstr "Preferensi Berbagi Berkas Personal"
 
-#: ../data/file-share-properties.ui.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Menerima berkas dalam folder _Downloads melalui Bluetooth"
+#: ../data/file-share-properties.ui.h:2
+msgid "Share Files over the Network"
+msgstr "Berbagi Berkas melalui Jaringan"
 
-#: ../data/file-share-properties.ui.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Perlu perangkat re_mote untuk ikatan dengan komputer ini"
+#: ../data/file-share-properties.ui.h:3
+msgid "_Share public files on network"
+msgstr "Berbagi berka_s publik pada jaringan"
 
-#: ../data/file-share-properties.ui.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Berbagi berkas publik melalui _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "_Accept files: "
-msgstr "Terim_a berkas:"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "_Notify about received files"
-msgstr "Memberitahuka_n tentang berkas yang diterima"
-
-#: ../data/file-share-properties.ui.h:11
+#: ../data/file-share-properties.ui.h:4
 msgid "_Password:"
 msgstr "_Kata sandi:"
 
-#: ../data/file-share-properties.ui.h:12
+#: ../data/file-share-properties.ui.h:5
 msgid "_Require password:"
 msgstr "_Memerlukan kata sandi:"
 
+#: ../data/file-share-properties.ui.h:6
+msgid "Share Files over Bluetooth"
+msgstr "Berbagi Berkas melalui Bluetooth"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Share public files over _Bluetooth"
+msgstr "Berbagi berkas publik melalui _Bluetooth"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Allo_w remote devices to delete files"
+msgstr "M_engijinkan perangkat remote untuk menghapus berkas"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Perlu perangkat re_mote untuk ikatan dengan komputer ini"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "Receive Files over Bluetooth"
+msgstr "Menerima Berkas melalui Bluetooth"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Menerima berkas dalam folder _Downloads melalui Bluetooth"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Accept files: "
+msgstr "Terim_a berkas: "
+
 #: ../data/file-share-properties.ui.h:13
-msgid "_Share public files on network"
-msgstr "_Berbagi berkas publik pada jaringan "
+msgid "_Notify about received files"
+msgstr "Memberitahuka_n tentang berkas yang diterima"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2
-#: ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Berbagi Berkas Pribadi"
 
@@ -135,64 +167,63 @@ msgstr "Berbagi Berkas Pribadi"
 msgid "Preferences for sharing of files"
 msgstr "Preferensi untuk berbagi berkas"
 
-#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Luncurkan Berbagi Berkas Pribadi  jika diaktifkan "
+msgstr "Luncurkan Berbagi Berkas Pribadi jika diaktifkan"
 
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "Preferensi Peluncuran"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Preferensi"
 
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Luncurkan Preferensi Berbagi Berkas Pribadi"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
-msgstr "Tidak dapat meluncurkan preferensi Berbagi Berkas Pribadi"
+#: ../src/share-extension.c:69
+msgid "Unable to launch the Personal File Sharing Preferences"
+msgstr "Tidak dapat meluncurkan Preferensi Berbagi Berkas Pribadi"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr "Anda dapat berbagi dan menerima berkas dari folder ini"
+#: ../src/share-extension.c:142
+msgid "May be used to share or receive files"
+msgstr "Mungkin digunakan untuk berbagi atau menerima berkas"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "Anda dapat berbagi berkas dari folder ini melalui jaringan dan Bluetooth"
+#: ../src/share-extension.c:144
+msgid "May be shared over the network or Bluetooth"
+msgstr "Mungkin dibagikan pada jaringan atau Bluetooth"
 
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Anda dapat menerima berkas melalui Bluetooth ke dalam folder ini"
+#: ../src/share-extension.c:146
+msgid "May be used to receive files over Bluetooth"
+msgstr "Mungkin digunakan untuk menerima berkas melalui Bluetooth"
 
-#: ../src/file-share-properties.c:436
+#: ../src/file-share-properties.c:435
 msgid "No reason"
 msgstr "Tidak ada alasan"
 
-#: ../src/file-share-properties.c:464
+#: ../src/file-share-properties.c:463
 msgid "Could not display the help contents."
 msgstr "Tidak dapat menampilkan isi bantuan."
 
-#: ../src/file-share-properties.c:524
+#: ../src/file-share-properties.c:497
 msgid "Could not build interface."
 msgstr "Tidak dapat membangun antarmuka."
 
-#: ../src/file-share-properties.c:566
+#: ../src/file-share-properties.c:535
 msgid "Never"
 msgstr "Tak pernah"
 
-#: ../src/file-share-properties.c:569
+#: ../src/file-share-properties.c:538
 msgid "When writing files"
 msgstr "Saat penulisan berkas"
 
-#: ../src/file-share-properties.c:572
-#: ../src/file-share-properties.c:595
+#: ../src/file-share-properties.c:541 ../src/file-share-properties.c:564
 msgid "Always"
 msgstr "Selalu"
 
-#: ../src/file-share-properties.c:598
+#: ../src/file-share-properties.c:567
 msgid "Only for set up devices"
 msgstr "Hanya untuk perangkat yang telah ditata"
 
-#: ../src/file-share-properties.c:603
+#: ../src/file-share-properties.c:572
 msgid "Ask"
 msgstr "Bertanya"
 
@@ -205,37 +236,37 @@ msgstr "Bertanya"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:134
+#: ../src/http.c:135
 #, c-format
 msgid "%s's public files"
-msgstr "Berkas publik milik %s  "
+msgstr "Berkas publik milik %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:138
+#: ../src/http.c:139
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Berkas publik milik %s pada %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:134
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Anda menerima \"%s\" melalui Bluetooth"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:136
 msgid "You received a file"
 msgstr "Anda menerima sebuah berkas"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Buka Berkas"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Perlihatkan Berkas"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Penerimaan berkas lengkap"
 
