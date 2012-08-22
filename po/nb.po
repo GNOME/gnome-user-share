@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 3.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-28 16:08+0100\n"
-"PO-Revision-Date: 2012-01-28 16:10+0100\n"
+"POT-Creation-Date: 2012-08-22 12:23+0200\n"
+"PO-Revision-Date: 2012-08-22 12:25+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -22,11 +22,9 @@ msgstr "Del Public-mappen på nettverket"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:2
 msgid ""
-"If this is true, the Public directory in the users home directory will be "
+"If this is true, the Public directory in the user's home directory will be "
 "shared over the network when the user is logged in."
-msgstr ""
-"Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog "
-"bli delt over nettverket når brukeren logger inn."
+msgstr "Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog bli delt over nettverket når brukeren er logget inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:3
 msgid "When to require passwords"
@@ -45,11 +43,9 @@ msgstr "Del Public-mappen over Bluetooth"
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:6
 msgid ""
-"If this is true, the Public directory in the users home directory will be "
+"If this is true, the Public directory in the user's home directory will be "
 "shared over Bluetooth when the user is logged in."
-msgstr ""
-"Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog "
-"bli delt via Bluetooth når brukeren logger inn."
+msgstr "Hvis denne settes til «true» vil katalogen Public i brukerens hjemmekatalog bli delt via Bluetooth når brukeren er logget inn."
 
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
@@ -74,7 +70,7 @@ msgstr "Om Bluetooth-klienter kan sende filer med ObexPush."
 #: ../data/desktop_gnome_file_sharing.schemas.in.h:11
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
+"directory when the user is logged in."
 msgstr ""
 "Hvis denne settes til «true» kan Bluetooth-enheter sende filer til katalogen "
 "Downloads i brukerens hjemmekatalog når brukeren er logget inn."
@@ -148,7 +144,7 @@ msgid "_Notify about received files"
 msgstr "Varsle om _mottatte filer"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Deling av personlige filer"
 
@@ -160,29 +156,29 @@ msgstr "Brukervalg for deling av filer"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Start brukerdeling hvis aktivert"
 
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "Start brukervalg"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Brukervalg"
 
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Start brukervalg for deling av personlige filer"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
+#: ../src/share-extension.c:69
+msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Kan ikke starte brukervalg for deling av personlige filer"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr "Du kan dele filer til denne mappen og motta filer til den"
+#: ../src/share-extension.c:142
+msgid "May be used to share or receive files"
+msgstr "Kan brukes til å dele eller motta filer"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "Du kan dele filer fra denne mappen over nettverket og Bluetooth"
+#: ../src/share-extension.c:144
+msgid "May be shared over the network or Bluetooth"
+msgstr "Kan deles over nettverket eller Bluetooth"
 
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Du kan motta filer til denne mappen via Bluetooth"
+#: ../src/share-extension.c:146
+msgid "May be used to receive files over Bluetooth"
+msgstr "Kan brukes til å motta filer over Bluetooth"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
@@ -238,23 +234,23 @@ msgid "%s's public files on %s"
 msgstr "%s's offentlige filer på %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:134
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Du mottok «%s» via Bluetooth"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:136
 msgid "You received a file"
 msgstr "Du mottok en fil"
 
-#: ../src/obexpush.c:152
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Åpne fil"
 
-#: ../src/obexpush.c:156
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Vis fil"
 
-#: ../src/obexpush.c:173
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Mottak av fil fullført"
