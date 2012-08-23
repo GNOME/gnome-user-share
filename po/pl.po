@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-03 23:12+0200\n"
-"PO-Revision-Date: 2012-08-03 23:13+0200\n"
+"POT-Creation-Date: 2012-08-23 03:42+0200\n"
+"PO-Revision-Date: 2012-08-23 03:43+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -159,7 +159,7 @@ msgid "_Notify about received files"
 msgstr "P_owiadamianie o odebranych plikach"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:103
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Współdzielenie osobistych plików"
 
@@ -171,11 +171,11 @@ msgstr "Preferencje współdzielenia plików"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Uruchamia współdzielenie osobistych plików, jeśli włączone"
 
-#: ../src/nautilus-share-bar.c:117
-msgid "Launch Preferences"
-msgstr "Uruchom preferencje"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Preferencje"
 
-#: ../src/nautilus-share-bar.c:125
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Uruchamia preferencje współdzielenia osobistych plików"
 
@@ -184,16 +184,16 @@ msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Nie można uruchomić preferencji współdzielenia osobistych plików"
 
 #: ../src/share-extension.c:142
-msgid "You can share files from this folder and receive files to it"
-msgstr "Można współdzielić pliki z tego katalogu i odbierać do niego pliki"
+msgid "May be used to share or receive files"
+msgstr "Można używać do współdzielenie lub pobierania plików"
 
 #: ../src/share-extension.c:144
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "Można współdzielić pliki z tego katalogu przez sieć i Bluetooth"
+msgid "May be shared over the network or Bluetooth"
+msgstr "Można współdzielić przez sieć i Bluetooth"
 
 #: ../src/share-extension.c:146
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Można odbierać pliki przez Bluetooth do tego katalogu"
+msgid "May be used to receive files over Bluetooth"
+msgstr "Można używać do pobierania plików przez Bluetooth"
 
 #: ../src/file-share-properties.c:435
 msgid "No reason"
