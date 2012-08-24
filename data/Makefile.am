@@ -18,6 +18,9 @@ gsettings_DATA = $(gsettings_in_files:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
+convertdir = $(datadir)/GConf/gsettings
+convert_DATA = gnome-user-share.convert
+
 install-data-local:
 	-$(GLIB_COMPILE_SCHEMAS) $(DESTDIR)/$(datadir)/glib-2.0/schemas
 
@@ -27,6 +30,7 @@ uninstall-local:
 EXTRA_DIST = $(app_DATA)  \
 	$(desktop_in_files)   \
 	$(gsettings_in_files) \
+	$(convert_DATA) \
 	gnome-user-share.desktop.in.in \
 	file-share-properties.ui
 
