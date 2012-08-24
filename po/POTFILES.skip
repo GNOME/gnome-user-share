@@ -2,3 +2,4 @@
 # Please keep this file sorted alphabetically.
 data/file-share-properties.ui
 data/gnome-user-share.desktop.in
+data/org.gnome.desktop.file-sharing.gschema.xml.in

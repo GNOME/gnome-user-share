@@ -1,6 +1,6 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/desktop_gnome_file_sharing.schemas.in
+data/org.gnome.desktop.file-sharing.gschema.xml.in.in
 [type: gettext/glade]data/file-share-properties.ui
 data/gnome-user-share-properties.desktop.in
 data/gnome-user-share.desktop.in.in
