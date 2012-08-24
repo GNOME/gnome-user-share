@@ -21,12 +21,6 @@ gsettings_DATA = $(gsettings_in_files:.xml.in=.xml)
 convertdir = $(datadir)/GConf/gsettings
 convert_DATA = gnome-user-share.convert
 
-install-data-local:
-	-$(GLIB_COMPILE_SCHEMAS) $(DESTDIR)/$(datadir)/glib-2.0/schemas
-
-uninstall-local:
-	-$(GLIB_COMPILE_SCHEMAS) $(DESTDIR)/$(datadir)/glib-2.0/schemas
-
 EXTRA_DIST = $(app_DATA)  \
 	$(desktop_in_files)   \
 	$(gsettings_in_files) \
