@@ -483,7 +483,7 @@ main (int argc, char **argv)
 
 	migrate_old_configuration ();
 
-	settings = g_settings_new (GSETTINGS_DOMAIN);
+	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 	if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE &&
 	    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_ENABLED) == FALSE &&
 	    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE)

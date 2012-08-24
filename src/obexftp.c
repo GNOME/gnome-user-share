@@ -44,7 +44,7 @@ obexftp_up (void)
 	char *public_dir, *server;
 	gboolean allow_write, require_pairing;
 
-	settings = g_settings_new (GSETTINGS_DOMAIN);
+	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 	require_pairing = g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING);
 
 	server = NULL;

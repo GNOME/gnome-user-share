@@ -344,7 +344,7 @@ spawn_httpd (int port, pid_t *pid_out)
 	argv[i++] = "-C";
 	free3 = argv[i++] = g_strdup_printf ("Listen %d", port);
 
-	settings = g_settings_new (GSETTINGS_DOMAIN);
+	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 	str = g_settings_get_string (settings,
 				       FILE_SHARING_REQUIRE_PASSWORD);
 

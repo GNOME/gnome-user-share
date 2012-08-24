@@ -482,7 +482,7 @@ main (int argc, char *argv[])
 
     app = gtk_application_new ("org.gnome.user-share.properties",
                                G_APPLICATION_FLAGS_NONE);
-    settings = g_settings_new (GSETTINGS_DOMAIN);
+    settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 
     g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);
 

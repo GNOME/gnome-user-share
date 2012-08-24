@@ -25,7 +25,7 @@
 #ifndef _USER_SHARE_PRIVATE_H_
 #define _USER_SHARE_PRIVATE_H_
 
-#define GSETTINGS_DOMAIN "org.gnome.desktop.file-sharing"
+#define GNOME_USER_SHARE_SCHEMAS "org.gnome.desktop.file-sharing"
 
 #define FILE_SHARING_ENABLED "enabled"
 #define FILE_SHARING_BLUETOOTH_ENABLED "bluetooth-enabled"

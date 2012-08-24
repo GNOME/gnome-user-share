@@ -351,7 +351,7 @@ transfer_completed_cb (DBusGProxy *session,
 	if (filename == NULL)
 		return;
 
-	settings = g_settings_new (GSETTINGS_DOMAIN);
+	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 	display_notify = g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY);
 	g_object_unref (settings);
 
