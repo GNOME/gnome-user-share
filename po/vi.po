@@ -1,7 +1,7 @@
 # Vietnamese translation for GNOME User Share.
 # Copyright © 2009 GNOME i18n Project for Vietnamese.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
-# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2011.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2011-2012.
 #
 msgid ""
 msgstr ""
@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-01 22:40+0700\n"
-"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"PO-Revision-Date: 2012-09-01 22:41+0700\n"
+"Last-Translator: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -172,36 +172,32 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr "Khởi chạy Chia sẻ tập tin cá nhân nếu được bật"
 
 #: ../src/nautilus-share-bar.c:116
-#, fuzzy
 #| msgid "Launch Preferences"
 msgid "Preferences"
-msgstr "Mở tuỳ thích"
+msgstr "Tuỳ thích"
 
 #: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Mở Tuỳ thích chia sẻ tập tin cá nhân"
 
 #: ../src/share-extension.c:69
-#, fuzzy
 #| msgid "Unable to launch the Personal File Sharing preferences"
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Không thể mở tuỳ thích chia sẻ tập tin cá nhân"
 
 #: ../src/share-extension.c:142
 msgid "May be used to share or receive files"
-msgstr ""
+msgstr "Có thể dùng để chia sẻ hoặc nhận tập tin"
 
 #: ../src/share-extension.c:144
-#, fuzzy
 #| msgid "You can share files from this folder over the network and Bluetooth"
 msgid "May be shared over the network or Bluetooth"
-msgstr "Bạn có thể chia sẻ tập tin trong thư mục này qua mạng và Bluetooth"
+msgstr "Có thể chia sẻ qua mạng và Bluetooth"
 
 #: ../src/share-extension.c:146
-#, fuzzy
 #| msgid "Receive Files over Bluetooth"
 msgid "May be used to receive files over Bluetooth"
-msgstr "Nhận tập tin qua Bluetooth"
+msgstr "Có thể nhận tập tin qua Bluetooth"
 
 #: ../src/file-share-properties.c:290
 msgid "No reason"
