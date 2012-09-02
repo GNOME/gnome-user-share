@@ -4,22 +4,23 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Dr.T.vasudevan <agnihot3@gmail.com>, 2009.
-# Dr.T.Vasudevan <agnihot3@gmail.com>, 2009.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2009, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-23 21:45+0530\n"
-"PO-Revision-Date: 2009-10-23 21:51+0530\n"
+"POT-Creation-Date: 2012-09-02 16:04+0530\n"
+"PO-Revision-Date: 2012-09-02 16:11+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 0.3\n"
+"X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -27,7 +28,7 @@ msgstr ""
 "இது உண்மை எனில் உள்நுழையும் போது ப்ளூடூத் சாதனங்கள்  பயனர்  தரவிறக்கங்கள் அடைவுக்கு "
 "கோப்புகளை அனுப்ப இயலும்"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
@@ -35,7 +36,7 @@ msgstr ""
 "இது உண்மை எனில் பயனர்  உள்நுழைந்துள்ள போது   பயனரின்  இல்ல அடைவில் உள்ள பொதுவான அடைவு "
 "ப்ளூடூத் சாதனங்கள்  மூலம் பகிரப்படும்"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
@@ -43,19 +44,19 @@ msgstr ""
 "இது உண்மை எனில் பயனர்  உள்நுழைந்துள்ள போது   பயனரின்  இல்ல அடைவில் உள்ள பொதுவான அடைவு "
 "வலைபின்னல்  மூலம் பகிரப்படும்"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid "Share Public directory over Bluetooth"
 msgstr "பொது அடைவை ப்ளூடூத் மூலம் பகிர்க"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over the network"
 msgstr "பொது அடைவை வலைப்பின்னல் மூலம் பகிர்க"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid "When to accept files sent over Bluetooth"
 msgstr "எப்போது கோப்புக்களை ப்ளூடூத் மூலம் பகிர்வது"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -63,7 +64,7 @@ msgstr ""
 "எப்போது கோப்புக்களை ப்ளூடூத் மூலம் பகிர்வது. செல்லுபடியாகும் மதிப்புகள்  \"எப்போதும்\", "
 "\"பிணையப்பட்ட\", மற்றும் \"கேள்\"."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -71,59 +72,59 @@ msgstr ""
 "எப்போது கடவுச்சொல் கேட்க வேண்டும். செல்லுபடியாகும் மதிப்புகள்   \"எப்போதுமில்லை\", "
 "\"எழுதும்போது\", மற்றும் \"எப்போதும்\"."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "When to require passwords"
 msgstr "எப்போது கடவுச்சொல் தேவை"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ப்ளூடூத் சார்ந்தோன்கள் கோப்புகளை ஒபெக்ஸ் புஷ் மூலம் அனுப்பலாமா"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr "ப்ளூடூத் சார்ந்தோன்கள் கோப்புகளை அனுப்ப கணினியுடன் சேர வேண்டுமா"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr "ப்ளூடூத் சார்ந்தோன்கள் கோப்புகளை எழுத அனுமதிக்கலாமா அல்லது கோப்புகள் படிக்க மட்டுமா"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "ப்ளூடூத் சார்ந்தோன்கள் கோப்புகளை எழுத அனுமதிக்கலாமா."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "புதிதாக பெற்ற கோப்புக்களை பற்றி அறிவிக்கவா"
 
 #: ../data/file-share-properties.ui.h:1
-msgid "Receive Files over Bluetooth"
-msgstr " கோப்புகளை ப்ளூடூத் மூலம் பெறுக"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over Bluetooth"
-msgstr " கோப்புகளை ப்ளூடூத் மூலம் பகிர்க"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "Share Files over the Network"
-msgstr " கோப்புகளை வலைப்பின்னல் மூலம் பகிர்க"
-
-#: ../data/file-share-properties.ui.h:4
 msgid "Allo_w remote devices to delete files"
 msgstr "(_w) தொலை சாதனங்களை கோப்புக்களை நீக்க அனுமதி"
 
-#: ../data/file-share-properties.ui.h:5
+#: ../data/file-share-properties.ui.h:2
 msgid "Personal File Sharing Preferences"
 msgstr "தனிப்பட்ட கோப்பு பகிர விருப்பங்கள்"
 
-#: ../data/file-share-properties.ui.h:6
+#: ../data/file-share-properties.ui.h:3
+msgid "Receive Files over Bluetooth"
+msgstr " கோப்புகளை ப்ளூடூத் மூலம் பெறுக"
+
+#: ../data/file-share-properties.ui.h:4
 msgid "Receive files in _Downloads folder over Bluetooth"
 msgstr "(_D) ப்ளூடூத் மூலம் வரும் கோப்புகளை  தரவிறக்கங்கள் அடைவில் பெறுக"
 
-#: ../data/file-share-properties.ui.h:7
+#: ../data/file-share-properties.ui.h:5
 msgid "Require re_mote devices to bond with this computer"
 msgstr "தொலை சாதனங்களை கணினியுடன் சேர வேண்டு"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Share Files over Bluetooth"
+msgstr " கோப்புகளை ப்ளூடூத் மூலம் பகிர்க"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Share Files over the Network"
+msgstr " கோப்புகளை வலைப்பின்னல் மூலம் பகிர்க"
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Share public files over _Bluetooth"
@@ -150,7 +151,7 @@ msgid "_Share public files on network"
 msgstr "(_S) கோப்புகளை வலைப்பின்னல் மூலம் பகிர்க"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:167
+#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "அந்தரங்க கோப்பு பகிர்தல்"
 
@@ -162,59 +163,59 @@ msgstr "கோப்புகள் பகிர்வதில் விரு�
 msgid "Launch Personal File Sharing if enabled"
 msgstr "செயல் படுத்தி இருந்தால் அந்தரங்க கோப்பு பகிர்தலை  ஆரம்பி "
 
-#: ../src/nautilus-share-bar.c:179
-msgid "Launch Preferences"
-msgstr "விருப்பங்களை ஆரம்பி"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "விருப்பங்கள்"
 
-#: ../src/nautilus-share-bar.c:193
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "தனிப்பட்ட கோப்பு பகிர்தல் விருப்பங்களை ஆரம்பி"
 
-#: ../src/share-extension.c:81
-msgid "Unable to launch the Personal File Sharing preferences"
-msgstr "தனிப்பட்ட கோப்பு பகிர்தல் விருப்பங்களை ஆரம்பிக்க முடியவில்லை"
+#: ../src/share-extension.c:69
+msgid "Unable to launch the Personal File Sharing Preferences"
+msgstr "தனிப்பட்ட கோப்பு பகிர்தல் விருப்பங்களை துவக்க முடியவில்லை"
 
-#: ../src/share-extension.c:166
-msgid "You can share files from this folder and receive files to it"
-msgstr "இந்த அடைவிலிருந்து கோப்புகளை பெறவும் பகிரவும் இயலும்"
+#: ../src/share-extension.c:142
+msgid "May be used to share or receive files"
+msgstr " கோப்புகளை பகிர அல்லது பெற இதன் மூலம் இயலும்"
 
-#: ../src/share-extension.c:168
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "இந்த அடைவிலிருந்து கோப்புகளை வலைப்பின்னல் மற்றும் ப்ளூடூத் மூலம் பகிர இயலும்"
+#: ../src/share-extension.c:144
+msgid "May be shared over the network or Bluetooth"
+msgstr "வலைப்பின்னல் மற்றும் ப்ளூடூத் மூலம் பகிர இயலும்"
 
-#: ../src/share-extension.c:170
-msgid "You can receive files over Bluetooth into this folder"
-msgstr " கோப்புகளை ப்ளூடூத் மூலம் இந்த அடைவில் பெற இயலும்"
+#: ../src/share-extension.c:146
+msgid "May be used to receive files over Bluetooth"
+msgstr " கோப்புகளை ப்ளூடூத் மூலம் பெற இதன் மூலம் இயலும்"
 
-#: ../src/file-share-properties.c:435
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "காரணம் இல்லை"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "உதவி உள்ளடகத்தை காட்ட இயலவில்லை"
 
-#: ../src/file-share-properties.c:503
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "இடைமுகத்தை உருவாக்க இயலவில்லை"
 
-#: ../src/file-share-properties.c:543
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "ஒரு போதும் இல்லை"
 
-#: ../src/file-share-properties.c:546
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "கோப்புகளை எழுதும்போது"
 
-#: ../src/file-share-properties.c:549 ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "எப்போதும்"
 
-#: ../src/file-share-properties.c:575
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "அமைத்த சாதனங்களுக்கு மட்டும் "
 
-#: ../src/file-share-properties.c:580
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "கேள்"
 
@@ -227,43 +228,48 @@ msgstr "கேள்"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:134
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "%s' இன் பொது கோப்புகள்"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:138
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s' இன் பொது கோப்புகள் %s இல்"
 
-#: ../src/http.c:372
-msgid "Please log in as the user guest"
-msgstr "தயவு செய்து விருந்தினர் பயனராக உள்நுழை"
-
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr " \"%s\"  ஐ ப்ளூடூத் வழியாக பெற்றீர்கள்"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "நீங்கள் ஒரு கோப்பை பெற்றீர்கள்"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:145
 msgid "Open File"
 msgstr "கோப்பை திறக்கவும்"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:149
 msgid "Reveal File"
 msgstr "கோப்பை காட்டுக"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "கோப்பு பெறுதல் முடிந்தது"
+
+#~ msgid "You can share files from this folder and receive files to it"
+#~ msgstr "இந்த அடைவிலிருந்து கோப்புகளை பெறவும் பகிரவும் இயலும்"
+
+#~ msgid "You can receive files over Bluetooth into this folder"
+#~ msgstr " கோப்புகளை ப்ளூடூத் மூலம் இந்த அடைவில் பெற இயலும்"
+
+#~ msgid "Please log in as the user guest"
+#~ msgstr "தயவு செய்து விருந்தினர் பயனராக உள்நுழை"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "பிணைத்த மற்றும் நம்பப்பட்ட சாதனங்களுக்கு  மட்டும்"
