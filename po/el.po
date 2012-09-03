@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-21 15:13+0000\n"
-"PO-Revision-Date: 2012-08-21 19:55+0200\n"
+"POT-Creation-Date: 2012-08-24 15:46+0000\n"
+"PO-Revision-Date: 2012-09-03 12:57+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "Language: el\n"
@@ -21,23 +21,26 @@ msgstr ""
 "X-Generator: KBabel 1.3.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
 msgstr "Κοινή χρήση δημόσιου καταλόγου μέσω του δικτύου"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#| msgid ""
+#| "If this is true, the Public directory in the user's home directory will "
+#| "be shared over the network when the user is logged in."
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
 "Αν είναι αληθές, θα γίνεται κοινή χρήση του Δημόσιου καταλόγου του χρήστη "
-"μέσω του δικτύου, όποτε ο χρήστης είναι συνδεδεμένος."
+"μέσω του δικτύου όποτε ο χρήστης είναι συνδεδεμένος."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Πότε θα απαιτούνται κωδικοί"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -45,23 +48,26 @@ msgstr ""
 "Ποτέ θα απαιτείται κωδικός. Οι πιθανές τιμές είναι \"never\" (ποτέ), "
 "\"on_write\" (για εγγραφή), και \"always\" (πάντα)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
 msgstr "Κοινή χρήση δημόσιου καταλόγου μέσω bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#| msgid ""
+#| "If this is true, the Public directory in the user's home directory will "
+#| "be shared over Bluetooth when the user is logged in."
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 "Αν είναι αληθές, θα γίνεται κοινή χρήση του Δημόσιου καταλόγου του χρήστη "
-"μέσω bluetooth, όποτε ο χρήστης είναι συνδεδεμένος."
+"μέσω bluetooth όποτε ο χρήστης είναι συνδεδεμένος."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "Αν θα επιτρέπεται στους πελάτες bluetooth να εγγράφουν αρχεία."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
@@ -69,31 +75,34 @@ msgstr ""
 "Αν θα επιτρέπεται στους πελάτες bluetooth να εγγράφουν αρχεία, ή θα τους "
 "επιτρέπεται μόνο η ανάγνωση αρχείων."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr ""
 "Αν οι πελάτες bluetooth θα πρέπει να είναι συζευγμένοι με τον υπολογιστή για "
 "να μπορούν να στέλνουν αρχεία."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr ""
 "Αν οι πελάτες bluetooth θα μπορούν να στέλνουν αρχεία χρησιμοποιώντας το "
 "obexPush."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#| msgid ""
+#| "If this is true, Bluetooth devices can send files to the user's Downloads "
+#| "directory when the user is logged in."
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when the user is logged in."
+"directory when logged in."
 msgstr ""
 "Αν είναι αληθές, οι συσκευές bluetooth θα μπορούν να στέλνουν αρχεία στον "
-"κατάλογο Λήψεις του χρήστη, όποτε ο χρήστης είναι συνδεδεμένος."
+"κατάλογο Λήψεις του χρήστη όποτε ο χρήστης είναι συνδεδεμένος."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "Πότε θα γίνεται αποδοχή των αρχείων που στέλνονται μέσω bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -102,7 +111,7 @@ msgstr ""
 "πιθανές τιμές είναι \"always\" (πάντα), \"bonded\" (συζευγμένες συσκευές), "
 "\"bonded_trusted\" (συζευγμένες και έμπιστες) και \"ask\" (ερώτηση)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Αν θα εμφανίζεται ειδοποίηση όποτε λαμβάνονται αρχεία."
 
@@ -195,35 +204,35 @@ msgstr "Μπορεί να μοιραστεί μέσω του δικτύου ή �
 msgid "May be used to receive files over Bluetooth"
 msgstr "Μπορεί να χρησιμοποιηθεί για να λάβετε αρχεία μέσω bluetooth"
 
-#: ../src/file-share-properties.c:435
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "Χωρίς αιτιολογία"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "Αδυναμία εμφάνισης περιεχομένου βοήθειας."
 
-#: ../src/file-share-properties.c:497
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "Αδυναμία δημιουργίας περιβάλλοντος."
 
-#: ../src/file-share-properties.c:535
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "Ποτέ"
 
-#: ../src/file-share-properties.c:538
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "Κατά την εγγραφή αρχείων"
 
-#: ../src/file-share-properties.c:541 ../src/file-share-properties.c:564
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "Πάντα"
 
-#: ../src/file-share-properties.c:567
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "Μόνο για συζευγμένες συσκευές"
 
-#: ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "Ερώτηση"
 
@@ -236,37 +245,37 @@ msgstr "Ερώτηση"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:135
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "Δημόσια αρχεία%.0s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:139
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Δημόσια αρχεία του/της %.0s στο %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:134
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Λάβατε το \"%s\" μέσω bluetooth"
 
-#: ../src/obexpush.c:136
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "Λάβατε ένα αρχείο"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:145
 msgid "Open File"
-msgstr "Άνοιγμα Αρχείου"
+msgstr "Άνοιγμα αρχείου"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:149
 msgid "Reveal File"
-msgstr "Εμφάνιση Αρχείου"
+msgstr "Εμφάνιση αρχείου"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "Ολοκληρώθηκε η λήψη του αρχείου"
 
