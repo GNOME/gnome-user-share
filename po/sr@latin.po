@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-08 10:15+0000\n"
-"PO-Revision-Date: 2012-08-08 23:30+0200\n"
+"POT-Creation-Date: 2012-08-24 15:46+0000\n"
+"PO-Revision-Date: 2012-09-05 09:10+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -22,23 +22,26 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
 msgstr "Delenje fascikle „Javno“ preko mreže"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#| msgid ""
+#| "If this is true, the Public directory in the user's home directory will "
+#| "be shared over the network when the user is logged in."
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
 "Ako je izabrano, fascikla „Javno“ u korisnikovoj ličnoj fasckili će biti "
 "deljena preko mreže kada je korisnik prijavljen."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Zahtevan unos lozinke"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -46,23 +49,26 @@ msgstr ""
 "Određuje kada se zahteva unos lozinke. Moguće vrednosti su „never“ (nikada), "
 "„on_write“ (pri upisu) i „always“ (uvek)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
 msgstr "Delenje fascikle „Javno“ preko blututa"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#| msgid ""
+#| "If this is true, the Public directory in the user's home directory will "
+#| "be shared over Bluetooth when the user is logged in."
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 "Ako je izabrano, fascikla „Javno“ u korisnikovoj ličnoj fasckili će biti "
 "deljena preko blututa kada je korisnik prijavljen."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "Da li blutut klijenti mogu da upisuju datoteke."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
@@ -70,28 +76,31 @@ msgstr ""
 "Određuje da li blutut klijenti mogu da upisuju datoteke ili se datoteke dele "
 "samo kao neupisive."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr ""
 "Da li blutut klijenti moraju biti upareni sa računarom za slanje datoteka."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Blutut klijenti mogu da šalju datoteke koristeći guranje kroz obeks."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#| msgid ""
+#| "If this is true, Bluetooth devices can send files to the user's Downloads "
+#| "directory when the user is logged in."
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when the user is logged in."
+"directory when logged in."
 msgstr ""
-"Ako je izabrano, blutut uređaji mogu poslati daoteke u korisničku fasciklu "
+"Ako je izabrano, blutut uređaji mogu poslati datoteke u korisničku fasciklu "
 "„Preuzeto“ kada je korisnik prijavljen."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "Kada prihvatiti datoteke sa blutut veze"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -99,7 +108,7 @@ msgstr ""
 "Određuje kada je dozvoljeno prihvatanje datoteka sa blutut veze. Moguće "
 "vrednosti su „always“ (uvek), „bonded“ (upareni) i „ask“ (pitaj)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Da li da obavesti o novim primljenim datotekama."
 
@@ -169,7 +178,6 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr "Pokreni deljenje ličnih datoteka ako je omogućeno"
 
 #: ../src/nautilus-share-bar.c:116
-#| msgid "Launch Preferences"
 msgid "Preferences"
 msgstr "Postavke"
 
@@ -186,44 +194,42 @@ msgid "May be used to share or receive files"
 msgstr "Može biti korišćeno za deljenje ili prijem datoteka"
 
 #: ../src/share-extension.c:144
-#| msgid "You can share files from this folder over the network and Bluetooth"
 msgid "May be shared over the network or Bluetooth"
 msgstr "Može biti deljeno preko mreže ili blututa"
 
 #: ../src/share-extension.c:146
-#| msgid "Receive Files over Bluetooth"
 msgid "May be used to receive files over Bluetooth"
 msgstr "Može biti korišćeno za prijem datoteka preko blututa"
 
-#: ../src/file-share-properties.c:435
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "Bez razloga"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "Ne mogu da prikažem sadržaj pomoći."
 
-#: ../src/file-share-properties.c:497
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "Ne mogu da izgradim sučelje."
 
-#: ../src/file-share-properties.c:535
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "Nikad"
 
-#: ../src/file-share-properties.c:538
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "Pri upisu datoteka"
 
-#: ../src/file-share-properties.c:541 ../src/file-share-properties.c:564
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "Uvek"
 
-#: ../src/file-share-properties.c:567
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "Samo za uparene uređaje"
 
-#: ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "Pitaj"
 
@@ -236,37 +242,37 @@ msgstr "Pitaj"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:135
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "Javne datoteke korisnika „%s“"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:139
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Javne datoteke korisnika „%s“ na računaru „%s“"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:134
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Primili ste „%s“ preko blututa"
 
-#: ../src/obexpush.c:136
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "Primili ste datoteku"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:145
 msgid "Open File"
 msgstr "Otvori datoteku"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:149
 msgid "Reveal File"
 msgstr "Prikaži datoteku"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "Prijem datoteke je završen"
 
