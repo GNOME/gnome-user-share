@@ -1,39 +1,28 @@
 # Thai translation of gnome-user-share.
-# Copyright (C) 2009-2010 Free Software Foundation, Inc.
+# Copyright (C) 2009-2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Manatsawin <whs@whsgroup.ath.cx>, 2009.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2009-2010.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2009-2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&component=general\n"
-"POT-Creation-Date: 2009-12-14 21:47+0000\n"
-"PO-Revision-Date: 2010-02-07 21:59+0700\n"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-24 15:46+0000\n"
+"PO-Revision-Date: 2012-09-07 22:23+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"หากเป็นจริง อุปกรณ์บลูทูทจะสามารถส่งแฟ้มไปยังไดเรกทอรี \"ดาวน์โหลด\" "
-"ของผู้ใช้ได้เมื่อเข้าสู่ระบบแล้ว"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "Share Public directory over the network"
+msgstr "เปิดไดเรกทอรี \"Public\" ให้ใช้ร่วมในเครือข่าย"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"หากเป็นจริง ไดเรกทอรี \"Public\" "
-"ในไดเรกทอรีบ้านของผู้ใช้จะถูกเปิดให้ใช้ร่วมทางบลูทูทเมื่อผู้ใช้เข้าสู่ระบบ"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
@@ -41,27 +30,11 @@ msgstr ""
 "หากเป็นจริง ไดเรกทอรี \"Public\" "
 "ในไดเรกทอรีบ้านของผู้ใช้จะถูกเปิดให้ใช้ร่วมในเครือข่ายเมื่อผู้ใช้เข้าสู่ระบบ"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-msgid "Share Public directory over Bluetooth"
-msgstr "เปิดไดเรกทอรี \"Public\" ให้ใช้ร่วมทางบลูทูท"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "When to require passwords"
+msgstr "ถามรหัสผ่านเมื่อใด"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
-msgid "Share Public directory over the network"
-msgstr "เปิดไดเรกทอรี \"Public\" ให้ใช้ร่วมในเครือข่าย"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
-msgid "When to accept files sent over Bluetooth"
-msgstr "จะรับแฟ้มที่ส่งทางบลูทูทเมื่อใด"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"จะรับแฟ้มที่ส่งทางบลูทูทเมื่อใด ค่าที่เป็นไปได้คือ \"always\" (รับเสมอ), \"bonded"
-"\" (เฉพาะจากอุปกรณ์ที่จับคู่ไว้) และ \"ask\" (ถามก่อนรับ)"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -69,86 +42,114 @@ msgstr ""
 "จะถามรหัสผ่านเมื่อใด ค่าที่เป็นไปได้คือ \"never\" (ไม่ถาม), \"on_write\" (เมื่อจะเขียน) "
 "และ \"always\" (ถามเสมอ)"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
-msgid "When to require passwords"
-msgstr "ถามรหัสผ่านเมื่อใด"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "เปิดไดเรกทอรี \"Public\" ให้ใช้ร่วมทางบลูทูท"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "ลูกข่ายบลูทูทสามารถส่งแฟ้มโดยใช้ ObexPush ได้หรือไม่"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"หากเป็นจริง ไดเรกทอรี \"Public\" "
+"ในไดเรกทอรีบ้านของผู้ใช้จะถูกเปิดให้ใช้ร่วมทางบลูทูทเมื่อผู้ใช้เข้าสู่ระบบ"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "ลูกข่ายบลูทูทต้องจับคู่กับคอมพิวเตอร์ก่อนจะส่งแฟ้มหรือไม่"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "อนุญาตให้ลูกข่ายบลูทูทเขียนแฟ้มหรือไม่"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr "อนุญาตให้ลูกข่ายบลูทูทเขียนแฟ้มหรือไม่ หรือแค่เพียงให้อ่านได้เท่านั้น"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "อนุญาตให้ลูกข่ายบลูทูทเขียนแฟ้มหรือไม่"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "ลูกข่ายบลูทูทต้องจับคู่กับคอมพิวเตอร์ก่อนจะส่งแฟ้มหรือไม่"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "ลูกข่ายบลูทูทสามารถส่งแฟ้มโดยใช้ ObexPush ได้หรือไม่"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"หากเป็นจริง อุปกรณ์บลูทูทจะสามารถส่งแฟ้มไปยังไดเรกทอรี \"ดาวน์โหลด\" "
+"ของผู้ใช้ได้เมื่อเข้าสู่ระบบแล้ว"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "จะรับแฟ้มที่ส่งทางบลูทูทเมื่อใด"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"จะรับแฟ้มที่ส่งทางบลูทูทเมื่อใด ค่าที่เป็นไปได้คือ \"always\" (รับเสมอ), \"bonded"
+"\" (เฉพาะจากอุปกรณ์ที่จับคู่ไว้) และ \"ask\" (ถามก่อนรับ)"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "ต้องการให้แจ้งเตือนเมื่อได้รับแฟ้มหรือไม่"
 
 #: ../data/file-share-properties.ui.h:1
-msgid "Receive Files over Bluetooth"
-msgstr "รับแฟ้มทางบลูทูท"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over Bluetooth"
-msgstr "แบ่งปันแฟ้มทางบลูทูท"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "Share Files over the Network"
-msgstr "แบ่งปันแฟ้มทางเครือข่าย"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "_อนุญาตให้อุปกรณ์ระยะไกลลบแฟ้ม"
-
-#: ../data/file-share-properties.ui.h:5
 msgid "Personal File Sharing Preferences"
 msgstr "ปรับแต่งการแบ่งปันแฟ้มส่วนตัว"
 
-#: ../data/file-share-properties.ui.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "รับแฟ้มในโฟลเดอร์ดา_วน์โหลดผ่านบลูทูท"
+#: ../data/file-share-properties.ui.h:2
+msgid "Share Files over the Network"
+msgstr "แบ่งปันแฟ้มทางเครือข่าย"
 
-#: ../data/file-share-properties.ui.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "อุปกรณ์ระ_ยะไกลต้องจับคู่กับคอมพิวเตอร์ก่อน"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "แบ่งปันแฟ้มสาธารณะผ่าน_บลูทูท"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "_Accept files: "
-msgstr "_รับแฟ้ม:"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "_Notify about received files"
-msgstr "แ_จ้งเตือนเกี่ยวกับแฟ้มที่ได้รับ"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "_Password:"
-msgstr "รหัส_ผ่าน:"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Require password:"
-msgstr "_ต้องการรหัสผ่าน:"
-
-#: ../data/file-share-properties.ui.h:13
+#: ../data/file-share-properties.ui.h:3
 msgid "_Share public files on network"
 msgstr "แ_บ่งปันแฟ้มสาธารณะในเครือข่าย"
 
+#: ../data/file-share-properties.ui.h:4
+msgid "_Password:"
+msgstr "รหัส_ผ่าน:"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "_Require password:"
+msgstr "_ต้องการรหัสผ่าน:"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Share Files over Bluetooth"
+msgstr "แบ่งปันแฟ้มทางบลูทูท"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Share public files over _Bluetooth"
+msgstr "แบ่งปันแฟ้มสาธารณะผ่าน_บลูทูท"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Allo_w remote devices to delete files"
+msgstr "_อนุญาตให้อุปกรณ์ระยะไกลลบแฟ้ม"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "Require re_mote devices to bond with this computer"
+msgstr "อุปกรณ์ระ_ยะไกลต้องจับคู่กับคอมพิวเตอร์ก่อน"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "Receive Files over Bluetooth"
+msgstr "รับแฟ้มทางบลูทูท"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "รับแฟ้มในโฟลเดอร์ดา_วน์โหลดผ่านบลูทูท"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Accept files: "
+msgstr "_รับแฟ้ม:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Notify about received files"
+msgstr "แ_จ้งเตือนเกี่ยวกับแฟ้มที่ได้รับ"
+
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "แบ่งปันแฟ้มส่วนตัว"
 
@@ -156,64 +157,64 @@ msgstr "แบ่งปันแฟ้มส่วนตัว"
 msgid "Preferences for sharing of files"
 msgstr "ปรับแต่งค่าการแบ่งปันแฟ้ม"
 
-#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "เรียกใช้การแบ่งปันแฟ้มส่วนตัวหากถูกเปิดใช้"
 
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "เรียกเครื่องมือปรับแต่ง"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "ปรับแต่ง"
 
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "เรียกเครื่องมือปรับแต่งการแบ่งปันแฟ้มส่วนตัว"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
+#: ../src/share-extension.c:69
+msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "ไม่สามารถเรียกเครื่องมือปรับแต่งการแบ่งปันแฟ้มส่วนตัว"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr "คุณสามารถแบ่งปันแฟ้มได้จากโฟลเดอร์นี้ และใช้โฟลเดอร์นี้รับแฟ้มได้"
+#: ../src/share-extension.c:142
+msgid "May be used to share or receive files"
+msgstr "อาจใช้แบ่งปันหรือรับแฟ้มได้"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "คุณสามารถแบ่งปันแฟ้มได้จากโฟลเดอร์นี้ ผ่านเครือข่ายและบลูทูท"
+#: ../src/share-extension.c:144
+msgid "May be shared over the network or Bluetooth"
+msgstr "อาจแบ่งปันผ่านเครือข่ายหรือบลูทูทได้"
 
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "คุณสามารถใช้โฟลเดอร์นี้รับแฟ้มได้ ผ่านเครือข่ายบลูทูท"
+#: ../src/share-extension.c:146
+msgid "May be used to receive files over Bluetooth"
+msgstr "อาจใช้รับแฟ้มทางบลูทูทได้"
 
-#: ../src/file-share-properties.c:436
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "ไม่ทราบเหตุผล"
 
-#: ../src/file-share-properties.c:464
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "ไม่สามารถแสดงวิธีใช้"
 
-#: ../src/file-share-properties.c:524
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "ไม่สามารถสร้างส่วนติดต่อผู้ใช้"
 
-#: ../src/file-share-properties.c:566
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "ไม่"
 
-#: ../src/file-share-properties.c:569
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "เมื่อเขียนแฟ้ม"
 
-#: ../src/file-share-properties.c:572 ../src/file-share-properties.c:595
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "เสมอ"
 
 # ใน Windows ใช้คำว่า pair ครับ
-#: ../src/file-share-properties.c:598
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "เฉพาะอุปกรณ์ที่ตั้งค่าไว้"
 
-#: ../src/file-share-properties.c:603
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "ถาม"
 
@@ -226,43 +227,48 @@ msgstr "ถาม"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:134
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "แฟ้มสาธารณะของ %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:138
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "แฟ้มสาธารณะของ %s ที่ %s"
 
-#: ../src/http.c:372
-msgid "Please log in as the user guest"
-msgstr "โปรดเข้าระบบในนามผู้ใช้ guest"
-
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "คุณได้รับแฟ้ม \"%s\" ผ่านทางบลูทูท"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "คุณได้รับแฟ้ม"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:145
 msgid "Open File"
 msgstr "เปิดแฟ้ม"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:149
 msgid "Reveal File"
 msgstr "แสดงแฟ้ม"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "รับแฟ้มเสร็จสมบูรณ์แล้ว"
+
+#~ msgid "You can share files from this folder and receive files to it"
+#~ msgstr "คุณสามารถแบ่งปันแฟ้มได้จากโฟลเดอร์นี้ และใช้โฟลเดอร์นี้รับแฟ้มได้"
+
+#~ msgid "You can receive files over Bluetooth into this folder"
+#~ msgstr "คุณสามารถใช้โฟลเดอร์นี้รับแฟ้มได้ ผ่านเครือข่ายบลูทูท"
+
+#~ msgid "Please log in as the user guest"
+#~ msgstr "โปรดเข้าระบบในนามผู้ใช้ guest"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "เฉพาะอุปกรณ์ที่จับคู่ไว้และเชื่อถือ"
