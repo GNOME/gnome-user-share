@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-08 10:15+0000\n"
-"PO-Revision-Date: 2012-08-19 00:03+0300\n"
+"POT-Creation-Date: 2012-08-24 15:46+0000\n"
+"PO-Revision-Date: 2012-09-07 19:09+0300\n"
 "Last-Translator: Kasia Bondarava <kasia.bondarava@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
@@ -18,23 +18,23 @@ msgstr ""
 "X-Generator: Virtaal 0.7.0\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
 msgstr "Публікаваць каталог \"Публічныя файлы\" у сетцы"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
 "Калі ўключана, каталог \"Публічныя файлы\" ў дамашнім каталогу карыстальніка "
 "будзе супольнадаступным праз сетку, калі карыстальнік увайшоў у сеанс."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Калі патрабаваць паролі"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -42,23 +42,23 @@ msgstr ""
 "Калі запытваць паролі. Магчымыя значэнні: \"never\" (ніколі), \"on_write"
 "\" (падчас спробы запісу) і \"always\" (заўсёды)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
 msgstr "Публікаваць каталог \"Публічныя файлы\" праз Bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
 "Калі ўключана, каталог \"Публічныя файлы\" ў дамашнім каталогу карыстальніка "
 "будзе супольнадаступным праз Bluetooth, калі карыстальнік увайшоў у сеанс."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "Ці кліенты Bluetooth могуць запісваць файлы."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
@@ -66,28 +66,28 @@ msgstr ""
 "Ці кліенты Bluetooth могуць запісваць файлы ці публікаваць файлы, даступныя "
 "толькі для чытання."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr ""
 "Ці кліенты Bluetooth патрабуюць спарвання з камп'ютарам, каб пасылаць файлы."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Ці кліенты Bluetooth могуць паслаць файлы пры дапамозе ObexPush."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when the user is logged in."
+"directory when logged in."
 msgstr ""
 "Калі ўключана, прыстасаванні Bluetooth могуць пасылаць файлы ў каталог "
 "карыстальніка \"Сцягнутыя файлы\", калі ён увайшоў у сеанс."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "Калі прымаць файлы, дасланыя праз Bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -95,7 +95,7 @@ msgstr ""
 "Калі прымаць файлы, дасланыя праз Bluetooth. Магчымыя значэнні: \"always"
 "\" (заўсёды), \"bonded\" (толькі ад сяброў) і \"ask\" (спытаць)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Ці паведамляць пра атрыманыя файлы."
 
@@ -189,35 +189,35 @@ msgstr "Можа быць апублікавана ў сетцы ці праз B
 msgid "May be used to receive files over Bluetooth"
 msgstr "Прыдатна для атрымання файлаў праз Bluetooth"
 
-#: ../src/file-share-properties.c:435
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "Прычына не вызначана"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "Не ўдалося паказаць змест даведніка."
 
-#: ../src/file-share-properties.c:497
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "Не ўдалося ўтварыць інтэрфейс."
 
-#: ../src/file-share-properties.c:535
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "Ніколі"
 
-#: ../src/file-share-properties.c:538
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "Пры запісе файлаў"
 
-#: ../src/file-share-properties.c:541 ../src/file-share-properties.c:564
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "Заўсёды"
 
-#: ../src/file-share-properties.c:567
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "Толькі пры настройцы прыстасаванняў"
 
-#: ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "Пытацца"
 
@@ -230,36 +230,36 @@ msgstr "Пытацца"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:135
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "%s: публічныя файлы"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:139
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s: публічныя файлы на %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:134
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Вы атрымалі \"%s\" праз Bluetooth"
 
-#: ../src/obexpush.c:136
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "Вы атрымалі файл"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:145
 msgid "Open File"
 msgstr "Адкрыць файл"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:149
 msgid "Reveal File"
 msgstr "Паказаць файл"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "Атрыманне файла закончана"
