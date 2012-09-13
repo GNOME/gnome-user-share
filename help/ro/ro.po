@@ -461,7 +461,7 @@ msgid ""
 "application>'s <guilabel>Known devices</guilabel> section."
 msgstr ""
 "Dispozitivele pot fi marcate „de încredere” în secția <guilabel>Dispozitive "
-"cunoscute<guilabel> din <application>bluetooth-properties</application>."
+"cunoscute</guilabel> din <application>bluetooth-properties</application>."
 
 #: C/gnome-user-share.xml:189(para)
 msgid ""
