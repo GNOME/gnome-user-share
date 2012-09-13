@@ -458,7 +458,7 @@ msgid ""
 "application>'s <guilabel>Known devices</guilabel> section."
 msgstr ""
 "Aparelhos podem ser marcados como confiáveis na "
-"sessão <application>propriedades de bluetooth</ application> dentro "
+"sessão <application>propriedades de bluetooth</application> dentro "
 "de <guilabel>Dispositivos conhecidos</guilabel>."
 
 #: C/gnome-user-share.xml:189(para)
