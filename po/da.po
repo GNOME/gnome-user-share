@@ -8,31 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-30 22:22+0200\n"
-"PO-Revision-Date: 2010-03-30 22:18+0200\n"
+"POT-Creation-Date: 2012-09-16 13:29+0200\n"
+"PO-Revision-Date: 2012-09-16 00:55+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Hvis denne er true, kan Bluetooth-enheder sende filer til brugerens "
-"downloadmappe når brugeren er logget ind."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "Share Public directory over the network"
+msgstr "Del offentlig mappe på netværket"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe blive "
-"delt over Bluetooth, når brugeren er logget ind."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
@@ -40,27 +29,11 @@ msgstr ""
 "Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe blive "
 "delt, når brugeren er logget ind."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-msgid "Share Public directory over Bluetooth"
-msgstr "Del offentlig mappe over Bluetooth"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "When to require passwords"
+msgstr "Hvornår der kræves adgangskode"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
-msgid "Share Public directory over the network"
-msgstr "Del offentlig mappe på netværket"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
-msgid "When to accept files sent over Bluetooth"
-msgstr "Hvornår filer sendt over Bluetooth skal accepteres"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Hvornår filer sendt over Bluetooth accepteres. Valgmuligheder: \"always\", "
-"\"bonded\", \"ask\"."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -68,21 +41,23 @@ msgstr ""
 "Hvornår skal der spørges om adgangskode. Valgmuligheder: \"never\", "
 "\"on_write\", \"always\"."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
-msgid "When to require passwords"
-msgstr "Hvornår der kræves adgangskode"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "Del offentlig mappe over Bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Hvorvidt Bluetooth-klienter kan sende filer ved brug af ObexPush."
-
-# WTF
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
 msgstr ""
-"Hvorvidt Bluetooth-klienter skal danne par med computeren for at sende filer."
+"Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe blive "
+"delt over Bluetooth, når brugeren er logget ind."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Hvorvidt Bluetooth-klienter har tilladelse til at skrive filer."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
@@ -90,69 +65,95 @@ msgstr ""
 "Hvorvidt Bluetooth-klienter har tilladelse til at skrive filer, eller dele "
 "filer skrivebeskyttet."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Hvorvidt Bluetooth-klienter har tilladelse til at skrive filer."
+# WTF
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Hvorvidt Bluetooth-klienter skal danne par med computeren for at sende filer."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Hvorvidt Bluetooth-klienter kan sende filer ved brug af ObexPush."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Hvis denne er true, kan Bluetooth-enheder sende filer til brugerens "
+"downloadmappe når brugeren er logget ind."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "Hvornår filer sendt over Bluetooth skal accepteres"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Hvornår filer sendt over Bluetooth accepteres. Valgmuligheder: \"always\", "
+"\"bonded\", \"ask\"."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Hvorvidt der påmindes om nyligt modtagne filer."
 
 #: ../data/file-share-properties.ui.h:1
-msgid "Receive Files over Bluetooth"
-msgstr "Modtag filer over Bluetooth"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over Bluetooth"
-msgstr "Del filer over Bluetooth"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "Share Files over the Network"
-msgstr "Del filer over netværket"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "_Tillad fjernenheder at slette filer"
-
-#: ../data/file-share-properties.ui.h:5
 msgid "Personal File Sharing Preferences"
 msgstr "Personlige fildelingsindstillinger"
 
-# Hvad hedder den danske udgave af downloads-mappen?
-#: ../data/file-share-properties.ui.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Modtag filer i _mappen til hentede filer over Bluetooth"
+#: ../data/file-share-properties.ui.h:2
+msgid "Share Files over the Network"
+msgstr "Del filer over netværket"
 
-#: ../data/file-share-properties.ui.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Kræv at fje_rnenheder skal være bundet med denne computer"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Del offentlige filer over _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "_Accept files: "
-msgstr "_Acceptér filer: "
-
-#: ../data/file-share-properties.ui.h:10
-msgid "_Notify about received files"
-msgstr "_Påmind om modtagne filer"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "_Password:"
-msgstr "_Adgangskode:"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Require password:"
-msgstr "_Krav om adgangskode:"
-
-#: ../data/file-share-properties.ui.h:13
+#: ../data/file-share-properties.ui.h:3
 msgid "_Share public files on network"
 msgstr "_Del offentlige filer på netværket"
 
+#: ../data/file-share-properties.ui.h:4
+msgid "_Password:"
+msgstr "_Adgangskode:"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "_Require password:"
+msgstr "_Krav om adgangskode:"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Share Files over Bluetooth"
+msgstr "Del filer over Bluetooth"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Share public files over _Bluetooth"
+msgstr "Del offentlige filer over _Bluetooth"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Allo_w remote devices to delete files"
+msgstr "_Tillad fjernenheder at slette filer"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Kræv at fje_rnenheder skal være bundet med denne computer"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "Receive Files over Bluetooth"
+msgstr "Modtag filer over Bluetooth"
+
+# Hvad hedder den danske udgave af downloads-mappen?
+#: ../data/file-share-properties.ui.h:11
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Modtag filer i _mappen til hentede filer over Bluetooth"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Accept files: "
+msgstr "_Acceptér filer: "
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Notify about received files"
+msgstr "_Påmind om modtagne filer"
+
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Personlig fildeling"
 
@@ -160,65 +161,65 @@ msgstr "Personlig fildeling"
 msgid "Preferences for sharing of files"
 msgstr "Indstillinger for deling af filer"
 
-#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Start personlig fildeling hvis aktiveret"
 
 # handling
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "Start indstillinger"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Indstillinger"
 
 # handling
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Start indstillinger for personlig fildeling"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
+#: ../src/share-extension.c:70
+msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Kan ikke starte indstillinger for personlig fildeling"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr "Du kan dele filer fra denne mappe og modtage filer i den"
+#: ../src/share-extension.c:164
+msgid "May be used to share or receive files"
+msgstr "Kan bruges til at dele eller modtage filer"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "Du kan dele filer fra denne mappe over netværket og Bluetooth"
+#: ../src/share-extension.c:166
+msgid "May be shared over the network or Bluetooth"
+msgstr "Kan deles over netværket eller Bluetooth"
 
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Du kan modtage filer via Bluetooth til denne mappe"
+#: ../src/share-extension.c:170
+msgid "May be used to receive files over Bluetooth"
+msgstr "Kan bruges til at modtage filer over Bluetooth"
 
-#: ../src/file-share-properties.c:436
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "Ingen grund"
 
-#: ../src/file-share-properties.c:464
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "Kunne ikke vise hjælpeindholdet."
 
-#: ../src/file-share-properties.c:524
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "Kunne ikke bygge grænsefladen."
 
-#: ../src/file-share-properties.c:566
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "Aldrig"
 
-#: ../src/file-share-properties.c:569
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "Når der skrives til filer"
 
-#: ../src/file-share-properties.c:572 ../src/file-share-properties.c:595
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "Altid"
 
-#: ../src/file-share-properties.c:598
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "Kun for enheder, der er sat op"
 
-#: ../src/file-share-properties.c:603
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "Spørg"
 
@@ -231,39 +232,45 @@ msgstr "Spørg"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:134
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "%s's offentlige filer"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:138
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%ss offentlige filer på %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Du modtog \"%s\" via Bluetooth"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "Du modtog en fil"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:145
 msgid "Open File"
 msgstr "Åbn fil"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:149
 msgid "Reveal File"
 msgstr "Afslør fil"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "Filmodtagelse fuldført"
+
+#~ msgid "You can share files from this folder and receive files to it"
+#~ msgstr "Du kan dele filer fra denne mappe og modtage filer i den"
+
+#~ msgid "You can receive files over Bluetooth into this folder"
+#~ msgstr "Du kan modtage filer via Bluetooth til denne mappe"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "Kun for bundne enheder, der stoles på"
