@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
+"POT-Creation-Date: 2012-08-25 10:08+0000\n"
 "PO-Revision-Date: 2012-08-25 12:05+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
@@ -27,9 +27,6 @@ msgid "Share Public directory over the network"
 msgstr "Compartir la carpeta «Public» por red"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-#| msgid ""
-#| "If this is true, the Public directory in the user's home directory will "
-#| "be shared over the network when the user is logged in."
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
@@ -54,9 +51,6 @@ msgid "Share Public directory over Bluetooth"
 msgstr "Compartir la carpeta «Public» por Bluetooth"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-#| msgid ""
-#| "If this is true, the Public directory in the user's home directory will "
-#| "be shared over Bluetooth when the user is logged in."
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
@@ -87,9 +81,6 @@ msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Si los clientes Bluetooth pueden enviar archivos usando ObexPush."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
-#| msgid ""
-#| "If this is true, Bluetooth devices can send files to the user's Downloads "
-#| "directory when the user is logged in."
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -143,7 +134,7 @@ msgstr "Compartir archivos públicos por _Bluetooth"
 
 #: ../data/file-share-properties.ui.h:8
 msgid "Allo_w remote devices to delete files"
-msgstr "_Permitir que los dispositivos remotos borren archivos"
+msgstr "_Permitir que los dispositivos remotos eliminen archivos"
 
 #: ../data/file-share-properties.ui.h:9
 msgid "Require re_mote devices to bond with this computer"
