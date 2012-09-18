@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.master.gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-08 10:15+0000\n"
-"PO-Revision-Date: 2012-08-10 12:23+0530\n"
+"POT-Creation-Date: 2012-08-24 15:46+0000\n"
+"PO-Revision-Date: 2012-09-18 15:22+0530\n"
 "Last-Translator: \n"
 "Language-Team: gu_IN <kde-i18n-doc@kde.org>\n"
 "Language: \n"
@@ -21,46 +21,52 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
 msgstr "નેટવર્ક પર જાહેર ડિરેક્ટરીને વહેંચો"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#| msgid ""
+#| "If this is true, the Public directory in the user's home directory will "
+#| "be shared over the network when the user is logged in."
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"જો આ true હોય, તો વપરાશકર્તાઓ ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી નેટવર્ક પર વહેંચાશે જ્યારે "
+"જો આ true હોય, તો વપરાશકર્તા ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી નેટવર્ક પર વહેંચાશે જ્યારે "
 "વપરાશકર્તા પ્રવેશ કરે."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "ક્યારે પાસવર્ડો જરૂરી છે"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
 "પાસવર્ડો માટે ક્યારે પૂછવું. \"ક્યારેય નહિં\", \"લખવા પર\", અને \"હંમેશા\" શક્ય કિંમતો છે."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
 msgstr "બ્લુટુથ પર જાહેર ડિરેક્ટરી વહેંચો"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#| msgid ""
+#| "If this is true, the Public directory in the user's home directory will "
+#| "be shared over Bluetooth when the user is logged in."
 msgid ""
-"If this is true, the Public directory in the user's home directory will be "
+"If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"જો આ true હોય, તો વપરાશકર્તાઓ ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી બ્લુટુથ પર વહેંચાશે જ્યારે "
+"જો આ true હોય, તો વપરાશકર્તા ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી બ્લુટુથ પર વહેંચાશે જ્યારે "
 "વપરાશકર્તા પ્રવેશ કરે."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "ક્યાંતો ફાઇલો ને લખવા માટે બ્લુટુથ ક્લાઇન્ટોને પરવાનગી આપો."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
@@ -68,27 +74,30 @@ msgstr ""
 "ક્યાંતો ફાઇલો ને લખવા માટે બ્લુટુથ ક્લાઇન્ટોને પરવાનગી આપો. અથવા ફક્ત વાંચી શકાય તેવી "
 "ફાઇલોને વહેંચો."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr "ક્યાંતો ફાઇલો ને મોકલવા માટે કૉમ્પયુટર સાથે બ્લુટુથ ક્લાઇન્ટોને જોડીની જરૂર છે."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ક્યાંતો ObexPush ની મદદથી બ્લુટુથ ક્લાઇન્ટો ફાઇલો ને મોકલી શકે છે."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#| msgid ""
+#| "If this is true, Bluetooth devices can send files to the user's Downloads "
+#| "directory when the user is logged in."
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when the user is logged in."
+"directory when logged in."
 msgstr ""
 "જો આ true હોય, તો વપરાશકર્તાઓ ડાઉનલોડ ડિરેક્ટરીમાં બ્લુટુથ ઉપકરણો એ ફાઇલો ને મોકલી "
 "શકે છે જ્યારે વપરાશકર્તા પ્રવેશ કરે."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "ક્યારે બ્લુટુથ પર મોકલેલ ફાઇલોને સ્વીકારો છો"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -96,7 +105,7 @@ msgstr ""
 "ક્યારે બ્લૂટુથ પર મોકલેલ ફાઇલોને સ્વીકારો છો. શક્ય કિંમતો \"always\", \"bonded\", અને "
 "\"ask\" છે."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "ક્યાંતો નવી મેળવેલ ફાઇલો વિશે સૂચિત કરો."
 
@@ -166,7 +175,6 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr "વ્યક્તિગત ફાઇલ વહેંચણીને પ્રકાશિત કરો જો સક્રિય હોય તો"
 
 #: ../src/nautilus-share-bar.c:116
-#| msgid "Launch Preferences"
 msgid "Preferences"
 msgstr "પસંદગીઓ"
 
@@ -183,44 +191,42 @@ msgid "May be used to share or receive files"
 msgstr "ફાઇલોને વહેંચવા અથવા મેળવવા માટે વાપરી શકાય છે"
 
 #: ../src/share-extension.c:144
-#| msgid "You can share files from this folder over the network and Bluetooth"
 msgid "May be shared over the network or Bluetooth"
 msgstr "નેટવર્ક અથવા બ્લુટુથ પર વહેંચી શકાય છે"
 
 #: ../src/share-extension.c:146
-#| msgid "Receive Files over Bluetooth"
 msgid "May be used to receive files over Bluetooth"
 msgstr "બ્લુટુથ પર ફાઇલોને મેળવવા માટે વાપરી શકાય છે"
 
-#: ../src/file-share-properties.c:435
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "કારણ નથી"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "મદદ સમાવિષ્ટો ને દર્શાવી શકાયુ નહિં."
 
-#: ../src/file-share-properties.c:497
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "ઇન્ટરફેસ ને બિલ્ડ કરી શકાયુ નહિં."
 
-#: ../src/file-share-properties.c:535
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "ક્યારેય નહિં"
 
-#: ../src/file-share-properties.c:538
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "જ્યારે ફાઈલો લખી રહ્યા હોય"
 
-#: ../src/file-share-properties.c:541 ../src/file-share-properties.c:564
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "હંમેશા"
 
-#: ../src/file-share-properties.c:567
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "ફક્ત ઉપકરણોનાં સુયોજન માટે"
 
-#: ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "પૂછો"
 
@@ -233,37 +239,37 @@ msgstr "પૂછો"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:135
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "%s ની જાહેર ફાઈલો"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:139
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s ની %s પર જાહેર ફાઈલો"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:134
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "તમને બ્લુટુથ મારફતે \"%s\" મળેલ છે"
 
-#: ../src/obexpush.c:136
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "તમને ફાઇલ મળેલ છે"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:145
 msgid "Open File"
 msgstr "ફાઇલને ખોલો"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:149
 msgid "Reveal File"
 msgstr "ફાઇલને બતાવો"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "ફાઇલ રિસેપ્શન સમાપ્ત"
 
