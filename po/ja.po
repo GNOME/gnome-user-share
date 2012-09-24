@@ -4,158 +4,132 @@
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005,2007-2009.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
+# Noriko Mizumoto <noriko@fedoraproject.org>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-01-28 15:10+0000\n"
-"PO-Revision-Date: 2012-02-23 23:56+0900\n"
-"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-22 20:57+0000\n"
+"PO-Revision-Date: 2012-09-24 13:21+0000\n"
+"Last-Translator: Noriko Mizumoto <noriko@fedoraproject.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダウ"
-"ンロード・フォルダーにファイルを送信できるようになります。"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある "
-"Public フォルダーが Bluetooth のデバイスによって共有されるようになります。"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある "
-"Public フォルダーがネットワークのデバイスによって共有されるようになります。"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-msgid "Share Public directory over Bluetooth"
-msgstr "Public フォルダーを Bluetooth デバイス上で共有するかどうか"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
 msgstr "Public フォルダーをネットワーク上で共有するかどうか"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
-msgid "When to accept files sent over Bluetooth"
-msgstr "Bluetooth でファイルを送信できる時期"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある Public フォルダーがネットワークのデバイスによって共有されるようになります。"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: "
-"\"always\"、\"bonded\"、\"ask\"。"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
-msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr ""
-"いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write\"、"
-"\"always\"。"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "パスワードを要求する時期"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Bluetooth のクライアントが ObexPush を使ってファイルを送信できるかどうか"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write\"、\"always\"。"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Bluetooth のクライアントがファイルを送信するためにコンピューターとペアになる"
-"べきかどうか"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "Public フォルダーを Bluetooth デバイス上で共有するかどうか"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Bluetooth のクライアントでファイルを書き込んだり、読み込み専用のファイルを共"
-"有できるようにするかどうかです。"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある Public フォルダーが Bluetooth のデバイスによって共有されるようになります。"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "Bluetooth のクライアントがファイルを作成できるかどうか"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "Bluetooth のクライアントでファイルを書き込んだり、読み込み専用のファイルを共有できるようにするかどうかです。"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "Bluetooth のクライアントがファイルを送信するためにコンピューターとペアになるべきかどうか"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Bluetooth のクライアントが ObexPush を使ってファイルを送信できるかどうか"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダウンロード・フォルダーにファイルを送信できるようになります。"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "Bluetooth でファイルを送信できる時期"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
+msgstr "いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: \"always\"、\"bonded\"、\"ask\"。"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "新たに受信したファイルについて通知するかどうか"
 
 #: ../data/file-share-properties.ui.h:1
-msgid "Receive Files over Bluetooth"
-msgstr "Bluetooth を使ったファイルの受信"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over Bluetooth"
-msgstr "Bluetooth 越しのファイル共有"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "Share Files over the Network"
-msgstr "ネットワーク越しのファイル共有"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "リモートのデバイスからファイルを削除できるようにする(_W)"
-
-#: ../data/file-share-properties.ui.h:5
 msgid "Personal File Sharing Preferences"
 msgstr "個人のファイルを共有の設定"
 
-#: ../data/file-share-properties.ui.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr ""
-"Bluetooth 越しに受信したファイルをダウンロード・フォルダーに格納する(_D)"
+#: ../data/file-share-properties.ui.h:2
+msgid "Share Files over the Network"
+msgstr "ネットワーク越しのファイル共有"
 
-#: ../data/file-share-properties.ui.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "リモートのデバイスとこのコンピューターをペアにする(_M)"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Bluetooth 越しにファイルを共有する(_B)"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "_Accept files: "
-msgstr "許可するファイル(_A): "
-
-#: ../data/file-share-properties.ui.h:10
-msgid "_Notify about received files"
-msgstr "ファイルを受信したら通知する(_N)"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "_Password:"
-msgstr "パスワード(_P):"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Require password:"
-msgstr "パスワード要求の時期(_R):"
-
-#: ../data/file-share-properties.ui.h:13
+#: ../data/file-share-properties.ui.h:3
 msgid "_Share public files on network"
 msgstr "ネットワーク越しにファイルを共有する(_S)"
 
+#: ../data/file-share-properties.ui.h:4
+msgid "_Password:"
+msgstr "パスワード(_P):"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "_Require password:"
+msgstr "パスワード要求の時期(_R):"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Share Files over Bluetooth"
+msgstr "Bluetooth 越しのファイル共有"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Share public files over _Bluetooth"
+msgstr "Bluetooth 越しにファイルを共有する(_B)"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Allo_w remote devices to delete files"
+msgstr "リモートのデバイスからファイルを削除できるようにする(_W)"
+
+#: ../data/file-share-properties.ui.h:9
+msgid "Require re_mote devices to bond with this computer"
+msgstr "リモートのデバイスとこのコンピューターをペアにする(_M)"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "Receive Files over Bluetooth"
+msgstr "Bluetooth を使ったファイルの受信"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Bluetooth 越しに受信したファイルをダウンロード・フォルダーに格納する(_D)"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Accept files: "
+msgstr "許可するファイル(_A): "
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Notify about received files"
+msgstr "ファイルを受信したら通知する(_N)"
+
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "個人的なファイルの共有"
 
@@ -163,63 +137,63 @@ msgstr "個人的なファイルの共有"
 msgid "Preferences for sharing of files"
 msgstr "個人的なファイルの共有機能を設定します"
 
-#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "個人的なファイルの共有機能を起動します (可能な場合)"
 
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "設定を開く"
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "設定"
 
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "個人的なファイルの共有を開く"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
+#: ../src/share-extension.c:70
+msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "個人的なファイルの共有設定を起動できません"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr "このフォルダーのファイル共有とフォルダーへのファイルの受信ができます"
+#: ../src/share-extension.c:164
+msgid "May be used to share or receive files"
+msgstr "ファイルの共有や受信に使用できます"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "ネットワークと Bluetooth 経由でこのフォルダーのファイルを共有できます"
+#: ../src/share-extension.c:166
+msgid "May be shared over the network or Bluetooth"
+msgstr "ネットワークや Bluetooth 経由で共有できます"
 
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "このフォルダーに Bluetooth 経由でファイルを受信できます"
+#: ../src/share-extension.c:170
+msgid "May be used to receive files over Bluetooth"
+msgstr "Bluetooth を使ったファイルの受信に使用できます"
 
-#: ../src/file-share-properties.c:435
+#: ../src/file-share-properties.c:290
 msgid "No reason"
 msgstr "原因不明"
 
-#: ../src/file-share-properties.c:463
+#: ../src/file-share-properties.c:318
 msgid "Could not display the help contents."
 msgstr "ヘルプを表示できませんでした"
 
-#: ../src/file-share-properties.c:497
+#: ../src/file-share-properties.c:351
 msgid "Could not build interface."
 msgstr "インターフェースを構築できませんでした"
 
-#: ../src/file-share-properties.c:535
+#: ../src/file-share-properties.c:383
 msgid "Never"
 msgstr "確認しない"
 
-#: ../src/file-share-properties.c:538
+#: ../src/file-share-properties.c:386
 msgid "When writing files"
 msgstr "ファイル書き込み時"
 
-#: ../src/file-share-properties.c:541 ../src/file-share-properties.c:564
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "常に"
 
-#: ../src/file-share-properties.c:567
+#: ../src/file-share-properties.c:415
 msgid "Only for set up devices"
 msgstr "設定したデバイスのみ"
 
-#: ../src/file-share-properties.c:572
+#: ../src/file-share-properties.c:420
 msgid "Ask"
 msgstr "問い合わせる"
 
@@ -232,39 +206,45 @@ msgstr "問い合わせる"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:135
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
 msgstr "%s の公開ファイル"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:139
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s@%s の公開ファイル"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Bluetooth 経由で \"%s\" を受信しました"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "ファイルを受信しました"
 
-#: ../src/obexpush.c:152
+#: ../src/obexpush.c:145
 msgid "Open File"
 msgstr "ファイルを開く"
 
-#: ../src/obexpush.c:156
+#: ../src/obexpush.c:149
 msgid "Reveal File"
 msgstr "ファイルを表示する"
 
-#: ../src/obexpush.c:173
+#: ../src/obexpush.c:166
 msgid "File reception complete"
 msgstr "ファイルの受信が完了しました"
+
+#~ msgid "You can share files from this folder and receive files to it"
+#~ msgstr "このフォルダーのファイル共有とフォルダーへのファイルの受信ができます"
+
+#~ msgid "You can receive files over Bluetooth into this folder"
+#~ msgstr "このフォルダーに Bluetooth 経由でファイルを受信できます"
 
 #~ msgid "Please log in as the user guest"
 #~ msgstr "ゲストユーザーでログインしてください"
