@@ -6,16 +6,16 @@
 # package.
 #
 # Ivar Smolin <okul linux ee>, 2009.
-# Mattias Põldaru <mahfiaz gmail com>, 2010.
+# Mattias Põldaru <mahfiaz gmail com>, 2010, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&component=general\n"
-"POT-Creation-Date: 2010-11-30 17:29+0000\n"
-"PO-Revision-Date: 2010-02-24 14:39+0300\n"
-"Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-22 20:57+0000\n"
+"PO-Revision-Date: 2012-09-23 10:25+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
@@ -24,19 +24,8 @@ msgstr ""
 "X-Poedit-Language: Estonian\n"
 "X-Poedit-Country: ESTONIA\n"
 
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Kui määratud, siis võivad Bluetooth-seadmed kasutaja sisselogimise ajal "
-"saata faile kasutaja allalaadimiste kataloogi."
-
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Kui määratud, siis on kasutaja kodukataloogis asuv avalik kataloog jagatud "
-"kasutaja sisselogimise ajal Bluetoothi liidese kaudu."
+msgid "Share Public directory over the network"
+msgstr "Failide jagamine võrku"
 
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
@@ -45,11 +34,51 @@ msgstr ""
 "Kui määratud, siis on kasutaja kodukataloogis asuv avalik kataloog jagatud "
 "kasutaja sisselogimise ajal võrku."
 
+msgid "When to require passwords"
+msgstr "Millal nõutakse paroole"
+
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Millal peab paroole küsima. Võimalikud väärtused on \"never\" (mitte "
+"kunagi), \"on_write\" (kirjutamisel), ja \"always\" (alati)."
+
 msgid "Share Public directory over Bluetooth"
 msgstr "Failide jagamine Bluetoothi kaudu"
 
-msgid "Share Public directory over the network"
-msgstr "Failide jagamine võrku"
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"Kui määratud, siis on kasutaja kodukataloogis asuv avalik kataloog jagatud "
+"kasutaja sisselogimise ajal Bluetoothi liidese kaudu."
+
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Kas Bluetoothi klientidel on lubatud faile kirjutada või mitte."
+
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+"Kas Bluetoothi klientidel on lubatud faile kirjutada või on failid ainult "
+"lugemiseks."
+
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Kas Bluetoothi kliendid peavad failide saatmiseks olema arvutiga seotud või "
+"mitte."
+
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr ""
+"Kas Bluetoothi klientidel on lubatud faile ObexPushi abil saata või mitte."
+
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Kui määratud, siis võivad Bluetooth-seadmed kasutaja sisselogimise ajal "
+"saata faile kasutaja allalaadimiste kataloogi."
 
 msgid "When to accept files sent over Bluetooth"
 msgstr "Millal Bluetoothi kaudu saadetud failidega nõustutakse"
@@ -62,67 +91,17 @@ msgstr ""
 "on \"always\" (alati), \"bonded\" (ainult seotud seadmete korral) ja \"ask"
 "\" (nõustumise kohta küsitakse kasutajalt)."
 
-msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr ""
-"Millal peab paroole küsima. Võimalikud väärtused on \"never\" (mitte "
-"kunagi), \"on_write\" (kirjutamisel), ja \"always\" (alati)."
-
-msgid "When to require passwords"
-msgstr "Millal nõutakse paroole"
-
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Kas Bluetoothi klientidel on lubatud faile ObexPushi abil saata või mitte."
-
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Kas Bluetoothi kliendid peavad failide saatmiseks olema arvutiga seotud või "
-"mitte."
-
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Kas Bluetoothi klientidel on lubatud faile kirjutada või on failid ainult "
-"lugemiseks."
-
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Kas Bluetoothi klientidel on lubatud faile kirjutada või mitte."
-
 msgid "Whether to notify about newly received files."
 msgstr "Kas uutest vastuvõetud failidest teada anda või mitte."
-
-msgid "Receive Files over Bluetooth"
-msgstr "Failide vastuvõtmine Bluetoothi kaudu"
-
-msgid "Share Files over Bluetooth"
-msgstr "Failide jagamine Bluetoothi kaudu"
-
-msgid "Share Files over the Network"
-msgstr "Failide jagamine võrku"
-
-msgid "Allo_w remote devices to delete files"
-msgstr "Kaugseadmetel on lubatud faile _kustutada"
 
 msgid "Personal File Sharing Preferences"
 msgstr "Isiklike failide jagamise eelistused"
 
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Üle Bluetoothi _võetakse faile vastu ja pannakse allalaadimiste kausta"
+msgid "Share Files over the Network"
+msgstr "Failide jagamine võrku"
 
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Kaugseadmed peavad olema selle arvutiga _seotud"
-
-msgid "Share public files over _Bluetooth"
-msgstr "Avalikud failid on _Bluetoothi kaudu jagatud"
-
-msgid "_Accept files: "
-msgstr "Failidega _nõustutakse:"
-
-msgid "_Notify about received files"
-msgstr "Vastuvõetud failidest _teavitatakse"
+msgid "_Share public files on network"
+msgstr "Avalikud failid on _jagatuna võrgus"
 
 msgid "_Password:"
 msgstr "_Parool:"
@@ -130,8 +109,29 @@ msgstr "_Parool:"
 msgid "_Require password:"
 msgstr "_Ligipääsuks on vaja parooli:"
 
-msgid "_Share public files on network"
-msgstr "Avalikud failid on _jagatuna võrgus"
+msgid "Share Files over Bluetooth"
+msgstr "Failide jagamine Bluetoothi kaudu"
+
+msgid "Share public files over _Bluetooth"
+msgstr "Avalikud failid on _Bluetoothi kaudu jagatud"
+
+msgid "Allo_w remote devices to delete files"
+msgstr "Kaugseadmetel on lubatud faile _kustutada"
+
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Kaugseadmed peavad olema selle arvutiga _seotud"
+
+msgid "Receive Files over Bluetooth"
+msgstr "Failide vastuvõtmine Bluetoothi kaudu"
+
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Üle Bluetoothi _võetakse faile vastu ja pannakse allalaadimiste kausta"
+
+msgid "_Accept files: "
+msgstr "Failidega _nõustutakse:"
+
+msgid "_Notify about received files"
+msgstr "Vastuvõetud failidest _teavitatakse"
 
 msgid "Personal File Sharing"
 msgstr "Isiklike failide jagamine"
@@ -142,24 +142,23 @@ msgstr "Failide jagamise eelistused"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Isiklike failide jagamise avamine, kui see on lubatud"
 
-msgid "Launch Preferences"
-msgstr "Eelistuste avamine"
+msgid "Preferences"
+msgstr "Eelistused"
 
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Isiklike failide jagamise eelistuste avamine"
 
-msgid "Unable to launch the Personal File Sharing preferences"
+msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Isiklike failide jagamise eelistusi pole võimalik avada"
 
-msgid "You can share files from this folder and receive files to it"
-msgstr ""
-"Sellest kataloogist jagatakse faile, samuti pannakse sinna vastuvõetud failid"
+msgid "May be used to share or receive files"
+msgstr "Seda kataloogi kasutatakse failide jagamiseks ja vastuvõtmiseks"
 
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "Selle kataloogi failid jagatakse võrku ja üle Bluetoothi"
+msgid "May be shared over the network or Bluetooth"
+msgstr "Selle kataloogi faile jagatakse võrgu või Bluetoothi kaudu"
 
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Sellesse kataloogi pannakse Bluetoothi kaudu vastuvõetud failid"
+msgid "May be used to receive files over Bluetooth"
+msgstr "Seda kataloogi kasutatakse failide vastuvõtmiseks Bluetoothi kaudu"
 
 msgid "No reason"
 msgstr "Põhjendus puudub"
@@ -224,12 +223,3 @@ msgstr "Ava kataloog"
 
 msgid "File reception complete"
 msgstr "Faili vastuvõtmine lõpetatud"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Palun logi külalisena sisse"
-
-#~ msgid "Only for Bonded and Trusted devices"
-#~ msgstr "Ainult seotud ja usaldatud seadmete korral"
-
-#~ msgid "User Sharing"
-#~ msgstr "Kasutaja failide jagamine"
