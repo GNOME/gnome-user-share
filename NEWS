@@ -1,4 +1,8 @@
-This is gnome-user-share 3.0.3, a system for easy sharing of user files.
+This is gnome-user-share 3.0.4, a system for easy sharing of user files.
+
+Major changes since 3.0.3 are:
+- Hide the share bar when Bluetooth is disabled
+- Updated translations
 
 Major changes since 3.0.2 are:
 - Remove markup from translatable strings
