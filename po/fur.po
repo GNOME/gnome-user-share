@@ -1,0 +1,263 @@
+# Friulian translation for gnome-user-share.
+# Copyright (C) 2012 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# TmTFx <f.t.public@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-12-08 09:04+0000\n"
+"PO-Revision-Date: 2012-12-28 10:32+0100\n"
+"Last-Translator: TmTFx <f.t.public@gmail.com>\n"
+"Language-Team: Friulian <fur@li.org>\n"
+"Language: fur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "Share Public directory over the network"
+msgstr "Condivît le cartele publiche in rêt"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"Se chest al è vêr, la cartele publiche in te cartele home dai utents a sarà "
+"condividude in rêt cuanche l'utent al varà fat l'acès."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "When to require passwords"
+msgstr "Cuant domandâ lis password"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Cuand domandâ lis password. Valôrs pussibii a son \"never\", \"on_write\", e "
+"\"always\"."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "Condivît la cartele publiche vie Bluetooth"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
+msgstr ""
+"Se chest al è vêr, la cartele publiche in te cartele home dai utents a sarà "
+"condividude vie Bluetooth cuanche l'utent al varà fat l'acès."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Se lassâ scrivi i file ai clients Bluetooth."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+msgid ""
+"Whether to allow Bluetooth clients to write files, or share the files read-"
+"only."
+msgstr ""
+"Se lassâ scrivi i file ai clients Bluetooth, o condividi i file in dome-"
+"leture."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Se i clients Bluetooth a scugnin associâsi cun il computer par spedî file."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Se i clients Bluetooth a puedin spedî file doprant ObexPush."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Se chest al è vêr, i argagns Bluetooth a puedin spedî file ae cartele "
+"Downloads dal utent cuanch'al a fat l'acès."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "Cuand acetâ i file spedîts vie Bluetooth"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Cuand acetâ i file spedîts vie Bluetooth. Valôrs pussibii a son \"always\", "
+"\"bonded\" e \"ask\"."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "Se notificâ in rivuard ai gnûfs file ricevûts."
+
+#: ../data/file-share-properties.ui.h:1
+msgid "Personal File Sharing Preferences"
+msgstr "Preferencis de condivision dai file personai"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "Share Files over the Network"
+msgstr "Condivît i File in Rêt"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "_Share public files on network"
+msgstr "_Condivît i file publics in rêt"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "_Password:"
+msgstr "_Password:"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "_Require password:"
+msgstr "_Si pretint une password:"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Share Files over Bluetooth"
+msgstr "Condivît i file vie Bluetooth"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Share public files over _Bluetooth"
+msgstr "Condivît i file publics vie _Bluetooth"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "Allo_w remote devices to delete files"
+msgstr "_Lasse scancelâ i file ai argagns rimots "
+
+#: ../data/file-share-properties.ui.h:9
+msgid "Require re_mote devices to bond with this computer"
+msgstr "Pretint che i argagns ri_mots a si lein cun chest computer"
+
+#: ../data/file-share-properties.ui.h:10
+msgid "Receive Files over Bluetooth"
+msgstr "Ricêf file vie Bluetooth"
+
+#: ../data/file-share-properties.ui.h:11
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Ricêf file vie Bluetooth in te cartele _Downloads"
+
+#: ../data/file-share-properties.ui.h:12
+msgid "_Accept files: "
+msgstr "_Acète i file:"
+
+#: ../data/file-share-properties.ui.h:13
+msgid "_Notify about received files"
+msgstr "_Notifiche in rivuard ai file ricevûts"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+msgid "Personal File Sharing"
+msgstr "Condivision file personai"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of files"
+msgstr "Preferencis par la condivision dai file"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Fâs partî la Condivision dai File Personai se abilitade"
+
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Preferencis"
+
+#: ../src/nautilus-share-bar.c:120
+msgid "Launch Personal File Sharing Preferences"
+msgstr "Fâs partî lis Preferencis dae Condivision dai File Personai"
+
+#: ../src/share-extension.c:70
+msgid "Unable to launch the Personal File Sharing Preferences"
+msgstr "Impussibil fâ partî  lis Preferencis dae Condivision dai File Personai"
+
+#: ../src/share-extension.c:164
+msgid "May be used to share or receive files"
+msgstr "Al puès jessi doprât par condividi o ricevi file"
+
+#: ../src/share-extension.c:166
+msgid "May be shared over the network or Bluetooth"
+msgstr "Al puès jessi condividût vie rêt o Bluetooth"
+
+#: ../src/share-extension.c:170
+msgid "May be used to receive files over Bluetooth"
+msgstr "Al puès jessi doprât par ricevi file vie Bluetooth"
+
+#: ../src/file-share-properties.c:290
+msgid "No reason"
+msgstr "Nissune reson"
+
+#: ../src/file-share-properties.c:318
+msgid "Could not display the help contents."
+msgstr "No puès mostrâ i contignûts dal jutori."
+
+#: ../src/file-share-properties.c:351
+msgid "Could not build interface."
+msgstr "No puès impastanâ l'interface."
+
+#: ../src/file-share-properties.c:383
+msgid "Never"
+msgstr "Mai"
+
+#: ../src/file-share-properties.c:386
+msgid "When writing files"
+msgstr "Cuanche a si scrivin i file"
+
+#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
+msgid "Always"
+msgstr "Simpri"
+
+#: ../src/file-share-properties.c:415
+msgid "Only for set up devices"
+msgstr "Nome par i argagns sestâts"
+
+#: ../src/file-share-properties.c:420
+msgid "Ask"
+msgstr "Domandâ"
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../src/http.c:133
+#, c-format
+msgid "%s's public files"
+msgstr "File publics di %s"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../src/http.c:137
+#, c-format
+msgid "%s's public files on %s"
+msgstr "File publics di %s su %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:133
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Tu âs ricevût \"%s\" vie Bluetooth"
+
+#: ../src/obexpush.c:135
+msgid "You received a file"
+msgstr "Tu âs ricevût un file"
+
+#: ../src/obexpush.c:145
+msgid "Open File"
+msgstr "Vierç File"
+
+#: ../src/obexpush.c:149
+msgid "Reveal File"
+msgstr "Palese File"
+
+#: ../src/obexpush.c:166
+msgid "File reception complete"
+msgstr "Ricezion dai file completade"
