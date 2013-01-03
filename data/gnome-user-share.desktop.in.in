@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Personal File Sharing
 _Comment=Launch Personal File Sharing if enabled
-_Keywords=share;files;
+_Keywords=share;files;bluetooth;
 Icon=folder-remote
 Exec=@installdir@/gnome-user-share
 Terminal=false
