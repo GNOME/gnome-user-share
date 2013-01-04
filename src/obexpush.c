@@ -137,6 +137,7 @@ show_notification (const char *filename)
 								 "dialog-information");
 
 	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_DEFAULT);
+	notify_notification_set_hint_string (notification, "desktop-entry", "gnome-user-share-properties");
 
 	mime_type = g_content_type_guess (filename, NULL, 0, NULL);
 	app = g_app_info_get_default_for_type (mime_type, FALSE);

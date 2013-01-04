@@ -11,4 +11,4 @@ OnlyShowIn=GNOME;
 X-GNOME-Bugzilla-Bugzilla=GNOME
 X-GNOME-Bugzilla-Product=gnome-user-share
 X-GNOME-Bugzilla-Component=general
-
+X-GNOME-UsesNotifications=true
