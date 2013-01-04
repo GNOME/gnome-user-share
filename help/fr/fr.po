@@ -154,7 +154,7 @@ msgstr "<primary>partage de fichiers</primary>"
 
 #: C/index.docbook:47(article/indexterm)
 msgid "<primary>sharing</primary>"
-msgstr "<primary>partage/<primary>"
+msgstr "<primary>partage/</primary>"
 
 #: C/index.docbook:50(sect1/title)
 msgid "Introduction"
