@@ -32,7 +32,7 @@ msgstr ""
 "Free Documentation License (GFDL) ve verzi 1.1 nebo v jakékoli další verzi "
 "vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů "
 "předních desek a bez textů zadních desek. Kopii licence GFDL naleznete pod "
-"<ulink type=\"help\" url=\"ghelp:fdl\">tímto odkazem</ulink> nebo v souboru "
+"tímto <ulink type=\"help\" url=\"ghelp:fdl\">odkazem</ulink> nebo v souboru "
 "COPYING-DOCS dodávaném s touto příručkou."
 
 #: C/legal.xml:12(para)
