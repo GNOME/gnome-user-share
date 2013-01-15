@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <glib/gi18n-lib.h>
+#include <gio/gdesktopappinfo.h>
 #include <gtk/gtk.h>
 #include <bluetooth-client.h>
 #include <libnautilus-extension/nautilus-menu-provider.h>
@@ -81,14 +82,29 @@ launch_process (char **argv, GtkWindow *parent)
 static void
 launch_prefs_on_window (GtkWindow *window)
 {
-        char *argv [2];
+	GDesktopAppInfo *app_info;
+	GError *error = NULL;
+	GdkAppLaunchContext *launch_context;
 
-        argv [0] = g_build_filename (BINDIR, "gnome-file-share-properties", NULL);
-        argv [1] = NULL;
+	app_info = g_desktop_app_info_new ("gnome-sharing-panel.desktop");
+	if (app_info == NULL) {
+		g_warning ("Could not launch Sharing settings: gnome-sharing-panel.desktop missing");
+		return;
+	}
 
-        launch_process (argv, window);
+	/* setup the launch context so the startup notification is correct */
+	launch_context = gdk_display_get_app_launch_context (gdk_display_get_default ());
+	gdk_app_launch_context_set_timestamp (launch_context, GDK_CURRENT_TIME);
 
-        g_free (argv [0]);
+	if (!g_app_info_launch (G_APP_INFO (app_info), NULL, G_APP_LAUNCH_CONTEXT (launch_context), &error)) {
+		g_warning ("Could not launch '%s': %s",
+			   g_app_info_get_commandline (G_APP_INFO (app_info)),
+			   error->message);
+		g_error_free (error);
+	}
+
+	g_object_unref (launch_context);
+	g_object_unref (app_info);
 }
 
 static void
