@@ -4,15 +4,15 @@
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
 # Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-25 10:08+0000\n"
-"PO-Revision-Date: 2012-08-25 12:05+0200\n"
+"POT-Creation-Date: 2013-01-15 16:39+0000\n"
+"PO-Revision-Date: 2013-01-15 18:45+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 2.91.5\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -55,8 +55,8 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"Si esto es cierto, la carpeta «Público» en la carpeta personal del usuario "
-"se compartirá por Bluetooth cuando el usuario inicie sesión."
+"Si esto es cierto, la carpeta «Público» en la carpeta personal del usuario se "
+"compartirá por Bluetooth cuando el usuario inicie sesión."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
@@ -104,70 +104,17 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Si notificar acerca de los nuevos archivos recibidos."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Preferencias de compartición de archivos personales"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Compartir archivos en la red"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "C_ompartir archivos públicos por red"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Contraseña:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Requerir contraseña:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Compartir archivos por Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Compartir archivos públicos por _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "_Permitir que los dispositivos remotos eliminen archivos"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Requerir que los dispositivos re_motos se vinculen con este equipo"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Recibir archivos por Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Recibir los archivos por Bluetooth en la carpeta _Descargas"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "_Aceptar archivos: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_Notificar acerca de los archivos recibidos"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Compartición de archivos personales"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Preferencias para la compartición de archivos"
-
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Lanzar la compartición de archivos personales si están activadas"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "compartir:archivos:bluetooth;obex;http;red;copiar;enviar;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -177,54 +124,17 @@ msgstr "Preferencias"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Lanzar las preferencias de compartición de archivos personales"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr ""
-"No se pudieron lanzar las preferencias de compartición de archivos personales"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Se puede usar para compartir o recibir archivos"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Se puede compartir a través de la red o por Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Se puede usar para recibir archivos por Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Sin razón"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "No se pudo mostrar el contenido de la ayuda."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "No se pudo construir la interfaz."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Nunca"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Al escribir archivos"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Siempre"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Sólo para dispositivos configurados"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Preguntar"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -257,17 +167,88 @@ msgstr "Ha recibido «%s» a través de Bluetooth"
 msgid "You received a file"
 msgstr "Recibió un archivo"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Abrir archivo"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Revelar archivo"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "La recepción de archivos está completada"
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "Preferencias de compartición de archivos personales"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "Compartir archivos en la red"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "C_ompartir archivos públicos por red"
+
+#~ msgid "_Password:"
+#~ msgstr "_Contraseña:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_Requerir contraseña:"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "Compartir archivos por Bluetooth"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Compartir archivos públicos por _Bluetooth"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "_Permitir que los dispositivos remotos eliminen archivos"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "Requerir que los dispositivos re_motos se vinculen con este equipo"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "Recibir archivos por Bluetooth"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Recibir los archivos por Bluetooth en la carpeta _Descargas"
+
+#~ msgid "_Accept files: "
+#~ msgstr "_Aceptar archivos: "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_Notificar acerca de los archivos recibidos"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "Preferencias para la compartición de archivos"
+
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr ""
+#~ "No se pudieron lanzar las preferencias de compartición de archivos "
+#~ "personales"
+
+#~ msgid "No reason"
+#~ msgstr "Sin razón"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "No se pudo mostrar el contenido de la ayuda."
+
+#~ msgid "Could not build interface."
+#~ msgstr "No se pudo construir la interfaz."
+
+#~ msgid "Never"
+#~ msgstr "Nunca"
+
+#~ msgid "When writing files"
+#~ msgstr "Al escribir archivos"
+
+#~ msgid "Always"
+#~ msgstr "Siempre"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "Sólo para dispositivos configurados"
+
+#~ msgid "Ask"
+#~ msgstr "Preguntar"
 
 #~ msgid "You can share files from this folder and receive files to it"
 #~ msgstr "Puede compartir archivos desde esta carpeta y recibirlos en ella"
