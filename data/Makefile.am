@@ -1,16 +1,11 @@
 SUBDIRS = icons
 
-@INTLTOOL_DESKTOP_RULE@
-desktopdir = $(datadir)/applications
-desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
-desktop_in_files = gnome-user-share-properties.desktop.in
-
 autostartdir = $(sysconfdir)/xdg/autostart/
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 autostart_in_files = gnome-user-share.desktop.in
 
 appdir = $(datadir)/gnome-user-share
-app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile file-share-properties.ui
+app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile
 
 gsettingsdir = $(datadir)/glib-2.0/schemas
 gsettings_in_files = org.gnome.desktop.file-sharing.gschema.xml.in
@@ -22,13 +17,11 @@ convertdir = $(datadir)/GConf/gsettings
 convert_DATA = gnome-user-share.convert
 
 EXTRA_DIST = $(app_DATA)  \
-	$(desktop_in_files)   \
 	$(gsettings_in_files) \
 	$(convert_DATA) \
-	gnome-user-share.desktop.in.in \
-	file-share-properties.ui
+	gnome-user-share.desktop.in.in
 
-CLEANFILES = $(desktop_DATA) $(autostart_DATA) $(gsettings_DATA)
+CLEANFILES = $(autostart_DATA) $(gsettings_DATA)
 
 DISTCLEANFILES = $(gsettings_DATA)
 

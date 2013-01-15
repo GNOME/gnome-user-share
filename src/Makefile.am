@@ -1,4 +1,3 @@
-
 MARSHALFILES = marshal.c marshal.h
 BUILT_SOURCES = $(MARSHALFILES)
 
@@ -7,9 +6,6 @@ marshal.c: marshal.h
 marshal.h: marshal.list
 	$(AM_V_GEN) ( $(GLIB_GENMARSHAL) --prefix=marshal $(srcdir)/marshal.list --header > marshal.h )
 
-
-bin_PROGRAMS= \
-	gnome-file-share-properties
 
 libexec_PROGRAMS= \
 	gnome-user-share
@@ -53,14 +49,6 @@ gnome_user_share_LDADD =	\
 	$(SELINUX_LIBS)	\
 	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
 
-gnome_file_share_properties_SOURCES =	\
-	file-share-properties.c		\
-	user_share-private.h		\
-	user_share-private.c
-
-gnome_file_share_properties_LDADD = \
-	$(USER_SHARE_CONFIG_LIBS)
-
 nautilus_extensiondir = $(NAUTILUSDIR)
 nautilus_extension_LTLIBRARIES = libnautilus-share-extension.la
 
@@ -76,6 +64,5 @@ libnautilus_share_extension_la_LDFLAGS = -avoid-version -module -no-undefined
 EXTRA_DIST = marshal.list
 
 CLEANFILES = $(BUILT_SOURCES)
-
 
 -include $(top_srcdir)/git.mk
