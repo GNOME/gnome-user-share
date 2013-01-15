@@ -1,5 +1,6 @@
 SUBDIRS = icons
 
+@INTLTOOL_DESKTOP_RULE@
 autostartdir = $(sysconfdir)/xdg/autostart/
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 autostart_in_files = gnome-user-share.desktop.in
