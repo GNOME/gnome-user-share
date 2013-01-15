@@ -80,7 +80,7 @@ launch_process (char **argv, GtkWindow *parent)
 }
 
 static void
-launch_prefs_on_window (GtkWindow *window)
+launch_prefs_on_window (void)
 {
 	GDesktopAppInfo *app_info;
 	GError *error = NULL;
@@ -112,9 +112,8 @@ bar_response_cb (NautilusShareBar *bar,
                  gint response,
                  gpointer         data)
 {
-        if (response == NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES) {
-                launch_prefs_on_window (GTK_WINDOW (data));
-        }
+        if (response == NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES)
+                launch_prefs_on_window ();
 }
 
 static void
