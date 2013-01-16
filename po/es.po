@@ -4,15 +4,15 @@
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
 # Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-25 10:08+0000\n"
-"PO-Revision-Date: 2012-08-25 12:05+0200\n"
+"POT-Creation-Date: 2013-01-16 00:27+0000\n"
+"PO-Revision-Date: 2013-01-16 12:52+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 2.91.5\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -55,8 +55,8 @@ msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"Si esto es cierto, la carpeta «Público» en la carpeta personal del usuario "
-"se compartirá por Bluetooth cuando el usuario inicie sesión."
+"Si esto es cierto, la carpeta «Público» en la carpeta personal del usuario se "
+"compartirá por Bluetooth cuando el usuario inicie sesión."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
@@ -169,6 +169,10 @@ msgstr "Preferencias para la compartición de archivos"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Lanzar la compartición de archivos personales si están activadas"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "compartir;archivos;bluetooth;obex;http;red;copiar;enviar;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferencias"
@@ -177,20 +181,20 @@ msgstr "Preferencias"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Lanzar las preferencias de compartición de archivos personales"
 
-#: ../src/share-extension.c:69
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr ""
 "No se pudieron lanzar las preferencias de compartición de archivos personales"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Se puede usar para compartir o recibir archivos"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Se puede compartir a través de la red o por Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Se puede usar para recibir archivos por Bluetooth"
 
@@ -257,15 +261,15 @@ msgstr "Ha recibido «%s» a través de Bluetooth"
 msgid "You received a file"
 msgstr "Recibió un archivo"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Abrir archivo"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Revelar archivo"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "La recepción de archivos está completada"
 
