@@ -6,21 +6,23 @@
 # Djavan Fagundes <dnoway@gmail.com>, 2009.
 # André Gondim <In Memoriam>, 2009.
 # Djavan Fagundes <dnoway@gmail.com>, 2009.
-#
+# Rafael Ferreira <rafael.f.f1@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-06 09:26-0400\n"
-"PO-Revision-Date: 2012-09-05 22:11-0300\n"
-"Last-Translator: Fábio Nogueira <fnogueira@gnome.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-16 00:27+0000\n"
+"PO-Revision-Date: 2013-01-18 20:29-0300\n"
+"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -167,6 +169,10 @@ msgstr "Preferências para compartilhamento de arquivos"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Lança compartilhamento de arquivos pessoais se habilitado"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "compartilhar;arquivos;bluetooth;obex;http;rede;copiar;enviar;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferências"
@@ -175,21 +181,21 @@ msgstr "Preferências"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Lançar preferências de compartilhamento de arquivos pessoais"
 
-#: ../src/share-extension.c:69
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr ""
 "Não foi possível lançar as preferências de compartilhamento de arquivos "
 "pessoais"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Pode ser usado para compartilhar ou receber arquivos"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Pode ser compartilhado através da rede ou Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Pode ser usado para receber arquivos via Bluetooth"
 
@@ -256,15 +262,15 @@ msgstr "Você recebeu \"%s\" pelo Bluetooth"
 msgid "You received a file"
 msgstr "Você recebeu um arquivo"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Abrir arquivo"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Revelar arquivo"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Recebimento de arquivo completo"
 
