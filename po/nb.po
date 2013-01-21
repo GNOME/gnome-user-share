@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of gnome-user-share.
 # Copyright (C) YEAR, THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Kjartan Maraas <kmaraas@gnome.org>, 2007-2012.
+# Kjartan Maraas <kmaraas@gnome.org>, 2007-2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 3.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-28 07:47+0200\n"
-"PO-Revision-Date: 2012-08-28 07:48+0200\n"
+"POT-Creation-Date: 2013-01-21 11:01+0100\n"
+"PO-Revision-Date: 2013-01-21 11:02+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -95,70 +95,17 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Om nylig mottatte filer skal varsles."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Brukervalg for deling av personlige filer"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Del filer over nettverket"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "Del offentlige filer på nettverket"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Passord:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "K_rev passord:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Del filer over Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Del offentlige filer over Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "La e_ksterne enheter slette filer"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Krev at ekster_ne enheter kobler seg til denne datamaskinen"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Motta filer over Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Motta filer over Bluetooth i mappen Ne_dlasting"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "Godt_a filer: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "Varsle om _mottatte filer"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Deling av personlige filer"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Brukervalg for deling av filer"
-
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Start brukerdeling hvis aktivert"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "del;filer;bluetooth;obex;http;nettverk;kopier;send;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -168,53 +115,17 @@ msgstr "Brukervalg"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Start brukervalg for deling av personlige filer"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Kan ikke starte brukervalg for deling av personlige filer"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Kan brukes til å dele eller motta filer"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Kan deles over nettverket eller Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Kan brukes til å motta filer over Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Ingen årsak"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Kunne ikke vise hjelpinnhold."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Kunne ikke bygge grensesnitt."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Aldri"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Når filer skrives"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Alltid"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Kun for konfigurerte enheter"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Spør"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -247,14 +158,14 @@ msgstr "Du mottok «%s» via Bluetooth"
 msgid "You received a file"
 msgstr "Du mottok en fil"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Åpne fil"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Vis fil"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Mottak av fil fullført"
