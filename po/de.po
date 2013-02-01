@@ -9,11 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-09 13:17+0100\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-01 21:10+0100\n"
+"PO-Revision-Date: 2013-02-01 21:11+0100\n"
+"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -28,77 +27,52 @@ msgid "Share Public directory over the network"
 msgstr "Öffentlichen Ordner im Netzwerk freigeben"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen "
-"Ordner im Netzwerk freigegeben, sobald der Benutzer angemeldet ist."
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen Ordner im Netzwerk freigegeben, sobald der Benutzer angemeldet ist."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Wann Passwörter erforderlich sind"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr ""
-"Wann nach Passwörtern gefragt wird. Mögliche Werte sind »never« (nie), "
-"»on_write« (beim Schreiben) und »always« (immer)."
+msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "Wann nach Passwörtern gefragt wird. Mögliche Werte sind »never« (nie), »on_write« (beim Schreiben) und »always« (immer)."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
 msgstr "Öffentlichen Ordner über Bluetooth freigeben"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen "
-"Ordner über Bluetooth freigegeben, sobald der Benutzer angemeldet ist."
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen Ordner über Bluetooth freigegeben, sobald der Benutzer angemeldet ist."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "Legt fest, ob Bluetooth-Clients Dateien schreiben dürfen."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Legt fest, ob Bluetooth-Clients Dateien schreiben oder nur lesen dürfen."
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "Legt fest, ob Bluetooth-Clients Dateien schreiben oder nur lesen dürfen."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Legt fest, ob sich Bluetooth-Clients an den Computer anbinden müssen, um "
-"Dateien zu senden."
+msgstr "Legt fest, ob sich Bluetooth-Clients an den Computer anbinden müssen, um Dateien zu senden."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Legt fest, ob Bluetooth-Clients Dateien mit ObexPush senden dürfen"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Wenn diese Option gesetzt ist, dürfen Bluetooth-Geräte Dateien in den "
-"Download-Ordner des Benutzer senden."
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "Wenn diese Option gesetzt ist, dürfen Bluetooth-Geräte Dateien in den Download-Ordner des Benutzer senden."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "Wann über Bluetooth gesendete Dateien angenommen werden"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. Mögliche "
-"Werte sind »always« (immer), »bonded« (verbunden) und »ask« (nachfragen)."
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
+msgstr "Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. Mögliche Werte sind »always« (immer), »bonded« (verbunden) und »ask« (nachfragen)."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
@@ -157,7 +131,8 @@ msgid "_Notify about received files"
 msgstr "Über _empfangene Dateien benachrichtigen"
 
 #: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Persönliche Dateifreigabe"
 
@@ -169,6 +144,10 @@ msgstr "Einstellungen zur Freigabe von Dateien"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Persönliche Dateifreigabe starten, wenn aktiv"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "Freigabe;Dateien;bluetooth;obex;http;Netzwerk;kopieren;Transfer;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Einstellungen"
@@ -177,20 +156,19 @@ msgstr "Einstellungen"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Einstellungen zur persönlichen Dateifreigabe aufrufen"
 
-#: ../src/share-extension.c:69
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr ""
-"Einstellungen zur persönlichen Dateifreigabe konnten nicht aufgerufen werden"
+msgstr "Einstellungen zur persönlichen Dateifreigabe konnten nicht aufgerufen werden"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Darf zum Freigeben oder Empfangen von Dateien verwendet werden"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Darf über das Netzwerk oder Bluetooth freigegeben werden"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Darf zum Empfangen von Dateien über Bluetooth verwendet werden"
 
@@ -214,7 +192,8 @@ msgstr "Niemals"
 msgid "When writing files"
 msgstr "Beim Schreiben von Dateien"
 
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
+#: ../src/file-share-properties.c:389
+#: ../src/file-share-properties.c:412
 msgid "Always"
 msgstr "Immer"
 
@@ -257,15 +236,15 @@ msgstr "Sie haben »%s« über Bluetooth erhalten"
 msgid "You received a file"
 msgstr "Sie haben eine Datei erhalten"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Datei öffnen"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Datei zeigen"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Dateiempfang ist abgeschlossen"
 
