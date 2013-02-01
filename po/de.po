@@ -9,11 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-09 13:17+0100\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-01 21:12+0100\n"
+"PO-Revision-Date: 2013-02-01 21:12+0100\n"
+"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -28,146 +27,69 @@ msgid "Share Public directory over the network"
 msgstr "Öffentlichen Ordner im Netzwerk freigeben"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen "
-"Ordner im Netzwerk freigegeben, sobald der Benutzer angemeldet ist."
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen Ordner im Netzwerk freigegeben, sobald der Benutzer angemeldet ist."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Wann Passwörter erforderlich sind"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr ""
-"Wann nach Passwörtern gefragt wird. Mögliche Werte sind »never« (nie), "
-"»on_write« (beim Schreiben) und »always« (immer)."
+msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "Wann nach Passwörtern gefragt wird. Mögliche Werte sind »never« (nie), »on_write« (beim Schreiben) und »always« (immer)."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
 msgstr "Öffentlichen Ordner über Bluetooth freigeben"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen "
-"Ordner über Bluetooth freigegeben, sobald der Benutzer angemeldet ist."
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen Ordner über Bluetooth freigegeben, sobald der Benutzer angemeldet ist."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "Legt fest, ob Bluetooth-Clients Dateien schreiben dürfen."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Legt fest, ob Bluetooth-Clients Dateien schreiben oder nur lesen dürfen."
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "Legt fest, ob Bluetooth-Clients Dateien schreiben oder nur lesen dürfen."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Legt fest, ob sich Bluetooth-Clients an den Computer anbinden müssen, um "
-"Dateien zu senden."
+msgstr "Legt fest, ob sich Bluetooth-Clients an den Computer anbinden müssen, um Dateien zu senden."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Legt fest, ob Bluetooth-Clients Dateien mit ObexPush senden dürfen"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Wenn diese Option gesetzt ist, dürfen Bluetooth-Geräte Dateien in den "
-"Download-Ordner des Benutzer senden."
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "Wenn diese Option gesetzt ist, dürfen Bluetooth-Geräte Dateien in den Download-Ordner des Benutzer senden."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "Wann über Bluetooth gesendete Dateien angenommen werden"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. Mögliche "
-"Werte sind »always« (immer), »bonded« (verbunden) und »ask« (nachfragen)."
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
+msgstr "Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. Mögliche Werte sind »always« (immer), »bonded« (verbunden) und »ask« (nachfragen)."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Legt fest, ob über neu empfangene Dateien informiert werden soll."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Einstellungen zur persönlichen Dateifreigabe"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Dateien über das Netzwerk freigeben"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "Öffentlichen Ordner im Netzwerk _freigeben"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Passwort:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Benötigt Passwort:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Dateien über Bluetooth freigeben"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Öffentliche Dateien über _Bluetooth freigeben"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "Entfernten Geräten das Löschen von Dateien _erlauben"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Das Verbinden en_tfernter Geräte mit diesem Computer voraussetzen"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Dateien über Bluetooth empfangen"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Dateien im _Download-Ordner über Bluetooth empfangen"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "Dateien _annehmen:"
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "Über _empfangene Dateien benachrichtigen"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Persönliche Dateifreigabe"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Einstellungen zur Freigabe von Dateien"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Persönliche Dateifreigabe starten, wenn aktiv"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "Freigabe;Dateien;bluetooth;obex;http;Netzwerk;kopieren;Transfer;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -177,54 +99,17 @@ msgstr "Einstellungen"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Einstellungen zur persönlichen Dateifreigabe aufrufen"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr ""
-"Einstellungen zur persönlichen Dateifreigabe konnten nicht aufgerufen werden"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Darf zum Freigeben oder Empfangen von Dateien verwendet werden"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Darf über das Netzwerk oder Bluetooth freigegeben werden"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Darf zum Empfangen von Dateien über Bluetooth verwendet werden"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Kein Grund"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Das Hilfedokument konnte nicht angezeigt werden."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Die Oberfläche konnte nicht erstellt werden."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Niemals"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Beim Schreiben von Dateien"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Immer"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Nur für eingerichtete Geräte"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Nachfragen"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -257,15 +142,85 @@ msgstr "Sie haben »%s« über Bluetooth erhalten"
 msgid "You received a file"
 msgstr "Sie haben eine Datei erhalten"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Datei öffnen"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Datei zeigen"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Dateiempfang ist abgeschlossen"
 
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "Einstellungen zur persönlichen Dateifreigabe"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "Dateien über das Netzwerk freigeben"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "Öffentlichen Ordner im Netzwerk _freigeben"
+
+#~ msgid "_Password:"
+#~ msgstr "_Passwort:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_Benötigt Passwort:"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "Dateien über Bluetooth freigeben"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Öffentliche Dateien über _Bluetooth freigeben"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "Entfernten Geräten das Löschen von Dateien _erlauben"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "Das Verbinden en_tfernter Geräte mit diesem Computer voraussetzen"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "Dateien über Bluetooth empfangen"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Dateien im _Download-Ordner über Bluetooth empfangen"
+
+#~ msgid "_Accept files: "
+#~ msgstr "Dateien _annehmen:"
+
+#~ msgid "_Notify about received files"
+#~ msgstr "Über _empfangene Dateien benachrichtigen"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "Einstellungen zur Freigabe von Dateien"
+
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr ""
+#~ "Einstellungen zur persönlichen Dateifreigabe konnten nicht aufgerufen "
+#~ "werden"
+
+#~ msgid "No reason"
+#~ msgstr "Kein Grund"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "Das Hilfedokument konnte nicht angezeigt werden."
+
+#~ msgid "Could not build interface."
+#~ msgstr "Die Oberfläche konnte nicht erstellt werden."
+
+#~ msgid "Never"
+#~ msgstr "Niemals"
+
+#~ msgid "When writing files"
+#~ msgstr "Beim Schreiben von Dateien"
+
+#~ msgid "Always"
+#~ msgstr "Immer"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "Nur für eingerichtete Geräte"
+
+#~ msgid "Ask"
+#~ msgstr "Nachfragen"
