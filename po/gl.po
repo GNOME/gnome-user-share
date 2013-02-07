@@ -1,10 +1,8 @@
 # Galician translation of gnome-user-share.
 # Copyright (C) 2000-2001 Jesús Bravo Álvarez.
 # Copyright (C) 1999 Ruben Lopez Gomez.
-#
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en http://www.trasno.net
-#
 # Ruben Lopez Gomez <ryu@mundivia.es>, 1999. (logview from gnome-admin).
 # Jesús Bravo Álvarez <jba@pobox.com>, 2000, 2001.
 # Ignacio Casal Quinteiro <adorador_del_heavy@hotmail.com>, 2004.
@@ -14,22 +12,22 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2010, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2012.
-#
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-29 00:31+0200\n"
-"PO-Revision-Date: 2012-08-29 00:31+0200\n"
+"POT-Creation-Date: 2013-02-07 01:46+0100\n"
+"PO-Revision-Date: 2013-02-07 01:46+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
+"Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Gtranslator 2.91.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -178,6 +176,10 @@ msgstr "Preferencias para compartir ficheiros"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Iniciar Compartir ficheiros persoais, se está activado"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "compartir;ficheiros;bluetooth;obex;http;rede;copiar;enviar;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferencias"
@@ -186,20 +188,20 @@ msgstr "Preferencias"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Iniciar as Preferencias de compartir ficheiros persoais"
 
-#: ../src/share-extension.c:69
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr ""
 "Non é posíbel iniciar as Preferencias de compartición de ficheiros persoais"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Pode empregarse para compartir ou recibir ficheiros"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Pode compartirse pola rede ou mediante Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Pode empregarse para recibir ficheiros mediante Bluetooth"
 
@@ -266,15 +268,15 @@ msgstr "Recibiu «%s» mediante Bluetooth"
 msgid "You received a file"
 msgstr "Recibiu un ficheiro"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Abrir o ficheiro"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Mostrar o ficheiro"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Recepción de ficheiro completada"
 
