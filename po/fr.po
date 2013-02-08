@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-01 18:15+0200\n"
+"POT-Creation-Date: 2013-01-16 00:27+0000\n"
+"PO-Revision-Date: 2013-02-08 17:15+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -171,6 +171,10 @@ msgstr "Préférences pour le partage de fichiers"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Lance le partage de fichiers personnels s'il est activé"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "partager;fichiers;bluetooth;obex;http;réseau;copier;envoi;envoyer;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Préférences"
@@ -179,19 +183,19 @@ msgstr "Préférences"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Ouvre les préférences du partage de fichiers personnels"
 
-#: ../src/share-extension.c:69
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Impossible d'ouvrir les préférences du partage de fichiers personnels"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Peut être utilisé pour partager ou recevoir des fichiers"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Peut être partagé sur le réseau ou par Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Peut être utilisé pour recevoir des fichiers par Bluetooth"
 
@@ -258,14 +262,14 @@ msgstr "Vous avez reçu « %s » par Bluetooth"
 msgid "You received a file"
 msgstr "Vous avez reçu un fichier"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Ouvrir le fichier"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Montrer le fichier"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Réception de fichiers terminée"
