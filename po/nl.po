@@ -2,44 +2,29 @@
 #
 # This file is distributed under the same license as the gnome-user-share package.
 #
-# Tino Meinen <a.t.meinen@chello.nl>, 2005–2006
-# Wouter Bolsterlee <wbolster@gnome.org>, 2010.
+# Tino Meinen <a.t.meinen@chello.nl>, 2005‒2006
+# Wouter Bolsterlee <wbolster@gnome.org>, 2010‒2013
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-20 17:46+0100\n"
-"PO-Revision-Date: 2010-03-20 17:46+0100\n"
+"POT-Creation-Date: 2013-02-15 21:17+0100\n"
+"PO-Revision-Date: 2013-02-15 21:15+0100\n"
 "Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# ingelogd/aangemeld
-# aangemeld bij wat, zou je je kunnen afvragen
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Indien ingeschakeld kunnen Bluetooth-apparaten bestanden versturen naar de "
-"Downloadmap van de aangemelde gebruiker."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "Share Public directory over the network"
+msgstr "Map met bestanden delen op het netwerk"
 
 # ingelogd/aangemeld
 # aangemeld bij wat, zou je je kunnen afvragen
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Indien ingeschakeld worden bestanden in de publieke gebruikersmap gedeeld "
-"via Bluetooth wanneer de gebruiker aangemeld is."
-
-# ingelogd/aangemeld
-# aangemeld bij wat, zou je je kunnen afvragen
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
@@ -47,49 +32,37 @@ msgstr ""
 "Indien ingeschakeld worden bestanden in de publieke gebruikersmap gedeeld "
 "via het netwerk wanneer de gebruiker aangemeld is."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-msgid "Share Public directory over Bluetooth"
-msgstr "Publieke map delen via Bluetooth"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "When to require passwords"
+msgstr "Wanneer wachtwoorden worden geeist"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
-msgid "Share Public directory over the network"
-msgstr "Publieke bestanden delen op het netwerk"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
-msgid "When to accept files sent over Bluetooth"
-msgstr "Wanneer via Bluetooth verzonden bestanden te accepteren"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Wanneer via Bluetooth verzonden bestanden worden geaccepteerd. Mogelijke "
-"waarden zijn ‘always’, ‘bonded’ en ‘ask’."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Wanneer er om wachtwoorden moet worden gevraagd, mogelijke opties: \"never"
-"\" (nooit), \"on_write\" (bij schrijven), \"always\" (altijd)"
+"Wanneer er om wachtwoorden moet worden gevraagd, mogelijke opties: "
+"‘never’ (nooit), ‘on_write’ (bij schrijven), ‘always’ (altijd)"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
-msgid "When to require passwords"
-msgstr "Wanneer wachtwoorden worden geeist"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "Publieke map delen via Bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Of Bluetooth-clients bestanden kunnen sturen via ObexPush."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
+# ingelogd/aangemeld
+# aangemeld bij wat, zou je je kunnen afvragen
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
 msgstr ""
-"Of Bluetooth-clients gekoppeld moetebn zijn met de computer om bestanden te "
-"kunnen sturen."
+"Indien ingeschakeld worden bestanden in de publieke gebruikersmap gedeeld "
+"via Bluetooth wanneer de gebruiker aangemeld is."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Of Bluetooth-clients bestanden mogen schrijven."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
@@ -97,136 +70,77 @@ msgstr ""
 "Of Bluetooth-clients bestanden kunnen schrijven, of enkel bestanden als "
 "alleen-lezen kunnen delen."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Of Bluetooth-clients bestanden mogen schrijven."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Of Bluetooth-clients gekoppeld moetebn zijn met de computer om bestanden te "
+"kunnen sturen."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Of Bluetooth-clients bestanden kunnen sturen via ObexPush."
+
+# ingelogd/aangemeld
+# aangemeld bij wat, zou je je kunnen afvragen
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Indien ingeschakeld kunnen Bluetooth-apparaten bestanden versturen naar de "
+"Downloadmap van de aangemelde gebruiker."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "Wanneer via Bluetooth verzonden bestanden te accepteren"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Wanneer via Bluetooth verzonden bestanden worden geaccepteerd. Mogelijke "
+"waarden zijn ‘always’, ‘bonded’ en ‘ask’."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr ""
 "Of de gebruiker gewaarschuwd moet worden bij nieuw ontvangen bestanden."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Receive Files over Bluetooth"
-msgstr "Bestanden ontvangen via Bluetooth"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over Bluetooth"
-msgstr "Bestanden delen via Bluetooth"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "Share Files over the Network"
-msgstr "Bestanden delen op het netwerk"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "Andere apparaten toestaan bestanden te ver_wijderen"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "Personal File Sharing Preferences"
-msgstr "Voorkeuren persoonlijke bestanden delen"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Bestanden in _Download-map ontvangen via Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Vereisen dat andere apparaten _aankoppelen met deze computer"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Publieke bestanden delen via _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "_Accept files: "
-msgstr "Bestanden _accepteren: "
-
-#: ../data/file-share-properties.ui.h:10
-msgid "_Notify about received files"
-msgstr "_Waarschuwen bij ontvangen bestanden"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "_Password:"
-msgstr "_Wachtwoord:"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Require password:"
-msgstr "Wachtwoord _vereisen:"
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Share public files on network"
-msgstr "_Publieke bestanden delen op het netwerk"
-
 # persoonlijk/uw
-#: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Uw bestanden delen"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Voorkeuren voor het delen van uw bestanden"
-
-#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "‘Persoonlijke bestanden delen’ opstarten indien ingeschakeld"
 
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "Voorkeuren opstarten"
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr ""
+"delen;share;bestanden;bluetooth;obex;http;netwerk;kopie;kopiëren;verzenden;"
+"sturen;versturen;"
 
-#: ../src/nautilus-share-bar.c:187
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Voorkeuren voor persoonlijke bestanden delen openen"
 
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
-msgstr "Kon de voorkeuren voor persoonlijke bestanden delen niet openen"
+#: ../src/share-extension.c:152
+msgid "May be used to share or receive files"
+msgstr "Kan gebruikt worden om bestanden te delen en te ontvangen"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr "U kunt bestanden in deze map delen en er bestanden ontvangen"
+#: ../src/share-extension.c:154
+msgid "May be shared over the network or Bluetooth"
+msgstr "Kan via het netwerk of via Bluetooth gedeeld worden"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "U kunt bestanden in deze map via het netwerk en via Bluetooth delen"
-
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "U kunt in deze map bestanden via Bluetooth ontvangen"
-
-#: ../src/file-share-properties.c:436
-msgid "No reason"
-msgstr "Geen reden"
-
-#: ../src/file-share-properties.c:464
-msgid "Could not display the help contents."
-msgstr "Kon hulp niet weergeven."
-
-#: ../src/file-share-properties.c:524
-msgid "Could not build interface."
-msgstr "Kon interface niet bouwen."
-
-#: ../src/file-share-properties.c:566
-msgid "Never"
-msgstr "Nooit"
-
-#: ../src/file-share-properties.c:569
-msgid "When writing files"
-msgstr "Bij het schrijven van bestanden"
-
-#: ../src/file-share-properties.c:572 ../src/file-share-properties.c:595
-msgid "Always"
-msgstr "Altijd"
-
-#: ../src/file-share-properties.c:598
-msgid "Only for set up devices"
-msgstr "Alleen voor ingestelde apparaten"
-
-#: ../src/file-share-properties.c:603
-msgid "Ask"
-msgstr "Vragen"
+#: ../src/share-extension.c:158
+msgid "May be used to receive files over Bluetooth"
+msgstr "Kan gebruikt worden om bestanden te ontvangen via Bluetooth"
 
 # gedeelde/publieke
 #. Translators: The %s will get filled in with the user name
@@ -238,40 +152,112 @@ msgstr "Vragen"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:134
+#: ../src/http.c:133
 #, c-format
 msgid "%s's public files"
-msgstr "%s's publieke bestanden"
+msgstr "Gedeelde bestanden van %s"
 
 # publieke/gedeelde
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:138
+#: ../src/http.c:137
 #, c-format
 msgid "%s's public files on %s"
-msgstr "%s's publieke bestanden op %s"
+msgstr "Gedeelde bestanden van %s op %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "U heeft ‘%s’ via Bluetooth ontvangen"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "U heeft een bestand ontvangen"
 
-#: ../src/obexpush.c:153
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Bestand openen"
 
-#: ../src/obexpush.c:157
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Bestand tonen"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Bestandsoverdracht compleet"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "Bestanden delen via Bluetooth"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "Bestanden delen op het netwerk"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "Andere apparaten toestaan bestanden te ver_wijderen"
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "Voorkeuren persoonlijke bestanden delen"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Bestanden in _Download-map ontvangen via Bluetooth"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "Vereisen dat andere apparaten _aankoppelen met deze computer"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Publieke bestanden delen via _Bluetooth"
+
+#~ msgid "_Accept files: "
+#~ msgstr "Bestanden _accepteren: "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_Waarschuwen bij ontvangen bestanden"
+
+#~ msgid "_Password:"
+#~ msgstr "_Wachtwoord:"
+
+#~ msgid "_Require password:"
+#~ msgstr "Wachtwoord _vereisen:"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "_Publieke bestanden delen op het netwerk"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "Voorkeuren voor het delen van uw bestanden"
+
+#~ msgid "Unable to launch the Personal File Sharing preferences"
+#~ msgstr "Kon de voorkeuren voor persoonlijke bestanden delen niet openen"
+
+#~ msgid "You can share files from this folder and receive files to it"
+#~ msgstr "U kunt bestanden in deze map delen en er bestanden ontvangen"
+
+#~ msgid "You can receive files over Bluetooth into this folder"
+#~ msgstr "U kunt in deze map bestanden via Bluetooth ontvangen"
+
+#~ msgid "No reason"
+#~ msgstr "Geen reden"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "Kon hulp niet weergeven."
+
+#~ msgid "Could not build interface."
+#~ msgstr "Kon interface niet bouwen."
+
+#~ msgid "Never"
+#~ msgstr "Nooit"
+
+#~ msgid "When writing files"
+#~ msgstr "Bij het schrijven van bestanden"
+
+#~ msgid "Always"
+#~ msgstr "Altijd"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "Alleen voor ingestelde apparaten"
+
+#~ msgid "Ask"
+#~ msgstr "Vragen"
 
 #~ msgid "User Sharing"
 #~ msgstr "Persoonlijke bestanden delen"
