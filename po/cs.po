@@ -7,15 +7,15 @@
 # Miloslav Trmac <mitr@volny.cz>, 2005, 2006.
 # Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2009.
-# Marek Černocký <marek@manet.cz>, 2009, 2010.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share gnome-2-28\n"
+"Project-Id-Version: gnome-user-share gnome-3-6\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2010-03-07 12:39+0100\n"
+"POT-Creation-Date: 2013-01-16 00:27+0000\n"
+"PO-Revision-Date: 2013-02-17 18:51+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -25,6 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-Language: Czech\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -172,6 +173,11 @@ msgstr "Nastavení sdílení souborů"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Je-li povoleno, spustit Sdílení osobních souborů"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr ""
+"sdílet;sdílení;bluetooth;obex;http;síť;kopírovat;kopírování;poslat;posílání;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Předvolby"
@@ -180,19 +186,19 @@ msgstr "Předvolby"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Předvolby spouštění Sdílení osobních souborů"
 
-#: ../src/share-extension.c:69
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Nelze spustit předvolby Sdílení osobních souborů"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Může být použito ke sdílení nebo přijímání souborů"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Může být sdíleno přes síť nebo přes Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Může být použito k přijímání souborů přes Bluetooth"
 
@@ -261,14 +267,14 @@ msgstr "Přes Bluetooth vám přišel soubor „%s“"
 msgid "You received a file"
 msgstr "Přišel vám soubor"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Otevřít soubor"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Zobrazit soubor"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Příjem souboru dokončen"
