@@ -7,15 +7,15 @@
 # Miloslav Trmac <mitr@volny.cz>, 2005, 2006.
 # Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2009.
-# Marek Černocký <marek@manet.cz>, 2009, 2010.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share gnome-2-28\n"
+"Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2010-03-07 12:39+0100\n"
+"POT-Creation-Date: 2013-01-15 16:39+0000\n"
+"PO-Revision-Date: 2013-02-17 18:51+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -25,6 +25,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-Language: Czech\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -107,70 +108,18 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Jestli oznamovat, že byly přijaty nové soubory."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Nastavení sdílení osobních souborů"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Sdílení souborů přes síť"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "Sdílet veřejné soubory přes _síť"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Heslo:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Vyžadovat heslo:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Sdílení souborů přes Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Sdílet veřejné soubory přes _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "Povolit vzdáleným počítačům _mazat soubory"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Vyžadovat od vzdálených zařízení, aby se svázaly s tí_mto počítačem"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Příjem souborů přes Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Soubory poslané přes Bluetooth přijímat do _adresáře pro stahování"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "_Přijímat soubory: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_Oznamovat přijaté soubory"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Sdílení osobních souborů"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Nastavení sdílení souborů"
-
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Je-li povoleno, spustit Sdílení osobních souborů"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr ""
+"sdílet;sdílení;bluetooth;obex;http;síť;kopírovat;kopírování;poslat;posílání;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -180,53 +129,17 @@ msgstr "Předvolby"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Předvolby spouštění Sdílení osobních souborů"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Nelze spustit předvolby Sdílení osobních souborů"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Může být použito ke sdílení nebo přijímání souborů"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Může být sdíleno přes síť nebo přes Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Může být použito k přijímání souborů přes Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Žádný důvod"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Nepodařilo se zobrazit témata nápovědy."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Rozhraní se nepodařilo sestavit."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Nikdy"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Při zapisování do souborů"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Vždy"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Pouze pro nastavená zařízení"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Zeptat se"
 
 # Sigh...
 #. Translators: The %s will get filled in with the user name
@@ -261,14 +174,14 @@ msgstr "Přes Bluetooth vám přišel soubor „%s“"
 msgid "You received a file"
 msgstr "Přišel vám soubor"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Otevřít soubor"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Zobrazit soubor"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Příjem souboru dokončen"
