@@ -1,0 +1,150 @@
+# Aragonese translation for gnome-user-share.
+# Copyright (C) 2013 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# Daniel Martínez <dmartinez@src.gnome.org>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-02-17 17:55+0000\n"
+"PO-Revision-Date: 2013-02-18 23:31+0100\n"
+"Last-Translator: Daniel Martinez <entaltoaragon@gmail.com>\n"
+"Language-Team: Aragonese <softaragones@googlegroups.com>\n"
+"Language: an\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "Share Public directory over the network"
+msgstr "Compartir a carpeta \"Publico\" por ret"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "Si isto ye cierto, a carpeta \"Publico\" en a carpeta personal d'os usuarios se compartirá por ret quan l'usuario enciete sesión."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "When to require passwords"
+msgstr "Quan requerir claus"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "Quan pedir claus. As opcions posibles son: \"never\" (nunca), \"on_write\" (en escribir) y \"always\" (siempre)."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "Compartir a carpeta \"Publico\" por Bluetooth"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "Si isto ye cierto, a carpeta \"Publico\" en a carpeta personal de l'usuario se compartirá por Bluetooth quan l'usuario enciete sesión."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Indica si se permite escribir fichers a os clients por Bluetooth"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "Indica si se permite a os clients por Bluetooth escribir fichers u solament compartir os fichers de lectura."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr "Si os clients Bluetooth amenesten emparellar-se con l'equipo ta ninviar fichers."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Si os clients Bluetooth pueden ninviar fichers fendo servir ObexPush."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "Si isto ye cierto, os dispositivos Bluetooth pueden ninviar fichers a la carpeta Descargas de l'usuario quan haiga encetau a sesión."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "Quán acceptar fichers ninviaus por Bluetooth"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
+msgstr "Quán acceptar fichers ninviaus por Bluetooth. As valors posibles son: \"always\" (siempre), \"bonded\" (vinculaus) y \"ask\" (preguntar)."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+msgid "Whether to notify about newly received files."
+msgstr "Si notificar sobre os nuevos fichers recibius."
+
+#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
+msgid "Personal File Sharing"
+msgstr "Compartición de fichers personals"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Lanzar a compartición de fichers personals si son activadas"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "compartir:fichers:bluetooth;obex;http;ret;copiar;ninviar;"
+
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: ../src/nautilus-share-bar.c:120
+msgid "Launch Personal File Sharing Preferences"
+msgstr "Lanzar as preferencias de compartición de fichers personals"
+
+#: ../src/share-extension.c:152
+msgid "May be used to share or receive files"
+msgstr "Se puede fer servir ta compartir u recibir fichers"
+
+#: ../src/share-extension.c:154
+msgid "May be shared over the network or Bluetooth"
+msgstr "Se puede compartir a traviés d'o ret u por Bluetooth"
+
+#: ../src/share-extension.c:158
+msgid "May be used to receive files over Bluetooth"
+msgstr "Se puede fer servir ta recibir fichers por Bluetooth"
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../src/http.c:133
+#, c-format
+msgid "%s's public files"
+msgstr "Fichers publicos de %s"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../src/http.c:137
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Fichers publicos de %s en %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:133
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Ha recibiu \"%s\" a traviés de Bluetooth"
+
+#: ../src/obexpush.c:135
+msgid "You received a file"
+msgstr "Recibió un fichero"
+
+#: ../src/obexpush.c:146
+msgid "Open File"
+msgstr "Ubrir fichero"
+
+#: ../src/obexpush.c:150
+msgid "Reveal File"
+msgstr "Revelar fichero"
+
+#: ../src/obexpush.c:167
+msgid "File reception complete"
+msgstr "A recepción de fichers ye rematada"
+
