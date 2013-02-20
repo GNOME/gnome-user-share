@@ -1,4 +1,8 @@
-This is gnome-user-share 3.7.4, a system for easy sharing of user files.
+This is gnome-user-share 3.7.90, a system for easy sharing of user files.
+
+Major changes since 3.7.4:
+- Build .tar.xz tarballs by default
+- Update translations
 
 Major changes since 3.0.4:
 - Remove preferences as they're now integrated with gnome-control-center 3.7.4
