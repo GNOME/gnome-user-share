@@ -27,7 +27,6 @@ INCLUDES=	\
 	-I$(top_builddir) 				\
 	$(EXTENSION_CFLAGS)				\
 	$(USER_SHARE_CFLAGS)				\
-	$(USER_SHARE_CONFIG_CFLAGS)			\
 	$(X_CFLAGS)
 
 gnome_user_share_SOURCES =	\
