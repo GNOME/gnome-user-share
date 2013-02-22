@@ -3,21 +3,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Amanpreet Singh Alam <aalam@users.sf.net>, 2005, 2006, 2009.
-# A S Alam <aalam@users.sf.net>, 2009, 2010, 2012.
+# A S Alam <aalam@users.sf.net>, 2009, 2010, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-02 10:07+0530\n"
+"POT-Creation-Date: 2013-01-15 16:39+0000\n"
+"PO-Revision-Date: 2013-02-22 03:06+0000\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
@@ -104,73 +104,21 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "ਕੀ ਨਵੀਆਂ ਮਿਲੀਆਂ ਫਾਇਲਾਂ ਲਈ ਸੂਚਨਾ ਦੇਣੀ ਹੈ।"
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਪਸੰਦ"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ(_S)"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "ਪਾਸਵਰਡ(_P):"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "ਲੋੜੀਦਾ ਪਾਸਵਰਡ(_R):"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਸਾਂਝੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ(_B)"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "ਰਿਮੋਟ ਜੰਤਰਾਂ ਨੂੰ ਫਾਇਲਾਂ ਹਟਾਉਣ ਦਿਓ(_w)"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "ਇਸ ਕੰਪਿਊਟਰ ਨਾਲ ਜੋੜਨ (ਬੌਂਡ) ਲਈ ਰਿਮੋਟ ਜੰਤਰ ਲੋੜੀਦੇ ਹਨ"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣੀਆਂ ਹੋਣ"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਮਿਲੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਡਾਊਨਲੋਡ (_Download) ਫੋਲਡਰ ਵਿੱਚ ਲਵੋ"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "ਫਾਇਲਾਂ ਮਨਜ਼ੂਰ(_A):"
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "ਲਈਆਂ ਫਾਇਲਾਂ ਬਾਰੇ ਸੂਚਨਾ ਲਵੋ(_N)"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰਨ ਲਈ ਪਸੰਦ"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "ਜੇ ਚਾਲੂ ਹੋਵੇ ਤਾਂ ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਚਲਾਓ"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr ""
+"ਸਾਂਝ;ਫਾਇਲਾਂ;ਸ਼ੇਅਰ;ਬਲਿਊਟੁੱਥ;ਨੈੱਟਵਰਕ;ਕਾਪੀ;ਭੇਜੋ;share;files;bluetooth;obex;http;ne"
+"twork;copy;send;"
+
 #: ../src/nautilus-share-bar.c:116
-#| msgid "Launch Preferences"
 msgid "Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ"
 
@@ -178,56 +126,17 @@ msgstr "ਮੇਰੀ ਪਸੰਦ"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸ਼ੇਅਰਿੰਗ ਪਸੰਦ ਚਲਾਓ"
 
-#: ../src/share-extension.c:69
-#| msgid "Unable to launch the Personal File Sharing preferences"
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਪਸੰਦ ਚਲਾਉਣ ਲਈ ਅਸਮਰੱਥ"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "ਫਾਇਲਾਂ ਨੂੰ ਸਾਂਝਾ ਕਰਨ ਜਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
-#: ../src/share-extension.c:144
-#| msgid "You can share files from this folder over the network and Bluetooth"
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "ਨੈੱਟਵਰਕ ਅਤੇ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਸਾਂਝਾ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ"
 
-#: ../src/share-extension.c:146
-#| msgid "Receive Files over Bluetooth"
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "ਕੋਈ ਕਾਰਨ ਨਹੀਂ"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "ਮੱਦਦ ਸਮੱਗਰੀ ਵੇਖਾਈ ਨਹੀਂ ਜਾ ਸਕੀ।"
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "ਬਿਲਡ ਇੰਟਰਫੇਸ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "ਕਦੇ ਨਹੀਂ"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "ਫਾਇਲਾਂ ਲਿਖਣ ਸਮੇਂ"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "ਹਮੇਸ਼ਾ"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "ਸੈਟਅੱਪ ਕੀਤੇ ਜੰਤਰਾਂ ਲਈ ਹੀ"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "ਪੁੱਛੋ"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -260,17 +169,87 @@ msgstr "ਤੁਸੀਂ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ \"%s\" ਲਏ"
 msgid "You received a file"
 msgstr "ਇੱਕ ਫਾਇਲ ਮਿਲੀ"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "ਫਾਇਲ ਖੋਲ੍ਹੋ"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "ਫਾਇਲ ਰੀਵੀਲ"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "ਫਾਇਲ ਪ੍ਰਾਪਤੀ ਪੂਰੀ"
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਪਸੰਦ"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ(_S)"
+
+#~ msgid "_Password:"
+#~ msgstr "ਪਾਸਵਰਡ(_P):"
+
+#~ msgid "_Require password:"
+#~ msgstr "ਲੋੜੀਦਾ ਪਾਸਵਰਡ(_R):"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਸਾਂਝੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ(_B)"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "ਰਿਮੋਟ ਜੰਤਰਾਂ ਨੂੰ ਫਾਇਲਾਂ ਹਟਾਉਣ ਦਿਓ(_w)"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "ਇਸ ਕੰਪਿਊਟਰ ਨਾਲ ਜੋੜਨ (ਬੌਂਡ) ਲਈ ਰਿਮੋਟ ਜੰਤਰ ਲੋੜੀਦੇ ਹਨ"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣੀਆਂ ਹੋਣ"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਮਿਲੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਡਾਊਨਲੋਡ (_Download) ਫੋਲਡਰ ਵਿੱਚ ਲਵੋ"
+
+#~ msgid "_Accept files: "
+#~ msgstr "ਫਾਇਲਾਂ ਮਨਜ਼ੂਰ(_A):"
+
+#~ msgid "_Notify about received files"
+#~ msgstr "ਲਈਆਂ ਫਾਇਲਾਂ ਬਾਰੇ ਸੂਚਨਾ ਲਵੋ(_N)"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰਨ ਲਈ ਪਸੰਦ"
+
+#~| msgid "Unable to launch the Personal File Sharing preferences"
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਪਸੰਦ ਚਲਾਉਣ ਲਈ ਅਸਮਰੱਥ"
+
+#~ msgid "No reason"
+#~ msgstr "ਕੋਈ ਕਾਰਨ ਨਹੀਂ"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "ਮੱਦਦ ਸਮੱਗਰੀ ਵੇਖਾਈ ਨਹੀਂ ਜਾ ਸਕੀ।"
+
+#~ msgid "Could not build interface."
+#~ msgstr "ਬਿਲਡ ਇੰਟਰਫੇਸ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#~ msgid "Never"
+#~ msgstr "ਕਦੇ ਨਹੀਂ"
+
+#~ msgid "When writing files"
+#~ msgstr "ਫਾਇਲਾਂ ਲਿਖਣ ਸਮੇਂ"
+
+#~ msgid "Always"
+#~ msgstr "ਹਮੇਸ਼ਾ"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "ਸੈਟਅੱਪ ਕੀਤੇ ਜੰਤਰਾਂ ਲਈ ਹੀ"
+
+#~ msgid "Ask"
+#~ msgstr "ਪੁੱਛੋ"
 
 #~ msgid "You can share files from this folder and receive files to it"
 #~ msgstr "ਤੁਸੀਂ ਇਸ ਫੋਲਡਰ ਤੋਂ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਇਸ ਤੋਂ ਫਾਇਲਾਂ ਲੈ ਸਕਦੇ ਹੋ"
