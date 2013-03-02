@@ -94,7 +94,7 @@ nautilus_share_bar_init (NautilusShareBar *bar)
 	action_area = gtk_info_bar_get_action_area (GTK_INFO_BAR (bar));
         gtk_button_box_set_layout (GTK_BUTTON_BOX (action_area), GTK_BUTTONBOX_CENTER);
 
-        vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 3);
+        vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
         gtk_container_add (GTK_CONTAINER (content_area), vbox);
 
 	attrs = pango_attr_list_new ();
