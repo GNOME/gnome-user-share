@@ -6,7 +6,7 @@ autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 autostart_in_files = gnome-user-share.desktop.in
 
 appdir = $(datadir)/gnome-user-share
-app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_groupfile
+app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_user_2.4.conf dav_groupfile
 
 gsettingsdir = $(datadir)/glib-2.0/schemas
 gsettings_in_files = org.gnome.desktop.file-sharing.gschema.xml.in
