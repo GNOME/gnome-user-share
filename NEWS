@@ -1,4 +1,9 @@
-This is gnome-user-share 3.7.90, a system for easy sharing of user files.
+This is gnome-user-share 3.7.91, a system for easy sharing of user files.
+
+Major changes since 3.7.90:
+- Add support for logind seat-tracking using gnome-session
+- Add support for Apache HTTPD 2.4
+- Update translations
 
 Major changes since 3.7.4:
 - Build .tar.xz tarballs by default
