@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
+"POT-Creation-Date: 2013-01-15 16:39+0000\n"
 "PO-Revision-Date: 2012-09-07 19:09+0300\n"
 "Last-Translator: Kasia Bondarava <kasia.bondarava@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
@@ -99,71 +99,18 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Ці паведамляць пра атрыманыя файлы."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Настройкі супольнага доступу да ўласных файлаў"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Публікацыя файлаў у сетцы"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "_Публікаваць файлы ў сетцы"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Пароль:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "Па_трабаваць пароль:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Публікацыя файлаў праз Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "_Публікаваць файлы праз Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "_Дазволіць аддаленым прыстасаванням выдаляць файлы"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Патрабаваць _ад аддаленых прыстасаванняў сувязі з камп'ютарам"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Атрыманне файлаў праз Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "_Атрымліваць файлы ў папку Сеціўных файлаў праз Bluetooth"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "_Прымаць файлы: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_Апавяшчаць аб атрыманых файлах"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Супольны доступ да ўласных файлаў"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Настройкі супольнага доступу да файлаў"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr ""
 "Запуск праграмы арганізацыі супольнага доступу да файлаў (калі ўключана)"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "супольны;рэсурс;bluetooth;obex;http;сетка;капіраванне;паслаць;пасылка;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -173,53 +120,17 @@ msgstr "Настройкі"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Запусціць настройку супольнага доступу да файлаў"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Не ўдалося запусціць настройку супольнага доступу да файлаў"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Прыдатна для арганізацыі супольнага доступу і перадачы файлаў"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Можа быць апублікавана ў сетцы ці праз Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Прыдатна для атрымання файлаў праз Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Прычына не вызначана"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Не ўдалося паказаць змест даведніка."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Не ўдалося ўтварыць інтэрфейс."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Ніколі"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Пры запісе файлаў"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Заўсёды"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Толькі пры настройцы прыстасаванняў"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Пытацца"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -252,14 +163,15 @@ msgstr "Вы атрымалі \"%s\" праз Bluetooth"
 msgid "You received a file"
 msgstr "Вы атрымалі файл"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Адкрыць файл"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Паказаць файл"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Атрыманне файла закончана"
+
