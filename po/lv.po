@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Peteris Krisjanis <pecisk@gmail.com>, 2010.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-22 03:21+0200\n"
+"POT-Creation-Date: 2013-01-15 16:39+0000\n"
+"PO-Revision-Date: 2013-03-11 00:40+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -42,8 +42,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kad prasīt paroles. Iespējamās vērtības ir “never” (nekad), “on_write” "
-"(rakstot) un “always” (vienmēr)."
+"Kad prasīt paroles. Iespējamās vērtības ir “never” (nekad), "
+"“on_write” (rakstot) un “always” (vienmēr)."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
@@ -102,73 +102,19 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Vai informēt par tikko saņemtām datnēm."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Personiskās datņu koplietošanas iestatījumi"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Koplietot datnes, izmantojot tīklu"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "_Koplietot publiskās datnes tīklā"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Parole:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "Piep_rasīt paroli:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Koplietot datnes, izmantojot Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Koplietot publiskās datnes, izmantojot _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "Atļau_t attālinātajām ierīcēm dzēst datnes"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Pieprasīt, lai attālinātās ierīces būtu sapārotas ar šo datoru"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Saņemt datnes, izmantojot Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Izmantojot Bluetooth, saņemt datnes “_Lejupielādes” mapē"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "Pieņemt d_atnes: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_Informēt par saņemtajām datnēm"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Personiskā datņu koplietošana"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Datņu koplietošanas iestatījumi"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Palaist personisko datņu koplietošanu (ja tā ir ieslēgta)"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "koplietot;datnes;bluetooth;obex;http;tīkls;kopēt;sūtīt;"
+
 #: ../src/nautilus-share-bar.c:116
-#| msgid "Launch Preferences"
 msgid "Preferences"
 msgstr "Iestatījumi"
 
@@ -176,56 +122,17 @@ msgstr "Iestatījumi"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Atvērt personiskās datņu koplietošanas iestatījumus"
 
-#: ../src/share-extension.c:69
-#| msgid "Unable to launch the Personal File Sharing preferences"
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Neizdevās palaist personiskās datņu koplietošanas iestatījumus"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Var izmantot, lai koplietotu vai saņemtu datnes"
 
-#: ../src/share-extension.c:144
-#| msgid "You can share files from this folder over the network and Bluetooth"
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Var koplietot caur tīklu vai Bluetooth"
 
-#: ../src/share-extension.c:146
-#| msgid "Receive Files over Bluetooth"
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Var izmantot, lai saņemtu datnes caur Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Bez iemesla"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Neizdevās attēlot palīdzības saturu."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Neizdevās izveidot saskarni."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Nekad"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Rakstot datnes"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Vienmēr"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Tikai no iestatītajām ierīcēm"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Vaicāt"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -258,17 +165,87 @@ msgstr "Saņemts “%s”, izmantojot Bluetooth"
 msgid "You received a file"
 msgstr "Saņemta datne"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Atvērt datni"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Atsegt datni"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Datnes uztveršana pabeigta"
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "Personiskās datņu koplietošanas iestatījumi"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "Koplietot datnes, izmantojot tīklu"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "_Koplietot publiskās datnes tīklā"
+
+#~ msgid "_Password:"
+#~ msgstr "_Parole:"
+
+#~ msgid "_Require password:"
+#~ msgstr "Piep_rasīt paroli:"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "Koplietot datnes, izmantojot Bluetooth"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Koplietot publiskās datnes, izmantojot _Bluetooth"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "Atļau_t attālinātajām ierīcēm dzēst datnes"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "Pieprasīt, lai attālinātās ierīces būtu sapārotas ar šo datoru"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "Saņemt datnes, izmantojot Bluetooth"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Izmantojot Bluetooth, saņemt datnes “_Lejupielādes” mapē"
+
+#~ msgid "_Accept files: "
+#~ msgstr "Pieņemt d_atnes: "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_Informēt par saņemtajām datnēm"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "Datņu koplietošanas iestatījumi"
+
+#~| msgid "Unable to launch the Personal File Sharing preferences"
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr "Neizdevās palaist personiskās datņu koplietošanas iestatījumus"
+
+#~ msgid "No reason"
+#~ msgstr "Bez iemesla"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "Neizdevās attēlot palīdzības saturu."
+
+#~ msgid "Could not build interface."
+#~ msgstr "Neizdevās izveidot saskarni."
+
+#~ msgid "Never"
+#~ msgstr "Nekad"
+
+#~ msgid "When writing files"
+#~ msgstr "Rakstot datnes"
+
+#~ msgid "Always"
+#~ msgstr "Vienmēr"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "Tikai no iestatītajām ierīcēm"
+
+#~ msgid "Ask"
+#~ msgstr "Vaicāt"
 
 #~ msgid "You can share files from this folder and receive files to it"
 #~ msgstr "Jūs varat koplietot failus no šīs mapes un saņemt failus tajā."
