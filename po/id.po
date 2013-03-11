@@ -4,23 +4,22 @@
 #
 # Ekasari <iin@informatika.lipi.go.id>, 2010.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2012.
+# Andika Triwidada <andika@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-03 22:44+0000\n"
-"PO-Revision-Date: 2012-09-04 17:38+0700\n"
-"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
-"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
+"POT-Creation-Date: 2013-01-16 00:27+0000\n"
+"PO-Revision-Date: 2013-03-11 15:33+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Indonesian\n"
-"X-Poedit-Country: Indonesia\n"
-"X-Generator: Lokalize 1.2\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -171,6 +170,10 @@ msgstr "Preferensi untuk berbagi berkas"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Luncurkan Berbagi Berkas Pribadi jika diaktifkan"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "berbagi;berkas;bluetooth;obex;http;jaringan;salin;kirim;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferensi"
@@ -179,19 +182,19 @@ msgstr "Preferensi"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Luncurkan Preferensi Berbagi Berkas Pribadi"
 
-#: ../src/share-extension.c:69
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "Tidak dapat meluncurkan Preferensi Berbagi Berkas Pribadi"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Mungkin digunakan untuk berbagi atau menerima berkas"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Mungkin dibagikan pada jaringan atau Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Mungkin digunakan untuk menerima berkas melalui Bluetooth"
 
@@ -258,14 +261,14 @@ msgstr "Anda menerima \"%s\" melalui Bluetooth"
 msgid "You received a file"
 msgstr "Anda menerima sebuah berkas"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Buka Berkas"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Perlihatkan Berkas"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Penerimaan berkas lengkap"
