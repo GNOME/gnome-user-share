@@ -1,15 +1,15 @@
 # gnome-user-share's Portuguese translation.
-# Copyright © 2007, 2009, 2010, 2012 gnome-user-share
+# Copyright © 2007, 2009, 2010, 2012, 2013 gnome-user-share
 # This file is distributed under the same license as the gnome-user-share package.
 # André Neves <drakferion@gmail.com>, 2007.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2009, 2010, 2012.
-#
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2009, 2010, 2012, 2013.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.6\n"
+"Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-01 01:37+0100\n"
-"PO-Revision-Date: 2012-09-01 01:40+0000\n"
+"POT-Creation-Date: 2013-03-15 00:09+0000\n"
+"PO-Revision-Date: 2013-03-15 00:10+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
@@ -19,14 +19,14 @@ msgstr ""
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
-msgstr "Partilhar o directório \"Public\" pela rede"
+msgstr "Partilhar o diretório \"Public\" pela rede"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"Se definido como verdadeiro, o directório \"Public\" na pasta pessoal do "
+"Se definido como verdadeiro, o diretório \"Public\" na pasta pessoal do "
 "utilizador será partilhado pela rede quando o utilizador estiver numa sessão."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
@@ -43,14 +43,14 @@ msgstr ""
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
-msgstr "Partilhar o directório \"Public\" por Bluetooth"
+msgstr "Partilhar o diretório \"Public\" por Bluetooth"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
-"Se definido como verdadeiro, o directório \"Public\" na pasta pessoal do "
+"Se definido como verdadeiro, o diretório \"Public\" na pasta pessoal do "
 "utilizador será partilhado por Bluetooth quando o utilizador estiver numa "
 "sessão."
 
@@ -84,7 +84,7 @@ msgid ""
 "directory when logged in."
 msgstr ""
 "Se definido como verdadeiro, dispositivos Bluetooth podem enviar ficheiros "
-"para o directório de Downloads do utilizador estiver numa sessão."
+"para o diretório de Downloads do utilizador estiver numa sessão."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
@@ -102,72 +102,17 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Se notificar ou não de ficheiros recebidos."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Preferências de Partilha de Ficheiros Pessoais"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Partilhar Ficheiros pela Rede"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "_Partilhar ficheiros da pasta \"Public\" pela rede"
-
-# # É assim que se traduz Public? Senão, ver e corrigir acima.
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Senha:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Exigir senha:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Partilhar Ficheiros por Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Partilhar ficheiros da pasta \"Public\" por _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "P_ermitir que dispositivos remotos apaguem ficheiros"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr ""
-"Requerer que os dispositivos re_motos se emparelhem com este computador"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Receber Ficheiros por Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Receber ficheiros por Bluetooth na pasta _Downloads"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "_Aceitar ficheiros: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_Notificar de ficheiros recebidos"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Partilha de Ficheiros Pessoais"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Preferências para a partilha de ficheiros"
-
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Inicia a Partilha de Ficheiros Pessoais, se activa"
+msgstr "Inicia a Partilha de Ficheiros Pessoais, se ativa"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "partilha;ficheiros;bluetooth;obex;http;rede;copiar;enviar;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -177,53 +122,17 @@ msgstr "Preferências"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Preferências de Iniciação da Partilha de Ficheiros Pessoais"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Incapaz de iniciar as Preferências de Partilha de Ficheiros Pessoais"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Pode ser utilizado para partilhar ou receber ficheiros"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Pode ser partilhado através da rede e Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Pode ser utilizado para receber ficheiros por Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Nenhum motivo"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Incapaz de apresentar o conteúdo da ajuda."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Incapaz de construir o interface."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Nunca"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Ao gravar ficheiros"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Sempre"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Apenas para dispositivos emparelhados"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Perguntar"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -234,14 +143,14 @@ msgstr "Perguntar"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "Ficheiros públicos de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Ficheiros públicos de %s em %s"
@@ -256,17 +165,89 @@ msgstr "Recebeu \"%s\" por Bluetooth"
 msgid "You received a file"
 msgstr "Recebeu um ficheiro"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Abrir o Ficheiro"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Revelar o Ficheiro"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
-msgstr "Recepção do ficheiro concluída"
+msgstr "Receção do ficheiro concluída"
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "Preferências de Partilha de Ficheiros Pessoais"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "Partilhar Ficheiros pela Rede"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "_Partilhar ficheiros da pasta \"Public\" pela rede"
+
+# # É assim que se traduz Public? Senão, ver e corrigir acima.
+#~ msgid "_Password:"
+#~ msgstr "_Senha:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_Exigir senha:"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "Partilhar Ficheiros por Bluetooth"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Partilhar ficheiros da pasta \"Public\" por _Bluetooth"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "P_ermitir que dispositivos remotos apaguem ficheiros"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr ""
+#~ "Requerer que os dispositivos re_motos se emparelhem com este computador"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "Receber Ficheiros por Bluetooth"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Receber ficheiros por Bluetooth na pasta _Downloads"
+
+#~ msgid "_Accept files: "
+#~ msgstr "_Aceitar ficheiros: "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_Notificar de ficheiros recebidos"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "Preferências para a partilha de ficheiros"
+
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr ""
+#~ "Incapaz de iniciar as Preferências de Partilha de Ficheiros Pessoais"
+
+#~ msgid "No reason"
+#~ msgstr "Nenhum motivo"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "Incapaz de apresentar o conteúdo da ajuda."
+
+#~ msgid "Could not build interface."
+#~ msgstr "Incapaz de construir o interface."
+
+#~ msgid "Never"
+#~ msgstr "Nunca"
+
+#~ msgid "When writing files"
+#~ msgstr "Ao gravar ficheiros"
+
+#~ msgid "Always"
+#~ msgstr "Sempre"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "Apenas para dispositivos emparelhados"
+
+#~ msgid "Ask"
+#~ msgstr "Perguntar"
 
 #~ msgid "You can share files from this folder and receive files to it"
 #~ msgstr ""
