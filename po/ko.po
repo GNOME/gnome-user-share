@@ -3,15 +3,15 @@
 #
 # Young-Ho Cha <ganadist at mizi.com>, 2005, 2007.
 # Namhyung Kim <namhyung@gmail.com>, 2007.
-# Changwoo Ryu <cwryu@debian.org>, 2009, 2010, 2012.
+# Changwoo Ryu <cwryu@debian.org>, 2009-2010, 2012-2013
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-15 17:40+0900\n"
+"POT-Creation-Date: 2013-01-15 16:39+0000\n"
+"PO-Revision-Date: 2013-03-17 18:29+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: \n"
@@ -97,70 +97,17 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "새로 받은 파일을 알릴 지 여부."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "개인 파일 공유 기본 설정"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "네트워크를 통해 파일 공유"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "네트워크를 통해 공개 디렉터리 공유(_S)"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "암호(_P):"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "암호 필요(_R):"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "블루투스를 통해 파일 공유"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "블루투스를 통해 공개 디렉터리 공유(_B)"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "원격 장치에서 파일 삭제 허용(_W)"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "원격 장치에서 이 컴퓨터와 연결 필요(_M)"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "블루투스를 통해 파일 받기"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "블루투스를 통해 다운로드 폴더에 파일 받기(_D)"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "파일 허용(_A): "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "받은 파일 알리기(_N)"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "개인 파일 공유"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "파일 공유에 대한 기본 설정"
-
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "사용자 공유를(사용할 경우) 시작합니다"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "share;공유;files;파일;bluetooth;블루투스;obex;http;network;네트워크;인터넷;copy;복사;send;보내기;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -170,53 +117,17 @@ msgstr "기본 설정"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "개인 파일 공유 기본 설정을 실행합니다"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "개인 파일 공유 기본 설정을 실행할 수 없습니다"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "파일 공유 및 받기에 사용 가능"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "네트워크와 블루투스를 통해 공유 가능"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "블루투스를 통해 파일 받기 가능"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "이유 없음"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "도움말 차례를 표시할 수 없습니다."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "인터페이스를 만들 수 없습니다."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "없음"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "파일을 쓸 때만"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "항상"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "설정한 장치만"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "물어보기"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -249,14 +160,83 @@ msgstr "블루투스를 통해 \"%s\" 파일을 받았습니다"
 msgid "You received a file"
 msgstr "파일을 받았습니다"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "파일 열기"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "파일 보기"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "파일 받기를 마쳤습니다"
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "개인 파일 공유 기본 설정"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "네트워크를 통해 파일 공유"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "네트워크를 통해 공개 디렉터리 공유(_S)"
+
+#~ msgid "_Password:"
+#~ msgstr "암호(_P):"
+
+#~ msgid "_Require password:"
+#~ msgstr "암호 필요(_R):"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "블루투스를 통해 파일 공유"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "블루투스를 통해 공개 디렉터리 공유(_B)"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "원격 장치에서 파일 삭제 허용(_W)"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "원격 장치에서 이 컴퓨터와 연결 필요(_M)"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "블루투스를 통해 파일 받기"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "블루투스를 통해 다운로드 폴더에 파일 받기(_D)"
+
+#~ msgid "_Accept files: "
+#~ msgstr "파일 허용(_A): "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "받은 파일 알리기(_N)"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "파일 공유에 대한 기본 설정"
+
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr "개인 파일 공유 기본 설정을 실행할 수 없습니다"
+
+#~ msgid "No reason"
+#~ msgstr "이유 없음"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "도움말 차례를 표시할 수 없습니다."
+
+#~ msgid "Could not build interface."
+#~ msgstr "인터페이스를 만들 수 없습니다."
+
+#~ msgid "Never"
+#~ msgstr "없음"
+
+#~ msgid "When writing files"
+#~ msgstr "파일을 쓸 때만"
+
+#~ msgid "Always"
+#~ msgstr "항상"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "설정한 장치만"
+
+#~ msgid "Ask"
+#~ msgstr "물어보기"
