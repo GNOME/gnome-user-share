@@ -4,20 +4,21 @@
 #
 # Szabolcs Varga <shirokuma at shirokuma dot hu>, 2005.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2005, 2006, 2008, 2009, 2010, 2012.
+# Balázs Úr <urbalazs at gmail dot com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-04 16:09+0200\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"POT-Creation-Date: 2013-01-16 00:27+0000\n"
+"PO-Revision-Date: 2013-03-17 10:56+0100\n"
+"Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
@@ -167,8 +168,11 @@ msgstr "Fájlmegosztás beállításai"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Személyes fájlmegosztás indítása, ha engedélyezett"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "megosztás;fájlok;bluetooth;obex;http;hálózat;másolás;küldés;"
+
 #: ../src/nautilus-share-bar.c:116
-#| msgid "Launch Preferences"
 msgid "Preferences"
 msgstr "Beállítások"
 
@@ -176,22 +180,19 @@ msgstr "Beállítások"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Személyes fájlmegosztás beállításainak indítása"
 
-#: ../src/share-extension.c:69
-#| msgid "Unable to launch the Personal File Sharing preferences"
+#: ../src/share-extension.c:70
 msgid "Unable to launch the Personal File Sharing Preferences"
 msgstr "A Személyes fájlmegosztás beállításai nem indítható"
 
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:164
 msgid "May be used to share or receive files"
 msgstr "Fájlok megosztására vagy fogadására használható"
 
-#: ../src/share-extension.c:144
-#| msgid "You can share files from this folder over the network and Bluetooth"
+#: ../src/share-extension.c:166
 msgid "May be shared over the network or Bluetooth"
 msgstr "Megosztható a hálózaton vagy Bluetooth-on"
 
-#: ../src/share-extension.c:146
-#| msgid "Receive Files over Bluetooth"
+#: ../src/share-extension.c:170
 msgid "May be used to receive files over Bluetooth"
 msgstr "Fájlok fogadására használható Bluetooth-on"
 
@@ -258,15 +259,15 @@ msgstr "„%s” érkezett Bluetooth-on"
 msgid "You received a file"
 msgstr "Fájl érkezett"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Fájl megnyitása"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Fájl felfedése"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Fájlfogadás kész"
 
