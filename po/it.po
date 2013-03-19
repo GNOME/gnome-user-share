@@ -2,22 +2,23 @@
 # Copyright (C) 2005, 2006, 2007, 2008, 2009 Free Software Foundation
 # This file is distributed under the same license as the gnome-user-share package.
 # Tuo Ida Gasparretti <vampiria74@tin.it>, 2005
-# Gianvito Cavasoli <gianvito@gmx.it>, 2008, 2009, 2010, 2012.
+# Gianvito Cavasoli <gianvito@gmx.it>, 2008, 2009, 2010, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 2.28.x\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-13 16:14+0000\n"
-"PO-Revision-Date: 2012-08-27 15:05+0200\n"
+"POT-Creation-Date: 2013-03-11 22:09+0000\n"
+"PO-Revision-Date: 2013-03-12 11:10+0100\n"
 "Last-Translator: Gianvito Cavasoli <gianvito@gmx.it>\n"
-"Language-Team: Italiano <tp@lists.linux.it>\n"
+"Language-Team: Italiano <tp@linux.it>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -102,70 +103,17 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Indica se notificare riguardo i file ricevuti recentemente."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Preferenze di condivisione di file personali"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Condividere file tramite la rete"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "C_ondividere i file pubblici sulla rete"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "Pass_word:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Richiedere la password:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Condividere file tramite Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Condividere i file pubblici tramite _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "Con_sentire ai dispositivi remoti di eliminare file"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Richiedere ai dispositivi re_moti di associarsi con questo computer"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Ricevere file tramite Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Ricevere i file nella cartella Scar_icati tramite Bluetooth"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "_Accettare i file: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_Notificare riguardo i file ricevuti"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Condivisione di file personali"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Preferenze per la condivisione dei file"
-
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Avvia la condivisione di file personali se abilitata"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "condividere;file;bluetooth;obex;http;rete;copiare;inviare;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -175,53 +123,17 @@ msgstr "Preferenze"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Avvia le preferenze di condivisione di file personali"
 
-#: ../src/share-extension.c:70
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Impossibile avviare le preferenze di Condivisione di file personali"
-
-#: ../src/share-extension.c:164
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Può essere usato per condividere o ricevere file"
 
-#: ../src/share-extension.c:166
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Può essere condiviso tramite la rete o il Bluetooth"
 
-#: ../src/share-extension.c:170
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Può essere usato per ricevere file tramite Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Nessun motivo"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Impossibile visualizzare il sommario della guida."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Impossibile generare l'interfaccia."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Mai"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Quando si scrivono i file"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Sempre"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Solo per dispositivi configurati"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Chiedere"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -232,14 +144,14 @@ msgstr "Chiedere"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "File pubblici di %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "File pubblici di %s su %s"
@@ -254,14 +166,14 @@ msgstr "Ricevuto «%s» tramite Bluetooth"
 msgid "You received a file"
 msgstr "Ricevuto un file"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Apri file"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Rivela file"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Ricezione del file completata"
