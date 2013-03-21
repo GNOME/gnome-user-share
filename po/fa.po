@@ -1,15 +1,15 @@
 # Persian translation for gnome-user-share.
 # Copyright (C) 2011 Iranian Free Software Users Group (IFSUG.org)translation team.
 # This file is distributed under the same license as the gnome-user-share package.
-# Arash Mousavi <mousavi.arash@gmail.com> 2011, 2012.
+# Arash Mousavi <mousavi.arash@gmail.com> 2011, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-08-24 15:46+0000\n"
-"PO-Revision-Date: 2012-09-08 00:47+0330\n"
+"POT-Creation-Date: 2013-01-15 16:39+0000\n"
+"PO-Revision-Date: 2013-03-21 14:08+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -18,6 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -101,73 +102,19 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "این‌که آیا دریافت پرونده‌های جدید اعلان شود یا خیر."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "ترجیحات به اشتراک‌گذاری خصوصی پرونده‌ها"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "به اشتراک‌گذاری پرونده‌ها از طریق شبکه"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "_به اشتراک‌گذاری پرونده‌های عمومی از طریق شبکه"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_گذرواژه:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_گذرواژه لازم:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "به اشتراک‌گذاری پرونده‌ها از طریق بلوتوث"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "به اشتراک‌گذاری پرونده‌های عمومی از طریق _بلوتوث"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "ا_جازه‌دادن به دستگاه‌های دوردست به حذف پرونده‌ها"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "برای ارتباط با این رایانه احتیاج به یک دستگاه _دوردست است."
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "دریافت پرونده از طریق بلوتوث"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "دریافت پرونده‌ها در پوشه‌ی _بارگیری از طریق بلوتوث"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "_پذیرفتن پرونده‌ها:"
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_اعلان درباره‌ی پرونده‌های دریافت شده"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "به اشتراک‌گذاری شخصی پرونده"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "ترجیحات برای به اشتراک‌گذاری پرونده‌ها"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "اجرای به اشتراک گذاری شخصی پرونده‌ها در صورت فعال بودن"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "اشتراک;پرونده‌ها;بلوتوث;obex;http;شبکه;رونوشت;ارسال;"
+
 #: ../src/nautilus-share-bar.c:116
-#| msgid "Launch Preferences"
 msgid "Preferences"
 msgstr "ترجیحات"
 
@@ -175,56 +122,17 @@ msgstr "ترجیحات"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "اجرای ترجیحات به اشتراک‌گذاری شخصی پرونده‌ها"
 
-#: ../src/share-extension.c:69
-#| msgid "Unable to launch the Personal File Sharing preferences"
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "عدم امکان در اجرای ترجیحات به اشتراک‌گذاری شخصی پرونده‌ها"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "شاید برای اشتراک‌گذاری و دریافت پرونده‌ها مورد استفاده قرار گیرد"
 
-#: ../src/share-extension.c:144
-#| msgid "You can share files from this folder over the network and Bluetooth"
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "شاید از طریق شبکه یا بلوتوث به اشتراک گذاشته شود"
 
-#: ../src/share-extension.c:146
-#| msgid "Receive Files over Bluetooth"
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "شاید جهت دریافت پرونده از طریق بلوتوث مورد استفاده قرار گیرد"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "بدون دلیل"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "عدم امکان در نمایش محتوایت راهنما."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "عدم امکان در ساختن رابط"
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "هرگز"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "در زمان نوشتن پرونده‌ها"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "همیشه"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "تنها برای دستگاه‌های برپاسازی شده"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "بپرس"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -257,23 +165,56 @@ msgstr "شما «%s» را از طریق بلوتوث دریافت کردید"
 msgid "You received a file"
 msgstr "شما یک پرونده دریافت کردید"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "بازکردن پرونده"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "نمایش پرونده"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "دریافت پرونده تکمیل شده"
 
-#~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr ""
-#~ "شما می‌توانید پرونده‌ها را از طریق این پوشه به اشتراک بگذارید و پرونده‌ها را "
-#~ "در آن دریافت کنید"
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "ترجیحات به اشتراک‌گذاری خصوصی پرونده‌ها"
 
-#~ msgid "You can receive files over Bluetooth into this folder"
-#~ msgstr ""
-#~ "شما می‌توانید پرونده‌های دریافتی از طریق بلوتوث را در این پوشه دریافت کنید"
+#~ msgid "Share Files over the Network"
+#~ msgstr "به اشتراک‌گذاری پرونده‌ها از طریق شبکه"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "_به اشتراک‌گذاری پرونده‌های عمومی از طریق شبکه"
+
+#~ msgid "_Password:"
+#~ msgstr "_گذرواژه:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_گذرواژه لازم:"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "به اشتراک‌گذاری پرونده‌ها از طریق بلوتوث"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "به اشتراک‌گذاری پرونده‌های عمومی از طریق _بلوتوث"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "ا_جازه‌دادن به دستگاه‌های دوردست به حذف پرونده‌ها"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "برای ارتباط با این رایانه احتیاج به یک دستگاه _دوردست است."
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "دریافت پرونده از طریق بلوتوث"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "دریافت پرونده‌ها در پوشه‌ی _بارگیری از طریق بلوتوث"
+
+#~ msgid "_Accept files: "
+#~ msgstr "_پذیرفتن پرونده‌ها:"
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_اعلان درباره‌ی پرونده‌های دریافت شده"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "ترجیحات برای به اشتراک‌گذاری پرونده‌ها"
