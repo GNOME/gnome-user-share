@@ -1,4 +1,7 @@
-This is gnome-user-share 3.7.91, a system for easy sharing of user files.
+This is gnome-user-share 3.8.0, a system for easy sharing of user files.
+
+Major changes since 3.7.91:
+- Updated translations
 
 Major changes since 3.7.90:
 - Add support for logind seat-tracking using gnome-session
