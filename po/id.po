@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Ekasari <iin@informatika.lipi.go.id>, 2010.
-# Dirgita <dirgitadevina@yahoo.co.id>, 2012.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-03 22:44+0000\n"
-"PO-Revision-Date: 2012-09-04 17:38+0700\n"
+"POT-Creation-Date: 2013-03-24 12:56+0000\n"
+"PO-Revision-Date: 2013-03-24 20:17+0700\n"
 "Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
@@ -106,70 +106,19 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Apakah akan memberitahu tentang berkas yang baru diterima."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Preferensi Berbagi Berkas Personal"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Berbagi Berkas melalui Jaringan"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "Berbagi berka_s publik pada jaringan"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Kata sandi:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Memerlukan kata sandi:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Berbagi Berkas melalui Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Berbagi berkas publik melalui _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "M_engijinkan perangkat remote untuk menghapus berkas"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Perlu perangkat re_mote untuk ikatan dengan komputer ini"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Menerima Berkas melalui Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Menerima berkas dalam folder _Downloads melalui Bluetooth"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "Terim_a berkas: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "Memberitahuka_n tentang berkas yang diterima"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Berbagi Berkas Pribadi"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Preferensi untuk berbagi berkas"
-
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Luncurkan Berbagi Berkas Pribadi jika diaktifkan"
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr ""
+"share;files;bluetooth;obex;http;network;copy;send;berbagi;berkas;jaringan;"
+"salin;kirim"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -179,53 +128,17 @@ msgstr "Preferensi"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Luncurkan Preferensi Berbagi Berkas Pribadi"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Tidak dapat meluncurkan Preferensi Berbagi Berkas Pribadi"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
 msgstr "Mungkin digunakan untuk berbagi atau menerima berkas"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
 msgstr "Mungkin dibagikan pada jaringan atau Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr "Mungkin digunakan untuk menerima berkas melalui Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Tidak ada alasan"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Tidak dapat menampilkan isi bantuan."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Tidak dapat membangun antarmuka."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Tak pernah"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Saat penulisan berkas"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Selalu"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Hanya untuk perangkat yang telah ditata"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Bertanya"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -236,14 +149,14 @@ msgstr "Bertanya"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "Berkas publik milik %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Berkas publik milik %s pada %s"
@@ -258,14 +171,15 @@ msgstr "Anda menerima \"%s\" melalui Bluetooth"
 msgid "You received a file"
 msgstr "Anda menerima sebuah berkas"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Buka Berkas"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Perlihatkan Berkas"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Penerimaan berkas lengkap"
+
