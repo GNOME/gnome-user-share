@@ -118,7 +118,7 @@ msgstr "Luncurkan Berbagi Berkas Pribadi jika diaktifkan"
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr ""
 "share;files;bluetooth;obex;http;network;copy;send;berbagi;berkas;jaringan;"
-"salin;kirim"
+"salin;kirim;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
