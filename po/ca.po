@@ -2,22 +2,22 @@
 # Copyright (C) 2005, 2006 The gnome-user-share's copyright holder
 # This file is distributed under the same license as the
 #    gnome-user-share package.
-#
-# Gil Forcada <gilforcada@guifi.net>, 2005, 2006, 2008, 2009, 2010.
+# Gil Forcada <gilforcada@guifi.net>, 2005, 2006, 2008, 2009, 2010, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-22 20:57+0000\n"
-"PO-Revision-Date: 2011-04-04 00:30+0200\n"
+"POT-Creation-Date: 2013-03-18 10:28+0000\n"
+"PO-Revision-Date: 2013-04-01 16:06+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -167,6 +167,10 @@ msgstr "Preferències per compartir fitxers"
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Executa la compartició de fitxers personals si està habilitat"
 
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "comparteix;fitxers;bluetooth;obex;http;xarxa;copia;envia;"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferències"
@@ -258,15 +262,15 @@ msgstr "Heu rebut «%s» a través del Bluetooth"
 msgid "You received a file"
 msgstr "Heu rebut un fitxer"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Obre el fitxer"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Revela el fitxer"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "S'ha completat la recepció del fitxer"
 
