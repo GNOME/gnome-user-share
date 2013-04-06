@@ -384,7 +384,7 @@ msgstr ""
 "acessem seus arquivos compartilhados até mesmo quando eles não estão "
 "emparelhados com seu computador, marque a opção <guilabel>Exigir "
 "dispositivos remotos emparelhar com este computador</guilabel>.  "
-"<placeholder-1/>"
+"<_:note-1/>"
 
 #: C/index.docbook:158(sect2/title)
 msgid "Receiving Files over Bluetooth"
@@ -419,7 +419,7 @@ msgid ""
 "from bonded devices. <_:note-1/>"
 msgstr ""
 "Selecione <guilabel>Somente para dispositivos emparelhados</guilabel> para "
-"aceitar arquivos apenas de dispositivos emparelhados. <placeholder-1/>"
+"aceitar arquivos apenas de dispositivos emparelhados. <_:note-1/>"
 
 #: C/index.docbook:191(note/para)
 msgid ""
@@ -440,7 +440,7 @@ msgid ""
 msgstr ""
 "Selecione <guilabel>Somente para dispositivos emparelhados e confiáveis</"
 "guilabel> para aceitar arquivos apenas de dispositivos aparelhados. "
-"<placeholder-1/>"
+"<_:note-1/>"
 
 #: C/index.docbook:173(sect2/para)
 #| msgid ""
@@ -464,7 +464,7 @@ msgstr ""
 "<filename>Downloads</filename> na sua pasta pessoal. Quando o recebimento de "
 "arquivos estiver habilitado, a seleção <guilabel>Aceitar arquivos</guilabel> "
 "permite que você determine quais dispositivos remotos são permitidos para "
-"enviar arquivos. <placeholder-1/>"
+"enviar arquivos. <_:itemizedlist-1/>"
 
 #: C/index.docbook:196(sect2/para)
 msgid ""
