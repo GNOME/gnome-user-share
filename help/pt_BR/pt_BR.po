@@ -7,8 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"POT-Creation-Date: 2012-12-29 00:44+0000\n"
-"PO-Revision-Date: 2013-01-31 21:14-0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-04-06 08:13+0000\n"
+"PO-Revision-Date: 2013-04-06 11:16-0300\n"
 "Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -16,10 +18,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#| msgid "translator-credits"
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
@@ -36,9 +37,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/index.docbook:81(imagedata)
-#| msgid ""
-#| "@@image: 'figures/file-sharing-preferences.png'; "
-#| "md5=7ae616b8043b36be1f4943ba06d8a5ed"
 msgctxt "_"
 msgid ""
 "external ref='figures/file-sharing-preferences.png' "
@@ -57,9 +55,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/index.docbook:99(imagedata)
-#| msgid ""
-#| "@@image: 'figures/sharing-over-the-network.png'; "
-#| "md5=ee8b44eb1290e4d1ae9b1e8fe8501860"
 msgctxt "_"
 msgid ""
 "external ref='figures/sharing-over-the-network.png' "
@@ -78,9 +73,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/index.docbook:143(imagedata)
-#| msgid ""
-#| "@@image: 'figures/sharing-over-bluetooth.png'; "
-#| "md5=0a950502b42b1e7fdb9a57d5017e919c"
 msgctxt "_"
 msgid ""
 "external ref='figures/sharing-over-bluetooth.png' "
@@ -99,9 +91,6 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/index.docbook:168(imagedata)
-#| msgid ""
-#| "@@image: 'figures/receiving-over-bluetooth.png'; "
-#| "md5=f292daef06767f39e346b222d3c448be"
 msgctxt "_"
 msgid ""
 "external ref='figures/receiving-over-bluetooth.png' "
@@ -139,11 +128,6 @@ msgid "Feedback"
 msgstr "Feedback"
 
 #: C/index.docbook:38(legalnotice/para)
-#| msgid ""
-#| "To report a bug or make a suggestion regarding the gnome-user-share "
-#| "application or this manual, follow the directions in the <ulink url="
-#| "\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
-#| "ulink>."
 msgid ""
 "To report a bug or make a suggestion regarding the gnome-user-share "
 "application or this manual, follow the directions in the <ulink url=\"help:"
@@ -162,7 +146,6 @@ msgstr ""
 "de arquivos entre diversos computadores."
 
 #: C/index.docbook:45(article/indexterm)
-#| msgid "gnome-user-share"
 msgid "<primary>gnome-user-share</primary>"
 msgstr "<primary>gnome-user-share</primary>"
 
@@ -320,12 +303,6 @@ msgstr ""
 "você deve usar uma senha diferente de outras senhas que você use."
 
 #: C/index.docbook:104(sect2/para)
-#| msgid ""
-#| "To enable file sharing via WebDAV, use the <guilabel>Share public files "
-#| "on network</guilabel> checkbox. When file sharing it enabled, the "
-#| "controls for password protection allow to set a password that needs to be "
-#| "specified before a user on another computer is granted access to the "
-#| "shared files. <placeholder-1/><placeholder-2/><placeholder-3/>"
 msgid ""
 "To enable file sharing via WebDAV, use the <guilabel>Share public files on "
 "network</guilabel> checkbox. When file sharing it enabled, the controls for "
@@ -338,7 +315,7 @@ msgstr ""
 "compartilhamento de arquivos é habilitado, os controles de proteção de senha "
 "permitem a definição de uma senha que necessite ser especificada antes que "
 "um usuário em outro computador tenha o acesso permitido aos arquivos "
-"compartilhados. <placeholder-1/><placeholder-2/><placeholder-3/>"
+"compartilhados. <_:note-1/> <_:itemizedlist-2/> <_:note-3/>"
 
 #: C/index.docbook:133(sect2/title)
 msgid "Enabling file sharing over Bluetooth"
@@ -359,14 +336,6 @@ msgstr ""
 "computador pode acessar e talvez até modificar seus arquivos compartilhados."
 
 #: C/index.docbook:148(sect2/para)
-#| msgid ""
-#| "To enable file sharing via Bluetooth, use the <guilabel>Share public "
-#| "files over Bluetooth</guilabel> checkbox. To allow remote Bluetooth "
-#| "devices to delete files in your shared folder, use the <guilabel>Allow "
-#| "remote devices to delete files</guilabel> checkbox. To allow remote "
-#| "Bluetooth devices to access your shared files even when they are not "
-#| "bonded with your computer, use the <guilabel>Require remote devices to "
-#| "pair with this computer</guilabel> checkbox. <placeholder-1/>"
 msgid ""
 "To enable file sharing via Bluetooth, use the <guilabel>Share public files "
 "over Bluetooth</guilabel> checkbox. To allow remote Bluetooth devices to "
@@ -411,9 +380,6 @@ msgstr ""
 "ou dele."
 
 #: C/index.docbook:182(listitem/para)
-#| msgid ""
-#| "Select <guilabel>Only for Bonded devices</guilabel> to accept files only "
-#| "from bonded devices. <placeholder-1/>"
 msgid ""
 "Select <guilabel>Only for Bonded devices</guilabel> to accept files only "
 "from bonded devices. <_:note-1/>"
@@ -431,9 +397,6 @@ msgstr ""
 "<guilabel>Dispositivos conhecidos</guilabel>."
 
 #: C/index.docbook:189(listitem/para)
-#| msgid ""
-#| "Select <guilabel>Only for Bonded and Trusted devices</guilabel> to accept "
-#| "files only from bonded devices. <placeholder-1/>"
 msgid ""
 "Select <guilabel>Only for Bonded and Trusted devices</guilabel> to accept "
 "files only from bonded devices. <_:note-1/>"
@@ -443,13 +406,6 @@ msgstr ""
 "<placeholder-1/>"
 
 #: C/index.docbook:173(sect2/para)
-#| msgid ""
-#| "To let remote Bluetooth devices send files to your computer, use the "
-#| "<guilabel>Receive files in Downloads folder over Bluetooth</guilabel> "
-#| "checkbox. Received files will be stored in the <filename>Downloads</"
-#| "filename> folder in your home directory. When receiving files is enabled, "
-#| "the <guilabel>Accept files</guilabel> selection allows you to determine "
-#| "which remote devices are allowed to send files. <placeholder-1/>"
 msgid ""
 "To let remote Bluetooth devices send files to your computer, use the "
 "<guilabel>Receive files in Downloads folder over Bluetooth</guilabel> "
@@ -480,13 +436,6 @@ msgid "link"
 msgstr "link"
 
 #: C/legal.xml:2(legalnotice/para)
-#| msgid ""
-#| "Permission is granted to copy, distribute and/or modify this document "
-#| "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
-#| "or any later version published by the Free Software Foundation with no "
-#| "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
-#| "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
-#| "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
@@ -577,10 +526,6 @@ msgstr ""
 "INFORMADA DA POSSIBILIDADE DE TAIS DANOS."
 
 #: C/legal.xml:28(legalnotice/para)
-#| msgid ""
-#| "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
-#| "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
-#| "UNDERSTANDING THAT: <placeholder-1/>"
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
