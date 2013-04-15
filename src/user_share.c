@@ -38,9 +38,6 @@
 #include "obexftp.h"
 #include "obexpush.h"
 
-#include <dbus/dbus.h>
-#include <dbus/dbus-glib.h>
-
 #include <stdarg.h>
 #include <string.h>
 #include <stdio.h>
