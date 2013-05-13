@@ -1,12 +1,3 @@
-MARSHALFILES = marshal.c marshal.h
-BUILT_SOURCES = $(MARSHALFILES)
-
-marshal.c: marshal.h
-	 $(AM_V_GEN) ( $(GLIB_GENMARSHAL) --prefix=marshal $(srcdir)/marshal.list --header --body > marshal.c )
-marshal.h: marshal.list
-	$(AM_V_GEN) ( $(GLIB_GENMARSHAL) --prefix=marshal $(srcdir)/marshal.list --header > marshal.h )
-
-
 libexec_PROGRAMS= \
 	gnome-user-share
 
@@ -38,7 +29,7 @@ gnome_user_share_SOURCES =	\
 	http.h			\
 	obexpush.c		\
 	obexpush.h		\
-	$(MARSHALFILES)
+	$(NULL)
 
 gnome_user_share_LDADD =	\
 	libuser-share-common.la	\
@@ -57,9 +48,5 @@ libnautilus_share_extension_la_SOURCES =	\
 
 libnautilus_share_extension_la_LIBADD = libuser-share-common.la $(EXTENSION_LIBS)
 libnautilus_share_extension_la_LDFLAGS = -avoid-version -module -no-undefined
-
-EXTRA_DIST = marshal.list
-
-CLEANFILES = $(BUILT_SOURCES)
 
 -include $(top_srcdir)/git.mk
