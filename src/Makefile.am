@@ -36,8 +36,6 @@ gnome_user_share_SOURCES =	\
 	user_share-private.c	\
 	http.c			\
 	http.h			\
-	obexftp.c		\
-	obexftp.h		\
 	obexpush.c		\
 	obexpush.h		\
 	$(MARSHALFILES)

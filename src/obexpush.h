@@ -2,6 +2,7 @@
 
 /*
  *  Copyright (C) 2004-2008 Red Hat, Inc.
+ *  Copyright (C) 2013 Intel Corporation.
  *
  *  Nautilus is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public License as
@@ -18,15 +19,42 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  *  Authors: Bastien Nocera <hadess@hadess.net>
+ *  Authors: Emilio Pozuelo Monfort <emilio.pozuelo@collabora.co.uk>
  *
  */
 
-#include <glib.h>
+#ifndef __OBEX_AGENT_H__
+#define __OBEX_AGENT_H__
+
+#include <glib-object.h>
+
 #include "user_share-private.h"
 
-void obexpush_up (void);
-void obexpush_down (void);
-void obexpush_restart (void);
-gboolean obexpush_init (void);
-void obexpush_set_accept_files_policy (AcceptSetting accept_setting);
-void obexpush_set_notify (gboolean enabled);
+G_BEGIN_DECLS
+
+typedef struct _ObexAgent {
+	GObject parent;
+	guint owner_id;
+} ObexAgent;
+
+typedef struct _ObexAgentClass {
+	GObjectClass parent;
+} ObexAgentClass;
+
+GType obex_agent_get_type();
+
+#define OBEX_AGENT_TYPE              (obex_agent_get_type ())
+#define OBEX_AGENT(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), OBEX_AGENT_TYPE, ObexAgent))
+#define OBEX_AGENT_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), OBEX_AGENT_TYPE, ObexAgentClass))
+#define IS_OBEX_AGENT(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), OBEX_AGENT_TYPE))
+#define IS_OBEX_AGENT_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), OBEX_AGENT_TYPE))
+#define OBEX_AGENT_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), OBEX_AGENT_TYPE, ObexAgentClass))
+
+gboolean obex_agent_up (void);
+void     obex_agent_down (void);
+void     obex_agent_set_accept_files_policy (AcceptSetting setting);
+void     obex_agent_set_notify (gboolean enabled);
+
+G_END_DECLS
+
+#endif

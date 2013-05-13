@@ -2,6 +2,7 @@
 
 /*
  *  Copyright (C) 2004-2008 Red Hat, Inc.
+ *  Copyright (C) 2013 Intel Corporation.
  *
  *  Nautilus is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public License as
@@ -18,6 +19,7 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  *  Authors: Bastien Nocera <hadess@hadess.net>
+ *  Authors: Emilio Pozuelo Monfort <emilio.pozuelo@collabora.co.uk>
  *
  */
 
@@ -26,25 +28,44 @@
 #include <glib.h>
 #include <glib/gi18n.h>
 #include <gio/gio.h>
-#include <gdk/gdk.h>
 #include <gtk/gtk.h>
 #include <libnotify/notify.h>
-#include <dbus/dbus-glib.h>
-#include <dbus/dbus-glib-lowlevel.h>
 #include <canberra-gtk.h>
 
-#include <string.h>
-
-#include "marshal.h"
-#include "obexpush.h"
 #include "user_share.h"
 #include "user_share-private.h"
 
-#define DBUS_TYPE_G_STRING_VARIANT_HASHTABLE (dbus_g_type_get_map ("GHashTable", G_TYPE_STRING, G_TYPE_STRING))
+#include "obexpush.h"
 
-static DBusGConnection *connection = NULL;
-static DBusGProxy *manager_proxy = NULL;
-static DBusGProxy *server_proxy = NULL;
+#define MANAGER_SERVICE	"org.bluez.obex"
+#define MANAGER_IFACE	"org.bluez.obex.AgentManager1"
+#define MANAGER_PATH	"/org/bluez/obex"
+
+#define AGENT_PATH	"/org/gnome/share/agent"
+#define AGENT_IFACE	"org.bluez.obex.Agent1"
+
+#define TRANSFER_INTERFACE "org.bluez.obex.Transfer1"
+
+static GDBusNodeInfo *introspection_data = NULL;
+
+static const gchar introspection_xml[] =
+"<node name='"AGENT_PATH"'>"
+"  <interface name='"AGENT_IFACE"'>"
+"    <method name='Release'>"
+"    </method>"
+"    <method name='Cancel'>"
+"    </method>"
+"    <method name='AuthorizePush'>"
+"      <arg name='transfer' type='o' />"
+"      <arg name='path' type='s' direction='out' />"
+"    </method>"
+"  </interface>"
+"</node>";
+
+G_DEFINE_TYPE(ObexAgent, obex_agent, G_TYPE_OBJECT)
+
+static ObexAgent *agent;
+static GDBusProxy *manager;
 static AcceptSetting accept_setting = -1;
 static gboolean show_notifications = FALSE;
 
@@ -179,379 +200,332 @@ show_icon (void)
 	num_notifications++;
 }
 
-static gboolean
-device_is_authorised (const char *bdaddr)
+static void
+obex_agent_release (GError **error)
 {
-	DBusGConnection *connection;
-	DBusGProxy *manager;
-	GError *error = NULL;
-	GPtrArray *adapters;
-	gboolean retval = FALSE;
-	guint i;
+}
 
-	connection = dbus_g_bus_get (DBUS_BUS_SYSTEM, NULL);
-	if (connection == NULL)
-		return FALSE;
+static void
+obex_agent_cancel (GError **error)
+{
+}
 
-	manager = dbus_g_proxy_new_for_name (connection, "org.bluez",
-					     "/", "org.bluez.Manager");
-	if (manager == NULL) {
-		dbus_g_connection_unref (connection);
-		return FALSE;
-	}
+static void
+transfer_property_changed (GDBusProxy *transfer,
+			   GVariant   *changed_properties,
+			   GStrv       invalidated_properties,
+			   gpointer    user_data)
+{
+	GVariantIter iter;
+	const gchar *key;
+	GVariant *value;
 
-	if (dbus_g_proxy_call (manager, "ListAdapters", &error, G_TYPE_INVALID, dbus_g_type_get_collection ("GPtrArray", DBUS_TYPE_G_OBJECT_PATH), &adapters, G_TYPE_INVALID) == FALSE) {
-		g_object_unref (manager);
-		dbus_g_connection_unref (connection);
-		return FALSE;
-	}
+	g_variant_iter_init (&iter, changed_properties);
+	while (g_variant_iter_next (&iter, "{&sv}", &key, &value)) {
+		if (g_str_equal (key, "Status")) {
+			const gchar *status, *filename;
 
-	for (i = 0; i < adapters->len; i++) {
-		DBusGProxy *adapter, *device;
-		char *device_path;
-		GHashTable *props;
+			status = g_variant_get_string (value, NULL);
+			filename = g_object_get_data (G_OBJECT (transfer), "filename");
 
-		g_debug ("checking adapter %s", (gchar *) g_ptr_array_index (adapters, i));
-
-		adapter = dbus_g_proxy_new_for_name (connection, "org.bluez",
-						    g_ptr_array_index (adapters, i), "org.bluez.Adapter");
-
-		if (dbus_g_proxy_call (adapter, "FindDevice", NULL,
-				       G_TYPE_STRING, bdaddr, G_TYPE_INVALID,
-				       DBUS_TYPE_G_OBJECT_PATH, &device_path, G_TYPE_INVALID) == FALSE)
-		{
-			g_object_unref (adapter);
-			continue;
-		}
-
-		device = dbus_g_proxy_new_for_name (connection, "org.bluez", device_path, "org.bluez.Device");
-
-		if (dbus_g_proxy_call (device, "GetProperties", NULL,
-				       G_TYPE_INVALID, dbus_g_type_get_map ("GHashTable", G_TYPE_STRING, G_TYPE_VALUE),
-				       &props, G_TYPE_INVALID) != FALSE)
-		{
-			GValue *value;
-			gboolean bonded;
-
-			value = g_hash_table_lookup (props, "Paired");
-			bonded = g_value_get_boolean (value);
-			g_message ("%s is %s", bdaddr, bonded ? "bonded" : "not bonded");
-
-			if (bonded) {
-				g_hash_table_destroy (props);
-				g_object_unref (device);
-				g_object_unref (adapter);
-				retval = TRUE;
-				break;
+			if (g_str_equal (status, "complete")) {
+				if (show_notifications) {
+					g_debug ("transfer completed, showing a notification");
+					show_notification (filename);
+				} else {
+					hide_statusicon ();
+				}
 			}
 		}
-		g_object_unref(adapter);
+		g_variant_unref (value);
 	}
-
-	g_ptr_array_free (adapters, TRUE);
-
-	g_object_unref(manager);
-	dbus_g_connection_unref(connection);
-
-	return retval;
 }
 
 static void
-transfer_started_cb (DBusGProxy *session,
-		     const char *filename,
-		     const char *local_path,
-		     guint64 size,
+obex_agent_authorize_push (GObject *source_object,
+			   GAsyncResult *res,
+			   gpointer user_data)
+{
+	GDBusProxy *transfer = g_dbus_proxy_new_for_bus_finish (res, NULL);
+	GDBusMethodInvocation *invocation = user_data;
+	GVariant *variant = g_dbus_proxy_get_cached_property (transfer, "Name");
+	const gchar *filename = g_variant_get_string (variant, NULL);
+	gboolean authorize = FALSE;
+
+	g_debug ("AuthorizePush received");
+
+	switch (accept_setting) {
+	case ACCEPT_ALWAYS:
+		authorize = TRUE;
+		break;
+	case ACCEPT_BONDED:
+		g_warning ("'Bonded' authorization method not implemented");
+		break;
+	case ACCEPT_ASK:
+		g_warning ("'Ask' authorization method not implemented");
+		break;
+	default:
+		g_warn_if_reached ();
+	}
+
+	if (authorize) {
+		gchar *download_dir = lookup_download_dir ();
+		gchar *file = g_build_filename (download_dir, filename, NULL);
+		g_free (download_dir);
+
+		g_signal_connect (transfer, "g-properties-changed",
+			G_CALLBACK (transfer_property_changed), NULL);
+
+		g_object_set_data_full (G_OBJECT (transfer), "filename", file, g_free);
+
+		g_dbus_method_invocation_return_value (invocation,
+			g_variant_new ("(s)", file));
+
+		show_icon ();
+
+		g_debug ("Incoming transfer authorized: %s", file);
+	} else {
+		g_dbus_method_invocation_return_dbus_error (invocation,
+			"org.bluez.obex.Error.Rejected", "Not Authorized");
+		g_debug ("Incoming transfer rejected: %s", filename);
+	}
+
+	g_variant_unref (variant);
+}
+
+static void
+handle_method_call (GDBusConnection       *connection,
+		    const gchar           *sender,
+		    const gchar           *object_path,
+		    const gchar           *interface_name,
+		    const gchar           *method_name,
+		    GVariant              *parameters,
+		    GDBusMethodInvocation *invocation,
+		    gpointer               user_data)
+{
+	if (g_str_equal (method_name, "Cancel")) {
+		obex_agent_cancel (NULL);
+		g_dbus_method_invocation_return_value (invocation, NULL);
+	} else if (g_str_equal (method_name, "Release")) {
+		obex_agent_release (NULL);
+		g_dbus_method_invocation_return_value (invocation, NULL);
+	} else if (g_str_equal (method_name, "AuthorizePush")) {
+		const gchar *transfer;
+
+		g_variant_get (parameters, "(&o)", &transfer);
+
+		g_dbus_proxy_new_for_bus (G_BUS_TYPE_SESSION,
+					  G_DBUS_PROXY_FLAGS_NONE,
+					  NULL,
+					  MANAGER_SERVICE,
+					  transfer,
+					  TRANSFER_INTERFACE,
+					  NULL,
+					  obex_agent_authorize_push,
+					  invocation);
+	} else {
+		g_warning ("Unknown method name or unknown parameters: %s",
+			   method_name);
+	}
+}
+
+static const GDBusInterfaceVTable interface_vtable =
+{
+  handle_method_call,
+  NULL,
+  NULL
+};
+
+static void
+on_bus_acquired (GDBusConnection *connection,
+		 const gchar     *name,
+		 gpointer         user_data)
+{
+	guint id;
+
+	/* parse introspection data */
+	introspection_data = g_dbus_node_info_new_for_xml (introspection_xml,
+							   NULL);
+
+	id = g_dbus_connection_register_object (connection,
+						AGENT_PATH,
+						introspection_data->interfaces[0],
+						&interface_vtable,
+						NULL,  /* user_data */
+						NULL,  /* user_data_free_func */
+						NULL); /* GError** */
+
+	g_dbus_node_info_unref (introspection_data);
+
+	g_assert (id > 0);
+}
+
+static void
+on_agent_registered (GObject *source_object,
+		     GAsyncResult *res,
 		     gpointer user_data)
 {
-	GHashTable *dict;
-	DBusGProxy *server = (DBusGProxy *) user_data;
 	GError *error = NULL;
-	gboolean authorise;
+	GVariant *v;
 
-	g_message ("transfer started on %s", local_path);
-	g_object_set_data_full (G_OBJECT (session), "filename", g_strdup (local_path), (GDestroyNotify) g_free);
+	v = g_dbus_proxy_call_finish (manager, res, &error);
 
-	show_icon ();
-
-	/* First transfer of the session */
-	if (g_object_get_data (G_OBJECT (session), "bdaddr") == NULL) {
-		const char *bdaddr;
-
-		if (dbus_g_proxy_call (server, "GetServerSessionInfo", &error,
-				       DBUS_TYPE_G_OBJECT_PATH, dbus_g_proxy_get_path (session), G_TYPE_INVALID,
-				       DBUS_TYPE_G_STRING_VARIANT_HASHTABLE, &dict, G_TYPE_INVALID) == FALSE) {
-			g_printerr ("Getting Server session info failed: %s\n",
-				    error->message);
-			g_error_free (error);
-			return;
-		}
-
-		bdaddr = g_hash_table_lookup (dict, "BluetoothAddress");
-		g_message ("transfer started for device %s", bdaddr);
-
-		g_object_set_data_full (G_OBJECT (session), "bdaddr", g_strdup (bdaddr), (GDestroyNotify) g_free);
-		/* Initial accept method is undefined, we do that lower down */
-		g_object_set_data (G_OBJECT (session), "accept-method", GINT_TO_POINTER (-1));
-		g_hash_table_destroy (dict);
+	if (error) {
+		g_warning ("error: %s", error->message);
+		g_error_free (error);
+		return;
 	}
 
-	/* Accept method changed */
-	if (GPOINTER_TO_INT (g_object_get_data (G_OBJECT (session), "accept-method")) != accept_setting) {
-		const char *bdaddr;
-
-		bdaddr = g_object_get_data (G_OBJECT (session), "bdaddr");
-
-		if (bdaddr == NULL) {
-			g_warning ("Couldn't get the Bluetooth address for the device, rejecting the transfer");
-			authorise = FALSE;
-		} else if (accept_setting == ACCEPT_ALWAYS) {
-			authorise = TRUE;
-		} else if (accept_setting == ACCEPT_BONDED) {
-			authorise = device_is_authorised (bdaddr);
-		} else {
-			//FIXME implement
-			g_warning ("\"Ask\" authorisation method not implemented");
-			authorise = FALSE;
-		}
-		g_object_set_data (G_OBJECT (session), "authorise", GINT_TO_POINTER (authorise));
-	}
-
-	g_message ("accept_setting: %d", accept_setting);
-
-	authorise = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (session), "authorise"));
-	if (authorise != FALSE) {
-		if (dbus_g_proxy_call (session, "Accept", &error, G_TYPE_INVALID, G_TYPE_INVALID) == FALSE) {
-			g_printerr ("Failed to accept file transfer: %s\n", error->message);
-			g_error_free (error);
-			return;
-		}
-		g_message ("authorised transfer");
-	} else {
-		if (dbus_g_proxy_call (session, "Reject", &error, G_TYPE_INVALID, G_TYPE_INVALID) == FALSE) {
-			g_printerr ("Failed to reject file transfer: %s\n", error->message);
-			g_error_free (error);
-			return;
-		}
-		g_message ("rejected transfer");
-		g_object_set_data (G_OBJECT (session), "filename", NULL);
-	}
+	g_variant_unref (v);
 }
 
 static void
-transfer_completed_cb (DBusGProxy *session,
+on_agent_unregistered (GObject *source_object,
+		       GAsyncResult *res,
 		       gpointer user_data)
 {
-	GSettings *settings;
-	gboolean display_notify;
-	const char *filename;
+	GError *error = NULL;
+	GVariant *v;
 
-	filename = (const char *) g_object_get_data (G_OBJECT (session), "filename");
+	v = g_dbus_proxy_call_finish (manager, res, &error);
 
-	g_message ("file finish transfer: %s", filename);
-
-	if (filename == NULL)
+	if (error) {
+		g_warning ("error: %s", error->message);
+		g_error_free (error);
 		return;
-
-	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
-	display_notify = g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY);
-	g_object_unref (settings);
-
-	if (display_notify) {
-		show_notification (filename);
-	} else {
-		hide_statusicon ();
 	}
-	g_object_set_data (G_OBJECT (session), "filename", NULL);
+
+	g_variant_unref (v);
 }
 
 static void
-cancelled_cb (DBusGProxy *session,
-	      gpointer user_data)
-{
-	//FIXME implement properly, we never actually finished the transfer
-	g_message ("transfered was cancelled by the sender");
-	transfer_completed_cb (session, user_data);
-	hide_statusicon ();
-}
-
-static void
-error_occurred_cb (DBusGProxy *session,
-		   const char *error_name,
-		   const char *error_message,
+on_proxy_acquired (GObject *source_object,
+		   GAsyncResult *res,
 		   gpointer user_data)
 {
-	//FIXME implement properly
-	g_message ("transfer error occurred: %s", error_message);
-	transfer_completed_cb (session, user_data);
-}
+	GError *error = NULL;
 
-static void
-session_created_cb (DBusGProxy *server, const char *session_path, gpointer user_data)
-{
-	DBusGProxy *session;
+	manager = g_dbus_proxy_new_for_bus_finish (res, &error);
 
-	session = dbus_g_proxy_new_for_name (connection,
-					     "org.openobex",
-					     session_path,
-					     "org.openobex.ServerSession");
-
-	dbus_g_proxy_add_signal (session, "TransferStarted",
-				 G_TYPE_STRING, G_TYPE_STRING, G_TYPE_UINT64, G_TYPE_INVALID);
-	dbus_g_proxy_connect_signal(session, "TransferStarted",
-				    G_CALLBACK (transfer_started_cb), server, NULL);
-	dbus_g_proxy_add_signal (session, "TransferCompleted",
-				 G_TYPE_INVALID, G_TYPE_INVALID);
-	dbus_g_proxy_connect_signal(session, "TransferCompleted",
-				    G_CALLBACK (transfer_completed_cb), server, NULL);
-	dbus_g_proxy_add_signal (session, "Cancelled",
-				 G_TYPE_INVALID, G_TYPE_INVALID);
-	dbus_g_proxy_connect_signal(session, "Cancelled",
-				    G_CALLBACK (cancelled_cb), server, NULL);
-	dbus_g_proxy_add_signal (session, "ErrorOccurred",
-				 G_TYPE_INVALID, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_INVALID);
-	dbus_g_proxy_connect_signal(session, "ErrorOccurred",
-				    G_CALLBACK (error_occurred_cb), server, NULL);
-}
-
-void
-obexpush_up (void)
-{
-	GError *err = NULL;
-	char *download_dir, *server;
-
-	server = NULL;
-	if (manager_proxy == NULL) {
-		manager_proxy = dbus_g_proxy_new_for_name (connection,
-							   "org.openobex",
-							   "/org/openobex",
-							   "org.openobex.Manager");
-		if (dbus_g_proxy_call (manager_proxy, "CreateBluetoothServer",
-				       &err, G_TYPE_STRING, "00:00:00:00:00:00", G_TYPE_STRING, "opp", G_TYPE_BOOLEAN, FALSE, G_TYPE_INVALID,
-				       DBUS_TYPE_G_OBJECT_PATH, &server, G_TYPE_INVALID) == FALSE) {
-			g_printerr ("Creating Bluetooth ObexPush server failed: %s\n",
-				    err->message);
-			g_error_free (err);
-			g_object_unref (manager_proxy);
-			manager_proxy = NULL;
-			return;
-		}
-	}
-
-	download_dir = lookup_download_dir ();
-
-	if (server_proxy == NULL) {
-		server_proxy = dbus_g_proxy_new_for_name (connection,
-							   "org.openobex",
-							   server,
-							   "org.openobex.Server");
-		g_free (server);
-
-		dbus_g_proxy_add_signal (server_proxy, "SessionCreated",
-					 DBUS_TYPE_G_OBJECT_PATH, G_TYPE_INVALID);
-		dbus_g_proxy_connect_signal(server_proxy, "SessionCreated",
-					    G_CALLBACK (session_created_cb), NULL, NULL);
-	}
-
-	if (dbus_g_proxy_call (server_proxy, "Start", &err,
-			   G_TYPE_STRING, download_dir, G_TYPE_BOOLEAN, TRUE, G_TYPE_BOOLEAN, FALSE, G_TYPE_INVALID,
-			   G_TYPE_INVALID) == FALSE) {
-		if (g_error_matches (err, DBUS_GERROR, DBUS_GERROR_REMOTE_EXCEPTION) != FALSE &&
-		    dbus_g_error_has_name (err, "org.openobex.Error.Started") != FALSE) {
-		    	g_error_free (err);
-		    	g_message ("already started, ignoring error");
-		    	g_free (download_dir);
-		    	return;
-		}
-		g_printerr ("Starting Bluetooth ObexPush server failed: %s\n",
-			    err->message);
-		g_error_free (err);
-		g_free (download_dir);
-		g_object_unref (server_proxy);
-		server_proxy = NULL;
-		g_object_unref (manager_proxy);
-		manager_proxy = NULL;
+	if (!manager) {
+		g_warning ("error: %s", error->message);
+		g_error_free (error);
 		return;
 	}
 
-	g_free (download_dir);
+	g_dbus_proxy_call (manager,
+			   "RegisterAgent",
+			   g_variant_new ("(o)", AGENT_PATH),
+			   G_DBUS_CALL_FLAGS_NONE,
+			   -1,
+			   NULL,
+			   on_agent_registered,
+			   NULL);
 }
 
 static void
-obexpush_stop (gboolean stop_manager)
+on_name_acquired (GDBusConnection *connection,
+		  const gchar     *name,
+		  gpointer         user_data)
 {
-	GError *err = NULL;
+}
 
-	if (server_proxy == NULL)
-		return;
+static void
+on_name_lost (GDBusConnection *connection,
+	      const gchar     *name,
+	      gpointer         user_data)
+{
+}
 
-	if (dbus_g_proxy_call (server_proxy, "Close", &err, G_TYPE_INVALID, G_TYPE_INVALID) == FALSE) {
-		if (g_error_matches (err, DBUS_GERROR, DBUS_GERROR_REMOTE_EXCEPTION) == FALSE ||
-		    dbus_g_error_has_name (err, "org.openobex.Error.NotStarted") == FALSE) {
-			g_printerr ("Stopping Bluetooth ObexPush server failed: %s\n",
-				    err->message);
-			g_error_free (err);
-			return;
-		}
-		g_error_free (err);
-	}
+static void
+obex_agent_init (ObexAgent *self)
+{
+}
 
-	if (stop_manager != FALSE) {
-		g_object_unref (server_proxy);
-		server_proxy = NULL;
-		g_object_unref (manager_proxy);
-		manager_proxy = NULL;
-	}
+static void
+obex_agent_dispose (GObject *obj)
+{
+	ObexAgent *self = OBEX_AGENT (obj);
 
-	//FIXME stop all the notifications
+	g_bus_unown_name (self->owner_id);
+
+	G_OBJECT_CLASS (obex_agent_parent_class)->dispose (obj);
+}
+
+static void
+obex_agent_class_init (ObexAgentClass *klass)
+{
+	GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
+
+	gobject_class->dispose = obex_agent_dispose;
+}
+
+static ObexAgent *
+obex_agent_new (void)
+{
+	ObexAgent *self = NULL;
+
+	self = (ObexAgent *) g_object_new (OBEX_AGENT_TYPE, NULL);
+
+	self->owner_id = g_bus_own_name (G_BUS_TYPE_SESSION,
+					 AGENT_IFACE,
+					 G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT,
+					 on_bus_acquired,
+					 on_name_acquired,
+					 on_name_lost,
+					 NULL,
+					 NULL);
+
+	return self;
 }
 
 void
-obexpush_down (void)
+obex_agent_down (void)
 {
-	obexpush_stop (TRUE);
-}
+	g_dbus_proxy_call (manager,
+			   "UnregisterAgent",
+			   g_variant_new ("(o)", AGENT_PATH),
+			   G_DBUS_CALL_FLAGS_NONE,
+			   -1,
+			   NULL,
+			   on_agent_unregistered,
+			   NULL);
 
-void
-obexpush_restart (void)
-{
-	obexpush_stop (FALSE);
-	obexpush_up ();
+	g_clear_object (&manager);
+	g_clear_object (&agent);
 }
 
 gboolean
-obexpush_init (void)
+obex_agent_up (void)
 {
-	GError *err = NULL;
-
-	connection = dbus_g_bus_get (DBUS_BUS_SESSION, &err);
-	if (connection == NULL) {
-		g_printerr ("Connecting to session bus failed: %s\n",
-			    err->message);
-		g_error_free (err);
-		return FALSE;
+	if (agent == NULL) {
+		agent = obex_agent_new ();
+		g_dbus_proxy_new_for_bus (G_BUS_TYPE_SESSION,
+					  G_DBUS_PROXY_FLAGS_NONE,
+					  NULL,
+					  MANAGER_SERVICE,
+					  MANAGER_PATH,
+					  MANAGER_IFACE,
+					  NULL,
+					  on_proxy_acquired,
+					  NULL);
 	}
 
-	dbus_g_object_register_marshaller (marshal_VOID__STRING_STRING_UINT64,
-					   G_TYPE_NONE,
-					   G_TYPE_STRING, G_TYPE_STRING, G_TYPE_UINT64, G_TYPE_INVALID);
-
 	if (!notify_init("gnome-user-share")) {
-		g_warning("Unable to initialize the notification system\n");
-        }
+		g_warning("Unable to initialize the notification system");
+	}
 
-	dbus_connection_set_exit_on_disconnect (dbus_g_connection_get_connection (connection), FALSE);
-
-	return TRUE;
+	return agent != NULL;
 }
 
 void
-obexpush_set_accept_files_policy (AcceptSetting setting)
+obex_agent_set_accept_files_policy (AcceptSetting setting)
 {
 	accept_setting = setting;
 }
 
 void
-obexpush_set_notify (gboolean enabled)
+obex_agent_set_notify (gboolean enabled)
 {
 	show_notifications = enabled;
 }

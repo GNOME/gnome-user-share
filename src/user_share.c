@@ -35,7 +35,6 @@
 #include "user_share-private.h"
 #include "user_share-common.h"
 #include "http.h"
-#include "obexftp.h"
 #include "obexpush.h"
 
 #include <stdarg.h>
@@ -56,31 +55,23 @@ static guint disabled_timeout_tag = 0;
 static GDBusProxy *session_proxy = NULL;
 static gboolean has_console = TRUE;
 
-static BluetoothClient *client = NULL;
-static gboolean bluetoothd_enabled = FALSE;
-
-#define OBEX_ENABLED (bluetoothd_enabled && has_console)
+#define OBEX_ENABLED (has_console)
 
 static void
 obex_services_start (void)
 {
-	if (bluetoothd_enabled == FALSE ||
-	    has_console == FALSE)
-	    	return;
+	if (has_console == FALSE)
+		return;
 
 	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == TRUE) {
-	    obexpush_up ();
-	}
-	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_ENABLED) == TRUE) {
-	    obexftp_up ();
+		obex_agent_up ();
 	}
 }
 
 static void
 obex_services_shutdown (void)
 {
-	obexpush_down ();
-	obexftp_down ();
+	obex_agent_down ();
 }
 
 static void
@@ -146,44 +137,6 @@ session_init (void)
 }
 
 static void
-default_adapter_changed (GObject    *gobject,
-			 GParamSpec *pspec,
-			 gpointer    user_data)
-{
-	char *adapter;
-	gboolean adapter_powered;
-
-	g_object_get (G_OBJECT (client),
-		      "default-adapter", &adapter,
-		      "default-adapter-powered", &adapter_powered,
-		      NULL);
-	if (adapter != NULL && *adapter != '\0') {
-		bluetoothd_enabled = adapter_powered;
-	} else {
-		bluetoothd_enabled = FALSE;
-	}
-
-	/* Were we called as init, or as a callback */
-	if (gobject != NULL) {
-		if (bluetoothd_enabled != FALSE)
-			obex_services_start ();
-		else
-			obex_services_shutdown ();
-	}
-}
-
-static void
-bluez_init (void)
-{
-	client = bluetooth_client_new ();
-	default_adapter_changed (NULL, NULL, NULL);
-	g_signal_connect (G_OBJECT (client), "notify::default-adapter",
-			  G_CALLBACK (default_adapter_changed), NULL);
-	g_signal_connect (G_OBJECT (client), "notify::default-adapter-powered",
-			  G_CALLBACK (default_adapter_changed), NULL);
-}
-
-static void
 migrate_old_configuration (void)
 {
 	const char *old_config_dir;
@@ -213,8 +166,7 @@ disabled_timeout_callback (void)
 {
 	http_down ();
 
-	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_ENABLED) == FALSE &&
-	    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE)
+	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE)
 		_exit (0);
 	return FALSE;
 }
@@ -244,50 +196,16 @@ file_sharing_enabled_changed (void)
 }
 
 static void
-file_sharing_bluetooth_allow_write_changed (void)
-{
-	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_ENABLED) != FALSE)
-		obexftp_restart ();
-}
-
-static void
-file_sharing_bluetooth_require_pairing_changed (void)
-{
-	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_ENABLED) != FALSE) {
-		/* We need to fully reset the session,
-		 * otherwise the new setting isn't taken into account */
-		obexftp_down ();
-		obexftp_up ();
-	}
-}
-
-static void
-file_sharing_bluetooth_enabled_changed (void)
-{
-	if (g_settings_get_boolean (settings,
-				   FILE_SHARING_BLUETOOTH_ENABLED) == FALSE) {
-		obexftp_down ();
-		if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE &&
-		    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE) {
-			_exit (0);
-		}
-	} else if (OBEX_ENABLED) {
-		obexftp_up ();
-	}
-}
-
-static void
 file_sharing_bluetooth_obexpush_enabled_changed (void)
 {
 	if (g_settings_get_boolean (settings,
 				   FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE) {
-		obexpush_down ();
-		if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE &&
-		    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_ENABLED) == FALSE) {
+		obex_agent_down ();
+		if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE) {
 			_exit (0);
 		}
 	} else if (OBEX_ENABLED) {
-		obexpush_up ();
+		obex_agent_up ();
 	}
 }
 
@@ -301,13 +219,13 @@ file_sharing_bluetooth_obexpush_accept_files_changed (void)
 	setting = accept_setting_from_string (str);
 	g_free (str);
 
-	obexpush_set_accept_files_policy (setting);
+	obex_agent_set_accept_files_policy (setting);
 }
 
 static void
 file_sharing_bluetooth_obexpush_notify_changed (void)
 {
-	obexpush_set_notify (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY));
+	obex_agent_set_notify (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY));
 }
 
 static void
@@ -320,15 +238,6 @@ setttings_changed (GSettings *settings,
 
 	else if (g_strcmp0 (FILE_SHARING_REQUIRE_PASSWORD, path) == 0)
 		require_password_changed ();
-
-	else if (g_strcmp0 (FILE_SHARING_BLUETOOTH_ENABLED, path) == 0)
-		file_sharing_bluetooth_enabled_changed ();
-
-	else if (g_strcmp0 (FILE_SHARING_BLUETOOTH_ALLOW_WRITE, path) == 0)
-		file_sharing_bluetooth_allow_write_changed ();
-
-	else if (g_strcmp0 (FILE_SHARING_BLUETOOTH_REQUIRE_PAIRING, path) == 0)
-		file_sharing_bluetooth_require_pairing_changed ();
 
 	else if (g_strcmp0 (FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, path) == 0)
 		file_sharing_bluetooth_obexpush_enabled_changed ();
@@ -344,8 +253,7 @@ static void
 cleanup_handler (int sig)
 {
 	http_down ();
-	obexftp_down ();
-	obexpush_down ();
+	obex_agent_down ();
 	_exit (2);
 }
 
@@ -353,7 +261,7 @@ static int
 x_io_error_handler (Display *xdisplay)
 {
 	http_down ();
-	obexftp_down ();
+	obex_agent_down ();
 	_exit (2);
 }
 
@@ -410,7 +318,6 @@ main (int argc, char **argv)
 
 	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 	if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE &&
-	    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_ENABLED) == FALSE &&
 	    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE)
 		return 1;
 
@@ -419,19 +326,15 @@ main (int argc, char **argv)
 
 	if (http_init () == FALSE)
 		return 1;
-	if (obexftp_init () == FALSE)
-		return 1;
-	if (obexpush_init () == FALSE)
+	if (obex_agent_up () == FALSE)
 		return 1;
 
 	g_signal_connect (settings, "changed", G_CALLBACK(setttings_changed), NULL);
 
-	bluez_init ();
 	session_init ();
 
 	/* Initial setting */
 	file_sharing_enabled_changed ();
-	file_sharing_bluetooth_enabled_changed ();
 	file_sharing_bluetooth_obexpush_accept_files_changed ();
 	file_sharing_bluetooth_obexpush_notify_changed ();
 	file_sharing_bluetooth_obexpush_enabled_changed ();
