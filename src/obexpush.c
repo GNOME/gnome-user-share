@@ -201,6 +201,83 @@ show_icon (void)
 }
 
 static void
+ask_user_transfer_accepted (NotifyNotification *notification,
+			    char *action,
+			    GDBusMethodInvocation *invocation)
+{
+	gchar *file = g_object_get_data (G_OBJECT (invocation), "filename");
+
+	g_debug ("Notification: transfer accepted! accepting transfer");
+
+	g_dbus_method_invocation_return_value (invocation,
+		g_variant_new ("(s)", file));
+
+	show_icon ();
+}
+
+static void
+ask_user_transfer_rejected (NotifyNotification *notification,
+			    char *action,
+			    GDBusMethodInvocation *invocation)
+{
+	g_debug ("Notification: transfer rejected! rejecting transfer");
+
+	g_dbus_method_invocation_return_dbus_error (invocation,
+		"org.bluez.obex.Error.Rejected", "Not Authorized");
+}
+
+static void
+ask_user_on_close (NotifyNotification *notification,
+		   GDBusMethodInvocation *invocation)
+{
+	g_debug ("Notification closed! rejecting transfer");
+
+	g_dbus_method_invocation_return_dbus_error (invocation,
+		"org.bluez.obex.Error.Rejected", "Not Authorized");
+}
+
+static void
+ask_user (GDBusMethodInvocation *invocation,
+	  const gchar *filename)
+{
+	NotifyNotification *notification;
+	gchar *notification_text;
+
+	/* Translators: %s is the name of the filename being received */
+	notification_text = g_strdup_printf(_("You have been sent a file \"%s\" via Bluetooth"), filename);
+	notification = notify_notification_new (_("You have been sent a file"),
+						notification_text,
+						"bluetooth");
+
+	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_NEVER);
+	notify_notification_set_hint_string (notification, "desktop-entry",
+					     "gnome-user-share-properties");
+
+	notify_notification_add_action (notification, "receive", _("Receive"),
+					(NotifyActionCallback) ask_user_transfer_accepted,
+					invocation, NULL);
+	notify_notification_add_action (notification, "cancel", _("Cancel"),
+					(NotifyActionCallback) ask_user_transfer_rejected,
+					invocation, NULL);
+
+	/* We want to reject the transfer if the user closes the notification
+	 * without accepting or rejecting it, so we connect to it. However
+	 * if the user clicks on one of the actions, the callback for the
+	 * action will be invoked, and then the notification will be closed
+	 * and the callback for :closed will be called. So we disconnect
+	 * from :closed if the invocation object goes away (which will happen
+	 * after the handler of either action accepts or rejects the transfer).
+	 */
+	g_signal_connect_object (G_OBJECT (notification), "closed",
+		G_CALLBACK (ask_user_on_close), invocation, 0);
+
+	if (!notify_notification_show (notification, NULL))
+		g_warning ("failed to send notification\n");
+
+	g_free (notification_text);
+}
+
+static void
 obex_agent_release (GError **error)
 {
 }
@@ -250,34 +327,37 @@ obex_agent_authorize_push (GObject *source_object,
 	GDBusMethodInvocation *invocation = user_data;
 	GVariant *variant = g_dbus_proxy_get_cached_property (transfer, "Name");
 	const gchar *filename = g_variant_get_string (variant, NULL);
+	gchar *download_dir, *file;
 	gboolean authorize = FALSE;
 
 	g_debug ("AuthorizePush received");
+
+	download_dir = lookup_download_dir ();
+	file = g_build_filename (download_dir, filename, NULL);
+	g_free (download_dir);
+
+	g_object_set_data_full (G_OBJECT (transfer), "filename", g_strdup (file), g_free);
+	g_object_set_data_full (G_OBJECT (invocation), "filename", file, g_free);
+
+	g_signal_connect (transfer, "g-properties-changed",
+		G_CALLBACK (transfer_property_changed), NULL);
 
 	switch (accept_setting) {
 	case ACCEPT_ALWAYS:
 		authorize = TRUE;
 		break;
 	case ACCEPT_BONDED:
-		g_warning ("'Bonded' authorization method not implemented");
-		break;
+		g_warning ("'Bonded' authorization method not implemented, "
+			   "falling back to asking the user");
 	case ACCEPT_ASK:
-		g_warning ("'Ask' authorization method not implemented");
-		break;
+		ask_user (invocation, filename);
+		/* ask_user() will accept or reject the transfer */
+		return;
 	default:
 		g_warn_if_reached ();
 	}
 
 	if (authorize) {
-		gchar *download_dir = lookup_download_dir ();
-		gchar *file = g_build_filename (download_dir, filename, NULL);
-		g_free (download_dir);
-
-		g_signal_connect (transfer, "g-properties-changed",
-			G_CALLBACK (transfer_property_changed), NULL);
-
-		g_object_set_data_full (G_OBJECT (transfer), "filename", file, g_free);
-
 		g_dbus_method_invocation_return_value (invocation,
 			g_variant_new ("(s)", file));
 
