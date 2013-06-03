@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-02-21 10:05+0000\n"
-"PO-Revision-Date: 2013-01-21 14:03+0500\n"
+"PO-Revision-Date: 2013-06-03 16:28+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tajik\n"
@@ -20,71 +20,86 @@ msgstr ""
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
-msgstr ""
+msgstr "Мубодила кардани директорияи оммавӣ тавассути шабака"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
+"Агар \"true\" бошад, директорияи оммавӣ дар директорияи асосии корбар "
+"ҳангоми воридшавӣ тавассути шабака мубодила мешавад."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
-msgstr ""
+msgstr "Шарти дархосткунии паролҳо"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
+"Шарти дархосткунии паролҳо. Қиматҳои имконпазир: \"ҳеҷ гоҳ\", \"ҳангоми "
+"навишт\" ва \"ҳамеша\"."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
-msgstr ""
+msgstr "Мубодила кардани директорияи оммавӣ тавассути Bluetooth"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over Bluetooth when the user is logged in."
 msgstr ""
+"Агар \"true\" бошад, директорияи оммавӣ дар директорияи асосии корбар "
+"ҳангоми воридшавӣ тавассути Bluetooth мубодила мешавад."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
-msgstr ""
+msgstr "Шартҳои муштариёни Bluetooth барои тағйирдиҳии файлҳо."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr ""
+"Шартҳои муштариёни Bluetooth барои тағйирдиҳии файлҳо ё мубодилаи файлҳо дар "
+"ҳолати танҳо барои хондан."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
 msgstr ""
+"Шартҳои муштариёни Bluetooth барои фиристодани файлҳо тавассути ҷуфтсозӣ бо "
+"компютер."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr ""
+"Шартҳои муштариёни Bluetooth барои фиристодани файлҳо тавассути ObexPush."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
+"Агар \"true\" бошад, дастгоҳҳои Bluetooth метавонанд ҳангоми воридшавӣ "
+"файлҳоро ба директорияи корбарии \"Боргириҳо\" фиристонанд."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
-msgstr ""
+msgstr "Шарти қабулкунии файлҳои ирсолшуда аз Bluetooth"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
 msgstr ""
+"Шарти қабулкунии файлҳои ирсолшуда аз Bluetooth. Қиматҳои имконпазир: "
+"\"ҳамеша\", \"шартӣ\" ва \"пурсиш\"."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
-msgstr ""
+msgstr "Шартҳои огоҳкунӣ дар бораи файлҳои қабулшудаи нав."
 
 #: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
@@ -92,11 +107,12 @@ msgstr "Мубодилаи файлҳои шахсӣ"
 
 #: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr ""
+msgstr "Агар фаъол бошад, мубодилаи файлҳои шахсиро оғоз кунед"
 
 #: ../data/gnome-user-share.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr ""
+"мубодила кардан;файлҳо;bluetooth;obex;http;шабака;нусха бардоштан;фиристодан;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -104,19 +120,20 @@ msgstr "Хусусиятҳо"
 
 #: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
-msgstr ""
+msgstr "Хусусиятҳои оғози мубодилаи файлҳои шахсӣ"
 
 #: ../src/share-extension.c:152
 msgid "May be used to share or receive files"
-msgstr ""
+msgstr "Метавонад барои мубодила ё қабул кардани файлҳо истифода бурда шавад"
 
 #: ../src/share-extension.c:154
 msgid "May be shared over the network or Bluetooth"
-msgstr ""
+msgstr "Метавонад тавассути шабака ё Bluetooth мубодила карда шавад"
 
 #: ../src/share-extension.c:158
 msgid "May be used to receive files over Bluetooth"
 msgstr ""
+"Метавонад барои қабулкунии файлҳо тавассути Bluetooth истифода бурда шавад"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -130,24 +147,24 @@ msgstr ""
 #: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
-msgstr "Файлҳои иҷтимоии %s"
+msgstr "Файлҳои оммавии %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
 #: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
-msgstr ""
+msgstr "Файлҳои оммавии %s's дар %s"
 
 #. Translators: %s is the name of the filename received
 #: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr ""
+msgstr "Шумо \"%s\"-ро тавассути Bluetooth қабул кардед"
 
 #: ../src/obexpush.c:135
 msgid "You received a file"
-msgstr "Шумо файлро қабул кардед"
+msgstr "Шумо файлеро қабул кардед"
 
 #: ../src/obexpush.c:146
 msgid "Open File"
@@ -155,8 +172,8 @@ msgstr "Кушодани файл"
 
 #: ../src/obexpush.c:150
 msgid "Reveal File"
-msgstr ""
+msgstr "Ошкор кардани файл"
 
 #: ../src/obexpush.c:167
 msgid "File reception complete"
-msgstr ""
+msgstr "Қабулкунии файл ба анҷом расид"
