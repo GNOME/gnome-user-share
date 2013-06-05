@@ -29,6 +29,7 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 #include <gtk/gtk.h>
+#include <bluetooth-client.h>
 #include <libnotify/notify.h>
 #include <canberra-gtk.h>
 
@@ -44,7 +45,8 @@
 #define AGENT_PATH	"/org/gnome/share/agent"
 #define AGENT_IFACE	"org.bluez.obex.Agent1"
 
-#define TRANSFER_INTERFACE "org.bluez.obex.Transfer1"
+#define TRANSFER_IFACE	"org.bluez.obex.Transfer1"
+#define SESSION_IFACE	"org.bluez.obex.Session1"
 
 static GDBusNodeInfo *introspection_data = NULL;
 
@@ -66,6 +68,8 @@ G_DEFINE_TYPE(ObexAgent, obex_agent, G_TYPE_OBJECT)
 
 static ObexAgent *agent;
 static GDBusProxy *manager;
+static BluetoothClient *client;
+
 static AcceptSetting accept_setting = -1;
 static gboolean show_notifications = FALSE;
 
@@ -277,6 +281,143 @@ ask_user (GDBusMethodInvocation *invocation,
 	g_free (notification_text);
 }
 
+gboolean
+get_paired_for_address (const char *adapter, const char *device)
+{
+	GtkTreeModel *model;
+	GtkTreeIter parent;
+	gboolean next;
+	gboolean ret = FALSE;
+	char *addr;
+
+	model = bluetooth_client_get_model (client);
+
+	for (next = gtk_tree_model_get_iter_first (model, &parent);
+	     next;
+	     next = gtk_tree_model_iter_next (model, &parent)) {
+		gtk_tree_model_get (model, &parent,
+			BLUETOOTH_COLUMN_ADDRESS, &addr,
+			-1);
+
+		if (g_strcmp0 (addr, adapter) == 0) {
+			GtkTreeIter child;
+			char *dev_addr;
+
+			for (next = gtk_tree_model_iter_children (model, &child, &parent);
+			     next;
+			     next = gtk_tree_model_iter_next (model, &child)) {
+				gboolean paired;
+
+				gtk_tree_model_get (model, &child,
+					BLUETOOTH_COLUMN_ADDRESS, &dev_addr,
+					BLUETOOTH_COLUMN_PAIRED, &paired,
+					-1);
+				if (g_strcmp0 (dev_addr, device) == 0) {
+					ret = paired;
+					next = FALSE;
+				}
+				g_free (dev_addr);
+			}
+		}
+		g_free (addr);
+	}
+
+	g_object_unref (model);
+	return ret;
+}
+
+static void
+on_session_acquired (GObject *object,
+		     GAsyncResult *res,
+		     gpointer user_data)
+{
+	GDBusMethodInvocation *invocation = user_data;
+	GDBusProxy *session;
+	GError *error = NULL;
+	GVariant *v;
+	char *device, *adapter;
+	gboolean paired;
+
+	session = g_dbus_proxy_new_for_bus_finish (res, &error);
+
+	if (!session) {
+		g_debug ("Failed to create a proxy for the session: %s", error->message);
+		g_clear_error (&error);
+		goto out;
+	}
+
+	/* obexd puts the remote device in Destination and our adapter
+	 * in Source */
+	v = g_dbus_proxy_get_cached_property (session, "Destination");
+	if (v) {
+		device = g_variant_dup_string (v, NULL);
+		g_variant_unref (v);
+	}
+
+	v = g_dbus_proxy_get_cached_property (session, "Source");
+	if (v) {
+		adapter = g_variant_dup_string (v, NULL);
+		g_variant_unref (v);
+	}
+
+	g_object_unref (session);
+
+	if (!device || !adapter) {
+		g_debug ("Could not get remote device for the transfer");
+		g_free (device);
+		g_free (adapter);
+		goto out;
+	}
+
+	paired = get_paired_for_address (adapter, device);
+	g_free (device);
+	g_free (adapter);
+
+	if (paired) {
+		g_debug ("Remote device is paired, auto-accepting the transfer");
+		g_dbus_method_invocation_return_value (invocation,
+			g_variant_new ("(s)", g_object_get_data (G_OBJECT (invocation), "filename")));
+		return;
+	} else {
+		g_debug ("Remote device is not paired, auto-rejecting the transfer");
+	}
+
+out:
+	g_debug ("Rejecting transfer");
+	g_dbus_method_invocation_return_dbus_error (invocation,
+		"org.bluez.obex.Error.Rejected", "Not Authorized");
+}
+
+static void
+check_if_bonded (GDBusProxy *transfer,
+		 GDBusMethodInvocation *invocation,
+		 const gchar *filename)
+{
+	GVariant *v;
+	const gchar *session = NULL;
+
+	v = g_dbus_proxy_get_cached_property (transfer, "Session");
+
+	if (v) {
+		session = g_variant_get_string (v, NULL);
+		g_dbus_proxy_new_for_bus (G_BUS_TYPE_SESSION,
+					  G_DBUS_PROXY_FLAGS_NONE,
+					  NULL,
+					  MANAGER_SERVICE,
+					  session,
+					  SESSION_IFACE,
+					  NULL,
+					  on_session_acquired,
+					  invocation);
+		g_variant_unref (v);
+	} else {
+		g_debug ("Could not get session path for the transfer, "
+			 "rejecting the transfer");
+		g_dbus_method_invocation_return_dbus_error (invocation,
+			"org.bluez.obex.Error.Rejected", "Not Authorized");
+	}
+}
+
 static void
 obex_agent_release (GError **error)
 {
@@ -347,8 +488,9 @@ obex_agent_authorize_push (GObject *source_object,
 		authorize = TRUE;
 		break;
 	case ACCEPT_BONDED:
-		g_warning ("'Bonded' authorization method not implemented, "
-			   "falling back to asking the user");
+		check_if_bonded (transfer, invocation, filename);
+		/* check_if_bonded() will accept or reject the transfer */
+		return;
 	case ACCEPT_ASK:
 		ask_user (invocation, filename);
 		/* ask_user() will accept or reject the transfer */
@@ -399,7 +541,7 @@ handle_method_call (GDBusConnection       *connection,
 					  NULL,
 					  MANAGER_SERVICE,
 					  transfer,
-					  TRANSFER_INTERFACE,
+					  TRANSFER_IFACE,
 					  NULL,
 					  obex_agent_authorize_push,
 					  invocation);
@@ -529,6 +671,8 @@ obex_agent_dispose (GObject *obj)
 
 	g_bus_unown_name (self->owner_id);
 
+	g_clear_object (&client);
+
 	G_OBJECT_CLASS (obex_agent_parent_class)->dispose (obj);
 }
 
@@ -555,6 +699,8 @@ obex_agent_new (void)
 					 on_name_lost,
 					 NULL,
 					 NULL);
+
+	client = bluetooth_client_new ();
 
 	return self;
 }
