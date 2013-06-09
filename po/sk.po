@@ -1,231 +1,142 @@
 # Slovak translation for gnome-user-share.
-# Copyright (C) 2005, 2010 Free Software Foundation, Inc.
+# Copyright (C) 2005, 2010-2013 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Marcel Telka <marcel@telka.sk>, 2005.
 # Roman Mátyus <romanmatyus@gmail.com>, 2010.
+# Pavol Klačanský <pavol@klacansky.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&component=general\n"
-"POT-Creation-Date: 2010-05-12 23:05+0000\n"
-"PO-Revision-Date: 2010-09-07 20:29+0200\n"
-"Last-Translator: Roman Mátyus <romanmatyus@gmail.com>\n"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-06-03 11:30+0000\n"
+"PO-Revision-Date: 2013-06-05 20:18+0100\n"
+"Last-Translator: Pavol Klačanský <pavol@klacansky.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=614280
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:1
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Ak je toto true, zariadenia Bluetooth môžu posielať súbory do používateľovho "
-"adresára Stiahnuté, keď je prihlásený."
+# MČ: asi zjednotiť na „priečinok“.
+# PK: directory je adresar
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "Share Public directory over the network"
+msgstr "Sprístupniť adresár Verejné na sieti"
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=614280
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Ak je toto true, adresár Verejné v domovskom adresári používateľa bude "
-"zdieľaný cez Bluetooth, keď je používateľ prihlásený."
-
-# * https://bugzilla.gnome.org/show_bug.cgi?id=614280
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:3
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
 "Ak je toto true, adresár Verejné v domovskom adresári používateľa bude "
-"zdieľaný cez sieť, keď je používateľ prihlásený."
+"prístupný na sieti, keď je používateľ prihlásený."
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=614280
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:4
-msgid "Share Public directory over Bluetooth"
-msgstr "Zdieľať adresár Verejné cez Bluetooth"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "When to require passwords"
+msgstr "Kedy vyžadovať heslá"
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=614280
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:5
-msgid "Share Public directory over the network"
-msgstr "Zdieľať adresár Verejné cez sieť"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:6
-msgid "When to accept files sent over Bluetooth"
-msgstr "Kedy akceptovať súbory poslané cez Bluetooth"
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:7
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Kedy akceptovať súbory poslané cez Bluetooth. Možné hodnoty sú \"always"
-"\" (vždy), \"bonded\" (po previazaní) a \"ask\" (opýtať sa)."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kedy pýtať heslá. Možné hodnoty sú \"never\" (nikdy), \"on_write\" (pri "
-"zápise), a \"always\" (vždy)."
+"Kedy pýtať heslá. Možné hodnoty sú „never“ (nikdy), „on_write“ (pri zápise), "
+"a „always“ (vždy)."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:9
-msgid "When to require passwords"
-msgstr "Kedy vyžadovať heslá"
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Share Public directory over Bluetooth"
+msgstr "Sprístupniť adresár Verejné cez bluetooth"
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Či Bluetooth klienti môžu posielať súbory použitím ObexPush."
-
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:11
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over Bluetooth when the user is logged in."
 msgstr ""
-"Či sa na posielanie súborov klienti Bluetooth potrebujú spárovať s počítačom."
+"Ak je toto true, adresár Verejné v domovskom adresári používateľa bude "
+"prístupný cez bluetooth, keď je používateľ prihlásený."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "Whether to allow Bluetooth clients to write files."
+msgstr "Či klientom bluetooth povoliť zapisovať súbory."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr ""
-"Či klientom Bluetooth povoliť zapisovať súbory alebo zdieľať súbory len na "
-"čítanie."
+"Či klientom bluetooth povoliť zapisovať súbory alebo sprístupniť súbory len "
+"na čítanie."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:13
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Či klientom Bluetooth povoliť zapisovať súbory."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgstr ""
+"Či sa na posielanie súborov klienti bluetooth potrebujú spárovať s počítačom."
 
-#: ../data/desktop_gnome_file_sharing.schemas.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Či bluetooth klienti môžu posielať súbory použitím ObexPush."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Ak je toto true, zariadenia bluetooth môžu posielať súbory do používateľovho "
+"adresára Stiahnuté, keď je prihlásený."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+msgid "When to accept files sent over Bluetooth"
+msgstr "Kedy akceptovať súbory poslané cez bluetooth"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Kedy akceptovať súbory poslané cez bluetooth. Možné hodnoty sú "
+"„always“ (vždy), „bonded“ (po previazaní) a „ask“ (opýtať sa)."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "Či informovať o prijatí nových súborov."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Receive Files over Bluetooth"
-msgstr "Prijímať súbory cez Bluetooth"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over Bluetooth"
-msgstr "Zdieľať súbory cez Bluetooth"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "Share Files over the Network"
-msgstr "Zdieľať súbory cez sieť"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "Allo_w remote devices to delete files"
-msgstr "P_ovoliť vzdialeným zariadeniam mazanie súborov"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "Personal File Sharing Preferences"
-msgstr "Predvoľby zdieľania osobných súborov"
-
-# * https://bugzilla.gnome.org/show_bug.cgi?id=614280
-#: ../data/file-share-properties.ui.h:6
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Prijí_mať súbory poslané cez Bluetooth do priečinka Stiahnuté"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Vyžadovať od vzdialených zariadení p_reviazanie s týmto počítačom"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Share public files over _Bluetooth"
-msgstr "Zdieľať verejné súbory cez _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "_Accept files: "
-msgstr "_Akceptovať súbory: "
-
-#: ../data/file-share-properties.ui.h:10
-msgid "_Notify about received files"
-msgstr "I_nformovať o prijatých súboroch"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "_Password:"
-msgstr "_Heslo:"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Require password:"
-msgstr "Vyža_dovať heslo:"
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Share public files on network"
-msgstr "_Zdieľať verejné súbory na sieti"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:2 ../src/nautilus-share-bar.c:162
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
-msgstr "Zdieľanie osobných súborov"
+msgstr "Sprístupnenie osobných súborov"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Predvoľby pre zdieľanie súborov"
-
-#: ../data/gnome-user-share.desktop.in.in.h:1
+#: ../data/gnome-user-share.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Ak je povolené, spustiť Zdieľanie osobných súborov"
+msgstr "Ak je povolené, spustí sprístupnenie osobných súborov"
 
-# https://bugzilla.gnome.org/show_bug.cgi?id=618665
-#: ../src/nautilus-share-bar.c:174
-msgid "Launch Preferences"
-msgstr "Spustiť Predvoľby"
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "sprístupniť;súbory;bluetooth;obex;http;sieť;kopírovať;odoslať;"
 
-#: ../src/nautilus-share-bar.c:187
+# button
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Nastavenia"
+
+# tooltip
+#: ../src/nautilus-share-bar.c:120
 msgid "Launch Personal File Sharing Preferences"
-msgstr "Spustiť Predvoľby zdieľania osobných súborov"
+msgstr "Otvorí nastavenia sprístupnenia osobných súborov"
 
-# * https://bugzilla.gnome.org/show_bug.cgi?id=616428
-#: ../src/share-extension.c:82
-msgid "Unable to launch the Personal File Sharing preferences"
-msgstr "Nedá sa spustiť Predvoľby zdieľania osobných súborov"
+# priecinok alebo subor asi
+#: ../src/share-extension.c:152
+msgid "May be used to share or receive files"
+msgstr "Môže byť použítý na sprístupnenie alebo prijímanie súborov"
 
-#: ../src/share-extension.c:173
-msgid "You can share files from this folder and receive files to it"
-msgstr "Môžete zdieľať súbory z tohto priečinka a prijímať doňho súbory"
+# priecinok alebo subor asi
+#: ../src/share-extension.c:154
+msgid "May be shared over the network or Bluetooth"
+msgstr "Môže byť sprístupnený na sieti alebo cez bluetooth"
 
-#: ../src/share-extension.c:175
-msgid "You can share files from this folder over the network and Bluetooth"
-msgstr "Môžete zdieľať súbory z tohto priečinka cez sieť a Bluetooth"
-
-#: ../src/share-extension.c:177
-msgid "You can receive files over Bluetooth into this folder"
-msgstr "Môžete prijímať súbory cez Bluetooth do tohto priečinka"
-
-#: ../src/file-share-properties.c:436
-msgid "No reason"
-msgstr "Bez dôvodu"
-
-#: ../src/file-share-properties.c:464
-msgid "Could not display the help contents."
-msgstr "Nepodarilo sa zobraziť obsah pomocníka."
-
-#: ../src/file-share-properties.c:524
-msgid "Could not build interface."
-msgstr "Nepodarilo sa zostaviť rozhranie."
-
-#: ../src/file-share-properties.c:566
-msgid "Never"
-msgstr "Nikdy"
-
-#: ../src/file-share-properties.c:569
-msgid "When writing files"
-msgstr "Pri zápise súborov"
-
-#: ../src/file-share-properties.c:572 ../src/file-share-properties.c:595
-msgid "Always"
-msgstr "Vždy"
-
-#: ../src/file-share-properties.c:598
-msgid "Only for set up devices"
-msgstr "Iba pre nastavené zariadenia"
-
-#: ../src/file-share-properties.c:603
-msgid "Ask"
-msgstr "Opýtať sa"
+#: ../src/share-extension.c:158
+msgid "May be used to receive files over Bluetooth"
+msgstr "Môže byť použitý na prijímanie súborov cez bluetooth"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -236,39 +147,38 @@ msgstr "Opýtať sa"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:134
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "Verejné súbory používateľa %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:138
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Verejné súbory používateľa %s na %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:140
+#: ../src/obexpush.c:133
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr "Prijali ste \"%s\" cez Bluetooth"
+msgstr "Prijali ste súbor „%s“ cez bluetooth"
 
-#: ../src/obexpush.c:142
+#: ../src/obexpush.c:135
 msgid "You received a file"
 msgstr "Prijali ste súbor"
 
-#: ../src/obexpush.c:153
+# button
+#: ../src/obexpush.c:146
 msgid "Open File"
 msgstr "Otvoriť súbor"
 
-#: ../src/obexpush.c:157
+# button
+#: ../src/obexpush.c:150
 msgid "Reveal File"
 msgstr "Odhaliť súbor"
 
-#: ../src/obexpush.c:174
+#: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "Príjem súboru dokončený"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Prihláste sa, prosím, ako hosť"
