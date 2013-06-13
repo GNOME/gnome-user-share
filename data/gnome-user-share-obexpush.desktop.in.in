@@ -2,6 +2,7 @@
 _Name=Personal File Sharing
 _Comment=Launch Personal File Sharing if enabled
 _Keywords=share;files;bluetooth;obex;http;network;copy;send;
+AutostartCondition=GSETTINGS org.gnome.desktop.file-sharing bluetooth-obexpush-enabled
 Icon=folder-remote
 Exec=@installdir@/gnome-user-share
 Terminal=false
