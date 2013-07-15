@@ -1,4 +1,8 @@
-This is gnome-user-share 3.8.0, a system for easy sharing of user files.
+This is gnome-user-share 3.8.3, a system for easy sharing of user files.
+
+Major changes since 3.8.0:
+- Fix the servers not starting when enabled in System Settings's sharing panel
+- Fix race condition for the personal files sharing on OpenBSD
 
 Major changes since 3.7.91:
 - Updated translations
