@@ -54,7 +54,18 @@ fi
 
 AC_SUBST(HTTPD)
 
-PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.28 gio-2.0 >= 2.26 gtk+-3.0 dbus-1 >= 1.1.1 dbus-glib-1 libnotify libcanberra-gtk3 gnome-bluetooth-1.0 >= 2.91.5)
+BLUETOOTH_PKG="gnome-bluetooth-1.0 >= 2.91.5"
+AC_ARG_ENABLE(bluetooth, AS_HELP_STRING([--disable-bluetooth],[compile without bluetooth support]),,enable_bluetooth=no)
+if test "x$enable_bluetooth" = "xyes"; then
+  PKG_CHECK_MODULES(BLUETOOTH, $BLUETOOTH_PKG)
+  AC_DEFINE(HAVE_BLUETOOTH, 1, [Set to true if gnome-bluetooth support is available])
+else
+  BLUETOOTH_PKG=""
+  AC_MSG_WARN([Bluetooth support is disabled.])
+fi
+AM_CONDITIONAL(USE_BLUETOOTH, [test "$enable_bluetooth" = "yes"])
+
+PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.28 gio-2.0 >= 2.26 gtk+-3.0 dbus-1 >= 1.1.1 dbus-glib-1 libnotify libcanberra-gtk3 $BLUETOOTH_PKG)
 AC_SUBST(USER_SHARE_CFLAGS)
 AC_SUBST(USER_SHARE_LIBS)
 
@@ -104,8 +115,6 @@ AC_SUBST(SELINUX_LIBS)
 dnl ==========================================================================
 dnl Check for the HTTPD modules path
 
-
-
 AC_ARG_WITH([modules-path],
 	    [AS_HELP_STRING([--with-modules-path],[Path where the httpd modules are located (default: /etc/httpd/modules/)])],
 	    [with_modules_path=$withval])
@@ -122,7 +131,7 @@ AC_ARG_WITH(nautilusdir,
 	    [ac_with_nautilusdir=""])
 
 PKG_CHECK_MODULES(EXTENSION,
-		   libnautilus-extension >= 2.91.7 gnome-bluetooth-1.0)
+		   libnautilus-extension >= 2.91.7 $BLUETOOTH_PKG)
 if test "${ac_with_nautilusdir}" = ""; then
 	ac_with_nautilusdir=`pkg-config --variable=extensiondir libnautilus-extension`
 fi
@@ -196,6 +205,11 @@ AC_MSG_NOTICE([gnome-user-share was configured with the following options:])
 AC_MSG_NOTICE([** httpd location: $HTTP])
 AC_MSG_NOTICE([** httpd modules path: $MODULES_PATH])
 AC_MSG_NOTICE([** nautilus extension path: $ac_with_nautilusdir])
+if test "x$enable_bluetooth" = "xyes"; then
+	AC_MSG_NOTICE([** Bluetooth support enabled (ObexPush and ObexFTP)])
+else
+	AC_MSG_NOTICE([   Bluetooth support disabled])
+fi
 
 echo "
 Do note Apache 2.2 and mod_dnssd 0.6 are required to use gnome-user-share.

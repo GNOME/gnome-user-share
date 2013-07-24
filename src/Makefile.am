@@ -27,9 +27,15 @@ gnome_user_share_SOURCES =	\
 	user_share-private.c	\
 	http.c			\
 	http.h			\
-	obexpush.c		\
-	obexpush.h		\
 	$(NULL)
+
+if USE_BLUETOOTH
+gnome_user_share_SOURCES +=	\
+	obexpush.c		\
+	obexpush.h
+else
+EXTRA_DIST = obexpush.c obexpush.h
+endif
 
 gnome_user_share_LDADD =	\
 	libuser-share-common.la	\

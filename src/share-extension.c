@@ -28,9 +28,12 @@
 #include <glib/gi18n-lib.h>
 #include <gio/gdesktopappinfo.h>
 #include <gtk/gtk.h>
-#include <bluetooth-client.h>
 #include <libnautilus-extension/nautilus-menu-provider.h>
 #include <libnautilus-extension/nautilus-location-widget-provider.h>
+
+#ifdef HAVE_BLUETOOTH
+#include <bluetooth-client.h>
+#endif
 
 #include "nautilus-share-bar.h"
 #include "user_share-common.h"
@@ -89,6 +92,7 @@ bar_response_cb (NautilusShareBar *bar,
                 launch_prefs_on_window ();
 }
 
+#ifdef HAVE_BLUETOOTH
 static void
 downloads_bar_set_from_bluetooth_status (GtkWidget *bar)
 {
@@ -109,6 +113,7 @@ default_adapter_powered_cb (GObject    *gobject,
 {
 	downloads_bar_set_from_bluetooth_status (bar);
 }
+#endif /* HAVE_BLUETOOTH */
 
 static GtkWidget *
 nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
@@ -151,8 +156,13 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	if (is_dir[0] != FALSE && is_dir[1] != FALSE) {
 		bar = nautilus_share_bar_new (_("May be used to share or receive files"));
 	} else if (is_dir[0] != FALSE) {
+#ifndef HAVE_BLUETOOTH
 		bar = nautilus_share_bar_new (_("May be shared over the network or Bluetooth"));
+#else
+		bar = nautilus_share_bar_new (_("May be shared over the network"));
+#endif /* !HAVE_BLUETOOTH */
 	} else {
+#ifdef HAVE_BLUETOOTH
 		BluetoothClient *client;
 
 		bar = nautilus_share_bar_new (_("May be used to receive files over Bluetooth"));
@@ -162,6 +172,7 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 		g_signal_connect (G_OBJECT (client), "notify::default-adapter-powered",
 				  G_CALLBACK (default_adapter_powered_cb), bar);
 		downloads_bar_set_from_bluetooth_status (bar);
+#endif /* HAVE_BLUETOOTH */
 	}
 
 	g_signal_connect (bar, "response",

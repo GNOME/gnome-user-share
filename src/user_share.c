@@ -27,7 +27,6 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <glib/gstdio.h>
-#include <bluetooth-client.h>
 #include <gio/gio.h>
 #include <X11/Xlib.h>
 
@@ -44,6 +43,10 @@
 #include <signal.h>
 #include <unistd.h>
 
+#ifdef HAVE_BLUETOOTH
+#include <bluetooth-client.h>
+#endif
+
 /* GNOME Session */
 #define GNOME_SESSION_DBUS_NAME      "org.gnome.SessionManager"
 #define GNOME_SESSION_DBUS_OBJECT    "/org/gnome/SessionManager"
@@ -57,6 +60,7 @@ static gboolean has_console = TRUE;
 
 #define OBEX_ENABLED (has_console)
 
+#ifdef HAVE_BLUETOOTH
 static void
 obex_services_start (void)
 {
@@ -135,6 +139,7 @@ session_init (void)
 			  NULL);
 	has_console = is_session_active ();
 }
+#endif /* HAVE_BLUETOOTH */
 
 static void
 migrate_old_configuration (void)
@@ -166,8 +171,10 @@ disabled_timeout_callback (void)
 {
 	http_down ();
 
+#ifdef HAVE_BLUETOOTH
 	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE)
 		_exit (0);
+#endif /* HAVE_BLUETOOTH */
 	return FALSE;
 }
 
@@ -195,6 +202,7 @@ file_sharing_enabled_changed (void)
 	}
 }
 
+#ifdef HAVE_BLUETOOTH
 static void
 file_sharing_bluetooth_obexpush_enabled_changed (void)
 {
@@ -227,7 +235,7 @@ file_sharing_bluetooth_obexpush_notify_changed (void)
 {
 	obex_agent_set_notify (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY));
 }
-
+#endif /* HAVE_BLUETOOTH */
 static void
 setttings_changed (GSettings *settings,
 		   gchar *path,
@@ -238,7 +246,7 @@ setttings_changed (GSettings *settings,
 
 	else if (g_strcmp0 (FILE_SHARING_REQUIRE_PASSWORD, path) == 0)
 		require_password_changed ();
-
+#ifdef HAVE_BLUETOOTH
 	else if (g_strcmp0 (FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, path) == 0)
 		file_sharing_bluetooth_obexpush_enabled_changed ();
 
@@ -247,13 +255,16 @@ setttings_changed (GSettings *settings,
 
 	else if (g_strcmp0 (FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY, path) == 0)
 		file_sharing_bluetooth_obexpush_notify_changed ();
+#endif /* HAVE_BLUETOOTH */
 }
 
 static void
 cleanup_handler (int sig)
 {
 	http_down ();
+#ifdef HAVE_BLUETOOTH
 	obex_agent_down ();
+#endif
 	_exit (2);
 }
 
@@ -261,7 +272,9 @@ static int
 x_io_error_handler (Display *xdisplay)
 {
 	http_down ();
+#ifdef HAVE_BLUETOOTH
 	obex_agent_down ();
+#endif
 	_exit (2);
 }
 
@@ -317,27 +330,38 @@ main (int argc, char **argv)
 	migrate_old_configuration ();
 
 	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
+#ifdef HAVE_BLUETOOTH
 	if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE &&
 	    g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE)
 		return 1;
+#else
+	if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE)
+		return 1;
+#endif /* HAVE_BLUETOOTH */
 
 	x_fd = ConnectionNumber (xdisplay);
 	XSetIOErrorHandler (x_io_error_handler);
 
 	if (http_init () == FALSE)
 		return 1;
+#ifdef HAVE_BLUETOOTH
 	if (obex_agent_up () == FALSE)
 		return 1;
+#endif
 
 	g_signal_connect (settings, "changed", G_CALLBACK(setttings_changed), NULL);
 
+#ifdef HAVE_BLUETOOTH
 	session_init ();
+#endif
 
 	/* Initial setting */
 	file_sharing_enabled_changed ();
+#ifdef HAVE_BLUETOOTH
 	file_sharing_bluetooth_obexpush_accept_files_changed ();
 	file_sharing_bluetooth_obexpush_notify_changed ();
 	file_sharing_bluetooth_obexpush_enabled_changed ();
+#endif /* HAVE_BLUETOOTH */
 
 	gtk_main ();
 	g_object_unref (settings);
