@@ -54,7 +54,7 @@ fi
 
 AC_SUBST(HTTPD)
 
-BLUETOOTH_PKG="gnome-bluetooth-1.0 >= 2.91.5"
+BLUETOOTH_PKG="gnome-bluetooth-1.0 >= 3.9.3"
 AC_ARG_ENABLE(bluetooth, AS_HELP_STRING([--disable-bluetooth],[compile without bluetooth support]),,enable_bluetooth=no)
 if test "x$enable_bluetooth" = "xyes"; then
   PKG_CHECK_MODULES(BLUETOOTH, $BLUETOOTH_PKG)
