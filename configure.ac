@@ -192,6 +192,11 @@ help/Makefile
 ])
 AC_OUTPUT
 
+AC_MSG_NOTICE([gnome-user-share was configured with the following options:])
+AC_MSG_NOTICE([** httpd location: $HTTP])
+AC_MSG_NOTICE([** httpd modules path: $MODULES_PATH])
+AC_MSG_NOTICE([** nautilus extension path: $ac_with_nautilusdir])
+
 echo "
 Do note Apache 2.2 and mod_dnssd 0.6 are required to use gnome-user-share.
 "
