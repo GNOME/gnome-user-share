@@ -73,8 +73,6 @@ if test $have_socket = no; then
   done
 fi
 
-AC_PATH_PROG([GLIB_GENMARSHAL],[glib-genmarshal])
-
 GLIB_GSETTINGS
 
 dnl where to install the gnome-user-share binary
