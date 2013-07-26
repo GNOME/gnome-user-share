@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: Tajik Gnome\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-02-21 10:05+0000\n"
-"PO-Revision-Date: 2013-06-03 16:28+0500\n"
+"POT-Creation-Date: 2013-07-24 07:55+0000\n"
+"PO-Revision-Date: 2013-07-26 16:52-0000\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tajik\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -101,15 +101,22 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Шартҳои огоҳкунӣ дар бораи файлҳои қабулшудаи нав."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Мубодилаи файлҳои шахсӣ"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Агар фаъол бошад, мубодилаи файлҳои шахсиро оғоз кунед"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr ""
 "мубодила кардан;файлҳо;bluetooth;obex;http;шабака;нусха бардоштан;фиристодан;"
@@ -122,15 +129,20 @@ msgstr "Хусусиятҳо"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Хусусиятҳои оғози мубодилаи файлҳои шахсӣ"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "Метавонад барои мубодила ё қабул кардани файлҳо истифода бурда шавад"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "Метавонад тавассути шабака ё Bluetooth мубодила карда шавад"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:162
+#| msgid "May be shared over the network or Bluetooth"
+msgid "May be shared over the network"
+msgstr "Метавонад тавассути шабака мубодила карда шавад"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr ""
 "Метавонад барои қабулкунии файлҳо тавассути Bluetooth истифода бурда шавад"
@@ -157,23 +169,43 @@ msgid "%s's public files on %s"
 msgstr "Файлҳои оммавии %s's дар %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Шумо \"%s\"-ро тавассути Bluetooth қабул кардед"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "Шумо файлеро қабул кардед"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "Кушодани файл"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "Ошкор кардани файл"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "Қабулкунии файл ба анҷом расид"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+#| msgid "You received \"%s\" via Bluetooth"
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Шумо \"%s\"-ро тавассути Bluetooth ирсол кардед"
+
+#: ../src/obexpush.c:252
+#| msgid "You received a file"
+msgid "You have been sent a file"
+msgstr "Шумо файлеро ирсол кардед"
+
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "Қабул кардан"
+
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "Бекор кардан"
