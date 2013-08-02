@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-07 00:18+0100\n"
-"PO-Revision-Date: 2013-02-07 00:18+0200\n"
+"POT-Creation-Date: 2013-08-02 11:30+0200\n"
+"PO-Revision-Date: 2013-08-02 11:31+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -111,15 +111,22 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Se hai que informar sobre os ficheiros recibidos recentemente."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Compartir ficheiros persoais"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Iniciar Compartir ficheiros persoais, se está activado"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "compartir;ficheiros;bluetooth;obex;http;rede;copiar;enviar;"
 
@@ -131,15 +138,19 @@ msgstr "Preferencias"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Iniciar as Preferencias de compartir ficheiros persoais"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "Pode empregarse para compartir ou recibir ficheiros"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "Pode compartirse pola rede ou mediante Bluetooth"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:162
+msgid "May be shared over the network"
+msgstr "Pode compartirse pola rede"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "Pode empregarse para recibir ficheiros mediante Bluetooth"
 
@@ -152,39 +163,57 @@ msgstr "Pode empregarse para recibir ficheiros mediante Bluetooth"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "Ficheiros públicos de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Ficheiros públicos de %s en %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Recibiu «%s» mediante Bluetooth"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "Recibiu un ficheiro"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "Abrir o ficheiro"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "Mostrar o ficheiro"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "Recepción de ficheiro completada"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Recibiu un ficheiro «%s» mediante Bluetooth"
+
+#: ../src/obexpush.c:252
+msgid "You have been sent a file"
+msgstr "Recibiu un ficheiro"
+
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "Recibir"
+
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "Cancelar"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "Preferencias de compartir ficheiros"
