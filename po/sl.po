@@ -2,15 +2,15 @@
 # Copyright (C) 2005-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2007 - 2013.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007-2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-06 11:50+0000\n"
-"PO-Revision-Date: 2013-08-17 16:07+0100\n"
+"POT-Creation-Date: 2013-08-18 02:56+0000\n"
+"PO-Revision-Date: 2013-08-19 22:02+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -144,9 +144,8 @@ msgid "May be shared over the network or Bluetooth"
 msgstr "Souporaba preko omrežja in preko vmesnika Bluetooth"
 
 #: ../src/share-extension.c:162
-#, fuzzy
 msgid "May be shared over the network"
-msgstr "Souporaba preko omrežja in preko vmesnika Bluetooth"
+msgstr "Mogoča je souporaba preko omrežja"
 
 #: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
@@ -197,14 +196,14 @@ msgstr "Prejemanje datoteke je končano."
 
 #. Translators: %s is the name of the filename being received
 #: ../src/obexpush.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Prejeli ste datoteko \"%s\" preko povezave Bluetooth."
+msgstr ""
+"Na vašo napravo je bila preko povezave Bluetooth poslana datoteka \"%s\"."
 
 #: ../src/obexpush.c:252
-#, fuzzy
 msgid "You have been sent a file"
-msgstr "Datoteka \"%s\" je odstranjena."
+msgstr "Na vašo napravo je bila poslana datoteka."
 
 #: ../src/obexpush.c:260
 msgid "Receive"
