@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-16 20:01+0100\n"
-"PO-Revision-Date: 2013-01-16 20:02+0100\n"
+"POT-Creation-Date: 2013-08-24 02:49+0200\n"
+"PO-Revision-Date: 2013-08-24 02:50+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -109,72 +109,22 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Określa, czy powiadamiać o pobieranych plikach."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Preferencje współdzielenia osobistych plików"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Współdzielenie plików przez sieć"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "Współdzielenie plików publicznych w _sieci"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Hasło:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Wymaganie hasła:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Współdzielenie plików przez Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Współdzielenie plików publicznych przez _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "_Zezwolenie na usuwanie plików przez zdalne urządzenia"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Wy_maganie powiązania zdalnych urządzeń z tym komputerem"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Pobieranie plików przez Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Odbieranie plików przez Bluetooth do katalogu _Pobrane"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "Ak_ceptowanie plików:"
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "P_owiadamianie o odebranych plikach"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Współdzielenie osobistych plików"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Preferencje współdzielenia plików"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Uruchamia współdzielenie osobistych plików, jeśli włączone"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr ""
 "współdzielenie;pliki;plików;bluetooth;obex;http;sieć;skopiuj;kopia;wyślij;"
@@ -188,53 +138,21 @@ msgstr "Preferencje"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Uruchamia preferencje współdzielenia osobistych plików"
 
-#: ../src/share-extension.c:70
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Nie można uruchomić preferencji współdzielenia osobistych plików"
-
-#: ../src/share-extension.c:164
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "Można używać do współdzielenie lub pobierania plików"
 
-#: ../src/share-extension.c:166
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "Można współdzielić przez sieć i Bluetooth"
 
-#: ../src/share-extension.c:170
+#: ../src/share-extension.c:162
+msgid "May be shared over the network"
+msgstr "Można współdzielić przez sieć"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "Można używać do pobierania plików przez Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Brak powodu"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Nie można wyświetlić zawartości pomocy."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Nie można utworzyć interfejsu."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Nigdy"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "Podczas zapisywania plików"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Zawsze"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Tylko dla ustawionych urządzeń"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Pytanie"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -245,36 +163,54 @@ msgstr "Pytanie"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "Pliki publiczne użytkownika %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Pliki publiczne użytkownika %s na %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Odebrano plik \"%s\" przez Bluetooth"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "Odebrano plik"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "Otwórz plik"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "Wyświetl plik"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "Ukończono odbiór pliku"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Odebrano plik \"%s\" przez Bluetooth"
+
+#: ../src/obexpush.c:252
+msgid "You have been sent a file"
+msgstr "Odebrano plik"
+
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "Odbierz"
+
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "Anuluj"
