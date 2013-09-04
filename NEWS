@@ -1,4 +1,8 @@
-This is gnome-user-share 3.8.3, a system for easy sharing of user files.
+This is gnome-user-share 3.9.91, a system for easy sharing of user files.
+
+Major changes since 3.8.3:
+- Port to Bluez 5
+- Update translations
 
 Major changes since 3.8.0:
 - Fix the servers not starting when enabled in System Settings's sharing panel
