@@ -13,16 +13,15 @@ msgstr ""
 "Project-Id-Version: gnome-user-share MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-11 22:09+0000\n"
-"PO-Revision-Date: 2013-03-12 16:48+0300\n"
+"POT-Creation-Date: 2013-09-10 07:33+0000\n"
+"PO-Revision-Date: 2013-09-11 23:09+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Estonian\n"
-"X-Poedit-Country: ESTONIA\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "Share Public directory over the network"
 msgstr "Failide jagamine võrku"
@@ -116,6 +115,9 @@ msgstr "Seda kataloogi kasutatakse failide jagamiseks ja vastuvõtmiseks"
 msgid "May be shared over the network or Bluetooth"
 msgstr "Selle kataloogi faile jagatakse võrgu või Bluetoothi kaudu"
 
+msgid "May be shared over the network"
+msgstr "Võidakse jagada võrgu kaudu"
+
 msgid "May be used to receive files over Bluetooth"
 msgstr "Seda kataloogi kasutatakse failide vastuvõtmiseks Bluetoothi kaudu"
 
@@ -158,6 +160,24 @@ msgstr "Ava kataloog"
 
 msgid "File reception complete"
 msgstr "Faili vastuvõtmine lõpetatud"
+
+#. Translators: %s is the name of the filename being received
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Sulle saadeti Bluetoothi kaudu fail \"%s\""
+
+# Pealkiri: gnome-user-share
+# Sulle saadeti fail
+# Sa võtsid Bluetoothi kaudu vastu faili "Pilt001.jpg"
+# Nupud: Ava fail, Ava kataloog, Loobu, Olgu
+msgid "You have been sent a file"
+msgstr "Sulle saadeti fail"
+
+msgid "Receive"
+msgstr "Võta vastu"
+
+msgid "Cancel"
+msgstr "Loobu"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "Isiklike failide jagamise eelistused"
