@@ -6,11 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share 2.28.x\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-11 22:09+0000\n"
-"PO-Revision-Date: 2013-03-12 11:10+0100\n"
+"Project-Id-Version: gnome-user-share\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-16 08:33+0200\n"
+"PO-Revision-Date: 2013-09-14 11:29+0200\n"
 "Last-Translator: Gianvito Cavasoli <gianvito@gmx.it>\n"
 "Language-Team: Italiano <tp@linux.it>\n"
 "Language: \n"
@@ -103,15 +102,22 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Indica se notificare riguardo i file ricevuti recentemente."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Condivisione di file personali"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Avvia la condivisione di file personali se abilitata"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "condividere;file;bluetooth;obex;http;rete;copiare;inviare;"
 
@@ -123,15 +129,19 @@ msgstr "Preferenze"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Avvia le preferenze di condivisione di file personali"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "Può essere usato per condividere o ricevere file"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "Può essere condiviso tramite la rete o il Bluetooth"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:162
+msgid "May be shared over the network"
+msgstr "Può essere condiviso tramite la rete"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "Può essere usato per ricevere file tramite Bluetooth"
 
@@ -157,23 +167,41 @@ msgid "%s's public files on %s"
 msgstr "File pubblici di %s su %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Ricevuto «%s» tramite Bluetooth"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "Ricevuto un file"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "Apri file"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "Rivela file"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "Ricezione del file completata"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "È stato inviato un file «%s» tramite Bluetooth"
+
+#: ../src/obexpush.c:252
+msgid "You have been sent a file"
+msgstr "È stato inviato un file"
+
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "Ricevi"
+
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "Annulla"
