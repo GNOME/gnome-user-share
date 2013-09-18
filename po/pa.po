@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-15 16:39+0000\n"
-"PO-Revision-Date: 2013-02-22 03:06+0000\n"
+"POT-Creation-Date: 2013-07-24 07:55+0000\n"
+"PO-Revision-Date: 2013-09-18 08:58-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
@@ -104,19 +104,27 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "ਕੀ ਨਵੀਆਂ ਮਿਲੀਆਂ ਫਾਇਲਾਂ ਲਈ ਸੂਚਨਾ ਦੇਣੀ ਹੈ।"
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "ਜੇ ਚਾਲੂ ਹੋਵੇ ਤਾਂ ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਚਲਾਓ"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr ""
 "ਸਾਂਝ;ਫਾਇਲਾਂ;ਸ਼ੇਅਰ;ਬਲਿਊਟੁੱਥ;ਨੈੱਟਵਰਕ;ਕਾਪੀ;ਭੇਜੋ;share;files;bluetooth;obex;http;ne"
-"twork;copy;send;"
+"twork;"
+"copy;send;"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
@@ -126,15 +134,20 @@ msgstr "ਮੇਰੀ ਪਸੰਦ"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸ਼ੇਅਰਿੰਗ ਪਸੰਦ ਚਲਾਓ"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "ਫਾਇਲਾਂ ਨੂੰ ਸਾਂਝਾ ਕਰਨ ਜਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "ਨੈੱਟਵਰਕ ਅਤੇ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਸਾਂਝਾ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:162
+#| msgid "May be shared over the network or Bluetooth"
+msgid "May be shared over the network"
+msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝਾ ਹੋ ਸਕਦਾ ਹੈ"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
@@ -147,39 +160,59 @@ msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣ ਲ�
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "%s ਦੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s ਦੀਆਂ %s ਉੱਤੇ ਪਬਲਿਕ ਫਾਇਲਾਂ"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "ਤੁਸੀਂ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ \"%s\" ਲਏ"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "ਇੱਕ ਫਾਇਲ ਮਿਲੀ"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "ਫਾਇਲ ਖੋਲ੍ਹੋ"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "ਫਾਇਲ ਰੀਵੀਲ"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "ਫਾਇਲ ਪ੍ਰਾਪਤੀ ਪੂਰੀ"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+#| msgid "You received \"%s\" via Bluetooth"
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "ਤੁਸੀਂ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ \"%s\" ਫਾਇਲ ਭੇਜ ਚੁੱਕੇ ਹੋ"
+
+#: ../src/obexpush.c:252
+#| msgid "You received a file"
+msgid "You have been sent a file"
+msgstr "ਤੁਹਾਨੂੰ ਫਾਇਲ ਮਿਲੀ ਹੈ"
+
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "ਮਿਲੀ"
+
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "ਰੱਦ ਕਰੋ"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਪਸੰਦ"
