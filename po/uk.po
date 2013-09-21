@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-26 16:34+0200\n"
-"PO-Revision-Date: 2013-03-26 16:35+0300\n"
+"POT-Creation-Date: 2013-09-21 14:57+0300\n"
+"PO-Revision-Date: 2013-09-21 14:58+0300\n"
 "Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
@@ -102,15 +102,22 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Повідомляти про отримувані файли"
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Спільний доступ до особистих файлів"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Увімкнути спільний доступ, якщо можливо"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "оприлюднити;файли;блютуз;obex;http;мережа;копіювати;надіслати;"
 
@@ -122,15 +129,19 @@ msgstr "Параметри"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Параметри спільного доступу до особистих файлів"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "Потрібно для оприлюднення і одержання файлів"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "Можна оприлюднювати через мережу або Bluetooth"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:162
+msgid "May be shared over the network"
+msgstr "Можна оприлюднювати через мережу"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "Можна одержувати файли через Bluetooth"
 
@@ -156,26 +167,44 @@ msgid "%s's public files on %s"
 msgstr "Спільні файли %s на %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Через Bluetooth отримано файл «%s»"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "Отримано файл"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "Відкрити файл"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "Показати файл"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "Отримання файлу завершено"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Ви надіслали файл «%s» через Bluetooth"
+
+#: ../src/obexpush.c:252
+msgid "You have been sent a file"
+msgstr "Ви надіслали файл"
+
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "Одержати"
+
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "Скасувати"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "Параметри спільного доступу до особистих файлів"
