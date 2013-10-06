@@ -4,19 +4,21 @@
 #    gnome-user-share package.
 #
 # Gil Forcada <gilforcada@guifi.net>, 2005, 2006, 2008, 2009, 2010, 2013.
+# Josep Sànchez <papapep@gmx.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-17 19:55+0100\n"
-"PO-Revision-Date: 2011-04-04 00:30+0200\n"
-"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"POT-Creation-Date: 2013-10-06 22:02+0200\n"
+"PO-Revision-Date: 2013-09-15 21:20+0200\n"
+"Last-Translator: Josep Sànchez <papapep@gmx.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca-XV\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -100,15 +102,22 @@ msgstr ""
 msgid "Whether to notify about newly received files."
 msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Compartició de fitxers personals"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Executa la compartició de fitxers personals si està habilitat"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "comparteix;fitxers;bluetooth;obex;http;xarxa;copia;envia;"
 
@@ -120,17 +129,21 @@ msgstr "Preferències"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "Inicia les preferències de la compartició de fitxers personals"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "Es pot utilitzar per compartir o rebre fitxers"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr ""
 "Podeu compartir els fitxers d'esta carpeta a través de la xarxa i del "
 "Bluetooth"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:162
+msgid "May be shared over the network"
+msgstr "Es pot compartir per la xarxa"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "Es pot utilitzar per rebre fitxers a través del Bluetooth"
 
@@ -156,111 +169,41 @@ msgid "%s's public files on %s"
 msgstr "Fitxers públics de %s a %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Heu rebut «%s» a través del Bluetooth"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "Heu rebut un fitxer"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "Obri el fitxer"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "Revela el fitxer"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "S'ha completat la recepció del fitxer"
 
-#~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Preferències de la compartició de fitxers personals"
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Heu rebut el fitxer «%s» a través del Bluetooth"
 
-#~ msgid "Share Files over the Network"
-#~ msgstr "Compartició de fitxers a través de la xarxa"
+#: ../src/obexpush.c:252
+msgid "You have been sent a file"
+msgstr "Heu rebut un fitxer"
 
-#~ msgid "_Share public files on network"
-#~ msgstr "_Comparteix els fitxers públics a la xarxa"
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "Rebre"
 
-#~ msgid "_Password:"
-#~ msgstr "_Contrasenya:"
-
-#~ msgid "_Require password:"
-#~ msgstr "_Requereix contrasenya:"
-
-#~ msgid "Share Files over Bluetooth"
-#~ msgstr "Compartició de fitxers a través del Bluetooth"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Comparteix els fitxers públics a través del _Bluetooth"
-
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "Permet que els dispositius remots suprimeixin _fitxers"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr ""
-#~ "Requereix que els dispositius _remots es vinculin amb aquest ordinador"
-
-#~ msgid "Receive Files over Bluetooth"
-#~ msgstr "Recepció de fitxers a través del Bluetooth"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr ""
-#~ "Desa els fitxers rebuts a través del Bluetooth a la carpeta de _baixades"
-
-#~ msgid "_Accept files: "
-#~ msgstr "_Accepta els fitxers: "
-
-#~ msgid "_Notify about received files"
-#~ msgstr "_Notifica en rebre fitxers"
-
-#~ msgid "Preferences for sharing of files"
-#~ msgstr "Preferències per compartir fitxers"
-
-#~ msgid "Unable to launch the Personal File Sharing Preferences"
-#~ msgstr ""
-#~ "No s'han pogut iniciar les preferències de la compartició de fitxers "
-#~ "personals"
-
-#~ msgid "No reason"
-#~ msgstr "Cap motiu"
-
-#~ msgid "Could not display the help contents."
-#~ msgstr "No s'ha pogut mostrar l'ajuda."
-
-#~ msgid "Could not build interface."
-#~ msgstr "No s'ha pogut construir la interfície."
-
-#~ msgid "Never"
-#~ msgstr "Mai"
-
-#~ msgid "When writing files"
-#~ msgstr "Quan s'escriguin fitxers"
-
-#~ msgid "Always"
-#~ msgstr "Sempre"
-
-#~ msgid "Only for set up devices"
-#~ msgstr "Només per a dispositius configurats"
-
-#~ msgid "Ask"
-#~ msgstr "Pregunta"
-
-#~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr "Podeu compartir fitxers des d'aquesta carpeta i rebre'n-hi"
-
-#~ msgid "You can receive files over Bluetooth into this folder"
-#~ msgstr "Podeu rebre fitxers en aquesta carpeta a través de Bluetooth"
-
-#~ msgid "Only for Bonded and Trusted devices"
-#~ msgstr "Només per a dispositius vinculats i de confiança"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Entreu com a usuari convidat"
-
-#~ msgid "User Sharing"
-#~ msgstr "Compartició d'usuari"
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "Cancel·la"
