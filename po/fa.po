@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-15 16:39+0000\n"
-"PO-Revision-Date: 2013-03-21 14:08+0330\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-07-24 07:55+0000\n"
+"PO-Revision-Date: 2013-10-07 17:55+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -18,99 +17,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
 msgstr "اشتراک شاخه‌ی عمومی از طریق شبکه"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از طریق "
-"شبکه به اشتراک گذاشته می‌شود."
+msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+msgstr "اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از طریق شبکه به اشتراک گذاشته می‌شود."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "زمان لازم بودن گذرواژه"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr ""
-"چه زمانی برای گذر‌واژه سوال شود. مقادیر ممکن عبارتند از «never»، «on_write»، "
-"و «always»"
+msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "چه زمانی برای گذر‌واژه سوال شود. مقادیر ممکن عبارتند از «never»، «on_write»، و «always»"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
 msgstr "اشتراک شاخه عمومی از طریق بلوتوث"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از طریق "
-"بلوتوث به اشتراک گذاشته می‌شود."
+msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
+msgstr "اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از طریق بلوتوث به اشتراک گذاشته می‌شود."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to allow Bluetooth clients to write files."
 msgstr "این‌که به کارگیرهای بلوتوث اجازه نوشتن پرونده‌ها داده شود یا خیر."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"این‌که اجازه‌ی نوشتن در پرونده‌ها به کارگیرهای بلوتوث داده شود، یا اینکه پرونده "
-"به حالت فقط خواندنی به اشتراک گذاشته شود."
+msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
+msgstr "این‌که اجازه‌ی نوشتن در پرونده‌ها به کارگیرهای بلوتوث داده شود، یا اینکه پرونده به حالت فقط خواندنی به اشتراک گذاشته شود."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"این‌که آیا کارگیرهای بلوتوث باید برای ارسال پرونده با راینه جفت شوند یا خیر؟"
+msgstr "این‌که آیا کارگیرهای بلوتوث باید برای ارسال پرونده با راینه جفت شوند یا خیر؟"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"این‌که آیا کارگیر بلوتوث می‌تواند پرونده‌ها را از طریق ObexPush ارسال کد یا خیر."
+msgstr "این‌که آیا کارگیر بلوتوث می‌تواند پرونده‌ها را از طریق ObexPush ارسال کد یا خیر."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"اگر درست باشد، هنگام ورود به سیستم دستگاه‌های بلوتوث می‌توانند به شاخه‌ی "
-"بارگیری کاربر پرونده ارسال کند."
+msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+msgstr "اگر درست باشد، هنگام ورود به سیستم دستگاه‌های بلوتوث می‌توانند به شاخه‌ی بارگیری کاربر پرونده ارسال کند."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "زمان پذیرفتن پرونده‌های ارسال شده از طریق بلوتوث"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"زمان پذیرفتن پرونده‌های ارسال شده از طریق بلوتوث. مقادیر ممکن عبارتند از "
-"«always»، «bonded» و ask»"
+msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
+msgstr "زمان پذیرفتن پرونده‌های ارسال شده از طریق بلوتوث. مقادیر ممکن عبارتند از «always»، «bonded» و ask»"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "این‌که آیا دریافت پرونده‌های جدید اعلان شود یا خیر."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "به اشتراک‌گذاری شخصی پرونده"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "اجرای به اشتراک گذاری شخصی پرونده‌ها در صورت فعال بودن"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "اشتراک;پرونده‌ها;بلوتوث;obex;http;شبکه;رونوشت;ارسال;"
 
@@ -122,15 +102,20 @@ msgstr "ترجیحات"
 msgid "Launch Personal File Sharing Preferences"
 msgstr "اجرای ترجیحات به اشتراک‌گذاری شخصی پرونده‌ها"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "شاید برای اشتراک‌گذاری و دریافت پرونده‌ها مورد استفاده قرار گیرد"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "شاید از طریق شبکه یا بلوتوث به اشتراک گذاشته شود"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:162
+#| msgid "May be shared over the network or Bluetooth"
+msgid "May be shared over the network"
+msgstr "شاید از طریق شبکه اشتراک گذاشته شده"
+
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "شاید جهت دریافت پرونده از طریق بلوتوث مورد استفاده قرار گیرد"
 
@@ -143,39 +128,59 @@ msgstr "شاید جهت دریافت پرونده از طریق بلوتوث م�
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:127
 #, c-format
 msgid "%s's public files"
 msgstr "پرونده‌های عمومی %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:131
 #, c-format
 msgid "%s's public files on %s"
 msgstr "پرونده‌های عمومی %s در %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:158
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "شما «%s» را از طریق بلوتوث دریافت کردید"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:160
 msgid "You received a file"
 msgstr "شما یک پرونده دریافت کردید"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:171
 msgid "Open File"
 msgstr "بازکردن پرونده"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:175
 msgid "Reveal File"
 msgstr "نمایش پرونده"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:192
 msgid "File reception complete"
 msgstr "دریافت پرونده تکمیل شده"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:251
+#, c-format
+#| msgid "You received \"%s\" via Bluetooth"
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "شما پرونده «%s» را از طریق بلوتوث ارسال کردید"
+
+#: ../src/obexpush.c:252
+#| msgid "You received a file"
+msgid "You have been sent a file"
+msgstr "شما یک پرونده ارسال کردید"
+
+#: ../src/obexpush.c:260
+msgid "Receive"
+msgstr "دریافت"
+
+#: ../src/obexpush.c:263
+msgid "Cancel"
+msgstr "لغو"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "ترجیحات به اشتراک‌گذاری خصوصی پرونده‌ها"
