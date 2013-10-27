@@ -121,7 +121,7 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
                                          GtkWidget                      *window)
 {
 	GFile             *file;
-	GtkWidget         *bar;
+	GtkWidget         *bar = NULL;
 	guint              i;
 	gboolean           enable = FALSE;
 	GFile             *home;
@@ -175,11 +175,12 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 #endif /* HAVE_BLUETOOTH */
 	}
 
-	g_signal_connect (bar, "response",
-			  G_CALLBACK (bar_response_cb),
-			  window);
+	if (bar != NULL) {
+		g_signal_connect (bar, "response",
+				  G_CALLBACK (bar_response_cb), window);
 
-	gtk_widget_show_all (bar);
+		gtk_widget_show_all (bar);
+	}
 
 	g_object_unref (file);
 
