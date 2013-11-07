@@ -563,23 +563,24 @@ on_bus_acquired (GDBusConnection *connection,
 		 const gchar     *name,
 		 gpointer         user_data)
 {
-	guint id;
+	ObexAgent *self = user_data;
 
 	/* parse introspection data */
 	introspection_data = g_dbus_node_info_new_for_xml (introspection_xml,
 							   NULL);
 
-	id = g_dbus_connection_register_object (connection,
-						AGENT_PATH,
-						introspection_data->interfaces[0],
-						&interface_vtable,
-						NULL,  /* user_data */
-						NULL,  /* user_data_free_func */
-						NULL); /* GError** */
+	self->connection = connection;
+	self->object_reg_id = g_dbus_connection_register_object (connection,
+								 AGENT_PATH,
+								 introspection_data->interfaces[0],
+								 &interface_vtable,
+								 NULL,  /* user_data */
+								 NULL,  /* user_data_free_func */
+								 NULL); /* GError** */
 
 	g_dbus_node_info_unref (introspection_data);
 
-	g_assert (id > 0);
+	g_assert (self->object_reg_id > 0);
 }
 
 static void
@@ -650,6 +651,7 @@ obex_agent_dispose (GObject *obj)
 {
 	ObexAgent *self = OBEX_AGENT (obj);
 
+	g_dbus_connection_unregister_object (self->connection, self->object_reg_id);
 	g_bus_unown_name (self->owner_id);
 
 	g_clear_object (&client);
@@ -678,7 +680,7 @@ obex_agent_new (void)
 					 on_bus_acquired,
 					 on_name_acquired,
 					 on_name_lost,
-					 NULL,
+					 self,
 					 NULL);
 
 	client = bluetooth_client_new ();

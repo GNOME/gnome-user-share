@@ -35,6 +35,8 @@ G_BEGIN_DECLS
 typedef struct _ObexAgent {
 	GObject parent;
 	guint owner_id;
+	guint object_reg_id;
+	GDBusConnection *connection;
 } ObexAgent;
 
 typedef struct _ObexAgentClass {
