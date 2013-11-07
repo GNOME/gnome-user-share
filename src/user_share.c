@@ -28,6 +28,7 @@
 #include <glib/gi18n.h>
 #include <glib/gstdio.h>
 #include <gio/gio.h>
+#include <glib-unix.h>
 #include <X11/Xlib.h>
 
 #include "user_share.h"
@@ -258,14 +259,11 @@ setttings_changed (GSettings *settings,
 #endif /* HAVE_BLUETOOTH */
 }
 
-static void
-cleanup_handler (int sig)
+static gboolean
+signal_handler (gpointer user_data)
 {
-	http_down ();
-#ifdef HAVE_BLUETOOTH
-	obex_agent_down ();
-#endif
-	_exit (2);
+	gtk_main_quit ();
+	return FALSE;
 }
 
 static int
@@ -298,9 +296,9 @@ main (int argc, char **argv)
 	}
 
 	signal (SIGPIPE, SIG_IGN);
-	signal (SIGINT, cleanup_handler);
-	signal (SIGHUP, cleanup_handler);
-	signal (SIGTERM, cleanup_handler);
+	g_unix_signal_add (SIGINT, signal_handler, NULL);
+	g_unix_signal_add (SIGHUP, signal_handler, NULL);
+	g_unix_signal_add (SIGTERM, signal_handler, NULL);
 
 	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
 	if (xdisplay == NULL) {
@@ -364,7 +362,12 @@ main (int argc, char **argv)
 #endif /* HAVE_BLUETOOTH */
 
 	gtk_main ();
+
 	g_object_unref (settings);
+	http_down ();
+#ifdef HAVE_BLUETOOTH
+	obex_agent_down ();
+#endif
 
 	return 0;
 }
