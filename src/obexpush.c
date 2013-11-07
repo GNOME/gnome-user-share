@@ -602,25 +602,6 @@ on_agent_registered (GObject *source_object,
 }
 
 static void
-on_agent_unregistered (GObject *source_object,
-		       GAsyncResult *res,
-		       gpointer user_data)
-{
-	GError *error = NULL;
-	GVariant *v;
-
-	v = g_dbus_proxy_call_finish (manager, res, &error);
-
-	if (error) {
-		g_warning ("error: %s", error->message);
-		g_error_free (error);
-		return;
-	}
-
-	g_variant_unref (v);
-}
-
-static void
 on_proxy_acquired (GObject *source_object,
 		   GAsyncResult *res,
 		   gpointer user_data)
@@ -714,7 +695,7 @@ obex_agent_down (void)
 			   G_DBUS_CALL_FLAGS_NONE,
 			   -1,
 			   NULL,
-			   on_agent_unregistered,
+			   NULL,
 			   NULL);
 
 	g_clear_object (&manager);
