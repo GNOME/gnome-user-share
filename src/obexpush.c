@@ -478,7 +478,7 @@ obex_agent_authorize_push (GObject *source_object,
 	g_free (download_dir);
 
 	g_object_set_data_full (G_OBJECT (transfer), "filename", g_strdup (file), g_free);
-	g_object_set_data_full (G_OBJECT (invocation), "filename", file, g_free);
+	g_object_set_data_full (G_OBJECT (invocation), "filename", g_strdup (file), g_free);
 
 	g_signal_connect (transfer, "g-properties-changed",
 		G_CALLBACK (transfer_property_changed), NULL);
@@ -506,6 +506,7 @@ obex_agent_authorize_push (GObject *source_object,
 		show_icon ();
 
 		g_debug ("Incoming transfer authorized: %s", file);
+		g_free (file);
 	} else {
 		g_dbus_method_invocation_return_dbus_error (invocation,
 			"org.bluez.obex.Error.Rejected", "Not Authorized");
