@@ -489,10 +489,12 @@ obex_agent_authorize_push (GObject *source_object,
 		break;
 	case ACCEPT_BONDED:
 		check_if_bonded (transfer, invocation, filename);
+		g_variant_unref (variant);
 		/* check_if_bonded() will accept or reject the transfer */
 		return;
 	case ACCEPT_ASK:
 		ask_user (invocation, filename);
+		g_variant_unref (variant);
 		/* ask_user() will accept or reject the transfer */
 		return;
 	default:
