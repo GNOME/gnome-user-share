@@ -3,7 +3,7 @@ SUBDIRS = icons
 @INTLTOOL_DESKTOP_RULE@
 autostartdir = $(sysconfdir)/xdg/autostart/
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
-autostart_in_files = gnome-user-share-obexftp.desktop.in gnome-user-share-obexpush.desktop.in gnome-user-share-webdav.desktop.in
+autostart_in_files = gnome-user-share-obexpush.desktop.in gnome-user-share-webdav.desktop.in
 
 appdir = $(datadir)/gnome-user-share
 app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_user_2.4.conf dav_groupfile
@@ -20,7 +20,6 @@ convert_DATA = gnome-user-share.convert
 EXTRA_DIST = $(app_DATA)  \
 	$(gsettings_in_files) \
 	$(convert_DATA) \
-	gnome-user-share-obexftp.desktop.in.in \
 	gnome-user-share-obexpush.desktop.in.in \
 	gnome-user-share-webdav.desktop.in.in
 

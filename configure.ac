@@ -192,7 +192,6 @@ data/icons/22x22/Makefile
 data/icons/32x32/Makefile
 data/icons/48x48/Makefile
 data/gnome-user-share-webdav.desktop.in
-data/gnome-user-share-obexftp.desktop.in
 data/gnome-user-share-obexpush.desktop.in
 data/org.gnome.desktop.file-sharing.gschema.xml.in
 po/Makefile.in

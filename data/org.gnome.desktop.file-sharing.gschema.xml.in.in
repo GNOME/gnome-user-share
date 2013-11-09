@@ -12,24 +12,6 @@
 		<_description>When to ask for passwords. Possible values are "never", "on_write", and "always".</_description>
 	</key>
 
-	<key name="bluetooth-enabled" type="b">
-		<default>false</default>
-		<_summary>Share Public directory over Bluetooth</_summary>
-		<_description>If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in.</_description>
-	</key>
-
-	<key name="bluetooth-allow-write" type="b">
-		<default>false</default>
-		<_summary>Whether to allow Bluetooth clients to write files.</_summary>
-		<_description>Whether to allow Bluetooth clients to write files, or share the files read-only.</_description>
-	</key>
-
-	<key name="bluetooth-require-pairing" type="b">
-		<default>true</default>
-		<_summary>Whether Bluetooth clients need to pair with the computer to send files.</_summary>
-		<_description>Whether Bluetooth clients need to pair with the computer to send files.</_description>
-	</key>
-
 	<key name="bluetooth-obexpush-enabled" type="b">
 		<default>false</default>
 		<_summary>Whether Bluetooth clients can send files using ObexPush.</_summary>
