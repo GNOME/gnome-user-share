@@ -462,6 +462,12 @@ transfer_property_changed (GDBusProxy *transfer,
 					hide_statusicon ();
 				}
 			}
+
+			/* Done with this transfer */
+			if (g_str_equal (status, "complete") ||
+			    g_str_equal (status, "error")) {
+				g_object_unref (transfer);
+			}
 		} else {
 			g_debug ("Unhandled property changed %s = %s for filename %s", key, str, filename);
 		}
