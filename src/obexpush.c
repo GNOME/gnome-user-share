@@ -209,7 +209,7 @@ ask_user_transfer_accepted (NotifyNotification *notification,
 			    char *action,
 			    GDBusMethodInvocation *invocation)
 {
-	gchar *file = g_object_get_data (G_OBJECT (invocation), "filename");
+	gchar *file = g_object_get_data (G_OBJECT (invocation), "temp-filename");
 
 	g_debug ("Notification: transfer accepted! accepting transfer");
 
@@ -376,7 +376,7 @@ on_session_acquired (GObject *object,
 	if (paired) {
 		g_debug ("Remote device is paired, auto-accepting the transfer");
 		g_dbus_method_invocation_return_value (invocation,
-			g_variant_new ("(s)", g_object_get_data (G_OBJECT (invocation), "filename")));
+			g_variant_new ("(s)", g_object_get_data (G_OBJECT (invocation), "temp-filename")));
 		return;
 	} else {
 		g_debug ("Remote device is not paired, auto-rejecting the transfer");
@@ -390,8 +390,7 @@ out:
 
 static void
 check_if_bonded (GDBusProxy *transfer,
-		 GDBusMethodInvocation *invocation,
-		 const gchar *filename)
+		 GDBusMethodInvocation *invocation)
 {
 	GVariant *v;
 	const gchar *session = NULL;
@@ -428,6 +427,133 @@ obex_agent_cancel (GError **error)
 {
 }
 
+/* From the old embed/mozilla/MozDownload.cpp */
+static const char*
+file_is_compressed (const char *filename)
+{
+  int i;
+  static const char * const compression[] = {".gz", ".bz2", ".Z", ".lz", ".xz", NULL};
+
+  for (i = 0; compression[i] != NULL; i++) {
+    if (g_str_has_suffix (filename, compression[i]))
+      return compression[i];
+  }
+
+  return NULL;
+}
+
+static const char*
+parse_extension (const char *filename)
+{
+  const char *compression;
+  const char *last_separator;
+
+  compression = file_is_compressed (filename);
+
+  /* if the file is compressed we might have a double extension */
+  if (compression != NULL) {
+    int i;
+    static const char * const extensions[] = {"tar", "ps", "xcf", "dvi", "txt", "text", NULL};
+
+    for (i = 0; extensions[i] != NULL; i++) {
+      char *suffix;
+      suffix = g_strdup_printf (".%s%s", extensions[i], compression);
+
+      if (g_str_has_suffix (filename, suffix)) {
+        char *p;
+
+        p = g_strrstr (filename, suffix);
+        g_free (suffix);
+
+        return p;
+      }
+
+      g_free (suffix);
+    }
+  }
+
+  /* no compression, just look for the last dot in the filename */
+  last_separator = strrchr (filename, G_DIR_SEPARATOR);
+  return strrchr ((last_separator) ? last_separator : filename, '.');
+}
+
+static char *
+get_destination_path (const char *filename)
+{
+  char *dest_dir;
+  char *destination_filename;
+
+  dest_dir = lookup_download_dir ();
+  destination_filename = g_build_filename (dest_dir, filename, NULL);
+  g_free (dest_dir);
+
+  /* Append (n) as needed. */
+  if (g_file_test (destination_filename, G_FILE_TEST_EXISTS)) {
+    int i = 1;
+    const char *dot_pos;
+    gssize position;
+    char *serial = NULL;
+    GString *tmp_filename;
+
+    dot_pos = parse_extension (destination_filename);
+    if (dot_pos)
+      position = dot_pos - destination_filename;
+    else
+      position = strlen (destination_filename);
+
+    tmp_filename = g_string_new (NULL);
+
+    do {
+      serial = g_strdup_printf ("(%d)", i++);
+
+      g_string_assign (tmp_filename, destination_filename);
+      g_string_insert (tmp_filename, position, serial);
+
+      g_free (serial);
+    } while (g_file_test (tmp_filename->str, G_FILE_TEST_EXISTS));
+
+    destination_filename = g_strdup (tmp_filename->str);
+    g_string_free (tmp_filename, TRUE);
+  }
+
+  return destination_filename;
+}
+
+static void
+move_temp_filename (GObject *object)
+{
+	const char *orig_filename;
+	char *dest_filename;
+	GFile *src, *dest;
+	GError *error = NULL;
+	gboolean res;
+
+	orig_filename = g_object_get_data (object, "temp-filename");
+	/* FIXME move to the destination directly, rather than
+	 * getting the name separately */
+	dest_filename = get_destination_path (g_object_get_data (object, "filename"));
+
+	src = g_file_new_for_path (orig_filename);
+	dest = g_file_new_for_path (dest_filename);
+
+	/* This is sync, but the files will be on the same partition already
+	 * (~/.cache/obexd to ~/Downloads) */
+	res = g_file_move (src, dest,
+			   G_FILE_COPY_NONE, NULL,
+			   NULL, NULL, &error);
+	g_debug ("Moving %s (orig name %s) to %s",
+		 orig_filename, (char *) g_object_get_data (object, "filename"), dest_filename);
+
+	if (res == FALSE) {
+		g_warning ("Failed to move %s to %s: '%s'",
+			   orig_filename, dest_filename, error->message);
+		g_error_free (error);
+	}
+	g_object_unref (src);
+	g_object_unref (dest);
+	g_free (dest_filename);
+}
+
 static void
 transfer_property_changed (GDBusProxy *transfer,
 			   GVariant   *changed_properties,
@@ -455,6 +581,7 @@ transfer_property_changed (GDBusProxy *transfer,
 			g_debug ("Got status %s = %s for filename %s", status, str, filename);
 
 			if (g_str_equal (status, "complete")) {
+				move_temp_filename (G_OBJECT (transfer));
 				if (show_notifications) {
 					g_debug ("transfer completed, showing a notification");
 					show_notification (filename);
@@ -485,17 +612,20 @@ obex_agent_authorize_push (GObject *source_object,
 	GDBusMethodInvocation *invocation = user_data;
 	GVariant *variant = g_dbus_proxy_get_cached_property (transfer, "Name");
 	const gchar *filename = g_variant_get_string (variant, NULL);
-	gchar *download_dir, *file;
+	char *template;
+	int fd;
 	gboolean authorize = FALSE;
 
 	g_debug ("AuthorizePush received");
 
-	download_dir = lookup_download_dir ();
-	file = g_build_filename (download_dir, filename, NULL);
-	g_free (download_dir);
+	template = g_build_filename (g_get_user_cache_dir (), "obexd", "XXXXXX", NULL);
+	fd = g_mkstemp (template);
+	close (fd);
 
-	g_object_set_data_full (G_OBJECT (transfer), "filename", g_strdup (file), g_free);
-	g_object_set_data_full (G_OBJECT (invocation), "filename", g_strdup (file), g_free);
+	g_object_set_data_full (G_OBJECT (transfer), "filename", g_strdup (filename), g_free);
+	g_object_set_data_full (G_OBJECT (transfer), "temp-filename", g_strdup (template), g_free);
+
+	g_object_set_data_full (G_OBJECT (invocation), "temp-filename", g_strdup (template), g_free);
 
 	g_signal_connect (transfer, "g-properties-changed",
 		G_CALLBACK (transfer_property_changed), NULL);
@@ -505,13 +635,15 @@ obex_agent_authorize_push (GObject *source_object,
 		authorize = TRUE;
 		break;
 	case ACCEPT_BONDED:
-		check_if_bonded (transfer, invocation, filename);
+		check_if_bonded (transfer, invocation);
 		g_variant_unref (variant);
+		g_free (template);
 		/* check_if_bonded() will accept or reject the transfer */
 		return;
 	case ACCEPT_ASK:
 		ask_user (invocation, filename);
 		g_variant_unref (variant);
+		g_free (template);
 		/* ask_user() will accept or reject the transfer */
 		return;
 	default:
@@ -520,12 +652,12 @@ obex_agent_authorize_push (GObject *source_object,
 
 	if (authorize) {
 		g_dbus_method_invocation_return_value (invocation,
-			g_variant_new ("(s)", file));
+			g_variant_new ("(s)", template));
 
 		show_icon ();
 
-		g_debug ("Incoming transfer authorized: %s", file);
-		g_free (file);
+		g_debug ("Incoming transfer authorized: %s (temp file: %s)", filename, template);
+		g_free (template);
 	} else {
 		g_dbus_method_invocation_return_dbus_error (invocation,
 			"org.bluez.obex.Error.Rejected", "Not Authorized");
