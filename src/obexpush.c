@@ -437,14 +437,22 @@ transfer_property_changed (GDBusProxy *transfer,
 	GVariantIter iter;
 	const gchar *key;
 	GVariant *value;
+	const char *filename;
+
+	g_debug ("Calling transfer_property_changed()");
+
+	filename = g_object_get_data (G_OBJECT (transfer), "filename");
 
 	g_variant_iter_init (&iter, changed_properties);
 	while (g_variant_iter_next (&iter, "{&sv}", &key, &value)) {
+		char *str = g_variant_print (value, TRUE);
+
 		if (g_str_equal (key, "Status")) {
-			const gchar *status, *filename;
+			const gchar *status;
 
 			status = g_variant_get_string (value, NULL);
-			filename = g_object_get_data (G_OBJECT (transfer), "filename");
+
+			g_debug ("Got status %s = %s for filename %s", status, str, filename);
 
 			if (g_str_equal (status, "complete")) {
 				if (show_notifications) {
@@ -454,7 +462,10 @@ transfer_property_changed (GDBusProxy *transfer,
 					hide_statusicon ();
 				}
 			}
+		} else {
+			g_debug ("Unhandled property changed %s = %s for filename %s", key, str, filename);
 		}
+		g_free (str);
 		g_variant_unref (value);
 	}
 }
