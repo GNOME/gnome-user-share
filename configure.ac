@@ -65,7 +65,7 @@ else
 fi
 AM_CONDITIONAL(USE_BLUETOOTH, [test "$enable_bluetooth" = "yes"])
 
-PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.28 gio-2.0 >= 2.26 gtk+-3.0 dbus-1 >= 1.1.1 dbus-glib-1 libnotify libcanberra-gtk3 $BLUETOOTH_PKG)
+PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.28 gio-2.0 >= 2.26 gtk+-3.0 libnotify libcanberra-gtk3 $BLUETOOTH_PKG)
 AC_SUBST(USER_SHARE_CFLAGS)
 AC_SUBST(USER_SHARE_LIBS)
 
