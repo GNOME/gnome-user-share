@@ -99,7 +99,8 @@ nautilus_share_bar_init (NautilusShareBar *bar)
 
 	attrs = pango_attr_list_new ();
 	pango_attr_list_insert (attrs, pango_attr_weight_new (PANGO_WEIGHT_BOLD));
-        label = gtk_label_new (_("Personal File Sharing"));
+	/* translators: This is the label for the "Sharing" panel in the Settings */
+        label = gtk_label_new (_("Sharing"));
 	gtk_label_set_attributes (GTK_LABEL (label), attrs);
 	pango_attr_list_unref (attrs);
 
@@ -116,8 +117,8 @@ nautilus_share_bar_init (NautilusShareBar *bar)
                                           _("Preferences"),
                                           NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES);
 
-        gtk_widget_set_tooltip_text (button,
-                                     _("Launch Personal File Sharing Preferences"));
+        /* translators: This is the tooltip for the "Sharing" panel in the Settings */
+        gtk_widget_set_tooltip_text (button, _("Sharing Settings"));
 
         gtk_widget_show_all (vbox);
 }
