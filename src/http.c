@@ -26,7 +26,6 @@
 #include <glib.h>
 #include <glib/gi18n.h>
 #include <X11/Xlib.h>
-#include <dbus/dbus.h>
 
 #include <stdarg.h>
 #include <string.h>
@@ -50,7 +49,6 @@
 /* From avahi-common/domain.h */
 #define AVAHI_LABEL_MAX 64
 
-static char *dbus_session_id;
 static pid_t httpd_pid = 0;
 
 static int
@@ -143,41 +141,6 @@ get_share_name (void)
 	name = str;
 
 	return name;
-}
-
-static void
-init_dbus() {
-	/* The only use we make of D-BUS is to fetch the session BUS ID so we can export
-	 * it via mDNS, so we connect and then immediately disconnect. If we were using
-	 * the D-BUS session BUS for something persistent, the following code should use
-	 * dbus_bus_get() and skip the shutdown. (Avahi uses the D-BUS  _system_ bus
-	 * internally.)
-	 */
-
-	DBusError derror;
-	DBusConnection *connection;
-
-	dbus_error_init(&derror);
-
-	connection = dbus_bus_get_private(DBUS_BUS_SESSION, &derror);
-	if (connection == NULL) {
-		g_printerr("Failed to connect to session bus: %s", derror.message);
-		dbus_error_free(&derror);
-		return;
-	}
-
-	dbus_session_id = dbus_bus_get_id(connection, &derror);
-	if (dbus_session_id == NULL) {
-		/* This can happen if the D-BUS library has been upgraded to 1.1, but the
-		 * user's session hasn't yet been restarted
-		 */
-		g_printerr("Failed to get session BUS ID: %s", derror.message);
-		dbus_error_free(&derror);
-	}
-
-	dbus_connection_set_exit_on_disconnect(connection, FALSE);
-	dbus_connection_close(connection);
-	dbus_connection_unref(connection);
 }
 
 static void
@@ -458,7 +421,6 @@ http_down (void)
 gboolean
 http_init (void)
 {
-	init_dbus();
 	return TRUE;
 }
 
