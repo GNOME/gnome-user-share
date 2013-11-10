@@ -199,7 +199,6 @@ data/gnome-user-share-obexpush.desktop.in
 data/org.gnome.desktop.file-sharing.gschema.xml.in
 po/Makefile.in
 src/Makefile
-help/Makefile
 ])
 AC_OUTPUT
 
