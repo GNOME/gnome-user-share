@@ -179,8 +179,8 @@ static const char *known_httpd_locations [] = {
 	NULL
 };
 
-static char*
-get_httpd_program ()
+static char *
+get_httpd_program (void)
 {
 	int i;
 
@@ -206,7 +206,7 @@ static const char *known_httpd_modules_locations [] = {
 };
 
 static gchar*
-get_httpd_modules_path ()
+get_httpd_modules_path (void)
 {
 	int i;
 
