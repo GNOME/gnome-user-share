@@ -281,7 +281,7 @@ ask_user (GDBusMethodInvocation *invocation,
 	g_free (notification_text);
 }
 
-gboolean
+static gboolean
 get_paired_for_address (const char *adapter, const char *device)
 {
 	GtkTreeModel *model;
@@ -345,6 +345,9 @@ on_session_acquired (GObject *object,
 		g_clear_error (&error);
 		goto out;
 	}
+
+	device = NULL;
+	adapter = NULL;
 
 	/* obexd puts the remote device in Destination and our adapter
 	 * in Source */

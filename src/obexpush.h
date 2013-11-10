@@ -43,7 +43,7 @@ typedef struct _ObexAgentClass {
 	GObjectClass parent;
 } ObexAgentClass;
 
-GType obex_agent_get_type();
+GType obex_agent_get_type (void);
 
 #define OBEX_AGENT_TYPE              (obex_agent_get_type ())
 #define OBEX_AGENT(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), OBEX_AGENT_TYPE, ObexAgent))
