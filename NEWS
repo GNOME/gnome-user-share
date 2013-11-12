@@ -1,4 +1,17 @@
-This is gnome-user-share 3.10.0, a system for easy sharing of user files.
+This is gnome-user-share 3.10.1, a system for easy sharing of user files.
+
+Major changes since 3.10.0:
+- Fix share bar bugs that could make nautilus crash
+- Update share bar labels to match new Sharing panel
+
+- Remove unimplemented OBEX FTP support code
+- Remove dbus-glib dependency
+- Fix failure to receive files through OBEX Push
+- Fix crash when switching VTs
+- Fix use-after-free bug
+- Fix a few memory leaks
+
+- Re-enable Bluetooth support by default
 
 Major changes since 3.9.91:
 - Updated translations
