@@ -480,7 +480,7 @@ parse_extension (const char *filename)
   return strrchr ((last_separator) ? last_separator : filename, '.');
 }
 
-static void
+static char *
 move_temp_filename (GObject *object)
 {
 	const char *orig_filename;
@@ -554,7 +554,8 @@ move_temp_filename (GObject *object)
 
 	g_object_unref (src);
 	g_object_unref (dest);
-	g_free (dest_filename);
+
+	return dest_filename;
 }
 
 static void
@@ -584,13 +585,16 @@ transfer_property_changed (GDBusProxy *transfer,
 			g_debug ("Got status %s = %s for filename %s", status, str, filename);
 
 			if (g_str_equal (status, "complete")) {
-				move_temp_filename (G_OBJECT (transfer));
+				char *path;
+
+				path = move_temp_filename (G_OBJECT (transfer));
 				if (show_notifications) {
 					g_debug ("transfer completed, showing a notification");
-					show_notification (filename);
+					show_notification (path);
 				} else {
 					hide_statusicon ();
 				}
+				g_free (path);
 			}
 
 			/* Done with this transfer */
