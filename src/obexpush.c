@@ -480,78 +480,78 @@ parse_extension (const char *filename)
   return strrchr ((last_separator) ? last_separator : filename, '.');
 }
 
-static char *
-get_destination_path (const char *filename)
-{
-  char *dest_dir;
-  char *destination_filename;
-
-  dest_dir = lookup_download_dir ();
-  destination_filename = g_build_filename (dest_dir, filename, NULL);
-  g_free (dest_dir);
-
-  /* Append (n) as needed. */
-  if (g_file_test (destination_filename, G_FILE_TEST_EXISTS)) {
-    int i = 1;
-    const char *dot_pos;
-    gssize position;
-    char *serial = NULL;
-    GString *tmp_filename;
-
-    dot_pos = parse_extension (destination_filename);
-    if (dot_pos)
-      position = dot_pos - destination_filename;
-    else
-      position = strlen (destination_filename);
-
-    tmp_filename = g_string_new (NULL);
-
-    do {
-      serial = g_strdup_printf ("(%d)", i++);
-
-      g_string_assign (tmp_filename, destination_filename);
-      g_string_insert (tmp_filename, position, serial);
-
-      g_free (serial);
-    } while (g_file_test (tmp_filename->str, G_FILE_TEST_EXISTS));
-
-    destination_filename = g_strdup (tmp_filename->str);
-    g_string_free (tmp_filename, TRUE);
-  }
-
-  return destination_filename;
-}
-
 static void
 move_temp_filename (GObject *object)
 {
 	const char *orig_filename;
-	char *dest_filename;
+	char *dest_filename, *dest_dir;
 	GFile *src, *dest;
 	GError *error = NULL;
 	gboolean res;
 
 	orig_filename = g_object_get_data (object, "temp-filename");
-	/* FIXME move to the destination directly, rather than
-	 * getting the name separately */
-	dest_filename = get_destination_path (g_object_get_data (object, "filename"));
-
 	src = g_file_new_for_path (orig_filename);
+
+	dest_dir = lookup_download_dir ();
+	dest_filename = g_build_filename (dest_dir, g_object_get_data (object, "filename"), NULL);
+	g_free (dest_dir);
 	dest = g_file_new_for_path (dest_filename);
 
-	/* This is sync, but the files will be on the same partition already
-	 * (~/.cache/obexd to ~/Downloads) */
 	res = g_file_move (src, dest,
 			   G_FILE_COPY_NONE, NULL,
 			   NULL, NULL, &error);
-	g_debug ("Moving %s (orig name %s) to %s",
-		 orig_filename, (char *) g_object_get_data (object, "filename"), dest_filename);
 
-	if (res == FALSE) {
+	/* This is sync, but the files will be on the same partition already
+	 * (~/.cache/obexd to ~/Downloads) */
+	if (!res && g_error_matches (error, G_IO_ERROR, G_IO_ERROR_EXISTS)) {
+		guint i = 1;
+		const char *dot_pos;
+		gssize position;
+		char *serial = NULL;
+		GString *tmp_filename;
+
+		dot_pos = parse_extension (dest_filename);
+		if (dot_pos)
+			position = dot_pos - dest_filename;
+		else
+			position = strlen (dest_filename);
+
+		tmp_filename = g_string_new (NULL);
+		g_string_assign (tmp_filename, dest_filename);
+
+		while (!res && g_error_matches (error, G_IO_ERROR, G_IO_ERROR_EXISTS)) {
+			g_debug ("Couldn't move file to %s", tmp_filename->str);
+
+			g_clear_error (&error);
+			g_object_unref (dest);
+
+			serial = g_strdup_printf ("(%d)", i++);
+
+			g_string_assign (tmp_filename, dest_filename);
+			g_string_insert (tmp_filename, position, serial);
+
+			g_free (serial);
+
+			dest = g_file_new_for_path (tmp_filename->str);
+			res = g_file_move (src, dest,
+					   G_FILE_COPY_NONE, NULL,
+					   NULL, NULL, &error);
+		}
+
+		g_free (dest_filename);
+		dest_filename = g_strdup (tmp_filename->str);
+		g_string_free (tmp_filename, TRUE);
+	}
+
+	if (!res) {
 		g_warning ("Failed to move %s to %s: '%s'",
 			   orig_filename, dest_filename, error->message);
 		g_error_free (error);
+	} else {
+		g_debug ("Moved %s (orig name %s) to %s",
+			 orig_filename, (char *) g_object_get_data (object, "filename"), dest_filename);
 	}
+
 	g_object_unref (src);
 	g_object_unref (dest);
 	g_free (dest_filename);
