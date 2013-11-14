@@ -180,6 +180,13 @@ show_notification (const char *filename)
 }
 
 static void
+reject_transfer (GDBusMethodInvocation *invocation)
+{
+	g_dbus_method_invocation_return_dbus_error (invocation,
+		"org.bluez.obex.Error.Rejected", "Not Authorized");
+}
+
+static void
 ask_user_transfer_accepted (NotifyNotification *notification,
 			    char *action,
 			    GDBusMethodInvocation *invocation)
@@ -198,9 +205,7 @@ ask_user_transfer_rejected (NotifyNotification *notification,
 			    GDBusMethodInvocation *invocation)
 {
 	g_debug ("Notification: transfer rejected! rejecting transfer");
-
-	g_dbus_method_invocation_return_dbus_error (invocation,
-		"org.bluez.obex.Error.Rejected", "Not Authorized");
+	reject_transfer (invocation);
 }
 
 static void
@@ -208,9 +213,7 @@ ask_user_on_close (NotifyNotification *notification,
 		   GDBusMethodInvocation *invocation)
 {
 	g_debug ("Notification closed! rejecting transfer");
-
-	g_dbus_method_invocation_return_dbus_error (invocation,
-		"org.bluez.obex.Error.Rejected", "Not Authorized");
+	reject_transfer (invocation);
 }
 
 static void
@@ -360,8 +363,7 @@ on_session_acquired (GObject *object,
 
 out:
 	g_debug ("Rejecting transfer");
-	g_dbus_method_invocation_return_dbus_error (invocation,
-		"org.bluez.obex.Error.Rejected", "Not Authorized");
+	reject_transfer (invocation);
 }
 
 static void
@@ -388,8 +390,7 @@ check_if_bonded (GDBusProxy *transfer,
 	} else {
 		g_debug ("Could not get session path for the transfer, "
 			 "rejecting the transfer");
-		g_dbus_method_invocation_return_dbus_error (invocation,
-			"org.bluez.obex.Error.Rejected", "Not Authorized");
+		reject_transfer (invocation);
 	}
 }
 
