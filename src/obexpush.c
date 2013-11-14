@@ -26,6 +26,7 @@
 #include "config.h"
 
 #include <glib.h>
+#include <glib/gstdio.h>
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 #include <gtk/gtk.h>
@@ -182,6 +183,11 @@ show_notification (const char *filename)
 static void
 reject_transfer (GDBusMethodInvocation *invocation)
 {
+	const char *filename;
+
+	filename = g_object_get_data (G_OBJECT (invocation), "temp-filename");
+	g_remove (filename);
+
 	g_dbus_method_invocation_return_dbus_error (invocation,
 		"org.bluez.obex.Error.Rejected", "Not Authorized");
 }
