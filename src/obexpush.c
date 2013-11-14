@@ -592,7 +592,6 @@ obex_agent_authorize_push (GObject *source_object,
 	const gchar *filename = g_variant_get_string (variant, NULL);
 	char *template;
 	int fd;
-	gboolean authorize = FALSE;
 
 	g_debug ("AuthorizePush received");
 
@@ -610,7 +609,7 @@ obex_agent_authorize_push (GObject *source_object,
 
 	switch (accept_setting) {
 	case ACCEPT_ALWAYS:
-		authorize = TRUE;
+		/* authorized! */
 		break;
 	case ACCEPT_BONDED:
 		check_if_bonded (transfer, invocation);
@@ -625,21 +624,14 @@ obex_agent_authorize_push (GObject *source_object,
 		/* ask_user() will accept or reject the transfer */
 		return;
 	default:
-		g_warn_if_reached ();
+		g_assert_not_reached ();
 	}
 
-	if (authorize) {
-		g_dbus_method_invocation_return_value (invocation,
-			g_variant_new ("(s)", template));
+	g_dbus_method_invocation_return_value (invocation,
+					       g_variant_new ("(s)", template));
 
-		g_debug ("Incoming transfer authorized: %s (temp file: %s)", filename, template);
-		g_free (template);
-	} else {
-		g_dbus_method_invocation_return_dbus_error (invocation,
-			"org.bluez.obex.Error.Rejected", "Not Authorized");
-		g_debug ("Incoming transfer rejected: %s", filename);
-	}
-
+	g_debug ("Incoming transfer authorized: %s (temp file: %s)", filename, template);
+	g_free (template);
 	g_variant_unref (variant);
 }
 
