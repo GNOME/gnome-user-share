@@ -73,21 +73,9 @@ static BluetoothClient *client;
 static AcceptSetting accept_setting = -1;
 static gboolean show_notifications = FALSE;
 
-static GtkStatusIcon *statusicon = NULL;
-static guint num_notifications = 0;
-
-static void
-hide_statusicon (void)
-{
-	num_notifications--;
-	if (num_notifications == 0)
-		gtk_status_icon_set_visible (statusicon, FALSE);
-}
-
 static void
 on_close_notification (NotifyNotification *notification)
 {
-	hide_statusicon ();
 	g_object_unref (notification);
 }
 
@@ -135,8 +123,6 @@ notification_launch_action_on_file_cb (NotifyNotification *notification,
 	}
 
 	notify_notification_close (notification, NULL);
-	/* No need to call hide_statusicon(), closing the notification
-	 * will call the close callback */
 }
 
 static void
@@ -194,17 +180,6 @@ show_notification (const char *filename)
 }
 
 static void
-show_icon (void)
-{
-	if (statusicon == NULL) {
-		statusicon = gtk_status_icon_new_from_icon_name ("gnome-obex-server");
-	} else {
-		gtk_status_icon_set_visible (statusicon, TRUE);
-	}
-	num_notifications++;
-}
-
-static void
 ask_user_transfer_accepted (NotifyNotification *notification,
 			    char *action,
 			    GDBusMethodInvocation *invocation)
@@ -215,8 +190,6 @@ ask_user_transfer_accepted (NotifyNotification *notification,
 
 	g_dbus_method_invocation_return_value (invocation,
 		g_variant_new ("(s)", file));
-
-	show_icon ();
 }
 
 static void
@@ -591,8 +564,6 @@ transfer_property_changed (GDBusProxy *transfer,
 				if (show_notifications) {
 					g_debug ("transfer completed, showing a notification");
 					show_notification (path);
-				} else {
-					hide_statusicon ();
 				}
 				g_free (path);
 			}
@@ -660,8 +631,6 @@ obex_agent_authorize_push (GObject *source_object,
 	if (authorize) {
 		g_dbus_method_invocation_return_value (invocation,
 			g_variant_new ("(s)", template));
-
-		show_icon ();
 
 		g_debug ("Incoming transfer authorized: %s (temp file: %s)", filename, template);
 		g_free (template);
