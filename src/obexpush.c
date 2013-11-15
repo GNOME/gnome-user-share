@@ -106,21 +106,26 @@ notification_launch_action_on_file_cb (NotifyNotification *notification,
 
 	/* we open the Downloads folder */
 	if (g_str_equal (action, "reveal") != FALSE) {
-		GFile *file;
-		GFile *parent;
-		gchar *parent_uri;
+		GDBusConnection *connection = agent->connection;
+		GVariantBuilder builder;
 
-		file = g_file_new_for_uri (file_uri);
-		parent = g_file_get_parent (file);
-		parent_uri = g_file_get_uri (parent);
-		g_object_unref (file);
-		g_object_unref (parent);
+		g_variant_builder_init (&builder, G_VARIANT_TYPE ("as"));
+		g_variant_builder_add (&builder, "s", file_uri);
 
-		if (!g_app_info_launch_default_for_uri (parent_uri, ctx, NULL)) {
-			g_warning ("Failed to launch the file manager\n");
-		}
+		g_dbus_connection_call (connection,
+					"org.freedesktop.FileManager1",
+					"/org/freedesktop/FileManager1",
+					"org.freedesktop.FileManager1",
+					"ShowItems",
+					g_variant_new ("(ass)", &builder, ""),
+					NULL,
+					G_DBUS_CALL_FLAGS_NONE,
+					-1,
+					NULL,
+					NULL,
+					NULL);
 
-		g_free (parent_uri);
+		g_variant_builder_clear (&builder);
 	}
 
 	notify_notification_close (notification, NULL);
