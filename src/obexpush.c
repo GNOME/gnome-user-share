@@ -156,7 +156,7 @@ show_notification (const char *filename)
 								 "dialog-information");
 
 	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_DEFAULT);
-	notify_notification_set_hint_string (notification, "desktop-entry", "gnome-user-share-properties");
+	notify_notification_set_hint_string (notification, "desktop-entry", "gnome-bluetooth-panel");
 
 	mime_type = g_content_type_guess (filename, NULL, 0, NULL);
 	app = g_app_info_get_default_for_type (mime_type, FALSE);
@@ -244,7 +244,7 @@ ask_user (GDBusMethodInvocation *invocation,
 
 	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_NEVER);
 	notify_notification_set_hint_string (notification, "desktop-entry",
-					     "gnome-user-share-properties");
+					     "gnome-bluetooth-panel");
 
 	notify_notification_add_action (notification, "receive", _("Receive"),
 					(NotifyActionCallback) ask_user_transfer_accepted,
