@@ -68,7 +68,6 @@ static const gchar introspection_xml[] =
 G_DEFINE_TYPE(ObexAgent, obex_agent, G_TYPE_OBJECT)
 
 static ObexAgent *agent;
-static GDBusProxy *manager;
 static BluetoothClient *client;
 
 static AcceptSetting accept_setting = -1;
@@ -693,6 +692,29 @@ static const GDBusInterfaceVTable interface_vtable =
 };
 
 static void
+obexd_appeared_cb (GDBusConnection *connection,
+		   const gchar *name,
+		   const gchar *name_owner,
+		   gpointer user_data)
+{
+	ObexAgent *self = user_data;
+
+	g_debug ("obexd appeared, registering agent");
+	g_dbus_connection_call (self->connection,
+				MANAGER_SERVICE,
+				MANAGER_PATH,
+				MANAGER_IFACE,
+				"RegisterAgent",
+				g_variant_new ("(o)", AGENT_PATH),
+				NULL,
+				G_DBUS_CALL_FLAGS_NONE,
+				-1,
+				NULL,
+				NULL,
+				NULL);
+}
+
+static void
 on_bus_acquired (GDBusConnection *connection,
 		 const gchar     *name,
 		 gpointer         user_data)
@@ -715,50 +737,14 @@ on_bus_acquired (GDBusConnection *connection,
 	g_dbus_node_info_unref (introspection_data);
 
 	g_assert (self->object_reg_id > 0);
-}
 
-static void
-on_agent_registered (GObject *source_object,
-		     GAsyncResult *res,
-		     gpointer user_data)
-{
-	GError *error = NULL;
-	GVariant *v;
-
-	v = g_dbus_proxy_call_finish (manager, res, &error);
-
-	if (error) {
-		g_warning ("error: %s", error->message);
-		g_error_free (error);
-		return;
-	}
-
-	g_variant_unref (v);
-}
-
-static void
-on_proxy_acquired (GObject *source_object,
-		   GAsyncResult *res,
-		   gpointer user_data)
-{
-	GError *error = NULL;
-
-	manager = g_dbus_proxy_new_for_bus_finish (res, &error);
-
-	if (!manager) {
-		g_warning ("error: %s", error->message);
-		g_error_free (error);
-		return;
-	}
-
-	g_dbus_proxy_call (manager,
-			   "RegisterAgent",
-			   g_variant_new ("(o)", AGENT_PATH),
-			   G_DBUS_CALL_FLAGS_NONE,
-			   -1,
-			   NULL,
-			   on_agent_registered,
-			   NULL);
+	self->obexd_watch_id = g_bus_watch_name_on_connection (self->connection,
+							       MANAGER_SERVICE,
+							       G_BUS_NAME_WATCHER_FLAGS_NONE,
+							       obexd_appeared_cb,
+							       NULL,
+							       self,
+							       NULL);
 }
 
 static void
@@ -787,6 +773,9 @@ obex_agent_dispose (GObject *obj)
 	g_bus_unown_name (self->owner_id);
 	self->owner_id = 0;
 
+	g_bus_unwatch_name (self->obexd_watch_id);
+	self->obexd_watch_id = 0;
+
 	g_clear_object (&client);
 
 	G_OBJECT_CLASS (obex_agent_parent_class)->dispose (obj);
@@ -809,34 +798,27 @@ obex_agent_new (void)
 void
 obex_agent_down (void)
 {
-	g_dbus_proxy_call (manager,
-			   "UnregisterAgent",
-			   g_variant_new ("(o)", AGENT_PATH),
-			   G_DBUS_CALL_FLAGS_NONE,
-			   -1,
-			   NULL,
-			   NULL,
-			   NULL);
+	g_dbus_connection_call (agent->connection,
+				MANAGER_SERVICE,
+				MANAGER_PATH,
+				MANAGER_IFACE,
+				"UnregisterAgent",
+				g_variant_new ("(o)", AGENT_PATH),
+				NULL,
+				G_DBUS_CALL_FLAGS_NONE,
+				-1,
+				NULL,
+				NULL,
+				NULL);
 
-	g_clear_object (&manager);
 	g_clear_object (&agent);
 }
 
 gboolean
 obex_agent_up (void)
 {
-	if (agent == NULL) {
+	if (agent == NULL)
 		agent = obex_agent_new ();
-		g_dbus_proxy_new_for_bus (G_BUS_TYPE_SESSION,
-					  G_DBUS_PROXY_FLAGS_NONE,
-					  NULL,
-					  MANAGER_SERVICE,
-					  MANAGER_PATH,
-					  MANAGER_IFACE,
-					  NULL,
-					  on_proxy_acquired,
-					  NULL);
-	}
 
 	if (!notify_init("gnome-user-share")) {
 		g_warning("Unable to initialize the notification system");

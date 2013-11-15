@@ -36,6 +36,7 @@ typedef struct _ObexAgent {
 	GObject parent;
 	guint owner_id;
 	guint object_reg_id;
+	guint obexd_watch_id;
 	GDBusConnection *connection;
 } ObexAgent;
 
