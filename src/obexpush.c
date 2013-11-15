@@ -778,6 +778,16 @@ on_name_lost (GDBusConnection *connection,
 static void
 obex_agent_init (ObexAgent *self)
 {
+	self->owner_id = g_bus_own_name (G_BUS_TYPE_SESSION,
+					 AGENT_IFACE,
+					 G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT,
+					 on_bus_acquired,
+					 on_name_acquired,
+					 on_name_lost,
+					 self,
+					 NULL);
+
+	client = bluetooth_client_new ();
 }
 
 static void
@@ -786,7 +796,10 @@ obex_agent_dispose (GObject *obj)
 	ObexAgent *self = OBEX_AGENT (obj);
 
 	g_dbus_connection_unregister_object (self->connection, self->object_reg_id);
+	self->object_reg_id = 0;
+
 	g_bus_unown_name (self->owner_id);
+	self->owner_id = 0;
 
 	g_clear_object (&client);
 
@@ -804,22 +817,7 @@ obex_agent_class_init (ObexAgentClass *klass)
 static ObexAgent *
 obex_agent_new (void)
 {
-	ObexAgent *self = NULL;
-
-	self = (ObexAgent *) g_object_new (OBEX_AGENT_TYPE, NULL);
-
-	self->owner_id = g_bus_own_name (G_BUS_TYPE_SESSION,
-					 AGENT_IFACE,
-					 G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT,
-					 on_bus_acquired,
-					 on_name_acquired,
-					 on_name_lost,
-					 self,
-					 NULL);
-
-	client = bluetooth_client_new ();
-
-	return self;
+	return (ObexAgent *) g_object_new (OBEX_AGENT_TYPE, NULL);
 }
 
 void
