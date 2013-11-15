@@ -762,28 +762,14 @@ on_proxy_acquired (GObject *source_object,
 }
 
 static void
-on_name_acquired (GDBusConnection *connection,
-		  const gchar     *name,
-		  gpointer         user_data)
-{
-}
-
-static void
-on_name_lost (GDBusConnection *connection,
-	      const gchar     *name,
-	      gpointer         user_data)
-{
-}
-
-static void
 obex_agent_init (ObexAgent *self)
 {
 	self->owner_id = g_bus_own_name (G_BUS_TYPE_SESSION,
 					 AGENT_IFACE,
 					 G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT,
 					 on_bus_acquired,
-					 on_name_acquired,
-					 on_name_lost,
+					 NULL,
+					 NULL,
 					 self,
 					 NULL);
 
