@@ -152,8 +152,8 @@ show_notification (const char *filename)
 	notification_text = g_strdup_printf(_("You received \"%s\" via Bluetooth"), display);
 	g_free (display);
 	notification = notify_notification_new (_("You received a file"),
-								 notification_text,
-								 "dialog-information");
+						notification_text,
+						"bluetooth");
 
 	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_DEFAULT);
 	notify_notification_set_hint_string (notification, "desktop-entry", "gnome-bluetooth-panel");
