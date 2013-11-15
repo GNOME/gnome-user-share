@@ -85,23 +85,25 @@ notification_launch_action_on_file_cb (NotifyNotification *notification,
 				       const char *action,
 				       const char *file_uri)
 {
-	GdkDisplay *display;
-	GAppLaunchContext *ctx;
-	GTimeVal val;
-
 	g_assert (action != NULL);
-
-	g_get_current_time (&val);
-
-	display = gdk_display_get_default ();
-	ctx = G_APP_LAUNCH_CONTEXT (gdk_display_get_app_launch_context (display));
-	gdk_app_launch_context_set_timestamp (GDK_APP_LAUNCH_CONTEXT (ctx), val.tv_sec);
 
 	/* We launch the file viewer for the file */
 	if (g_str_equal (action, "display") != FALSE) {
+		GdkDisplay *display;
+		GAppLaunchContext *ctx;
+		GTimeVal val;
+
+		g_get_current_time (&val);
+
+		display = gdk_display_get_default ();
+		ctx = G_APP_LAUNCH_CONTEXT (gdk_display_get_app_launch_context (display));
+		gdk_app_launch_context_set_timestamp (GDK_APP_LAUNCH_CONTEXT (ctx), val.tv_sec);
+
 		if (g_app_info_launch_default_for_uri (file_uri, ctx, NULL) == FALSE) {
 			g_warning ("Failed to launch the file viewer\n");
 		}
+
+		g_object_unref (ctx);
 	}
 
 	/* we open the Downloads folder */
