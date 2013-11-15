@@ -25,7 +25,7 @@
 	</key>
 
 	<key name="bluetooth-notify" type="b">
-		<default>false</default>
+		<default>true</default>
 		<_summary>Whether to notify about newly received files.</_summary>
 		<_description>Whether to notify about newly received files.</_description>
 	</key>
