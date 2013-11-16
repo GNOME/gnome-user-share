@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share 1.0\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-24 07:55+0000\n"
-"PO-Revision-Date: 2013-08-26 23:33+0300\n"
+"POT-Creation-Date: 2013-11-12 13:20+0000\n"
+"PO-Revision-Date: 2013-11-16 17:08+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -46,38 +46,10 @@ msgstr ""
 "Kada prašoma slaptažodžių. Galimos reikšmės: „never“, „on_write“ ir „always“."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "Bendrinti viešąjį aplanką Bluetooth ryšiu"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Jei teisinga, vartotojo viešasis katalogas, esantis jo namų kataloge, bus "
-"bendrinamas Bluetooth ryšiu, kai vartotojas bus prisijungęs."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Ar Bluetooth klientams leisti įrašyti failus."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Ar Bluetooth klientams leisti įrašyti failus, ar bendrinti failus tik "
-"skaitymui."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Ar Bluetooth klientus reikia suporinti su kompiuteriu failų siuntimui."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Ar Bluetooth klientai gali siųsti failus, naudodami ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -85,11 +57,11 @@ msgstr ""
 "Jei teisinga, Bluetooth įrenginiai gali siųsti failus į vartotojo "
 "parsisiuntimų katalogą, kai vartotojas bus prisijungęs."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
 msgstr "Kada priimti failus, siųstus Bluetooth ryšiu"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -97,36 +69,38 @@ msgstr ""
 "Kada priimti failus, siunčiamus Bluetooth ryšiu. Galimos reikšmės yra: "
 "„visada“, „susietiems“ ir „klausti“."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
 msgstr "Ar įspėti apie naujai gautus failus."
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Asmeninių failų bendrinimas"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Paleisti asmeninių failų viešinimą, jei įjungtas"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "dalintis;failai;bluetooth;obex;http;tinklas;kopijuoti;siųsti;"
 
-#: ../src/nautilus-share-bar.c:116
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:103
+msgid "Sharing"
+msgstr "Dalinimasis"
+
+#: ../src/nautilus-share-bar.c:117
 msgid "Preferences"
 msgstr "Nustatymai"
 
-#: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Parodyti asmeninių failų viešinimo nustatymus"
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:121
+msgid "Sharing Settings"
+msgstr "Dalinimosi nustatymai"
 
 #: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
@@ -137,7 +111,6 @@ msgid "May be shared over the network or Bluetooth"
 msgstr "Galima dalintis tinkle arba per Bluetooth"
 
 #: ../src/share-extension.c:162
-#| msgid "May be shared over the network or Bluetooth"
 msgid "May be shared over the network"
 msgstr "Galima dalintis tinkle"
 
@@ -154,14 +127,14 @@ msgstr "Galima naudoti failams gauti per Bluetooth"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Viešieji failai (%s)"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Viešieji failai (%s, %s)"
@@ -191,12 +164,10 @@ msgstr "Failo priėmimas baigtas"
 #. Translators: %s is the name of the filename being received
 #: ../src/obexpush.c:251
 #, c-format
-#| msgid "You received \"%s\" via Bluetooth"
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "Gavote failą „%s“ Bluetooth ryšiu"
 
 #: ../src/obexpush.c:252
-#| msgid "You received a file"
 msgid "You have been sent a file"
 msgstr "Gavote failą"
 
@@ -208,3 +179,30 @@ msgstr "Priimti"
 msgid "Cancel"
 msgstr "Atsisakyti"
 
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "Bendrinti viešąjį aplanką Bluetooth ryšiu"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "Jei teisinga, vartotojo viešasis katalogas, esantis jo namų kataloge, bus "
+#~ "bendrinamas Bluetooth ryšiu, kai vartotojas bus prisijungęs."
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "Ar Bluetooth klientams leisti įrašyti failus."
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "Ar Bluetooth klientams leisti įrašyti failus, ar bendrinti failus tik "
+#~ "skaitymui."
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "Ar Bluetooth klientus reikia suporinti su kompiuteriu failų siuntimui."
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "Parodyti asmeninių failų viešinimo nustatymus"
