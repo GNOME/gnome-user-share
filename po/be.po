@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-24 07:55+0000\n"
+"POT-Creation-Date: 2013-11-12 13:20+0000\n"
 "PO-Revision-Date: 2012-09-07 19:09+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
@@ -43,39 +43,10 @@ msgstr ""
 "\" (падчас спробы запісу) і \"always\" (заўсёды)."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "Публікаваць каталог \"Публічныя файлы\" праз Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Калі ўключана, каталог \"Публічныя файлы\" ў дамашнім каталогу карыстальніка "
-"будзе супольнадаступным праз Bluetooth, калі карыстальнік увайшоў у сеанс."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Ці кліенты Bluetooth могуць запісваць файлы."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Ці кліенты Bluetooth могуць запісваць файлы ці публікаваць файлы, даступныя "
-"толькі для чытання."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Ці кліенты Bluetooth патрабуюць спарвання з камп'ютарам, каб пасылаць файлы."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Ці кліенты Bluetooth могуць паслаць файлы пры дапамозе ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -83,11 +54,11 @@ msgstr ""
 "Калі ўключана, прыстасаванні Bluetooth могуць пасылаць файлы ў каталог "
 "карыстальніка \"Сцягнутыя файлы\", калі ён увайшоў у сеанс."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
 msgstr "Калі прымаць файлы, дасланыя праз Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -95,37 +66,39 @@ msgstr ""
 "Калі прымаць файлы, дасланыя праз Bluetooth. Магчымыя значэнні: \"always"
 "\" (заўсёды), \"bonded\" (толькі ад сяброў) і \"ask\" (спытаць)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
 msgstr "Ці паведамляць пра атрыманыя файлы."
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Супольны доступ да ўласных файлаў"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr ""
 "Запуск праграмы арганізацыі супольнага доступу да файлаў (калі ўключана)"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "супольны;рэсурс;bluetooth;obex;http;сетка;капіраванне;паслаць;пасылка;"
 
-#: ../src/nautilus-share-bar.c:116
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:103
+msgid "Sharing"
+msgstr "Супольны доступ"
+
+#: ../src/nautilus-share-bar.c:117
 msgid "Preferences"
 msgstr "Настройкі"
 
-#: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Запусціць настройку супольнага доступу да файлаў"
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:121
+msgid "Sharing Settings"
+msgstr ""
 
 #: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
@@ -152,14 +125,14 @@ msgstr "Прыдатна для атрымання файлаў праз Bluetoo
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s: публічныя файлы"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s: публічныя файлы на %s"
@@ -203,3 +176,4 @@ msgstr "Атрымаць"
 #: ../src/obexpush.c:263
 msgid "Cancel"
 msgstr "Скасаваць"
+
