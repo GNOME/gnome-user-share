@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-24 07:55+0000\n"
-"PO-Revision-Date: 2013-09-18 08:58-0500\n"
+"POT-Creation-Date: 2013-11-12 13:20+0000\n"
+"PO-Revision-Date: 2013-12-07 19:05-0600\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
@@ -46,39 +46,10 @@ msgstr ""
 "\"always\"।"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਸਾਂਝੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"ਜੇ ਸਹੀਂ ਹੈ ਤਾਂ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਬਲਿਊਟੁੱਥ ਉੱਤੇ "
-"ਸਾਂਝੀ ਕੀਤਾ "
-"ਜਾਵੇਗਾ, ਜਦੋਂ ਵੀ ਯੂਜ਼ਰ ਲਾਗਇਨ ਹੋਵੇਗਾ।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ਫਾਇਲਾਂ ਲਿਖਣ ਦੇਣੀਆਂ ਹਨ।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ਫਾਇਲਾਂ ਲਿਖਣ ਦੇਣਾ ਹੈ ਜਾਂ ਫਾਇਲਾਂ ਕੇਵਲ ਪੜ੍ਹਨ ਲਈ ਸਾਂਝੀਆਂ "
-"ਕਰਨ"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ਫਾਇਲਾਂ ਭੇਜਣ ਲਈ ਕੰਪਿਊਟਰ ਨਾਲ ਪੇਅਰ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ObexPush ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਫਾਇਲਾਂ ਭੇਜ ਸਕਦੇ ਹੋ।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -87,11 +58,11 @@ msgstr ""
 "ਵਿੱਚ ਫਾਇਲਾਂ ਭੇਜ "
 "ਸਕਦੇ ਹਨ।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
 msgstr "ਜਦੋਂ ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਭੇਜੀਆਂ ਫਾਇਲਾਂ ਪ੍ਰਾਪਤ ਕਰਨੀਆਂ ਹੋਣ"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -100,24 +71,20 @@ msgstr ""
 "\"always\", \"bonded\", "
 "\"ask\""
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
 msgstr "ਕੀ ਨਵੀਆਂ ਮਿਲੀਆਂ ਫਾਇਲਾਂ ਲਈ ਸੂਚਨਾ ਦੇਣੀ ਹੈ।"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "ਜੇ ਚਾਲੂ ਹੋਵੇ ਤਾਂ ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਚਲਾਓ"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
@@ -126,13 +93,20 @@ msgstr ""
 "twork;"
 "copy;send;"
 
-#: ../src/nautilus-share-bar.c:116
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:103
+#| msgid "User Sharing"
+msgid "Sharing"
+msgstr "ਸਾਂਝ"
+
+#: ../src/nautilus-share-bar.c:117
 msgid "Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ"
 
-#: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸ਼ੇਅਰਿੰਗ ਪਸੰਦ ਚਲਾਓ"
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:121
+msgid "Sharing Settings"
+msgstr "ਸਾਂਝ ਸੈਟਿੰਗ"
 
 #: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
@@ -143,7 +117,6 @@ msgid "May be shared over the network or Bluetooth"
 msgstr "ਨੈੱਟਵਰਕ ਅਤੇ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਸਾਂਝਾ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ"
 
 #: ../src/share-extension.c:162
-#| msgid "May be shared over the network or Bluetooth"
 msgid "May be shared over the network"
 msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝਾ ਹੋ ਸਕਦਾ ਹੈ"
 
@@ -160,14 +133,14 @@ msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣ ਲ�
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s ਦੀਆਂ ਪਬਲਿਕ ਫਾਇਲਾਂ"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s ਦੀਆਂ %s ਉੱਤੇ ਪਬਲਿਕ ਫਾਇਲਾਂ"
@@ -197,12 +170,10 @@ msgstr "ਫਾਇਲ ਪ੍ਰਾਪਤੀ ਪੂਰੀ"
 #. Translators: %s is the name of the filename being received
 #: ../src/obexpush.c:251
 #, c-format
-#| msgid "You received \"%s\" via Bluetooth"
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "ਤੁਸੀਂ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ \"%s\" ਫਾਇਲ ਭੇਜ ਚੁੱਕੇ ਹੋ"
 
 #: ../src/obexpush.c:252
-#| msgid "You received a file"
 msgid "You have been sent a file"
 msgstr "ਤੁਹਾਨੂੰ ਫਾਇਲ ਮਿਲੀ ਹੈ"
 
@@ -213,6 +184,31 @@ msgstr "ਮਿਲੀ"
 #: ../src/obexpush.c:263
 msgid "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਸਾਂਝੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "ਜੇ ਸਹੀਂ ਹੈ ਤਾਂ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਸਾਂਝੀ ਕੀਤਾ "
+#~ "ਜਾਵੇਗਾ, ਜਦੋਂ ਵੀ ਯੂਜ਼ਰ ਲਾਗਇਨ ਹੋਵੇਗਾ।"
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ਫਾਇਲਾਂ ਲਿਖਣ ਦੇਣੀਆਂ ਹਨ।"
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr "ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ਫਾਇਲਾਂ ਲਿਖਣ ਦੇਣਾ ਹੈ ਜਾਂ ਫਾਇਲਾਂ ਕੇਵਲ ਪੜ੍ਹਨ ਲਈ ਸਾਂਝੀਆਂ ਕਰਨ"
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr "ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ਫਾਇਲਾਂ ਭੇਜਣ ਲਈ ਕੰਪਿਊਟਰ ਨਾਲ ਪੇਅਰ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸ਼ੇਅਰਿੰਗ ਪਸੰਦ ਚਲਾਓ"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਪਸੰਦ"
@@ -295,9 +291,6 @@ msgstr "ਰੱਦ ਕਰੋ"
 
 #~ msgid "Please log in as the user guest"
 #~ msgstr "ਮਹਿਮਾਨ ਯੂਜ਼ਰ ਵਲੋਂ ਲਾਗਇਨ ਕਰੋ ਜੀ"
-
-#~ msgid "User Sharing"
-#~ msgstr "ਯੂਜ਼ਰ ਸਾਂਝ"
 
 #~ msgid "gtk-help"
 #~ msgstr "gtk-help"
