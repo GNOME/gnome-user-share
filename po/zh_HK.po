@@ -5,9 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 2.28.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-06 19:50+0800\n"
-"PO-Revision-Date: 2013-08-06 19:50+0800\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-12-29 18:19+0000\n"
+"PO-Revision-Date: 2014-02-01 07:27+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
 "Language: zh_TW\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.3\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -39,80 +40,59 @@ msgid ""
 msgstr "何時會詢問密碼。可能的數值是「never」(永不)、「on_write」(寫入時)和「always」(永遠)。"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "以藍牙分享公用目錄"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr "如果設定為 true，使用者的家目錄裏之公用目錄會在登入時透過藍牙分享出來。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "是否允許藍牙客戶端寫入檔案。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr "是否允許藍牙客戶端寫入檔案，或以唯讀方式分享檔案。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "藍牙客戶端是否需要與電腦配對才能傳送檔案。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "藍牙客戶端是否可以使用 ObexPush 傳送檔案。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr "如果設定為 true，藍牙裝置就可以在使用者登入時傳送檔案到使用者的下載目錄中。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
 msgstr "何時接受透過藍牙傳送的檔案"
 
 # (pofilter) gconf: do not translate gconf attribute: "always", "bonded", "bonded_trusted", "ask"
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
 msgstr "何時接受透過藍牙傳送的檔案。可能的數值是「always」(永遠)、「bonded」(已配對)、「bonded_trusted」(已配對且信任)和「ask」(詢問)。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
 msgstr "是否通知有最新接收到的檔案。"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "個人檔案分享"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "若啟用則執行個人檔案分享"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "share;files;bluetooth;obex;http;network;copy;send;分享;檔案;藍牙;網絡;複製;傳送;"
 
-#: ../src/nautilus-share-bar.c:116
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:103
+#| msgid "User Sharing"
+msgid "Sharing"
+msgstr "分享"
+
+#: ../src/nautilus-share-bar.c:117
 msgid "Preferences"
 msgstr "偏好設定"
 
-#: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "執行個人檔案分享偏好設定"
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:121
+msgid "Sharing Settings"
+msgstr "分享設定值"
 
 #: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
@@ -139,57 +119,81 @@ msgstr "可以透過藍牙接收檔案"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s 的公用檔案"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s 的公用檔案於 %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "你已經透過藍牙接收到「%s」"
 
-#: ../src/obexpush.c:160
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "你已經接收到檔案"
 
-#: ../src/obexpush.c:171
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "開啟檔案"
 
-#: ../src/obexpush.c:175
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "顯示檔案"
 
-#: ../src/obexpush.c:192
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "檔案接收已完成"
 
 #. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:251
+#: ../src/obexpush.c:239
 #, c-format
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "你已經透過藍牙傳送檔案「%s」"
 
-#: ../src/obexpush.c:252
+#: ../src/obexpush.c:240
 msgid "You have been sent a file"
 msgstr "你已經傳送一個檔案"
 
-#: ../src/obexpush.c:260
+#: ../src/obexpush.c:248
 msgid "Receive"
 msgstr "接收"
 
-#: ../src/obexpush.c:263
+#: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "取消"
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "以藍牙分享公用目錄"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "如果設定為 true，使用者的家目錄裡之公用目錄會在登入時透過藍牙分享出來。"
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "是否允許藍牙客戶端寫入檔案。"
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr "是否允許藍牙客戶端寫入檔案，或以唯讀方式分享檔案。"
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr "藍牙客戶端是否需要與電腦配對才能傳送檔案。"
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "執行個人檔案分享偏好設定"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "個人檔案分享偏好設定"
@@ -271,9 +275,6 @@ msgstr "取消"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "只允許繫結與受信任的裝置"
-
-#~ msgid "User Sharing"
-#~ msgstr "使用者分享"
 
 #~ msgid "gtk-help"
 #~ msgstr "gtk-help"
