@@ -1,23 +1,23 @@
 # translation of gnome-user-share.master.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Shankar Prasad <svenkate@redhat.com>, 2009, 2010, 2012, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share.master.kn\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-23 20:02+0000\n"
-"PO-Revision-Date: 2013-03-25 23:55+0530\n"
-"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
-"Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
-"Language: kn\n"
+"POT-Creation-Date: 2013-07-24 11:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"PO-Revision-Date: 2013-03-25 02:25-0400\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
+"Language: kn\n"
+"X-Generator: Zanata 3.2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
@@ -41,8 +41,7 @@ msgid ""
 "\"always\"."
 msgstr ""
 "ಯಾವಾಗ ಗುಪ್ತಪದಗಳಿಗಾಗಿ ಕೇಳಬೇಕು. ಸಾಧ್ಯವಿರುವ ಮೌಲ್ಯಗಳೆಂದರೆ \"never\", "
-"\"on_write\", "
-"ಹಾಗು \"always\"."
+"\"on_write\", ಹಾಗು \"always\"."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Share Public directory over Bluetooth"
@@ -65,11 +64,12 @@ msgid ""
 "Whether to allow Bluetooth clients to write files, or share the files read-"
 "only."
 msgstr ""
-"ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಕಡತಗಳಿಗೆ ಬರೆಯುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ ಅಥವ ಕೇವಲ ಓದಲು ಮಾತ್ರವಾದ "
-"ಸ್ಥಿತಿಯಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಬೇಕೆ."
+"ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಕಡತಗಳಿಗೆ ಬರೆಯುವುದನ್ನು ಅನುಮತಿಸಬೇಕೆ ಅಥವ ಕೇವಲ ಓದಲು "
+"ಮಾತ್ರವಾದ ಸ್ಥಿತಿಯಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಬೇಕೆ."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
+msgid ""
+"Whether Bluetooth clients need to pair with the computer to send files."
 msgstr "ಕಡತಗಳನ್ನು ಕಳುಹಿಸಲು ಬ್ಲೂಟೂತ್ ಕ್ಲೈಂಟ್‌ಗಳು ಗಣಕದೊಂದಿಗೆ ಜೋಡಿ ಮಾಡಲ್ಪಡಬೇಕೆ."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
@@ -82,8 +82,7 @@ msgid ""
 "directory when logged in."
 msgstr ""
 "true ಆದಲ್ಲಿ, ಬಳಕೆದಾರರು ಪ್ರವೇಶಿಸಿದಾಗ ಬ್ಲೂಟೂತ್ ಸಾಧನಗಳು ಕಡತಗಳನ್ನು ಅವರ ಇಳಿಕೆ "
-"ಕೋಶಕ್ಕೆ "
-"ಕಳುಹಿಸುತ್ತದೆ."
+"ಕೋಶಕ್ಕೆ ಕಳುಹಿಸುತ್ತದೆ."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
@@ -95,22 +94,28 @@ msgid ""
 "\"bonded\" and \"ask\"."
 msgstr ""
 "ಬ್ಲೂಟೂತ್‌ನಲ್ಲಿ ಕಳುಹಿಸಲಾದ ಕಡತಗಳನ್ನು ಯಾವಾಗ ಅಂಗೀಕರಿಸಬೇಕು. ಸಾಧ್ಯವಿರುವ "
-"ಮೌಲ್ಯಗಳೆಂದರೆ "
-"\"always\", \"bonded\", ಹಾಗು \"ask\"."
+"ಮೌಲ್ಯಗಳೆಂದರೆ \"always\", \"bonded\", ಹಾಗು \"ask\"."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
 msgid "Whether to notify about newly received files."
 msgstr "ಹೊಸದಾಗಿ ಸ್ವೀಕರಿಸಲಾದ ಕಡತಗಳ ಬಗ್ಗೆ ಸೂಚನೆ ನೀಡಬೇಕೆ."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "ವೈಯಕ್ತಿಕ ಕಡತ ಹಂಚಿಕೆ"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "ಶಕ್ತಗೊಂಡಿದ್ದಲ್ಲಿ ವೈಯಕ್ತಿಕ ಕಡತ ಹಂಚಿಕೆಯನ್ನು ಆರಂಭಿಸು"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "ಹಂಚು;ಕಡತಗಳು;ಬ್ಲೂಟೂತ್;obex;http;ಜಾಲಬಂಧ;ಪ್ರತಿ;ಕಳುಹಿಸು;"
 
@@ -176,86 +181,3 @@ msgstr "ಕಡತವನ್ನು ತೋರಿಸು"
 #: ../src/obexpush.c:167
 msgid "File reception complete"
 msgstr "ಕಡತ ಸ್ವೀಕರಣೆ ಪೂರ್ತಿಗೊಂಡಿದೆ"
-
-#~ msgid "Personal File Sharing Preferences"
-#~ msgstr "ವೈಯಕ್ತಿಕ ಕಡತ ಹಂಚಿಕೆಯ ಆದ್ಯತೆಗಳು"
-
-#~ msgid "Share Files over the Network"
-#~ msgstr "ಜಾಲಬಂಧದ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು"
-
-#~ msgid "_Share public files on network"
-#~ msgstr "ಸಾರ್ವಜನಿಕೆ ಕಡತಗಳನ್ನು ಜಾಲಬಂಧದಲ್ಲಿ ಹಂಚಿಕೊ (_S)"
-
-#~ msgid "_Password:"
-#~ msgstr "ಗುಪ್ತಪದ (_P):"
-
-#~ msgid "_Require password:"
-#~ msgstr "ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ (_R):"
-
-#~ msgid "Share Files over Bluetooth"
-#~ msgstr "ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಹಂಚು"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಸಾರ್ವಜನಿಕ ಕಡತಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ (_B)"
-
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "ದೂರಸ್ಥ ಸಾಧನಗಳು ಕಡತಗಳನ್ನು ಅಳಿಸುವುದನ್ನು ಅನುಮತಿಸು (_w)"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "ದೂರಸ್ಥ ಸಾಧನಗಳು ಈ ಗಣಕದೊಂದಿಗೆ ಜೋಡಿಸಲ್ಪಡುವ ಅಗತ್ಯವಿದೆ (_m)"
-
-#~ msgid "Receive Files over Bluetooth"
-#~ msgstr "ಬ್ಲೂಟೂತ್‌ನ ಮೂಲಕ ಕಡತಗಳನ್ನು ಸ್ವೀಕರಿಸು"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "ಬ್ಲೂಟೂತ್‌ ಮೂಲಕ ಕಡತಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಕಡತಕೋಶಕ್ಕೆ ಸ್ವೀಕರಿಸು (_D)"
-
-#~ msgid "_Accept files: "
-#~ msgstr "ಕಡತಗಳನ್ನು ಅಂಗೀಕರಿಸು (_A): "
-
-#~ msgid "_Notify about received files"
-#~ msgstr "ಸ್ವೀಕರಿಸಲಾದ ಕಡತಗಳ ಬಗ್ಗೆ ಸೂಚನೆ ನೀಡು (_N)"
-
-#~ msgid "Preferences for sharing of files"
-#~ msgstr "ಕಡತಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಆದ್ಯತೆಗಳು"
-
-#~| msgid "Unable to launch the Personal File Sharing preferences"
-#~ msgid "Unable to launch the Personal File Sharing Preferences"
-#~ msgstr "ವೈಯಕ್ತಿಕ ಕಡತ ಹಂಚಿಕೆಯ ಆದ್ಯತೆಗಳನ್ನು ಆರಂಭಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
-
-#~ msgid "No reason"
-#~ msgstr "ಯಾವುದೆ ಕಾರಣ ಇಲ್ಲ"
-
-#~ msgid "Could not display the help contents."
-#~ msgstr "ನೆರವಿನ ವಿಷಯಗಳನ್ನು ತೋರಿಸಲಾಗಲಿಲ್ಲ."
-
-#~ msgid "Could not build interface."
-#~ msgstr "ಸಂಪರ್ಕಸಾಧನವನ್ನು ನಿರ್ಮಿಸಲಾಗಲಿಲ್ಲ."
-
-#~ msgid "Never"
-#~ msgstr "ಎಂದೂ ಬೇಡ"
-
-#~ msgid "When writing files"
-#~ msgstr "ಕಡತಗಳನ್ನು ಬರೆಯುವಾಗ"
-
-#~ msgid "Always"
-#~ msgstr "ಯಾವಾಗಲೂ"
-
-#~ msgid "Only for set up devices"
-#~ msgstr "ಕೇವಲ ಸಿದ್ಧಗೊಳಿಸಲಾದ ಸಾಧನಗಳಿಂದ ಮಾತ್ರ"
-
-#~ msgid "Ask"
-#~ msgstr "ಅನುಮತಿಯನ್ನು ಕೇಳು"
-
-#~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr ""
-#~ "ಈ ಕಡತಕೋಶದಿಂದ ನೀವು ಕಡತಗಳನ್ನು ಬೇರೊಬ್ಬರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬಹುದು ಹಾಗು ಸ್ವೀಕರಿಸಬಹುದು"
-
-#~ msgid "You can receive files over Bluetooth into this folder"
-#~ msgstr "ಬ್ಲೂಟೂತ್ ಮೂಲಕ ಈ ಕಡತಕೋಶಕ್ಕೆ ನೀವು ಕಡತಗಳನ್ನು ಸ್ವೀಕರಿಸಬಹುದು"
-
-#~ msgid "Only for Bonded and Trusted devices"
-#~ msgstr "ಕೇವಲ ಬದ್ಧವಾದ ಹಾಗು ನಂಬಿಕಾರ್ಹ ಸಾಧನಗಳಿಂದ ಮಾತ್ರ"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "ದಯವಿಟ್ಟು ಬಳಕೆದಾರ ಅತಿಥಿಯಾಗಿ ಪ್ರವೇಶಿಸಿ"
