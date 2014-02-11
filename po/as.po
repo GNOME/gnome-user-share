@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
-# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012, 2013.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-24 07:55+0000\n"
-"PO-Revision-Date: 2013-09-12 13:18+0530\n"
+"POT-Creation-Date: 2014-02-11 09:08+0000\n"
+"PO-Revision-Date: 2014-02-11 21:02+0630\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
 "Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
 "Language: as\n"
@@ -45,43 +45,10 @@ msgstr ""
 "\"on_write (লিখাৰ সময়)\", আৰু \"always (সদায়ে)\"।"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "ব্লুটুথৰ সহায়ত ৰাজহুৱা ডাইৰেকটৰি অংশীদাৰী কৰক"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"মান সত্য হলে, ব্যৱহাৰকাৰী লগ-ইন কৰাৰ পিছত ব্যৱহাৰকাৰীসমূহৰ ব্যক্তিগত "
-"ডাইৰেকটৰিত "
-"উপস্থিত ৰাজহুৱা ডাইৰেকটৰিটো ব্লুটুথৰ সহায়ত অংশীদাৰী কৰা হব।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "ব্লুটুথ ক্লাএন্টৰ বাবে নথিপত্ৰে লিখাৰ অনুমতি উপস্থিত থাকিব নে।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"ব্লুটুথ ক্লাএন্ট দ্বাৰা ফাইল লিখা সম্ভব হ'ব নে অকল পাঠযোগ্য অনুমতি সহ ফাইলৰ "
-"অংশীদাৰী "
-"কৰা যাব।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"ফাইল পঠোৱাৰ বাবে, ব্লুটুথ ক্লাএন্ট দ্বাৰা কেতিয়া এটা কমপিউটাৰৰ সৈতে যৌথভাবে "
-"সঞ্চালন "
-"কৰা আবশ্যক।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ObexPush ৰ সহায়ত ব্লুটুথ ক্লাএন্ট দ্বাৰা ফাইল পঠোৱা সম্ভব হ'ব নে।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -90,11 +57,11 @@ msgstr ""
 "ডাইৰেকটৰিত "
 "ফাইল স্থানান্তৰ কৰা যাব।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
 msgstr "ব্লুটুথৰ সহায়ত উপলব্ধ ফাইল কেতিয়া প্ৰাপ্ত কৰা হ'ব"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -102,51 +69,53 @@ msgstr ""
 "ব্লুটুথৰ সহায়ত উপলব্ধ ফাইল কেতিয়া প্ৰাপ্ত কৰা হ'ব। সম্ভাব্য মান হল: \"always "
 "(সদায়ে)\",  \"bonded (যুক্ত)\" আৰু \"ask (সোধক)\"।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
 msgstr "নতুন প্ৰাপ্ত ফাইল সম্পৰ্কে সূচীত কৰা হ'ব নে।"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "ব্যক্তিগত ফাইলৰ অংশীদাৰী"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "সামৰ্থবান থাকিলে, ব্যক্তিগত ফাইল অংশীদাৰী লঞ্চ কৰা হব"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "share;files;bluetooth;obex;http;network;copy;send;"
 
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+#| msgid "User Sharing"
+msgid "Sharing"
+msgstr "অংশীদাৰী"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "পছন্দসমূহ"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "ব্যক্তিগত ফাইল পছন্দসমূহ লঞ্চ কৰক"
+msgid "Sharing Settings"
+msgstr "অংশীদাৰী সংহতিসমূহ"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "ফাইলসমূহ অংশীদাৰী কৰিবলে অথবা গ্ৰহণ কৰিবলে ব্যৱহাৰ কৰা হব পাৰে"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "নেটৱাৰ্ক অথবা ব্লুটুথৰ সহায়ত অংশীদাৰী কৰা হব পাৰে"
 
-#: ../src/share-extension.c:162
-#| msgid "May be shared over the network or Bluetooth"
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "নেটৱাৰ্কৰ সহায়ত অংশীদাৰী কৰা হব পাৰে"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "ব্লুটুথৰ সহায়ত ফাইলসমূহ গ্ৰহণ কৰাৰ বাবে ব্যৱহাৰ কৰা হব পাৰে"
 
@@ -159,59 +128,86 @@ msgstr "ব্লুটুথৰ সহায়ত ফাইলসমূহ গ্
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s ৰ ৰাজহুৱা ফাইলসমূহ"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s ৰ %s ত উপস্থিত ৰাজহুৱা ফাইলসমূহ"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "ব্লুটুথৰ সহায়ত আপুনি \"%s\" প্ৰাপ্ত কৰিছে"
 
-#: ../src/obexpush.c:160
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "আপুনি এটা ফাইল প্ৰাপ্ত কৰিছে"
 
-#: ../src/obexpush.c:171
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "ফাইল খোলক"
 
-#: ../src/obexpush.c:175
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "ফাইল প্ৰকাশ কৰক"
 
-#: ../src/obexpush.c:192
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "ফাইল প্ৰাপ্ত সমপূৰ্ণ"
 
 #. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:251
+#: ../src/obexpush.c:239
 #, c-format
-#| msgid "You received \"%s\" via Bluetooth"
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "ব্লুটুথৰ সহায়ত আপোনাক এটা ফাইল \"%s\" পঠোৱা হৈছে"
 
-#: ../src/obexpush.c:252
-#| msgid "You received a file"
+#: ../src/obexpush.c:240
 msgid "You have been sent a file"
 msgstr "আপোনাক এটা ফাইল পঠোৱা হৈছে"
 
-#: ../src/obexpush.c:260
+#: ../src/obexpush.c:248
 msgid "Receive"
 msgstr "গ্ৰহণ কৰক"
 
-#: ../src/obexpush.c:263
+#: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "বাতিল কৰক"
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "ব্লুটুথৰ সহায়ত ৰাজহুৱা ডাইৰেকটৰি অংশীদাৰী কৰক"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "মান সত্য হলে, ব্যৱহাৰকাৰী লগ-ইন কৰাৰ পিছত ব্যৱহাৰকাৰীসমূহৰ ব্যক্তিগত ডাইৰেকটৰিত "
+#~ "উপস্থিত ৰাজহুৱা ডাইৰেকটৰিটো ব্লুটুথৰ সহায়ত অংশীদাৰী কৰা হব।"
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "ব্লুটুথ ক্লাএন্টৰ বাবে নথিপত্ৰে লিখাৰ অনুমতি উপস্থিত থাকিব নে।"
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "ব্লুটুথ ক্লাএন্ট দ্বাৰা ফাইল লিখা সম্ভব হ'ব নে অকল পাঠযোগ্য অনুমতি সহ ফাইলৰ "
+#~ "অংশীদাৰী কৰা যাব।"
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "ফাইল পঠোৱাৰ বাবে, ব্লুটুথ ক্লাএন্ট দ্বাৰা কেতিয়া এটা কমপিউটাৰৰ সৈতে যৌথভাবে "
+#~ "সঞ্চালন কৰা আবশ্যক।"
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "ব্যক্তিগত ফাইল পছন্দসমূহ লঞ্চ কৰক"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "ব্যক্তিগত ফাইলৰ অংশীদাৰীৰ পছন্দসমূহ"
@@ -295,6 +291,3 @@ msgstr "বাতিল কৰক"
 
 #~ msgid "Please log in as the user guest"
 #~ msgstr "অনুগ্ৰহ কৰে অতিথি ব্যৱহাৰকাৰী ৰূপে লগ-ইন কৰুন"
-
-#~ msgid "User Sharing"
-#~ msgstr "যৌথ ব্যবহাৰেৰ সামগ্ৰী"
