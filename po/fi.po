@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-24 09:09+0000\n"
-"PO-Revision-Date: 2014-02-24 21:45+0200\n"
+"POT-Creation-Date: 2013-12-29 18:19+0000\n"
+"PO-Revision-Date: 2014-01-19 18:29+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -92,33 +92,33 @@ msgstr ""
 "kopioi;lähetä;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:103
 #| msgid "User Sharing"
 msgid "Sharing"
 msgstr "Jakaminen"
 
-#: ../src/nautilus-share-bar.c:116
+#: ../src/nautilus-share-bar.c:117
 msgid "Preferences"
 msgstr "Asetukset"
 
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:121
 msgid "Sharing Settings"
-msgstr "Jakamisen asetukset"
+msgstr "Jakamisasetukset"
 
-#: ../src/share-extension.c:155
+#: ../src/share-extension.c:157
 msgid "May be used to share or receive files"
 msgstr "Käytettävissä tiedostojen jakoa ja vastaanottoa varten"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:160
 msgid "May be shared over the network or Bluetooth"
 msgstr "Jaettavissa verkon ja bluetoothin kautta"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:162
 msgid "May be shared over the network"
 msgstr "Jaettavissa verkon kautta"
 
-#: ../src/share-extension.c:166
+#: ../src/share-extension.c:168
 msgid "May be used to receive files over Bluetooth"
 msgstr "Käytettävissä tiedostojen vastaanottoon Bluetoothia käyttäen"
 
