@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Peteris Krisjanis <pecisk@gmail.com>, 2010.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-24 07:55+0000\n"
-"PO-Revision-Date: 2013-09-12 00:26+0300\n"
+"POT-Creation-Date: 2014-03-07 09:09+0000\n"
+"PO-Revision-Date: 2014-03-07 16:27+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -46,39 +46,10 @@ msgstr ""
 "“on_write” (rakstot) un “always” (vienmēr)."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "Koplietot “Publiskie” direktoriju, izmantojot Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Ja patiess, “Publiskie” direktorija lietotāja mājas direktorijā tiks "
-"koplietota, izmantojot Bluetooth, kad lietotājs būs ierakstījies."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Vai atļaut Bluetooth klientiem rakstīt datnes."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Vai atļaut Bluetooth klientiem rakstīt datnes, vai koplietot datnes tikai "
-"lasīšanas režīmā."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Vai Bluetooth klientiem jābūt sapārotiem ar datoru, lai nosūtītu datnes."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Vai Bluetooth klienti var sūtīt datnes, izmantojot ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -86,11 +57,11 @@ msgstr ""
 "Ja patiess, Bluetooth ierīces var sūtīt datnes uz lietotāja “Lejupielādes” "
 "direktoriju, kad lietotājs būs ierakstījies."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
 msgstr "Kad pieņemt saņemtās datnes, izmantojot Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -98,51 +69,52 @@ msgstr ""
 "Kad pieņemt saņemtās datnes, izmantojot Bluetooth. Iespējamās vērtības ir "
 "“always” (vienmēr), “bonded“ (sapārotas) un “ask” (vaicāt)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
 msgstr "Vai informēt par tikko saņemtām datnēm."
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
 msgstr "Personiskā datņu koplietošana"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Palaist personisko datņu koplietošanu (ja tā ir ieslēgta)"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "koplietot;datnes;bluetooth;obex;http;tīkls;kopēt;sūtīt;"
 
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "Koplietošana"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Iestatījumi"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Atvērt personiskās datņu koplietošanas iestatījumus"
+msgid "Sharing Settings"
+msgstr "Koplietošanas iestatījumi"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "Var izmantot, lai koplietotu vai saņemtu datnes"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "Var koplietot caur tīklu vai Bluetooth"
 
-#: ../src/share-extension.c:162
-#| msgid "May be shared over the network or Bluetooth"
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "Var koplietot caur tīklu"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "Var izmantot, lai saņemtu datnes caur Bluetooth"
 
@@ -155,59 +127,85 @@ msgstr "Var izmantot, lai saņemtu datnes caur Bluetooth"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s publiskās datnes"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s publiskās datnes uz %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Saņemts “%s”, izmantojot Bluetooth"
 
-#: ../src/obexpush.c:160
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "Saņemta datne"
 
-#: ../src/obexpush.c:171
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "Atvērt datni"
 
-#: ../src/obexpush.c:175
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "Atsegt datni"
 
-#: ../src/obexpush.c:192
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "Datnes uztveršana pabeigta"
 
 #. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:251
+#: ../src/obexpush.c:239
 #, c-format
-#| msgid "You received \"%s\" via Bluetooth"
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "Jum atsūtīja datni “%s”, izmantojot Bluetooth"
 
-#: ../src/obexpush.c:252
-#| msgid "You received a file"
+#: ../src/obexpush.c:240
 msgid "You have been sent a file"
 msgstr "Jum atsūtīja datni"
 
-#: ../src/obexpush.c:260
+#: ../src/obexpush.c:248
 msgid "Receive"
 msgstr "Saņemt"
 
-#: ../src/obexpush.c:263
+#: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "Atcelt"
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "Koplietot “Publiskie” direktoriju, izmantojot Bluetooth"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "Ja patiess, “Publiskie” direktorija lietotāja mājas direktorijā tiks "
+#~ "koplietota, izmantojot Bluetooth, kad lietotājs būs ierakstījies."
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "Vai atļaut Bluetooth klientiem rakstīt datnes."
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "Vai atļaut Bluetooth klientiem rakstīt datnes, vai koplietot datnes tikai "
+#~ "lasīšanas režīmā."
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "Vai Bluetooth klientiem jābūt sapārotiem ar datoru, lai nosūtītu datnes."
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "Atvērt personiskās datņu koplietošanas iestatījumus"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "Personiskās datņu koplietošanas iestatījumi"
