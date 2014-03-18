@@ -1,4 +1,18 @@
-This is gnome-user-share 3.10.1, a system for easy sharing of user files.
+This is gnome-user-share 3.10.2, a system for easy sharing of user files.
+
+Major changes since 3.10.1:
+- Fix race condition when moving to Downloads dir
+- Fix notifications not working
+- Reject transfers in one place
+- Remove temp files when rejecting transfers
+- Enable notifications by default
+- Use FileManager1 XDG API to reveal file
+- Fix launch context leak
+- Use correct desktop-entry hint
+- Use Bluetooth icon for notifications
+- Fix agent not working when restarting obexd
+- Remove the status icon
+- Updated translations
 
 Major changes since 3.10.0:
 - Fix share bar bugs that could make nautilus crash
