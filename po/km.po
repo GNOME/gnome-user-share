@@ -7,8 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-13 16:14+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-04-02 20:38+0000\n"
 "PO-Revision-Date: 2012-10-01 09:46+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -45,46 +46,20 @@ msgstr ""
 "\"តែងតែ\" ។"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "ចែករំលែក​ថត​សាធារណៈ​តាម​​ប៊្លូធូស"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"ប្រសិន​បើ​ពិត ថត​សាធារណៈ​ដែល​នៅ​ក្នុង​ថត​ផ្ទះ​របស់​អ្នកប្រើ​នឹង​ត្រូវ​បាន​ចែករំលែក​តាម​ប៊្លូធូស នៅ​ពេល​អ្នកប្រើ​បាន​"
-"ចូល ។"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "ថា​តើ​ត្រូវ​អនុញ្ញាត​ឲ្យ​កម្មវិធី​ប៊្លូធូស​សរសេរ​ឯកសារ​ដែរ​ឬ​ទេ ។"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr "ថា​តើ​ត្រូវ​អនុញ្ញាត​ឲ្យ​កម្មវិធី​ប៊្លូធូស​សរសេរ​ឯកសារ ឬ​ចែករំលែក​ឯកសារ​បាន​តែ​អាន​ដែរ​ឬ​ទេ ។"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "ថា​តើ​កម្មវិធី​ប៊្លូធូស​ត្រូវការ​ផ្គូ​ជាមួយ​កុំព្យូទ័រ​ដែល​ត្រូវ​ផ្ញើ​ឯកសារ​ដែរ​ឬ​ទេ ។"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ថា​តើ​កម្មវិធី​ប៊្លូធូសអាច​ផ្ញើ​ឯកសារ​ដោយ​ប្រើ ObexPush ដែរ​ឬ​ទេ ។"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr "ប្រសិនបើ​ពិត ឧបករណ៍​ប៊្លូធូស​អាច​ផ្ញើ​ឯកសារ​ទៅកាន់​ថត​ទាញ​យក​របស់​អ្នកប្រើ​ នៅ​ពេល​ដែល​បាន​ចូល ។"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
 msgstr "នៅ​ពេល​ត្រូវ​ទទួលយក​ឯកសារ​ដែល​បាន​ផ្ញើតាម​ប៊្លូធូស"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -92,130 +67,55 @@ msgstr ""
 "នៅ​ពេល​ត្រូវ​ទទួលយក​ឯកសារ​ដែល​បាន​ផ្ញើ​​តាម​ប៊្លូធូស ។ តម្លៃ​ដែល​អាច​ប្រើ​បាន គឺ \"តែងតែ\" \"ភ្ជាប់\" "
 "និង \"សួរ\" ។"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
 msgstr "ថា​តើ​ត្រូវ​ជូនដំណឹង​អំពី​ឯកសារ​ដែល​បាន​ទទួល​ថ្មីៗ​ដែរ​ឬ​ទេ ។"
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "ចំណូលចិត្ត​ចែករំលែក​ឯកសារ​ផ្ទាល់ខ្លួន"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "ចែករំលែក​ឯកសារ​តាម​បណ្ដាញ"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "ចែករំលែក​ឯកសារ​សាធារណៈ​តាម​បណ្ដាញ"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "ពាក្យសម្ងាត់ ៖"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "ទាមទារ​ពាក្យសម្ងាត់ ៖"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "ចែករំលែក​ឯកសារ​តាម​ប៊្លូធូស"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "ចែករំលែក​ឯកសារ​សាធារណៈ​តាម​ប៊្លូធូស"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "អនុញ្ញាត​ឲ្យ​ឧបករណ៍​ពី​ចម្ងាយ​លុប​ឯកសារ"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "ទាមទារ​​ឲ្យ​ឧបករណ៍​ពី​ចម្ងាយ​ភ្ជាប់​ជាមួយ​កុំព្យូទ័រ​នេះ"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "ទទួល​ឯកសារ​តាម​ប៊្លូធូស"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "ទទួល​ឯកសារ​នៅ​ក្នុង​ថត​ទាញ​យក​តាម​ប៊្លូធូស"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "ព្រម​ទទួល​ឯកសារ ៖ "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "ជូន​ដំណឹង​អំពី​ឯកសារ​ដែល​បាន​ទទួល"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "ការ​ចែករំលែក​ឯកសារ​ផ្ទាល់ខ្លួន"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "ចំណូលចិត្ត​សម្រាប់​ការ​ចែករំលែក​ឯកសារ"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "បើក​ដំណើរការ​​ការ​ចែករំលែក​ឯកសារ​ផ្ទាល់ខ្លួន ប្រសិនបើ​បាន​បើក"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "ចែករំលែក;ឯកសារ;ប៊្លូធូស;obex;http;បណ្ដាញ;ចម្លង;ផ្ញើ;"
+
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "ចែករំលែក"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "ចំណូលចិត្ត"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "បើក​ដំណើរការ​ចំណូលចិត្ត​ចែករំលែក​ឯកសារ​ផ្ទាល់ខ្លួន"
+msgid "Sharing Settings"
+msgstr "កំណត់​ការចែករំលែក"
 
-#: ../src/share-extension.c:70
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "មិន​អាច​ដំណើរការ​​ចំណូលចិត្ត​ឯកសារ​ផ្ទាល់ខ្លួន​បាន​ទេ"
-
-#: ../src/share-extension.c:164
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "មិន​អាច​ប្រើ​ឯកសារ​ចែករំលែក ឬ​ឯកសារ​ទទួល​បាន​ទេ"
 
-#: ../src/share-extension.c:166
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "អាច​ចែករំលែក​​តាម​បណ្ដាញ ឬ​ប៊្លូធូស​បាន​ទេ"
 
-#: ../src/share-extension.c:170
+#: ../src/share-extension.c:160
+#| msgid "May be shared over the network or Bluetooth"
+msgid "May be shared over the network"
+msgstr "ប្រហែល​ជា​បាន​ចែករំលែក​លើ​បណ្ដាញ"
+
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "មិន​អាច​ប្រើ​ឯកសារ​ទទួល​លើ​ប៊្លូធូស​បាន​ទេ"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "គ្មាន​មូលហេតុ"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "មិន​អាច​បង្ហាញ​មាតិកា​ជំនួយ​បាន​ទេ ។"
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "មិន​អាច​ស្ថាបនា​ចំណុច​ប្រទាក់​បាន​ឡើយ ។"
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "មិនដែល"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "នៅ​ពេល​សរសេរ​ឯកសារ"
-
-#: ../src/file-share-properties.c:389 ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "ជានិច្ច"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "សម្រាប់​តែ​ការ​រៀបចំ​ឧបករណ៍​ប៉ុណ្ណោះ"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "សួរ"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -226,39 +126,154 @@ msgstr "សួរ"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "ឯកសារ​សាធារណៈ​របស់ %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "ឯកសារ​សាធារណៈ​របស់ %s នៅ​លើ %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "អ្នក​បាន​ទទួល \"%s\" តាម​ប៊្លូធូស"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "អ្នក​បាន​ទទួល​ឯកសារ"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "បើក​ឯកសារ"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "បង្ហាញ​ឯកសារ"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "បាន​បញ្ចប់​ការ​ទទួល​ឯកសារ"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:239
+#, c-format
+#| msgid "You received \"%s\" via Bluetooth"
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "អ្នកត្រូវ​បាន​ផ្ញើឯកសារ \"%s\" តាម​ប៊្លូធូស"
+
+#: ../src/obexpush.c:240
+#| msgid "You received a file"
+msgid "You have been sent a file"
+msgstr "អ្នក​ត្រូវ​បាន​ផ្ញើ​ឯកសារ"
+
+#: ../src/obexpush.c:248
+#| msgid "File Received"
+msgid "Receive"
+msgstr "​ទទួល​​"
+
+#: ../src/obexpush.c:251
+msgid "Cancel"
+msgstr "បោះបង់"
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "ចែករំលែក​ថត​សាធារណៈ​តាម​​ប៊្លូធូស"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "ប្រសិន​បើ​ពិត ថត​សាធារណៈ​ដែល​នៅ​ក្នុង​ថត​ផ្ទះ​របស់​អ្នកប្រើ​នឹង​ត្រូវ​បាន​ចែករំលែក​តាម​ប៊្លូធូស នៅ​ពេល​អ្នកប្រើ​"
+#~ "បាន​ចូល ។"
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "ថា​តើ​ត្រូវ​អនុញ្ញាត​ឲ្យ​កម្មវិធី​ប៊្លូធូស​សរសេរ​ឯកសារ​ដែរ​ឬ​ទេ ។"
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr "ថា​តើ​ត្រូវ​អនុញ្ញាត​ឲ្យ​កម្មវិធី​ប៊្លូធូស​សរសេរ​ឯកសារ ឬ​ចែករំលែក​ឯកសារ​បាន​តែ​អាន​ដែរ​ឬ​ទេ ។"
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr "ថា​តើ​កម្មវិធី​ប៊្លូធូស​ត្រូវការ​ផ្គូ​ជាមួយ​កុំព្យូទ័រ​ដែល​ត្រូវ​ផ្ញើ​ឯកសារ​ដែរ​ឬ​ទេ ។"
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "ចំណូលចិត្ត​ចែករំលែក​ឯកសារ​ផ្ទាល់ខ្លួន"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "ចែករំលែក​ឯកសារ​តាម​បណ្ដាញ"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "ចែករំលែក​ឯកសារ​សាធារណៈ​តាម​បណ្ដាញ"
+
+#~ msgid "_Password:"
+#~ msgstr "ពាក្យសម្ងាត់ ៖"
+
+#~ msgid "_Require password:"
+#~ msgstr "ទាមទារ​ពាក្យសម្ងាត់ ៖"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "ចែករំលែក​ឯកសារ​តាម​ប៊្លូធូស"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "ចែករំលែក​ឯកសារ​សាធារណៈ​តាម​ប៊្លូធូស"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "អនុញ្ញាត​ឲ្យ​ឧបករណ៍​ពី​ចម្ងាយ​លុប​ឯកសារ"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "ទាមទារ​​ឲ្យ​ឧបករណ៍​ពី​ចម្ងាយ​ភ្ជាប់​ជាមួយ​កុំព្យូទ័រ​នេះ"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "ទទួល​ឯកសារ​តាម​ប៊្លូធូស"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "ទទួល​ឯកសារ​នៅ​ក្នុង​ថត​ទាញ​យក​តាម​ប៊្លូធូស"
+
+#~ msgid "_Accept files: "
+#~ msgstr "ព្រម​ទទួល​ឯកសារ ៖ "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "ជូន​ដំណឹង​អំពី​ឯកសារ​ដែល​បាន​ទទួល"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "ចំណូលចិត្ត​សម្រាប់​ការ​ចែករំលែក​ឯកសារ"
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "បើក​ដំណើរការ​ចំណូលចិត្ត​ចែករំលែក​ឯកសារ​ផ្ទាល់ខ្លួន"
+
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr "មិន​អាច​ដំណើរការ​​ចំណូលចិត្ត​ឯកសារ​ផ្ទាល់ខ្លួន​បាន​ទេ"
+
+#~ msgid "No reason"
+#~ msgstr "គ្មាន​មូលហេតុ"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "មិន​អាច​បង្ហាញ​មាតិកា​ជំនួយ​បាន​ទេ ។"
+
+#~ msgid "Could not build interface."
+#~ msgstr "មិន​អាច​ស្ថាបនា​ចំណុច​ប្រទាក់​បាន​ឡើយ ។"
+
+#~ msgid "Never"
+#~ msgstr "មិនដែល"
+
+#~ msgid "When writing files"
+#~ msgstr "នៅ​ពេល​សរសេរ​ឯកសារ"
+
+#~ msgid "Always"
+#~ msgstr "ជានិច្ច"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "សម្រាប់​តែ​ការ​រៀបចំ​ឧបករណ៍​ប៉ុណ្ណោះ"
+
+#~ msgid "Ask"
+#~ msgstr "សួរ"
 
 #~ msgid ""
 #~ "This feature cannot be enabled because the required packages are not "
@@ -268,9 +283,6 @@ msgstr "បាន​បញ្ចប់​ការ​ទទួល​ឯកសា
 
 #~ msgid "You have received the file “%s” over Bluetooth."
 #~ msgstr "អ្នក​បាន​ទទួល​ឯកសារ “%s” តាម​ប៊្លូធូស ។"
-
-#~ msgid "File Received"
-#~ msgstr "បាន​ទទួល​​ឯកសារ"
 
 #~ msgid "Open"
 #~ msgstr "បើក"
