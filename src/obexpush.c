@@ -34,7 +34,7 @@
 #include <libnotify/notify.h>
 #include <canberra-gtk.h>
 
-#include "user_share.h"
+#include "user_share-common.h"
 #include "user_share-private.h"
 
 #include "obexpush.h"

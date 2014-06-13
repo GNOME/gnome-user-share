@@ -7,4 +7,5 @@ src/nautilus-share-bar.c
 src/share-extension.c
 src/http.c
 src/obexpush.c
-src/user_share.c
+src/user_share-webdav.c
+src/user_share-obexpush.c
