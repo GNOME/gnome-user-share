@@ -1,6 +1,5 @@
 [org.gnome.desktop.file-sharing]
 
-enabled = /desktop/gnome/file_sharing/enabled
 require-password = /desktop/gnome/file_sharing/require_password
 bluetooth-enabled = /desktop/gnome/file_sharing/bluetooth_enabled
 bluetooth-allow-write = /desktop/gnome/file_sharing/bluetooth_allow_write

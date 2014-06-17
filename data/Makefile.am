@@ -1,9 +1,13 @@
 SUBDIRS = icons
 
 @INTLTOOL_DESKTOP_RULE@
+applicationsdir = $(datadir)/applications/
+applications_DATA = $(applications_in_files:.desktop.in=.desktop)
+applications_in_files = gnome-user-share-webdav.desktop.in
+
 autostartdir = $(sysconfdir)/xdg/autostart/
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
-autostart_in_files = gnome-user-share-obexpush.desktop.in gnome-user-share-webdav.desktop.in
+autostart_in_files = gnome-user-share-obexpush.desktop.in
 
 appdir = $(datadir)/gnome-user-share
 app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_user_2.4.conf dav_groupfile
@@ -23,7 +27,7 @@ EXTRA_DIST = $(app_DATA)  \
 	gnome-user-share-obexpush.desktop.in.in \
 	gnome-user-share-webdav.desktop.in.in
 
-CLEANFILES = $(autostart_DATA) $(gsettings_DATA)
+CLEANFILES = $(applications_DATA) $(autostart_DATA) $(gsettings_DATA)
 
 DISTCLEANFILES = $(gsettings_DATA)
 

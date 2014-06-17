@@ -1,11 +1,5 @@
 <schemalist>
 <schema gettext-domain="gnome-user-share" id="org.gnome.desktop.file-sharing" path="/org/gnome/desktop/file-sharing/">
-	<key name="enabled" type="b">
-		<default>false</default>
-		<_summary>Share Public directory over the network</_summary>
-		<_description>If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in.</_description>
-	</key>
-
 	<key name="require-password" type="s">
 		<default>'never'</default>
 		<_summary>When to require passwords</_summary>
