@@ -1,4 +1,8 @@
-This is gnome-user-share 3.10.2, a system for easy sharing of user files.
+This is gnome-user-share 3.13.1, a system for easy sharing of user files.
+
+Major changes since 3.10.2:
+- Integrate with the new sharing system in gnome-settings-daemon
+- Fix server errors with require_password=never
 
 Major changes since 3.10.1:
 - Fix race condition when moving to Downloads dir
