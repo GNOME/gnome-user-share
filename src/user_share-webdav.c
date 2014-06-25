@@ -49,10 +49,6 @@
 #define GNOME_SESSION_DBUS_OBJECT    "/org/gnome/SessionManager"
 #define GNOME_SESSION_DBUS_INTERFACE "org.gnome.SessionManager"
 
-static GSettings *settings = NULL;
-
-static guint disabled_timeout_tag = 0;
-
 static void
 migrate_old_configuration (void)
 {
@@ -76,47 +72,12 @@ require_password_changed (void)
 	}
 }
 
-/* File sharing was disabled for some time, exit now */
-/* If we re-enable it in the ui, this will be restarted anyway */
-static gboolean
-disabled_timeout_callback (void)
-{
-	http_down ();
-	return FALSE;
-}
-
-static void
-file_sharing_enabled_changed (void)
-{
-	gboolean enabled;
-
-	if (disabled_timeout_tag != 0) {
-		g_source_remove (disabled_timeout_tag);
-		disabled_timeout_tag = 0;
-	}
-
-	enabled = g_settings_get_boolean (settings,
-					 FILE_SHARING_ENABLED);
-	if (enabled) {
-		if (http_get_pid () == 0) {
-			http_up ();
-		}
-	} else {
-		http_down ();
-		disabled_timeout_tag = g_timeout_add_seconds (3,
-							      (GSourceFunc) disabled_timeout_callback,
-							      NULL);
-	}
-}
-
 static void
 setttings_changed (GSettings *settings,
 		   gchar *path,
 		   gpointer data)
 {
-	if (g_strcmp0 (FILE_SHARING_ENABLED, path) == 0)
-		file_sharing_enabled_changed ();
-	else if (g_strcmp0 (FILE_SHARING_REQUIRE_PASSWORD, path) == 0)
+	if (g_strcmp0 (FILE_SHARING_REQUIRE_PASSWORD, path) == 0)
 		require_password_changed ();
 }
 
@@ -141,6 +102,7 @@ main (int argc, char **argv)
 	G_GNUC_UNUSED int x_fd;
 	Window selection_owner;
 	Atom xatom;
+	GSettings *settings;
 
 	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -185,9 +147,6 @@ main (int argc, char **argv)
 
 	migrate_old_configuration ();
 
-	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
-	if (g_settings_get_boolean (settings, FILE_SHARING_ENABLED) == FALSE)
-		return 1;
 
 	x_fd = ConnectionNumber (xdisplay);
 	XSetIOErrorHandler (x_io_error_handler);
@@ -195,10 +154,11 @@ main (int argc, char **argv)
 	if (http_init () == FALSE)
 		return 1;
 
+	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 	g_signal_connect (settings, "changed", G_CALLBACK(setttings_changed), NULL);
 
 	/* Initial setting */
-	file_sharing_enabled_changed ();
+	http_up ();
 
 	gtk_main ();
 
@@ -207,4 +167,3 @@ main (int argc, char **argv)
 
 	return 0;
 }
-

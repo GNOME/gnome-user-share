@@ -27,7 +27,6 @@
 
 #define GNOME_USER_SHARE_SCHEMAS "org.gnome.desktop.file-sharing"
 
-#define FILE_SHARING_ENABLED "enabled"
 #define FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED "bluetooth-obexpush-enabled"
 
 #define FILE_SHARING_REQUIRE_PASSWORD "require-password"
