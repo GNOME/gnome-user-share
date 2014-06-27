@@ -1,6 +1,10 @@
-libexec_PROGRAMS=			\
+if USE_BLUETOOTH
+libexec_PROGRAMS =			\
 	gnome-user-share-webdav		\
 	gnome-user-share-obexpush
+else
+libexec_PROGRAMS = gnome-user-share-webdav
+endif
 
 noinst_LTLIBRARIES = libuser-share-common.la
 libuser_share_common_la_SOURCES = user_share-common.c user_share-common.h
@@ -44,7 +48,7 @@ gnome_user_share_obexpush_SOURCES =	\
 	obexpush.c			\
 	obexpush.h
 else
-EXTRA_DIST = obexpush.c obexpush.h
+EXTRA_DIST = user_share-obexpush.c obexpush.c obexpush.h
 endif
 
 gnome_user_share_obexpush_LDADD =	\
