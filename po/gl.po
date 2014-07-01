@@ -12,13 +12,13 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2010, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-29 00:16+0100\n"
-"PO-Revision-Date: 2013-11-29 00:16+0200\n"
+"POT-Creation-Date: 2014-07-01 18:59+0200\n"
+"PO-Revision-Date: 2014-07-01 19:03+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -30,22 +30,10 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Compartir o cartafol público na rede"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Se está definido a «true», o cartafol Público no cartafol persoal de usuario "
-"compartirase na rede cando o usuario inicie a sesión."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Cando requirir os contrasinais"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -53,11 +41,11 @@ msgstr ""
 "Cando hai que pedir os contrasinais. Os valores posíbeis son \"never\", "
 "\"on_write\", e \"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Se os clientes do Bluetooth poden enviar ficheiros usando o ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -65,11 +53,11 @@ msgstr ""
 "Se está definido a «true», os dispositivos Bluetooth poden enviar ficheiros "
 "ao cartafol Descargas do usuario cando inicie a sesión."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Cando aceptar os ficheiros enviados mediante Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -77,7 +65,7 @@ msgstr ""
 "Cando aceptar os ficheiros enviados mediante Bluetooth. Os valores posíbeis "
 "son \"always\", \"bonded\", e \"ask\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Se hai que informar sobre os ficheiros recibidos recentemente."
 
@@ -87,42 +75,45 @@ msgid "Personal File Sharing"
 msgstr "Compartir ficheiros persoais"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Iniciar Compartir ficheiros persoais, se está activado"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Arrinca a compartición de Buetooth ObexPush se está activado"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "compartir;ficheiros;bluetooth;obex;http;rede;copiar;enviar;"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Inicia a Compartición de ficheiros persoais, se está activado"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:103
+#: ../src/nautilus-share-bar.c:102
 msgid "Sharing"
 msgstr "Compartición"
 
-#: ../src/nautilus-share-bar.c:117
+#: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferencias"
 
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:121
+#: ../src/nautilus-share-bar.c:120
 msgid "Sharing Settings"
 msgstr "Preferencias de compartición"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "Pode empregarse para compartir ou recibir ficheiros"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "Pode compartirse pola rede ou mediante Bluetooth"
 
-#: ../src/share-extension.c:162
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "Pode compartirse pola rede"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "Pode empregarse para recibir ficheiros mediante Bluetooth"
 
@@ -186,6 +177,16 @@ msgstr "Recibir"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "Cancelar"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Compartir o cartafol público na rede"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "Se está definido a «true», o cartafol Público no cartafol persoal de "
+#~ "usuario compartirase na rede cando o usuario inicie a sesión."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Compartir o cartafol público mediante o Bluetooth"
