@@ -1,15 +1,17 @@
-# translation of eu.po to Basque
+# Basque translation of gnome-user-share.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 #
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2013, 2014.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-22 14:09+0100\n"
-"PO-Revision-Date: 2014-03-22 14:09+0100\n"
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-08-07 13:24+0200\n"
+"PO-Revision-Date: 2014-07-29 20:21+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
@@ -20,23 +22,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Partekatu direktorio publikoa sarean zehar"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"'true' gisa (egia) ezartzen bada, erabiltzaileen karpeta nagusiko direktorio "
-"publikoa partekatu egingo da sarean zehar erabiltzaileak saioa hasten "
-"duenean."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Noiz eskatu pasahitza"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -44,12 +33,12 @@ msgstr ""
 "Noiz eskatu pasahitza. Balio erabilgarriak: \"never\" (inoiz ere ez), "
 "\"on_write\" (idaztean), eta \"always\" (beti)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr ""
 "Bluetooth bezeroek fitxategiak bidal ditzaketen ObexPush erabiliz ala ez."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -57,11 +46,11 @@ msgstr ""
 "'true' gisa (egia) ezartzen bada, Bluetooth gailuek fitxategiak bidal "
 "ditzakete erabiltzailearen 'Deskargak' direktoriora saioa hastean."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Noiz onartu Bluetooth bidez bidalitako fitxategiak"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -69,7 +58,7 @@ msgstr ""
 "Noiz onartu Bluetooth bidez bidalitako fitxategiak. Balio erabilgarriak: "
 "\"always\" (beti), \"bonded\" (lotuta), eta \"ask\" (galdetu)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Jaso berri diren fitxategiei buruz jakinarazi behar den ala ez."
 
@@ -79,14 +68,17 @@ msgid "Personal File Sharing"
 msgstr "Fitxategi pertsonalak partekatzea"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Abiarazi fitxategi pertsonalak partekatzea gaituta badago"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Abiarazi Bluetooth ObexPush partekatzea gaituta badago"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "partekatu;fitxategiak;bluetooth;obex;http;sarea;kopiatu;bidali;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Abiarazi fitxategi pertsonalak partekatzea gaituta badago"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -178,6 +170,17 @@ msgstr "Jaso"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "Utzi"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Partekatu direktorio publikoa sarean zehar"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "'true' gisa (egia) ezartzen bada, erabiltzaileen karpeta nagusiko "
+#~ "direktorio publikoa partekatu egingo da sarean zehar erabiltzaileak saioa "
+#~ "hasten duenean."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Partekatu direktorio publikoa Bluetooth bidez"
