@@ -11,33 +11,21 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-21 21:07+0000\n"
-"PO-Revision-Date: 2014-02-21 23:55+0100\n"
+"POT-Creation-Date: 2014-08-16 20:17+0000\n"
+"PO-Revision-Date: 2014-08-17 01:10+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Comparteix la carpeta Públic a través de la xarxa"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Si és cert, la carpeta Públic de la carpeta d'inici de cada usuari es "
-"compartirà a través de la xarxa quan l'usuari entri."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Quan s'ha de demanar contrasenya"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -45,11 +33,11 @@ msgstr ""
 "Quan s'ha de demanar contrasenya. Els possibles valors són «never» (mai), "
 "«on_write» (en escriure), i «always» (sempre)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Si els clients del Bluetooth poden enviar fitxers amb ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -57,11 +45,11 @@ msgstr ""
 "Si és cert, els dispositius Bluetooth poden enviar fitxers a la carpeta de "
 "baixades de l'usuari quan aquest usuari hagi entrat."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Quan s'han d'acceptar fitxers enviats a través del Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -69,7 +57,7 @@ msgstr ""
 "Quan s'hagin d'acceptar fitxers a través del Bluetooth. Els possibles valors "
 "són «always» (sempre), «bonded» (vinculat) i «ask» (pregunta)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
 
@@ -79,14 +67,18 @@ msgid "Personal File Sharing"
 msgstr "Compartició de fitxers personals"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Executa la compartició de fitxers personals si està habilitat"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr ""
+"Executa la compartició mitjançant el Bluetooth ObexPush si està habilitada"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "comparteix;fitxers;bluetooth;obex;http;xarxa;copia;envia;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Executa la compartició de fitxers personals si està habilitat"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -180,32 +172,3 @@ msgstr "Rebre"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "Cancel·la"
-
-#~ msgid "Share Public directory over Bluetooth"
-#~ msgstr "Comparteix la carpeta Públic a través del Bluetooth"
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over Bluetooth when the user is logged in."
-#~ msgstr ""
-#~ "Si és cert, la carpeta Públic de la carpeta d'inici de l'usuari es "
-#~ "compartirà a través del Bluetooth quan aquest hagi entrat."
-
-#~ msgid "Whether to allow Bluetooth clients to write files."
-#~ msgstr "Si es permet escriure fitxers als clients del Bluetooth."
-
-#~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
-#~ msgstr ""
-#~ "Si es permet escriure fitxers als clients del Bluetooth, o si només es "
-#~ "compartiran en mode lectura."
-
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
-#~ msgstr ""
-#~ "Si cal que els clients del Bluetooth s'aparellin amb l'ordinador per "
-#~ "poder enviar fitxers."
-
-#~ msgid "Launch Personal File Sharing Preferences"
-#~ msgstr "Inicia les preferències de la compartició de fitxers personals"
