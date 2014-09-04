@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-26 00:21+0200\n"
-"PO-Revision-Date: 2014-01-26 00:22+0200\n"
+"POT-Creation-Date: 2014-09-04 23:16+0300\n"
+"PO-Revision-Date: 2014-09-04 23:21+0300\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -19,22 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Share Public directory over the network"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "When to require passwords"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -42,11 +30,11 @@ msgstr ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Whether Bluetooth clients can send files using ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -54,11 +42,11 @@ msgstr ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "When to accept files sent over Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -66,7 +54,7 @@ msgstr ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Whether to notify about newly received files."
 
@@ -76,42 +64,45 @@ msgid "Personal File Sharing"
 msgstr "שיתוף קבצים אישי"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "טעינת שיתוף קבצים אישי אם פעיל"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "שיגור שיתוף בלוטות׳ ObexPush אם פעיל"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "שיתוף;קבצים;בלוטות׳;רשת;העתקה;שליחה;בלוטות';"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "טעינת שיתוף קבצים אישי אם פעיל"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:103
+#: ../src/nautilus-share-bar.c:102
 msgid "Sharing"
 msgstr "שיתוף"
 
-#: ../src/nautilus-share-bar.c:117
+#: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "העדפות"
 
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:121
+#: ../src/nautilus-share-bar.c:120
 msgid "Sharing Settings"
 msgstr "הגדרות שיתוף"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "יכול לשמש לשיתוף או לקבלת קבצים"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "ניתן לשיתוף דרך הרשת או דרך Bluetooth"
 
-#: ../src/share-extension.c:162
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "ניתן לשיתוף דרך הרשת"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "יכול לשמש לקבלת קבצים דרך Bluetooth"
 
@@ -175,6 +166,16 @@ msgstr "קבלה"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "ביטול"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Share Public directory over the network"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Share Public directory over Bluetooth"
