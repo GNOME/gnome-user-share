@@ -8,9 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-05 09:08+0000\n"
-"PO-Revision-Date: 2014-03-06 03:24+0900\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-05 08:17+0000\n"
+"PO-Revision-Date: 2014-09-06 04:55+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: Korean\n"
@@ -19,32 +20,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "\"공개\" 디렉터리를 네트워크를 통해 공유"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"참이면, 사용자가 로그인하면 홈 디렉토리의 \"공개\" 디렉터리를 공유합니다."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "암호가 필요한 경우"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
 "언제 암호를 물어볼 지 지정. 가능한 값은 \"never\", \"on_write\", \"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "블루투스 클라이언트가 ObexPush를 사용해 파일을 보낼 수 있는 지 여부."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -52,11 +42,11 @@ msgstr ""
 "참이면, 사용자가 로그인하면 블루투스를 통해 \"다운로드\" 디렉터리로 파일을 보"
 "낼 수 있습니다."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "블루투스를 통해 보낸 파일 허용하는 방법"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -64,7 +54,7 @@ msgstr ""
 "언제 블루투스를 통해 보낸 파일을 받아들일지 지정. 가능한 값은 \"always\", "
 "\"bonded\", \"ask\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "새로 받은 파일을 알릴 지 여부."
 
@@ -74,9 +64,8 @@ msgid "Personal File Sharing"
 msgstr "개인 파일 공유"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "사용자 공유를(사용할 경우) 시작합니다"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "블루투스 ObexPush 공유를 시작합니다"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
@@ -84,6 +73,10 @@ msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr ""
 "share;공유;files;파일;bluetooth;블루투스;obex;http;network;네트워크;인터넷;"
 "copy;복사;send;보내기;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "사용자 공유를(사용할 경우) 시작합니다"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -175,31 +168,3 @@ msgstr "받기"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "취소"
-
-#~ msgid "Share Public directory over Bluetooth"
-#~ msgstr "\"공개\" 디렉터리를 블루투스를 통해 공유"
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over Bluetooth when the user is logged in."
-#~ msgstr ""
-#~ "참이면, 사용자가 로그인하면 홈 디렉토리의 \"공개\" 디렉터리를 블루투스를 "
-#~ "통해 공유합니다."
-
-#~ msgid "Whether to allow Bluetooth clients to write files."
-#~ msgstr "블루투스 클라이언트의 파일 쓰기를 허용할 지 여부."
-
-#~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
-#~ msgstr ""
-#~ "블루투스 클라이언트의 파일 쓰기를 허용할 지, 아니면 읽기 전용으로만 공유"
-#~ "할 지 여부."
-
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
-#~ msgstr ""
-#~ "블루투스 클라이언트가 파일을 보낼 때 컴퓨터에 연결해야 하는 지 여부."
-
-#~ msgid "Launch Personal File Sharing Preferences"
-#~ msgstr "개인 파일 공유 기본 설정을 실행합니다"
