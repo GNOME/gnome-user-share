@@ -4,14 +4,14 @@
 #
 # Krishna Babu K <kkrothap@redhat.com>, 2009.
 # Hari Krishna <hari@swecha.net>, 2011.
-# Krishna Babu K <kkrothap@redhat.com>, 2011, 2012, 2013.
+# Krishna Babu K <kkrothap@redhat.com>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-15 16:39+0000\n"
-"PO-Revision-Date: 2013-03-25 14:35+0530\n"
+"POT-Creation-Date: 2014-09-09 08:18+0000\n"
+"PO-Revision-Date: 2014-09-09 15:24+0530\n"
 "Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <Fedora-trans-te@redhat.com>\n"
 "Language: te\n"
@@ -25,23 +25,10 @@ msgstr ""
 "\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "పబ్లిక్ డైరెక్టరీను నెట్వర్కునందు పంచుకొనుము"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు నెట్వర్కు ద్వారా వినియోగదారి "
-"డైరెక్టరీనందలి పబ్లిక్ డైరెక్టరీ "
-"పంచుకొనబడుతుంది."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "సంకేతపదములు యెప్పుడు అవసరము"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -50,40 +37,11 @@ msgstr ""
 "మరియు "
 "\"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "బ్లూటూత్ ద్వారా పబ్లిక్ డైరెక్టరీను పంచుకొనుము"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు బ్లూటూత్ ద్వారా వినియోగదారి "
-"డైరెక్టరీనందలి పబ్లిక్ డైరెక్టరీ "
-"పంచుకొనబడుతుంది."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "బ్లూటూత్ కక్షిదారులను ఫైళ్ళను వ్రాయుటకు అనుమతించాలా."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"బ్లూటూత్ కక్షిదారులను ఫైళ్ళను వ్రాయుటకు అనుమతించాలా, లేక చదువుటకు-మాత్రమే "
-"ఫైళ్ళను పంచుకొనవలెనా."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "ఫైళ్ళను పంపుటకు బ్లూటూత్ కక్షిదారులు కంప్యూటర్‌తో జత ఏర్పరుచుకోవాలా."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "బ్లూటూత్ కక్షిదారులు ఫైళ్ళను ObexPush వుపయోగించి పంపించగలగాలా."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -91,11 +49,11 @@ msgstr ""
 "ఇది నిజమైతే, లాగిన్ అయినప్పుడు బ్లూటూత్ పరికరాలు దస్త్రాలను వినియోగదారి "
 "డౌన్‌లోడ్సు డైరెక్టరీకు పంపగలగుతాయి."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "బ్లూటూత్ ద్వారా పంపిన ఫైళ్ళను యెప్పుడు ఆమోదించాలి"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -104,39 +62,57 @@ msgstr ""
 "\"always\", \"bonded\" "
 "మరియు \"ask\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "కొత్తగా స్వీకరించిన ఫైళ్ళ గురించి తెలియజెప్పవలెనా."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "వ్యక్తిగత ఫైలు భాగస్వామ్యం"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "చేతనపరిచివుంటే బ్లూటూత్ ObexPush పంచుకొనుటకు ఆరంభించుము"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "share;files;bluetooth;obex;http;network;copy;send;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "చేతనపరిస్తే వ్యక్తిగత ఫైళ్ళ భాగస్వామ్యమును ఆరంభిస్తుంది"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "share;files;bluetooth;obex;http;network;copy;send;"
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "పంచుకొనుచున్న"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "అభీష్టాలు"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "వ్యక్తిగత ఫైలు భాగస్వామ్యపు అభీష్టాలు ప్రయోగించు"
+msgid "Sharing Settings"
+msgstr "అమరికలు పంచుకొనుట"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "ఫైళ్ళను స్వీకరించుటకు పంచుకొనుటకు వుపయోగించవచ్చు"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "నెట్వర్కు నందు లేదా బ్లూటూత్ నందు భాగస్వామ్యపరచవచ్చు"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:160
+#| msgid "May be shared over the network or Bluetooth"
+msgid "May be shared over the network"
+msgstr "బహుశా నెట్వర్కునందు పంచుకోవచ్చు"
+
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "బ్లూటూత్ ద్వారా ఫైళ్ళను స్వీకరించుటకు వుపయోగించవచ్చు"
 
@@ -149,39 +125,95 @@ msgstr "బ్లూటూత్ ద్వారా ఫైళ్ళను స్
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%sయొక్క పబ్లిక్ ఫైళ్లు"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s పైన %1$sయొక్క పబ్లిక్ ఫైళ్ళు"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "మీరు \"%s\"ను బ్లూటూత్ ద్వారా పొందినారు"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "మీరు వొక ఫైలును పొందినారు"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "ఫైలును తెరువుము"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "ఫైలును బయటపెట్టుము"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "ఫైలును స్వీకరించుట ముగిసినది "
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:239
+#, c-format
+#| msgid "You received \"%s\" via Bluetooth"
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "మీరు ఒక ఫైలు \"%s\"ను బ్లూటూత్ ద్వారా పంపినారు"
+
+#: ../src/obexpush.c:240
+#| msgid "You received a file"
+msgid "You have been sent a file"
+msgstr "మీరు వొక ఫైలును పంపినారు"
+
+#: ../src/obexpush.c:248
+msgid "Receive"
+msgstr "స్వీకరించిన"
+
+#: ../src/obexpush.c:251
+msgid "Cancel"
+msgstr "రద్దు"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "పబ్లిక్ డైరెక్టరీను నెట్వర్కునందు పంచుకొనుము"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు నెట్వర్కు ద్వారా వినియోగదారి డైరెక్టరీనందలి పబ్లిక్ డైరెక్టరీ "
+#~ "పంచుకొనబడుతుంది."
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "బ్లూటూత్ ద్వారా పబ్లిక్ డైరెక్టరీను పంచుకొనుము"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "నిజమైతే, వినియోగదారి లాగినైవున్నప్పుడు బ్లూటూత్ ద్వారా వినియోగదారి డైరెక్టరీనందలి పబ్లిక్ డైరెక్టరీ "
+#~ "పంచుకొనబడుతుంది."
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "బ్లూటూత్ కక్షిదారులను ఫైళ్ళను వ్రాయుటకు అనుమతించాలా."
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "బ్లూటూత్ కక్షిదారులను ఫైళ్ళను వ్రాయుటకు అనుమతించాలా, లేక చదువుటకు-మాత్రమే ఫైళ్ళను పంచుకొనవలెనా."
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr "ఫైళ్ళను పంపుటకు బ్లూటూత్ కక్షిదారులు కంప్యూటర్‌తో జత ఏర్పరుచుకోవాలా."
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "వ్యక్తిగత ఫైలు భాగస్వామ్యపు అభీష్టాలు ప్రయోగించు"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "వ్యక్తిగత ఫైలు భాగస్వామ్యపు అభీష్టాలు"
