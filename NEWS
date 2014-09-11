@@ -1,4 +1,8 @@
-This is gnome-user-share 3.13.2, a system for easy sharing of user files.
+This is gnome-user-share 3.13.91, a system for easy sharing of user files.
+
+Major changes since 3.13.2:
+- Fix compilation with Bluetooth disabled
+- Updated translations
 
 Major changes since 3.13.1:
 - Fix launching the webdav server
