@@ -3,14 +3,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Amanpreet Singh Alam <aalam@users.sf.net>, 2005, 2006, 2009.
-# A S Alam <aalam@users.sf.net>, 2009, 2010, 2012, 2013.
+# A S Alam <aalam@users.sf.net>, 2009, 2010, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-11-12 13:20+0000\n"
-"PO-Revision-Date: 2013-12-07 19:05-0600\n"
+"POT-Creation-Date: 2014-09-13 20:18+0000\n"
+"PO-Revision-Date: 2014-09-13 21:50-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
@@ -21,23 +21,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"ਜੇ ਸਹੀਂ ਹੈ ਤਾਂ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਨੈੱਟਵਰਕ ਉੱਤੇ "
-"ਸਾਂਝੀ ਕੀਤਾ ਜਾਵੇਗਾ, "
-"ਜਦੋਂ ਵੀ ਯੂਜ਼ਰ ਲਾਗਇਨ ਹੋਵੇਗਾ।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "ਜਦੋਂ ਪਾਸਵਰਪ ਲੋੜੀਦਾ ਹੋਵੇ"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -45,11 +32,11 @@ msgstr ""
 "ਜਦੋਂ ਪਾਸਵਰਡ ਪੁੱਛਿਆ ਜਾਵੇ ਤਾਂ ਸੰਭਵ ਮੁੱਲ ਹਨ \"never\", \"on_write\", ਅਤੇ "
 "\"always\"।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ਕੀ ਬਲਿਊਟੁੱਥ ਕਲਾਇਟਾਂ ਨੂੰ ObexPush ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਫਾਇਲਾਂ ਭੇਜ ਸਕਦੇ ਹੋ।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -58,11 +45,11 @@ msgstr ""
 "ਵਿੱਚ ਫਾਇਲਾਂ ਭੇਜ "
 "ਸਕਦੇ ਹਨ।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "ਜਦੋਂ ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਭੇਜੀਆਂ ਫਾਇਲਾਂ ਪ੍ਰਾਪਤ ਕਰਨੀਆਂ ਹੋਣ"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -71,7 +58,7 @@ msgstr ""
 "\"always\", \"bonded\", "
 "\"ask\""
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "ਕੀ ਨਵੀਆਂ ਮਿਲੀਆਂ ਫਾਇਲਾਂ ਲਈ ਸੂਚਨਾ ਦੇਣੀ ਹੈ।"
 
@@ -81,9 +68,9 @@ msgid "Personal File Sharing"
 msgstr "ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "ਜੇ ਚਾਲੂ ਹੋਵੇ ਤਾਂ ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਚਲਾਓ"
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "ਜੇ ਚਾਲੂ ਹੋਵੇ ਤਾਂ ਬਲਿਊਟੁੱਥ ObexPush ਸਾਂਝ ਚਲਾਓ"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
@@ -93,34 +80,37 @@ msgstr ""
 "twork;"
 "copy;send;"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "ਜੇ ਚਾਲੂ ਹੋਵੇ ਤਾਂ ਨਿੱਜੀ ਫਾਇਲ ਸਾਂਝ ਚਲਾਓ"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:103
-#| msgid "User Sharing"
+#: ../src/nautilus-share-bar.c:102
 msgid "Sharing"
 msgstr "ਸਾਂਝ"
 
-#: ../src/nautilus-share-bar.c:117
+#: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ"
 
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:121
+#: ../src/nautilus-share-bar.c:120
 msgid "Sharing Settings"
 msgstr "ਸਾਂਝ ਸੈਟਿੰਗ"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "ਫਾਇਲਾਂ ਨੂੰ ਸਾਂਝਾ ਕਰਨ ਜਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "ਨੈੱਟਵਰਕ ਅਤੇ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ ਸਾਂਝਾ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ"
 
-#: ../src/share-extension.c:162
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝਾ ਹੋ ਸਕਦਾ ਹੈ"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਫਾਇਲਾਂ ਲੈਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ"
 
@@ -146,44 +136,54 @@ msgid "%s's public files on %s"
 msgstr "%s ਦੀਆਂ %s ਉੱਤੇ ਪਬਲਿਕ ਫਾਇਲਾਂ"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "ਤੁਸੀਂ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ \"%s\" ਲਏ"
 
-#: ../src/obexpush.c:160
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "ਇੱਕ ਫਾਇਲ ਮਿਲੀ"
 
-#: ../src/obexpush.c:171
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "ਫਾਇਲ ਖੋਲ੍ਹੋ"
 
-#: ../src/obexpush.c:175
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "ਫਾਇਲ ਰੀਵੀਲ"
 
-#: ../src/obexpush.c:192
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "ਫਾਇਲ ਪ੍ਰਾਪਤੀ ਪੂਰੀ"
 
 #. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:251
+#: ../src/obexpush.c:239
 #, c-format
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "ਤੁਸੀਂ ਬਲਿਊਟੁੱਥ ਰਾਹੀਂ \"%s\" ਫਾਇਲ ਭੇਜ ਚੁੱਕੇ ਹੋ"
 
-#: ../src/obexpush.c:252
+#: ../src/obexpush.c:240
 msgid "You have been sent a file"
 msgstr "ਤੁਹਾਨੂੰ ਫਾਇਲ ਮਿਲੀ ਹੈ"
 
-#: ../src/obexpush.c:260
+#: ../src/obexpush.c:248
 msgid "Receive"
 msgstr "ਮਿਲੀ"
 
-#: ../src/obexpush.c:263
+#: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "ਜੇ ਸਹੀਂ ਹੈ ਤਾਂ ਯੂਜ਼ਰ ਦੀ ਘਰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਨੈੱਟਵਰਕ ਉੱਤੇ ਸਾਂਝੀ ਕੀਤਾ "
+#~ "ਜਾਵੇਗਾ, ਜਦੋਂ ਵੀ ਯੂਜ਼ਰ ਲਾਗਇਨ ਹੋਵੇਗਾ।"
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "ਬਲਿਊਟੁੱਥ ਉੱਤੇ ਸਾਂਝੀ ਪਬਲਿਕ ਡਾਇਰੈਕਟਰੀ"
