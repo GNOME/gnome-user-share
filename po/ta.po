@@ -5,16 +5,16 @@
 #
 # Dr.T.vasudevan <agnihot3@gmail.com>, 2009.
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2009, 2012.
-# Shantha kumar <shkumar@redhat.com>, 2013.
+# Shantha kumar <shkumar@redhat.com>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-11-12 13:20+0000\n"
-"PO-Revision-Date: 2013-11-25 15:15+0530\n"
+"POT-Creation-Date: 2014-09-15 08:17+0000\n"
+"PO-Revision-Date: 2014-09-15 16:29+0630\n"
 "Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
-"Language-Team: Tamil <>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,23 +23,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "பொது அடைவை வலைப்பின்னல் மூலம் பகிர்க"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"இது உண்மை எனில் பயனர்  உள்நுழைந்துள்ள போது   பயனரின்  இல்ல அடைவில் உள்ள "
-"பொதுவான அடைவு "
-"வலைபின்னல்  மூலம் பகிரப்படும்"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "எப்போது கடவுச்சொல் தேவை"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -48,11 +35,11 @@ msgstr ""
 "\"எப்போதுமில்லை\", "
 "\"எழுதும்போது\", மற்றும் \"எப்போதும்\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "ப்ளூடூத் சார்ந்தோன்கள் கோப்புகளை ஒபெக்ஸ் புஷ் மூலம் அனுப்பலாமா"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -61,11 +48,11 @@ msgstr ""
 "அடைவுக்கு "
 "கோப்புகளை அனுப்ப இயலும்"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "எப்போது கோப்புக்களை ப்ளூடூத் மூலம் பகிர்வது"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -74,7 +61,7 @@ msgstr ""
 "\"எப்போதும்\", "
 "\"பிணையப்பட்ட\", மற்றும் \"கேள்\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "புதிதாக பெற்ற கோப்புக்களை பற்றி அறிவிக்கவா"
 
@@ -84,44 +71,46 @@ msgid "Personal File Sharing"
 msgstr "அந்தரங்க கோப்பு பகிர்தல்"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "செயல் படுத்தி இருந்தால் அந்தரங்க கோப்பு பகிர்தலை  ஆரம்பி "
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "செயல்படுத்தி இருந்தால் Bluetooth ObexPush பகிர்தலைத் துவக்கவும்"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "share;files;bluetooth;obex;http;network;copy;send;"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "செயல் படுத்தி இருந்தால் அந்தரங்க கோப்பு பகிர்தலை  ஆரம்பி "
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:103
-#| msgid "User Sharing"
+#: ../src/nautilus-share-bar.c:102
 msgid "Sharing"
 msgstr "பகிர்தல்"
 
-#: ../src/nautilus-share-bar.c:117
+#: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "விருப்பங்கள்"
 
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:121
+#: ../src/nautilus-share-bar.c:120
 msgid "Sharing Settings"
 msgstr "பகிர்தல் அமைவுகள்"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr " கோப்புகளை பகிர அல்லது பெற இதன் மூலம் இயலும்"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "வலைப்பின்னல் மற்றும் ப்ளூடூத் மூலம் பகிர இயலும்"
 
-#: ../src/share-extension.c:162
-#| msgid "May be shared over the network or Bluetooth"
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "பிணையத்தின் வழியாகப் பகிரப்பட்டிருக்கலாம்"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr " கோப்புகளை ப்ளூடூத் மூலம் பெற இதன் மூலம் இயலும்"
 
@@ -147,46 +136,54 @@ msgid "%s's public files on %s"
 msgstr "%s' இன் பொது கோப்புகள் %s இல்"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr " \"%s\"  ஐ ப்ளூடூத் வழியாக பெற்றீர்கள்"
 
-#: ../src/obexpush.c:160
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "நீங்கள் ஒரு கோப்பை பெற்றீர்கள்"
 
-#: ../src/obexpush.c:171
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "கோப்பை திறக்கவும்"
 
-#: ../src/obexpush.c:175
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "கோப்பை காட்டுக"
 
-#: ../src/obexpush.c:192
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "கோப்பு பெறுதல் முடிந்தது"
 
 #. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:251
+#: ../src/obexpush.c:239
 #, c-format
-#| msgid "You received \"%s\" via Bluetooth"
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "உங்களுக்கு Bluetooth வழியாக \"%s\" என்ற ஒரு கோப்பு அனுப்பப்பட்டுள்ளது"
 
-#: ../src/obexpush.c:252
-#| msgid "You received a file"
+#: ../src/obexpush.c:240
 msgid "You have been sent a file"
 msgstr "உங்களுக்கு ஒரு கோப்பு அனுப்பப்பட்டுள்ளது"
 
-#: ../src/obexpush.c:260
+#: ../src/obexpush.c:248
 msgid "Receive"
 msgstr "பெற்றுக்கொள்"
 
-#: ../src/obexpush.c:263
+#: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "ரத்து செய்"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "பொது அடைவை வலைப்பின்னல் மூலம் பகிர்க"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "இது உண்மை எனில் பயனர்  உள்நுழைந்துள்ள போது   பயனரின்  இல்ல அடைவில் உள்ள பொதுவான "
+#~ "அடைவு வலைபின்னல்  மூலம் பகிரப்படும்"
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "பொது அடைவை ப்ளூடூத் மூலம் பகிர்க"
