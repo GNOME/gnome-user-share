@@ -6,194 +6,105 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-02 20:48+0200\n"
-"PO-Revision-Date: 2012-09-02 20:49+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-01 08:18+0000\n"
+"PO-Revision-Date: 2014-09-01 10:22+0100\n"
+"Last-Translator: Mattias Eriksson <snaggen@gmail.com>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Dela ut publik katalog över nätverket"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
-msgstr "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas ut på nätverket när användaren är inloggad."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "När lösenord ska krävas"
 
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), "
+"\"on_write\" (vid skrivning) och \"always\" (alltid)."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Huruvida Bluetooth-klienter kan skicka filer med ObexPush."
+
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr "När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), \"on_write\" (vid skrivning) och \"always\" (alltid)."
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Om detta är sant kan Bluetooth-enheter skicka filer till användarens katalog "
+"Hämtat när användaren är inloggad."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "Dela ut publik katalog över Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
-msgstr "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas ut över Bluetooth när användaren är inloggad."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Huruvida blåtandsklienter ska tillåtas att skriva filer."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
-msgstr "Huruvida blåtandsklienter ska tillåtas att skriva filer, eller dela ut filerna skrivskyddade."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Huruvida blåtandsklienter behöver paras ihop med datorn för att skicka filer."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Huruvida blåtandsklienter kan skicka filer med ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
-msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
-msgstr "Om detta är sant kan blåtandsenheter skicka filer till användarens katalog Hämtat när användaren är inloggad."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
 msgid "When to accept files sent over Bluetooth"
 msgstr "När filer skickade över Bluetooth ska accepteras"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
-msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
-msgstr "När filer som skickas över Bluetooth ska accepteras. Möjliga värden är \"always\" (alltid), \"bonded\" (ihopparad) och \"ask\" (fråga)."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"När filer som skickas över Bluetooth ska accepteras. Möjliga värden är "
+"\"always\" (alltid), \"bonded\" (ihopparad) och \"ask\" (fråga)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Huruvida notifiering om nyligen mottagna filer ska göras."
 
-#: ../data/file-share-properties.ui.h:1
-msgid "Personal File Sharing Preferences"
-msgstr "Inställningar för personlig filutdelning"
-
-#: ../data/file-share-properties.ui.h:2
-msgid "Share Files over the Network"
-msgstr "Dela ut filer över nätverket"
-
-#: ../data/file-share-properties.ui.h:3
-msgid "_Share public files on network"
-msgstr "_Dela ut publika filer på nätverket"
-
-#: ../data/file-share-properties.ui.h:4
-msgid "_Password:"
-msgstr "_Lösenord:"
-
-#: ../data/file-share-properties.ui.h:5
-msgid "_Require password:"
-msgstr "_Kräv lösenord:"
-
-#: ../data/file-share-properties.ui.h:6
-msgid "Share Files over Bluetooth"
-msgstr "Dela ut filer över Bluetooth"
-
-#: ../data/file-share-properties.ui.h:7
-msgid "Share public files over _Bluetooth"
-msgstr "Dela ut publika filer över _Bluetooth"
-
-#: ../data/file-share-properties.ui.h:8
-msgid "Allo_w remote devices to delete files"
-msgstr "Till_åt fjärrenheter att ta bort filer"
-
-#: ../data/file-share-properties.ui.h:9
-msgid "Require re_mote devices to bond with this computer"
-msgstr "Kräv att fjärrenheter _paras ihop med denna dator"
-
-#: ../data/file-share-properties.ui.h:10
-msgid "Receive Files over Bluetooth"
-msgstr "Ta emot filer över Bluetooth"
-
-#: ../data/file-share-properties.ui.h:11
-msgid "Receive files in _Downloads folder over Bluetooth"
-msgstr "Ta emot filer i mappen _Hämtat över Bluetooth"
-
-#: ../data/file-share-properties.ui.h:12
-msgid "_Accept files: "
-msgstr "_Acceptera filer: "
-
-#: ../data/file-share-properties.ui.h:13
-msgid "_Notify about received files"
-msgstr "_Notifiera om mottagna filer"
-
-#: ../data/gnome-user-share-properties.desktop.in.h:1
-#: ../data/gnome-user-share.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Utdelning av personliga filer"
 
-#: ../data/gnome-user-share-properties.desktop.in.h:2
-msgid "Preferences for sharing of files"
-msgstr "Inställningar för utdelning av filer"
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Starta delning via Bluetooth ObexPush om aktiverat"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "dela;filer;bluetooth;blåtand;obex;http;nätverk;kopiera;skicka;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Starta personlig filutdelning om aktiverat"
+
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "Delning"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Inställningar"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Starta Inställningar för personlig filutdelning"
+msgid "Sharing Settings"
+msgstr "Inställningar för delning"
 
-#: ../src/share-extension.c:69
-msgid "Unable to launch the Personal File Sharing Preferences"
-msgstr "Kunde inte starta Inställningar för personlig filutdelning"
-
-#: ../src/share-extension.c:142
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "Kan användas för att dela ut eller ta emot filer"
 
-#: ../src/share-extension.c:144
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "Kan delas ut över nätverket eller Bluetooth"
 
-#: ../src/share-extension.c:146
+#: ../src/share-extension.c:160
+msgid "May be shared over the network"
+msgstr "Kan delas ut över nätverket"
+
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "Kan användas för att ta emot filer över Bluetooth"
-
-#: ../src/file-share-properties.c:290
-msgid "No reason"
-msgstr "Ingen anledning"
-
-#: ../src/file-share-properties.c:318
-msgid "Could not display the help contents."
-msgstr "Kunde inte visa hjälpinnehållet."
-
-#: ../src/file-share-properties.c:351
-msgid "Could not build interface."
-msgstr "Kunde inte bygga gränssnittet."
-
-#: ../src/file-share-properties.c:383
-msgid "Never"
-msgstr "Aldrig"
-
-#: ../src/file-share-properties.c:386
-msgid "When writing files"
-msgstr "När filer skrivs"
-
-#: ../src/file-share-properties.c:389
-#: ../src/file-share-properties.c:412
-msgid "Always"
-msgstr "Alltid"
-
-#: ../src/file-share-properties.c:415
-msgid "Only for set up devices"
-msgstr "Endast för konfigurerade enheter"
-
-#: ../src/file-share-properties.c:420
-msgid "Ask"
-msgstr "Fråga"
 
 # Vi undviker på detta sätt problemen som "%ss publika filer" skulle
 # skapat, exempelvis "Alexs publika filer" eller "Markuss publika filer".
@@ -208,7 +119,7 @@ msgstr "Fråga"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%.0sPublika filer"
@@ -219,32 +130,158 @@ msgstr "%.0sPublika filer"
 #
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%.0sPublika filer på %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
-msgstr "Du tog emot \"%s\" via Bluetooth"
+msgstr "Du tog emot ”%s” via Bluetooth"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "Du tog emot en fil"
 
-#: ../src/obexpush.c:145
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "Öppna fil"
 
-#: ../src/obexpush.c:149
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "Visa fil"
 
-#: ../src/obexpush.c:166
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "Filmottagningen är färdig"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:239
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "En fil ”%s” har skickats till dig via Bluetooth"
+
+#: ../src/obexpush.c:240
+msgid "You have been sent a file"
+msgstr "En fil har skickats till dig"
+
+#: ../src/obexpush.c:248
+msgid "Receive"
+msgstr "Ta emot"
+
+#: ../src/obexpush.c:251
+msgid "Cancel"
+msgstr "Avbryt"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Dela ut publik katalog över nätverket"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog "
+#~ "att delas ut på nätverket när användaren är inloggad."
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "Dela ut publik katalog över Bluetooth"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog "
+#~ "att delas ut över Bluetooth när användaren är inloggad."
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "Huruvida blåtandsklienter ska tillåtas att skriva filer."
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "Huruvida blåtandsklienter ska tillåtas att skriva filer, eller dela ut "
+#~ "filerna skrivskyddade."
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "Huruvida blåtandsklienter behöver paras ihop med datorn för att skicka "
+#~ "filer."
+
+#~ msgid "Personal File Sharing Preferences"
+#~ msgstr "Inställningar för personlig filutdelning"
+
+#~ msgid "Share Files over the Network"
+#~ msgstr "Dela ut filer över nätverket"
+
+#~ msgid "_Share public files on network"
+#~ msgstr "_Dela ut publika filer på nätverket"
+
+#~ msgid "_Password:"
+#~ msgstr "_Lösenord:"
+
+#~ msgid "_Require password:"
+#~ msgstr "_Kräv lösenord:"
+
+#~ msgid "Share Files over Bluetooth"
+#~ msgstr "Dela ut filer över Bluetooth"
+
+#~ msgid "Share public files over _Bluetooth"
+#~ msgstr "Dela ut publika filer över _Bluetooth"
+
+#~ msgid "Allo_w remote devices to delete files"
+#~ msgstr "Till_åt fjärrenheter att ta bort filer"
+
+#~ msgid "Require re_mote devices to bond with this computer"
+#~ msgstr "Kräv att fjärrenheter _paras ihop med denna dator"
+
+#~ msgid "Receive Files over Bluetooth"
+#~ msgstr "Ta emot filer över Bluetooth"
+
+#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgstr "Ta emot filer i mappen _Hämtat över Bluetooth"
+
+#~ msgid "_Accept files: "
+#~ msgstr "_Acceptera filer: "
+
+#~ msgid "_Notify about received files"
+#~ msgstr "_Notifiera om mottagna filer"
+
+#~ msgid "Preferences for sharing of files"
+#~ msgstr "Inställningar för utdelning av filer"
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "Starta Inställningar för personlig filutdelning"
+
+#~ msgid "Unable to launch the Personal File Sharing Preferences"
+#~ msgstr "Kunde inte starta Inställningar för personlig filutdelning"
+
+#~ msgid "No reason"
+#~ msgstr "Ingen anledning"
+
+#~ msgid "Could not display the help contents."
+#~ msgstr "Kunde inte visa hjälpinnehållet."
+
+#~ msgid "Could not build interface."
+#~ msgstr "Kunde inte bygga gränssnittet."
+
+#~ msgid "Never"
+#~ msgstr "Aldrig"
+
+#~ msgid "When writing files"
+#~ msgstr "När filer skrivs"
+
+#~ msgid "Always"
+#~ msgstr "Alltid"
+
+#~ msgid "Only for set up devices"
+#~ msgstr "Endast för konfigurerade enheter"
+
+#~ msgid "Ask"
+#~ msgstr "Fråga"
 
 #~ msgid "You can share files from this folder and receive files to it"
 #~ msgstr "Du kan dela ut filer från denna mapp och ta emot filer till den"
@@ -257,9 +294,6 @@ msgstr "Filmottagningen är färdig"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "Endast för ihopparade och pålitliga enheter"
-
-#~ msgid "User Sharing"
-#~ msgstr "Användarutdelning"
 
 #~ msgid ""
 #~ "If this is true, the Public directory in the users home dir will be "
