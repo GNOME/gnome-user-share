@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-19 22:18+0100\n"
-"PO-Revision-Date: 2014-03-15 13:23+0100\n"
+"POT-Creation-Date: 2014-09-17 18:30+0200\n"
+"PO-Revision-Date: 2014-09-17 18:27+0200\n"
 "Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -19,22 +19,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Del offentlig mappe på netværket"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe blive "
-"delt, når brugeren er logget ind."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Hvornår der kræves adgangskode"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -42,11 +30,11 @@ msgstr ""
 "Hvornår skal der spørges om adgangskode. Valgmuligheder: \"never\", "
 "\"on_write\", \"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Hvorvidt Bluetooth-klienter kan sende filer ved brug af ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -54,11 +42,11 @@ msgstr ""
 "Hvis denne er true, kan Bluetooth-enheder sende filer til brugerens "
 "downloadmappe når brugeren er logget ind."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Hvornår filer sendt over Bluetooth skal accepteres"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -66,7 +54,7 @@ msgstr ""
 "Hvornår filer sendt over Bluetooth accepteres. Valgmuligheder: \"always\", "
 "\"bonded\", \"ask\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Hvorvidt der påmindes om nyligt modtagne filer."
 
@@ -76,14 +64,17 @@ msgid "Personal File Sharing"
 msgstr "Personlig fildeling"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Start personlig fildeling hvis aktiveret"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Start Bluetooth ObexPush-deling, hvis den er aktiveret"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "dele;filer;bluetooth;obex;http;netværk;kopier;send;del;deling;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Start personlig fildeling hvis aktiveret"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -176,6 +167,16 @@ msgstr "Modtag"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "Afbryd"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Del offentlig mappe på netværket"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe "
+#~ "blive delt, når brugeren er logget ind."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Del offentlig mappe over Bluetooth"
