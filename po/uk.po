@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-10 21:08+0000\n"
-"PO-Revision-Date: 2014-02-11 10:34+0300\n"
+"POT-Creation-Date: 2014-09-18 08:23+0000\n"
+"PO-Revision-Date: 2014-09-18 18:02+0300\n"
 "Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
@@ -23,33 +23,21 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Зробити файли у каталозі Public спільними для доступу з мережі"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Якщо відмічено, файли у каталозі Public користувача стануть доступні у "
-"мережі, коли він увійде у систему."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Коли вимагати пароль"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
 "Коли запитувати пароль. Можливі значення «never», «on_write», та «always»."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Дозволити клієнтам Bluetooth надсилати файли за допомогою ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -57,11 +45,11 @@ msgstr ""
 "Якщо відмічено, пристрої Bluetooth можуть надсилати файли у каталог "
 "Downloads користувача після його входу у систему."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Дії при отриманні файлів, надісланих через Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -69,7 +57,7 @@ msgstr ""
 "Дії при отриманні файлів через Bluetooth. Можливі значення: «always», "
 "«bonded», та «ask»."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Повідомляти про отримувані файли"
 
@@ -79,14 +67,18 @@ msgid "Personal File Sharing"
 msgstr "Спільний доступ до особистих файлів"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Увімкнути спільний доступ, якщо можливо"
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Запустити оприлюднення Bluetooth ObexPush, якщо ввімкнено"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "оприлюднити;файли;блютуз;obex;http;мережа;копіювати;надіслати;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Увімкнути спільний доступ, якщо можливо"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -178,6 +170,16 @@ msgstr "Одержати"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "Скасувати"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Зробити файли у каталозі Public спільними для доступу з мережі"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "Якщо відмічено, файли у каталозі Public користувача стануть доступні у "
+#~ "мережі, коли він увійде у систему."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr ""
