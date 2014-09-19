@@ -4,135 +4,101 @@
 #
 # Baris Cicek <baris@teamforce.name.tr>, 2007, 2009.
 # Volkan Yalçın <vlyalcin@gmail.com>, 2011.
-# Muhammet Kara <muhammetk@gmail.com>, 2011, 2013.
+# Muhammet Kara <muhammetk@gmail.com>, 2011, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-04-06 15:10+0000\n"
-"PO-Revision-Date: 2013-04-07 05:23+0300\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-18 21:09+0000\n"
+"PO-Revision-Date: 2014-09-19 04:04+0000\n"
 "Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Ağ Üzerinden Genel Dizinini Paylaştır"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Eğer bu true ise, kullanıcı başlangıç dizininde bulunan Genel dizini "
-"kullanıcı giriş yaptığında ağ üzerinden paylaştırılacak."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Ne zaman parola gerektiği"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr ""
-"Parola sor seçildiğinde. Geçerli değerler \"never\" (asla), \"on_write"
-"\" (yazıldığında), ve \"always\" (her zaman)."
+msgstr "Parola sor seçildiğinde. Geçerli değerler \"never\" (asla), \"on_write\" (yazıldığında), ve \"always\" (her zaman)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "Bluetooth Üzerinden Genel Dizinini Paylaştır"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Eğer bu true ise, kullanıcı başlangıç dizininde bulunan Genel dizini "
-"kullanıcı giriş yaptığında Bluetooth üzerinden paylaştırılacak."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Bluetooth istemcilerin dosyalara yazmasına izin verilmesi."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Bluetooth istemcilerinin dosyalara yazabilmeleri ya da dosyaları salt-okunur "
-"olarak paylaşmaları."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Bluetooth istemcilerinin dosya gönderebilmek için bir bilgisayar ile "
-"eşleşmelerine gerek olması."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Bluetooth istemcilerinin ObexPush kullanarak dosya gönderebilmeleri."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
-msgstr ""
-"Eğer bu true ise, Bluetooth aygıtları kullanıcının İndirilenler dizinine "
-"giriş yaptığında dosya gönderebilecekler."
+msgstr "Eğer bu true ise, Bluetooth aygıtları kullanıcının İndirilenler dizinine giriş yaptığında dosya gönderebilecekler."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Bluetooth üzerinden gönderilen dosyaların ne zaman kabul edileceği"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
-msgstr ""
-"Bluetooth üzerinden gönderilen dosyaların ne zaman kabul edileceği. Geçerli "
-"değerler \"always\", \"bonded\" ve \"ask\"."
+msgstr "Bluetooth üzerinden gönderilen dosyaların ne zaman kabul edileceği. Geçerli değerler \"always\", \"bonded\" ve \"ask\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Yeni alınan dosyalar hakkında bildirimde bulunulması."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Kişisel Dosya Paylaşımı"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Eğer etkinse Bluetooth ObexPush paylaşımını başlat"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "paylaş;dosyalar;bluetooth;obex;http;ağ;kopyala;gönder;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Eğer etkinse Kişisel Kullanıcı Paylaşımını başlat"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "paylaş;dosyalar;bluetooth;obex;http;ağ;kopyala;gönder;"
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "Paylaşım"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Tercihler"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Kişisel Dosya Paylaşımı Tercihlerini Başlat"
+msgid "Sharing Settings"
+msgstr "Paylaşım Ayarları"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "Dosya paylaşmada ve almada kullanılabilir"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "Ağ üzerinde veya Bluetooth ile paylaşılabilir"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:160
+msgid "May be shared over the network"
+msgstr "Ağ üzerinde paylaşılabilir"
+
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "Bluetooth üzerinden dosya almada kullanılabilir"
 
@@ -145,103 +111,54 @@ msgstr "Bluetooth üzerinden dosya almada kullanılabilir"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s kullanıcısının genel dosyaları"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s kullanıcısının %s üzerindeki genel dosyaları"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Bluetooth aracılığıyla \"%s\" aldınız"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "Bir dosya aldınız"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "Dosya Aç"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "Dosyayı Göster"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "Dosya alımı tamamlandı"
 
-#~ msgid "Share Files over Bluetooth"
-#~ msgstr "Dosyaları Bluetooth Üzerinden Paylaştır"
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:239
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Bluetooth aracılığıyla \"%s\" adlı bir dosya size gönderildi"
 
-#~ msgid "Share Files over the Network"
-#~ msgstr "Dosyaları Ağ Üzerinden Paylaştır"
+#: ../src/obexpush.c:240
+msgid "You have been sent a file"
+msgstr "Bir dosya size gönderildi"
 
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "Uzaktaki aygıtların dosya _silebilmelerine izin ver"
+#: ../src/obexpush.c:248
+msgid "Receive"
+msgstr "Al"
 
-#~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Kişisel Dosya Paylaşma Tercihleri"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "Dosyaları Bluetooth üzerinden İ_ndirilenler klasörüne al"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr ""
-#~ "_Uzaktaki aygıtların bu bilgisayar ile bağlanmış olmalarını gerektir"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Genel dosyaları _Bluetooth üzerinden paylaştır"
-
-#~ msgid "_Accept files: "
-#~ msgstr "_Dosyaları kabul et: "
-
-#~ msgid "_Notify about received files"
-#~ msgstr "Alınan _dosyaları bildir"
-
-#~ msgid "_Password:"
-#~ msgstr "_Parola:"
-
-#~ msgid "_Require password:"
-#~ msgstr "_Parola gerektir:"
-
-#~ msgid "_Share public files on network"
-#~ msgstr "Genel dosyaları _ağ üzerinden paylaştır"
-
-#~ msgid "Preferences for sharing of files"
-#~ msgstr "Dosyaların paylaşımı için tercihler"
-
-#~ msgid "Unable to launch the Personal File Sharing preferences"
-#~ msgstr "Kişisel Dosya Paylaşımı tercihleri başlatılamadı"
-
-#~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr "Bu klasörden dosya paylaşabilir ve buraya dosya alabilirsiniz"
-
-#~ msgid "You can receive files over Bluetooth into this folder"
-#~ msgstr "Bu klasör içerisine Bluetooth üzerinden dosya alabilirsiniz"
-
-#~ msgid "No reason"
-#~ msgstr "Sebep yok"
-
-#~ msgid "Could not display the help contents."
-#~ msgstr "Yardım içeriği gösterilemedi."
-
-#~ msgid "Could not build interface."
-#~ msgstr "Arayüz inşa edilemedi."
-
-#~ msgid "Never"
-#~ msgstr "Asla"
-
-#~ msgid "When writing files"
-#~ msgstr "Dosya yazılmaya çalışıldığında"
-
-#~ msgid "Always"
-#~ msgstr "Her zaman"
+#: ../src/obexpush.c:251
+msgid "Cancel"
+msgstr "İptal"
