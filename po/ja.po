@@ -5,16 +5,16 @@
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
 # Noriko Mizumoto <noriko@fedoraproject.org>, 2012.
-# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2013.
+# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2013-2014.
 # Ikuya Awashiro <ikuya@fruitsbasket.info>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-30 08:39+0000\n"
-"PO-Revision-Date: 2014-04-30 21:09+0900\n"
-"Last-Translator: Ikuya Awashiro <ikuya@fruitsbasket.info>\n"
+"POT-Creation-Date: 2014-09-18 08:23+0000\n"
+"PO-Revision-Date: 2014-09-18 21:09+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -23,38 +23,30 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Public フォルダーをネットワーク上で共有するかどうか"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
-msgstr "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある Public フォルダーがネットワークのデバイスによって共有されるようになります。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "パスワードを要求する時期"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
 msgstr "いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write\"、\"always\"。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Bluetooth のクライアントが ObexPush を使ってファイルを送信できるかどうか"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
 msgstr "TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダウンロード・フォルダーにファイルを送信できるようになります。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Bluetooth でファイルを送信できる時期"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
 msgstr "いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: \"always\"、\"bonded\"、\"ask\"。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "新たに受信したファイルについて通知するかどうか"
 
@@ -64,14 +56,17 @@ msgid "Personal File Sharing"
 msgstr "個人的なファイルの共有"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "個人的なファイルの共有機能を起動します (可能な場合)"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Bluetooth の ObexPush 共有機能を起動します (可能な場合)"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "share;files;bluetooth;obex;http;network;copy;send;共有;ファイル;ブルートゥース;ネットワーク;コピー;複製;送信;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "個人的なファイルの共有機能を起動します (可能な場合)"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -163,6 +158,12 @@ msgstr "受諾"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "拒否"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Public フォルダーをネットワーク上で共有するかどうか"
+
+#~ msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
+#~ msgstr "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある Public フォルダーがネットワークのデバイスによって共有されるようになります。"
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Public フォルダーを Bluetooth デバイス上で共有するかどうか"
