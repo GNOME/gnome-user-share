@@ -5,15 +5,15 @@
 # Hendrik Richter <hendrikr@gnome.org>, 2007.
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2010, 2012.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010.
-# Benjamin Steinwender <b@stbe.at>, 2013.
+# Benjamin Steinwender <b@stbe.at>, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-10 21:24+0000\n"
-"PO-Revision-Date: 2013-12-16 10:51+0100\n"
+"POT-Creation-Date: 2014-09-19 08:16+0000\n"
+"PO-Revision-Date: 2014-09-21 13:04+0200\n"
 "Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
@@ -21,25 +21,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.2\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Öffentlichen Ordner im Netzwerk freigeben"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen "
-"Ordner im Netzwerk freigegeben, sobald der Benutzer angemeldet ist."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Wann Passwörter erforderlich sind"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -47,11 +35,11 @@ msgstr ""
 "Wann nach Passwörtern gefragt wird. Mögliche Werte sind »never« (nie), "
 "»on_write« (beim Schreiben) und »always« (immer)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Legt fest, ob Bluetooth-Clients Dateien mit ObexPush senden dürfen"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
@@ -59,11 +47,11 @@ msgstr ""
 "Wenn diese Option gesetzt ist, dürfen Bluetooth-Geräte Dateien in den "
 "Download-Ordner des Benutzer senden."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Wann über Bluetooth gesendete Dateien angenommen werden"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -71,7 +59,7 @@ msgstr ""
 "Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. Mögliche "
 "Werte sind »always« (immer), »bonded« (verbunden) und »ask« (nachfragen)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Legt fest, ob über neu empfangene Dateien informiert werden soll."
 
@@ -81,42 +69,45 @@ msgid "Personal File Sharing"
 msgstr "Persönliche Dateifreigabe"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Persönliche Dateifreigabe starten, wenn aktiv"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Bluetooth-Freigabe über ObexPush starten, wenn aktiv"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "Freigabe;Dateien;bluetooth;obex;http;Netzwerk;kopieren;Transfer;"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Persönliche Dateifreigabe starten, wenn aktiv"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:103
+#: ../src/nautilus-share-bar.c:102
 msgid "Sharing"
 msgstr "Freigabe"
 
-#: ../src/nautilus-share-bar.c:117
+#: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Einstellungen"
 
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:121
+#: ../src/nautilus-share-bar.c:120
 msgid "Sharing Settings"
 msgstr "Einstellungen für Freigabe"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "Darf zum Freigeben oder Empfangen von Dateien verwendet werden"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "Darf über das Netzwerk oder Bluetooth freigegeben werden"
 
-#: ../src/share-extension.c:162
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "Darf über das Netzwerk freigegeben werden"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "Darf zum Empfangen von Dateien über Bluetooth verwendet werden"
 
@@ -180,6 +171,17 @@ msgstr "Empfangen"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "Abbrechen"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Öffentlichen Ordner im Netzwerk freigeben"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im "
+#~ "persönlichen Ordner im Netzwerk freigegeben, sobald der Benutzer "
+#~ "angemeldet ist."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Öffentlichen Ordner über Bluetooth freigeben"
