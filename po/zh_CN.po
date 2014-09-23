@@ -14,53 +14,43 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-11-16 17:28+0000\n"
-"PO-Revision-Date: 2013-11-19 11:11+0800\n"
-"Last-Translator: 甘露(Gan Lu) <rhythm.gan@gmail.com>\n"
+"POT-Creation-Date: 2014-08-18 08:12+0000\n"
+"PO-Revision-Date: 2014-08-18 20:05+0800\n"
+"Last-Translator: irisgyq <gouyingqiyanxuan321@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "在网络中共享“公开”目录"
+msgid "When to require passwords"
+msgstr "何时获得密码"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr "如果为真(true)，则用户登录时，用户主目录中的“公开”目录将在网络中共享。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "When to require passwords"
-msgstr "何时请求密码"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr "何时询问密码，可供选择的选项是：“never”、“on_write”和“always”。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "是否允许蓝牙客户端使用 ObexPus 发送文件。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
 "如果为真(true)，则用户登录时，蓝牙设备可以将文件发送到用户的“下载”目录。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "何时接收通过蓝牙发送的文件"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
@@ -68,7 +58,7 @@ msgstr ""
 "何时接受通过蓝牙发送的文件，可能的选项"
 "是“always”、“bonded”、“bonded_trusted”和“ask”。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "是否通知关于新收到的文件。"
 
@@ -78,9 +68,8 @@ msgid "Personal File Sharing"
 msgstr "个人文件共享"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "如果已启用则启动个人文件共享"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "如果已启用则启动蓝牙文件传输共享"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
@@ -89,33 +78,37 @@ msgstr ""
 "share;files;bluetooth;obex;http;network;copy;send;共享;文件;蓝牙;网络;复制;发"
 "送;"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "如果已启用则启动个人文件共享"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:103
+#: ../src/nautilus-share-bar.c:102
 msgid "Sharing"
 msgstr "共享"
 
-#: ../src/nautilus-share-bar.c:117
+#: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "首选项"
 
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:121
+#: ../src/nautilus-share-bar.c:120
 msgid "Sharing Settings"
 msgstr "共享设置"
 
-#: ../src/share-extension.c:157
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "可以用于共享或接收文件"
 
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "可以通过网络或蓝牙共享"
 
-#: ../src/share-extension.c:162
+#: ../src/share-extension.c:160
 msgid "May be shared over the network"
 msgstr "可以通过网络共享"
 
-#: ../src/share-extension.c:168
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "可以用于通过蓝牙接收文件"
 
@@ -180,6 +173,15 @@ msgstr "接收"
 #: ../src/obexpush.c:251
 msgid "Cancel"
 msgstr "取消"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "在网络中共享“公开”目录"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "如果为真(true)，则用户登录时，用户主目录中的“公开”目录将在网络中共享。"
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "通过蓝牙分享“公共”目录"
