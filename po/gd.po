@@ -1,0 +1,175 @@
+# Scottish Gaelic translation for gnome-user-share.
+# Copyright (C) 2014 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# GunChleoc <fios@foramnagaidhlig.net>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-23 08:38+0000\n"
+"PO-Revision-Date: 2014-09-23 13:29+0100\n"
+"Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
+"Language-Team: Fòram na Gàidhlig\n"
+"Language: gd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "When to require passwords"
+msgstr "Cuin a thèid facal-faire iarraidh"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Cuin a thèid facal-faire iarraidh. Seo na luachan dligheach: \"never\", "
+"\"on_write\" agus \"always\"."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr ""
+"Co-dhiù am faod cliantan bluetooth faidhlichean a chur le ObexPush gus nach "
+"fhaod."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Mas e \"true\" a tha seo, 's urrainn do bluetooth faidhlichean a chur gu "
+"pasgan \"Luchdaidhean a-nuas\" a' chleachdaiche nuair a bhios e air logadh "
+"a-steach."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "When to accept files sent over Bluetooth"
+msgstr "Cuin a ghabhar ri faidhlichean 'gan cur le bluetooth"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Co-dhiù a tèid gabhail ri faidhlichean a tha 'gan cur a-nall le bluetooth. "
+"Seo na luachan dligheach: \"always\", \"bonded\" agus \"ask\"."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "Whether to notify about newly received files."
+msgstr "Co-dhiù am faigh thu brath mu fhaidhlichean air an ùr-fhaighinn."
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+msgid "Personal File Sharing"
+msgstr "Co-roinneadh fhaidhlichean pearsanta"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Tòisich co-roinneadh le Bluetooth ObexPush ma tha seo an comas"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr ""
+"share;files;bluetooth;obex;http;network;copy;send;co-"
+"roinneadh;faidhle;faidhlichean;lìonra;lethbhreac;cuir;cur;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Tòisich co-roinneadh fhaidhlichean pearsanta nuair a bhios seo an comas"
+
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "Co-roinneadh"
+
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Roghainnean"
+
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:120
+msgid "Sharing Settings"
+msgstr "Roghainnean a' cho-roinnidh"
+
+#: ../src/share-extension.c:155
+msgid "May be used to share or receive files"
+msgstr "Faodar a chleachdadh gus faidhlichean a cho-roinneadh no fhaighinn"
+
+#: ../src/share-extension.c:158
+msgid "May be shared over the network or Bluetooth"
+msgstr "Faodar co-roinneadh air an lìonra no le bluetooth"
+
+#: ../src/share-extension.c:160
+msgid "May be shared over the network"
+msgstr "Faodar co-roinneadh air an lìonra"
+
+#: ../src/share-extension.c:166
+msgid "May be used to receive files over Bluetooth"
+msgstr "Faodar a chleachdadh gus faidhlichean fhaighinn le bluetooth"
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../src/http.c:125
+#, c-format
+msgid "%s's public files"
+msgstr "Na faidhlichean poblach aig %s"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../src/http.c:129
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Na faidhlichean poblach aig %s air %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:151
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Fhuair thu \"%s\" slighe bluetooth"
+
+#: ../src/obexpush.c:153
+msgid "You received a file"
+msgstr "Fhuair thu faidhle"
+
+#: ../src/obexpush.c:164
+msgid "Open File"
+msgstr "Fosgail am faidhle"
+
+#: ../src/obexpush.c:168
+msgid "Reveal File"
+msgstr "Nochd am faidhle"
+
+#: ../src/obexpush.c:185
+msgid "File reception complete"
+msgstr "Chaidh faighinn an fhaidhle a choileanadh"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:239
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Chaidh am faidhle \"%s\" a chur thugad slighe bluetooth"
+
+#: ../src/obexpush.c:240
+msgid "You have been sent a file"
+msgstr "Chaidh faidhle a chur thugad"
+
+#: ../src/obexpush.c:248
+msgid "Receive"
+msgstr "Faigh e"
+
+#: ../src/obexpush.c:251
+msgid "Cancel"
+msgstr "Sguir dheth"
