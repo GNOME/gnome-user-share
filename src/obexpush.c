@@ -740,7 +740,7 @@ on_bus_acquired (GDBusConnection *connection,
 
 	self->obexd_watch_id = g_bus_watch_name_on_connection (self->connection,
 							       MANAGER_SERVICE,
-							       G_BUS_NAME_WATCHER_FLAGS_NONE,
+							       G_BUS_NAME_WATCHER_FLAGS_AUTO_START,
 							       obexd_appeared_cb,
 							       NULL,
 							       self,
