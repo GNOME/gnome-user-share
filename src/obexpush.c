@@ -241,6 +241,7 @@ ask_user (GDBusMethodInvocation *invocation,
 						notification_text,
 						"bluetooth");
 
+	notify_notification_set_urgency (notification, NOTIFY_URGENCY_CRITICAL);
 	notify_notification_set_timeout (notification, NOTIFY_EXPIRES_NEVER);
 	notify_notification_set_hint_string (notification, "desktop-entry",
 					     "gnome-bluetooth-panel");
