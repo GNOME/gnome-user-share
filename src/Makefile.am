@@ -23,7 +23,6 @@ INCLUDES=						\
 	-I$(top_builddir)				\
 	$(EXTENSION_CFLAGS)				\
 	$(USER_SHARE_CFLAGS)				\
-	$(X_CFLAGS)					\
 	$(WARN_CFLAGS)
 
 gnome_user_share_webdav_SOURCES =	\
@@ -52,9 +51,7 @@ endif
 
 gnome_user_share_obexpush_LDADD =	\
 	libuser-share-common.la		\
-	$(USER_SHARE_LIBS)		\
-	$(SELINUX_LIBS)			\
-	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
+	$(USER_SHARE_LIBS)
 
 nautilus_extensiondir = $(NAUTILUSDIR)
 nautilus_extension_LTLIBRARIES = libnautilus-share-extension.la

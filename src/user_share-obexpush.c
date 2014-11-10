@@ -23,25 +23,17 @@
 
 #include "config.h"
 
-#include <gdk/gdkx.h>
-#include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <glib/gstdio.h>
 #include <gio/gio.h>
 #include <glib-unix.h>
-#include <X11/Xlib.h>
 
 #include "user_share-common.h"
 #include "user_share-private.h"
-#include "user_share-common.h"
-#include "http.h"
 #include "obexpush.h"
 
-#include <stdarg.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <signal.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 #include <bluetooth-client.h>
@@ -57,22 +49,10 @@ static GDBusProxy *session_proxy = NULL;
 static gboolean has_console = TRUE;
 
 #define OBEX_ENABLED (has_console)
-
-static void
-obex_services_start (void)
+static gboolean
+obex_service_should_run (void)
 {
-	if (has_console == FALSE)
-		return;
-
-	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == TRUE) {
-		obex_agent_up ();
-	}
-}
-
-static void
-obex_services_shutdown (void)
-{
-	obex_agent_down ();
+	return OBEX_ENABLED && g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED);
 }
 
 static void
@@ -88,10 +68,10 @@ session_properties_changed_cb (GDBusProxy      *session,
 		has_console = g_variant_get_boolean (v);
 		g_debug ("Received session is active change: now %s", has_console ? "active" : "inactive");
 
-		if (has_console)
-			obex_services_start ();
+		if (obex_service_should_run ())
+			obex_agent_up ();
 		else
-			obex_services_shutdown ();
+			obex_agent_down ();
 
 		g_variant_unref (v);
 	}
@@ -140,12 +120,11 @@ session_init (void)
 static void
 file_sharing_bluetooth_obexpush_enabled_changed (void)
 {
-	if (g_settings_get_boolean (settings,
-				   FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE) {
+	if (obex_service_should_run ()) {
+		obex_agent_up ();
+	} else {
 		obex_agent_down ();
 		_exit (0);
-	} else if (OBEX_ENABLED) {
-		obex_agent_up ();
 	}
 }
 
@@ -169,7 +148,7 @@ file_sharing_bluetooth_obexpush_notify_changed (void)
 }
 
 static void
-setttings_changed (GSettings *settings,
+settings_changed (GSettings *settings,
 		   gchar *path,
 		   gpointer data)
 {
@@ -186,90 +165,81 @@ setttings_changed (GSettings *settings,
 static gboolean
 signal_handler (gpointer user_data)
 {
-	gtk_main_quit ();
+	GApplication *app = user_data;
+	g_application_quit (app);
 	return FALSE;
 }
 
-static int
-x_io_error_handler (Display *xdisplay)
+static void
+user_share_obexpush_bus_closed (GDBusConnection *connection,
+				gboolean remote_peer_vanished,
+				GError *error,
+				GApplication *app)
 {
 	obex_agent_down ();
 	_exit (2);
 }
 
+static void
+user_share_obexpush_activate (GApplication *app)
+{
+	if (!obex_service_should_run ())
+		return;
+
+	/* Initial setting */
+	file_sharing_bluetooth_obexpush_accept_files_changed ();
+	file_sharing_bluetooth_obexpush_notify_changed ();
+	file_sharing_bluetooth_obexpush_enabled_changed ();
+	g_application_hold (app);
+}
+
+static void
+user_share_obexpush_startup (GApplication *app)
+{
+	GDBusConnection *connection;
+
+	signal (SIGPIPE, SIG_IGN);
+	g_unix_signal_add (SIGINT, signal_handler, app);
+	g_unix_signal_add (SIGHUP, signal_handler, app);
+	g_unix_signal_add (SIGTERM, signal_handler, app);
+
+	connection = g_application_get_dbus_connection (app);
+	g_signal_connect (connection, "closed",
+			  G_CALLBACK (user_share_obexpush_bus_closed), app);
+
+	session_init ();
+
+	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
+	g_signal_connect (settings, "changed", G_CALLBACK (settings_changed), NULL);
+}
+
 int
 main (int argc, char **argv)
 {
-	Display *xdisplay;
-	G_GNUC_UNUSED int x_fd;
-	Window selection_owner;
-	Atom xatom;
+	GApplication *application;
+	gint res;
 
 	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
-
-	gtk_init (&argc, &argv);
 
 	if (g_strcmp0 (g_get_real_name (), "root") == 0) {
 		g_warning ("gnome-user-share cannot be started as root for security reasons.");
 		return 1;
 	}
 
-	signal (SIGPIPE, SIG_IGN);
-	g_unix_signal_add (SIGINT, signal_handler, NULL);
-	g_unix_signal_add (SIGHUP, signal_handler, NULL);
-	g_unix_signal_add (SIGTERM, signal_handler, NULL);
+	application = g_application_new ("org.gnome.user-share.obexpush",
+					 G_APPLICATION_FLAGS_NONE);
+	g_signal_connect (application, "startup",
+			  G_CALLBACK (user_share_obexpush_startup), NULL);
+	g_signal_connect (application, "activate",
+			  G_CALLBACK (user_share_obexpush_activate), NULL);
 
-	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
-	if (xdisplay == NULL) {
-		g_warning ("Can't open display");
-		return 1;
-	}
+	res = g_application_run (application, argc, argv);
 
-	xatom = XInternAtom (xdisplay, "_GNOME_USER_SHARE", FALSE);
-	selection_owner = XGetSelectionOwner (xdisplay, xatom);
-
-	if (selection_owner != None) {
-		/* There is an owner already, quit */
-		return 1;
-	}
-
-	selection_owner = XCreateSimpleWindow (xdisplay,
-					       RootWindow (xdisplay, 0),
-					       0, 0, 1, 1,
-					       0, 0, 0);
-	XSetSelectionOwner (xdisplay, xatom, selection_owner, CurrentTime);
-
-	if (XGetSelectionOwner (xdisplay, xatom) != selection_owner) {
-		/* Didn't get the selection */
-		return 1;
-	}
-
-	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
-	if (g_settings_get_boolean (settings, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED) == FALSE)
-		return 1;
-
-	x_fd = ConnectionNumber (xdisplay);
-	XSetIOErrorHandler (x_io_error_handler);
-
-	if (obex_agent_up () == FALSE)
-		return 1;
-
-	g_signal_connect (settings, "changed", G_CALLBACK(setttings_changed), NULL);
-
-	session_init ();
-
-	/* Initial setting */
-	file_sharing_bluetooth_obexpush_accept_files_changed ();
-	file_sharing_bluetooth_obexpush_notify_changed ();
-	file_sharing_bluetooth_obexpush_enabled_changed ();
-
-	gtk_main ();
-
-	g_object_unref (settings);
 	obex_agent_down ();
+	g_object_unref (application);
 
-	return 0;
+	return res;
 }
 
