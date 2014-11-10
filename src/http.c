@@ -418,12 +418,6 @@ http_down (void)
 	kill_httpd ();
 }
 
-gboolean
-http_init (void)
-{
-	return TRUE;
-}
-
 pid_t
 http_get_pid (void)
 {

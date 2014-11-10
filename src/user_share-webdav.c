@@ -141,9 +141,6 @@ main (int argc, char **argv)
 	x_fd = ConnectionNumber (xdisplay);
 	XSetIOErrorHandler (x_io_error_handler);
 
-	if (http_init () == FALSE)
-		return 1;
-
 	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
 	g_signal_connect (settings, "changed", G_CALLBACK(setttings_changed), NULL);
 

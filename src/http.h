@@ -23,6 +23,5 @@
 
 void http_up (void);
 void http_down (void);
-gboolean http_init (void);
 pid_t http_get_pid (void);
 
