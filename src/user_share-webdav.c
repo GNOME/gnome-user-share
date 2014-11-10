@@ -33,21 +33,11 @@
 
 #include "user_share-common.h"
 #include "user_share-private.h"
-#include "user_share-common.h"
 #include "http.h"
-#include "obexpush.h"
 
-#include <stdarg.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <signal.h>
+#include <stdlib.h>
 #include <unistd.h>
-
-/* GNOME Session */
-#define GNOME_SESSION_DBUS_NAME      "org.gnome.SessionManager"
-#define GNOME_SESSION_DBUS_OBJECT    "/org/gnome/SessionManager"
-#define GNOME_SESSION_DBUS_INTERFACE "org.gnome.SessionManager"
 
 static void
 migrate_old_configuration (void)
