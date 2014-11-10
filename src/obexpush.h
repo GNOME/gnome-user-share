@@ -53,7 +53,7 @@ GType obex_agent_get_type (void);
 #define IS_OBEX_AGENT_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), OBEX_AGENT_TYPE))
 #define OBEX_AGENT_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), OBEX_AGENT_TYPE, ObexAgentClass))
 
-gboolean obex_agent_up (void);
+void     obex_agent_up (void);
 void     obex_agent_down (void);
 void     obex_agent_set_accept_files_policy (AcceptSetting setting);
 void     obex_agent_set_notify (gboolean enabled);

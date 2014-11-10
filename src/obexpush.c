@@ -799,6 +799,9 @@ obex_agent_new (void)
 void
 obex_agent_down (void)
 {
+	if (agent == NULL)
+		return;
+
 	g_dbus_connection_call (agent->connection,
 				MANAGER_SERVICE,
 				MANAGER_PATH,
@@ -815,7 +818,7 @@ obex_agent_down (void)
 	g_clear_object (&agent);
 }
 
-gboolean
+void
 obex_agent_up (void)
 {
 	if (agent == NULL)
@@ -824,8 +827,6 @@ obex_agent_up (void)
 	if (!notify_init("gnome-user-share")) {
 		g_warning("Unable to initialize the notification system");
 	}
-
-	return agent != NULL;
 }
 
 void
