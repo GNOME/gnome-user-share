@@ -37,8 +37,7 @@ gnome_user_share_webdav_SOURCES =	\
 gnome_user_share_webdav_LDADD =		\
 	libuser-share-common.la		\
 	$(USER_SHARE_LIBS)		\
-	$(SELINUX_LIBS)			\
-	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
+	$(SELINUX_LIBS)
 
 if USE_BLUETOOTH
 gnome_user_share_obexpush_SOURCES =	\

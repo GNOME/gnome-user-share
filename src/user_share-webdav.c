@@ -23,13 +23,10 @@
 
 #include "config.h"
 
-#include <gdk/gdkx.h>
-#include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <glib/gstdio.h>
 #include <gio/gio.h>
 #include <glib-unix.h>
-#include <X11/Xlib.h>
 
 #include "user_share-common.h"
 #include "user_share-private.h"
@@ -74,83 +71,76 @@ setttings_changed (GSettings *settings,
 static gboolean
 signal_handler (gpointer user_data)
 {
-	gtk_main_quit ();
+	GApplication *app = user_data;
+	g_application_quit (app);
 	return FALSE;
 }
 
-static int
-x_io_error_handler (Display *xdisplay)
+static void
+user_share_webdav_bus_closed (GDBusConnection *connection,
+			      gboolean remote_peer_vanished,
+			      GError *error,
+			      GApplication *app)
 {
 	http_down ();
 	_exit (2);
 }
 
+static void
+user_share_webdav_activate (GApplication *app)
+{
+	/* Initial setting */
+	http_up ();
+	g_application_hold (app);
+}
+
+static void
+user_share_webdav_startup (GApplication *app)
+{
+	GDBusConnection *connection;
+	GSettings *settings;
+
+	signal (SIGPIPE, SIG_IGN);
+	g_unix_signal_add (SIGINT, signal_handler, app);
+	g_unix_signal_add (SIGHUP, signal_handler, app);
+	g_unix_signal_add (SIGTERM, signal_handler, app);
+
+	migrate_old_configuration ();
+
+	connection = g_application_get_dbus_connection (app);
+	g_signal_connect (connection, "closed",
+			  G_CALLBACK (user_share_webdav_bus_closed), app);
+
+	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
+	g_signal_connect (settings, "changed", G_CALLBACK (setttings_changed), NULL);
+	g_object_set_data_full (G_OBJECT (app), "user_share_settings", settings, g_object_unref);
+}
+
 int
 main (int argc, char **argv)
 {
-	Display *xdisplay;
-	G_GNUC_UNUSED int x_fd;
-	Window selection_owner;
-	Atom xatom;
-	GSettings *settings;
+	GApplication *application;
+	gint res;
 
 	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
-
-	gtk_init (&argc, &argv);
 
 	if (g_strcmp0 (g_get_real_name (), "root") == 0) {
 		g_warning ("gnome-user-share cannot be started as root for security reasons.");
 		return 1;
 	}
 
-	signal (SIGPIPE, SIG_IGN);
-	g_unix_signal_add (SIGINT, signal_handler, NULL);
-	g_unix_signal_add (SIGHUP, signal_handler, NULL);
-	g_unix_signal_add (SIGTERM, signal_handler, NULL);
+	application = g_application_new ("org.gnome.user-share.webdav",
+					 G_APPLICATION_FLAGS_NONE);
+	g_signal_connect (application, "startup",
+			  G_CALLBACK (user_share_webdav_startup), NULL);
+	g_signal_connect (application, "activate",
+			  G_CALLBACK (user_share_webdav_activate), NULL);
+	res = g_application_run (application, argc, argv);
 
-	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
-	if (xdisplay == NULL) {
-		g_warning ("Can't open display");
-		return 1;
-	}
-
-	xatom = XInternAtom (xdisplay, "_GNOME_USER_SHARE", FALSE);
-	selection_owner = XGetSelectionOwner (xdisplay, xatom);
-
-	if (selection_owner != None) {
-		/* There is an owner already, quit */
-		return 1;
-	}
-
-	selection_owner = XCreateSimpleWindow (xdisplay,
-					       RootWindow (xdisplay, 0),
-					       0, 0, 1, 1,
-					       0, 0, 0);
-	XSetSelectionOwner (xdisplay, xatom, selection_owner, CurrentTime);
-
-	if (XGetSelectionOwner (xdisplay, xatom) != selection_owner) {
-		/* Didn't get the selection */
-		return 1;
-	}
-
-	migrate_old_configuration ();
-
-
-	x_fd = ConnectionNumber (xdisplay);
-	XSetIOErrorHandler (x_io_error_handler);
-
-	settings = g_settings_new (GNOME_USER_SHARE_SCHEMAS);
-	g_signal_connect (settings, "changed", G_CALLBACK(setttings_changed), NULL);
-
-	/* Initial setting */
-	http_up ();
-
-	gtk_main ();
-
-	g_object_unref (settings);
 	http_down ();
+	g_object_unref (application);
 
-	return 0;
+	return res;
 }
