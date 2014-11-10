@@ -2,106 +2,111 @@
 # Copyright (C) 2013 gnome-user-share's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-share package.
 # Daniel Martínez <dmartinez@src.gnome.org>, 2013.
+# Daniel Martinez <entaltoaragon@gmail.com>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-02-17 17:55+0000\n"
-"PO-Revision-Date: 2013-02-18 23:31+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-11-09 21:10+0000\n"
+"PO-Revision-Date: 2014-11-10 10:30+0100\n"
 "Last-Translator: Daniel Martinez <entaltoaragon@gmail.com>\n"
-"Language-Team: Aragonese <softaragones@googlegroups.com>\n"
+"Language-Team: Aragonés <softaragones@googlegroups.com>\n"
 "Language: an\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Compartir a carpeta \"Publico\" por ret"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
-msgstr "Si isto ye cierto, a carpeta \"Publico\" en a carpeta personal d'os usuarios se compartirá por ret quan l'usuario enciete sesión."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Quan requerir claus"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr "Quan pedir claus. As opcions posibles son: \"never\" (nunca), \"on_write\" (en escribir) y \"always\" (siempre)."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Quan pedir claus. As opcions posibles son: \"never\" (nunca), \"on_write"
+"\" (en escribir) y \"always\" (siempre)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "Compartir a carpeta \"Publico\" por Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
-msgstr "Si isto ye cierto, a carpeta \"Publico\" en a carpeta personal de l'usuario se compartirá por Bluetooth quan l'usuario enciete sesión."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Indica si se permite escribir fichers a os clients por Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
-msgstr "Indica si se permite a os clients por Bluetooth escribir fichers u solament compartir os fichers de lectura."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "Si os clients Bluetooth amenesten emparellar-se con l'equipo ta ninviar fichers."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr "Si os clients Bluetooth pueden ninviar fichers fendo servir ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
-msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
-msgstr "Si isto ye cierto, os dispositivos Bluetooth pueden ninviar fichers a la carpeta Descargas de l'usuario quan haiga encetau a sesión."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Si isto ye cierto, os dispositivos Bluetooth pueden ninviar fichers a la "
+"carpeta Descargas de l'usuario quan haiga encetau a sesión."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Quán acceptar fichers ninviaus por Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
-msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
-msgstr "Quán acceptar fichers ninviaus por Bluetooth. As valors posibles son: \"always\" (siempre), \"bonded\" (vinculaus) y \"ask\" (preguntar)."
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Quán acceptar fichers ninviaus por Bluetooth. As valors posibles son: "
+"\"always\" (siempre), \"bonded\" (vinculaus) y \"ask\" (preguntar)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Si notificar sobre os nuevos fichers recibius."
 
-#: ../data/gnome-user-share.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Compartición de fichers personals"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Lanzar a compartición por ObexPush Bluetooth si ye activada"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "compartir:fichers:bluetooth;obex;http;ret;copiar;ninviar;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Lanzar a compartición de fichers personals si son activadas"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "compartir:fichers:bluetooth;obex;http;ret;copiar;ninviar;"
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "Compartición"
 
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferencias"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Lanzar as preferencias de compartición de fichers personals"
+msgid "Sharing Settings"
+msgstr "Opcions de compartición"
 
-#: ../src/share-extension.c:152
+#: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
 msgstr "Se puede fer servir ta compartir u recibir fichers"
 
-#: ../src/share-extension.c:154
+#: ../src/share-extension.c:158
 msgid "May be shared over the network or Bluetooth"
 msgstr "Se puede compartir a traviés d'o ret u por Bluetooth"
 
-#: ../src/share-extension.c:158
+#: ../src/share-extension.c:160
+#| msgid "May be shared over the network or Bluetooth"
+msgid "May be shared over the network"
+msgstr "Se puede compartir a traviés d'o ret"
+
+#: ../src/share-extension.c:166
 msgid "May be used to receive files over Bluetooth"
 msgstr "Se puede fer servir ta recibir fichers por Bluetooth"
 
@@ -114,37 +119,95 @@ msgstr "Se puede fer servir ta recibir fichers por Bluetooth"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Fichers publicos de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Fichers publicos de %s en %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Ha recibiu \"%s\" a traviés de Bluetooth"
 
-#: ../src/obexpush.c:135
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "Recibió un fichero"
 
-#: ../src/obexpush.c:146
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "Ubrir fichero"
 
-#: ../src/obexpush.c:150
+#: ../src/obexpush.c:168
 msgid "Reveal File"
 msgstr "Revelar fichero"
 
-#: ../src/obexpush.c:167
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "A recepción de fichers ye rematada"
 
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:239
+#, c-format
+#| msgid "You received \"%s\" via Bluetooth"
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Has ninviau un fichero \"%s\" a traviés de Bluetooth"
+
+#: ../src/obexpush.c:240
+#| msgid "You received a file"
+msgid "You have been sent a file"
+msgstr "Has ninviau un fichero"
+
+#: ../src/obexpush.c:249
+msgid "Receive"
+msgstr "Recibir"
+
+#: ../src/obexpush.c:252
+msgid "Cancel"
+msgstr "Cancelar"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Compartir a carpeta \"Publico\" por ret"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "Si isto ye cierto, a carpeta \"Publico\" en a carpeta personal d'os "
+#~ "usuarios se compartirá por ret quan l'usuario enciete sesión."
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "Compartir a carpeta \"Publico\" por Bluetooth"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "Si isto ye cierto, a carpeta \"Publico\" en a carpeta personal de "
+#~ "l'usuario se compartirá por Bluetooth quan l'usuario enciete sesión."
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "Indica si se permite escribir fichers a os clients por Bluetooth"
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "Indica si se permite a os clients por Bluetooth escribir fichers u "
+#~ "solament compartir os fichers de lectura."
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "Si os clients Bluetooth amenesten emparellar-se con l'equipo ta ninviar "
+#~ "fichers."
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "Lanzar as preferencias de compartición de fichers personals"
