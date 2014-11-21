@@ -29,10 +29,6 @@
 #include <libnautilus-extension/nautilus-menu-provider.h>
 #include <libnautilus-extension/nautilus-location-widget-provider.h>
 
-#ifdef HAVE_BLUETOOTH
-#include <bluetooth-client.h>
-#endif
-
 #include "nautilus-share-bar.h"
 #include "user_share-common.h"
 
@@ -90,41 +86,15 @@ bar_response_cb (NautilusShareBar *bar,
                 launch_prefs_on_window ();
 }
 
-#ifdef HAVE_BLUETOOTH
-static void
-downloads_bar_set_from_bluetooth_status (GtkWidget *bar)
-{
-	BluetoothClient *client;
-	gboolean bt_powered;
-
-	client = g_object_get_data (G_OBJECT (bar), "bluetooth-client");
-	g_object_get (G_OBJECT (client),
-		      "default-adapter-powered", &bt_powered,
-		      NULL);
-	gtk_widget_set_visible (bar, bt_powered);
-}
-
-static void
-default_adapter_powered_cb (GObject    *gobject,
-			    GParamSpec *pspec,
-			    GtkWidget  *bar)
-{
-	downloads_bar_set_from_bluetooth_status (bar);
-}
-#endif /* HAVE_BLUETOOTH */
-
 static GtkWidget *
 nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
                                          const char                     *uri,
                                          GtkWidget                      *window)
 {
 	GFile             *file;
-	GtkWidget         *bar = NULL;
-	guint              i;
+	GtkWidget         *bar;
 	gboolean           enable = FALSE;
-	GFile             *home;
-	const GUserDirectory special_dirs[] = { G_USER_DIRECTORY_PUBLIC_SHARE, G_USER_DIRECTORY_DOWNLOAD };
-	gboolean is_dir[] = { FALSE, FALSE };
+	GFile             *home, *dir;
 
 	file = g_file_new_for_uri (uri);
 	home = g_file_new_for_path (g_get_home_dir ());
@@ -135,48 +105,23 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 		g_object_unref (file);
 		return NULL;
 	}
-
 	g_object_unref (home);
 
-	for (i = 0; i < G_N_ELEMENTS (special_dirs); i++) {
-		GFile *dir;
-		dir = lookup_dir_with_fallback (special_dirs[i]);
-		if (g_file_equal (dir, file)) {
-			enable = TRUE;
-			is_dir[i] = TRUE;
-		}
-		g_object_unref (dir);
-	}
+	dir = lookup_dir_with_fallback (G_USER_DIRECTORY_PUBLIC_SHARE);
+	enable = g_file_equal (dir, file);
+	g_object_unref (dir);
+	g_object_unref (file);
 
 	if (enable == FALSE)
 		return NULL;
 
-	if (is_dir[0] != FALSE && is_dir[1] != FALSE) {
-		bar = nautilus_share_bar_new (_("May be used to share or receive files"));
-	} else if (is_dir[0] != FALSE) {
-		bar = nautilus_share_bar_new (_("May be shared over the network"));
-	} else {
-#ifdef HAVE_BLUETOOTH
-		BluetoothClient *client;
+	bar = nautilus_share_bar_new (_("May be shared over the network"));
 
-		bar = nautilus_share_bar_new (_("May be used to receive files over Bluetooth"));
-		gtk_widget_set_no_show_all (bar, TRUE);
-		client = bluetooth_client_new ();
-		g_object_set_data_full (G_OBJECT (bar), "bluetooth-client", client, g_object_unref);
-		g_signal_connect (G_OBJECT (client), "notify::default-adapter-powered",
-				  G_CALLBACK (default_adapter_powered_cb), bar);
-		downloads_bar_set_from_bluetooth_status (bar);
-#endif /* HAVE_BLUETOOTH */
-	}
+	g_signal_connect (bar, "response",
+			  G_CALLBACK (bar_response_cb), window);
 
-	if (bar != NULL) {
-		g_signal_connect (bar, "response",
-				  G_CALLBACK (bar_response_cb), window);
+	gtk_widget_show_all (bar);
 
-		gtk_widget_show_all (bar);
-	}
-
-	g_object_unref (file);
 
         return bar;
 }
