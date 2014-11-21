@@ -1,4 +1,12 @@
-This is gnome-user-share 3.14.0, a system for easy sharing of user files.
+This is gnome-user-share 3.14.1, a system for easy sharing of user files.
+
+Major changes since 3.14.0:
+- Always hide the info bar in Downloads
+- Don't talk of "sharing over Bluetooth" since ObexFTP support was removed
+- Make sure obexd daemon is launched when ObexPUSH is enabled
+- Make sure that Bluetooth notifications don't time out
+- Fix launching obexpush and webdav sharing at the same time
+- Updated translations
 
 Major changes since 3.13.91:
 - Updated translations
