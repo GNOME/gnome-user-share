@@ -154,11 +154,7 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	if (is_dir[0] != FALSE && is_dir[1] != FALSE) {
 		bar = nautilus_share_bar_new (_("May be used to share or receive files"));
 	} else if (is_dir[0] != FALSE) {
-#ifndef HAVE_BLUETOOTH
-		bar = nautilus_share_bar_new (_("May be shared over the network or Bluetooth"));
-#else
 		bar = nautilus_share_bar_new (_("May be shared over the network"));
-#endif /* !HAVE_BLUETOOTH */
 	} else {
 #ifdef HAVE_BLUETOOTH
 		BluetoothClient *client;
