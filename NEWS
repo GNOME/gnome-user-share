@@ -1,4 +1,8 @@
-This is gnome-user-share 3.14.1, a system for easy sharing of user files.
+This is gnome-user-share 3.14.2, a system for easy sharing of user files.
+
+Major changes since 3.14.1:
+- Fix crasher in gsettings-data-convert
+- Updated translations
 
 Major changes since 3.14.0:
 - Always hide the info bar in Downloads
