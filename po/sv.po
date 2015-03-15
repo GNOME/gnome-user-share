@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-01 08:18+0000\n"
+"POT-Creation-Date: 2015-03-14 09:30+0000\n"
 "PO-Revision-Date: 2014-09-01 10:22+0100\n"
 "Last-Translator: Mattias Eriksson <snaggen@gmail.com>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
-msgstr "Huruvida notifiering om nyligen mottagna filer ska göras."
+msgstr "Huruvida avisering om nyligen mottagna filer ska göras."
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
@@ -90,21 +90,9 @@ msgstr "Inställningar"
 msgid "Sharing Settings"
 msgstr "Inställningar för delning"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Kan användas för att dela ut eller ta emot filer"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Kan delas ut över nätverket eller Bluetooth"
-
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:118
 msgid "May be shared over the network"
 msgstr "Kan delas ut över nätverket"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Kan användas för att ta emot filer över Bluetooth"
 
 # Vi undviker på detta sätt problemen som "%ss publika filer" skulle
 # skapat, exempelvis "Alexs publika filer" eller "Markuss publika filer".
@@ -167,13 +155,22 @@ msgstr "En fil ”%s” har skickats till dig via Bluetooth"
 msgid "You have been sent a file"
 msgstr "En fil har skickats till dig"
 
-#: ../src/obexpush.c:248
+#: ../src/obexpush.c:249
 msgid "Receive"
 msgstr "Ta emot"
 
-#: ../src/obexpush.c:251
+#: ../src/obexpush.c:252
 msgid "Cancel"
 msgstr "Avbryt"
+
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Kan användas för att dela ut eller ta emot filer"
+
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Kan delas ut över nätverket eller Bluetooth"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Kan användas för att ta emot filer över Bluetooth"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Dela ut publik katalog över nätverket"
@@ -248,7 +245,7 @@ msgstr "Avbryt"
 #~ msgstr "_Acceptera filer: "
 
 #~ msgid "_Notify about received files"
-#~ msgstr "_Notifiera om mottagna filer"
+#~ msgstr "_Avisera om mottagna filer"
 
 #~ msgid "Preferences for sharing of files"
 #~ msgstr "Inställningar för utdelning av filer"
