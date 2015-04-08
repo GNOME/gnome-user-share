@@ -6,15 +6,15 @@
 # package.
 #
 # Ivar Smolin <okul linux ee>, 2009.
-# Mattias Põldaru <mahfiaz gmail com>, 2010, 2012, 2013.
+# Mattias Põldaru <mahfiaz gmail com>, 2010, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-10 07:33+0000\n"
-"PO-Revision-Date: 2013-09-11 23:09+0300\n"
+"POT-Creation-Date: 2014-04-15 20:36+0000\n"
+"PO-Revision-Date: 2014-04-16 00:45+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "Language: et\n"
@@ -42,31 +42,6 @@ msgid ""
 msgstr ""
 "Millal peab paroole küsima. Võimalikud väärtused on \"never\" (mitte "
 "kunagi), \"on_write\" (kirjutamisel), ja \"always\" (alati)."
-
-msgid "Share Public directory over Bluetooth"
-msgstr "Failide jagamine Bluetoothi kaudu"
-
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Kui määratud, siis on kasutaja kodukataloogis asuv avalik kataloog jagatud "
-"kasutaja sisselogimise ajal Bluetoothi liidese kaudu."
-
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Kas Bluetoothi klientidel on lubatud faile kirjutada või mitte."
-
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Kas Bluetoothi klientidel on lubatud faile kirjutada või on failid ainult "
-"lugemiseks."
-
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Kas Bluetoothi kliendid peavad failide saatmiseks olema arvutiga seotud või "
-"mitte."
 
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr ""
@@ -103,11 +78,16 @@ msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr ""
 "jagamine;failid;faile;bluetooth;obex;http;võrk;kopeerimine;saatmine;saada;"
 
+#. translators: This is the label for the "Sharing" panel in the Settings
+msgid "Sharing"
+msgstr "Jagamine"
+
 msgid "Preferences"
 msgstr "Eelistused"
 
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Isiklike failide jagamise eelistuste avamine"
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
+msgid "Sharing Settings"
+msgstr "Jagamise sätted"
 
 msgid "May be used to share or receive files"
 msgstr "Seda kataloogi kasutatakse failide jagamiseks ja vastuvõtmiseks"
@@ -178,6 +158,35 @@ msgstr "Võta vastu"
 
 msgid "Cancel"
 msgstr "Loobu"
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "Failide jagamine Bluetoothi kaudu"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "Kui määratud, siis on kasutaja kodukataloogis asuv avalik kataloog "
+#~ "jagatud kasutaja sisselogimise ajal Bluetoothi liidese kaudu."
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "Kas Bluetoothi klientidel on lubatud faile kirjutada või mitte."
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "Kas Bluetoothi klientidel on lubatud faile kirjutada või on failid ainult "
+#~ "lugemiseks."
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "Kas Bluetoothi kliendid peavad failide saatmiseks olema arvutiga seotud "
+#~ "või mitte."
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "Isiklike failide jagamise eelistuste avamine"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "Isiklike failide jagamise eelistused"
