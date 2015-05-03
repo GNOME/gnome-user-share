@@ -1,43 +1,30 @@
 # Occitan translation of gnome-user-share.
-# Copyright (C) 2005-2012 Free Software Foundation, Inc.
+# Copyright (C) 2005-2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
-# Cédric Valmary (totenoc.org) <cvalmary@yahoo.fr>, 2013
-# None <None>, 2013.
-# Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>, 2015.
+# Claude Paroz <claude@2xlibre.net>, 2008-2014
+# Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share HEAD\n"
+"Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-03 19:48+0000\n"
-"PO-Revision-Date: 2015-04-24 11:17+0200\n"
-"Last-Translator: Cédric Valmary (Tot en Òc) <cvalmary@yahoo.fr>\n"
-"Language-Team: www.totenoc.org\n"
+"POT-Creation-Date: 2015-04-27 08:49+0000\n"
+"PO-Revision-Date: 2015-05-03 16:25+0200\n"
+"Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
+"Language-Team: Tot en òc (totenoc.eu)\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "Parteja lo repertòri Public sus la ret"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Se VERAI, lo repertòri Public dins le dorsièr personal de l'utilizaire es "
-"partejat sus la ret quand aqueste se connècta."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "Quora exigir los senhals"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -45,108 +32,71 @@ msgstr ""
 "Quora demandar de senhals. Las valors possiblas son : « never » (pas jamai), "
 "« on_write » (a l'escritura) e « always » (totjorn)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "Parteja lo repertòri Public per Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr ""
-"Se VERAI, lo repertòri Public dins lo dorsièr personal de l'utilizaire es "
-"partejat per Bluetooth quand aqueste se connècta."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "Indica se cal autorizar los clients Bluetooth d'escriure de fichièrs."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr ""
-"Indica se cal autorizar los clients Bluetooth a escriure de fichièrs o se "
-"s'agís de partejar los fichièrs en lectura unicament."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr ""
-"Indica se los clients Bluetooth se devon ligar a l'ordenador per mandar de "
-"fichièrs."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "Whether Bluetooth clients can send files using ObexPush."
 msgstr ""
 "Indica se los clients Bluetooth pòdon mandar de fichièrs en utilizant "
 "ObexPush."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
 msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
 "Se VERAI, los periferics Bluetooth pòdon mandar de fichièrs dins lo dorsièr "
-"Telecargaments de l'utilizaire quand aqueste es connectat."
+"Telecargaments de l'utilizaire quand es connectat."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "When to accept files sent over Bluetooth"
 msgstr "Quora acceptar de fichièrs per Bluetooth"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
 msgid ""
 "When to accept files sent over Bluetooth. Possible values are \"always\", "
 "\"bonded\" and \"ask\"."
 msgstr ""
-"Quora acceptar los fichièrs per Bluetooth. Las valors possiblas son : « "
+"Quora accepta los fichièrs per Bluetooth. Las valors possiblas son : « "
 "always » (totjorn), « bonded » (se ligat) e « ask » (demandar)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "Whether to notify about newly received files."
 msgstr "Indica se cal senhalar los fichièrs novèlament recebuts."
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:1
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-#: ../src/nautilus-share-bar.c:102
 msgid "Personal File Sharing"
-msgstr "Parteja de fichièrs personals"
+msgstr "Partiment de fichièrs personals"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:2
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Avia lo partiment de fichièrs personals s'es activat"
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Avia lo partiment Bluetooth ObexPush s'es activat"
 
-#: ../data/gnome-user-share-obexftp.desktop.in.in.h:3
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgstr "partejar;fichièrs;bluetooth;obex;http;ret;copiar;mandadís;mandar;"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Avia lo partiment de fichièrs personals s'es activat"
+
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "Partiment"
+
 #: ../src/nautilus-share-bar.c:116
 msgid "Preferences"
 msgstr "Preferéncias"
 
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Dobrís las preferéncias del partiment de fichièrs personals"
+msgid "Sharing Settings"
+msgstr "Paramètres de partiment"
 
-#: ../src/share-extension.c:157
-msgid "May be used to share or receive files"
-msgstr "Pòt èsser utilizat per partejar o recebre de fichièrs"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network or Bluetooth"
-msgstr "Pòt èsser partejat sus la ret o per Bluetooth"
-
-#: ../src/share-extension.c:162
+#: ../src/share-extension.c:118
 msgid "May be shared over the network"
 msgstr "Pòt èsser partejat sus la ret"
-
-#: ../src/share-extension.c:168
-msgid "May be used to receive files over Bluetooth"
-msgstr "Pòt èsser utilizat per recebre de fichièrs per Bluetooth"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -157,125 +107,73 @@ msgstr "Pòt èsser utilizat per recebre de fichièrs per Bluetooth"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Fichièrs publics de %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Fichièrs publics de %s sus %s"
 
 #. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:158
+#: ../src/obexpush.c:151
 #, c-format
 msgid "You received \"%s\" via Bluetooth"
 msgstr "Avètz recebut « %s » per Bluetooth"
 
-#: ../src/obexpush.c:160
+#: ../src/obexpush.c:153
 msgid "You received a file"
 msgstr "Avètz recebut un fichièr"
 
-#: ../src/obexpush.c:171
+#: ../src/obexpush.c:164
 msgid "Open File"
 msgstr "Dobrir lo fichièr"
 
-#: ../src/obexpush.c:175
+#: ../src/obexpush.c:168
 msgid "Reveal File"
-msgstr "Far veire lo fichièr"
+msgstr "Mostrar lo fichièr"
 
-#: ../src/obexpush.c:192
+#: ../src/obexpush.c:185
 msgid "File reception complete"
 msgstr "Recepcion de fichièrs acabada"
 
 #. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:251
+#: ../src/obexpush.c:239
 #, c-format
 msgid "You have been sent a file \"%s\" via Bluetooth"
 msgstr "Un fichièr « %s » vos es estat mandat per Bluetooth"
 
-#: ../src/obexpush.c:252
+#: ../src/obexpush.c:240
 msgid "You have been sent a file"
 msgstr "Un fichièr vos es estat mandat"
 
-#: ../src/obexpush.c:260
+#: ../src/obexpush.c:249
 msgid "Receive"
 msgstr "Recebre"
 
-#: ../src/obexpush.c:263
+#: ../src/obexpush.c:252
 msgid "Cancel"
 msgstr "Anullar"
 
-#~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Préférences du partage de fichiers personnels"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Pòt èsser utilizat per partager o recevoir des fichièrs"
 
-#~ msgid "Share Files over the Network"
-#~ msgstr "Partage de fichiers sur le réseau"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Pòt èsser partejat sus lo ret o per Bluetooth"
 
-#~ msgid "_Share public files on network"
-#~ msgstr "_Partager les fichiers publics sur le réseau"
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Pòt èsser utilizat per recevoir des fichièrs per Bluetooth"
 
-#~ msgid "_Password:"
-#~ msgstr "_Mot de passe :"
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Partage lo repertòri Public sus lo ret"
 
-#~ msgid "_Require password:"
-#~ msgstr "_Exiger le mot de passe :"
-
-#~ msgid "Share Files over Bluetooth"
-#~ msgstr "Partage de fichiers par Bluetooth"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Partager les fichiers publics par _Bluetooth"
-
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "Aut_oriser les périphériques externes à supprimer des fichiers"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "Exiger que les périphériques e_xternes se lient à cet ordinateur"
-
-#~ msgid "Receive Files over Bluetooth"
-#~ msgstr "Réception de fichiers par Bluetooth"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
 #~ msgstr ""
-#~ "Recevoir les fichiers par Bluetooth dans le dossier _Téléchargements"
-
-#~ msgid "_Accept files: "
-#~ msgstr "_Accepter les fichiers :"
-
-#~ msgid "_Notify about received files"
-#~ msgstr "A_vertir quand des fichiers ont été reçus"
-
-#~ msgid "Preferences for sharing of files"
-#~ msgstr "Préférences pour le partage de fichiers"
-
-#~ msgid "Unable to launch the Personal File Sharing Preferences"
-#~ msgstr ""
-#~ "Impossible d'ouvrir les préférences du partage de fichiers personnels"
-
-#~ msgid "No reason"
-#~ msgstr "Aucune raison"
-
-#~ msgid "Could not display the help contents."
-#~ msgstr "Impossible d'afficher le sommaire de l'aide."
-
-#~ msgid "Could not build interface."
-#~ msgstr "Impossible de construire l'interface."
-
-#~ msgid "Never"
-#~ msgstr "Jamais"
-
-#~ msgid "When writing files"
-#~ msgstr "Au moment d'écrire les fichiers"
-
-#~ msgid "Always"
-#~ msgstr "Toujours"
-
-#~ msgid "Only for set up devices"
-#~ msgstr "Seulement pour les périphériques configurés"
-
-#~ msgid "Ask"
-#~ msgstr "Demander"
+#~ "Se VRAI, lo repertòri Public dins lo dorsièr personal de l'utilizaire "
+#~ "est partejat sus lo ret lorsque celui-ci se connecte."
