@@ -1,22 +1,24 @@
 # Swedish messages for gnome-user-share.
-# Copyright (C) 2005, 2006, 2008, 2009, 2010, 2012 Free Software Foundation, Inc.
+# Copyright © 2005, 2006, 2008, 2009, 2010, 2012, 2014, 2015 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2008, 2009, 2010, 2012.
+# Mattias Eriksson <snaggen@gmail.com>, 2014.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-14 09:30+0000\n"
-"PO-Revision-Date: 2014-09-01 10:22+0100\n"
-"Last-Translator: Mattias Eriksson <snaggen@gmail.com>\n"
+"POT-Creation-Date: 2015-07-30 18:07+0000\n"
+"PO-Revision-Date: 2015-07-30 21:26+0200\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.2\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -30,51 +32,17 @@ msgstr ""
 "När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), "
 "\"on_write\" (vid skrivning) och \"always\" (alltid)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Huruvida Bluetooth-klienter kan skicka filer med ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Om detta är sant kan Bluetooth-enheter skicka filer till användarens katalog "
-"Hämtat när användaren är inloggad."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "När filer skickade över Bluetooth ska accepteras"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"När filer som skickas över Bluetooth ska accepteras. Möjliga värden är "
-"\"always\" (alltid), \"bonded\" (ihopparad) och \"ask\" (fråga)."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Huruvida avisering om nyligen mottagna filer ska göras."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Utdelning av personliga filer"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Starta delning via Bluetooth ObexPush om aktiverat"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "dela;filer;bluetooth;blåtand;obex;http;nätverk;kopiera;skicka;"
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Starta personlig filutdelning om aktiverat"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "dela;filer;http;nätverk;kopiera;skicka;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -123,45 +91,58 @@ msgstr "%.0sPublika filer"
 msgid "%s's public files on %s"
 msgstr "%.0sPublika filer på %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Du tog emot ”%s” via Bluetooth"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Huruvida Bluetooth-klienter kan skicka filer med ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Du tog emot en fil"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Om detta är sant kan Bluetooth-enheter skicka filer till användarens "
+#~ "katalog Hämtat när användaren är inloggad."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Öppna fil"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "När filer skickade över Bluetooth ska accepteras"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Visa fil"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "När filer som skickas över Bluetooth ska accepteras. Möjliga värden är "
+#~ "\"always\" (alltid), \"bonded\" (ihopparad) och \"ask\" (fråga)."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Filmottagningen är färdig"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Huruvida avisering om nyligen mottagna filer ska göras."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "En fil ”%s” har skickats till dig via Bluetooth"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Starta delning via Bluetooth ObexPush om aktiverat"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "En fil har skickats till dig"
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Du tog emot ”%s” via Bluetooth"
 
-#: ../src/obexpush.c:249
-msgid "Receive"
-msgstr "Ta emot"
+#~ msgid "You received a file"
+#~ msgstr "Du tog emot en fil"
 
-#: ../src/obexpush.c:252
-msgid "Cancel"
-msgstr "Avbryt"
+#~ msgid "Open File"
+#~ msgstr "Öppna fil"
+
+#~ msgid "Reveal File"
+#~ msgstr "Visa fil"
+
+#~ msgid "File reception complete"
+#~ msgstr "Filmottagningen är färdig"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "En fil ”%s” har skickats till dig via Bluetooth"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "En fil har skickats till dig"
+
+#~ msgid "Receive"
+#~ msgstr "Ta emot"
+
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
 
 #~ msgid "May be used to share or receive files"
 #~ msgstr "Kan användas för att dela ut eller ta emot filer"
