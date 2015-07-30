@@ -5,24 +5,6 @@
 		<_summary>When to require passwords</_summary>
 		<_description>When to ask for passwords. Possible values are "never", "on_write", and "always".</_description>
 	</key>
-
-	<key name="bluetooth-obexpush-enabled" type="b">
-		<default>false</default>
-		<_summary>Whether Bluetooth clients can send files using ObexPush.</_summary>
-		<_description>If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in.</_description>
-	</key>
-
-	<key name="bluetooth-accept-files" type="s">
-		<default>'bonded'</default>
-		<_summary>When to accept files sent over Bluetooth</_summary>
-		<_description>When to accept files sent over Bluetooth. Possible values are "always", "bonded" and "ask".</_description>
-	</key>
-
-	<key name="bluetooth-notify" type="b">
-		<default>true</default>
-		<_summary>Whether to notify about newly received files.</_summary>
-		<_description>Whether to notify about newly received files.</_description>
-	</key>
 </schema>
 </schemalist>
 

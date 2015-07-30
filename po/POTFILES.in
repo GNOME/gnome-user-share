@@ -1,11 +1,8 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
 data/org.gnome.desktop.file-sharing.gschema.xml.in.in
-data/gnome-user-share-obexpush.desktop.in.in
 data/gnome-user-share-webdav.desktop.in.in
 src/nautilus-share-bar.c
 src/share-extension.c
 src/http.c
-src/obexpush.c
 src/user_share-webdav.c
-src/user_share-obexpush.c

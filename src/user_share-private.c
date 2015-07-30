@@ -34,12 +34,6 @@ static char *password_setting_strings[] = {
     "always"
 };
 
-static char *accept_file_strings[] = {
-    "always",
-    "bonded",
-    "ask"
-};
-
 const char *
 password_string_from_setting (PasswordSetting setting)
 {
@@ -69,36 +63,3 @@ password_setting_from_string (const char *str)
     /* Fallback on secure pref */
     return PASSWORD_ALWAYS;
 }
-
-const char *
-accept_string_from_setting (AcceptSetting setting)
-{
-    
-    if (setting >= 0 && setting <= ACCEPT_ASK)
-	return accept_file_strings[setting];
-    
-    /* Fallback on secure pref */
-    return accept_file_strings[ACCEPT_BONDED];
-}
-
-AcceptSetting
-accept_setting_from_string (const char *str)
-{
-    if (str != NULL) {
-	if (strcmp (str, "always") == 0) {
-	    return ACCEPT_ALWAYS;
-	}
-	if (strcmp (str, "bonded") == 0 ||
-	    strcmp (str, "bonded_and_trusted") == 0) {
-	    return ACCEPT_BONDED;
-	}
-	if (strcmp (str, "ask") == 0) {
-	    return ACCEPT_ASK;
-	}
-    }
-	
-    /* Fallback on secure pref */
-    return ACCEPT_BONDED;
-}
-
-

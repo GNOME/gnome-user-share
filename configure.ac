@@ -57,18 +57,7 @@ fi
 
 AC_SUBST(HTTPD)
 
-BLUETOOTH_PKG="gnome-bluetooth-1.0 >= 3.9.3"
-AC_ARG_ENABLE(bluetooth, AS_HELP_STRING([--disable-bluetooth],[compile without bluetooth support]),,enable_bluetooth=yes)
-if test "x$enable_bluetooth" = "xyes"; then
-  PKG_CHECK_MODULES(BLUETOOTH, $BLUETOOTH_PKG)
-  AC_DEFINE(HAVE_BLUETOOTH, 1, [Set to true if gnome-bluetooth support is available])
-else
-  BLUETOOTH_PKG=""
-  AC_MSG_WARN([Bluetooth support is disabled.])
-fi
-AM_CONDITIONAL(USE_BLUETOOTH, [test "$enable_bluetooth" = "yes"])
-
-PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.28 gio-2.0 >= 2.26 gtk+-3.0 libnotify libcanberra-gtk3 $BLUETOOTH_PKG)
+PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.28 gio-2.0 >= 2.26 gtk+-3.0 libnotify libcanberra-gtk3)
 AC_SUBST(USER_SHARE_CFLAGS)
 AC_SUBST(USER_SHARE_LIBS)
 
@@ -188,13 +177,7 @@ fi
 AC_CONFIG_FILES([
 Makefile
 data/Makefile
-data/icons/Makefile
-data/icons/16x16/Makefile
-data/icons/22x22/Makefile
-data/icons/32x32/Makefile
-data/icons/48x48/Makefile
 data/gnome-user-share-webdav.desktop.in
-data/gnome-user-share-obexpush.desktop.in
 data/org.gnome.desktop.file-sharing.gschema.xml.in
 po/Makefile.in
 src/Makefile
@@ -205,11 +188,6 @@ AC_MSG_NOTICE([gnome-user-share was configured with the following options:])
 AC_MSG_NOTICE([** httpd location: $HTTP])
 AC_MSG_NOTICE([** httpd modules path: $MODULES_PATH])
 AC_MSG_NOTICE([** nautilus extension path: $ac_with_nautilusdir])
-if test "x$enable_bluetooth" = "xyes"; then
-	AC_MSG_NOTICE([** Bluetooth support enabled (ObexPush and ObexFTP)])
-else
-	AC_MSG_NOTICE([   Bluetooth support disabled])
-fi
 
 echo "
 Do note Apache 2.2 and mod_dnssd 0.6 are required to use gnome-user-share.

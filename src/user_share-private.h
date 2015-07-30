@@ -26,12 +26,7 @@
 #define _USER_SHARE_PRIVATE_H_
 
 #define GNOME_USER_SHARE_SCHEMAS "org.gnome.desktop.file-sharing"
-
-#define FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED "bluetooth-obexpush-enabled"
-
 #define FILE_SHARING_REQUIRE_PASSWORD "require-password"
-#define FILE_SHARING_BLUETOOTH_OBEXPUSH_ACCEPT_FILES "bluetooth-accept-files"
-#define FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY "bluetooth-notify"
 
 typedef enum {
     PASSWORD_NEVER,
@@ -39,16 +34,7 @@ typedef enum {
     PASSWORD_ALWAYS
 } PasswordSetting;
 
-typedef enum {
-	ACCEPT_ALWAYS,
-	ACCEPT_BONDED,
-	ACCEPT_ASK
-} AcceptSetting;
-
 const char *password_string_from_setting (PasswordSetting setting);
 PasswordSetting password_setting_from_string (const char *str);
-
-const char *accept_string_from_setting (AcceptSetting setting);
-AcceptSetting accept_setting_from_string (const char *str);
 
 #endif /* _USER_SHARE_PRIVATE_H_ */

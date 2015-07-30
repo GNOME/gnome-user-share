@@ -1,10 +1,4 @@
-if USE_BLUETOOTH
-libexec_PROGRAMS =			\
-	gnome-user-share-webdav		\
-	gnome-user-share-obexpush
-else
 libexec_PROGRAMS = gnome-user-share-webdav
-endif
 
 noinst_LTLIBRARIES = libuser-share-common.la
 libuser_share_common_la_SOURCES = user_share-common.c user_share-common.h
@@ -37,21 +31,6 @@ gnome_user_share_webdav_LDADD =		\
 	libuser-share-common.la		\
 	$(USER_SHARE_LIBS)		\
 	$(SELINUX_LIBS)
-
-if USE_BLUETOOTH
-gnome_user_share_obexpush_SOURCES =	\
-	user_share-obexpush.c		\
-	user_share-private.h		\
-	user_share-private.c		\
-	obexpush.c			\
-	obexpush.h
-else
-EXTRA_DIST = user_share-obexpush.c obexpush.c obexpush.h
-endif
-
-gnome_user_share_obexpush_LDADD =	\
-	libuser-share-common.la		\
-	$(USER_SHARE_LIBS)
 
 nautilus_extensiondir = $(NAUTILUSDIR)
 nautilus_extension_LTLIBRARIES = libnautilus-share-extension.la

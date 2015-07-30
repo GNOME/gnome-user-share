@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Personal File Sharing
 _Comment=Launch Personal File Sharing if enabled
-_Keywords=share;files;bluetooth;obex;http;network;copy;send;
+_Keywords=share;files;http;network;copy;send;
 Icon=folder-remote
 Exec=@installdir@/gnome-user-share-webdav
 Terminal=false

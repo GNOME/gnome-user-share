@@ -55,14 +55,6 @@ lookup_public_dir (void)
 				   TRUE);
 }
 
-char *
-lookup_download_dir (void)
-{
-	return lookup_special_dir (G_USER_DIRECTORY_DOWNLOAD,
-				   "Downloads",
-				   TRUE);
-}
-
 GFile *
 lookup_dir_with_fallback (GUserDirectory directory)
 {

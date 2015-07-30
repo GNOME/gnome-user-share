@@ -26,5 +26,4 @@
 #include <gio/gio.h>
 
 char *lookup_public_dir (void);
-char *lookup_download_dir (void);
 GFile *lookup_dir_with_fallback (GUserDirectory directory);
