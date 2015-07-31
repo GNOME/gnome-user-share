@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of gnome-user-share.
 # Copyright (C) YEAR, THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Kjartan Maraas <kmaraas@gnome.org>, 2007-2014.
+# Kjartan Maraas <kmaraas@gnome.org>, 2007-2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share 3.13.x\n"
+"Project-Id-Version: gnome-user-share 3.17.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-21 14:38+0200\n"
-"PO-Revision-Date: 2014-07-21 14:39+0200\n"
+"POT-Creation-Date: 2015-07-31 12:03+0200\n"
+"PO-Revision-Date: 2015-07-31 12:04+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -27,51 +27,17 @@ msgid ""
 msgstr ""
 "Når passord skal kreves. Mulige verdier er «never», «on_write» og «always»."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Om Bluetooth-klienter kan sende filer med ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Hvis denne settes til «true» kan Bluetooth-enheter sende filer til katalogen "
-"Downloads i brukerens hjemmekatalog når brukeren er logget inn."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Når filer sendt over Bluetooth skal godtas"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Når filer sendt over Bluetooth skal godtas. Mulige verdier er «always», "
-"«bonded» og «ask»."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Om nylig mottatte filer skal varsles."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Deling av personlige filer"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Start Bluetooth ObexPush-deling hvis aktivert"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "del;filer;bluetooth;obex;http;nettverk;kopier;send;"
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Start brukerdeling hvis aktivert"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "del;filer;http;nettverk;kopier;send;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -87,21 +53,9 @@ msgstr "Brukervalg"
 msgid "Sharing Settings"
 msgstr "Innstillinger for deling"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Kan brukes til å dele eller motta filer"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Kan deles over nettverket eller Bluetooth"
-
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:118
 msgid "May be shared over the network"
 msgstr "Kan deles over nettverket"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Kan brukes til å motta filer over Bluetooth"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -123,43 +77,3 @@ msgstr "%s's offentlige filer"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s's offentlige filer på %s"
-
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Du mottok «%s» via Bluetooth"
-
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Du mottok en fil"
-
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Åpne fil"
-
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Vis fil"
-
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Mottak av fil fullført"
-
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Du mottok en fil «%s» via Bluetooth"
-
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Du mottok en fil"
-
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Motta"
-
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Avbryt"
