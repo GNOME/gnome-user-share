@@ -5,14 +5,14 @@
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2007-2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2014.
-# Aviary.pl <gnomepl@aviary.pl>, 2007-2014.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2015.
+# Aviary.pl <gnomepl@aviary.pl>, 2007-2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-07 03:01+0200\n"
-"PO-Revision-Date: 2014-09-07 02:03+0200\n"
+"POT-Creation-Date: 2015-07-31 19:10+0200\n"
+"PO-Revision-Date: 2015-07-31 19:11+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -34,57 +34,19 @@ msgid ""
 "\"always\"."
 msgstr ""
 "Kiedy pytać o hasła. Możliwe wartości to \"never\" (nigdy), \"on_write"
-"\" (podczas próby zapisu) i \"always\" (zawsze)."
+"\" (podczas zapisywania) i \"always\" (zawsze)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Określa, czy zdalne klienty Bluetooth mogą wysyłać pliki używając ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Jeśli ustawione na \"true\", urządzenia Bluetooth mogą wysyłać pliki do "
-"katalogu Pobrane użytkownika po zalogowaniu."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Kiedy akceptować pliki wysyłane przez Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Kiedy akceptować pliki wysyłane przez Bluetooth. Możliwe wartości to  "
-"\"always\" (zawsze), \"bonded\" (tylko od powiązanych) i \"ask\" (zawsze "
-"pytaj)."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Określa, czy powiadamiać o pobieranych plikach."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Współdzielenie osobistych plików"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Uruchamia współdzielenie ObexPush przez Bluetooth, jeśli włączone"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr ""
-"współdzielenie;pliki;plików;bluetooth;obex;http;sieć;skopiuj;kopia;wyślij;"
-"wysyłanie;"
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Uruchamia współdzielenie osobistych plików, jeśli włączone"
+msgstr "Uruchamia współdzielenie osobistych plików, jeśli jest włączone"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "współdzielenie;pliki;plików;http;sieć;skopiuj;kopia;wyślij;wysyłanie;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -100,21 +62,9 @@ msgstr "Preferencje"
 msgid "Sharing Settings"
 msgstr "Ustawienia współdzielenia"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Można używać do współdzielenie lub pobierania plików"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Można współdzielić przez sieć i Bluetooth"
-
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:118
 msgid "May be shared over the network"
 msgstr "Można współdzielić przez sieć"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Można używać do pobierania plików przez Bluetooth"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -136,43 +86,3 @@ msgstr "Pliki publiczne użytkownika %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Pliki publiczne użytkownika %s na %s"
-
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Odebrano plik \"%s\" przez Bluetooth"
-
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Odebrano plik"
-
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Otwórz plik"
-
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Wyświetl plik"
-
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Ukończono odbiór pliku"
-
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Odebrano plik \"%s\" przez Bluetooth"
-
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Odebrano plik"
-
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Odbierz"
-
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Anuluj"
