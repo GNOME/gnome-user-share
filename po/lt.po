@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the gnome-user-share package.
 # Marius Karnauskas <marius@esga.lt>, 2005.
 # Vytautas Rėkus <v.rekus@gmail.com>, 2009.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014.
+# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 1.0\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-07-25 08:16+0000\n"
-"PO-Revision-Date: 2014-07-25 23:12+0300\n"
+"POT-Creation-Date: 2015-08-02 09:06+0000\n"
+"PO-Revision-Date: 2015-08-02 17:49+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -33,52 +33,18 @@ msgid ""
 msgstr ""
 "Kada prašoma slaptažodžių. Galimos reikšmės: „never“, „on_write“ ir „always“."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Ar Bluetooth klientai gali siųsti failus, naudodami ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Jei teisinga, Bluetooth įrenginiai gali siųsti failus į vartotojo "
-"parsisiuntimų katalogą, kai vartotojas bus prisijungęs."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Kada priimti failus, siųstus Bluetooth ryšiu"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Kada priimti failus, siunčiamus Bluetooth ryšiu. Galimos reikšmės yra: "
-"„visada“, „susietiems“ ir „klausti“."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Ar įspėti apie naujai gautus failus."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Asmeninių failų bendrinimas"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#| msgid "Launch Personal File Sharing if enabled"
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Paleisti Bluetooth ObexPush viešinimą, jei įjungtas"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "dalintis;failai;bluetooth;obex;http;tinklas;kopijuoti;siųsti;"
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Paleisti asmeninių failų viešinimą, jei įjungtas"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgid "share;files;http;network;copy;send;"
+msgstr "dalintis;failai;http;tinklas;kopijuoti;siųsti;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:102
@@ -94,21 +60,9 @@ msgstr "Nustatymai"
 msgid "Sharing Settings"
 msgstr "Dalinimosi nustatymai"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Gali būti naudojama dalintis arba gauti failus"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Galima dalintis tinkle arba per Bluetooth"
-
-#: ../src/share-extension.c:160
+#: ../src/share-extension.c:118
 msgid "May be shared over the network"
 msgstr "Galima dalintis tinkle"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Galima naudoti failams gauti per Bluetooth"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -131,43 +85,65 @@ msgstr "Viešieji failai (%s)"
 msgid "%s's public files on %s"
 msgstr "Viešieji failai (%s, %s)"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Gavote „%s“ Bluetooth ryšiu"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Ar Bluetooth klientai gali siųsti failus, naudodami ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Gavote failą"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Jei teisinga, Bluetooth įrenginiai gali siųsti failus į vartotojo "
+#~ "parsisiuntimų katalogą, kai vartotojas bus prisijungęs."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Atverti failą"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Kada priimti failus, siųstus Bluetooth ryšiu"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Parodyti failą"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Kada priimti failus, siunčiamus Bluetooth ryšiu. Galimos reikšmės yra: "
+#~ "„visada“, „susietiems“ ir „klausti“."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Failo priėmimas baigtas"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Ar įspėti apie naujai gautus failus."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Gavote failą „%s“ Bluetooth ryšiu"
+#~| msgid "Launch Personal File Sharing if enabled"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Paleisti Bluetooth ObexPush viešinimą, jei įjungtas"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Gavote failą"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Gali būti naudojama dalintis arba gauti failus"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Priimti"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Galima dalintis tinkle arba per Bluetooth"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Atsisakyti"
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Galima naudoti failams gauti per Bluetooth"
 
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Gavote „%s“ Bluetooth ryšiu"
+
+#~ msgid "You received a file"
+#~ msgstr "Gavote failą"
+
+#~ msgid "Open File"
+#~ msgstr "Atverti failą"
+
+#~ msgid "Reveal File"
+#~ msgstr "Parodyti failą"
+
+#~ msgid "File reception complete"
+#~ msgstr "Failo priėmimas baigtas"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Gavote failą „%s“ Bluetooth ryšiu"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Gavote failą"
+
+#~ msgid "Receive"
+#~ msgstr "Priimti"
+
+#~ msgid "Cancel"
+#~ msgstr "Atsisakyti"
