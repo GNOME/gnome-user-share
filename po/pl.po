@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-31 19:10+0200\n"
-"PO-Revision-Date: 2015-07-31 19:11+0200\n"
+"POT-Creation-Date: 2015-08-03 19:30+0200\n"
+"PO-Revision-Date: 2015-08-03 19:31+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -38,33 +38,33 @@ msgstr ""
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
-msgstr "Współdzielenie osobistych plików"
+msgstr "Współdzielenie plików osobistych"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Uruchamia współdzielenie osobistych plików, jeśli jest włączone"
+msgstr "Uruchamia współdzielenie plików osobistych, jeśli jest włączone"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;http;network;copy;send;"
-msgstr "współdzielenie;pliki;plików;http;sieć;skopiuj;kopia;wyślij;wysyłanie;"
+msgstr ""
+"współdzielenie;pliki;plików;http;sieć;sieci;skopiuj;kopia;wyślij;wysyłanie;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Współdzielenie"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Preferencje"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Ustawienia współdzielenia"
 
 #: ../src/share-extension.c:118
-msgid "May be shared over the network"
-msgstr "Można współdzielić przez sieć"
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Włączenie współdzielenia plików osobistych umożliwia współdzielenie "
+"zawartości tego katalogu przez sieć."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
