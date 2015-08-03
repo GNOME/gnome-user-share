@@ -84,7 +84,6 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         GtkWidget *action_area;
 	GtkWidget *label;
         GtkWidget *vbox;
-        GtkWidget *button;
         PangoAttrList *attrs;
 
         bar->priv = NAUTILUS_SHARE_BAR_GET_PRIVATE (bar);
@@ -112,12 +111,9 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         gtk_widget_show (bar->priv->label);
         gtk_container_add (GTK_CONTAINER (vbox), bar->priv->label);
 
-        button = gtk_info_bar_add_button (GTK_INFO_BAR (bar),
-                                          _("Preferences"),
-                                          NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES);
-
-        /* translators: This is the tooltip for the "Sharing" panel in the Settings */
-        gtk_widget_set_tooltip_text (button, _("Sharing Settings"));
+        gtk_info_bar_add_button (GTK_INFO_BAR (bar),
+                                 _("Sharing Settings"),
+                                 NAUTILUS_SHARE_BAR_RESPONSE_PREFERENCES);
 
         gtk_widget_show_all (vbox);
 }

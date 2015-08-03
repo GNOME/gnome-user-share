@@ -115,7 +115,7 @@ nautilus_user_share_get_location_widget (NautilusLocationWidgetProvider *iface,
 	if (enable == FALSE)
 		return NULL;
 
-	bar = nautilus_share_bar_new (_("May be shared over the network"));
+	bar = nautilus_share_bar_new (_("Turn on Personal File Sharing to share the contents of this folder over the network."));
 
 	g_signal_connect (bar, "response",
 			  G_CALLBACK (bar_response_cb), window);
