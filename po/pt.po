@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-07-30 20:58+0000\n"
-"PO-Revision-Date: 2015-07-31 09:31+0100\n"
+"POT-Creation-Date: 2015-08-04 09:03+0000\n"
+"PO-Revision-Date: 2015-08-04 11:13+0100\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
 "Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
@@ -44,27 +44,25 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr "Inicia a partilha de ficheiros pessoais, se ativa"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgid "share;files;http;network;copy;send;"
 msgstr "partilha;ficheiros;http;rede;copiar;enviar;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Partilhar"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Preferências"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Definições de partilha"
 
 #: ../src/share-extension.c:118
-msgid "May be shared over the network"
-msgstr "Pode ser partilhado através da rede"
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Ligue Partilha de ficheiros pessoais para partilhar o conteúdo desta pasta "
+"através da rede."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -86,6 +84,12 @@ msgstr "Ficheiros públicos de %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Ficheiros públicos de %s em %s"
+
+#~ msgid "Preferences"
+#~ msgstr "Preferências"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Pode ser partilhado através da rede"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr ""
