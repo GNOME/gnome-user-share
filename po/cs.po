@@ -7,15 +7,15 @@
 # Miloslav Trmac <mitr@volny.cz>, 2005, 2006.
 # Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2009.
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-21 20:17+0000\n"
-"PO-Revision-Date: 2014-08-22 07:29+0100\n"
+"POT-Creation-Date: 2015-08-05 20:59+0000\n"
+"PO-Revision-Date: 2015-08-06 08:59+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -38,82 +38,34 @@ msgid ""
 msgstr ""
 "Kdy se ptát na hesla. Možné hodnoty jsou „never“, „on_write“ a „always“."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Jestli klienti Bluetooth mohou posílat soubory pomocí ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Je-li toto zaškrtnuto, zařízení Bluetooth mohou posílat soubory do "
-"uživatelova adresáře pro stahování, pokud je uživatel přihlášen."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Kdy přijímat soubory posílané přes Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Kdy přijímat soubory poslané přes Bluetooth. Možné hodnoty jsou: „always“, "
-"„bonded“ a „ask“."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Jestli oznamovat, že byly přijaty nové soubory."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Sdílení osobních souborů"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Je-li povoleno, spustit sdílení přes Bluetooth ObexPush"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr ""
-"sdílet;sdílení;bluetooth;obex;http;síť;kopírovat;kopírování;poslat;posílání;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Je-li povoleno, spustit Sdílení osobních souborů"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "sdílet;sdílení;http;síť;kopírovat;kopírování;poslat;posílání;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Sdílení"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Předvolby"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Nastavení sdílení"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Může být použito ke sdílení nebo přijímání souborů"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Může být sdíleno přes síť nebo přes Bluetooth"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Může být sdíleno přes síť"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Může být použito k přijímání souborů přes Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Zapněte sdílení osobních souborů, abyste mohli sdílet obsah této složky přes "
+"síť."
 
 # Sigh...
 #. Translators: The %s will get filled in with the user name
@@ -138,42 +90,70 @@ msgstr "Veřejné soubory uživatele %s"
 msgid "%s's public files on %s"
 msgstr "Veřejné soubory uživatele %s na %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Přes Bluetooth vám přišel soubor „%s“"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Jestli klienti Bluetooth mohou posílat soubory pomocí ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Přišel vám soubor"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Je-li toto zaškrtnuto, zařízení Bluetooth mohou posílat soubory do "
+#~ "uživatelova adresáře pro stahování, pokud je uživatel přihlášen."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Otevřít soubor"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Kdy přijímat soubory posílané přes Bluetooth"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Zobrazit soubor"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Kdy přijímat soubory poslané přes Bluetooth. Možné hodnoty jsou: "
+#~ "„always“, „bonded“ a „ask“."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Příjem souboru dokončen"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Jestli oznamovat, že byly přijaty nové soubory."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Byl vám přes Bluetooth poslán soubor „%s“"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Je-li povoleno, spustit sdílení přes Bluetooth ObexPush"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Byl vám poslán soubor"
+#~ msgid "Preferences"
+#~ msgstr "Předvolby"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Přijmout"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Může být použito ke sdílení nebo přijímání souborů"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Zrušit"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Může být sdíleno přes síť nebo přes Bluetooth"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Může být sdíleno přes síť"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Může být použito k přijímání souborů přes Bluetooth"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Přes Bluetooth vám přišel soubor „%s“"
+
+#~ msgid "You received a file"
+#~ msgstr "Přišel vám soubor"
+
+#~ msgid "Open File"
+#~ msgstr "Otevřít soubor"
+
+#~ msgid "Reveal File"
+#~ msgstr "Zobrazit soubor"
+
+#~ msgid "File reception complete"
+#~ msgstr "Příjem souboru dokončen"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Byl vám přes Bluetooth poslán soubor „%s“"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Byl vám poslán soubor"
+
+#~ msgid "Receive"
+#~ msgstr "Přijmout"
+
+#~ msgid "Cancel"
+#~ msgstr "Zrušit"
