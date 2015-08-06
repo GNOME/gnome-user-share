@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 3.17.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-31 12:03+0200\n"
-"PO-Revision-Date: 2015-07-31 12:04+0200\n"
+"POT-Creation-Date: 2015-08-06 11:05+0200\n"
+"PO-Revision-Date: 2015-08-06 11:06+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -40,22 +40,19 @@ msgid "share;files;http;network;copy;send;"
 msgstr "del;filer;http;nettverk;kopier;send;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Deling"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Brukervalg"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Innstillinger for deling"
 
 #: ../src/share-extension.c:118
-msgid "May be shared over the network"
-msgstr "Kan deles over nettverket"
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr "Slå på personlig fildeling for å dele innholdet i denne mappen via nettverket."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
