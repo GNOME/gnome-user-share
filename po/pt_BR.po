@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of evolution-mapi.
-# Copyright (C) 2008, 2009-2013 Free Software Foundation, Inc.
+# Copyright (C) 2008, 2009-2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the evolution-mapi package.
 # Taylon Silmer <taylonsilva@gmail.com>, 2009.
 # Fabrício Godoy <skarllot@gmail.com>, 2009.
@@ -7,23 +7,23 @@
 # André Gondim <In Memoriam>, 2009.
 # Djavan Fagundes <dnoway@gmail.com>, 2009.
 # Rafael Ferreira <rafael.f.f1@gmail.com>, 2013.
-# Enrico Nicoletto <liverig@gmail.com>, 2013.
+# Enrico Nicoletto <liverig@gmail.com>, 2013, 205.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-06-24 09:52+0000\n"
-"PO-Revision-Date: 2014-06-24 08:48-0300\n"
-"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
+"POT-Creation-Date: 2015-08-08 09:07+0000\n"
+"PO-Revision-Date: 2015-08-08 10:38-0300\n"
+"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -34,85 +34,38 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Quando perguntar por senhas. Valores possíveis são \"never\", \"on_write\", "
-"e \"always\"."
+"Quando perguntar por senhas. Valores possíveis são \"never\", \"on_write\" e "
+"\"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Clientes Bluetooth podem enviar arquivos usando ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Se isto for true, dispositivos Bluetooth podem enviar arquivos para o "
-"diretório de download do usuário quando estiver conectado."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Quando aceitar arquivos enviados pelo Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Quando aceitar arquivos enviados pelo Bluetooth. Valores possíveis são "
-"\"always\", \"bonded\", \"bonded_trusted\" e \"ask\"."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Notificar sobre arquivos recebidos recentemente."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Compartilhamento de arquivos pessoais"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#| msgid "Launch Personal File Sharing if enabled"
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Lança compartilhamento OpexPush Bluetooth se habilitado"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "compartilhar;arquivos;bluetooth;obex;http;rede;copiar;enviar;"
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Lança compartilhamento de arquivos pessoais se habilitado"
+msgstr "Caso seja habilitado, executa o compartilhamento de arquivos pessoais"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgid "share;files;http;network;copy;send;"
+msgstr "compartilhar;arquivos;http;rede;copiar;enviar;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Compartilhamento"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Preferências"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Configurações de compartilhamento"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Pode ser usado para compartilhar ou receber arquivos"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Pode ser compartilhado através da rede ou Bluetooth"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Pode ser compartilhado através da rede"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Pode ser usado para receber arquivos via Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Ativa o compartilhamento de arquivos pessoais para compartilhar o conteúdo "
+"desta pasta através da rede."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -135,282 +88,4 @@ msgstr "Arquivos públicos de %s"
 msgid "%s's public files on %s"
 msgstr "Arquivos públicos de %s em %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Você recebeu \"%s\" pelo Bluetooth"
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Você recebeu um arquivo"
-
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Abrir arquivo"
-
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Revelar arquivo"
-
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Recebimento de arquivo completo"
-
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Você recebeu um arquivo \"%s\" pelo Bluetooth"
-
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Você recebeu um arquivo"
-
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Receber"
-
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Cancelar"
-
-#~ msgid "Share Public directory over the network"
-#~ msgstr "Compartilhar diretório público pela rede"
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over the network when the user is logged in."
-#~ msgstr ""
-#~ "Se isto for true, o diretório público no diretório pessoal do usuário "
-#~ "será compartilhado pela rede quado o usuário estiver conectado."
-
-#~ msgid "Share Public directory over Bluetooth"
-#~ msgstr "Compartilhar diretório público pelo Bluetooth"
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over Bluetooth when the user is logged in."
-#~ msgstr ""
-#~ "Se isto for true, o diretório público no diretório pessoal do usuário "
-#~ "será compartilhado pelo Bluetooth quando o usuário estiver conectado."
-
-#~ msgid "Whether to allow Bluetooth clients to write files."
-#~ msgstr "Permitir clientes Bluetooth gravar arquivos."
-
-#~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
-#~ msgstr ""
-#~ "Permitir clientes Bluetooth gravar arquivos, ou compartilhar arquivos "
-#~ "somente para leitura."
-
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
-#~ msgstr ""
-#~ "Emparelhar clientes Bluetooth com o computador para enviar arquivos."
-
-#~ msgid "Launch Personal File Sharing Preferences"
-#~ msgstr "Lançar preferências de compartilhamento de arquivos pessoais"
-
-#~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Preferências de compartilhamento de arquivos pessoais"
-
-#~ msgid "Share Files over the Network"
-#~ msgstr "Compartilhar arquivos pela rede"
-
-#~ msgid "_Share public files on network"
-#~ msgstr "_Compartilhar arquivos públicos na rede"
-
-#~ msgid "_Password:"
-#~ msgstr "_Senha:"
-
-#~ msgid "_Require password:"
-#~ msgstr "_Exigir senha:"
-
-#~ msgid "Share Files over Bluetooth"
-#~ msgstr "Compartilhar arquivos pelo Bluetooth"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Compartilhar arquivos públicos pelo _Bluetooth"
-
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "Acei_tar dispositivos remotos apagar arquivos"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "Exigir dispositovs re_motos emparelhar com este computador"
-
-#~ msgid "Receive Files over Bluetooth"
-#~ msgstr "Receber arquivos pelo Bluetooth"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "Receber arquivos na pasta _Downloads pelo Bluetooth"
-
-#~ msgid "_Accept files: "
-#~ msgstr "_Aceitar arquivos: "
-
-#~ msgid "_Notify about received files"
-#~ msgstr "_Notificar sobre arquivos recebidos"
-
-#~ msgid "Preferences for sharing of files"
-#~ msgstr "Preferências para compartilhamento de arquivos"
-
-#~ msgid "Unable to launch the Personal File Sharing Preferences"
-#~ msgstr ""
-#~ "Não foi possível lançar as preferências de compartilhamento de arquivos "
-#~ "pessoais"
-
-#~ msgid "No reason"
-#~ msgstr "Sem razão"
-
-#~ msgid "Could not display the help contents."
-#~ msgstr "Não foi possível exibir o conteúdo de ajuda."
-
-#~ msgid "Could not build interface."
-#~ msgstr "Não foi possível construir a interface."
-
-#~ msgid "Never"
-#~ msgstr "Nunca"
-
-#~ msgid "When writing files"
-#~ msgstr "Ao escrever arquivos"
-
-#~ msgid "Always"
-#~ msgstr "Sempre"
-
-#~ msgid "Only for set up devices"
-#~ msgstr "Somente para dispositivos configurados"
-
-#~ msgid "Ask"
-#~ msgstr "Perguntar"
-
-#~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr "Você pode compartilhar arquivos desta pasta e receber arquivos nela"
-
-#~ msgid "You can receive files over Bluetooth into this folder"
-#~ msgstr "Você pode receber arquivos pelo Bluetooth dentro desta pasta"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Por favor inicie a sessão como usuário convidado"
-
-#~ msgid "Only for Bonded and Trusted devices"
-#~ msgstr "Somente para dispositivos emparelhados e confiáveis"
-
-#~ msgid "Enter Password for %s@%s"
-#~ msgstr "Digite a senha para %s@%s"
-
-#~ msgid "Select username"
-#~ msgstr "Selecionar nome de usuário"
-
-#~ msgid "Full name"
-#~ msgstr "Nome completo"
-
-#~ msgid "User name"
-#~ msgstr "Nome de usuário"
-
-#~ msgid ""
-#~ "Server, username and domain name cannot be empty. Please fill them with "
-#~ "correct values."
-#~ msgstr ""
-#~ "Servidor, nome de usuário e nome do domínio não podem estar vazios. Por "
-#~ "favor, preencha-os com os valores corretos."
-
-#~ msgid "Authentication finished successfully."
-#~ msgstr "Autenticação concluída com sucesso."
-
-#~ msgid "Authentication failed."
-#~ msgstr "Falha na autenticação."
-
-#~ msgid "_Domain name:"
-#~ msgstr "Nome de _domínio:"
-
-#~ msgid "_Authenticate"
-#~ msgstr "_Autenticar"
-
-#~ msgid "_Location:"
-#~ msgstr "_Localização:"
-
-#~ msgid "_Folder size"
-#~ msgstr "_Tamanho da pasta"
-
-#~ msgid "Folder"
-#~ msgstr "Pasta"
-
-#~ msgid "Size"
-#~ msgstr "Tamanho"
-
-#~ msgid "Unable to retrive folder size information"
-#~ msgstr "Não é possível recuperar as informações de tamanho da pasta"
-
-#~ msgid "Folder Size"
-#~ msgstr "Tamanho da pasta"
-
-#~ msgid "Fetching folder list ..."
-#~ msgstr "Obtendo lista de pastas ..."
-
-#~ msgid "Miscelleneous"
-#~ msgstr "Diversos"
-
-#~ msgid "View the size of all Exchange folders"
-#~ msgstr "Ver o tamanho de todas as pastas do Exchange"
-
-#~ msgid "Folders Size"
-#~ msgstr "Tamanho das pastas"
-
-#~ msgid "Loading items in folder %s"
-#~ msgstr "Carregando itens na pasta %s"
-
-#~ msgid "Error fetching changes from the server."
-#~ msgstr "Erro ao obter as alterações do servidor."
-
-#~ msgid "Could not create cache file"
-#~ msgstr "Não foi possível criar o arquivo de cache"
-
-#~ msgid "Could not create thread for populating cache"
-#~ msgstr "Não foi possível criar a discussão para preencher o cache"
-
-#~ msgid ""
-#~ "Support for modifying single instances of a recurring appointment is not "
-#~ "yet implemented. No change was made to the appointment on the server."
-#~ msgstr ""
-#~ "O suporte para modificar instâncias únicas de um compromisso recorrente "
-#~ "ainda não foi implementado. Nenhuma alteração para o compromisso foi "
-#~ "feita no servidor."
-
-#~ msgid "Updating local summary cache for new messages in %s"
-#~ msgstr ""
-#~ "Atualizando resumo de informações locais para as novas mensagens em %s"
-
-#~ msgid "Retrieving message IDs from server for %s"
-#~ msgstr "Recuperando IDs das mensagens do servidor para %s"
-
-#~ msgid "Removing deleted messages from cache in %s"
-#~ msgstr "Removendo mensagens deletadas do cache em %s"
-
-#~ msgid "This message is not available in offline mode."
-#~ msgstr "Esta mensagem não está disponível no modo off-line."
-
-#~ msgid "Fetching summary information for new messages in %s"
-#~ msgstr "Extraindo resumo de informações para as novas mensagens em %s"
-
-#~ msgid "Fetching items failed"
-#~ msgstr "Falha ao extrair itens"
-
-#~ msgid ""
-#~ "Cannot get message: %s\n"
-#~ "  %s"
-#~ msgstr ""
-#~ "Não foi possível obter a mensagem: %s\n"
-#~ "  %s"
-
-#~ msgid "No such message"
-#~ msgstr "Não existe tal mensagem"
-
-#~ msgid "Message fetching cancelled by user."
-#~ msgstr "Extração da mensagem cancelada pelo usuário."
-
-#~ msgid "Cannot get message %s: %s"
-#~ msgstr "Não foi possível obter a mensagem %s: %s"
-
-#~ msgid "Could not get message"
-#~ msgstr "Não foi possível obter a mensagem"
