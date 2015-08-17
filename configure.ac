@@ -1,5 +1,5 @@
 AC_INIT([gnome-user-share],
-        [3.14.2],
+        [3.17.90],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share],
         [gnome-user-share])
 
