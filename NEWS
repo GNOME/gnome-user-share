@@ -1,4 +1,9 @@
-This is gnome-user-share 3.14.2, a system for easy sharing of user files.
+This is gnome-user-share 3.17.90, a system for easy sharing of user files.
+
+Major changes since 3.14.2:
+- Remove ObexPush support, it's now available directly in
+  the gnome-bluetooth Settings widget.
+- Better explanation when in Public folder
 
 Major changes since 3.14.1:
 - Fix crasher in gsettings-data-convert
