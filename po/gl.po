@@ -12,21 +12,22 @@
 # Suso Baleato <suso.baleato@xunta.es>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2010, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-01 18:59+0200\n"
-"PO-Revision-Date: 2014-07-01 19:03+0200\n"
+"POT-Creation-Date: 2015-08-19 01:13+0200\n"
+"PO-Revision-Date: 2015-08-19 01:14+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
@@ -41,81 +42,34 @@ msgstr ""
 "Cando hai que pedir os contrasinais. Os valores posíbeis son \"never\", "
 "\"on_write\", e \"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Se os clientes do Bluetooth poden enviar ficheiros usando o ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Se está definido a «true», os dispositivos Bluetooth poden enviar ficheiros "
-"ao cartafol Descargas do usuario cando inicie a sesión."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Cando aceptar os ficheiros enviados mediante Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Cando aceptar os ficheiros enviados mediante Bluetooth. Os valores posíbeis "
-"son \"always\", \"bonded\", e \"ask\"."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Se hai que informar sobre os ficheiros recibidos recentemente."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Compartir ficheiros persoais"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Arrinca a compartición de Buetooth ObexPush se está activado"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "compartir;ficheiros;bluetooth;obex;http;rede;copiar;enviar;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Inicia a Compartición de ficheiros persoais, se está activado"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "compartir;ficheiros;http;rede;copiar;enviar;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Compartición"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Preferencias"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Preferencias de compartición"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Pode empregarse para compartir ou recibir ficheiros"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Pode compartirse pola rede ou mediante Bluetooth"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Pode compartirse pola rede"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Pode empregarse para recibir ficheiros mediante Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Activar a Compartición de Ficheiros persoais para compartir contidos deste "
+"cartafol pola rede."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -138,45 +92,74 @@ msgstr "Ficheiros públicos de %s"
 msgid "%s's public files on %s"
 msgstr "Ficheiros públicos de %s en %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Recibiu «%s» mediante Bluetooth"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "Se os clientes do Bluetooth poden enviar ficheiros usando o ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Recibiu un ficheiro"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Se está definido a «true», os dispositivos Bluetooth poden enviar "
+#~ "ficheiros ao cartafol Descargas do usuario cando inicie a sesión."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Abrir o ficheiro"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Cando aceptar os ficheiros enviados mediante Bluetooth"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Mostrar o ficheiro"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Cando aceptar os ficheiros enviados mediante Bluetooth. Os valores "
+#~ "posíbeis son \"always\", \"bonded\", e \"ask\"."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Recepción de ficheiro completada"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Se hai que informar sobre os ficheiros recibidos recentemente."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Recibiu un ficheiro «%s» mediante Bluetooth"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Arrinca a compartición de Buetooth ObexPush se está activado"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Recibiu un ficheiro"
+#~ msgid "Preferences"
+#~ msgstr "Preferencias"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Recibir"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Pode empregarse para compartir ou recibir ficheiros"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Cancelar"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Pode compartirse pola rede ou mediante Bluetooth"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Pode compartirse pola rede"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Pode empregarse para recibir ficheiros mediante Bluetooth"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Recibiu «%s» mediante Bluetooth"
+
+#~ msgid "You received a file"
+#~ msgstr "Recibiu un ficheiro"
+
+#~ msgid "Open File"
+#~ msgstr "Abrir o ficheiro"
+
+#~ msgid "Reveal File"
+#~ msgstr "Mostrar o ficheiro"
+
+#~ msgid "File reception complete"
+#~ msgstr "Recepción de ficheiro completada"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Recibiu un ficheiro «%s» mediante Bluetooth"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Recibiu un ficheiro"
+
+#~ msgid "Receive"
+#~ msgstr "Recibir"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Compartir o cartafol público na rede"
