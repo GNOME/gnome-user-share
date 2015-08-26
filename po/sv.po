@@ -8,17 +8,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-07-30 18:07+0000\n"
-"PO-Revision-Date: 2015-07-30 21:26+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-"
+"share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-08-06 09:01+0000\n"
+"PO-Revision-Date: 2015-08-07 14:57+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.3\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -26,11 +26,10 @@ msgstr "När lösenord ska krävas"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
 msgstr ""
-"När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), "
-"\"on_write\" (vid skrivning) och \"always\" (alltid)."
+"När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), \"on_write\" (vid "
+"skrivning) och \"always\" (alltid)."
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
@@ -45,22 +44,18 @@ msgid "share;files;http;network;copy;send;"
 msgstr "dela;filer;http;nätverk;kopiera;skicka;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Delning"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Inställningar"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Inställningar för delning"
 
 #: ../src/share-extension.c:118
-msgid "May be shared over the network"
-msgstr "Kan delas ut över nätverket"
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the network."
+msgstr "Slå på personlig fildelning för att dela innehållet i denna mapp över nätverket."
 
 # Vi undviker på detta sätt problemen som "%ss publika filer" skulle
 # skapat, exempelvis "Alexs publika filer" eller "Markuss publika filer".
@@ -91,25 +86,31 @@ msgstr "%.0sPublika filer"
 msgid "%s's public files on %s"
 msgstr "%.0sPublika filer på %s"
 
+#~ msgid "Preferences"
+#~ msgstr "Inställningar"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Kan delas ut över nätverket"
+
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr "Huruvida Bluetooth-klienter kan skicka filer med ObexPush."
 
 #~ msgid ""
-#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
-#~ "directory when logged in."
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads directory "
+#~ "when logged in."
 #~ msgstr ""
-#~ "Om detta är sant kan Bluetooth-enheter skicka filer till användarens "
-#~ "katalog Hämtat när användaren är inloggad."
+#~ "Om detta är sant kan Bluetooth-enheter skicka filer till användarens katalog Hämtat "
+#~ "när användaren är inloggad."
 
 #~ msgid "When to accept files sent over Bluetooth"
 #~ msgstr "När filer skickade över Bluetooth ska accepteras"
 
 #~ msgid ""
-#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
-#~ "\"bonded\" and \"ask\"."
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" "
+#~ "and \"ask\"."
 #~ msgstr ""
-#~ "När filer som skickas över Bluetooth ska accepteras. Möjliga värden är "
-#~ "\"always\" (alltid), \"bonded\" (ihopparad) och \"ask\" (fråga)."
+#~ "När filer som skickas över Bluetooth ska accepteras. Möjliga värden är \"always"
+#~ "\" (alltid), \"bonded\" (ihopparad) och \"ask\" (fråga)."
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "Huruvida avisering om nyligen mottagna filer ska göras."
@@ -157,37 +158,32 @@ msgstr "%.0sPublika filer på %s"
 #~ msgstr "Dela ut publik katalog över nätverket"
 
 #~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over the network when the user is logged in."
+#~ "If this is true, the Public directory in the users home directory will be shared over "
+#~ "the network when the user is logged in."
 #~ msgstr ""
-#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog "
-#~ "att delas ut på nätverket när användaren är inloggad."
+#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas ut "
+#~ "på nätverket när användaren är inloggad."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Dela ut publik katalog över Bluetooth"
 
 #~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over Bluetooth when the user is logged in."
+#~ "If this is true, the Public directory in the users home directory will be shared over "
+#~ "Bluetooth when the user is logged in."
 #~ msgstr ""
-#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog "
-#~ "att delas ut över Bluetooth när användaren är inloggad."
+#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas ut "
+#~ "över Bluetooth när användaren är inloggad."
 
 #~ msgid "Whether to allow Bluetooth clients to write files."
 #~ msgstr "Huruvida blåtandsklienter ska tillåtas att skriva filer."
 
-#~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
+#~ msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
 #~ msgstr ""
-#~ "Huruvida blåtandsklienter ska tillåtas att skriva filer, eller dela ut "
-#~ "filerna skrivskyddade."
+#~ "Huruvida blåtandsklienter ska tillåtas att skriva filer, eller dela ut filerna "
+#~ "skrivskyddade."
 
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
-#~ msgstr ""
-#~ "Huruvida blåtandsklienter behöver paras ihop med datorn för att skicka "
-#~ "filer."
+#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr "Huruvida blåtandsklienter behöver paras ihop med datorn för att skicka filer."
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "Inställningar för personlig filutdelning"
@@ -274,15 +270,14 @@ msgstr "%.0sPublika filer på %s"
 #~ msgstr "Endast för ihopparade och pålitliga enheter"
 
 #~ msgid ""
-#~ "If this is true, the Public directory in the users home dir will be "
-#~ "shared when the user is logged in."
+#~ "If this is true, the Public directory in the users home dir will be shared when the "
+#~ "user is logged in."
 #~ msgstr ""
-#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog "
-#~ "att delas när användaren är inloggad."
+#~ "Om detta är sant kommer den publika katalogen i användarens hemkatalog att delas när "
+#~ "användaren är inloggad."
 
 #~ msgid "When to ask for passwords, possible options: never, on_write, always"
-#~ msgstr ""
-#~ "När lösenord ska efterfrågas. Möjliga alternativ: never, on_write, always"
+#~ msgstr "När lösenord ska efterfrågas. Möjliga alternativ: never, on_write, always"
 
 #~ msgid "Share files"
 #~ msgstr "Dela filer"
