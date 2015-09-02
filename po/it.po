@@ -2,15 +2,15 @@
 # Copyright (C) 2005, 2006, 2007, 2008, 2009 Free Software Foundation
 # This file is distributed under the same license as the gnome-user-share package.
 # Tuo Ida Gasparretti <vampiria74@tin.it>, 2005
-# Gianvito Cavasoli <gianvito@gmx.it>, 2008, 2009, 2010, 2012, 2013, 2014.
+# Gianvito Cavasoli <gianvito@gmx.it>, 2008, 2009, 2010, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-15 08:17+0000\n"
-"PO-Revision-Date: 2014-09-15 13:23+0200\n"
+"POT-Creation-Date: 2015-08-29 21:02+0000\n"
+"PO-Revision-Date: 2015-08-30 11:00+0200\n"
 "Last-Translator: Gianvito Cavasoli <gianvito@gmx.it>\n"
 "Language-Team: Italiano <gnome-it-list@gnome.org>\n"
 "Language: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -32,83 +32,35 @@ msgstr ""
 "Quando richiedere le password. Le opzioni possibili sono \"never\", "
 "\"on_write\", e \"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Indica se i client Bluetooth possono inviare file utilizzando ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Se impostata a vero, i dispositivi Bluetooth possono inviare file nella "
-"directory \"Scaricati\" quando l'utente è connesso."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Quando accettare i file inviati tramite Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Quando accettare i file inviati tramite Bluetooth. Le opzioni possibili sono "
-"\"always\", \"bonded\" e \"ask\"."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Indica se notificare riguardo i file ricevuti recentemente."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Condivisione di file personali"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#| msgid "Launch Personal File Sharing if enabled"
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Avvia la condivisione Bluetooth di ObexPush se abilitata"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "condividere;file;bluetooth;obex;http;rete;copiare;inviare;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Avvia la condivisione di file personali se abilitata"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgid "share;files;http;network;copy;send;"
+msgstr "condividere;file;http;rete;copiare;inviare;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Condivisione"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Preferenze"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Impostazioni di condivisione"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Può essere usato per condividere o ricevere file"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Può essere condiviso tramite la rete o il Bluetooth"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Può essere condiviso tramite la rete"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Può essere usato per ricevere file tramite Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Attivare Condivisione di file personali per condividere il contenuto di "
+"questa cartella in rete."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -131,42 +83,72 @@ msgstr "File pubblici di %s"
 msgid "%s's public files on %s"
 msgstr "File pubblici di %s su %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Ricevuto «%s» tramite Bluetooth"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "Indica se i client Bluetooth possono inviare file utilizzando ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Ricevuto un file"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Se impostata a vero, i dispositivi Bluetooth possono inviare file nella "
+#~ "directory \"Scaricati\" quando l'utente è connesso."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Apri file"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Quando accettare i file inviati tramite Bluetooth"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Rivela file"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Quando accettare i file inviati tramite Bluetooth. Le opzioni possibili "
+#~ "sono \"always\", \"bonded\" e \"ask\"."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Ricezione del file completata"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Indica se notificare riguardo i file ricevuti recentemente."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "È stato inviato un file «%s» tramite Bluetooth"
+#~| msgid "Launch Personal File Sharing if enabled"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Avvia la condivisione Bluetooth di ObexPush se abilitata"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "È stato inviato un file"
+#~ msgid "Preferences"
+#~ msgstr "Preferenze"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Ricevi"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Può essere usato per condividere o ricevere file"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Annulla"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Può essere condiviso tramite la rete o il Bluetooth"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Può essere condiviso tramite la rete"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Può essere usato per ricevere file tramite Bluetooth"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Ricevuto «%s» tramite Bluetooth"
+
+#~ msgid "You received a file"
+#~ msgstr "Ricevuto un file"
+
+#~ msgid "Open File"
+#~ msgstr "Apri file"
+
+#~ msgid "Reveal File"
+#~ msgstr "Rivela file"
+
+#~ msgid "File reception complete"
+#~ msgstr "Ricezione del file completata"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "È stato inviato un file «%s» tramite Bluetooth"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "È stato inviato un file"
+
+#~ msgid "Receive"
+#~ msgstr "Ricevi"
+
+#~ msgid "Cancel"
+#~ msgstr "Annulla"
