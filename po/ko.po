@@ -3,15 +3,15 @@
 #
 # Young-Ho Cha <ganadist at mizi.com>, 2005, 2007.
 # Namhyung Kim <namhyung@gmail.com>, 2007.
-# Changwoo Ryu <cwryu@debian.org>, 2009-2010, 2012-2014
+# Changwoo Ryu <cwryu@debian.org>, 2009-2010, 2012-2015
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-05 08:17+0000\n"
-"PO-Revision-Date: 2014-09-06 04:55+0900\n"
+"POT-Creation-Date: 2015-09-05 09:04+0000\n"
+"PO-Revision-Date: 2015-09-06 02:45+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: Korean\n"
@@ -30,83 +30,32 @@ msgid ""
 msgstr ""
 "언제 암호를 물어볼 지 지정. 가능한 값은 \"never\", \"on_write\", \"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "블루투스 클라이언트가 ObexPush를 사용해 파일을 보낼 수 있는 지 여부."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"참이면, 사용자가 로그인하면 블루투스를 통해 \"다운로드\" 디렉터리로 파일을 보"
-"낼 수 있습니다."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "블루투스를 통해 보낸 파일 허용하는 방법"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"언제 블루투스를 통해 보낸 파일을 받아들일지 지정. 가능한 값은 \"always\", "
-"\"bonded\", \"ask\"."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "새로 받은 파일을 알릴 지 여부."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "개인 파일 공유"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "블루투스 ObexPush 공유를 시작합니다"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr ""
-"share;공유;files;파일;bluetooth;블루투스;obex;http;network;네트워크;인터넷;"
-"copy;복사;send;보내기;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "사용자 공유를(사용할 경우) 시작합니다"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "share;공유;files;파일;http;network;네트워크;인터넷;copy;복사;send;보내기;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "공유"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "기본 설정"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "공유 설정"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "파일 공유 및 받기에 사용 가능"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "네트워크와 블루투스를 통해 공유 가능"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "네트워크를 통해 공유 가능"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "블루투스를 통해 파일 받기 가능"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr "네트워크를 통해 이 폴더의 내용을 공유하려면 개인 파일 공유를 켜십시오."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -129,42 +78,71 @@ msgstr "%s의 공용 파일"
 msgid "%s's public files on %s"
 msgstr "%2$s에 있는 %1$s의 공용 파일"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "블루투스를 통해 \"%s\" 파일을 받았습니다"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "블루투스 클라이언트가 ObexPush를 사용해 파일을 보낼 수 있는 지 여부."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "파일을 받았습니다"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "참이면, 사용자가 로그인하면 블루투스를 통해 \"다운로드\" 디렉터리로 파일"
+#~ "을 보낼 수 있습니다."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "파일 열기"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "블루투스를 통해 보낸 파일 허용하는 방법"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "파일 보기"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "언제 블루투스를 통해 보낸 파일을 받아들일지 지정. 가능한 값은 \"always\", "
+#~ "\"bonded\", \"ask\"."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "파일 받기를 마쳤습니다"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "새로 받은 파일을 알릴 지 여부."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "블루투스를 통해 \"%s\" 파일을 보냈습니다"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "블루투스 ObexPush 공유를 시작합니다"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "파일을 보냈습니다"
+#~ msgid "Preferences"
+#~ msgstr "기본 설정"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "받기"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "파일 공유 및 받기에 사용 가능"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "취소"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "네트워크와 블루투스를 통해 공유 가능"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "네트워크를 통해 공유 가능"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "블루투스를 통해 파일 받기 가능"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "블루투스를 통해 \"%s\" 파일을 받았습니다"
+
+#~ msgid "You received a file"
+#~ msgstr "파일을 받았습니다"
+
+#~ msgid "Open File"
+#~ msgstr "파일 열기"
+
+#~ msgid "Reveal File"
+#~ msgstr "파일 보기"
+
+#~ msgid "File reception complete"
+#~ msgstr "파일 받기를 마쳤습니다"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "블루투스를 통해 \"%s\" 파일을 보냈습니다"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "파일을 보냈습니다"
+
+#~ msgid "Receive"
+#~ msgstr "받기"
+
+#~ msgid "Cancel"
+#~ msgstr "취소"
