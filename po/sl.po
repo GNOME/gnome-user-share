@@ -2,15 +2,15 @@
 # Copyright (C) 2005-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2007-2014.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007-2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-14 08:19+0000\n"
-"PO-Revision-Date: 2014-09-14 19:38+0100\n"
+"POT-Creation-Date: 2015-09-08 09:05+0000\n"
+"PO-Revision-Date: 2015-09-08 22:19+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -31,88 +31,35 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kdaj zahtevati geslo. Mogoče vrednosti so \"never\" (nikoli), \"on_write"
-"\" (ob pisanju), in \"always\" (vedno)."
+"Kdaj zahtevati geslo. Mogoče vrednosti so \"never\" (nikoli), \"on_write\" (ob "
+"pisanju), in \"always\" (vedno)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Možnost omogoča, da odjemalci Bluetooth datoteke pošiljajo preko sistema "
-"ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Možnost omogoča, da naprave Bluetooth pošiljajo datoteke v uporabnikovo mapo "
-"prejetih datotek, ko je uporabnik prijavljen v sistem."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Kdaj sprejeti datoteke, poslane preko vmesnika Bluetooth."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Kdaj naj bodo sprejete datoteke poslane preko vmesnika Bluetooth? Mogoče "
-"vrednosti so \"always\" (vedno), \"bonded\" (ob povezavi) in \"ask"
-"\" (vprašaj)."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr ""
-"Možnost določa, ali naj se prikaže obvestilo o novo prejetih datotekah."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Souporaba osebnih datotek"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Zaženi podporo souporabe ObexPush, kadar je ta omogočena"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "souporaba;datoteke;bluetooth;obex;http;omrežje;kopiranje;pošiljanje;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Zaženi možnost souporabe osebnih datotek, če je ta omogočena"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "souporaba;datoteke;http;omrežje;kopiranje;pošiljanje;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Souporaba"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Možnosti"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Nastavitve souporabe"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Prejemanje in souporaba datotek"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Souporaba preko omrežja in preko vmesnika Bluetooth"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Mogoča je souporaba preko omrežja"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Prejemanje datotek preko vmesnika Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr "Omogoči osebno izmenjavo in souporabo datotek te mape preko omrežja."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -135,46 +82,81 @@ msgstr "%s - javno dostopne datoteke"
 msgid "%s's public files on %s"
 msgstr "%s - javno dostopne datoteke na %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Prejeli ste datoteko \"%s\" preko povezave Bluetooth."
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "Možnost omogoča, da odjemalci Bluetooth datoteke pošiljajo preko sistema "
+#~ "ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Prejeli ste datoteko"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Možnost omogoča, da naprave Bluetooth pošiljajo datoteke v uporabnikovo mapo "
+#~ "prejetih datotek, ko je uporabnik prijavljen v sistem."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Odpri datoteko"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Kdaj sprejeti datoteke, poslane preko vmesnika Bluetooth."
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Razkrij datoteko"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Kdaj naj bodo sprejete datoteke poslane preko vmesnika Bluetooth? Mogoče "
+#~ "vrednosti so \"always\" (vedno), \"bonded\" (ob povezavi) in \"ask"
+#~ "\" (vprašaj)."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Prejemanje datoteke je končano."
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr ""
+#~ "Možnost določa, ali naj se prikaže obvestilo o novo prejetih datotekah."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr ""
-"Na vašo napravo je bila preko povezave Bluetooth poslana datoteka \"%s\"."
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Zaženi podporo souporabe ObexPush, kadar je ta omogočena"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Na vašo napravo je bila poslana datoteka."
+#~ msgid "share;files;bluetooth;obex;http;network;copy;send;"
+#~ msgstr "souporaba;datoteke;bluetooth;obex;http;omrežje;kopiranje;pošiljanje;"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Sprejmi"
+#~ msgid "Preferences"
+#~ msgstr "Možnosti"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Prekliči"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Prejemanje in souporaba datotek"
+
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Souporaba preko omrežja in preko vmesnika Bluetooth"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Mogoča je souporaba preko omrežja"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Prejemanje datotek preko vmesnika Bluetooth"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Prejeli ste datoteko \"%s\" preko povezave Bluetooth."
+
+#~ msgid "You received a file"
+#~ msgstr "Prejeli ste datoteko"
+
+#~ msgid "Open File"
+#~ msgstr "Odpri datoteko"
+
+#~ msgid "Reveal File"
+#~ msgstr "Razkrij datoteko"
+
+#~ msgid "File reception complete"
+#~ msgstr "Prejemanje datoteke je končano."
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr ""
+#~ "Na vašo napravo je bila preko povezave Bluetooth poslana datoteka \"%s\"."
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Na vašo napravo je bila poslana datoteka."
+
+#~ msgid "Receive"
+#~ msgstr "Sprejmi"
+
+#~ msgid "Cancel"
+#~ msgstr "Prekliči"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Souporaba javne mape na omrežju"
@@ -200,14 +182,13 @@ msgstr "Prekliči"
 #~ msgstr "Možnost omogoča, da odjemalci Bluetooth zapisujejo datoteke."
 
 #~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
+#~ "Whether to allow Bluetooth clients to write files, or share the files read-"
+#~ "only."
 #~ msgstr ""
-#~ "Možnost omogoča, da odjemalci Bluetooth datoteke tudi zapisujejo, lahko "
-#~ "pa so te v souporabi le za branje."
+#~ "Možnost omogoča, da odjemalci Bluetooth datoteke tudi zapisujejo, lahko pa "
+#~ "so te v souporabi le za branje."
 
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
 #~ "Možnost določa, da morajo biti odjemalci Bluetooth z računalnikom pred "
 #~ "pošiljanjem datotek povezani."
