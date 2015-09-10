@@ -4,15 +4,15 @@
 #
 # Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2005-2010.
 # Ilkka Tuohela <hile@iki.fi>, 2006-2009.
-# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-06 08:17+0000\n"
-"PO-Revision-Date: 2014-09-06 13:57+0300\n"
+"POT-Creation-Date: 2015-09-05 09:04+0000\n"
+"PO-Revision-Date: 2015-09-05 13:50+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -34,84 +34,36 @@ msgstr ""
 "Milloin kysytään salasanoja. Mahdolliset arvot ovat: ”never” (ei koskaan), "
 "”on_write” (kirjoitettaessa) ja ”always” (aina)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Voivatko bluetooth-asiakkaat lähettää tiedostoja ObexPush:illa."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Jos tosi, bluetooth-laitteet voivat lähettää tiedostoja käyttäjän Noudot-"
-"kansioon, kun käyttäjä on kirjatutunut sisään."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Milloin bluetoothin yli lähetetyt tiedostot hyväksytään"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Milloin bluetoothin yli lähetetyt tiedostot hyväksytään. Mahdolliset arvot "
-"ovat: ”always”, ”bonded” ja ”ask”."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Ilmoitetaanko vastaanotetuista tiedostoista."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Omien tiedostojen jako"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#| msgid "Launch Personal File Sharing if enabled"
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Käynnistä Bluetooth ObexPush -jako, jos käytössä"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr ""
-"share;files;bluetooth;obex;http;network;copy;send;jaa;jako;tiedostot;verkko;"
-"kopioi;lähetä;"
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Käynnistä henkilökohtaisten tiedoston jako, jos käytössä"
+msgstr "Käynnistä henkilökohtainen tiedostojenjako, jos käytössä"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgid "share;files;http;network;copy;send;"
+msgstr ""
+"share;files;http;network;copy;send;jako;jakaminen;verkko;lähetys;kopiointi;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Jakaminen"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Asetukset"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Jakamisasetukset"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Käytettävissä tiedostojen jakoa ja vastaanottoa varten"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Jaettavissa verkon ja bluetoothin kautta"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Jaettavissa verkon kautta"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Käytettävissä tiedostojen vastaanottoon Bluetoothia käyttäen"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Ota henkilökohtainen tiedostojenjako käyttöön jakaaksesi tämän kansion "
+"sisällön verkon kautta."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -134,45 +86,74 @@ msgstr "Käyttäjän %s julkiset tiedostot"
 msgid "%s's public files on %s"
 msgstr "Käyttäjän %s julkiset tiedostot palvelimella %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Vastaanotit tiedoston ”%s” bluetoothilla"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Voivatko bluetooth-asiakkaat lähettää tiedostoja ObexPush:illa."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Vastaanotit tiedoston"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Jos tosi, bluetooth-laitteet voivat lähettää tiedostoja käyttäjän Noudot-"
+#~ "kansioon, kun käyttäjä on kirjatutunut sisään."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Avaa tiedosto"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Milloin bluetoothin yli lähetetyt tiedostot hyväksytään"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Paljasta tiedosto"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Milloin bluetoothin yli lähetetyt tiedostot hyväksytään. Mahdolliset "
+#~ "arvot ovat: ”always”, ”bonded” ja ”ask”."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Tiedoston vastaanotto valmis"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Ilmoitetaanko vastaanotetuista tiedostoista."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Sinulle on lähetetty tiedosto ”%s” bluetoothilla"
+#~| msgid "Launch Personal File Sharing if enabled"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Käynnistä Bluetooth ObexPush -jako, jos käytössä"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Sinulle on lähetetty tiedosto"
+#~ msgid "Preferences"
+#~ msgstr "Asetukset"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Vastaanota"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Käytettävissä tiedostojen jakoa ja vastaanottoa varten"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Peru"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Jaettavissa verkon ja bluetoothin kautta"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Jaettavissa verkon kautta"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Käytettävissä tiedostojen vastaanottoon Bluetoothia käyttäen"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Vastaanotit tiedoston ”%s” bluetoothilla"
+
+#~ msgid "You received a file"
+#~ msgstr "Vastaanotit tiedoston"
+
+#~ msgid "Open File"
+#~ msgstr "Avaa tiedosto"
+
+#~ msgid "Reveal File"
+#~ msgstr "Paljasta tiedosto"
+
+#~ msgid "File reception complete"
+#~ msgstr "Tiedoston vastaanotto valmis"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Sinulle on lähetetty tiedosto ”%s” bluetoothilla"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Sinulle on lähetetty tiedosto"
+
+#~ msgid "Receive"
+#~ msgstr "Vastaanota"
+
+#~ msgid "Cancel"
+#~ msgstr "Peru"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Jaa julkinen kansio verkossa"
