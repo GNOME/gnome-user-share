@@ -7,14 +7,15 @@
 # Noriko Mizumoto <noriko@fedoraproject.org>, 2012.
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2013-2014.
 # Ikuya Awashiro <ikuya@fruitsbasket.info>, 2014.
+# Tsuji Kento <tuziemon@pclives.org>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-18 08:23+0000\n"
-"PO-Revision-Date: 2014-09-18 21:09+0900\n"
-"Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
+"POT-Creation-Date: 2015-08-23 21:03+0000\n"
+"PO-Revision-Date: 2015-08-24 15:01+0900\n"
+"Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -30,73 +31,30 @@ msgstr "パスワードを要求する時期"
 msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
 msgstr "いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write\"、\"always\"。"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Bluetooth のクライアントが ObexPush を使ってファイルを送信できるかどうか"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
-msgstr "TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダウンロード・フォルダーにファイルを送信できるようになります。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Bluetooth でファイルを送信できる時期"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
-msgstr "いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: \"always\"、\"bonded\"、\"ask\"。"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "新たに受信したファイルについて通知するかどうか"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
-msgstr "個人的なファイルの共有"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Bluetooth の ObexPush 共有機能を起動します (可能な場合)"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "share;files;bluetooth;obex;http;network;copy;send;共有;ファイル;ブルートゥース;ネットワーク;コピー;複製;送信;"
+msgstr "パーソナルファイル共有"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "個人的なファイルの共有機能を起動します (可能な場合)"
+msgstr "パーソナルファイル共有を起動します (可能な場合)"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "share;files;http;network;copy;send;共有;ファイル;ネットワーク;コピー;複製;送信;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "共有"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "設定"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "共有の設定"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "ファイルの共有や受信に使用できます"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "ネットワークや Bluetooth 経由で共有できます"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "ネットワーク経由で共有できます"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Bluetooth を使ったファイルの受信に使用できます"
+#: ../src/share-extension.c:118
+msgid "Turn on Personal File Sharing to share the contents of this folder over the network."
+msgstr "パーソナルファイル共有をオンにするとネットワーク上でこのフォルダーを共有できます"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -119,45 +77,65 @@ msgstr "%s の公開ファイル"
 msgid "%s's public files on %s"
 msgstr "%s@%s の公開ファイル"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Bluetooth 経由で \"%s\" を受信しました"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Bluetooth のクライアントが ObexPush を使ってファイルを送信できるかどうか"
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "ファイルを受信しました"
+#~ msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
+#~ msgstr "TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダウンロード・フォルダーにファイルを送信できるようになります。"
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "ファイルを開く"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Bluetooth でファイルを送信できる時期"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "ファイルを表示する"
+#~ msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
+#~ msgstr "いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: \"always\"、\"bonded\"、\"ask\"。"
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "ファイルの受信が完了しました"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "新たに受信したファイルについて通知するかどうか"
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Bluetooth 経由でファイル \"%s\" が送られてきました"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Bluetooth の ObexPush 共有機能を起動します (可能な場合)"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "ファイルが送られてきました"
+#~ msgid "Preferences"
+#~ msgstr "設定"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "受諾"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "ファイルの共有や受信に使用できます"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "拒否"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "ネットワークや Bluetooth 経由で共有できます"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "ネットワーク経由で共有できます"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Bluetooth を使ったファイルの受信に使用できます"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Bluetooth 経由で \"%s\" を受信しました"
+
+#~ msgid "You received a file"
+#~ msgstr "ファイルを受信しました"
+
+#~ msgid "Open File"
+#~ msgstr "ファイルを開く"
+
+#~ msgid "Reveal File"
+#~ msgstr "ファイルを表示する"
+
+#~ msgid "File reception complete"
+#~ msgstr "ファイルの受信が完了しました"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Bluetooth 経由でファイル \"%s\" が送られてきました"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "ファイルが送られてきました"
+
+#~ msgid "Receive"
+#~ msgstr "受諾"
+
+#~ msgid "Cancel"
+#~ msgstr "拒否"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Public フォルダーをネットワーク上で共有するかどうか"
