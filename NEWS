@@ -1,4 +1,7 @@
-This is gnome-user-share 3.17.90, a system for easy sharing of user files.
+This is gnome-user-share 3.17.92, a system for easy sharing of user files.
+
+Major changes since 3.17.90:
+- Translation updates
 
 Major changes since 3.14.2:
 - Remove ObexPush support, it's now available directly in
