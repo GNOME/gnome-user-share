@@ -10,21 +10,22 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-23 08:21+0000\n"
-"PO-Revision-Date: 2014-09-23 10:40+0200\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"POT-Creation-Date: 2015-09-22 09:32+0000\n"
+"PO-Revision-Date: 2015-09-22 15:32+0200\n"
+"Last-Translator: Марко М. Костић (Marko M. Kostić) <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 "
+"&& n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
-msgstr "Захтеван унос лозинке"
+msgstr "Када да се траже лозинке"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
@@ -34,82 +35,34 @@ msgstr ""
 "Одређује када се захтева унос лозинке. Могуће вредности су „never“ (никада), "
 "„on_write“ (при упису) и „always“ (увек)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Блутут клијенти могу да шаљу датотеке користећи гурање кроз обекс."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Ако је изабрано, блутут уређаји могу послати датотеке у корисничку фасциклу "
-"„Преузето“ када је корисник пријављен."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Када прихватити датотеке са блутут везе"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Одређује када је дозвољено прихватање датотека са блутут везе. Могуће "
-"вредности су „always“ (увек), „bonded“ (упарени) и „ask“ (питај)."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Да ли да обавести о новим примљеним датотекама."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Делење личних датотека"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#| msgid "Launch Personal File Sharing if enabled"
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Покрени дељење блутута обекс гурањем ако је укључено"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "дели;датотеке;блутут;обекс;хттп;мрежа;умножи;пошаљи;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Покрени дељење личних датотека ако је омогућено"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "дели;дељење;датотеке;хттп;мрежа;умножи;копирај;пошаљи;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Дељење"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Поставке"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Подешавања дељења"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Може бити коришћено за дељење или пријем датотека"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Може бити дељено преко мреже или блутута"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Може бити дељено преко мреже"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Може бити коришћено за пријем датотека преко блутута"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Укључите дељење личних датотека да бисте поделили садржај ове фасцикле преко "
+"мреже."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -132,45 +85,74 @@ msgstr "Јавне датотеке корисника „%s“"
 msgid "%s's public files on %s"
 msgstr "Јавне датотеке корисника „%s“ на рачунару „%s“"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Примили сте „%s“ преко блутута"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Блутут клијенти могу да шаљу датотеке користећи гурање кроз обекс."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Примили сте датотеку"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Ако је изабрано, блутут уређаји могу послати датотеке у корисничку фасциклу "
+#~ "„Преузето“ када је корисник пријављен."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Отвори датотеку"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Када прихватити датотеке са блутут везе"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Прикажи датотеку"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Одређује када је дозвољено прихватање датотека са блутут везе. Могуће "
+#~ "вредности су „always“ (увек), „bonded“ (упарени) и „ask“ (питај)."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Пријем датотеке је завршен"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Да ли да обавести о новим примљеним датотекама."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Послали сте датотеку „%s“ преко блутута"
+#~| msgid "Launch Personal File Sharing if enabled"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Покрени дељење блутута обекс гурањем ако је укључено"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Послали сте датотеку"
+#~ msgid "Preferences"
+#~ msgstr "Поставке"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Прими"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Може бити коришћено за дељење или пријем датотека"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Откажи"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Може бити дељено преко мреже или блутута"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Може бити дељено преко мреже"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Може бити коришћено за пријем датотека преко блутута"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Примили сте „%s“ преко блутута"
+
+#~ msgid "You received a file"
+#~ msgstr "Примили сте датотеку"
+
+#~ msgid "Open File"
+#~ msgstr "Отвори датотеку"
+
+#~ msgid "Reveal File"
+#~ msgstr "Прикажи датотеку"
+
+#~ msgid "File reception complete"
+#~ msgstr "Пријем датотеке је завршен"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Послали сте датотеку „%s“ преко блутута"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Послали сте датотеку"
+
+#~ msgid "Receive"
+#~ msgstr "Прими"
+
+#~ msgid "Cancel"
+#~ msgstr "Откажи"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Делење фасцикле „Јавно“ преко мреже"
