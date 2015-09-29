@@ -1,17 +1,17 @@
 # Vietnamese translation for GNOME User Share.
-# Copyright © 2014 GNOME i18n Project for Vietnamese.
+# Copyright © 2015 GNOME i18n Project for Vietnamese.
 # This file is distributed under the same license as the gnome-user-share package.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
 # Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2011-2012.
-# Trần Ngọc Quân <vnwildman@gmail.com>, 2014.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-12 21:14+0000\n"
-"PO-Revision-Date: 2014-12-13 07:52+0700\n"
+"POT-Creation-Date: 2015-09-28 21:42+0000\n"
+"PO-Revision-Date: 2015-09-29 07:08+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <gnome-vi-list@gnome.org>\n"
 "Language: vi\n"
@@ -19,88 +19,51 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
-msgstr "Khi nào nên yêu cầu mật khẩu"
+msgstr "Khi nào thì yêu cầu mật khẩu"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Khi nào nên yêu cầu mật khẩu. Giá trị có thể:\n"
-" * never\t\tkhông bao giờ\n"
+"Khi nào nên yêu cầu mật khẩu. Giá trị có thể là:\n"
+" * never\tkhông bao giờ\n"
 " * on_write\tkhi ghi\n"
-" * always\t\tluôn."
+" * always\tluôn."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Ứng dụng khách Bluetooth có thể gửi tập tin dùng ObexPush hay không."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Nếu đúng thì thiết bị Bluetooth có khả năng gửi tập tin cho thư mục Tải Về "
-"(Downloads) của người dùng khi họ được đăng nhập."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Khi nào nên chấp nhận tập tin gửi qua Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Khi nào nên chấp nhận tập tin gửi qua Bluetooth. Giá trị có thể dùng là:\n"
-" * always\t\tluôn luôn\n"
-" * bonded\tđược cam kết\n"
-" * ask\t\thỏi."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Có nên thông báo về tập tin mới nhận hay không."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Chia sẻ tập tin cá nhân"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Khởi chạy chia sẻ Bluetooth ObexPush nếu được bật"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr ""
-"share;chia;sẻ;se;files;tập;tin;tap;tin;bluetooth;obex;http;network;mạng;mang;"
-"copy;chép;chep;send;gửi;gui;"
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Khởi chạy Chia sẻ tập tin cá nhân nếu được bật"
+msgstr "Khởi chạy “Chia sẻ tập tin cá nhân” nếu được bật"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr ""
+"share;chia;sẻ;se;files;tập;tin;tap;network;mạng;mang;copy;chép;chep;send;gửi;"
+"gui;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Chia sẻ"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Tuỳ thích"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Cài đặt chia sẻ"
 
 #: ../src/share-extension.c:118
-msgid "May be shared over the network"
-msgstr "Có thể chia sẻ qua mạng"
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Bật “Chia sẻ tập tin cá nhân” để chia sẻ nội dung của thư mục này qua mạng."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -123,45 +86,67 @@ msgstr "Các tập tin công của %s"
 msgid "%s's public files on %s"
 msgstr "Các tập tin công của %s trên %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Bạn đã nhận “%s” qua Bluetooth"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "Ứng dụng khách Bluetooth có thể gửi tập tin dùng ObexPush hay không."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Bạn đã nhận một tập tin"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Nếu đúng thì thiết bị Bluetooth có khả năng gửi tập tin cho thư mục Tải "
+#~ "Về (Downloads) của người dùng khi họ được đăng nhập."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Mở tập tin"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Khi nào nên chấp nhận tập tin gửi qua Bluetooth"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Hiện tập tin"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Khi nào nên chấp nhận tập tin gửi qua Bluetooth. Giá trị có thể dùng là:\n"
+#~ " * always\t\tluôn luôn\n"
+#~ " * bonded\tđược cam kết\n"
+#~ " * ask\t\thỏi."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Hoàn tất nhận tập tin"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Có nên thông báo về tập tin mới nhận hay không."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Bạn vừa gửi một tập tin “%s” qua Bluetooth"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Khởi chạy chia sẻ Bluetooth ObexPush nếu được bật"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Bạn vừa gửi một tập tin"
+#~ msgid "Preferences"
+#~ msgstr "Tùy thích"
 
-#: ../src/obexpush.c:249
-msgid "Receive"
-msgstr "Nhận"
+#~ msgid "May be shared over the network"
+#~ msgstr "Có thể chia sẻ qua mạng"
 
-#: ../src/obexpush.c:252
-msgid "Cancel"
-msgstr "Thôi"
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Bạn đã nhận “%s” qua Bluetooth"
+
+#~ msgid "You received a file"
+#~ msgstr "Bạn đã nhận một tập tin"
+
+#~ msgid "Open File"
+#~ msgstr "Mở tập tin"
+
+#~ msgid "Reveal File"
+#~ msgstr "Hiện tập tin"
+
+#~ msgid "File reception complete"
+#~ msgstr "Hoàn tất nhận tập tin"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Bạn vừa gửi một tập tin “%s” qua Bluetooth"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Bạn vừa gửi một tập tin"
+
+#~ msgid "Receive"
+#~ msgstr "Nhận"
+
+#~ msgid "Cancel"
+#~ msgstr "Thôi"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Chia sẻ tập tin Công qua mạng"
@@ -200,7 +185,7 @@ msgstr "Thôi"
 #~ "không."
 
 #~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Tuỳ thích chia sẻ tập tin cá nhân"
+#~ msgstr "Tùy thích chia sẻ tập tin cá nhân"
 
 #~ msgid "Share Files over the Network"
 #~ msgstr "Chia sẻ tập tin qua mạng"
@@ -221,7 +206,7 @@ msgstr "Thôi"
 #~ msgstr "Chia sẻ tập tin công qua Bluetooth"
 
 #~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "Cho phép thiết bị từ xa xoá tập tin"
+#~ msgstr "Cho phép thiết bị từ xa xóa tập tin"
 
 #~ msgid "Require re_mote devices to bond with this computer"
 #~ msgstr "Yêu cầu thiết bị từ xa ca_m kết với máy tính này"
@@ -239,7 +224,7 @@ msgstr "Thôi"
 #~ msgstr "Báo về tập tin mới _nhận"
 
 #~ msgid "Preferences for sharing of files"
-#~ msgstr "Tuỳ thích về chức năng chia sẻ tập tin"
+#~ msgstr "Tùy thích về chức năng chia sẻ tập tin"
 
 #~ msgid "Launch Personal File Sharing Preferences"
-#~ msgstr "Mở Tuỳ thích chia sẻ tập tin cá nhân"
+#~ msgstr "Mở Tùy thích chia sẻ tập tin cá nhân"
