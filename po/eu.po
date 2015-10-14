@@ -2,23 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-#
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2013, 2014.
-#
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-07 13:24+0200\n"
-"PO-Revision-Date: 2014-07-29 20:21+0200\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-14 12:33+0200\n"
+"PO-Revision-Date: 2015-09-29 00:13+0200\n"
+"Last-Translator: Inaki Larranaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
@@ -33,82 +30,34 @@ msgstr ""
 "Noiz eskatu pasahitza. Balio erabilgarriak: \"never\" (inoiz ere ez), "
 "\"on_write\" (idaztean), eta \"always\" (beti)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Bluetooth bezeroek fitxategiak bidal ditzaketen ObexPush erabiliz ala ez."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"'true' gisa (egia) ezartzen bada, Bluetooth gailuek fitxategiak bidal "
-"ditzakete erabiltzailearen 'Deskargak' direktoriora saioa hastean."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Noiz onartu Bluetooth bidez bidalitako fitxategiak"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Noiz onartu Bluetooth bidez bidalitako fitxategiak. Balio erabilgarriak: "
-"\"always\" (beti), \"bonded\" (lotuta), eta \"ask\" (galdetu)."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Jaso berri diren fitxategiei buruz jakinarazi behar den ala ez."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Fitxategi pertsonalak partekatzea"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Abiarazi Bluetooth ObexPush partekatzea gaituta badago"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "partekatu;fitxategiak;bluetooth;obex;http;sarea;kopiatu;bidali;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Abiarazi fitxategi pertsonalak partekatzea gaituta badago"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "partekatu;fitxategiak;http;sarea;kopiatu;bidali;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Partekatzea"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Hobespenak"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Partekatzearen ezarpenak"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Fitxategiak partekatzeko edo jasotzeko erabil daiteke"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Sarea edo Bluetooth bidez parteka daitezke"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Sarearen bidez parteka daitezke"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Bluetooth bidez fitxategiak jasotzeko erabil daiteke"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Aktibatu fitxategi pertsonalak partekatzea karpeta honen edukia sarean zehar "
+"partekatzeko."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -131,45 +80,74 @@ msgstr "%s(r)en fitxategi publikoak"
 msgid "%s's public files on %s"
 msgstr "%s(r)en fitxategi publikoak (%s-(e)n)"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "\"'%s\" jaso duzu Bluetooth bidez"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "Bluetooth bezeroek fitxategiak bidal ditzaketen ObexPush erabiliz ala ez."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Fitxategi bat jaso duzu"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "'true' gisa (egia) ezartzen bada, Bluetooth gailuek fitxategiak bidal "
+#~ "ditzakete erabiltzailearen 'Deskargak' direktoriora saioa hastean."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Ireki fitxategia"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Noiz onartu Bluetooth bidez bidalitako fitxategiak"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Errebelatu fitxategia"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Noiz onartu Bluetooth bidez bidalitako fitxategiak. Balio erabilgarriak: "
+#~ "\"always\" (beti), \"bonded\" (lotuta), eta \"ask\" (galdetu)."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Fitxategi-harrera burutu da"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Jaso berri diren fitxategiei buruz jakinarazi behar den ala ez."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "'%s' fitxategia bidali duzu Bluetooth bidez"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Abiarazi Bluetooth ObexPush partekatzea gaituta badago"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Fitxategi bat bidali duzu"
+#~ msgid "Preferences"
+#~ msgstr "Hobespenak"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Jaso"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Fitxategiak partekatzeko edo jasotzeko erabil daiteke"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Utzi"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Sarea edo Bluetooth bidez parteka daitezke"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Sarearen bidez parteka daitezke"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Bluetooth bidez fitxategiak jasotzeko erabil daiteke"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "\"'%s\" jaso duzu Bluetooth bidez"
+
+#~ msgid "You received a file"
+#~ msgstr "Fitxategi bat jaso duzu"
+
+#~ msgid "Open File"
+#~ msgstr "Ireki fitxategia"
+
+#~ msgid "Reveal File"
+#~ msgstr "Errebelatu fitxategia"
+
+#~ msgid "File reception complete"
+#~ msgstr "Fitxategi-harrera burutu da"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "'%s' fitxategia bidali duzu Bluetooth bidez"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Fitxategi bat bidali duzu"
+
+#~ msgid "Receive"
+#~ msgstr "Jaso"
+
+#~ msgid "Cancel"
+#~ msgstr "Utzi"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Partekatu direktorio publikoa sarean zehar"
