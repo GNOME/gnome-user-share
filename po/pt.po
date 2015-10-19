@@ -5,13 +5,14 @@
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2009, 2010, 2012, 2013.
 # António Lima <amrlima@gmail.com>, 2013.
 # Tiago S. <almosthumane@portugalmail.pt>, 2014.
+# Pedro Albuquerque <palbuquerque73@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-23 21:07+0000\n"
+"POT-Creation-Date: 2015-09-28 21:41+0000\n"
 "PO-Revision-Date: 2014-03-15 02:00+0100\n"
 "Last-Translator: Tiago S. <almosthumane@portugalmail.pt>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
@@ -23,15 +24,15 @@ msgstr ""
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "Share Public directory over the network"
-msgstr "Partilhar o diretório \"Public\" pela rede"
+msgstr "Partilhar a pasta \"Public\" pela rede"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "If this is true, the Public directory in the users home directory will be "
 "shared over the network when the user is logged in."
 msgstr ""
-"Se definido como verdadeiro, o diretório \"Public\" na pasta pessoal do "
-"utilizador será partilhado pela rede quando o utilizador estiver numa sessão."
+"Se definido como verdadeiro, a pasta \"Public\" na pasta pessoal do "
+"utilizador será partilhada pela rede quando o utilizador estiver numa sessão."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
@@ -42,8 +43,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Quando perguntar por senhas. Valores possíveis são \"never\" (nunca), "
-"\"on_write\" (ao gravar), e \"always\" (sempre)."
+"Quando perguntar por senhas. Valores possíveis são \"nunca\", \"ao gravar\", "
+"e \"sempre\"."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
 msgid "Whether Bluetooth clients can send files using ObexPush."
@@ -55,8 +56,8 @@ msgid ""
 "If this is true, Bluetooth devices can send files to the user's Downloads "
 "directory when logged in."
 msgstr ""
-"Se definido como verdadeiro, dispositivos Bluetooth podem enviar ficheiros "
-"para o diretório de Downloads do utilizador estiver numa sessão."
+"Se VERDADEIRO, dispositivos Bluetooth podem enviar ficheiros para a pasta "
+"Transferências do utilizador se estiver numa sessão."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
 msgid "When to accept files sent over Bluetooth"
@@ -68,21 +69,21 @@ msgid ""
 "\"bonded\" and \"ask\"."
 msgstr ""
 "Quando aceitar ficheiros enviados por Bluetooth. Valores possíveis são "
-"\"always\", \"bonded\" e \"ask\"."
+"\"sempre\", \"ligado\" e \"perguntar\"."
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
 msgid "Whether to notify about newly received files."
-msgstr "Se notificar ou não de ficheiros recebidos."
+msgstr "Se notificar ou não sobre ficheiros recebidos."
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
-msgstr "Partilha de Ficheiros Pessoais"
+msgstr "Partilha de ficheiros pessoais"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Inicia a Partilha de Ficheiros Pessoais, se ativa"
+msgstr "Inicia a partilha de ficheiros pessoais, se ativa"
 
 #: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
@@ -101,7 +102,7 @@ msgstr "Preferências"
 #. translators: This is the tooltip for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:120
 msgid "Sharing Settings"
-msgstr "Definições de Partilha"
+msgstr "Definições de partilha"
 
 #: ../src/share-extension.c:155
 msgid "May be used to share or receive files"
@@ -152,11 +153,11 @@ msgstr "Recebeu um ficheiro"
 
 #: ../src/obexpush.c:164
 msgid "Open File"
-msgstr "Abrir o Ficheiro"
+msgstr "Abrir o ficheiro"
 
 #: ../src/obexpush.c:168
 msgid "Reveal File"
-msgstr "Revelar o Ficheiro"
+msgstr "Revelar o ficheiro"
 
 #: ../src/obexpush.c:185
 msgid "File reception complete"
@@ -166,11 +167,11 @@ msgstr "Receção do ficheiro concluída"
 #: ../src/obexpush.c:239
 #, c-format
 msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Recebeu um ficheiro \"%s\" por Bluetooth"
+msgstr "Foi-lhe enviado um ficheiro \"%s\" por Bluetooth"
 
 #: ../src/obexpush.c:240
 msgid "You have been sent a file"
-msgstr "Recebeu um ficheiro"
+msgstr "Foi-lhe enviado um ficheiro"
 
 #: ../src/obexpush.c:248
 msgid "Receive"
