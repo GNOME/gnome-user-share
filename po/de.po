@@ -46,7 +46,7 @@ msgstr "Persönliche Dateifreigabe starten, wenn aktiv"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;http;network;copy;send;"
-msgstr "Freigabe;Dateien;http;Netzwerk;kopieren;Transfer;teilen"
+msgstr "Freigabe;Dateien;http;Netzwerk;kopieren;Transfer;teilen;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:101
