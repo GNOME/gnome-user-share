@@ -1,8 +1,8 @@
 # Bulgarian translation of gnome-user-share po-file.
-# Copyright (C) 2005, 2009, 2010, 2012 Free Software Foundation, Inc.
+# Copyright (C) 2005, 2009, 2010, 2012, 2016 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Rostislav Raykov <zbrox@i-space.org>, 2005.
-# Alexander Shopov <ash@kambanaria.org>, 2009, 2010, 2012.
+# Alexander Shopov <ash@kambanaria.org>, 2009, 2010, 2012, 2016.
 # Krasimir Chonov <mk2616@abv.bg>, 2014.
 #
 #
@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-04 07:36+0300\n"
-"PO-Revision-Date: 2014-10-04 07:35+0300\n"
-"Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
+"POT-Creation-Date: 2016-02-06 22:36+0200\n"
+"PO-Revision-Date: 2016-02-01 09:38+0200\n"
+"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
@@ -32,84 +32,36 @@ msgstr ""
 "Кога да се пита за пароли. Възможните опции са: „never“ (никога), "
 "„on_write“ (при запис), „always“ (винаги)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Дали клиентите по Bluetooth могат да изпращат файлове чрез ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Ако е истина, отдалечени устройства ще могат да пращат файлове по Bluetooth "
-"към папката на потребителя „Свалени“, когато той е влезнал в системата."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Дали да се приемат файлове по Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Кога да се приемат файлове по Bluetooth. Възможните опции са: "
-"„always“ (винаги), „bonded“ (от изрично свързани устройства) и „ask“ (питане "
-"всеки път)."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Дали да се известява при получаване на файл."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Споделяне на файлове"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Стартиране на споделянето на файлове, ако е позволено"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr ""
-"споделяне;файлове;блутут;обекс;мрежа;копиране;изпращане;share;files;"
-"bluetooth;obex;http;network;copy;send;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Стартиране на споделянето на файлове, ако е позволено"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr ""
+"споделяне;файлове;уеб;мрежа;копиране;изпращане;share;files;bluetooth;obex;"
+"http;network;copy;send;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Споделяне"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Настройки"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Настройки на споделянето"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Може да се споделят или приемат файлове"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Може да се сподели по мрежата и Bluetooth"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Може да се сподели по мрежата"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Може да се приемат файлове по Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Включване на споделянето, така че съдържанието на тази папка да е достъпно "
+"по мрежата."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -131,43 +83,3 @@ msgstr "Публичните файлове на %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Публичните файлове на %s върху %s"
-
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Получихте „%s“ по Bluetooth"
-
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Получихте файл"
-
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Отваряне на файл"
-
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Показване на файл"
-
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Файлът е получен"
-
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Получихте „%s“ по Bluetooth"
-
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Получихте файл"
-
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Получаване"
-
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Отказ"
