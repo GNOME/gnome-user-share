@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-10-06 20:25+0000\n"
-"PO-Revision-Date: 2014-10-15 11:00+0100\n"
+"POT-Creation-Date: 2016-03-02 11:16+0000\n"
+"PO-Revision-Date: 2016-03-02 18:53+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -30,83 +30,34 @@ msgstr ""
 "Cuand domandâ lis password. Valôrs pussibii a son \"never\", \"on_write\", e "
 "\"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Se i clients Bluetooth a puedin spedî file doprant ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Se chest al è vêr, i argagns Bluetooth a puedin spedî file ae cartele "
-"Downloads dal utent cuanch'al a fat l'acès."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Cuand acetâ i file spedîts vie Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Cuand acetâ i file spedîts vie Bluetooth. Valôrs pussibii a son \"always\", "
-"\"bonded\" e \"ask\"."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Se notificâ in rivuard ai gnûfs file ricevûts."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
-msgstr "Condivision file personai"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#| msgid "Launch Personal File Sharing if enabled"
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "Fâs partî le condivision ObexPush Bluetooth se abilitade"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "condividi;file;bluetooth;obex;http;rêt;copiâ;inviâ;"
+msgstr "Condivision file personâi"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Fâs partî la Condivision dai File Personai se abilitade"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "condividi;file;http;rêt;copiâ;inviâ;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Condivision"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Preferencis"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Impostazions condivision"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Al puès jessi doprât par condividi o ricevi file"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "Al po sedi condividût vie rêt o Bluetooth"
-
-#: ../src/share-extension.c:160
-#| msgid "May be shared over the network or Bluetooth"
-msgid "May be shared over the network"
-msgstr "Al po sedi condividût vie rêt"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Al puès jessi doprât par ricevi file vie Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Pie Condivision file personâi par condividi il contignût di cheste cartele supe "
+"rêt."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -129,47 +80,77 @@ msgstr "File publics di %s"
 msgid "%s's public files on %s"
 msgstr "File publics di %s su %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Tu âs ricevût \"%s\" vie Bluetooth"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Se i clients Bluetooth a puedin spedî file doprant ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Tu âs ricevût un file"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Se chest al è vêr, i argagns Bluetooth a puedin spedî file ae cartele "
+#~ "Downloads dal utent cuanch'al a fat l'acès."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Vierç File"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Cuand acetâ i file spedîts vie Bluetooth"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Palese File"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Cuand acetâ i file spedîts vie Bluetooth. Valôrs pussibii a son \"always\", "
+#~ "\"bonded\" e \"ask\"."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "Ricezion dai file completade"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Se notificâ in rivuard ai gnûfs file ricevûts."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-#| msgid "You received \"%s\" via Bluetooth"
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Tu âs inviât un file \"%s\" vie Bluetooth"
+#~| msgid "Launch Personal File Sharing if enabled"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "Fâs partî le condivision ObexPush Bluetooth se abilitade"
 
-#: ../src/obexpush.c:240
-#| msgid "You received a file"
-msgid "You have been sent a file"
-msgstr "Tu âs inviât un file"
+#~ msgid "Preferences"
+#~ msgstr "Preferencis"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Ricêf"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Al puès jessi doprât par condividi o ricevi file"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Anule"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Al po sedi condividût vie rêt o Bluetooth"
+
+#~| msgid "May be shared over the network or Bluetooth"
+#~ msgid "May be shared over the network"
+#~ msgstr "Al po sedi condividût vie rêt"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Al puès jessi doprât par ricevi file vie Bluetooth"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Tu âs ricevût \"%s\" vie Bluetooth"
+
+#~ msgid "You received a file"
+#~ msgstr "Tu âs ricevût un file"
+
+#~ msgid "Open File"
+#~ msgstr "Vierç File"
+
+#~ msgid "Reveal File"
+#~ msgstr "Palese File"
+
+#~ msgid "File reception complete"
+#~ msgstr "Ricezion dai file completade"
+
+#~| msgid "You received \"%s\" via Bluetooth"
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Tu âs inviât un file \"%s\" vie Bluetooth"
+
+#~| msgid "You received a file"
+#~ msgid "You have been sent a file"
+#~ msgstr "Tu âs inviât un file"
+
+#~ msgid "Receive"
+#~ msgstr "Ricêf"
+
+#~ msgid "Cancel"
+#~ msgstr "Anule"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Condivît le cartele publiche in rêt"
@@ -178,8 +159,8 @@ msgstr "Anule"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over the network when the user is logged in."
 #~ msgstr ""
-#~ "Se chest al è vêr, la cartele publiche in te cartele home dai utents a "
-#~ "sarà condividude in rêt cuanche l'utent al varà fat l'acès."
+#~ "Se chest al è vêr, la cartele publiche in te cartele home dai utents a sarà "
+#~ "condividude in rêt cuanche l'utent al varà fat l'acès."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Condivît la cartele publiche vie Bluetooth"
@@ -188,21 +169,20 @@ msgstr "Anule"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over Bluetooth when the user is logged in."
 #~ msgstr ""
-#~ "Se chest al è vêr, la cartele publiche in te cartele home dai utents a "
-#~ "sarà condividude vie Bluetooth cuanche l'utent al varà fat l'acès."
+#~ "Se chest al è vêr, la cartele publiche in te cartele home dai utents a sarà "
+#~ "condividude vie Bluetooth cuanche l'utent al varà fat l'acès."
 
 #~ msgid "Whether to allow Bluetooth clients to write files."
 #~ msgstr "Se lassâ scrivi i file ai clients Bluetooth."
 
 #~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
+#~ "Whether to allow Bluetooth clients to write files, or share the files read-"
+#~ "only."
 #~ msgstr ""
 #~ "Se lassâ scrivi i file ai clients Bluetooth, o condividi i file in dome-"
 #~ "leture."
 
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
 #~ "Se i clients Bluetooth a scugnin associâsi cun il computer par spedî file."
 
@@ -252,8 +232,7 @@ msgstr "Anule"
 #~ msgstr "Fâs partî lis Preferencis dae Condivision dai File Personai"
 
 #~ msgid "Unable to launch the Personal File Sharing Preferences"
-#~ msgstr ""
-#~ "Impussibil fâ partî  lis Preferencis dae Condivision dai File Personai"
+#~ msgstr "Impussibil fâ partî  lis Preferencis dae Condivision dai File Personai"
 
 #~ msgid "No reason"
 #~ msgstr "Nissune reson"
