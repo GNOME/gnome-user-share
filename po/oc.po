@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-08-03 16:28+0000\n"
+"POT-Creation-Date: 2016-02-18 11:14+0000\n"
 "PO-Revision-Date: 2015-10-31 09:25+0200\n"
 "Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot en òc (totenoc.eu)\n"
@@ -41,7 +41,6 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr "Avia lo partiment de fichièrs personals s'es activat"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgid "share;files;http;network;copy;send;"
 msgstr "partejar;fichièrs;http;ret;copiar;mandadís;mandar;"
 
@@ -221,11 +220,10 @@ msgstr "Fichièrs publics de %s sus %s"
 #~ msgstr "Réception de fichièrs per Bluetooth"
 
 #~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr ""
-#~ "Recevoir los fichièrs per Bluetooth dins lo dossier _Télécargaments"
+#~ msgstr "Recebre los fichièrs per Bluetooth dins lo dorsièr _Telecargaments"
 
 #~ msgid "_Accept files: "
-#~ msgstr "_Accepter los fichièrs :"
+#~ msgstr "_Acceptar los fichièrs :"
 
 #~ msgid "_Notify about received files"
 #~ msgstr "A_vertir quand des fichièrs ont été recebuts"
