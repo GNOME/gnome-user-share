@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-02-18 11:14+0000\n"
+"POT-Creation-Date: 2016-03-04 23:15+0000\n"
 "PO-Revision-Date: 2015-10-31 09:25+0200\n"
 "Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot en òc (totenoc.eu)\n"
@@ -190,34 +190,34 @@ msgstr "Fichièrs publics de %s sus %s"
 #~ msgstr "Anullar"
 
 #~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Preferéncias del partage de fichièrs personals"
+#~ msgstr "Preferéncias del partiment de fichièrs personals"
 
 #~ msgid "Share Files over the Network"
-#~ msgstr "Partage de fichièrs sul ret"
+#~ msgstr "Partiment de fichièrs sus la ret"
 
 #~ msgid "_Share public files on network"
-#~ msgstr "_Partejar los fichièrs publics sul ret"
+#~ msgstr "_Partejar los fichièrs publics sus la ret"
 
 #~ msgid "_Password:"
 #~ msgstr "_Senhal :"
 
 #~ msgid "_Require password:"
-#~ msgstr "_Exiger lo senhal :"
+#~ msgstr "_Exigir lo senhal :"
 
 #~ msgid "Share Files over Bluetooth"
-#~ msgstr "Partage de fichièrs per Bluetooth"
+#~ msgstr "Partiment de fichièrs per Bluetooth"
 
 #~ msgid "Share public files over _Bluetooth"
 #~ msgstr "Partejar los fichièrs publics per _Bluetooth"
 
 #~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "Aut_oriser les periferics externes a suprimir des fichièrs"
+#~ msgstr "Aut_orizar los periferics extèrnes a suprimir de fichièrs"
 
 #~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "Exiger que les periferics e_xternes se lient a aqueste ordenador"
+#~ msgstr "Exigir que los periferics e_xtèrnes se liguen a aqueste ordenador"
 
 #~ msgid "Receive Files over Bluetooth"
-#~ msgstr "Réception de fichièrs per Bluetooth"
+#~ msgstr "Recepcion de fichièrs per Bluetooth"
 
 #~ msgid "Receive files in _Downloads folder over Bluetooth"
 #~ msgstr "Recebre los fichièrs per Bluetooth dins lo dorsièr _Telecargaments"
@@ -233,10 +233,10 @@ msgstr "Fichièrs publics de %s sus %s"
 
 #~ msgid "Unable to launch the Personal File Sharing Preferences"
 #~ msgstr ""
-#~ "Impossible de dobrir les preferéncias del partage de fichièrs personals"
+#~ "Impossible de dobrir las preferéncias del partiment de fichièrs personals"
 
 #~ msgid "No reason"
-#~ msgstr "Aucune raison"
+#~ msgstr "Aucune rason"
 
 #~ msgid "Could not display the help contents."
 #~ msgstr "Impossible d'afichar lo sommaire de l'ajuda."
@@ -245,19 +245,19 @@ msgstr "Fichièrs publics de %s sus %s"
 #~ msgstr "Impossible de bastir l'interfàcia."
 
 #~ msgid "Never"
-#~ msgstr "Jamais"
+#~ msgstr "Pas jamai"
 
 #~ msgid "When writing files"
-#~ msgstr "Au moment d'écrire los fichièrs"
+#~ msgstr "Al moment d'écrire los fichièrs"
 
 #~ msgid "Always"
 #~ msgstr "Totjorn"
 
 #~ msgid "Only for set up devices"
-#~ msgstr "Solement per les periferics configurats"
+#~ msgstr "Solament pels periferics configurats"
 
 #~ msgid "Ask"
-#~ msgstr "Demander"
+#~ msgstr "Demandar"
 
 #~ msgid "Launch Bluetooth ObexPush sharing if enabled"
-#~ msgstr "Lance lo partiment Bluetooth ObexPush s'il es activat"
+#~ msgstr "Avia lo partiment Bluetooth ObexPush s'es activat"
