@@ -98,6 +98,16 @@ AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],"$GETTEXT_PACKAGE", [The gettext package])
 AM_GLIB_GNU_GETTEXT
 
 dnl ==========================================================================
+dnl systemd user unit directory
+AC_ARG_WITH([systemduserunitdir],
+	    AS_HELP_STRING([--with-systemduserunitdir=DIR], [Directory for systemd user service files]),
+	    [],
+	    [with_systemduserunitdir=$($PKG_CONFIG --variable=systemduserunitdir systemd)])
+if test x$with_systemduserunitdir != xno; then
+	AC_SUBST([systemduserunitdir], [$with_systemduserunitdir])
+fi
+
+dnl ==========================================================================
 dnl Check for SELinux
 
 AC_CHECK_LIB(selinux, is_selinux_enabled, [ SELINUX_LIBS=-lselinux

@@ -1,0 +1,8 @@
+[Unit]
+Description=gnome-user-share WebDAV server
+
+[Service]
+Type=dbus
+BusName=org.gnome.user-share.webdav
+ExecStart=@libexecdir@/gnome-user-share-webdav
+Restart=on-failure
