@@ -7,19 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gu\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-16 20:19+0000\n"
-"PO-Revision-Date: 2014-09-17 12:30+0530\n"
-"Last-Translator: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-"
+"share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-05-05 10:55+0000\n"
+"PO-Revision-Date: 2016-07-11 22:31+0200\n"
+"Last-Translator: વિશાલ ભલાણી <vishalbhalani89@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: gu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -27,88 +26,33 @@ msgstr "ક્યારે પાસવર્ડો જરૂરી છે"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
-"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
-"\"always\"."
-msgstr ""
-"પાસવર્ડો માટે ક્યારે પૂછવું. \"ક્યારેય નહિં\", \"લખવા પર\", અને \"હંમેશા\" શક્ય કિંમતો છે."
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "પાસવર્ડો માટે ક્યારે પૂછવું. \"ક્યારેય નહિં\", \"લખવા પર\", અને \"હંમેશા\" શક્ય કિંમતો છે."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "ક્યાંતો ObexPush ની મદદથી બ્લુટુથ ક્લાઇન્ટો ફાઇલો ને મોકલી શકે છે."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"જો આ true હોય, તો વપરાશકર્તાઓ ડાઉનલોડ ડિરેક્ટરીમાં બ્લુટુથ ઉપકરણો એ ફાઇલો ને મોકલી "
-"શકે છે જ્યારે વપરાશકર્તા પ્રવેશ કરે."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "ક્યારે બ્લુટુથ પર મોકલેલ ફાઇલોને સ્વીકારો છો"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"ક્યારે બ્લૂટુથ પર મોકલેલ ફાઇલોને સ્વીકારો છો. શક્ય કિંમતો \"always\", \"bonded\", અને "
-"\"ask\" છે."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "ક્યાંતો નવી મેળવેલ ફાઇલો વિશે સૂચિત કરો."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "ખાનગી ફાઈલ વહેંચણી"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-#| msgid "Launch Personal File Sharing if enabled"
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr "બ્લુટુથ ObexPush ભાગીદારીની શરૂઆત કરો જો સક્રિય હોય"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "વહેંચવુ;ફાઇલો;બ્લુટુથ;ઑબેક્સ;http;નેટવર્ક;નકલ;મોકલો;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "વ્યક્તિગત ફાઇલ વહેંચણીને પ્રકાશિત કરો જો સક્રિય હોય તો"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "વહેંચવુ;ફાઇલો;http;નેટવર્ક;નકલ;મોકલો;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "ભાગીદારી"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "પસંદગીઓ"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "ભાગીદારી સુયોજનો"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "ફાઇલોને વહેંચવા અથવા મેળવવા માટે વાપરી શકાય છે"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "નેટવર્ક અથવા બ્લુટુથ પર વહેંચી શકાય છે"
-
-#: ../src/share-extension.c:160
-#| msgid "May be shared over the network or Bluetooth"
-msgid "May be shared over the network"
-msgstr "નેટવર્ક  મારફતે ભાગીદારી કરી શકાય છે"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "બ્લુટુથ પર ફાઇલોને મેળવવા માટે વાપરી શકાય છે"
+#: ../src/share-extension.c:118
+msgid "Turn on Personal File Sharing to share the contents of this folder over the network."
+msgstr "આ ફોલ્ડર સમાવિષ્ટો નેટવર્ક પર શેર કરવા માટે અંગત ફાઈલ શેરિંગ ચાલુ કરો."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -131,80 +75,105 @@ msgstr "%s ની જાહેર ફાઈલો"
 msgid "%s's public files on %s"
 msgstr "%s ની %s પર જાહેર ફાઈલો"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "તમને બ્લુટુથ મારફતે \"%s\" મળેલ છે"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "ક્યાંતો ObexPush ની મદદથી બ્લુટુથ ક્લાઇન્ટો ફાઇલો ને મોકલી શકે છે."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "તમને ફાઇલ મળેલ છે"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads directory "
+#~ "when logged in."
+#~ msgstr ""
+#~ "જો આ true હોય, તો વપરાશકર્તાઓ ડાઉનલોડ ડિરેક્ટરીમાં બ્લુટુથ ઉપકરણો એ ફાઇલો ને મોકલી શકે છે જ્યારે "
+#~ "વપરાશકર્તા પ્રવેશ કરે."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "ફાઇલને ખોલો"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "ક્યારે બ્લુટુથ પર મોકલેલ ફાઇલોને સ્વીકારો છો"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "ફાઇલને બતાવો"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" "
+#~ "and \"ask\"."
+#~ msgstr ""
+#~ "ક્યારે બ્લૂટુથ પર મોકલેલ ફાઇલોને સ્વીકારો છો. શક્ય કિંમતો \"always\", \"bonded\", અને \"ask\" છે."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "ફાઇલ રિસેપ્શન સમાપ્ત"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "ક્યાંતો નવી મેળવેલ ફાઇલો વિશે સૂચિત કરો."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-#| msgid "You received \"%s\" via Bluetooth"
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "તમને બ્લુટુથ મારફતે  ફાઇલ \"%s\" ને મોકલેલ છે"
+#~| msgid "Launch Personal File Sharing if enabled"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr "બ્લુટુથ ObexPush ભાગીદારીની શરૂઆત કરો જો સક્રિય હોય"
 
-#: ../src/obexpush.c:240
-#| msgid "You received a file"
-msgid "You have been sent a file"
-msgstr "તમને ફાઇલને મોકલેલ છે"
+#~ msgid "Preferences"
+#~ msgstr "પસંદગીઓ"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "પ્રાપ્ત"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "ફાઇલોને વહેંચવા અથવા મેળવવા માટે વાપરી શકાય છે"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "રદ કરો"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "નેટવર્ક અથવા બ્લુટુથ પર વહેંચી શકાય છે"
+
+#~| msgid "May be shared over the network or Bluetooth"
+#~ msgid "May be shared over the network"
+#~ msgstr "નેટવર્ક  મારફતે ભાગીદારી કરી શકાય છે"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "બ્લુટુથ પર ફાઇલોને મેળવવા માટે વાપરી શકાય છે"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "તમને બ્લુટુથ મારફતે \"%s\" મળેલ છે"
+
+#~ msgid "You received a file"
+#~ msgstr "તમને ફાઇલ મળેલ છે"
+
+#~ msgid "Open File"
+#~ msgstr "ફાઇલને ખોલો"
+
+#~ msgid "Reveal File"
+#~ msgstr "ફાઇલને બતાવો"
+
+#~ msgid "File reception complete"
+#~ msgstr "ફાઇલ રિસેપ્શન સમાપ્ત"
+
+#~| msgid "You received \"%s\" via Bluetooth"
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "તમને બ્લુટુથ મારફતે  ફાઇલ \"%s\" ને મોકલેલ છે"
+
+#~| msgid "You received a file"
+#~ msgid "You have been sent a file"
+#~ msgstr "તમને ફાઇલને મોકલેલ છે"
+
+#~ msgid "Receive"
+#~ msgstr "પ્રાપ્ત"
+
+#~ msgid "Cancel"
+#~ msgstr "રદ કરો"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "નેટવર્ક પર જાહેર ડિરેક્ટરીને વહેંચો"
 
 #~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over the network when the user is logged in."
+#~ "If this is true, the Public directory in the users home directory will be shared over "
+#~ "the network when the user is logged in."
 #~ msgstr ""
-#~ "જો આ true હોય, તો વપરાશકર્તા ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી નેટવર્ક પર વહેંચાશે "
-#~ "જ્યારે વપરાશકર્તા પ્રવેશ કરે."
+#~ "જો આ true હોય, તો વપરાશકર્તા ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી નેટવર્ક પર વહેંચાશે જ્યારે વપરાશકર્તા "
+#~ "પ્રવેશ કરે."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "બ્લુટુથ પર જાહેર ડિરેક્ટરી વહેંચો"
 
 #~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over Bluetooth when the user is logged in."
+#~ "If this is true, the Public directory in the users home directory will be shared over "
+#~ "Bluetooth when the user is logged in."
 #~ msgstr ""
-#~ "જો આ true હોય, તો વપરાશકર્તા ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી બ્લુટુથ પર વહેંચાશે "
-#~ "જ્યારે વપરાશકર્તા પ્રવેશ કરે."
+#~ "જો આ true હોય, તો વપરાશકર્તા ઘર ડિરેક્ટરીમાંની જાહેર ડિરેક્ટરી બ્લુટુથ પર વહેંચાશે જ્યારે વપરાશકર્તા "
+#~ "પ્રવેશ કરે."
 
 #~ msgid "Whether to allow Bluetooth clients to write files."
 #~ msgstr "ક્યાંતો ફાઇલો ને લખવા માટે બ્લુટુથ ક્લાઇન્ટોને પરવાનગી આપો."
 
-#~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
+#~ msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
 #~ msgstr ""
-#~ "ક્યાંતો ફાઇલો ને લખવા માટે બ્લુટુથ ક્લાઇન્ટોને પરવાનગી આપો. અથવા ફક્ત વાંચી શકાય તેવી "
-#~ "ફાઇલોને વહેંચો."
+#~ "ક્યાંતો ફાઇલો ને લખવા માટે બ્લુટુથ ક્લાઇન્ટોને પરવાનગી આપો. અથવા ફક્ત વાંચી શકાય તેવી ફાઇલોને વહેંચો."
 
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr "ક્યાંતો ફાઇલો ને મોકલવા માટે કૉમ્પયુટર સાથે બ્લુટુથ ક્લાઇન્ટોને જોડીની જરૂર છે."
 
 #~ msgid "Launch Personal File Sharing Preferences"
