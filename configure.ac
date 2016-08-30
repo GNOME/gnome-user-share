@@ -99,6 +99,7 @@ AM_GLIB_GNU_GETTEXT
 
 dnl ==========================================================================
 dnl systemd user unit directory
+PKG_CHECK_EXISTS (systemd,, AC_MSG_ERROR ([systemd development headers not found]))
 AC_ARG_WITH([systemduserunitdir],
 	    AS_HELP_STRING([--with-systemduserunitdir=DIR], [Directory for systemd user service files]),
 	    [],
