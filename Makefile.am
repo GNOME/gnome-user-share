@@ -20,7 +20,9 @@ AM_DISTCHECK_CONFIGURE_FLAGS = \
 # Build ChangeLog from GIT history
 ChangeLog:
 	@if test -f $(top_srcdir)/.git/HEAD; then \
+		pushd $(top_srcdir) ; \
 		git log --stat --after="Thu Jun 11 22:19:01 2009" > $@; \
+		popd ; \
 	fi
 
 dist: ChangeLog
