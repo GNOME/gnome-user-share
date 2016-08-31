@@ -1,4 +1,7 @@
-This is gnome-user-share 3.18.1, a system for easy sharing of user files.
+This is gnome-user-share 3.18.2, a system for easy sharing of user files.
+
+Major changes since 3.18.1:
+- Add a way for gnome-user-share to be started via user systemd
 
 Major changes since 3.18.0:
 - Translation updates
