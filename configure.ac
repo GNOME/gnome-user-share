@@ -85,8 +85,6 @@ fi
 if test "x$exec_prefix" = "xNONE"; then
    exec_prefix=$prefix
 fi
-installdir="`eval echo $libexecdir`"
-AC_SUBST(installdir, $installdir)
 
 dnl ==========================================================================
 IT_PROG_INTLTOOL([0.35.0])
@@ -188,7 +186,6 @@ fi
 AC_CONFIG_FILES([
 Makefile
 data/Makefile
-data/gnome-user-share-webdav.desktop.in
 data/org.gnome.desktop.file-sharing.gschema.xml.in
 po/Makefile.in
 src/Makefile
