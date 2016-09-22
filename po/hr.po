@@ -1,0 +1,277 @@
+# Croatian translation for gnome-user-share
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the gnome-user-share package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-04-20 10:31+0000\n"
+"PO-Revision-Date: 2015-12-19 23:14+0000\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-09-22 20:00+0000\n"
+"X-Generator: Launchpad (build 18204)\n"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+msgid "Share Public directory over the network"
+msgstr "Dijeli Javnu mapu preko mreže"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+msgid ""
+"If this is true, the Public directory in the users home directory will be "
+"shared over the network when the user is logged in."
+msgstr ""
+"Ako je ova stavka odabrana, javna mapa u korisničkoj mapi će biti dijeljena "
+"preko mreže kada je korisnik prijavljen."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+msgid "When to require passwords"
+msgstr "Kada zahtijevati lozinku"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Kada pitati za lozinku. Moguće vrijednosti su \"nikad\", \"prilikom "
+"zapisivanja\" i \"uvijek\"."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
+msgid "Whether Bluetooth clients can send files using ObexPush."
+msgstr "Trebaju li Bluetooth klijenti slati datoteke koristeći ObexPush?"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
+msgid ""
+"If this is true, Bluetooth devices can send files to the user's Downloads "
+"directory when logged in."
+msgstr ""
+"Ako je odabrano, Bluetooth uređaji mogu slati datoteke u korisnikov "
+"direktorij \"Preuzimanja\" kada je prijavljen."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
+msgid "When to accept files sent over Bluetooth"
+msgstr "Kada prihvatiti datoteke poslane Bluetooth povezivanjem"
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
+msgid ""
+"When to accept files sent over Bluetooth. Possible values are \"always\", "
+"\"bonded\" and \"ask\"."
+msgstr ""
+"Kada prihvatiti datoteke poslane Bluetooth povezivanjem. Moguće vrijednosti "
+"su \"uvijek\", \"vezan\" i \"pitaj\"."
+
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
+msgid "Whether to notify about newly received files."
+msgstr "Treba li obavijestiti o novim primljenim datotekama."
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: ../data/gnome-user-share-properties.desktop.in.h:1
+msgid "Personal File Sharing"
+msgstr "Dijeljenje osobnih datoteka"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
+msgid "Launch Bluetooth ObexPush sharing if enabled"
+msgstr "Pokreni Bluetooth ObexPush dijeljenje ako je omogućeno"
+
+#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "dijeli;datoteka;bluetooth;obex;http;mreža;kopiraj;pošalji;"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Pokreni dijeljenje osobnih datoteka ako je omogućeno"
+
+#: ../data/file-share-properties.ui.h:1
+msgid "Personal File Sharing Preferences"
+msgstr "Osobitosti osobnog dijeljenja datoteka"
+
+#: ../data/file-share-properties.ui.h:2
+msgid "Share Files over the Network"
+msgstr "Dijeli datoteke putem mreže"
+
+#: ../data/file-share-properties.ui.h:3
+msgid "_Share public files on network"
+msgstr "_Dijeli javne datoteke preko mreže"
+
+#: ../data/file-share-properties.ui.h:4
+msgid "_Password:"
+msgstr "_Lozinka:"
+
+#: ../data/file-share-properties.ui.h:5
+msgid "_Require password:"
+msgstr "_Zahtijeva lozinku:"
+
+#: ../data/file-share-properties.ui.h:6
+msgid "Receive Files over Bluetooth"
+msgstr "Primi datoteke putem Bluetootha"
+
+#: ../data/file-share-properties.ui.h:7
+msgid "Receive files in _Downloads folder over Bluetooth"
+msgstr "Primi datoteke u mapu _Preuzimanja preko Bluetootha"
+
+#: ../data/file-share-properties.ui.h:8
+msgid "_Accept files: "
+msgstr "_Prihvati datoteke: "
+
+#: ../data/file-share-properties.ui.h:9
+msgid "_Notify about received files"
+msgstr "_Obavijesti o primljenim datotekama"
+
+#: ../data/gnome-user-share-properties.desktop.in.h:2
+msgid "Preferences for sharing of files"
+msgstr "Osobitosti dijeljenja datoteka"
+
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:102
+msgid "Sharing"
+msgstr "Dijeljenje"
+
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Osobitosti"
+
+#. translators: This is the tooltip for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:120
+msgid "Sharing Settings"
+msgstr "Postavke dijeljenja"
+
+#: ../src/share-extension.c:147
+msgid "May be shared over the network"
+msgstr "Može se dijeliti preko mreže"
+
+#: ../src/file-share-properties.c:139
+msgid ""
+"This feature cannot be enabled because the required packages are not "
+"installed on your system"
+msgstr ""
+"Ova značajka se ne može omogućiti jer zahtijevani paketi nisu instalirani na "
+"vašem sustavu"
+
+#: ../src/file-share-properties.c:251
+msgid "No reason"
+msgstr "Bez razloga"
+
+#: ../src/file-share-properties.c:279
+msgid "Could not display the help contents."
+msgstr "Nije moguće prikazati sadržaj pomoći."
+
+#: ../src/file-share-properties.c:309
+msgid "Could not build interface."
+msgstr "Nije moguće izgraditi sučelje."
+
+#: ../src/file-share-properties.c:338
+msgid "Never"
+msgstr "Nikada"
+
+#: ../src/file-share-properties.c:341
+msgid "When writing files"
+msgstr "Prilikom pisanja datoteka"
+
+#: ../src/file-share-properties.c:344 ../src/file-share-properties.c:367
+msgid "Always"
+msgstr "Uvijek"
+
+#: ../src/file-share-properties.c:370
+msgid "Only for set up devices"
+msgstr "Samo za postavljene uređaje"
+
+#: ../src/file-share-properties.c:375
+msgid "Ask"
+msgstr "Pitaj"
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../src/http.c:125
+#, c-format
+msgid "%s's public files"
+msgstr "javni podaci korisnika %s"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../src/http.c:129
+#, c-format
+msgid "%s's public files on %s"
+msgstr "javni podaci korisnika %s na %s"
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:231
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Primili ste datoteku \"%s\" Bluetooth povezivanjem"
+
+#: ../src/obexpush.c:232
+msgid "You received a file"
+msgstr "Primili ste datoteku"
+
+#: ../src/obexpush.c:240
+msgid "Open File"
+msgstr "Otvori datoteku"
+
+#: ../src/obexpush.c:244
+msgid "Reveal File"
+msgstr "Otkrij datoteku"
+
+#: ../src/obexpush.c:254
+#, c-format
+msgid "You have received the file “%s” over Bluetooth."
+msgstr "Primili ste datoteku \"%s\" Bluetooth povezivanjem"
+
+#: ../src/obexpush.c:264 ../src/obexpush.c:387
+msgid "File Received"
+msgstr "Datoteka primljena"
+
+#: ../src/obexpush.c:267
+msgid "Open"
+msgstr "Otvori"
+
+#: ../src/obexpush.c:270
+msgid "Reveal"
+msgstr "Otkrij"
+
+#: ../src/obexpush.c:271 ../src/obexpush.c:391
+msgid "OK"
+msgstr "U redu"
+
+#: ../src/obexpush.c:289
+msgid "File reception complete"
+msgstr "Primanje datoteka završeno"
+
+#. Translators: %s is the name of the filename being received
+#: ../src/obexpush.c:381 ../src/obexpush.c:410
+#, c-format
+msgid "You have been sent a file \"%s\" via Bluetooth"
+msgstr "Poslali ste datoteku \"%s\" putem Bluetootha"
+
+#: ../src/obexpush.c:389
+msgid "Accept"
+msgstr "Prihvati"
+
+#: ../src/obexpush.c:390
+msgid "Reject"
+msgstr "Odbij"
+
+#: ../src/obexpush.c:411
+msgid "You have been sent a file"
+msgstr "Poslali ste datoteku"
+
+#: ../src/obexpush.c:420
+msgid "Receive"
+msgstr "Primi"
+
+#: ../src/obexpush.c:423
+msgid "Cancel"
+msgstr "Odustani"
