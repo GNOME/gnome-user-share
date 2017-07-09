@@ -9,16 +9,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-16 20:17+0000\n"
-"PO-Revision-Date: 2014-08-17 01:10+0200\n"
-"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"POT-Creation-Date: 2017-04-22 09:43+0000\n"
+"PO-Revision-Date: 2017-07-08 12:08+0100\n"
+"Last-Translator: Francesc Famadas <kiski97@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
@@ -33,84 +33,34 @@ msgstr ""
 "Quan s'ha de demanar contrasenya. Els possibles valors són «never» (mai), "
 "«on_write» (en escriure), i «always» (sempre)."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "Si els clients del Bluetooth poden enviar fitxers amb ObexPush."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Si és cert, els dispositius Bluetooth poden enviar fitxers a la carpeta de "
-"baixades de l'usuari quan aquest usuari hagi entrat."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr "Quan s'han d'acceptar fitxers enviats a través del Bluetooth"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Quan s'hagin d'acceptar fitxers a través del Bluetooth. Els possibles valors "
-"són «always» (sempre), «bonded» (vinculat) i «ask» (pregunta)."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Compartició de fitxers personals"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr ""
-"Executa la compartició mitjançant el Bluetooth ObexPush si està habilitada"
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "comparteix;fitxers;bluetooth;obex;http;xarxa;copia;envia;"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Executa la compartició de fitxers personals si està habilitat"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "comparteix;fitxers;http;xarxa;copia;envia;"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Compartició"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Preferències"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Preferències de compartició"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "Es pot utilitzar per compartir o rebre fitxers"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
 msgstr ""
-"Podeu compartir els fitxers d'aquesta carpeta a través de la xarxa i del "
-"Bluetooth"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "Es pot compartir per la xarxa"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "Es pot utilitzar per rebre fitxers a través del Bluetooth"
+"Activa la compartació de fitxers personal per compartir el contingut "
+"d'aquesta carpeta a la xarxa."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -133,42 +83,73 @@ msgstr "Fitxers públics de %s"
 msgid "%s's public files on %s"
 msgstr "Fitxers públics de %s a %s"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Heu rebut «%s» a través del Bluetooth"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "Si els clients del Bluetooth poden enviar fitxers amb ObexPush."
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "Heu rebut un fitxer"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Si és cert, els dispositius Bluetooth poden enviar fitxers a la carpeta "
+#~ "de baixades de l'usuari quan aquest usuari hagi entrat."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "Obre el fitxer"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Quan s'han d'acceptar fitxers enviats a través del Bluetooth"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "Revela el fitxer"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Quan s'hagin d'acceptar fitxers a través del Bluetooth. Els possibles "
+#~ "valors són «always» (sempre), «bonded» (vinculat) i «ask» (pregunta)."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "S'ha completat la recepció del fitxer"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Heu rebut el fitxer «%s» a través del Bluetooth"
+#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
+#~ msgstr ""
+#~ "Executa la compartició mitjançant el Bluetooth ObexPush si està habilitada"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "Heu rebut un fitxer"
+#~ msgid "Preferences"
+#~ msgstr "Preferències"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "Rebre"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Es pot utilitzar per compartir o rebre fitxers"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "Cancel·la"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr ""
+#~ "Podeu compartir els fitxers d'aquesta carpeta a través de la xarxa i del "
+#~ "Bluetooth"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Es pot compartir per la xarxa"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Es pot utilitzar per rebre fitxers a través del Bluetooth"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Heu rebut «%s» a través del Bluetooth"
+
+#~ msgid "You received a file"
+#~ msgstr "Heu rebut un fitxer"
+
+#~ msgid "Open File"
+#~ msgstr "Obre el fitxer"
+
+#~ msgid "Reveal File"
+#~ msgstr "Revela el fitxer"
+
+#~ msgid "File reception complete"
+#~ msgstr "S'ha completat la recepció del fitxer"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Heu rebut el fitxer «%s» a través del Bluetooth"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "Heu rebut un fitxer"
+
+#~ msgid "Receive"
+#~ msgstr "Rebre"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancel·la"
