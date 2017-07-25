@@ -11,99 +11,54 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-user-share.HEAD.ne\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-20 08:23+0000\n"
-"PO-Revision-Date: 2014-09-20 13:31+0400\n"
+"Project-Id-Version: Gnome Nepali Translation Project\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-"
+"share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-04-08 14:50+0000\n"
+"PO-Revision-Date: 2017-07-25 12:38+0545\n"
 "Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali Translation Team <chautari@gmail.com>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
-"Plural-Forms: nplurals=2;plural=(n!=1)\n"
-"X-Poedit-Language: Nepali\n"
-"X-Poedit-Country: NEPAL\n"
+"X-Generator: Poedit 2.0.3\n"
+"Plural-Forms: nplurals=2;plural=(n!=1);\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
 msgstr "पासवर्ड कति बेला आवश्यक पर्ला"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr "पासवर्ड कति बेला माग्ने, संभाव्य मानहरू \"never\", \"on_write\", र \"always\" छन् ।"
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
+msgstr "पासवर्ड कति बेला माग्ने, संभाव्य मानहरू \"कहिल्यै\", \"लेख्नेबेला\", र \"सधैं\" छन् ।"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "ObexPush प्रयोग गरि ब्लुटुठबाट फाईल पठाउनुहोस्"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
-#, fuzzy
-msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
-msgstr "यदि यो सहि हो भने, प्रयोगकर्ता लगइन हुँदा प्रयोगकर्ताहरूको गृह डाइरेक्टरीको सार्वजनिक डाइरेक्टरी साझेदारी हुँनेछ ।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "When to accept files sent over Bluetooth"
-msgstr ""
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-#, fuzzy
-msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
-msgstr "पासवर्ड कति बेला माग्ने, संभाव्य मानहरू \"never\", \"on_write\", र \"always\" छन् ।"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to notify about newly received files."
-msgstr ""
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "व्यक्तिगत फाइल साझेदारी"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
-msgid "Launch Bluetooth ObexPush sharing if enabled"
-msgstr ""
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr ""
-
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-#, fuzzy
 msgid "Launch Personal File Sharing if enabled"
-msgstr "व्यक्तिगत फाइल साझेदारी"
+msgstr "व्यक्तिगत फाइल साझेदारी सक्षम भए चलाउनुहोस्"
+
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
+msgstr "साझा;फाईल;http;नेटवर्क;प्रतिलिपि;पठाउन;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "साझेदारी"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "प्राथमिकताहरू"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "साझेदारी सेटिङ"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr ""
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr ""
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr ""
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr ""
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the network."
+msgstr "नेटवर्कमा फाईल बाढ्न व्यक्तिगत फाइल साझेदारी सक्षम गर्नुहोस्"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -126,43 +81,46 @@ msgstr "%s को सार्वजनिक फाइल"
 msgid "%s's public files on %s"
 msgstr "%s मा %s' को सार्वजनिक फाइल"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "ब्लुटुठबाट फाईल \"%s\" पाउनुभयो"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "ObexPush प्रयोग गरि ब्लुटुठबाट फाईल पठाउनुहोस्"
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "फाईल पाउनुभयो"
+#, fuzzy
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads directory "
+#~ "when logged in."
+#~ msgstr ""
+#~ "यदि यो सहि हो भने, प्रयोगकर्ता लगइन हुँदा प्रयोगकर्ताहरूको गृह डाइरेक्टरीको सार्वजनिक डाइरेक्टरी "
+#~ "साझेदारी हुँनेछ ।"
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "फाइल खोल्नुहोस्"
+#, fuzzy
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" "
+#~ "and \"ask\"."
+#~ msgstr "पासवर्ड कति बेला माग्ने, संभाव्य मानहरू \"never\", \"on_write\", र \"always\" छन् ।"
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "फाईल देखाउनुहोस्"
+#~ msgid "Preferences"
+#~ msgstr "प्राथमिकताहरू"
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "फाइल स्थानान्तरण पूरा भयो ।"
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "ब्लुटुठबाट फाईल \"%s\" पाउनुभयो"
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr ""
+#~ msgid "You received a file"
+#~ msgstr "फाईल पाउनुभयो"
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "फाईल पठाईएको छ"
+#~ msgid "Open File"
+#~ msgstr "फाइल खोल्नुहोस्"
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "प्राप्त गर्नुहोस्"
+#~ msgid "Reveal File"
+#~ msgstr "फाईल देखाउनुहोस्"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "रद्द गर्नुहोस्"
+#~ msgid "File reception complete"
+#~ msgstr "फाइल स्थानान्तरण पूरा भयो ।"
 
+#~ msgid "You have been sent a file"
+#~ msgstr "फाईल पठाईएको छ"
+
+#~ msgid "Receive"
+#~ msgstr "प्राप्त गर्नुहोस्"
+
+#~ msgid "Cancel"
+#~ msgstr "रद्द गर्नुहोस्"
