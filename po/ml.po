@@ -6,40 +6,29 @@
 # Ani Peter <apeter@redhat.com>, 2009, 2012.
 # Anish A <aneesh.nl@gmail.com>, 2013.
 # ‌ Balasankar C <c.balasankar@gmail.com>, 2014.
+# Anish Sheela <aneesh.nl@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: ml\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-05-19 08:07+0000\n"
-"PO-Revision-Date: 2014-05-20 09:41+0530\n"
-"Last-Translator: Balasankar C <c.balasankar@gmail.com>\n"
-"Language-Team: Swatantra Malayalam Computing\n"
+"POT-Creation-Date: 2017-04-08 14:50+0000\n"
+"PO-Revision-Date: 2017-08-06 11:43+0530\n"
+"Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
+"Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "നെറ്റ്‌വര്‍ക്കില്‍ പബ്ലിക് ഡയറക്ടറി പങ്കിടുക"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"ഇതു് true ആണെങ്കില്‍, ഉപയോക്താവ് ലോഗിന്‍ ചെയ്യുമ്പോള്‍, ഹോം ഡയറക്ടറിയിലുള്ള പബ്ലിക് ഡയറക്ടറി "
-"നെറ്റ്‌വര്‍ക്ക് വഴി പങ്കിടുന്നു."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
 msgid "When to require passwords"
 msgstr "പാസ്‌വേര്‍ഡുകള്‍ എപ്പോഴാണു് ആവശ്യപ്പടേണ്ടതു്"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -47,78 +36,35 @@ msgstr ""
 "പാസ്‌വേര്‍ഡുകള്‍ക്കായി ആവശ്യപ്പെടണമോ എന്നു്. സാധ്യമായ മൂല്ല്യങ്ങള്‍ \"never\", \"on_write\", "
 "\"always\"."
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "ബ്ലൂട്ടുത് ക്ലൈന്റുകള്‍ക്കു് ObexPush ഉപയോഗിച്ചു് ഫയലുകള്‍ അയയ്ക്കുവാന്‍ സാധിക്കുമോ."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"ഇതു് ട്രൂ ആണു് എങ്കില്‍, ലോഗിന്‍ ചെയ്യുമ്പോള്‍, ബ്ലൂടുത് ഡിവൈസുകള്‍ക്കു് ഉപയോക്താവിന്റെ ഡൌണ്‍ലോട് "
-"ഡയറക്ടറിയിലേക്കു് ഫയലുകള്‍ അയയ്ക്കാം."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "When to accept files sent over Bluetooth"
-msgstr "ബ്ലൂടൂത് വഴി എപ്പോഴാണു് ഫയലുകള്‍ സ്വീകരിക്കേണ്ടതു്. "
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"ബ്ലൂടൂത് വഴി എപ്പോഴാണു് ഫയലുകള്‍ സ്വീകരിക്കേണ്ടതു്. സാധ്യമായ മൂല്ല്യങ്ങള്‍ \"always\", \"bonded"
-"\",  \"ask\"."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether to notify about newly received files."
-msgstr "പുതുതായി ലഭ്യമാകുന്ന ഫയലുകളെപ്പറ്റി അറിയിക്കണമോ എന്നു്."
-
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:1
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "സ്വകാര്യ ഫയല്‍ പങ്കിടല്‍"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:2
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "പ്രവര്‍ത്തന സജ്ജമെങ്കില്‍ സ്വകാര്യ ഫയല്‍ പങ്കിടല്‍ ലഭ്യമാക്കുക"
 
-#: ../data/gnome-user-share-obexpush.desktop.in.in.h:3
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "share;files;bluetooth;obex;http;network;copy;send;"
+#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgid "share;files;http;network;copy;send;"
+msgstr "share;files;http;network;copy;send;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:102
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "പങ്കിടല്‍"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "മുന്‍ഗണനകള്‍"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:120
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "പങ്കിടല്‍ ക്രമീകരണങ്ങള്‍"
 
-#: ../src/share-extension.c:155
-msgid "May be used to share or receive files"
-msgstr "ഫയലുകള്‍ പങ്കിടുന്നതിനു് അല്ലെങ്കില്‍ ലഭ്യമാക്കുന്നതിനു് ഉപയോഗിയ്ക്കാം"
-
-#: ../src/share-extension.c:158
-msgid "May be shared over the network or Bluetooth"
-msgstr "നെറ്റ്‌വര്‍ക്ക് അല്ലെങ്കില്‍ ബ്ലൂടൂത് വഴി നിങ്ങള്‍ക്കു് ഫയലുകള്‍ പങ്കിടുവാന്‍ സാധിക്കുന്നു"
-
-#: ../src/share-extension.c:160
-msgid "May be shared over the network"
-msgstr "ഒരുവേള ശൃംഘലയിലൂടെ പങ്കുവെയ്ക്കപ്പെട്ടവ ആവാം"
-
-#: ../src/share-extension.c:166
-msgid "May be used to receive files over Bluetooth"
-msgstr "ഒരുവേള ബ്ലൂടൂത് വഴി ഫയലുകള്‍ ലഭ്യമാക്കാൻ ഉപയോഗിക്കുന്നത് ആവാം"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"ഈ ഫോള്‍ഡറിലെ ഉള്ളടക്കം നെറ്റ്‍വര്‍ക്ക് വഴി പങ്കിടാന്‍ സ്വകാര്യ ഫയല്‍ "
+"പങ്കിടല്‍ പ്രവര്‍ത്തനസജ്ജമാക്കുക."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -132,54 +78,89 @@ msgstr "ഒരുവേള ബ്ലൂടൂത് വഴി ഫയലുകള
 #: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
-msgstr "%s'-നുള്ള പബ്ലിക് ഫയലുകള്‍"
+msgstr "%s ന്റെ പബ്ലിക് ഫയലുകള്‍"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
 #: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
-msgstr "%s'-നുള്ള പബ്ലിക് ഫയലുകള്‍ - %s-ല്‍"
+msgstr "%s ന്റെ പബ്ലിക് ഫയലുകള്‍ %s ല്‍"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:151
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "നിങ്ങള്‍ക്കു് ബ്ലൂടൂത് വഴി \"%s\" ലഭിച്ചിരിക്കുന്നു."
+#~ msgid "Share Public directory over the network"
+#~ msgstr "നെറ്റ്‌വര്‍ക്കില്‍ പബ്ലിക് ഡയറക്ടറി പങ്കിടുക"
 
-#: ../src/obexpush.c:153
-msgid "You received a file"
-msgstr "നിങ്ങള്‍ക്കു് ഒരു ഫയല്‍ ലഭിച്ചിരിക്കുന്നു"
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "ഇതു് true ആണെങ്കില്‍, ഉപയോക്താവ് ലോഗിന്‍ ചെയ്യുമ്പോള്‍, ഹോം ഡയറക്ടറിയിലുള്ള പബ്ലിക് ഡയറക്ടറി "
+#~ "നെറ്റ്‌വര്‍ക്ക് വഴി പങ്കിടുന്നു."
 
-#: ../src/obexpush.c:164
-msgid "Open File"
-msgstr "ഫയല്‍ തുറക്കുക"
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr "ബ്ലൂട്ടുത് ക്ലൈന്റുകള്‍ക്കു് ObexPush ഉപയോഗിച്ചു് ഫയലുകള്‍ അയയ്ക്കുവാന്‍ സാധിക്കുമോ."
 
-#: ../src/obexpush.c:168
-msgid "Reveal File"
-msgstr "ഫയല്‍ കാണിക്കുക"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "ഇതു് ട്രൂ ആണു് എങ്കില്‍, ലോഗിന്‍ ചെയ്യുമ്പോള്‍, ബ്ലൂടുത് ഡിവൈസുകള്‍ക്കു് ഉപയോക്താവിന്റെ ഡൌണ്‍ലോട് "
+#~ "ഡയറക്ടറിയിലേക്കു് ഫയലുകള്‍ അയയ്ക്കാം."
 
-#: ../src/obexpush.c:185
-msgid "File reception complete"
-msgstr "ഫയല്‍ റിസപ്ഷന്‍ പൂര്‍ത്തിയാക്കി"
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "ബ്ലൂടൂത് വഴി എപ്പോഴാണു് ഫയലുകള്‍ സ്വീകരിക്കേണ്ടതു്. "
 
-#. Translators: %s is the name of the filename being received
-#: ../src/obexpush.c:239
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "നിങ്ങൾക്ക് ബ്ലൂടൂത് വഴി \"%s\" ഫൈയല്‍ ലഭിച്ചിരിക്കുന്നു"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "ബ്ലൂടൂത് വഴി എപ്പോഴാണു് ഫയലുകള്‍ സ്വീകരിക്കേണ്ടതു്. സാധ്യമായ മൂല്ല്യങ്ങള്‍ \"always\", \"bonded"
+#~ "\",  \"ask\"."
 
-#: ../src/obexpush.c:240
-msgid "You have been sent a file"
-msgstr "നിങ്ങള്‍ ഒരു ഫയല്‍ അയച്ചിരിക്കുന്നു"
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "പുതുതായി ലഭ്യമാകുന്ന ഫയലുകളെപ്പറ്റി അറിയിക്കണമോ എന്നു്."
 
-#: ../src/obexpush.c:248
-msgid "Receive"
-msgstr "സ്വീകരിക്കുക"
+#~ msgid "Preferences"
+#~ msgstr "മുന്‍ഗണനകള്‍"
 
-#: ../src/obexpush.c:251
-msgid "Cancel"
-msgstr "റദ്ദാക്കുക"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "ഫയലുകള്‍ പങ്കിടുന്നതിനു് അല്ലെങ്കില്‍ ലഭ്യമാക്കുന്നതിനു് ഉപയോഗിയ്ക്കാം"
+
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "നെറ്റ്‌വര്‍ക്ക് അല്ലെങ്കില്‍ ബ്ലൂടൂത് വഴി നിങ്ങള്‍ക്കു് ഫയലുകള്‍ പങ്കിടുവാന്‍ സാധിക്കുന്നു"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "ഒരുവേള ശൃംഘലയിലൂടെ പങ്കുവെയ്ക്കപ്പെട്ടവ ആവാം"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "ഒരുവേള ബ്ലൂടൂത് വഴി ഫയലുകള്‍ ലഭ്യമാക്കാൻ ഉപയോഗിക്കുന്നത് ആവാം"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "നിങ്ങള്‍ക്കു് ബ്ലൂടൂത് വഴി \"%s\" ലഭിച്ചിരിക്കുന്നു."
+
+#~ msgid "You received a file"
+#~ msgstr "നിങ്ങള്‍ക്കു് ഒരു ഫയല്‍ ലഭിച്ചിരിക്കുന്നു"
+
+#~ msgid "Open File"
+#~ msgstr "ഫയല്‍ തുറക്കുക"
+
+#~ msgid "Reveal File"
+#~ msgstr "ഫയല്‍ കാണിക്കുക"
+
+#~ msgid "File reception complete"
+#~ msgstr "ഫയല്‍ റിസപ്ഷന്‍ പൂര്‍ത്തിയാക്കി"
+
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "നിങ്ങൾക്ക് ബ്ലൂടൂത് വഴി \"%s\" ഫൈയല്‍ ലഭിച്ചിരിക്കുന്നു"
+
+#~ msgid "You have been sent a file"
+#~ msgstr "നിങ്ങള്‍ ഒരു ഫയല്‍ അയച്ചിരിക്കുന്നു"
+
+#~ msgid "Receive"
+#~ msgstr "സ്വീകരിക്കുക"
+
+#~ msgid "Cancel"
+#~ msgstr "റദ്ദാക്കുക"
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "ബ്ലൂടൂതില്‍ പബ്ലിക് ഡയറക്ടറി പങ്കിടുക"
