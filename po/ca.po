@@ -59,7 +59,7 @@ msgid ""
 "Turn on Personal File Sharing to share the contents of this folder over the "
 "network."
 msgstr ""
-"Activa la compartació de fitxers personal per compartir el contingut "
+"Activa la compartició de fitxers personals per compartir el contingut "
 "d'aquesta carpeta a la xarxa."
 
 #. Translators: The %s will get filled in with the user name
