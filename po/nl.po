@@ -2,30 +2,32 @@
 #
 # This file is distributed under the same license as the gnome-user-share package.
 #
-# Tino Meinen <a.t.meinen@chello.nl>, 2005‒2006
-# Wouter Bolsterlee <wbolster@gnome.org>, 2010‒2013
-# Reinout van Schouwen <reinouts@gnome.org>, 2013
-# Justin van Steijn <justin50@live.nl>, 2016.
 #
+# Tino Meinen <a.t.meinen@chello.nl>, 2005‒2006.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2010‒2013.
+# Reinout van Schouwen <reinouts@gnome.org>, 2013.
+# Justin van Steijn <justin50@live.nl>, 2016.
+# Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-u"
+"ser-share&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2017-04-08 14:50+0000\n"
-"PO-Revision-Date: 2016-02-22 20:40+0100\n"
-"Last-Translator: Justin van Steijn <justin50@live.nl>\n"
-"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"PO-Revision-Date: 2017-09-12 10:50+0100\n"
+"Last-Translator: Hannie Dumoleyn <hannie@ubuntu-nl.org>\n"
+"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # gevraagd/geëist
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
-msgstr "Wanneer om wachtwoorden wordt gevraagd"
+msgstr "Wanneer wachtwoorden vereist zijn"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
@@ -33,12 +35,12 @@ msgid ""
 "\"always\"."
 msgstr ""
 "Wanneer er om wachtwoorden moet worden gevraagd, mogelijke opties: "
-"‘never’ (nooit), ‘on_write’ (bij schrijven), ‘always’ (altijd)"
+"‘never’ (nooit), ‘on_write’ (bij schrijven), ‘always’ (altijd)."
 
 # persoonlijk/uw
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
-msgstr "Uw bestanden delen"
+msgstr "Persoonlijke bestanden delen"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
@@ -47,8 +49,8 @@ msgstr "‘Persoonlijke bestanden delen’ opstarten indien ingeschakeld"
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;http;network;copy;send;"
 msgstr ""
-"share;files;http;network;copy;send;delen;bestanden;netwerk;kopiëren,"
-"versturen;verzenden"
+"share;files;http;network;copy;send;delen;bestanden;netwerk;kopiëren;versturen;"
+"verzenden;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:101
@@ -64,10 +66,11 @@ msgid ""
 "Turn on Personal File Sharing to share the contents of this folder over the "
 "network."
 msgstr ""
-"Zet ‘Uw bestanden delen’ aan om de inhoud van deze map over het netwerk te "
-"delen"
+"Zet ‘Persoonlijke bestanden delen’ aan om de inhoud van deze map over het"
+" netwerk te delen."
 
 # gedeelde/publieke
+# Openbare bestanden is gangbaar.
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -80,7 +83,7 @@ msgstr ""
 #: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
-msgstr "Gedeelde bestanden van %s"
+msgstr "Openbare bestanden van %s"
 
 # publieke/gedeelde
 #. Translators: This is similar to the string before, only it
@@ -88,4 +91,6 @@ msgstr "Gedeelde bestanden van %s"
 #: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
-msgstr "Gedeelde bestanden van %s op %s"
+msgstr "Openbare bestanden van %s op %s"
+
+
