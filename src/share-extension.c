@@ -26,8 +26,7 @@
 #include <glib/gi18n-lib.h>
 #include <gio/gdesktopappinfo.h>
 #include <gtk/gtk.h>
-#include <libnautilus-extension/nautilus-menu-provider.h>
-#include <libnautilus-extension/nautilus-location-widget-provider.h>
+#include <nautilus-extension.h>
 
 #include "nautilus-share-bar.h"
 #include "user_share-common.h"
