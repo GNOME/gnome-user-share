@@ -11,31 +11,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share MASTER\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-04-15 20:36+0000\n"
-"PO-Revision-Date: 2014-04-16 00:45+0300\n"
-"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"POT-Creation-Date: 2017-04-08 14:50+0000\n"
+"PO-Revision-Date: 2018-02-14 14:48+0200\n"
+"Last-Translator: Mart Raudsepp <leio@gentoo.org>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
-msgid "Share Public directory over the network"
-msgstr "Failide jagamine võrku"
-
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr ""
-"Kui määratud, siis on kasutaja kodukataloogis asuv avalik kataloog jagatud "
-"kasutaja sisselogimise ajal võrku."
-
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
 msgstr "Millal nõutakse paroole"
 
+#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -43,63 +35,36 @@ msgstr ""
 "Millal peab paroole küsima. Võimalikud väärtused on \"never\" (mitte "
 "kunagi), \"on_write\" (kirjutamisel), ja \"always\" (alati)."
 
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr ""
-"Kas Bluetoothi klientidel on lubatud faile ObexPushi abil saata või mitte."
-
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr ""
-"Kui määratud, siis võivad Bluetooth-seadmed kasutaja sisselogimise ajal "
-"saata faile kasutaja allalaadimiste kataloogi."
-
-msgid "When to accept files sent over Bluetooth"
-msgstr "Millal Bluetoothi kaudu saadetud failidega nõustutakse"
-
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr ""
-"Millal Bluetoothi kaudu saadetud failidega nõustutakse. Võimalikud väärtused "
-"on \"always\" (alati), \"bonded\" (ainult seotud seadmete korral) ja \"ask"
-"\" (nõustumise kohta küsitakse kasutajalt)."
-
-msgid "Whether to notify about newly received files."
-msgstr "Kas uutest vastuvõetud failidest teada anda või mitte."
-
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
 msgstr "Isiklike failide jagamine"
 
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Isiklike failide jagamise avamine, kui see on lubatud"
 
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
+#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+msgid "share;files;http;network;copy;send;"
 msgstr ""
-"jagamine;failid;faile;bluetooth;obex;http;võrk;kopeerimine;saatmine;saada;"
+"share;files;http;network;copy;send;jagamine;failid;faile;võrk;kopeerimine;"
+"saatmine;saada;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:101
 msgid "Sharing"
 msgstr "Jagamine"
 
-msgid "Preferences"
-msgstr "Eelistused"
-
-#. translators: This is the tooltip for the "Sharing" panel in the Settings
+#: ../src/nautilus-share-bar.c:115
 msgid "Sharing Settings"
 msgstr "Jagamise sätted"
 
-msgid "May be used to share or receive files"
-msgstr "Seda kataloogi kasutatakse failide jagamiseks ja vastuvõtmiseks"
-
-msgid "May be shared over the network or Bluetooth"
-msgstr "Selle kataloogi faile jagatakse võrgu või Bluetoothi kaudu"
-
-msgid "May be shared over the network"
-msgstr "Võidakse jagada võrgu kaudu"
-
-msgid "May be used to receive files over Bluetooth"
-msgstr "Seda kataloogi kasutatakse failide vastuvõtmiseks Bluetoothi kaudu"
+#: ../src/share-extension.c:118
+msgid ""
+"Turn on Personal File Sharing to share the contents of this folder over the "
+"network."
+msgstr ""
+"Isiklike failide jagamise sisse lülitamine, et selle kataloogi sisu üle "
+"võrgu jagada."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -110,54 +75,102 @@ msgstr "Seda kataloogi kasutatakse failide vastuvõtmiseks Bluetoothi kaudu"
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
+#: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Kasutaja %s avalikud failid"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
+#: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Kasutaja %s avalikud failid hostil %s"
 
-#. Translators: %s is the name of the filename received
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Sa võtsid faili \"%s\" Bluetoothi kaudu vastu"
+#~ msgid "Share Public directory over the network"
+#~ msgstr "Failide jagamine võrku"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "Kui määratud, siis on kasutaja kodukataloogis asuv avalik kataloog "
+#~ "jagatud kasutaja sisselogimise ajal võrku."
+
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "Kas Bluetoothi klientidel on lubatud faile ObexPushi abil saata või mitte."
+
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "Kui määratud, siis võivad Bluetooth-seadmed kasutaja sisselogimise ajal "
+#~ "saata faile kasutaja allalaadimiste kataloogi."
+
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "Millal Bluetoothi kaudu saadetud failidega nõustutakse"
+
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "Millal Bluetoothi kaudu saadetud failidega nõustutakse. Võimalikud "
+#~ "väärtused on \"always\" (alati), \"bonded\" (ainult seotud seadmete "
+#~ "korral) ja \"ask\" (nõustumise kohta küsitakse kasutajalt)."
+
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "Kas uutest vastuvõetud failidest teada anda või mitte."
+
+#~ msgid "Preferences"
+#~ msgstr "Eelistused"
+
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Seda kataloogi kasutatakse failide jagamiseks ja vastuvõtmiseks"
+
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Selle kataloogi faile jagatakse võrgu või Bluetoothi kaudu"
+
+#~ msgid "May be shared over the network"
+#~ msgstr "Võidakse jagada võrgu kaudu"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Seda kataloogi kasutatakse failide vastuvõtmiseks Bluetoothi kaudu"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Sa võtsid faili \"%s\" Bluetoothi kaudu vastu"
 
 # Pealkiri: gnome-user-share
 # Sulle saadeti fail
 # Sa võtsid Bluetoothi kaudu vastu faili "Pilt001.jpg"
 # Nupud: Ava fail, Ava kataloog, Loobu, Olgu
-msgid "You received a file"
-msgstr "Sulle saadeti fail"
+#~ msgid "You received a file"
+#~ msgstr "Sulle saadeti fail"
 
-msgid "Open File"
-msgstr "Ava fail"
+#~ msgid "Open File"
+#~ msgstr "Ava fail"
 
-msgid "Reveal File"
-msgstr "Ava kataloog"
+#~ msgid "Reveal File"
+#~ msgstr "Ava kataloog"
 
-msgid "File reception complete"
-msgstr "Faili vastuvõtmine lõpetatud"
+#~ msgid "File reception complete"
+#~ msgstr "Faili vastuvõtmine lõpetatud"
 
-#. Translators: %s is the name of the filename being received
-#, c-format
-msgid "You have been sent a file \"%s\" via Bluetooth"
-msgstr "Sulle saadeti Bluetoothi kaudu fail \"%s\""
+#~ msgid "You have been sent a file \"%s\" via Bluetooth"
+#~ msgstr "Sulle saadeti Bluetoothi kaudu fail \"%s\""
 
 # Pealkiri: gnome-user-share
 # Sulle saadeti fail
 # Sa võtsid Bluetoothi kaudu vastu faili "Pilt001.jpg"
 # Nupud: Ava fail, Ava kataloog, Loobu, Olgu
-msgid "You have been sent a file"
-msgstr "Sulle saadeti fail"
+#~ msgid "You have been sent a file"
+#~ msgstr "Sulle saadeti fail"
 
-msgid "Receive"
-msgstr "Võta vastu"
+#~ msgid "Receive"
+#~ msgstr "Võta vastu"
 
-msgid "Cancel"
-msgstr "Loobu"
+#~ msgid "Cancel"
+#~ msgstr "Loobu"
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Failide jagamine Bluetoothi kaudu"
