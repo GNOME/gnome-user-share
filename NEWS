@@ -1,4 +1,7 @@
-This is gnome-user-share 3.27.90, a system for easy sharing of user files.
+This is gnome-user-share 3.28.0, a system for easy sharing of user files.
+
+Major changes since 3.27.90:
+- Translation updates
 
 Major changes since 3.18.3:
 - Update for nautilus changes in 3.28 development branch
