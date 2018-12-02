@@ -6,20 +6,23 @@
 # Damien Durand <splinux@fedoraproject.org>, 2006
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008
 # Claude Paroz <claude@2xlibre.net>, 2008-2014
+# Charles Monzat <charles.monzat@numericable.fr>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-08-15 09:04+0000\n"
-"PO-Revision-Date: 2015-08-15 13:23+0200\n"
-"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
-"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2018-06-10 17:16+0000\n"
+"PO-Revision-Date: 2018-11-23 19:37+0100\n"
+"Last-Translator: Charles Monzat <charles.monzat@numericable.fr>\n"
+"Language-Team: français <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.30.0\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -31,7 +34,7 @@ msgid ""
 "\"always\"."
 msgstr ""
 "Quand demander des mots de passe. Les valeurs possibles sont : "
-"« never » (jamais), « on_write » (à l'écriture) et « always » (toujours)."
+"« never » (jamais), « on_write » (à l’écriture) et « always » (toujours)."
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
@@ -39,7 +42,7 @@ msgstr "Partage de fichiers personnels"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:2
 msgid "Launch Personal File Sharing if enabled"
-msgstr "Lance le partage de fichiers personnels s'il est activé"
+msgstr "Lance le partage de fichiers personnels s’il est activé"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;http;network;copy;send;"
@@ -54,12 +57,13 @@ msgstr "Partage"
 msgid "Sharing Settings"
 msgstr "Paramètres de partage"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
 msgid ""
 "Turn on Personal File Sharing to share the contents of this folder over the "
 "network."
 msgstr ""
-"Activer le Partage de fichiers personnels pour partager le contenu de ce dossier à travers le réseau."
+"Activer le Partage de fichiers personnels pour partager le contenu de ce "
+"dossier à travers le réseau."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
