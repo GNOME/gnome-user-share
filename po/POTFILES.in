@@ -1,6 +1,6 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/org.gnome.desktop.file-sharing.gschema.xml.in.in
+data/org.gnome.desktop.file-sharing.gschema.xml
 data/gnome-user-share-webdav.desktop.in.in
 src/nautilus-share-bar.c
 src/share-extension.c

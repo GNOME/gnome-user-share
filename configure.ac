@@ -186,7 +186,6 @@ fi
 AC_CONFIG_FILES([
 Makefile
 data/Makefile
-data/org.gnome.desktop.file-sharing.gschema.xml.in
 po/Makefile.in
 src/Makefile
 ])
