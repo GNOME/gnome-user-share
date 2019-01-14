@@ -2,16 +2,6 @@ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 SUBDIRS = data po src
 
-EXTRA_DIST =			\
-	intltool-extract.in	\
-	intltool-merge.in	\
-	intltool-update.in
-
-DISTCLEANFILES =		\
-	intltool-extract	\
-	intltool-merge		\
-	intltool-update
-
 AM_DISTCHECK_CONFIGURE_FLAGS = \
 	--disable-schemas-install						\
 	--with-nautilusdir='$${libdir}/nautilus/extensions-2.0-distcheck'	\
