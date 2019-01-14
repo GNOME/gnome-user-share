@@ -131,7 +131,7 @@ AC_ARG_WITH(nautilusdir,
 	    [ac_with_nautilusdir=$withval],
 	    [ac_with_nautilusdir=""])
 
-PKG_CHECK_MODULES(EXTENSION, libnautilus-extension >= 3.27.90)
+PKG_CHECK_MODULES(EXTENSION, libnautilus-extension >= 3.27.90 gio-unix-2.0)
 if test "${ac_with_nautilusdir}" = ""; then
 	ac_with_nautilusdir=`pkg-config --variable=extensiondir libnautilus-extension`
 fi
