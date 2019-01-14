@@ -14,9 +14,16 @@
 
   <maintainer>
     <foaf:Person>
+      <foaf:name>Bastien Nocera</foaf:name>
+      <foaf:mbox rdf:resource="mailto:hadess@hadess.net" />
+      <gnome:userid>hadess</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+  <author>
+    <foaf:Person>
       <foaf:name>Alex Larsson</foaf:name>
       <foaf:mbox rdf:resource="mailto:alexl@redhat.com" />
       <gnome:userid>alexl</gnome:userid>
     </foaf:Person>
-  </maintainer>
+  </author>
 </Project>
