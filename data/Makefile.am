@@ -1,7 +1,8 @@
-@INTLTOOL_DESKTOP_RULE@
 applicationsdir = $(datadir)/applications/
 applications_DATA = $(applications_in_files:.desktop.in=.desktop)
 applications_in_files = gnome-user-share-webdav.desktop.in
+$(applications_DATA): $(applications_in_files)
+	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 gnome-user-share-webdav.desktop.in: gnome-user-share-webdav.desktop.in.in Makefile
 	$(AM_V_GEN) $(SED) -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
@@ -9,10 +10,7 @@ gnome-user-share-webdav.desktop.in: gnome-user-share-webdav.desktop.in.in Makefi
 appdir = $(datadir)/gnome-user-share
 app_DATA=dav_user_2.0.conf dav_user_2.2.conf dav_user_2.4.conf dav_groupfile
 
-gsettingsdir = $(datadir)/glib-2.0/schemas
-gsettings_in_files = org.gnome.desktop.file-sharing.gschema.xml.in
-gsettings_DATA = $(gsettings_in_files:.xml.in=.xml)
-@INTLTOOL_XML_NOMERGE_RULE@
+gsettings_SCHEMAS = org.gnome.desktop.file-sharing.gschema.xml
 @GSETTINGS_RULES@
 
 systemdservicedir = $(systemduserunitdir)
@@ -33,10 +31,7 @@ EXTRA_DIST = $(app_DATA)  \
 
 CLEANFILES = $(applications_DATA) \
 	$(autostart_DATA) \
-	$(gsettings_DATA) \
 	$(systemdservice_DATA) \
 	$(applications_in_files)
-
-DISTCLEANFILES = $(gsettings_DATA)
 
 -include $(top_srcdir)/git.mk
