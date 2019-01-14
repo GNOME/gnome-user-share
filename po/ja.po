@@ -12,9 +12,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-08-23 21:03+0000\n"
-"PO-Revision-Date: 2015-08-24 15:01+0900\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-01-12 14:46+0000\n"
+"PO-Revision-Date: 2019-01-14 23:+0900\n"
 "Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -28,8 +29,12 @@ msgid "When to require passwords"
 msgstr "パスワードを要求する時期"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid "When to ask for passwords. Possible values are \"never\", \"on_write\", and \"always\"."
-msgstr "いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write\"、\"always\"。"
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write"
+"\"、\"always\"。"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
@@ -41,7 +46,9 @@ msgstr "パーソナルファイル共有を起動します (可能な場合)"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;http;network;copy;send;"
-msgstr "share;files;http;network;copy;send;共有;ファイル;ネットワーク;コピー;複製;送信;"
+msgstr ""
+"share;files;http;network;copy;send;共有;ファイル;ネットワーク;コピー;複製;送"
+"信;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:101
@@ -52,9 +59,12 @@ msgstr "共有"
 msgid "Sharing Settings"
 msgstr "共有の設定"
 
-#: ../src/share-extension.c:118
-msgid "Turn on Personal File Sharing to share the contents of this folder over the network."
-msgstr "パーソナルファイル共有をオンにするとネットワーク上でこのフォルダーを共有できます"
+#: ../src/share-extension.c:117
+msgid ""
+"Turn on File Sharing to share the contents of this folder over the network."
+msgstr ""
+"ファイル共有をオンにするとネットワーク上でこのフォルダーを共有でき"
+"ます。"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -78,16 +88,25 @@ msgid "%s's public files on %s"
 msgstr "%s@%s の公開ファイル"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr "Bluetooth のクライアントが ObexPush を使ってファイルを送信できるかどうか"
+#~ msgstr ""
+#~ "Bluetooth のクライアントが ObexPush を使ってファイルを送信できるかどうか"
 
-#~ msgid "If this is true, Bluetooth devices can send files to the user's Downloads directory when logged in."
-#~ msgstr "TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダウンロード・フォルダーにファイルを送信できるようになります。"
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "TRUE にすると、ユーザーがログインした後に Bluetooth デバイスがユーザーのダ"
+#~ "ウンロード・フォルダーにファイルを送信できるようになります。"
 
 #~ msgid "When to accept files sent over Bluetooth"
 #~ msgstr "Bluetooth でファイルを送信できる時期"
 
-#~ msgid "When to accept files sent over Bluetooth. Possible values are \"always\", \"bonded\" and \"ask\"."
-#~ msgstr "いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: \"always\"、\"bonded\"、\"ask\"。"
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "いつ Bluetooth 経由で送信されたファイルの受信を許可するか。設定可能な値: "
+#~ "\"always\"、\"bonded\"、\"ask\"。"
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "新たに受信したファイルについて通知するかどうか"
@@ -140,23 +159,40 @@ msgstr "%s@%s の公開ファイル"
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Public フォルダーをネットワーク上で共有するかどうか"
 
-#~ msgid "If this is true, the Public directory in the users home directory will be shared over the network when the user is logged in."
-#~ msgstr "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある Public フォルダーがネットワークのデバイスによって共有されるようになります。"
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにあ"
+#~ "る Public フォルダーがネットワークのデバイスによって共有されるようになりま"
+#~ "す。"
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Public フォルダーを Bluetooth デバイス上で共有するかどうか"
 
-#~ msgid "If this is true, the Public directory in the users home directory will be shared over Bluetooth when the user is logged in."
-#~ msgstr "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにある Public フォルダーが Bluetooth のデバイスによって共有されるようになります。"
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "TRUE にすると、ユーザーがログインした後にユーザーのホーム・フォルダーにあ"
+#~ "る Public フォルダーが Bluetooth のデバイスによって共有されるようになりま"
+#~ "す。"
 
 #~ msgid "Whether to allow Bluetooth clients to write files."
 #~ msgstr "Bluetooth のクライアントがファイルを作成できるかどうか"
 
-#~ msgid "Whether to allow Bluetooth clients to write files, or share the files read-only."
-#~ msgstr "Bluetooth のクライアントでファイルを書き込んだり、読み込み専用のファイルを共有できるようにするかどうかです。"
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "Bluetooth のクライアントでファイルを書き込んだり、読み込み専用のファイルを"
+#~ "共有できるようにするかどうかです。"
 
-#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
-#~ msgstr "Bluetooth のクライアントがファイルを送信するためにコンピューターとペアになるべきかどうか"
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "Bluetooth のクライアントがファイルを送信するためにコンピューターとペアにな"
+#~ "るべきかどうか"
 
 #~ msgid "Launch Personal File Sharing Preferences"
 #~ msgstr "個人的なファイルの共有を開く"
@@ -192,7 +228,8 @@ msgstr "%s@%s の公開ファイル"
 #~ msgstr "Bluetooth を使ったファイルの受信"
 
 #~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "Bluetooth 越しに受信したファイルをダウンロード・フォルダーに格納する(_D)"
+#~ msgstr ""
+#~ "Bluetooth 越しに受信したファイルをダウンロード・フォルダーに格納する(_D)"
 
 #~ msgid "_Accept files: "
 #~ msgstr "許可するファイル(_A): "
@@ -231,7 +268,8 @@ msgstr "%s@%s の公開ファイル"
 #~ msgstr "問い合わせる"
 
 #~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr "このフォルダーのファイル共有とフォルダーへのファイルの受信ができます"
+#~ msgstr ""
+#~ "このフォルダーのファイル共有とフォルダーへのファイルの受信ができます"
 
 #~ msgid "You can receive files over Bluetooth into this folder"
 #~ msgstr "このフォルダーに Bluetooth 経由でファイルを受信できます"
