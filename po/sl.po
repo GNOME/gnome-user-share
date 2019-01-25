@@ -2,25 +2,25 @@
 # Copyright (C) 2005-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2007-2015.
+# Matej Urbančič <mateju@svn.gnome.org>, + 2007–2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-08 09:05+0000\n"
-"PO-Revision-Date: 2015-09-08 22:19+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-01-22 13:45+0000\n"
+"PO-Revision-Date: 2019-01-25 21:22+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
-"Language: sl\n"
+"Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -31,8 +31,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kdaj zahtevati geslo. Mogoče vrednosti so \"never\" (nikoli), \"on_write\" (ob "
-"pisanju), in \"always\" (vedno)."
+"Kdaj zahtevati geslo. Mogoče vrednosti so \"never\" (nikoli), \"on_write"
+"\" (ob pisanju), in \"always\" (vedno)."
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:1
 msgid "Personal File Sharing"
@@ -55,11 +55,10 @@ msgstr "Souporaba"
 msgid "Sharing Settings"
 msgstr "Nastavitve souporabe"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
-msgstr "Omogoči osebno izmenjavo in souporabo datotek te mape preko omrežja."
+"Turn on File Sharing to share the contents of this folder over the network."
+msgstr "Omogoči osebno izmenjavo in souporabo datotek te mape prek omrežja."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -73,14 +72,14 @@ msgstr "Omogoči osebno izmenjavo in souporabo datotek te mape preko omrežja."
 #: ../src/http.c:125
 #, c-format
 msgid "%s's public files"
-msgstr "%s - javno dostopne datoteke"
+msgstr "%s – javno dostopne datoteke"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
 #: ../src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
-msgstr "%s - javno dostopne datoteke na %s"
+msgstr "%s – javno dostopne datoteke na %s"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr ""
@@ -91,8 +90,8 @@ msgstr "%s - javno dostopne datoteke na %s"
 #~ "If this is true, Bluetooth devices can send files to the user's Downloads "
 #~ "directory when logged in."
 #~ msgstr ""
-#~ "Možnost omogoča, da naprave Bluetooth pošiljajo datoteke v uporabnikovo mapo "
-#~ "prejetih datotek, ko je uporabnik prijavljen v sistem."
+#~ "Možnost omogoča, da naprave Bluetooth pošiljajo datoteke v uporabnikovo "
+#~ "mapo prejetih datotek, ko je uporabnik prijavljen v sistem."
 
 #~ msgid "When to accept files sent over Bluetooth"
 #~ msgstr "Kdaj sprejeti datoteke, poslane preko vmesnika Bluetooth."
@@ -113,7 +112,8 @@ msgstr "%s - javno dostopne datoteke na %s"
 #~ msgstr "Zaženi podporo souporabe ObexPush, kadar je ta omogočena"
 
 #~ msgid "share;files;bluetooth;obex;http;network;copy;send;"
-#~ msgstr "souporaba;datoteke;bluetooth;obex;http;omrežje;kopiranje;pošiljanje;"
+#~ msgstr ""
+#~ "souporaba;datoteke;bluetooth;obex;http;omrežje;kopiranje;pošiljanje;"
 
 #~ msgid "Preferences"
 #~ msgstr "Možnosti"
@@ -182,13 +182,14 @@ msgstr "%s - javno dostopne datoteke na %s"
 #~ msgstr "Možnost omogoča, da odjemalci Bluetooth zapisujejo datoteke."
 
 #~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files read-"
-#~ "only."
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
 #~ msgstr ""
-#~ "Možnost omogoča, da odjemalci Bluetooth datoteke tudi zapisujejo, lahko pa "
-#~ "so te v souporabi le za branje."
+#~ "Možnost omogoča, da odjemalci Bluetooth datoteke tudi zapisujejo, lahko "
+#~ "pa so te v souporabi le za branje."
 
-#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
 #~ "Možnost določa, da morajo biti odjemalci Bluetooth z računalnikom pred "
 #~ "pošiljanjem datotek povezani."
