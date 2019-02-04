@@ -9,10 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-05 09:04+0000\n"
-"PO-Revision-Date: 2015-09-05 13:50+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-01-12 14:46+0000\n"
+"PO-Revision-Date: 2019-02-04 21:48+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -43,7 +43,6 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr "Käynnistä henkilökohtainen tiedostojenjako, jos käytössä"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgid "share;files;http;network;copy;send;"
 msgstr ""
 "share;files;http;network;copy;send;jako;jakaminen;verkko;lähetys;kopiointi;"
@@ -57,13 +56,11 @@ msgstr "Jakaminen"
 msgid "Sharing Settings"
 msgstr "Jakamisasetukset"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Ota henkilökohtainen tiedostojenjako käyttöön jakaaksesi tämän kansion "
-"sisällön verkon kautta."
+"Ota tiedostonjako käyttöön jakaaksesi tämän kansion sisällön verkon kautta."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
