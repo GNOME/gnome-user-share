@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: "
-"https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-08 14:50+0000\n"
-"PO-Revision-Date: 2014-09-17 18:27+0200\n"
-"Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-01-12 14:46+0000\n"
+"PO-Revision-Date: 2019-02-13 11:54+0100\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Language: da_DK\n"
 "X-Source-Language: C\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -55,12 +56,10 @@ msgstr "Deling"
 msgid "Sharing Settings"
 msgstr "Indstillinger for deling"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
-msgstr ""
-"Aktivér personlig fildeling, for at dele mappens indhold på netværket."
+"Turn on File Sharing to share the contents of this folder over the network."
+msgstr "Aktivér fildeling for at dele mappens indhold på netværket."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -109,7 +108,7 @@ msgstr "%ss offentlige filer på %s"
 #~ msgid "Launch Bluetooth ObexPush sharing if enabled"
 #~ msgstr "Start Bluetooth ObexPush-deling, hvis den er aktiveret"
 
-#~ # handling
+# handling
 #~ msgid "Preferences"
 #~ msgstr "Indstillinger"
 
@@ -159,8 +158,8 @@ msgstr "%ss offentlige filer på %s"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over the network when the user is logged in."
 #~ msgstr ""
-#~ "Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe blive "
-#~ "delt, når brugeren er logget ind."
+#~ "Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe "
+#~ "blive delt, når brugeren er logget ind."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Del offentlig mappe over Bluetooth"
@@ -169,8 +168,8 @@ msgstr "%ss offentlige filer på %s"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over Bluetooth when the user is logged in."
 #~ msgstr ""
-#~ "Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe blive "
-#~ "delt over Bluetooth, når brugeren er logget ind."
+#~ "Hvis denne er true, vil den offentlige mappe i brugerens hjemmemappe "
+#~ "blive delt over Bluetooth, når brugeren er logget ind."
 
 #~ msgid "Whether to allow Bluetooth clients to write files."
 #~ msgstr "Hvorvidt Bluetooth-klienter har tilladelse til at skrive filer."
@@ -179,16 +178,17 @@ msgstr "%ss offentlige filer på %s"
 #~ "Whether to allow Bluetooth clients to write files, or share the files "
 #~ "read-only."
 #~ msgstr ""
-#~ "Hvorvidt Bluetooth-klienter har tilladelse til at skrive filer, eller dele "
-#~ "filer skrivebeskyttet."
+#~ "Hvorvidt Bluetooth-klienter har tilladelse til at skrive filer, eller "
+#~ "dele filer skrivebeskyttet."
 
-#~ # WTF
+# WTF
 #~ msgid ""
 #~ "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
-#~ "Hvorvidt Bluetooth-klienter skal danne par med computeren for at sende filer."
+#~ "Hvorvidt Bluetooth-klienter skal danne par med computeren for at sende "
+#~ "filer."
 
-#~ # handling
+# handling
 #~ msgid "Launch Personal File Sharing Preferences"
 #~ msgstr "Start indstillinger for personlig fildeling"
 
@@ -222,7 +222,7 @@ msgstr "%ss offentlige filer på %s"
 #~ msgid "Receive Files over Bluetooth"
 #~ msgstr "Modtag filer over Bluetooth"
 
-#~ # Hvad hedder den danske udgave af downloads-mappen?
+# Hvad hedder den danske udgave af downloads-mappen?
 #~ msgid "Receive files in _Downloads folder over Bluetooth"
 #~ msgstr "Modtag filer i _mappen til hentede filer over Bluetooth"
 
@@ -274,8 +274,6 @@ msgstr "%ss offentlige filer på %s"
 #~ msgid "Please log in as the user guest"
 #~ msgstr "Log venligst ind som gæstebruger"
 
-#~ # ?
+# ?
 #~ msgid "gtk-help"
 #~ msgstr "gtk-help"
-
-
