@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the gnome-user-share package.
 # Marius Karnauskas <marius@esga.lt>, 2005.
 # Vytautas Rėkus <v.rekus@gmail.com>, 2009.
-# Aurimas Černius <aurisc4@gmail.com>, 2013, 2014, 2015.
+# Aurimas Černius <aurisc4@gmail.com>, 2013-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 1.0\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-08-06 09:01+0000\n"
-"PO-Revision-Date: 2015-08-06 22:20+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-01-12 14:46+0000\n"
+"PO-Revision-Date: 2019-02-24 19:10+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Gtranslator 3.30.1\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -54,10 +54,12 @@ msgstr "Dalinimasis"
 msgid "Sharing Settings"
 msgstr "Dalinimosi nustatymai"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
+#| msgid ""
+#| "Turn on Personal File Sharing to share the contents of this folder over "
+#| "the network."
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
 "Įjungti dalinimąsi asmeniniais failais, kad šio aplanko turiniu būtų "
 "dalinamasi tinkle."
