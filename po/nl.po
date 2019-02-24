@@ -8,20 +8,21 @@
 # Reinout van Schouwen <reinouts@gnome.org>, 2013.
 # Justin van Steijn <justin50@live.nl>, 2016.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2017.
+# Nathan Follens <nthn@unseen.is>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-u"
-"ser-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-08 14:50+0000\n"
-"PO-Revision-Date: 2017-09-12 10:50+0100\n"
-"Last-Translator: Hannie Dumoleyn <hannie@ubuntu-nl.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-01-12 14:46+0000\n"
+"PO-Revision-Date: 2019-02-24 17:17+0100\n"
+"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # gevraagd/geëist
@@ -49,8 +50,8 @@ msgstr "‘Persoonlijke bestanden delen’ opstarten indien ingeschakeld"
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
 msgid "share;files;http;network;copy;send;"
 msgstr ""
-"share;files;http;network;copy;send;delen;bestanden;netwerk;kopiëren;versturen;"
-"verzenden;"
+"share;files;http;network;copy;send;delen;bestanden;netwerk;kopiëren;"
+"versturen;verzenden;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: ../src/nautilus-share-bar.c:101
@@ -61,13 +62,12 @@ msgstr "Delen"
 msgid "Sharing Settings"
 msgstr "Instellingen voor delen"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Zet ‘Persoonlijke bestanden delen’ aan om de inhoud van deze map over het"
-" netwerk te delen."
+"Zet ‘Bestanden delen’ aan om de inhoud van deze map over het netwerk te "
+"delen."
 
 # gedeelde/publieke
 # Openbare bestanden is gangbaar.
@@ -92,5 +92,3 @@ msgstr "Openbare bestanden van %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Openbare bestanden van %s op %s"
-
-
