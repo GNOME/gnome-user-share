@@ -1,16 +1,16 @@
 # Italian translation of gnome-user-share
-# Copyright (C) 2005, 2006, 2007, 2008, 2009 Free Software Foundation
+# Copyright (C) 2005, 2006, 2007, 2008, 2009, 2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Tuo Ida Gasparretti <vampiria74@tin.it>, 2005
-# Gianvito Cavasoli <gianvito@gmx.it>, 2008, 2009, 2010, 2012, 2013, 2014, 2015.
+# Gianvito Cavasoli <gianvito@gmx.it>, 2008-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-08-29 21:02+0000\n"
-"PO-Revision-Date: 2015-08-30 11:00+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-02-27 02:43+0000\n"
+"PO-Revision-Date: 2019-02-27 13:31+0100\n"
 "Last-Translator: Gianvito Cavasoli <gianvito@gmx.it>\n"
 "Language-Team: Italiano <gnome-it-list@gnome.org>\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Gtranslator 3.30.1\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -41,7 +41,6 @@ msgid "Launch Personal File Sharing if enabled"
 msgstr "Avvia la condivisione di file personali se abilitata"
 
 #: ../data/gnome-user-share-webdav.desktop.in.in.h:3
-#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgid "share;files;http;network;copy;send;"
 msgstr "condividere;file;http;rete;copiare;inviare;"
 
@@ -54,13 +53,12 @@ msgstr "Condivisione"
 msgid "Sharing Settings"
 msgstr "Impostazioni di condivisione"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Attivare Condivisione di file personali per condividere il contenuto di "
-"questa cartella in rete."
+"Attivare Condivisione di file per condividere il contenuto di questa "
+"cartella in rete."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -82,73 +80,3 @@ msgstr "File pubblici di %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "File pubblici di %s su %s"
-
-#~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr ""
-#~ "Indica se i client Bluetooth possono inviare file utilizzando ObexPush."
-
-#~ msgid ""
-#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
-#~ "directory when logged in."
-#~ msgstr ""
-#~ "Se impostata a vero, i dispositivi Bluetooth possono inviare file nella "
-#~ "directory \"Scaricati\" quando l'utente è connesso."
-
-#~ msgid "When to accept files sent over Bluetooth"
-#~ msgstr "Quando accettare i file inviati tramite Bluetooth"
-
-#~ msgid ""
-#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
-#~ "\"bonded\" and \"ask\"."
-#~ msgstr ""
-#~ "Quando accettare i file inviati tramite Bluetooth. Le opzioni possibili "
-#~ "sono \"always\", \"bonded\" e \"ask\"."
-
-#~ msgid "Whether to notify about newly received files."
-#~ msgstr "Indica se notificare riguardo i file ricevuti recentemente."
-
-#~| msgid "Launch Personal File Sharing if enabled"
-#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
-#~ msgstr "Avvia la condivisione Bluetooth di ObexPush se abilitata"
-
-#~ msgid "Preferences"
-#~ msgstr "Preferenze"
-
-#~ msgid "May be used to share or receive files"
-#~ msgstr "Può essere usato per condividere o ricevere file"
-
-#~ msgid "May be shared over the network or Bluetooth"
-#~ msgstr "Può essere condiviso tramite la rete o il Bluetooth"
-
-#~ msgid "May be shared over the network"
-#~ msgstr "Può essere condiviso tramite la rete"
-
-#~ msgid "May be used to receive files over Bluetooth"
-#~ msgstr "Può essere usato per ricevere file tramite Bluetooth"
-
-#~ msgid "You received \"%s\" via Bluetooth"
-#~ msgstr "Ricevuto «%s» tramite Bluetooth"
-
-#~ msgid "You received a file"
-#~ msgstr "Ricevuto un file"
-
-#~ msgid "Open File"
-#~ msgstr "Apri file"
-
-#~ msgid "Reveal File"
-#~ msgstr "Rivela file"
-
-#~ msgid "File reception complete"
-#~ msgstr "Ricezione del file completata"
-
-#~ msgid "You have been sent a file \"%s\" via Bluetooth"
-#~ msgstr "È stato inviato un file «%s» tramite Bluetooth"
-
-#~ msgid "You have been sent a file"
-#~ msgstr "È stato inviato un file"
-
-#~ msgid "Receive"
-#~ msgstr "Ricevi"
-
-#~ msgid "Cancel"
-#~ msgstr "Annulla"
