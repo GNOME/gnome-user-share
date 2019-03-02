@@ -7,22 +7,23 @@
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010.
 # Benjamin Steinwender <b@stbe.at>, 2013, 2014.
 # Bernd Homuth <dev@hmt.im>, 2015.
+# Tim Sabsch <tim@sabsch.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-05 17:46+0000\n"
-"PO-Revision-Date: 2015-09-05 22:48+0100\n"
-"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-01-12 14:46+0000\n"
+"PO-Revision-Date: 2019-03-02 22:56+0100\n"
+"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
 msgid "When to require passwords"
@@ -57,13 +58,12 @@ msgstr "Freigabe"
 msgid "Sharing Settings"
 msgstr "Einstellungen für Freigabe"
 
-#: ../src/share-extension.c:118
+#: ../src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Aktivieren Sie die Persönliche Dateifreigabe, um den Inhalt dieses Ordners im "
-"Netzwerk zu teilen."
+"Aktivieren Sie die Dateifreigabe, um den Inhalt dieses Ordners im Netzwerk "
+"zu teilen."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -103,8 +103,9 @@ msgstr "Öffentliche Dateien von %s auf %s"
 #~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
 #~ "\"bonded\" and \"ask\"."
 #~ msgstr ""
-#~ "Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. Mögliche "
-#~ "Werte sind »always« (immer), »bonded« (verbunden) und »ask« (nachfragen)."
+#~ "Gibt an, wann über Bluetooth gesendete Dateien angenommen werden. "
+#~ "Mögliche Werte sind »always« (immer), »bonded« (verbunden) und "
+#~ "»ask« (nachfragen)."
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "Legt fest, ob über neu empfangene Dateien informiert werden soll."
@@ -161,8 +162,9 @@ msgstr "Öffentliche Dateien von %s auf %s"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over the network when the user is logged in."
 #~ msgstr ""
-#~ "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen "
-#~ "Ordner im Netzwerk freigegeben, sobald der Benutzer angemeldet ist."
+#~ "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im "
+#~ "persönlichen Ordner im Netzwerk freigegeben, sobald der Benutzer "
+#~ "angemeldet ist."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "Öffentlichen Ordner über Bluetooth freigeben"
@@ -171,19 +173,21 @@ msgstr "Öffentliche Dateien von %s auf %s"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over Bluetooth when the user is logged in."
 #~ msgstr ""
-#~ "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im persönlichen "
-#~ "Ordner über Bluetooth freigegeben, sobald der Benutzer angemeldet ist."
+#~ "Wenn diese Option gesetzt ist, wird der öffentliche Ordner im "
+#~ "persönlichen Ordner über Bluetooth freigegeben, sobald der Benutzer "
+#~ "angemeldet ist."
 
 #~ msgid "Whether to allow Bluetooth clients to write files."
 #~ msgstr "Legt fest, ob Bluetooth-Clients Dateien schreiben dürfen."
 
 #~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files read-"
-#~ "only."
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
 #~ msgstr ""
 #~ "Legt fest, ob Bluetooth-Clients Dateien schreiben oder nur lesen dürfen."
 
-#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
 #~ "Legt fest, ob sich Bluetooth-Clients an den Computer anbinden müssen, um "
 #~ "Dateien zu senden."
@@ -235,7 +239,8 @@ msgstr "Öffentliche Dateien von %s auf %s"
 
 #~ msgid "Unable to launch the Personal File Sharing Preferences"
 #~ msgstr ""
-#~ "Einstellungen zur persönlichen Dateifreigabe konnten nicht aufgerufen werden"
+#~ "Einstellungen zur persönlichen Dateifreigabe konnten nicht aufgerufen "
+#~ "werden"
 
 #~ msgid "No reason"
 #~ msgstr "Kein Grund"
