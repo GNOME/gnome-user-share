@@ -38,7 +38,7 @@ enum {
 	PROP_LABEL
 };
 
-G_DEFINE_TYPE (NautilusShareBar, nautilus_share_bar, GTK_TYPE_INFO_BAR)
+G_DEFINE_TYPE_WITH_CODE (NautilusShareBar, nautilus_share_bar, GTK_TYPE_INFO_BAR, G_ADD_PRIVATE(NautilusShareBar))
 
 static void
 nautilus_share_bar_set_property (GObject            *object,
@@ -68,8 +68,6 @@ nautilus_share_bar_class_init (NautilusShareBarClass *klass)
 
         object_class->set_property = nautilus_share_bar_set_property;
 
-        g_type_class_add_private (klass, sizeof (NautilusShareBarPrivate));
-
         g_object_class_install_property (G_OBJECT_CLASS(klass), PROP_LABEL,
                                          g_param_spec_string ("label", "label", 
                                                               "The widget's main label",
@@ -86,7 +84,7 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         GtkWidget *vbox;
         PangoAttrList *attrs;
 
-        bar->priv = NAUTILUS_SHARE_BAR_GET_PRIVATE (bar);
+        bar->priv = nautilus_share_bar_get_instance_private (bar);
 
 	content_area = gtk_info_bar_get_content_area (GTK_INFO_BAR (bar));
 	action_area = gtk_info_bar_get_action_area (GTK_INFO_BAR (bar));
