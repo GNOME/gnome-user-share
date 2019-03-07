@@ -1,30 +1,30 @@
 # Swedish messages for gnome-user-share.
-# Copyright © 2005, 2006, 2008, 2009, 2010, 2012, 2014, 2015 Free Software Foundation, Inc.
+# Copyright © 2005, 2006, 2008, 2009, 2010, 2012, 2014, 2015, 2019 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2008, 2009, 2010, 2012.
 # Mattias Eriksson <snaggen@gmail.com>, 2014.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-01-12 14:46+0000\n"
-"PO-Revision-Date: 2019-01-20 21:55+0100\n"
+"POT-Creation-Date: 2019-03-07 10:22+0000\n"
+"PO-Revision-Date: 2019-03-07 12:23+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "När lösenord ska krävas"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -32,28 +32,34 @@ msgstr ""
 "När lösenord ska efterfrågas. Möjliga värden är \"never\" (aldrig), "
 "\"on_write\" (vid skrivning) och \"always\" (alltid)."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "Personal File Sharing"
 msgstr "Utdelning av personliga filer"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+#: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Starta personlig filutdelning om aktiverat"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "dela;filer;http;nätverk;kopiera;skicka;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-user-share-webdav.desktop.in.in:8
+msgid "folder-remote"
+msgstr "folder-remote"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "Delning"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "Inställningar för delning"
 
-#: ../src/share-extension.c:117
+#: src/share-extension.c:117
 msgid ""
 "Turn on File Sharing to share the contents of this folder over the network."
 msgstr "Slå på fildelning för att dela innehållet i denna mapp över nätverket."
@@ -71,7 +77,7 @@ msgstr "Slå på fildelning för att dela innehållet i denna mapp över nätver
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%.0sPublika filer"
@@ -82,7 +88,7 @@ msgstr "%.0sPublika filer"
 #
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%.0sPublika filer på %s"
