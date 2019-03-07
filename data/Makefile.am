@@ -24,7 +24,7 @@ convertdir = $(datadir)/GConf/gsettings
 convert_DATA = gnome-user-share.convert
 
 EXTRA_DIST = $(app_DATA)  \
-	$(gsettings_in_files) \
+	$(gsettings_SCHEMAS) \
 	$(convert_DATA) \
 	$(systemdservice_in_files) \
 	gnome-user-share-webdav.desktop.in.in
