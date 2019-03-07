@@ -8,9 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-06 22:53+0100\n"
-"PO-Revision-Date: 2019-02-06 22:54+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-03-07 10:22+0000\n"
+"PO-Revision-Date: 2019-03-07 11:24+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -20,11 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "Kiedy wymagać haseł"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -32,30 +33,36 @@ msgstr ""
 "Kiedy pytać o hasła. Możliwe wartości to „never” (nigdy), "
 "„on_write” (podczas zapisywania) i „always” (zawsze)."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "Personal File Sharing"
 msgstr "Udostępnianie plików osobistych"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+#: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Uruchamia udostępnianie plików osobistych, jeśli jest włączone"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr ""
 "udostępnianie;współdzielenie;pliki;plików;http;sieć;sieci;skopiuj;kopia;"
 "wyślij;wysyłanie;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-user-share-webdav.desktop.in.in:8
+msgid "folder-remote"
+msgstr "folder-remote"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "Udostępnianie"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "Ustawienia udostępniania"
 
-#: ../src/share-extension.c:117
+#: src/share-extension.c:117
 msgid ""
 "Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
@@ -71,14 +78,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Pliki publiczne użytkownika %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Pliki publiczne użytkownika %s na %s"
