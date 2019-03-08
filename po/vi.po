@@ -8,10 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-28 21:42+0000\n"
-"PO-Revision-Date: 2015-09-29 07:08+0700\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-03-07 22:12+0000\n"
+"PO-Revision-Date: 2019-03-08 07:03+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <gnome-vi-list@gnome.org>\n"
 "Language: vi\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "Khi nào thì yêu cầu mật khẩu"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -35,35 +35,40 @@ msgstr ""
 " * on_write\tkhi ghi\n"
 " * always\tluôn."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "Personal File Sharing"
 msgstr "Chia sẻ tập tin cá nhân"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+#: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Khởi chạy “Chia sẻ tập tin cá nhân” nếu được bật"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr ""
 "share;chia;sẻ;se;files;tập;tin;tap;network;mạng;mang;copy;chép;chep;send;gửi;"
 "gui;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-user-share-webdav.desktop.in.in:8
+msgid "folder-remote"
+msgstr "folder-remote"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "Chia sẻ"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "Cài đặt chia sẻ"
 
-#: ../src/share-extension.c:118
+#: src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Bật “Chia sẻ tập tin cá nhân” để chia sẻ nội dung của thư mục này qua mạng."
+"“Bật Chia sẻ tập tin cá nhân” để chia sẻ nội dung của thư mục này qua mạng."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -74,17 +79,17 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:125
 #, c-format
 msgid "%s's public files"
-msgstr "Các tập tin công của %s"
+msgstr "Các tập tin công khai của %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
-msgstr "Các tập tin công của %s trên %s"
+msgstr "Các tập tin công khai của %s trên %s"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr ""
