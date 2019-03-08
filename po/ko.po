@@ -3,15 +3,15 @@
 #
 # Young-Ho Cha <ganadist at mizi.com>, 2005, 2007.
 # Namhyung Kim <namhyung@gmail.com>, 2007.
-# Changwoo Ryu <cwryu@debian.org>, 2009-2010, 2012-2015
+# Changwoo Ryu <cwryu@debian.org>, 2009-2010, 2012-2015, 2019
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-05 09:04+0000\n"
-"PO-Revision-Date: 2015-09-06 02:45+0900\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-03-07 10:22+0000\n"
+"PO-Revision-Date: 2019-03-08 14:43+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -19,43 +19,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "암호가 필요한 경우"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
 "언제 암호를 물어볼 지 지정. 가능한 값은 \"never\", \"on_write\", \"always\"."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "Personal File Sharing"
 msgstr "개인 파일 공유"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+#: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch Personal File Sharing if enabled"
 msgstr "사용자 공유를(사용할 경우) 시작합니다"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
-msgstr "share;공유;files;파일;http;network;네트워크;인터넷;copy;복사;send;보내기;"
+msgstr ""
+"share;공유;files;파일;http;network;네트워크;인터넷;copy;복사;send;보내기;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-user-share-webdav.desktop.in.in:8
+msgid "folder-remote"
+msgstr "folder-remote"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "공유"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "공유 설정"
 
-#: ../src/share-extension.c:118
+#: src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
-msgstr "네트워크를 통해 이 폴더의 내용을 공유하려면 개인 파일 공유를 켜십시오."
+"Turn on File Sharing to share the contents of this folder over the network."
+msgstr "네트워크를 통해 이 폴더의 내용을 공유하려면 파일 공유를 켜십시오."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -66,14 +72,14 @@ msgstr "네트워크를 통해 이 폴더의 내용을 공유하려면 개인 �
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "%s의 공용 파일"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s에 있는 %1$s의 공용 파일"
