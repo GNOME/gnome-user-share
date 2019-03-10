@@ -3,7 +3,7 @@ image: fedora:rawhide
 variables:
   DEPENDENCIES: gcc gtk3-devel httpd  mod_dnssd intltool itstool libcanberra-devel
                 desktop-file-utils libselinux-devel dbus-glib-devel libnotify-devel
-                nautilus-devel gettext systemd-devel gnome-common which
+                nautilus-devel gettext systemd-devel gnome-common which make
 
 build_stable:
   before_script:
