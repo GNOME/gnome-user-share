@@ -8,5 +8,5 @@ Icon=folder-remote
 Exec=@libexecdir@/gnome-user-share-webdav
 Terminal=false
 Type=Application
-Categories=
 NoDisplay=true
+Categories=
