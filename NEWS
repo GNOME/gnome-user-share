@@ -1,4 +1,9 @@
-This is gnome-user-share 3.32.0, a system for easy sharing of user files.
+This is gnome-user-share 3.32.0.1, a system for easy sharing of user files.
+
+Major changes since 3.32.0:
+- Work-around a gettext bug that caused the "NoDisplay" property
+  to be dropped from the .desktop file
+- Translation updates
 
 Major changes since 3.28.0:
 - Fix name in nautilus extension
