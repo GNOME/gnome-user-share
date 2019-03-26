@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-08 14:50+0000\n"
-"PO-Revision-Date: 2017-04-08 19:12+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2019-03-07 10:22+0000\n"
+"PO-Revision-Date: 2019-03-26 18:14+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2016-09-15 12:11+0000\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "Kada zahtijevati lozinku"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -31,34 +31,38 @@ msgstr ""
 "Kada upitati za lozinku. Moguće vrijednosti su \"nikad\", \"prilikom "
 "zapisivanja\" i \"uvijek\"."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
+#: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "Personal File Sharing"
 msgstr "Dijeljenje osobnih datoteka"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
+#: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch Personal File Sharing if enabled"
 msgstr "Pokreni dijeljenje osobnih datoteka ako je omogućeno"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "dijeli;datoteka;http;mreža;kopiraj;pošalji;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/gnome-user-share-webdav.desktop.in.in:8
+msgid "folder-remote"
+msgstr "folder-remote"
+
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "Dijeljenje"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "Postavke dijeljenja"
 
-#: ../src/share-extension.c:118
+#: src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Uključi dijeljenje osobnih datoteka kako bi dijelili sadržaj ove mape putem "
-"mreže."
+"Uključi dijeljenje datoteka kako bi dijelili sadržaj ove mape putem mreže."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -69,14 +73,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:125
 #, c-format
 msgid "%s's public files"
 msgstr "Javni podaci korisnika %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:129
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Javni podaci korisnika %s na %s"
