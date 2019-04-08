@@ -1,19 +1,14 @@
 image: fedora:rawhide
 
 variables:
-  DEPENDENCIES: gcc gtk3-devel httpd  mod_dnssd intltool itstool libcanberra-devel
-                desktop-file-utils libselinux-devel dbus-glib-devel libnotify-devel
-                nautilus-devel gettext systemd-devel gnome-common which make
+  DEPENDENCIES: gcc meson glibc-devel glib-devel gtk3-devel
+                libselinux-devel nautilus-devel systemd-devel
+                httpd mod_dnssd gettext
 
 build_stable:
   before_script:
     - dnf update -y --nogpgcheck
     - dnf install -y --nogpgcheck $DEPENDENCIES
   script:
-    - mkdir build
-    - cd build
-    - NOCONFIGURE=1 ../autogen.sh
-    - ../configure --disable-dependency-tracking
-    - make
-    - make install
-    - make distcheck
+    - meson . _build
+    - ninja -C _build
