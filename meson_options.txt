@@ -1,0 +1,6 @@
+option('systemduserunitdir', type: 'string', value: '', description: 'custom directory for systemd user units')
+
+option('nautilus_extension', type: 'boolean', value: false, description: 'Enable nautilus extension')
+
+option('httpd', type: 'array', value: ['httpd', '/usr/sbin/httpd', 'apache2', '/usr/sbin/apache2', 'httpd2', '/usr/sbin/httpd2'], description: 'Specify the binary used for the Apache httpd binary (default: httpd)')
+option('modules_path', type: 'string', value: '/etc/httpd/modules/', description: 'Path where the httpd modules are located (default: /etc/httpd/modules/')
