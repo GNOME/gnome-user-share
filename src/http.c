@@ -25,7 +25,6 @@
 
 #include <glib.h>
 #include <glib/gi18n.h>
-#include <X11/Xlib.h>
 
 #include <stdarg.h>
 #include <string.h>
