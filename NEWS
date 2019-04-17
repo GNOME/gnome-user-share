@@ -1,4 +1,8 @@
-This is gnome-user-share 3.32.0.1, a system for easy sharing of user files.
+This is gnome-user-share 3.33.1, a system for easy sharing of user files.
+
+Major changes since 3.32.0.1:
+- Port to meson build system
+- Remove autotools as build system
 
 Major changes since 3.32.0:
 - Work-around a gettext bug that caused the "NoDisplay" property
