@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2019-03-07 10:22+0000\n"
-"PO-Revision-Date: 2019-03-07 23:11+0100\n"
+"POT-Creation-Date: 2019-04-11 16:27+0000\n"
+"PO-Revision-Date: 2019-06-01 16:55+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 18.12.3\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -33,22 +33,17 @@ msgstr ""
 "„on_write” (íráskor) és „always” (mindig)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-msgid "Personal File Sharing"
-msgstr "Személyes fájlmegosztás"
+msgid "File Sharing"
+msgstr "Fájlmegosztás"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Személyes fájlmegosztás indítása, ha engedélyezett"
+msgid "Launch File Sharing if enabled"
+msgstr "Fájlmegosztás indítása, ha engedélyezett"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "megosztás;fájlok;http;hálózat;másolás;küldés;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/gnome-user-share-webdav.desktop.in.in:8
-msgid "folder-remote"
-msgstr "folder-remote"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: src/nautilus-share-bar.c:99
@@ -74,15 +69,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "%s nyilvános fájljai"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s nyilvános fájljai ezen: %s"
-
