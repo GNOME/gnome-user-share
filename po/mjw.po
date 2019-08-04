@@ -1,27 +1,25 @@
-# Karbi translation for gnome-themes-extra.
-# Copyright (C) 2019 gnome-themes-extra's Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-themes-extra package.
+# Karbi translation for gnome-user-share.
+# Copyright (C) 2019 gnome-user-share's Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-user-share package.
 # Jor Teron <jor.teron@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-themes-extra master\n"
+"Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-07-22 03:40+0000\n"
-"PO-Revision-Date: 2019-08-04 23:10+0530\n"
+"POT-Creation-Date: 2019-08-04 18:15+0000\n"
+"PO-Revision-Date: 2019-08-04 23:48+0530\n"
 "Last-Translator: Jor Teron <jor.teron@gmail.com>\n"
 "Language-Team: Karbi <karbi.translation@gmail.com>\n"
 "Language: mjw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2 ; plural=( n != 1 );\n"
-"X-Generator: Gtranslator 2.91.7\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
-msgstr ""
+msgstr "Mentu se passwords nangji"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
@@ -31,7 +29,7 @@ msgstr ""
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
-msgstr ""
+msgstr "File Sharing"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch File Sharing if enabled"
@@ -40,7 +38,7 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
-msgstr ""
+msgstr "share;files;http;network;copy;send;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: src/nautilus-share-bar.c:99
@@ -68,29 +66,11 @@ msgstr ""
 #: src/http.c:124
 #, c-format
 msgid "%s's public files"
-msgstr ""
+msgstr "Son %s's public files"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
 #: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
-msgstr ""
-
-#~ msgid "Adwaita-dark"
-#~ msgstr "Adwaita-ke-ik"
-
-#~ msgid "There was only one"
-#~ msgstr "Ladak isi vet"
-
-#~ msgid "Adwaita"
-#~ msgstr "Adwaita"
-
-#~ msgid "There is only one"
-#~ msgstr "Ladak isi vet"
-
-#~ msgid "High Contrast"
-#~ msgstr "High Contrast"
-
-#~ msgid "High contrast theme"
-#~ msgstr "High contrast theme"
+msgstr "Son %s's public files do %s along"
