@@ -7,11 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-"
-"share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-12 09:11+0000\n"
-"PO-Revision-Date: 2015-09-13 12:12+0430\n"
-"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
+"POT-Creation-Date: 2019-04-11 16:27+0000\n"
+"PO-Revision-Date: 2019-08-17 16:21+0430\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -19,48 +18,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
-msgstr "زمان لازم بودن گذرواژه"
+msgstr "زمان نیاز به گذرواژه"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"چه زمانی برای گذر‌واژه سوال شود. مقادیر ممکن عبارتند از «never»، «on_write»، و "
-"«always»"
+"چه زمانی درخواست گذر‌واژه داده شود. مقادیر ممکن عبارتند از «never»، «on_write» "
+"و «always»."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-msgid "Personal File Sharing"
-msgstr "به اشتراک‌گذاری شخصی پرونده"
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "File Sharing"
+msgstr "هم‌رسانی پرونده"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "اجرای به اشتراک گذاری شخصی پرونده‌ها در صورت فعال بودن"
+#: data/gnome-user-share-webdav.desktop.in.in:4
+msgid "Launch File Sharing if enabled"
+msgstr "اجرای هم‌رسانی پرونده در صورت فعّال بودن"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
-msgstr "اشتراک;پرونده‌ها;http;شبکه;رونوشت;ارسال;share;files;http;network;copy;send;"
+msgstr "share;files;http;network;copy;send;اشتراک;هم‌رسانی;شبکه;ارسال;فرستادن;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
-msgstr "به‌اشتراک‌گذاری‌"
+msgstr "هم‌رسانی"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
-msgstr "تنظیمات اشتراک‌گذاری"
+msgstr "تنظیمات هم‌رسانی"
 
-#: ../src/share-extension.c:118
+#: src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
-msgstr ""
-"برای اشتراک‌گذاری محتویات این پوشه بر روی شبکه «اشتراک‌گذاری پرونده‌های شخصی» را "
-"روشن کنید."
+"Turn on File Sharing to share the contents of this folder over the network."
+msgstr "برای هم‌رسانی محتویات این شاخه روی شبکه، هم‌رسانی پرونده را روشن کنید."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -71,28 +68,32 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "پرونده‌های عمومی %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
-msgstr "پرونده‌های عمومی %s در %s"
+msgstr "پرونده‌های عمومی %s روی %s"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "به اشتراک‌گذاری شخصی پرونده"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr ""
-#~ "این‌که آیا کارگیر بلوتوث می‌تواند پرونده‌ها را از طریق ObexPush ارسال کد یا خیر."
+#~ "این‌که آیا کارگیر بلوتوث می‌تواند پرونده‌ها را از طریق ObexPush ارسال کد یا "
+#~ "خیر."
 
 #~ msgid ""
 #~ "If this is true, Bluetooth devices can send files to the user's Downloads "
 #~ "directory when logged in."
 #~ msgstr ""
-#~ "اگر درست باشد، هنگام ورود به سیستم دستگاه‌های بلوتوث می‌توانند به شاخه‌ی بارگیری "
-#~ "کاربر پرونده ارسال کند."
+#~ "اگر درست باشد، هنگام ورود به سیستم دستگاه‌های بلوتوث می‌توانند به شاخه‌ی "
+#~ "بارگیری کاربر پرونده ارسال کند."
 
 #~ msgid "When to accept files sent over Bluetooth"
 #~ msgstr "زمان پذیرفتن پرونده‌های ارسال شده از طریق بلوتوث"
@@ -159,8 +160,8 @@ msgstr "پرونده‌های عمومی %s در %s"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over the network when the user is logged in."
 #~ msgstr ""
-#~ "اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از طریق "
-#~ "شبکه به اشتراک گذاشته می‌شود."
+#~ "اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از "
+#~ "طریق شبکه به اشتراک گذاشته می‌شود."
 
 #~ msgid "Share Public directory over Bluetooth"
 #~ msgstr "اشتراک شاخه عمومی از طریق بلوتوث"
@@ -169,8 +170,8 @@ msgstr "پرونده‌های عمومی %s در %s"
 #~ "If this is true, the Public directory in the users home directory will be "
 #~ "shared over Bluetooth when the user is logged in."
 #~ msgstr ""
-#~ "اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از طریق "
-#~ "بلوتوث به اشتراک گذاشته می‌شود."
+#~ "اگر درست باشد، هنگام ورود به سیستم شاخه‌ی عمومی در شاخه‌ی آغازه‌ی کاربر از "
+#~ "طریق بلوتوث به اشتراک گذاشته می‌شود."
 
 #~ msgid "Whether to allow Bluetooth clients to write files."
 #~ msgstr "این‌که به کارگیرهای بلوتوث اجازه نوشتن پرونده‌ها داده شود یا خیر."
@@ -179,10 +180,11 @@ msgstr "پرونده‌های عمومی %s در %s"
 #~ "Whether to allow Bluetooth clients to write files, or share the files read-"
 #~ "only."
 #~ msgstr ""
-#~ "این‌که اجازه‌ی نوشتن در پرونده‌ها به کارگیرهای بلوتوث داده شود، یا اینکه پرونده "
-#~ "به حالت فقط خواندنی به اشتراک گذاشته شود."
+#~ "این‌که اجازه‌ی نوشتن در پرونده‌ها به کارگیرهای بلوتوث داده شود، یا اینکه "
+#~ "پرونده به حالت فقط خواندنی به اشتراک گذاشته شود."
 
-#~ msgid "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
 #~ "این‌که آیا کارگیرهای بلوتوث باید برای ارسال پرونده با راینه جفت شوند یا خیر؟"
 
