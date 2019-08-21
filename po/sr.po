@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-03-07 10:22+0000\n"
-"PO-Revision-Date: 2019-03-07 22:10+0100\n"
+"POT-Creation-Date: 2019-04-11 16:27+0000\n"
+"PO-Revision-Date: 2019-08-21 23:39+0200\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -36,12 +36,12 @@ msgstr ""
 "„on_write“ (при упису) и „always“ (увек)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-msgid "Personal File Sharing"
-msgstr "Делење личних датотека"
+msgid "File Sharing"
+msgstr "Дељење датотека"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Покрени дељење личних датотека ако је омогућено"
+msgid "Launch File Sharing if enabled"
+msgstr "Покрени дељење датотека ако је омогућено"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
@@ -49,11 +49,6 @@ msgid "share;files;http;network;copy;send;"
 msgstr ""
 "дели;дељење;датотеке;хттп;мрежа;умножи;копирај;пошаљи;share;files;http;"
 "network;copy;send;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/gnome-user-share-webdav.desktop.in.in:8
-msgid "folder-remote"
-msgstr "folder-remote"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: src/nautilus-share-bar.c:99
@@ -79,17 +74,23 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "Јавне датотеке корисника „%s“"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Јавне датотеке корисника „%s“ на рачунару „%s“"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "Делење личних датотека"
+
+#~ msgid "folder-remote"
+#~ msgstr "folder-remote"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr "Блутут клијенти могу да шаљу датотеке користећи гурање кроз обекс."
