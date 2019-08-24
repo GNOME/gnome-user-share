@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2019-01-12 14:46+0000\n"
-"PO-Revision-Date: 2019-03-03 14:24+0200\n"
+"POT-Creation-Date: 2019-04-11 16:27+0000\n"
+"PO-Revision-Date: 2019-08-24 18:06+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -20,11 +20,11 @@ msgstr ""
 " 2);\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "Kad pieprasīt paroles"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -32,31 +32,31 @@ msgstr ""
 "Kad prasīt paroles. Iespējamās vērtības ir “never” (nekad), "
 "“on_write” (rakstot) un “always” (vienmēr)."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-msgid "Personal File Sharing"
-msgstr "Personiskā datņu koplietošana"
+#: data/gnome-user-share-webdav.desktop.in.in:3
+#| msgid "Sharing"
+msgid "File Sharing"
+msgstr "Datņu koplietošana"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Palaist personisko datņu koplietošanu (ja tā ir ieslēgta)"
+#: data/gnome-user-share-webdav.desktop.in.in:4
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch File Sharing if enabled"
+msgstr "Palaist datņu koplietošanu (ja tā ir ieslēgta)"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "koplietot;datnes;http;tīkls;kopēt;sūtīt;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "Koplietošana"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "Koplietošanas iestatījumi"
 
-#: ../src/share-extension.c:117
-#| msgid ""
-#| "Turn on Personal File Sharing to share the contents of this folder over "
-#| "the network."
+#: src/share-extension.c:117
 msgid ""
 "Turn on File Sharing to share the contents of this folder over the network."
 msgstr "Ieslēgt datņu koplietošanu, lai koplietotu šīs mapes saturu tīklā."
@@ -70,15 +70,17 @@ msgstr "Ieslēgt datņu koplietošanu, lai koplietotu šīs mapes saturu tīklā
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "%s publiskās datnes"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s publiskās datnes uz %s"
 
+#~ msgid "Personal File Sharing"
+#~ msgstr "Personiskā datņu koplietošana"
