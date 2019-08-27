@@ -1,18 +1,19 @@
 # translation of gnome-user-share to Turkish
-# Copyright (C) 2007
+# Copyright (C) 2007-2019 gnome-user-share'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Baris Cicek <baris@teamforce.name.tr>, 2007, 2009.
 # Volkan Yalçın <vlyalcin@gmail.com>, 2011.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2013, 2014, 2015.
+# Sabri Ünal <libreajans@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-03-07 10:22+0000\n"
-"PO-Revision-Date: 2019-03-07 21:59+0200\n"
+"POT-Creation-Date: 2019-04-11 16:27+0000\n"
+"PO-Revision-Date: 2019-08-06 23:11+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -35,22 +36,17 @@ msgstr ""
 "\" (yazıldığında), ve \"always\" (her zaman)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-msgid "Personal File Sharing"
-msgstr "Kişisel Dosya Paylaşımı"
+msgid "File Sharing"
+msgstr "Dosya Paylaşımı"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Eğer etkinse Kişisel Kullanıcı Paylaşımını başlat"
+msgid "Launch File Sharing if enabled"
+msgstr "Eğer etkinse Dosya Paylaşımını başlat"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "paylaş;dosyalar;http;ağ;kopyala;gönder;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/gnome-user-share-webdav.desktop.in.in:8
-msgid "folder-remote"
-msgstr "folder-remote"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: src/nautilus-share-bar.c:99
@@ -76,17 +72,23 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "%s kullanıcısının genel dosyaları"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s kullanıcısının %s üzerindeki genel dosyaları"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "Kişisel Dosya Paylaşımı"
+
+#~ msgid "folder-remote"
+#~ msgstr "folder-remote"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr ""
