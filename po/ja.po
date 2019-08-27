@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-01-12 14:46+0000\n"
+"POT-Creation-Date: 2019-04-11 16:27+0000\n"
 "PO-Revision-Date: 2019-01-14 23:+0900\n"
 "Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -24,11 +24,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "パスワードを要求する時期"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -36,35 +36,39 @@ msgstr ""
 "いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write"
 "\"、\"always\"。"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-msgid "Personal File Sharing"
-msgstr "パーソナルファイル共有"
+#: data/gnome-user-share-webdav.desktop.in.in:3
+#, fuzzy
+#| msgid "Sharing"
+msgid "File Sharing"
+msgstr "共有"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
+#: data/gnome-user-share-webdav.desktop.in.in:4
+#, fuzzy
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch File Sharing if enabled"
 msgstr "パーソナルファイル共有を起動します (可能な場合)"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr ""
 "share;files;http;network;copy;send;共有;ファイル;ネットワーク;コピー;複製;送"
 "信;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "共有"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "共有の設定"
 
-#: ../src/share-extension.c:117
+#: src/share-extension.c:117
 msgid ""
 "Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"ファイル共有をオンにするとネットワーク上でこのフォルダーを共有でき"
-"ます。"
+"ファイル共有をオンにするとネットワーク上でこのフォルダーを共有できます。"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -75,17 +79,20 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "%s の公開ファイル"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s@%s の公開ファイル"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "パーソナルファイル共有"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr ""
