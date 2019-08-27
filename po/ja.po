@@ -8,6 +8,7 @@
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2013-2014.
 # Ikuya Awashiro <ikuya@fruitsbasket.info>, 2014.
 # Tsuji Kento <tuziemon@pclives.org>, 2015.
+# sicklylife <translation@sicklylife.jp>, 2019.
 #
 msgid ""
 msgstr ""
@@ -15,8 +16,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
 "POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-01-14 23:+0900\n"
-"Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
+"PO-Revision-Date: 2019-08-27 22:22+0900\n"
+"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -37,16 +38,12 @@ msgstr ""
 "\"、\"always\"。"
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-#, fuzzy
-#| msgid "Sharing"
 msgid "File Sharing"
-msgstr "共有"
+msgstr "ファイル共有"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-#, fuzzy
-#| msgid "Launch Personal File Sharing if enabled"
 msgid "Launch File Sharing if enabled"
-msgstr "パーソナルファイル共有を起動します (可能な場合)"
+msgstr "ファイル共有を起動します (可能な場合)"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
