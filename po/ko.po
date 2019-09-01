@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-03-07 10:22+0000\n"
-"PO-Revision-Date: 2019-03-08 14:43+0900\n"
+"POT-Creation-Date: 2019-08-25 23:07+0000\n"
+"PO-Revision-Date: 2019-08-29 10:38+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -31,23 +31,18 @@ msgstr ""
 "언제 암호를 물어볼 지 지정. 가능한 값은 \"never\", \"on_write\", \"always\"."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-msgid "Personal File Sharing"
-msgstr "개인 파일 공유"
+msgid "File Sharing"
+msgstr "파일 공유"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-msgid "Launch Personal File Sharing if enabled"
-msgstr "사용자 공유를(사용할 경우) 시작합니다"
+msgid "Launch File Sharing if enabled"
+msgstr "파일 공유를 시작합니다 (공유 기능을 사용할 경우)"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr ""
 "share;공유;files;파일;http;network;네트워크;인터넷;copy;복사;send;보내기;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/gnome-user-share-webdav.desktop.in.in:8
-msgid "folder-remote"
-msgstr "folder-remote"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
 #: src/nautilus-share-bar.c:99
@@ -72,17 +67,23 @@ msgstr "네트워크를 통해 이 폴더의 내용을 공유하려면 파일 �
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "%s의 공용 파일"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%2$s에 있는 %1$s의 공용 파일"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "개인 파일 공유"
+
+#~ msgid "folder-remote"
+#~ msgstr "folder-remote"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr ""
