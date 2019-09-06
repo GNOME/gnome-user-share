@@ -70,10 +70,7 @@ gio_schemasdir = gio_dep.get_pkgconfig_variable(
 # systemd user unit directory
 systemd_systemduserunitdir = get_option('systemduserunitdir')
 if systemd_systemduserunitdir == ''
-  # FIXME: this would ideally use the systemduserunitdir pkgconfig variable, but
-  # it does not depend on variables we can override to install within prefix.
-  #systemd_systemduserunitdir = dependency('systemd').get_pkgconfig_variable('systemduserunitdir')
-  systemd_systemduserunitdir = user_share_prefix / user_share_libdir / 'systemd/user'
+  systemd_systemduserunitdir = dependency('systemd').get_pkgconfig_variable('systemduserunitdir')
 endif
 
 httpd = find_program(get_option('httpd'), required: false)
