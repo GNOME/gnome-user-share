@@ -24,7 +24,6 @@ sources = files(
 )
 
 deps = sockets_deps + [
-  gio_unix_dep,
   libuser_share_common_dep,
 ]
 
@@ -55,6 +54,7 @@ sources = files(
 
 deps = [
   gtk_dep,
+  gio_unix_dep,
   libnautilus_extension_dep,
   libuser_share_common_dep,
 ]
