@@ -1,65 +1,70 @@
 # Ukrainian translation of gnome-user-share
 # Copyright (C) 2005 Free Software Foundation
 # This file is distributed under the same license as the gnome-sharing package.
-# Maxim Dziumanenko <dziumanenko@gmail.com>, 2005-2010
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2005-2010.
 # wanderlust <wanderlust@ukr.net>, 2009.
 # Daniel Korostil <ted.korostiled@gmail.com>, 2013, 2014, 2016.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-04 15:04+0200\n"
-"PO-Revision-Date: 2016-03-04 15:06+0300\n"
-"Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
-"Language-Team: linux.org.ua\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
+"POT-Creation-Date: 2019-10-08 11:32+0000\n"
+"PO-Revision-Date: 2020-03-15 18:55+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 20.03.70\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "Коли вимагати пароль"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
 "Коли запитувати пароль. Можливі значення «never», «on_write», та «always»."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-msgid "Personal File Sharing"
-msgstr "Спільний доступ до особистих файлів"
+#: data/gnome-user-share-webdav.desktop.in.in:3
+#| msgid "Sharing"
+msgid "File Sharing"
+msgstr "Спільний доступ до файлів"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Увімкнути спільний доступ, якщо можливо"
+#: data/gnome-user-share-webdav.desktop.in.in:4
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch File Sharing if enabled"
+msgstr "Запустити «Спільний доступу до файлів», якщо увімкнено"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "оприлюднити;файли;http;мережа;копіювати;надіслати;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "Оприлюднення"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "Параметри оприлюднення"
 
-#: ../src/share-extension.c:118
+#: src/share-extension.c:117
+#| msgid ""
+#| "Turn on Personal File Sharing to share the contents of this folder over "
+#| "the network."
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Увімкнути особисте оприлюднення файлів для поширення вмісту цієї теки у "
-"мережі."
+"Увімкніть «Спільний доступ до файлів» для поширення вмісту цієї теки у мережі."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -70,201 +75,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "Спільні файли %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Спільні файли %s на %s"
-
-#~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr "Дозволити клієнтам Bluetooth надсилати файли за допомогою ObexPush."
-
-#~ msgid ""
-#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
-#~ "directory when logged in."
-#~ msgstr ""
-#~ "Якщо відмічено, пристрої Bluetooth можуть надсилати файли у каталог "
-#~ "Downloads користувача після його входу у систему."
-
-#~ msgid "When to accept files sent over Bluetooth"
-#~ msgstr "Дії при отриманні файлів, надісланих через Bluetooth"
-
-#~ msgid ""
-#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
-#~ "\"bonded\" and \"ask\"."
-#~ msgstr ""
-#~ "Дії при отриманні файлів через Bluetooth. Можливі значення: «always», "
-#~ "«bonded», та «ask»."
-
-#~ msgid "Whether to notify about newly received files."
-#~ msgstr "Повідомляти про отримувані файли"
-
-#~| msgid "Launch Personal File Sharing if enabled"
-#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
-#~ msgstr "Запустити оприлюднення Bluetooth ObexPush, якщо ввімкнено"
-
-#~ msgid "Preferences"
-#~ msgstr "Параметри"
-
-#~ msgid "May be used to share or receive files"
-#~ msgstr "Потрібно для оприлюднення і одержання файлів"
-
-#~ msgid "May be shared over the network or Bluetooth"
-#~ msgstr "Можна оприлюднювати через мережу або Bluetooth"
-
-#~ msgid "May be shared over the network"
-#~ msgstr "Можна оприлюднювати через мережу"
-
-#~ msgid "May be used to receive files over Bluetooth"
-#~ msgstr "Можна одержувати файли через Bluetooth"
-
-#~ msgid "You received \"%s\" via Bluetooth"
-#~ msgstr "Через Bluetooth отримано файл «%s»"
-
-#~ msgid "You received a file"
-#~ msgstr "Отримано файл"
-
-#~ msgid "Open File"
-#~ msgstr "Відкрити файл"
-
-#~ msgid "Reveal File"
-#~ msgstr "Показати файл"
-
-#~ msgid "File reception complete"
-#~ msgstr "Отримання файлу завершено"
-
-#~ msgid "You have been sent a file \"%s\" via Bluetooth"
-#~ msgstr "Ви надіслали файл «%s» через Bluetooth"
-
-#~ msgid "You have been sent a file"
-#~ msgstr "Ви надіслали файл"
-
-#~ msgid "Receive"
-#~ msgstr "Одержати"
-
-#~ msgid "Cancel"
-#~ msgstr "Скасувати"
-
-#~ msgid "Share Public directory over the network"
-#~ msgstr "Зробити файли у каталозі Public спільними для доступу з мережі"
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over the network when the user is logged in."
-#~ msgstr ""
-#~ "Якщо відмічено, файли у каталозі Public користувача стануть доступні у "
-#~ "мережі, коли він увійде у систему."
-
-#~ msgid "Share Public directory over Bluetooth"
-#~ msgstr ""
-#~ "Зробити файли у каталозі Public спільними для доступу через Bluetooth"
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over Bluetooth when the user is logged in."
-#~ msgstr ""
-#~ "Якщо встановлено, файли у каталозі Public користувача стануть доступні "
-#~ "через Bluetooth, коли користувач увійде до системи."
-
-#~ msgid "Whether to allow Bluetooth clients to write files."
-#~ msgstr "Дозволити клієнтам Bluetooth записувати файли."
-
-#~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
-#~ msgstr ""
-#~ "Чи будуть клієнти Bluetooth записувати файли та файли будуть доступні "
-#~ "лише для читання."
-
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
-#~ msgstr ""
-#~ "Вимагати від клієнтів Bluetooth з'єднання з комп'ютером для передачі "
-#~ "файлів."
-
-#~ msgid "Launch Personal File Sharing Preferences"
-#~ msgstr "Параметри спільного доступу до особистих файлів"
-
-#~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Параметри спільного доступу до особистих файлів"
-
-#~ msgid "Share Files over the Network"
-#~ msgstr "Спільний доступ до файлів з мережі"
-
-#~ msgid "_Share public files on network"
-#~ msgstr "Від_крити доступ до файлів з мережі"
-
-#~ msgid "_Password:"
-#~ msgstr "_Пароль:"
-
-#~ msgid "_Require password:"
-#~ msgstr "П_отрібен пароль:"
-
-#~ msgid "Share Files over Bluetooth"
-#~ msgstr "Спільний доступ до файлів через Bluetooth"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Відкрити доступ до файлів через _Bluetooth"
-
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "_Дозволити віддаленим пристроям  видаляти файли"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "Вимагати від _віддалених пристроїв з'єднання з комп'ютером"
-
-#~ msgid "Receive Files over Bluetooth"
-#~ msgstr "Отримувати файли через Bluetooth"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "Приймати файли через Bluetooth у каталог З_авантаження"
-
-#~ msgid "_Accept files: "
-#~ msgstr "П_риймати файли:"
-
-#~ msgid "_Notify about received files"
-#~ msgstr "_Сповіщати користувача про отримувані файли"
-
-#~ msgid "Preferences for sharing of files"
-#~ msgstr "Параметри спільного доступу до файлів"
-
-#~ msgid "Unable to launch the Personal File Sharing Preferences"
-#~ msgstr "Не вдається відкрити параметри оприлюднення до особистих файлів"
-
-#~ msgid "No reason"
-#~ msgstr "Немає причини"
-
-#~ msgid "Could not display the help contents."
-#~ msgstr "Не вдається показати довідку."
-
-#~ msgid "Could not build interface."
-#~ msgstr "Не вдається створити інтерфейс користувача"
-
-#~ msgid "Never"
-#~ msgstr "Ніколи"
-
-#~ msgid "When writing files"
-#~ msgstr "При записі файлів"
-
-#~ msgid "Always"
-#~ msgstr "Завжди"
-
-#~ msgid "Only for set up devices"
-#~ msgstr "Лише для налаштованих пристроїв"
-
-#~ msgid "Ask"
-#~ msgstr "Запитувати"
-
-#~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr "Ви можете надавати спільний доступ до файлів у цій теці"
-
-#~ msgid "You can receive files over Bluetooth into this folder"
-#~ msgstr "Ви можете отримувати файли з Bluetooth у цю теку"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Зайдіть у систему як гість"
