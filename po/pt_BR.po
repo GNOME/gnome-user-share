@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of gnome-user-share.
-# Copyright (C) 2008-2019 Free Software Foundation, Inc.
+# Copyright (C) 2008-2020 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Taylon Silmer <taylonsilva@gmail.com>, 2009.
 # Fabrício Godoy <skarllot@gmail.com>, 2009.
@@ -7,15 +7,15 @@
 # André Gondim <In Memoriam>, 2009.
 # Djavan Fagundes <dnoway@gmail.com>, 2009.
 # Enrico Nicoletto <liverig@gmail.com>, 2013, 2015.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2013-2019.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2013-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-07-22 00:39-0300\n"
+"POT-Creation-Date: 2020-06-25 07:14+0000\n"
+"PO-Revision-Date: 2020-07-18 10:50-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.32.0\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -38,14 +38,12 @@ msgstr ""
 "“always”."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-#| msgid "Sharing"
 msgid "File Sharing"
 msgstr "Compartilhamento de arquivos"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-#| msgid "Launch Personal File Sharing if enabled"
 msgid "Launch File Sharing if enabled"
-msgstr "Executa o compartilhamento de arquivos, se habilitado"
+msgstr "Inicie o compartilhamento de arquivos, se habilitado"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
