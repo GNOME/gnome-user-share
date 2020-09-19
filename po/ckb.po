@@ -1,0 +1,81 @@
+# Central Kurdish translation for gnome-user-share.
+# Copyright (C) 2020 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# Jwtiyar Nariman <jwtiyar@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2020-09-06 18:50+0000\n"
+"PO-Revision-Date: 2020-09-19 12:38+0000\n"
+"Language-Team: Central Kurdish <kurdish-ckb@zkurd.org>\n"
+"Language: ckb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
+msgid "When to require passwords"
+msgstr "چ کاتێ داوای وشەی تێپەڕبوون بکات"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"چ کاتێ داوای وشەی تێپەڕبوون بکات. نرخی بردەست بریتین لە \"هیچ کات\"، "
+"\"کاتی_نووسینەوە\"، لەگەڵ \"هەمووکات\"."
+
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "File Sharing"
+msgstr "بڵاوکردنەوەی پەڕگە"
+
+#: data/gnome-user-share-webdav.desktop.in.in:4
+msgid "Launch File Sharing if enabled"
+msgstr "بچۆ بڵاوکردنەوەی پەڕگە ئەگەر کارایە"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
+msgid "share;files;http;network;copy;send;"
+msgstr "share;files;http;network;copy;send;"
+
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: src/nautilus-share-bar.c:99
+msgid "Sharing"
+msgstr "بڵاوکردنەوە"
+
+#: src/nautilus-share-bar.c:113
+msgid "Sharing Settings"
+msgstr "ڕێکخستنەکانی بڵاوکردنەوە"
+
+#: src/share-extension.c:117
+msgid ""
+"Turn on File Sharing to share the contents of this folder over the network."
+msgstr ""
+"بڵاوکردنەوەی پەڕگە کارا بکە بۆ ئەوەی ناوەڕۆکی ئەم پەڕەیە بڵاوبکەیتەوە لەسەر "
+"ڕایەڵە."
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: src/http.c:124
+#, c-format
+msgid "%s's public files"
+msgstr "%s پەڕەی گشتی هەیە"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: src/http.c:128
+#, c-format
+msgid "%s's public files on %s"
+msgstr "%s پەڕەی گشتی هەیە لەسەر %s"
