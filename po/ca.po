@@ -59,7 +59,7 @@ msgstr "Preferències de compartició"
 msgid ""
 "Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Activa la compartició de fitxers per compartir el contingut "
+"Activa la compartició de fitxers per a compartir el contingut "
 "d'aquesta carpeta a la xarxa."
 
 #. Translators: The %s will get filled in with the user name
@@ -83,76 +83,3 @@ msgstr "Fitxers públics de %s"
 msgid "%s's public files on %s"
 msgstr "Fitxers públics de %s a %s"
 
-#~ msgid "Personal File Sharing"
-#~ msgstr "Compartició de fitxers personals"
-
-#~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr "Si els clients del Bluetooth poden enviar fitxers amb ObexPush."
-
-#~ msgid ""
-#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
-#~ "directory when logged in."
-#~ msgstr ""
-#~ "Si és cert, els dispositius Bluetooth poden enviar fitxers a la carpeta "
-#~ "de baixades de l'usuari quan aquest usuari hagi entrat."
-
-#~ msgid "When to accept files sent over Bluetooth"
-#~ msgstr "Quan s'han d'acceptar fitxers enviats a través del Bluetooth"
-
-#~ msgid ""
-#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
-#~ "\"bonded\" and \"ask\"."
-#~ msgstr ""
-#~ "Quan s'hagin d'acceptar fitxers a través del Bluetooth. Els possibles "
-#~ "valors són «always» (sempre), «bonded» (vinculat) i «ask» (pregunta)."
-
-#~ msgid "Whether to notify about newly received files."
-#~ msgstr "Si s'ha de notificar sobre els fitxers rebuts nous."
-
-#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
-#~ msgstr ""
-#~ "Executa la compartició mitjançant el Bluetooth ObexPush si està habilitada"
-
-#~ msgid "Preferences"
-#~ msgstr "Preferències"
-
-#~ msgid "May be used to share or receive files"
-#~ msgstr "Es pot utilitzar per compartir o rebre fitxers"
-
-#~ msgid "May be shared over the network or Bluetooth"
-#~ msgstr ""
-#~ "Podeu compartir els fitxers d'aquesta carpeta a través de la xarxa i del "
-#~ "Bluetooth"
-
-#~ msgid "May be shared over the network"
-#~ msgstr "Es pot compartir per la xarxa"
-
-#~ msgid "May be used to receive files over Bluetooth"
-#~ msgstr "Es pot utilitzar per rebre fitxers a través del Bluetooth"
-
-#~ msgid "You received \"%s\" via Bluetooth"
-#~ msgstr "Heu rebut «%s» a través del Bluetooth"
-
-#~ msgid "You received a file"
-#~ msgstr "Heu rebut un fitxer"
-
-#~ msgid "Open File"
-#~ msgstr "Obre el fitxer"
-
-#~ msgid "Reveal File"
-#~ msgstr "Revela el fitxer"
-
-#~ msgid "File reception complete"
-#~ msgstr "S'ha completat la recepció del fitxer"
-
-#~ msgid "You have been sent a file \"%s\" via Bluetooth"
-#~ msgstr "Heu rebut el fitxer «%s» a través del Bluetooth"
-
-#~ msgid "You have been sent a file"
-#~ msgstr "Heu rebut un fitxer"
-
-#~ msgid "Receive"
-#~ msgstr "Rebre"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
