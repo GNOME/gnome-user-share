@@ -105,6 +105,7 @@ nautilus_share_bar_init (NautilusShareBar *bar)
         gtk_container_add (GTK_CONTAINER (vbox), label);
 
         bar->priv->label = gtk_label_new (NULL);
+        gtk_label_set_ellipsize (GTK_LABEL (bar->priv->label), PANGO_ELLIPSIZE_END);
         gtk_widget_set_halign (bar->priv->label, GTK_ALIGN_START);
         gtk_widget_show (bar->priv->label);
         gtk_container_add (GTK_CONTAINER (vbox), bar->priv->label);
