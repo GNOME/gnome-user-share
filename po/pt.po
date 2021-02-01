@@ -13,38 +13,36 @@ msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2020-06-25 07:14+0000\n"
-"PO-Revision-Date: 2020-09-05 11:04+0100\n"
-"Last-Translator: José Vieira <jvieira33@sapo.pt>\n"
+"POT-Creation-Date: 2020-09-06 18:50+0000\n"
+"PO-Revision-Date: 2021-02-01 16:05+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <@>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 3.30.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
-msgstr "Quando exigir senhas"
+msgstr "Quando exigir palavras-passe"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Quando perguntar por senhas. Valores possíveis são \"nunca\", \"ao gravar\", "
-"e \"sempre\"."
+"Quando perguntar por palavras-passe. Valores possíveis são \"nunca\", \"ao "
+"gravar\", e \"sempre\"."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-#| msgid "Sharing"
 msgid "File Sharing"
 msgstr "Partilha de ficheiros"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-#| msgid "Launch Personal File Sharing if enabled"
 msgid "Launch File Sharing if enabled"
-msgstr "Inicia a partilha de ficheiros pessoais, se ativa"
+msgstr "Inicia a partilha de ficheiros pessoais, se ativado"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
@@ -61,9 +59,6 @@ msgid "Sharing Settings"
 msgstr "Definições de partilha"
 
 #: src/share-extension.c:117
-#| msgid ""
-#| "Turn on Personal File Sharing to share the contents of this folder over "
-#| "the network."
 msgid ""
 "Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
