@@ -1,13 +1,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Sveinn í Felli <sv1@fellsnet.is>, 2015, 2019.
+# Sveinn í Felli <sv1@fellsnet.is>, 2015, 2019, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2019-04-10 16:34+0000\n"
-"PO-Revision-Date: 2019-07-06 07:09+0000\n"
+"POT-Creation-Date: 2020-06-25 07:14+0000\n"
+"PO-Revision-Date: 2021-09-29 07:47+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -30,12 +30,14 @@ msgstr ""
 "„on_write“ (þegar skrifað er) og „always“ (alltaf)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-msgid "Personal File Sharing"
-msgstr "Deiling einkagagna"
+#| msgid "Sharing"
+msgid "File Sharing"
+msgstr "Skráadeiling"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Opna einkaskráadeilingu ef þetta er virkt"
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch File Sharing if enabled"
+msgstr "Opna skráadeilingu ef þetta er virkt"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
@@ -52,14 +54,10 @@ msgid "Sharing Settings"
 msgstr "Stillingar deilingar"
 
 #: src/share-extension.c:117
-#| msgid ""
-#| "Turn on Personal File Sharing to share the contents of this folder over "
-#| "the network."
 msgid ""
 "Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
-"Kveiktu á skráadeilingu til að deila innihaldi þessarar möppu um "
-"netkerfið."
+"Kveiktu á skráadeilingu til að deila innihaldi þessarar möppu um netkerfið."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -81,6 +79,9 @@ msgstr "Opinber gögn frá %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Opinber gögn frá %s á %s"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "Deiling einkagagna"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
 #~ msgstr "Hvort Bluetooth þjónar geti sent gögn með því að nota ObexPush."
