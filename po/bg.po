@@ -1,17 +1,18 @@
 # Bulgarian translation of gnome-user-share po-file.
 # Copyright (C) 2005, 2009, 2010, 2012, 2016 Free Software Foundation, Inc.
+# Copyright (C) 2005 Alexander Shopov.
 # This file is distributed under the same license as the gnome-user-share package.
 # Rostislav Raykov <zbrox@i-space.org>, 2005.
-# Alexander Shopov <ash@kambanaria.org>, 2009, 2010, 2012, 2016.
+# Alexander Shopov <ash@kambanaria.org>, 2009, 2010, 2012, 2016, 2021.
 # Krasimir Chonov <mk2616@abv.bg>, 2014.
-#
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 22:36+0200\n"
-"PO-Revision-Date: 2016-02-01 09:38+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2021-10-02 06:33+0000\n"
+"PO-Revision-Date: 2021-10-03 16:21+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -20,11 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "Кога да се изискват пароли?"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
@@ -32,33 +33,33 @@ msgstr ""
 "Кога да се пита за пароли. Възможните опции са: „never“ (никога), "
 "„on_write“ (при запис), „always“ (винаги)."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-msgid "Personal File Sharing"
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "File Sharing"
 msgstr "Споделяне на файлове"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
+#: data/gnome-user-share-webdav.desktop.in.in:4
+msgid "Launch File Sharing if enabled"
 msgstr "Стартиране на споделянето на файлове, ако е позволено"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr ""
-"споделяне;файлове;уеб;мрежа;копиране;изпращане;share;files;bluetooth;obex;"
-"http;network;copy;send;"
+"share;files;bluetooth;obex;http;network;copy;send;споделяне;файлове;уеб;"
+"мрежа;копиране;изпращане;"
 
 #. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
+#: src/nautilus-share-bar.c:99
 msgid "Sharing"
 msgstr "Споделяне"
 
-#: ../src/nautilus-share-bar.c:115
+#: src/nautilus-share-bar.c:113
 msgid "Sharing Settings"
 msgstr "Настройки на споделянето"
 
-#: ../src/share-extension.c:118
+#: src/share-extension.c:117
 msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
+"Turn on File Sharing to share the contents of this folder over the network."
 msgstr ""
 "Включване на споделянето, така че съдържанието на тази папка да е достъпно "
 "по мрежата."
@@ -72,14 +73,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "Публичните файлове на %s"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Публичните файлове на %s върху %s"
