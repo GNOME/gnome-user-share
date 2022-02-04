@@ -1,0 +1,94 @@
+# Abkhazian translation for gnome-user-share.
+# Copyright (C) 2022 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# Нанба Наала <naala-nanba@rambler.ru>, 2022..
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"user-share&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-04-16 10:20+0000\n"
+"PO-Revision-Date: 2013-04-16 10:20+0000\n"
+"Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
+"Language-Team: Abkhazian <ab@li.org>\n"
+"Language: ab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-DamnedLies-Scope: partial\n"
+
+#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
+msgid "Personal File Sharing"
+msgstr "Азеиԥш неирҭа хаҭалатәи афаилқәа рахь"
+
+#: ../data/gnome-user-share.desktop.in.in.h:2
+msgid "Launch Personal File Sharing if enabled"
+msgstr "Хаҭалатәи афаилқәа рахь азеиԥш неирҭа аартра , иаҿакызар" 
+
+#: ../data/gnome-user-share.desktop.in.in.h:3
+msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgstr "анеирҭа; афаил; аимадара; ахкьыԥхьаара;азнагара;"
+
+#: ../src/nautilus-share-bar.c:116
+msgid "Preferences"
+msgstr "Архиарақәа"
+
+#: ../src/nautilus-share-bar.c:120
+msgid "Launch Personal File Sharing Preferences"
+msgstr "Хаҭалатәи архиарақәа рҿакра азеиԥш неирҭа афаилқәа рахь архиаразы"
+
+#: ../src/share-extension.c:152
+msgid "May be used to share or receive files"
+msgstr "Афаилқәа рышьҭразы,мамзар рыдкыларазы ахархәара аиур алшоит"
+
+#: ../src/share-extension.c:154
+msgid "May be shared over the network or Bluetooth"
+msgstr "Bluetooth ала афаилқәа рышьҭразы ахархәара аиур алшоит"
+
+#: ../src/share-extension.c:158
+msgid "May be used to receive files over Bluetooth"
+msgstr "Bluetooth ала афаилқәа рыдкыларазы ахархәара аиур алшоит"
+
+#. Translators: The %s will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of %s", or leave out the %s altogether.
+#. In the latter case, please put "%.0s" somewhere in the string,
+#. which will match the user name string passed by the C code,
+#. but not put the user name in the final string. This is to
+#. avoid the warning that msgfmt might otherwise generate.
+#: ../src/http.c:127
+#, c-format
+msgid "%s's public files"
+msgstr "Азеиԥш фаилқәк ахархәаҩ %s  итәы"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: ../src/http.c:131
+#, c-format
+msgid "%s's public files on %s"
+msgstr "Азеиԥш фаилқәа ахархәаҩ%s итәы %s аҟны "
+
+#. Translators: %s is the name of the filename received
+#: ../src/obexpush.c:133
+#, c-format
+msgid "You received \"%s\" via Bluetooth"
+msgstr "Шәара ишәоуит \"%s\"Bluetooth ала "
+
+#: ../src/obexpush.c:135
+msgid "You received a file"
+msgstr "Шәара ишәоуит афаил"
+
+#: ../src/obexpush.c:146
+msgid "Open File"
+msgstr "Афаил аартра"
+
+#: ../src/obexpush.c:150
+msgid "Reveal File"
+msgstr "Афаил арбара"
+
+#: ../src/obexpush.c:167
+msgid "File reception complete"
+msgstr "Афаил аҭагалара хырқәшоуп"
