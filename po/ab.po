@@ -26,7 +26,7 @@ msgstr "Ажәамаӡа аҭагалара азы аҳәара анбаҟаҵа
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "Ажәамаӡа аҭагаларазы аҳәара анбаҟаҵатәу. Иаҳҳәап: \"ахаангьы\", \"аҩраан\", and "
+msgstr"Ажәамаӡа аҭагаларазы аҳәара анбаҟаҵатәу. Иаҳҳәап: \"ахаангьы\", \"аҩраан\", насгьы "
 "\"еснагь\"."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
@@ -81,33 +81,3 @@ msgstr "Азеиԥш фаилқәа ахархәаҩ %s  итәы"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Азеиԥш фаилқәа ахархәаҩ%s итәы %s аҟны "
-
-#~ msgid "Preferences"
-#~ msgstr "Архиарақәа"
-
-#~ msgid "Launch Personal File Sharing Preferences"
-#~ msgstr "Хаҭалатәи архиарақәа рҿакра азеиԥш неирҭа афаилқәа рахь архиаразы"
-
-#~ msgid "May be used to share or receive files"
-#~ msgstr "Афаилқәа рышьҭразы,мамзар рыдкыларазы ахархәара аиур алшоит"
-
-#~ msgid "May be shared over the network or Bluetooth"
-#~ msgstr "Bluetooth ала афаилқәа рышьҭразы ахархәара аиур алшоит"
-
-#~ msgid "May be used to receive files over Bluetooth"
-#~ msgstr "Bluetooth ала афаилқәа рыдкыларазы ахархәара аиур алшоит"
-
-#~ msgid "You received \"%s\" via Bluetooth"
-#~ msgstr "Шәара ишәоуит \"%s\"Bluetooth ала "
-
-#~ msgid "You received a file"
-#~ msgstr "Шәара ишәоуит афаил"
-
-#~ msgid "Open File"
-#~ msgstr "Афаил аартра"
-
-#~ msgid "Reveal File"
-#~ msgstr "Афаил арбара"
-
-#~ msgid "File reception complete"
-#~ msgstr "Афаил аҭагалара хырқәшоуп"
