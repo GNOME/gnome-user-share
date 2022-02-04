@@ -58,8 +58,7 @@ msgid "Sharing Settings"
 msgstr "Анеирҭа ахышәарақәа"
 
 #: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
+msgid "Turn on File Sharing to share the contents of this folder over the network."
 msgstr "Иаҿашәк азеиԥш неирҭа,аимадара иалахәу рзы ақьаадҭра ахь анеирҭа маншәалахарц азы."
 
 #. Translators: The %s will get filled in with the user name
