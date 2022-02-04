@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-04-16 10:20+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2022-02-04 22:49+0000\n"
 "PO-Revision-Date: 2013-04-16 10:20+0000\n"
 "Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
 "Language-Team: Abkhazian <ab@li.org>\n"
@@ -18,37 +18,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-DamnedLies-Scope: partial\n"
 
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
-msgid "Personal File Sharing"
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
+msgid "When to require passwords"
+msgstr "Ажәамаӡа аҭагалара азы аҳәара анбаҟаҵатәу"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr "Ажәамаӡа аҭагаларазы аҳәара анбаҟаҵатәу. Иаҳҳәап: \"ахаангьы\", \"аҩраан\", and "
+"\"еснагь\"."
+
+#: data/gnome-user-share-webdav.desktop.in.in:3
+#, fuzzy
+#| msgid "Personal File Sharing"
+msgid "File Sharing"
 msgstr "Азеиԥш неирҭа хаҭалатәи афаилқәа рахь"
 
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Хаҭалатәи афаилқәа рахь азеиԥш неирҭа аартра , иаҿакызар" 
+#: data/gnome-user-share-webdav.desktop.in.in:4
+#, fuzzy
+#| msgid "Launch Personal File Sharing if enabled"
+msgid "Launch File Sharing if enabled"
+msgstr "Хаҭалатәи афаилқәа рахь азеиԥш неирҭа аартра , иаҿакызар"
 
-#: ../data/gnome-user-share.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
+#, fuzzy
+#| msgid "share;files;bluetooth;obex;http;network;copy;send;"
+msgid "share;files;http;network;copy;send;"
 msgstr "анеирҭа; афаил; аимадара; ахкьыԥхьаара;азнагара;"
 
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "Архиарақәа"
+#. translators: This is the label for the "Sharing" panel in the Settings
+#: src/nautilus-share-bar.c:99
+msgid "Sharing"
+msgstr "Азеиԥш неирҭа"
 
-#: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "Хаҭалатәи архиарақәа рҿакра азеиԥш неирҭа афаилқәа рахь архиаразы"
+#: src/nautilus-share-bar.c:113
+msgid "Sharing Settings"
+msgstr "Анеирҭа ахышәарақәа"
 
-#: ../src/share-extension.c:152
-msgid "May be used to share or receive files"
-msgstr "Афаилқәа рышьҭразы,мамзар рыдкыларазы ахархәара аиур алшоит"
-
-#: ../src/share-extension.c:154
-msgid "May be shared over the network or Bluetooth"
-msgstr "Bluetooth ала афаилқәа рышьҭразы ахархәара аиур алшоит"
-
-#: ../src/share-extension.c:158
-msgid "May be used to receive files over Bluetooth"
-msgstr "Bluetooth ала афаилқәа рыдкыларазы ахархәара аиур алшоит"
+#: src/share-extension.c:117
+msgid ""
+"Turn on File Sharing to share the contents of this folder over the network."
+msgstr "Иаҿашәк азеиԥш неирҭа,аимадара иалахәу рзы ақьаадҭра ахь анеирҭа маншәалахарц азы."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -59,36 +71,44 @@ msgstr "Bluetooth ала афаилқәа рыдкыларазы ахархәа�
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:127
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
-msgstr "Азеиԥш фаилқәк ахархәаҩ %s  итәы"
+msgstr "Азеиԥш фаилқәа ахархәаҩ %s  итәы"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:131
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Азеиԥш фаилқәа ахархәаҩ%s итәы %s аҟны "
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "Шәара ишәоуит \"%s\"Bluetooth ала "
+#~ msgid "Preferences"
+#~ msgstr "Архиарақәа"
 
-#: ../src/obexpush.c:135
-msgid "You received a file"
-msgstr "Шәара ишәоуит афаил"
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "Хаҭалатәи архиарақәа рҿакра азеиԥш неирҭа афаилқәа рахь архиаразы"
 
-#: ../src/obexpush.c:146
-msgid "Open File"
-msgstr "Афаил аартра"
+#~ msgid "May be used to share or receive files"
+#~ msgstr "Афаилқәа рышьҭразы,мамзар рыдкыларазы ахархәара аиур алшоит"
 
-#: ../src/obexpush.c:150
-msgid "Reveal File"
-msgstr "Афаил арбара"
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "Bluetooth ала афаилқәа рышьҭразы ахархәара аиур алшоит"
 
-#: ../src/obexpush.c:167
-msgid "File reception complete"
-msgstr "Афаил аҭагалара хырқәшоуп"
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "Bluetooth ала афаилқәа рыдкыларазы ахархәара аиур алшоит"
+
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "Шәара ишәоуит \"%s\"Bluetooth ала "
+
+#~ msgid "You received a file"
+#~ msgstr "Шәара ишәоуит афаил"
+
+#~ msgid "Open File"
+#~ msgstr "Афаил аартра"
+
+#~ msgid "Reveal File"
+#~ msgstr "Афаил арбара"
+
+#~ msgid "File reception complete"
+#~ msgstr "Афаил аҭагалара хырқәшоуп"
