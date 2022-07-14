@@ -55,22 +55,21 @@ endif
 
 add_project_arguments(common_flags, language: 'c')
 
-gio_dep = dependency('gio-2.0', version: '>= 2.26')
+gio_dep = dependency('gio-2.0', version: '>= 2.71.3')
 gio_unix_dep = dependency('gio-unix-2.0')
-glib_dep = dependency('glib-2.0', version: '>= 2.58')
+glib_dep = dependency('glib-2.0', version: '>= 2.71.3')
 gtk_dep = dependency('gtk+-3.0')
 
 # GIO schemas
-gio_schemasdir = gio_dep.get_pkgconfig_variable(
-  'schemasdir',
-  define_variable: ['datadir', user_share_prefix / user_share_datadir],
-  default: user_share_prefix / user_share_datadir / 'glib-2.0/schemas',
+gio_schemasdir = gio_dep.get_variable(
+  pkgconfig: 'schemasdir',
+  pkgconfig_define: ['datadir', user_share_prefix / user_share_datadir]
 )
 
 # systemd user unit directory
 systemd_systemduserunitdir = get_option('systemduserunitdir')
 if systemd_systemduserunitdir == ''
-  systemd_systemduserunitdir = dependency('systemd').get_pkgconfig_variable('systemduserunitdir')
+  systemd_systemduserunitdir = dependency('systemd').get_variable(pkgconfig: 'systemduserunitdir')
 endif
 
 httpd = find_program(get_option('httpd'), required: false)
@@ -103,7 +102,10 @@ modules_path = get_option('modules_path')
 
 # Check for nautilus for the share bar
 libnautilus_extension_dep = dependency('libnautilus-extension', version: '>= 3.27.90')
-libnautilus_extension_extensiondir = libnautilus_extension_dep.get_pkgconfig_variable('extensiondir', define_variable: ['libdir', user_share_prefix / user_share_libdir])
+libnautilus_extension_extensiondir = libnautilus_extension_dep.get_variable(
+  pkgconfig: 'extensiondir',
+  pkgconfig_define: ['libdir', user_share_prefix / user_share_libdir]
+)
 message('installing nautilus plugin in: ' + libnautilus_extension_extensiondir)
 
 subdir('data')
