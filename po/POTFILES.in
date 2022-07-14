@@ -2,7 +2,5 @@
 # Please keep this file sorted alphabetically.
 data/org.gnome.desktop.file-sharing.gschema.xml
 data/gnome-user-share-webdav.desktop.in.in
-src/nautilus-share-bar.c
-src/share-extension.c
 src/http.c
 src/user_share-webdav.c

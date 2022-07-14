@@ -48,24 +48,7 @@ executable(
   install_dir: user_share_libexecdir,
 )
 
-sources = files(
-  'nautilus-share-bar.c',
-  'share-extension.c',
-)
-
 deps = [
-  gtk_dep,
   gio_unix_dep,
-  libnautilus_extension_dep,
   libuser_share_common_dep,
 ]
-
-shared_module(
-  'nautilus-share-extension',
-  sources: sources,
-  include_directories: top_inc,
-  dependencies: deps,
-  c_args: common_c_flags,
-  install: true,
-  install_dir: libnautilus_extension_extensiondir,
-)

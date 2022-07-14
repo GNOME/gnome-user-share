@@ -7,9 +7,7 @@ variables:
     meson
     glibc-devel
     glib2-devel
-    gtk3-devel
     libselinux-devel
-    nautilus-devel
     systemd-devel
     httpd
     mod_dnssd

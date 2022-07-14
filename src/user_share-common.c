@@ -54,30 +54,3 @@ lookup_public_dir (void)
 				   "Public",
 				   TRUE);
 }
-
-GFile *
-lookup_dir_with_fallback (GUserDirectory directory)
-{
-	GFile *file;
-	char *path;
-	const char *name;
-
-	if (directory == G_USER_DIRECTORY_PUBLIC_SHARE)
-		name = "Public";
-	else if (directory == G_USER_DIRECTORY_DOWNLOAD)
-		name = "Downloads";
-	else
-		g_assert_not_reached ();
-
-	path = lookup_special_dir (directory,
-				   name,
-				   FALSE);
-
-	if (path == NULL)
-		return NULL;
-
-	file = g_file_new_for_path (path);
-	g_free (path);
-
-	return file;
-}

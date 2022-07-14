@@ -58,7 +58,6 @@ add_project_arguments(common_flags, language: 'c')
 gio_dep = dependency('gio-2.0', version: '>= 2.71.3')
 gio_unix_dep = dependency('gio-unix-2.0')
 glib_dep = dependency('glib-2.0', version: '>= 2.71.3')
-gtk_dep = dependency('gtk+-3.0')
 
 # GIO schemas
 gio_schemasdir = gio_dep.get_variable(
@@ -100,14 +99,6 @@ config_h.set('HAVE_SELINUX', have_selinux)
 # Check for the HTTPD modules path
 modules_path = get_option('modules_path')
 
-# Check for nautilus for the share bar
-libnautilus_extension_dep = dependency('libnautilus-extension', version: '>= 3.27.90')
-libnautilus_extension_extensiondir = libnautilus_extension_dep.get_variable(
-  pkgconfig: 'extensiondir',
-  pkgconfig_define: ['libdir', user_share_prefix / user_share_libdir]
-)
-message('installing nautilus plugin in: ' + libnautilus_extension_extensiondir)
-
 subdir('data')
 subdir('po')
 subdir('src')
@@ -124,6 +115,5 @@ gnome.post_install(
 output = user_share_name + ' was configured with the following options:\n'
 output += '** httpd location: ' + httpd_path + '\n'
 output += '** httpd modules_path: ' + modules_path + '\n'
-output += '** nautilus extension path: ' + libnautilus_extension_extensiondir + '\n\n'
 output += 'Do note Apache 2.2 and mod_dnssd 0.6 are required to use ' + user_share_name + '.'
 message(output)
