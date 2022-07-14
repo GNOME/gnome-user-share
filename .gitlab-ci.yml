@@ -6,7 +6,7 @@ variables:
     git
     meson
     glibc-devel
-    glib-devel
+    glib2-devel
     gtk3-devel
     libselinux-devel
     nautilus-devel
