@@ -1,6 +1,6 @@
 project(
   'gnome-user-share', 'c',
-  version: '3.34.0',
+  version: '43.alpha',
   license: 'GPL2',
   default_options: 'buildtype=debugoptimized',
   meson_version: '>= 0.57.0',

@@ -1,4 +1,8 @@
-This is gnome-user-share 3.34.0, a system for easy sharing of user files.
+This is gnome-user-share 43.alpha, a system for easy sharing of user files.
+
+Major changes since 3.34.0:
+- Remove Nautilus extension
+- Translation updates
 
 Major changes since 3.33.1:
 - Fix installation location of systemd unit file on Fedora 64-bit systems
