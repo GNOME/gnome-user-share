@@ -1,5 +1,7 @@
 common_c_flags = ['-DGNOMELOCALEDIR="@0@"'.format(user_share_prefix / user_share_localedir)]
 
+gnome = import('gnome')
+
 deps = [
   gio_dep,
   glib_dep,

@@ -3,7 +3,7 @@ project(
   version: '3.34.0',
   license: 'GPL2',
   default_options: 'buildtype=debugoptimized',
-  meson_version: '>= 0.50.0',
+  meson_version: '>= 0.57.0',
 )
 
 user_share_name = meson.project_name()
@@ -117,9 +117,8 @@ configure_file(
   configuration: config_h,
 )
 
-meson.add_install_script(
-  'meson_post_install.py',
-  gio_schemasdir,
+gnome.post_install(
+  glib_compile_schemas: true,
 )
 
 output = user_share_name + ' was configured with the following options:\n'
