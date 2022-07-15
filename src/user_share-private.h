@@ -28,13 +28,4 @@
 #define GNOME_USER_SHARE_SCHEMAS "org.gnome.desktop.file-sharing"
 #define FILE_SHARING_REQUIRE_PASSWORD "require-password"
 
-typedef enum {
-    PASSWORD_NEVER,
-    PASSWORD_ON_WRITE,
-    PASSWORD_ALWAYS
-} PasswordSetting;
-
-const char *password_string_from_setting (PasswordSetting setting);
-PasswordSetting password_setting_from_string (const char *str);
-
 #endif /* _USER_SHARE_PRIVATE_H_ */

@@ -21,7 +21,6 @@ libuser_share_common_dep = declare_dependency(
 
 sources = files(
   'http.c',
-  'user_share-private.c',
   'user_share-webdav.c',
 )
 
