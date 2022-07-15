@@ -1,9 +1,18 @@
 image: fedora:rawhide
 
 variables:
-  DEPENDENCIES: gcc meson glibc-devel glib-devel gtk3-devel
-                libselinux-devel nautilus-devel systemd-devel
-                httpd mod_dnssd gettext
+  DEPENDENCIES:
+    gcc
+    meson
+    glibc-devel
+    glib-devel
+    gtk3-devel
+    libselinux-devel
+    nautilus-devel
+    systemd-devel
+    httpd
+    mod_dnssd
+    gettext
 
 build_stable:
   before_script:
