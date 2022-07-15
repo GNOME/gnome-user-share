@@ -73,7 +73,7 @@ if systemd_systemduserunitdir == ''
 endif
 
 httpd = find_program(get_option('httpd'), required: false)
-httpd_path = (httpd.found() ? httpd.path() : '')
+httpd_path = (httpd.found() ? httpd.full_path() : '')
 
 sockets_deps = []
 if not cc.has_function('socket')
