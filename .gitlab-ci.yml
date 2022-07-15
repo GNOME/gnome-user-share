@@ -3,6 +3,7 @@ image: fedora:rawhide
 variables:
   DEPENDENCIES:
     gcc
+    git
     meson
     glibc-devel
     glib-devel
@@ -21,3 +22,9 @@ build_stable:
   script:
     - meson . _build
     - ninja -C _build
+    - ninja -C _build dist
+  artifacts:
+    when: always
+    paths:
+      - "${CI_PROJECT_DIR}/_build/meson-logs/"
+      - "${CI_PROJECT_DIR}/_build/meson-dist"
