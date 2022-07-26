@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
-"issues\n"
-"POT-Creation-Date: 2022-02-04 22:49+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
+"POT-Creation-Date: 2022-07-15 10:25+0000\n"
 "PO-Revision-Date: 2013-04-16 10:20+0000\n"
 "Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
 "Language-Team: Abkhazian <ab@li.org>\n"
@@ -26,8 +25,9 @@ msgstr "Ажәамаӡа аҭагалара азы аҳәара анбаҟаҵа
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr"Ажәамаӡа аҭагаларазы аҳәара анбаҟаҵатәу. Иаҳҳәап: \"ахаангьы\", \"аҩраан\", насгьы "
-"\"еснагь\"."
+msgstr ""
+"Ажәамаӡа аҭагаларазы аҳәара анбаҟаҵатәу. Иаҳҳәап: \"ахаангьы\", \"аҩраан\", "
+"насгьы \"еснагь\"."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 #, fuzzy
@@ -47,19 +47,6 @@ msgstr "Хаҭалатәи афаилқәа рахь азеиԥш неирҭа �
 #| msgid "share;files;bluetooth;obex;http;network;copy;send;"
 msgid "share;files;http;network;copy;send;"
 msgstr "анеирҭа; афаил; аимадара; ахкьыԥхьаара;азнагара;"
-
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Азеиԥш неирҭа"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Анеирҭа ахышәарақәа"
-
-#: src/share-extension.c:117
-msgid "Turn on File Sharing to share the contents of this folder over the network."
-msgstr "Иаҿашәк азеиԥш неирҭа,аимадара иалахәу рзы ақьаадҭра ахь анеирҭа маншәалахарц азы."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -81,3 +68,52 @@ msgstr "Азеиԥш фаилқәа ахархәаҩ %s  итәы"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Азеиԥш фаилқәа ахархәаҩ%s итәы %s аҟны "
+
+#: gtweak/app.py:101+gtweak/app.py:103
+msgid "GNOME Shell"
+msgstr "GNOME Shell"
+
+#: gtweak/app.py:108
+msgid "GTK"
+msgstr "GTK"
+
+#: gtweak/tweaks/tweak_group_appearance.py:199
+msgid "<i>Default</i>"
+msgstr "<i>Ишыҟоу еиԥш</i>"
+
+#: gtweak/tweaks/tweak_group_startup.py:31+gtweak/tweaks/tweak_group_startup.py:307
+msgid "Startup Applications"
+msgstr "Автоматла аусура"
+
+#: gtweak/tweaks/tweak_group_startup.py:58
+msgid "<primary>f"
+msgstr "<primary>f"
+
+#: gtweak/tweaks/tweak_group_top_bar.py:17
+msgid "Date"
+msgstr "Аамҭарба"
+
+#: gtweak/tweaks/tweak_group_windows.py:197
+msgid "HiDPI"
+msgstr "HiDPI"
+
+#: gtweak/tweaks/tweak_wacom.py:25
+msgid "Wacom"
+msgstr "Wacom"
+
+#: gtweak/utils.py:63
+msgid "%s <i>(default)</i>"
+msgstr "%s <i>(ишыҟоу еиԥш)</i>"
+
+#~ msgid "Sharing"
+#~ msgstr "Азеиԥш неирҭа"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Анеирҭа ахышәарақәа"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "Иаҿашәк азеиԥш неирҭа,аимадара иалахәу рзы ақьаадҭра ахь анеирҭа "
+#~ "маншәалахарц азы."
