@@ -1,5 +1,5 @@
 # translation of gnome-user-share to Turkish
-# Copyright (C) 2007-2019 gnome-user-share'S COPYRIGHT HOLDER
+# Copyright (C) 2007-2022 gnome-user-share's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Baris Cicek <baris@teamforce.name.tr>, 2007, 2009.
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
+"POT-Creation-Date: 2022-07-15 10:25+0000\n"
 "PO-Revision-Date: 2019-08-06 23:11+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -48,21 +48,6 @@ msgstr "Eğer etkinse Dosya Paylaşımını başlat"
 msgid "share;files;http;network;copy;send;"
 msgstr "paylaş;dosyalar;http;ağ;kopyala;gönder;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Paylaşım"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Paylaşım Ayarları"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Bu klasörün içeriğini ağ üzerinde paylaşmak için Dosya Paylaşımını açın."
-
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
@@ -83,78 +68,3 @@ msgstr "%s kullanıcısının genel dosyaları"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s kullanıcısının %s üzerindeki genel dosyaları"
-
-#~ msgid "Personal File Sharing"
-#~ msgstr "Kişisel Dosya Paylaşımı"
-
-#~ msgid "folder-remote"
-#~ msgstr "folder-remote"
-
-#~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr ""
-#~ "Bluetooth istemcilerinin ObexPush kullanarak dosya gönderebilmeleri."
-
-#~ msgid ""
-#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
-#~ "directory when logged in."
-#~ msgstr ""
-#~ "Eğer bu true ise, Bluetooth aygıtları kullanıcının İndirilenler dizinine "
-#~ "giriş yaptığında dosya gönderebilecekler."
-
-#~ msgid "When to accept files sent over Bluetooth"
-#~ msgstr "Bluetooth üzerinden gönderilen dosyaların ne zaman kabul edileceği"
-
-#~ msgid ""
-#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
-#~ "\"bonded\" and \"ask\"."
-#~ msgstr ""
-#~ "Bluetooth üzerinden gönderilen dosyaların ne zaman kabul edileceği. "
-#~ "Geçerli değerler \"always\", \"bonded\" ve \"ask\"."
-
-#~ msgid "Whether to notify about newly received files."
-#~ msgstr "Yeni alınan dosyalar hakkında bildirimde bulunulması."
-
-#~ msgid "Launch Bluetooth ObexPush sharing if enabled"
-#~ msgstr "Eğer etkinse Bluetooth ObexPush paylaşımını başlat"
-
-#~ msgid "Preferences"
-#~ msgstr "Tercihler"
-
-#~ msgid "May be used to share or receive files"
-#~ msgstr "Dosya paylaşmada ve almada kullanılabilir"
-
-#~ msgid "May be shared over the network or Bluetooth"
-#~ msgstr "Ağ üzerinde veya Bluetooth ile paylaşılabilir"
-
-#~ msgid "May be shared over the network"
-#~ msgstr "Ağ üzerinde paylaşılabilir"
-
-#~ msgid "May be used to receive files over Bluetooth"
-#~ msgstr "Bluetooth üzerinden dosya almada kullanılabilir"
-
-#~ msgid "You received \"%s\" via Bluetooth"
-#~ msgstr "Bluetooth aracılığıyla \"%s\" aldınız"
-
-#~ msgid "You received a file"
-#~ msgstr "Bir dosya aldınız"
-
-#~ msgid "Open File"
-#~ msgstr "Dosya Aç"
-
-#~ msgid "Reveal File"
-#~ msgstr "Dosyayı Göster"
-
-#~ msgid "File reception complete"
-#~ msgstr "Dosya alımı tamamlandı"
-
-#~ msgid "You have been sent a file \"%s\" via Bluetooth"
-#~ msgstr "Bluetooth aracılığıyla \"%s\" adlı bir dosya size gönderildi"
-
-#~ msgid "You have been sent a file"
-#~ msgstr "Bir dosya size gönderildi"
-
-#~ msgid "Receive"
-#~ msgstr "Al"
-
-#~ msgid "Cancel"
-#~ msgstr "İptal"
