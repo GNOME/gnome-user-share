@@ -4,11 +4,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-08 14:50+0000\n"
-"PO-Revision-Date: 2017-04-22 12:42+0300\n"
-"Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2022-07-15 10:25+0000\n"
+"PO-Revision-Date: 2022-10-26 23:15+0300\n"
+"Last-Translator: Launchpad translators\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -16,50 +16,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 3.2\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "Калі патрабаваць паролі"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Калі запытваць паролі. Магчымыя значэнні: \"never\" (ніколі), \"on_write"
-"\" (падчас спробы запісу) і \"always\" (заўсёды)."
+"Калі запытваць паролі. Магчымыя значэнні: «never» (ніколі), "
+"«on_write» (падчас спробы запісу) і «always» (заўсёды)."
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:1
-msgid "Personal File Sharing"
-msgstr "Супольны доступ да ўласных файлаў"
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "File Sharing"
+msgstr "Супольны доступ да файлаў"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr ""
-"Запуск праграмы арганізацыі супольнага доступу да файлаў (калі ўключана)"
+#: data/gnome-user-share-webdav.desktop.in.in:4
+msgid "Launch File Sharing if enabled"
+msgstr "Калі ўключана, запускаецца супольны доступ да файлаў"
 
-#: ../data/gnome-user-share-webdav.desktop.in.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
-msgstr "супольны;рэсурс;http;сетка;капіраванне;паслаць;пасылка;"
-
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: ../src/nautilus-share-bar.c:101
-msgid "Sharing"
-msgstr "Супольны доступ"
-
-#: ../src/nautilus-share-bar.c:115
-msgid "Sharing Settings"
-msgstr "Настройкі супольнага доступу"
-
-#: ../src/share-extension.c:118
-msgid ""
-"Turn on Personal File Sharing to share the contents of this folder over the "
-"network."
 msgstr ""
-"Уключыце супольны доступ да асабістых файлаў, каб дазволіць доступ праз "
-"сеціва да змесціва гэтай папкі."
+"супольны;агульнадаступныя;файлы;рэсурс;http;сетка;капіраванне;паслаць;"
+"адпраўка;пасылка;"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -70,17 +55,30 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:125
+#: src/http.c:124
 #, c-format
 msgid "%s's public files"
 msgstr "%s: публічныя файлы"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:129
+#: src/http.c:128
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s: публічныя файлы на %s"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "Супольны доступ да ўласных файлаў"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Настройкі супольнага доступу"
+
+#~ msgid ""
+#~ "Turn on Personal File Sharing to share the contents of this folder over "
+#~ "the network."
+#~ msgstr ""
+#~ "Уключыце супольны доступ да асабістых файлаў, каб дазволіць доступ праз "
+#~ "сеціва да змесціва гэтай папкі."
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Публікаваць каталог \"Публічныя файлы\" у сетцы"
