@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the gnome-user-share package.
 # Aisano < >, 2010.
 # Ryan LORTIE <desrt@desrt.ca>, 2013.
-# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010, 2011, 2013, 2017.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010-2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-10 16:34+0000\n"
-"PO-Revision-Date: 2019-04-11 09:20+0200\n"
-"Last-Translator: Carmen Bianca BAKKER <carmen@carmenbianca.eu>\n"
+"POT-Creation-Date: 2023-01-25 20:01+0000\n"
+"PO-Revision-Date: 2023-09-24 00:34+0200\n"
+"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
 "Language-Team: Esperanto <gnome-eo-list@gnome.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 42.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -30,37 +31,21 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kiam peti pasvortojn. Eblaj valoroj estas \"never\" (neniam), \"on_write"
-"\" (por skribi) kaj \"always\" (ĉiam)."
+"Kiam peti pasvortojn. Eblaj valoroj estas \"never\" (neniam), "
+"\"on_write\" (por skribi) kaj \"always\" (ĉiam)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-msgid "Personal File Sharing"
-msgstr "Persona dosierkunhavigo"
+msgid "File Sharing"
+msgstr "Dosier-kunhavigado"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-msgid "Launch Personal File Sharing if enabled"
-msgstr "Lanĉi personan dosierkunhavigon se ĝi estas enŝaltite"
+msgid "Launch File Sharing if enabled"
+msgstr "Lanĉi dosierkunhavigon se ebligita"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "kunhavigi;dosieroj;http;reto;kopii;sendi;"
-
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Kunhavigo"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Kunhavigo-agordoj"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Ŝalti dosierkunhavigon por kunhavigi la enhavojn de tiu dosierujo per la "
-"reto."
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
@@ -82,6 +67,19 @@ msgstr "Publikaj dosieroj de %s"
 #, c-format
 msgid "%s's public files on %s"
 msgstr "Publikaj dosieroj de %s sur %s"
+
+#~ msgid "Personal File Sharing"
+#~ msgstr "Persona dosierkunhavigo"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Kunhavigo-agordoj"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "Ŝalti dosierkunhavigon por kunhavigi la enhavojn de tiu dosierujo per la "
+#~ "reto."
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "Kunhavigi la dosierujon \"Publika\" rete"
@@ -135,8 +133,8 @@ msgstr "Publikaj dosieroj de %s sur %s"
 #~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
 #~ "\"bonded\" and \"ask\"."
 #~ msgstr ""
-#~ "Kiam akcepti dosierojn senditajn Bludente. Eblaj valoroj estas \"always"
-#~ "\" (ĉiam), \"bonded\" (ligitajn) kaj \"ask\" (demandi)."
+#~ "Kiam akcepti dosierojn senditajn Bludente. Eblaj valoroj estas "
+#~ "\"always\" (ĉiam), \"bonded\" (ligitajn) kaj \"ask\" (demandi)."
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "Ĉu atentigi pri nove ricevitaj dosieroj?"
