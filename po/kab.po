@@ -9,21 +9,21 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2024-02-22 20:22+0000\n"
-"PO-Revision-Date: 2024-03-12 14:50+0100\n"
-"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"POT-Creation-Date: 2024-03-12 13:51+0000\n"
+"PO-Revision-Date: 2024-03-18 01:58+0100\n"
+"Last-Translator: sa\n"
 "Language-Team: Kabyle <>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
 "X-DL-Team: kab\n"
 "X-DL-Module: gnome-user-share\n"
 "X-DL-Branch: master\n"
 "X-DL-Domain: po\n"
 "X-DL-State: None\n"
-"Plural-Forms: nplurals=2; plural=n>1\n"
-"X-Generator: Gtranslator 41.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -34,6 +34,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
+"Mi ara tessutreḍ awalen n uεeddi. Azalen i izemren ad ilin \"werǧin\", "
+"\"on_write,\" akked \"yal ass\"."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
@@ -41,12 +43,12 @@ msgstr "Beṭṭu n ifuyla"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch File Sharing if enabled"
-msgstr "Senker beṭṭu n yifuyla ma yermed."
+msgstr "Senker beṭṭu n yifuyla ma yermed"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
-msgstr "Beṭṭu;bḍu,ifuyla;http;azeṭṭa;nɣel;senṭeḍ;"
+msgstr "beṭṭu;bḍu,ifuyla;http;azeṭṭa;nɣel;senṭeḍ;"
 
 #. Translators: The %s will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
