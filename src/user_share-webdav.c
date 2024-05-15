@@ -129,7 +129,7 @@ main (int argc, char **argv)
 	}
 
 	application = g_application_new ("org.gnome.user-share.webdav",
-					 G_APPLICATION_FLAGS_NONE);
+					 G_APPLICATION_DEFAULT_FLAGS);
 	g_signal_connect (application, "startup",
 			  G_CALLBACK (user_share_webdav_startup), NULL);
 	g_signal_connect (application, "activate",
