@@ -2,8 +2,12 @@ project(
   'gnome-user-share', 'c',
   version: '43.0',
   license: 'GPL2',
-  default_options: 'buildtype=debugoptimized',
-  meson_version: '>= 0.57.0',
+  default_options: [
+    'c_std=c11',
+    'buildtype=debugoptimized',
+    'warning_level=2'
+  ],
+  meson_version: '>= 0.58.0',
 )
 
 user_share_name = meson.project_name()
@@ -50,6 +54,7 @@ if get_option('buildtype').contains('debug')
     '-Werror=return-type',
     '-Wno-sign-compare',
     '-Wno-strict-aliasing',
+    '-Wno-unused-parameter',
   ])
 endif
 
