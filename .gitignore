@@ -1,0 +1,6 @@
+.buildconfig
+.cargo
+.vscode
+_build
+src/config.rs
+target

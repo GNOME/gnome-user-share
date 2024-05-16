@@ -1,0 +1,15 @@
+[package]
+name = "gnome-user-share"
+edition = "2021"
+
+[dependencies]
+gio = { version = "0.20", features = ["v2_68"]}
+gettext-rs = { version = "0.7", features = ["gettext-system"] }
+libc = "0.2.154"
+selinux = { version = "0.4.4", optional = true }
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
