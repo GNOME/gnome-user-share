@@ -253,8 +253,8 @@ get_httpd_config (const char *httpd_program)
 		/* Failed to parse httpd version number */
 		g_warning ("Could not parse '%s' as a version for httpd", standard_output);
 		g_free (standard_output);
-		/* assume it is 2.2 */
-		version_number = g_strdup ("2.2");
+		/* assume it is 2.4 */
+		version_number = g_strdup ("2.4");
 	}
 
 	config = g_strdup_printf (HTTPD_CONFIG_TEMPLATE, version_number);

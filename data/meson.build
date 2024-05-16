@@ -24,8 +24,6 @@ configure_file(
 )
 
 app_data = files(
-  'dav_user_2.0.conf',
-  'dav_user_2.2.conf',
   'dav_user_2.4.conf',
   'dav_groupfile',
 )

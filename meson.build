@@ -80,7 +80,26 @@ if systemd_systemduserunitdir == ''
 endif
 
 httpd = find_program(get_option('httpd'), required: false)
-httpd_path = (httpd.found() ? httpd.full_path() : '')
+httpd_path = ''
+
+if httpd.found()
+  httpd_version = run_command([httpd, '-v'], check: true)
+  version = httpd_version.stdout().split()[2].split('/')[1]
+  version_array = version.split('.')
+  major = version_array[0].to_int()
+  minor = version_array[1].to_int()
+  req_version = '2.4.0'
+  req_version_array = req_version.split('.')
+  req_major = req_version_array[0].to_int()
+  req_minor = req_version_array[1].to_int()
+
+  if (major >= req_major and minor >= req_minor) or major > req_major
+    httpd_path = httpd.full_path()
+    message('httpd version @0@ >= @1@: YES'.format(version, req_version))
+  else
+    error('httpd version @0@ >= @1@: NO'.format(version, req_version))
+  endif
+endif
 
 config_h.set_quoted('HTTPD_PROGRAM', httpd_path)
 
@@ -127,6 +146,6 @@ gnome.post_install(
 summary('httpd location', httpd_path, section: 'Options')
 summary('httpd modules path', modules_path, section: 'Options')
 
-summary('Apache', '2.2', section: 'Requirements')
+summary('Apache', '2.4', section: 'Requirements')
 summary('mod_dnssd', '0.6', section: 'Requirements')
 
