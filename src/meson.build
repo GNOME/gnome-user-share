@@ -1,41 +1,51 @@
 gnome = import('gnome')
 
-deps = [
-  gio_dep,
-  glib_dep,
-]
-
-libuser_share_common = static_library(
-  'user-share-common',
-  sources: 'user_share-common.c',
-  dependencies: deps,
+configure_file(
+  input: 'config.rs.in',
+  output: 'config.rs',
+  configuration: config_h,
 )
 
-libuser_share_common_dep = declare_dependency(
-  include_directories: '.',
-  dependencies: deps,
-  link_with: libuser_share_common,
+# Copy the config.rs output to the source directory.
+run_command(
+  'cp',
+  meson.project_build_root() / 'src' / 'config.rs',
+  meson.project_source_root() / 'src' / 'config.rs',
+  check: true
 )
 
-sources = files(
-  'http.c',
-  'user_share-webdav.c',
-)
+cargo_options = [ '--manifest-path', meson.project_source_root() / 'Cargo.toml' ]
+cargo_options += [ '--target-dir', meson.project_build_root() / 'src' ]
 
-deps = sockets_deps + [
-  libuser_share_common_dep,
-]
-
-if have_selinux
-  deps += libselinux_dep
+if get_option('buildtype') == 'release'
+  cargo_options += [ '--release' ]
+  rust_target = 'release'
+  message('Building in release mode')
+else
+  rust_target = 'debug'
+  message('Building in debug mode')
 endif
 
-executable(
-  'gnome-user-share-webdav',
-  sources: sources,
-  include_directories: top_inc,
-  dependencies: deps,
+if have_selinux
+  cargo_options += ['--features', 'selinux']
+endif
+
+cargo_env = [ 'CARGO_HOME=' + meson.project_build_root() / 'cargo-home' ]
+
+custom_target(
+  'cargo-build',
+  build_by_default: true,
+  build_always_stale: true,
+  output: 'gnome-user-share-webdav',
+  console: true,
   install: true,
   install_dir: user_share_libexecdir,
+  command: [
+    'env',
+    cargo_env,
+    cargo, 'build',
+    cargo_options,
+    '&&',
+    'cp', 'src' / rust_target / meson.project_name(), '@OUTPUT@',
+  ]
 )
-

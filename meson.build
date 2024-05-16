@@ -1,12 +1,8 @@
 project(
-  'gnome-user-share', 'c',
+  'gnome-user-share',
+  'rust', 'c',
   version: '48.alpha',
   license: 'GPL2',
-  default_options: [
-    'c_std=c11',
-    'buildtype=debugoptimized',
-    'warning_level=2'
-  ],
   meson_version: '>= 0.58.0',
 )
 
@@ -27,8 +23,6 @@ source_root = meson.current_source_dir()
 
 po_dir = source_root / 'po'
 
-top_inc = include_directories('.')
-
 cc = meson.get_compiler('c')
 
 config_h = configuration_data()
@@ -37,46 +31,12 @@ config_h = configuration_data()
 config_h.set_quoted('GETTEXT_PACKAGE', user_share_name)
 config_h.set_quoted('GNOMELOCALEDIR', user_share_prefix / user_share_localedir)
 
-config_h.set_quoted('HTTPD_CONFIG_TEMPLATE', user_share_prefix / user_share_pkgdatadir / 'dav_user_%s.conf')
-
-#
-# OS/Compiler feature detection
-#
-feature_defines = [
-  ['_XOPEN_SOURCE', '700'], # POSIX.1–2008 (IEEE Std 1003.1-2008)
-]
-
-foreach f: feature_defines
-  config_h.set(f[0], f[1])
-endforeach
-
-# compiler flags
-common_flags = []
-if get_option('buildtype').contains('debug')
-  common_flags += cc.get_supported_arguments([
-    '-Wmissing-declarations',
-    '-Wmissing-prototypes',
-    '-Wcast-align',
-    '-Wnested-externs',
-    '-Wstrict-prototypes',
-    '-Werror=format=2',
-    '-Werror=implicit-function-declaration',
-    '-Werror=init-self',
-    '-Werror=missing-include-dirs',
-    '-Werror=missing-prototypes',
-    '-Werror=pointer-arith',
-    '-Werror=return-type',
-    '-Wno-sign-compare',
-    '-Wno-strict-aliasing',
-    '-Wno-unused-parameter',
-  ])
-endif
-
-add_project_arguments(common_flags, language: 'c')
+config_h.set_quoted('HTTPD_CONFIG_TEMPLATE_PREFIX', user_share_prefix / user_share_pkgdatadir / 'dav_user_')
 
 gio_dep = dependency('gio-2.0', version: '>= 2.74.0')
 gio_unix_dep = dependency('gio-unix-2.0')
 glib_dep = dependency('glib-2.0', version: '>= 2.74.0')
+cargo = find_program('cargo')
 
 # GIO schemas
 gio_schemasdir = gio_dep.get_variable(
@@ -119,27 +79,10 @@ endif
 
 config_h.set_quoted('HTTPD_PROGRAM', httpd_path)
 
-sockets_deps = []
-if not cc.has_function('socket')
-  # socket is not in the default libraries.  See if it's in some other.
-  foreach lib: ['bsd', 'socket', 'inet']
-    socket_dep = cc.find_library(
-      lib,
-      has_function: 'socket',
-      required: false,
-    )
-
-    if socket_dep.found()
-      sockets_deps += socket_dep
-      break
-    endif
-  endforeach
-endif
 
 # Check for SELinux
-libselinux_dep = dependency('libselinux', required: false)
+libselinux_dep = dependency('libselinux', version: '>= 2.8', required: false)
 have_selinux = libselinux_dep.found() and cc.has_function('is_selinux_enabled', dependencies: libselinux_dep)
-config_h.set('HAVE_SELINUX', have_selinux)
 
 # Check for the HTTPD modules path
 modules_path = get_option('modules_path')
@@ -148,11 +91,6 @@ config_h.set_quoted('HTTPD_MODULES_PATH', modules_path)
 subdir('data')
 subdir('po')
 subdir('src')
-
-configure_file(
-  output: 'config.h',
-  configuration: config_h,
-)
 
 gnome.post_install(
   glib_compile_schemas: true,
