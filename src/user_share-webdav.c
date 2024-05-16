@@ -34,19 +34,6 @@
 #include <unistd.h>
 
 static void
-migrate_old_configuration (void)
-{
-	const char *old_config_dir;
-	const char *new_config_dir;
-
-	old_config_dir = g_build_filename (g_get_home_dir (), ".gnome2", "user-share", NULL);
-	new_config_dir = g_build_filename (g_get_user_config_dir (), "user-share", NULL);
-	if (g_file_test (old_config_dir, G_FILE_TEST_IS_DIR))
-		g_rename (old_config_dir, new_config_dir);
-
-}
-
-static void
 require_password_changed (void)
 {
 	/* Need to restart to get new password setting */
@@ -101,8 +88,6 @@ user_share_webdav_startup (GApplication *app)
 	g_unix_signal_add (SIGINT, signal_handler, app);
 	g_unix_signal_add (SIGHUP, signal_handler, app);
 	g_unix_signal_add (SIGTERM, signal_handler, app);
-
-	migrate_old_configuration ();
 
 	connection = g_application_get_dbus_connection (app);
 	g_signal_connect (connection, "closed",
