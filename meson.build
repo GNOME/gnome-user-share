@@ -123,8 +123,10 @@ gnome.post_install(
   glib_compile_schemas: true,
 )
 
-output = user_share_name + ' was configured with the following options:\n'
-output += '** httpd location: ' + httpd_path + '\n'
-output += '** httpd modules_path: ' + modules_path + '\n'
-output += 'Do note Apache 2.2 and mod_dnssd 0.6 are required to use ' + user_share_name + '.'
-message(output)
+#### Summary ####
+summary('httpd location', httpd_path, section: 'Options')
+summary('httpd modules path', modules_path, section: 'Options')
+
+summary('Apache', '2.2', section: 'Requirements')
+summary('mod_dnssd', '0.6', section: 'Requirements')
+
