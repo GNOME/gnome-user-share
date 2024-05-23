@@ -35,6 +35,9 @@ config_h = configuration_data()
 
 # i18n
 config_h.set_quoted('GETTEXT_PACKAGE', user_share_name)
+config_h.set_quoted('GNOMELOCALEDIR', user_share_prefix / user_share_localedir)
+
+config_h.set_quoted('HTTPD_CONFIG_TEMPLATE', user_share_prefix / user_share_pkgdatadir / 'dav_user_%s.conf')
 
 # compiler flags
 common_flags = []
@@ -79,6 +82,8 @@ endif
 httpd = find_program(get_option('httpd'), required: false)
 httpd_path = (httpd.found() ? httpd.full_path() : '')
 
+config_h.set_quoted('HTTPD_PROGRAM', httpd_path)
+
 sockets_deps = []
 if not cc.has_function('socket')
   # socket is not in the default libraries.  See if it's in some other.
@@ -103,6 +108,7 @@ config_h.set('HAVE_SELINUX', have_selinux)
 
 # Check for the HTTPD modules path
 modules_path = get_option('modules_path')
+config_h.set_quoted('HTTPD_MODULES_PATH', modules_path)
 
 subdir('data')
 subdir('po')
