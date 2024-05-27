@@ -279,8 +279,10 @@ spawn_httpd (int port, pid_t *pid_out)
 	GSettings *settings;
 	char *str;
 	char *public_dir;
+	char *httpd_modules_path;
 
 	public_dir = lookup_public_dir ();
+	httpd_modules_path = get_httpd_modules_path ();
 	ensure_conf_dir ();
 
 	i = 0;
@@ -320,7 +322,7 @@ spawn_httpd (int port, pid_t *pid_out)
 	free6 = env[i++] = g_strdup_printf ("XDG_CONFIG_HOME=%s", g_get_user_config_dir ());
 	free7 = env[i++] = g_strdup_printf ("GUS_SHARE_NAME=%s", get_share_name ());
 	free8 = env[i++] = g_strdup_printf ("GUS_LOGIN_LABEL=%s", "Please log in as the user guest");
-	free9 = env[i++] = g_strdup_printf ("HTTP_MODULES_PATH=%s",get_httpd_modules_path ());
+	free9 = env[i++] = g_strdup_printf ("HTTP_MODULES_PATH=%s", httpd_modules_path);
 	env[i++] = "LANG=C";
 	env[i] = NULL;
 
@@ -346,6 +348,7 @@ spawn_httpd (int port, pid_t *pid_out)
 	g_free (free8);
 	g_free (free9);
 	g_free (public_dir);
+	g_free (httpd_modules_path);
 
 	if (!res) {
 		fprintf (stderr, "error spawning httpd: %s\n",
