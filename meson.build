@@ -63,9 +63,9 @@ endif
 
 add_project_arguments(common_flags, language: 'c')
 
-gio_dep = dependency('gio-2.0', version: '>= 2.71.3')
+gio_dep = dependency('gio-2.0', version: '>= 2.74.0')
 gio_unix_dep = dependency('gio-unix-2.0')
-glib_dep = dependency('glib-2.0', version: '>= 2.71.3')
+glib_dep = dependency('glib-2.0', version: '>= 2.74.0')
 
 # GIO schemas
 gio_schemasdir = gio_dep.get_variable(
