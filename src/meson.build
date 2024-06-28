@@ -39,7 +39,3 @@ executable(
   install_dir: user_share_libexecdir,
 )
 
-deps = [
-  gio_unix_dep,
-  libuser_share_common_dep,
-]
