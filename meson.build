@@ -1,6 +1,6 @@
 project(
   'gnome-user-share', 'c',
-  version: '43.0',
+  version: '47.alpha',
   license: 'GPL2',
   default_options: [
     'c_std=c11',
