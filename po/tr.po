@@ -1,18 +1,18 @@
 # translation of gnome-user-share to Turkish
-# Copyright (C) 2007-2023 gnome-user-share's COPYRIGHT HOLDER
+# Copyright (C) 2007-2024 gnome-user-share's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Baris Cicek <baris@teamforce.name.tr>, 2007, 2009.
 # Volkan Yalçın <vlyalcin@gmail.com>, 2011.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2013, 2014, 2015.
-# Sabri Ünal <libreajans@gmail.com>, 2019.
+# Sabri Ünal <yakushabb@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2023-08-08 10:48+0000\n"
+"POT-Creation-Date: 2024-07-19 15:17+0000\n"
 "PO-Revision-Date: 2024-05-07 11:36+0300\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
@@ -32,8 +32,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Parola sor seçildiğinde. Geçerli değerler \"never\" (asla), \"on_write"
-"\" (yazıldığında), ve \"always\" (her zaman)."
+"Parola sor seçildiğinde. Geçerli değerler \"never\" (asla), \"on_write\" "
+"(yazıldığında), ve \"always\" (her zaman)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
@@ -59,14 +59,14 @@ msgstr ""
 #. which will match the user name string passed by the C code,
 #. but not put the user name in the final string. This is to
 #. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
+#: src/http.c:121
 #, c-format
 msgid "%s's public files"
 msgstr "%s kullanıcısının genel dosyaları"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
+#: src/http.c:125
 #, c-format
 msgid "%s's public files on %s"
 msgstr "%s kullanıcısının %s üzerindeki genel dosyaları"
