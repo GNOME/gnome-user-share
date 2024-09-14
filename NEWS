@@ -1,4 +1,7 @@
-This is gnome-user-share 43.0, a system for easy sharing of user files.
+This is gnome-user-share 47.0, a system for easy sharing of user files.
+
+Major changes since 47.alpha:
+- Translation updates
 
 Major changes since 43:
 - Increase the required Apache web server version to 2.4
