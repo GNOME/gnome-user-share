@@ -39,6 +39,17 @@ config_h.set_quoted('GNOMELOCALEDIR', user_share_prefix / user_share_localedir)
 
 config_h.set_quoted('HTTPD_CONFIG_TEMPLATE', user_share_prefix / user_share_pkgdatadir / 'dav_user_%s.conf')
 
+#
+# OS/Compiler feature detection
+#
+feature_defines = [
+  ['_XOPEN_SOURCE', '700'], # POSIX.1–2008 (IEEE Std 1003.1-2008)
+]
+
+foreach f: feature_defines
+  config_h.set(f[0], f[1])
+endforeach
+
 # compiler flags
 common_flags = []
 if get_option('buildtype').contains('debug')
