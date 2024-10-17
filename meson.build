@@ -85,9 +85,14 @@ gio_schemasdir = gio_dep.get_variable(
 )
 
 # systemd user unit directory
+systemd_dep = dependency('systemd', required : false)
 systemd_systemduserunitdir = get_option('systemduserunitdir')
 if systemd_systemduserunitdir == ''
-  systemd_systemduserunitdir = dependency('systemd').get_variable(pkgconfig: 'systemduserunitdir')
+  if systemd_dep.found()
+    systemd_systemduserunitdir = systemd_dep.get_variable(pkgconfig: 'systemduserunitdir')
+  else
+    systemd_systemduserunitdir = user_share_prefix / user_share_libdir / 'systemd' / 'user'
+  endif
 endif
 
 httpd = find_program(get_option('httpd'), required: false)
