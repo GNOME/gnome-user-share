@@ -12,6 +12,17 @@ variables:
     httpd
     mod_dnssd
     gettext
+    cargo
+
+workflow:
+  rules:
+    # run merge request pipelines, for main or release branches and for manually
+    # triggered pipelines (source "web"), but not for translation updates
+    - if: ($CI_PIPELINE_SOURCE == "merge_request_event" ||
+           $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH ||
+           $CI_COMMIT_BRANCH =~ /^gnome-.*$/ ||
+           $CI_PIPELINE_SOURCE == "web") &&
+          $CI_COMMIT_TITLE !~ /^Update.*translation$/
 
 build_stable:
   before_script:
@@ -26,3 +37,4 @@ build_stable:
     paths:
       - "${CI_PROJECT_DIR}/_build/meson-logs/"
       - "${CI_PROJECT_DIR}/_build/meson-dist"
+    expire_in: 14 days
