@@ -1,8 +1,10 @@
-image: fedora:rawhide
+include:
+  - remote: 'https://gitlab.freedesktop.org/freedesktop/ci-templates/-/raw/e195d80f35b45cc73668be3767b923fd76c70ed5/templates/fedora.yml'
 
 variables:
   DEPENDENCIES:
     gcc
+    clang
     git
     meson
     glibc-devel
@@ -12,17 +14,66 @@ variables:
     httpd
     mod_dnssd
     gettext
+    cargo
+    rustfmt
 
-build_stable:
+stages:
+  - image
+  - check
+  - build
+
+workflow:
+  rules:
+    # run merge request pipelines, for main or release branches and for manually
+    # triggered pipelines (source "web"), but not for translation updates
+    - if: ($CI_PIPELINE_SOURCE == "merge_request_event" ||
+           $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH ||
+           $CI_COMMIT_BRANCH =~ /^gnome-.*$/ ||
+           $CI_PIPELINE_SOURCE == "web") &&
+          $CI_COMMIT_TITLE !~ /^Update.*translation$/
+
+
+.gnome-user-share.fedora:41:
+  variables:
+    FDO_DISTRIBUTION_VERSION: 41
+    FDO_DISTRIBUTION_TAG: '2024-12-09.1'
+
+build-fedora-image:
+  extends:
+  - .fdo.container-build@fedora
+  - .gnome-user-share.fedora:41
+  stage: image
+  variables:
+    FDO_DISTRIBUTION_PACKAGES: $DEPENDENCIES
+    FDO_DISTRIBUTION_EXEC: ".gitlab/image-script.sh"
+
+cargo-fmt:
+  extends:
+  - .fdo.distribution-image@fedora
+  - .gnome-user-share.fedora:41
+  stage: check
+  interruptible: true
   before_script:
-    - dnf update -y --nogpgcheck
-    - dnf install -y --nogpgcheck $DEPENDENCIES
+    - rustc -Vv && cargo -Vv
+    - cargo fmt --version
   script:
-    - meson . _build
-    - ninja -C _build
-    - ninja -C _build dist
+    - meson setup _build
+    - cp _build/src/config.rs src
+    - cargo fmt --all -- --check
+
+fedora-build:
+  extends:
+  - .fdo.distribution-image@fedora
+  - .gnome-user-share.fedora:41
+  stage: build
+  before_script:
+    - rustc -Vv && cargo -Vv && gio --version
+  script:
+    - meson setup _build
+    - meson dist -C _build
   artifacts:
     when: always
     paths:
       - "${CI_PROJECT_DIR}/_build/meson-logs/"
       - "${CI_PROJECT_DIR}/_build/meson-dist"
+    expire_in: 14 days
