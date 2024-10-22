@@ -24,7 +24,18 @@ workflow:
            $CI_PIPELINE_SOURCE == "web") &&
           $CI_COMMIT_TITLE !~ /^Update.*translation$/
 
+cargo-fmt:
+  image: "rust:slim"
+  interruptible: true
+  script:
+    - rustup component add rustfmt
+    - rustc -Vv && cargo -Vv
+    - cargo fmt --version
+    - cargo fmt --all -- --check
+
 build_stable:
+  dependencies:
+    - cargo-fmt
   before_script:
     - dnf update -y --nogpgcheck
     - dnf install -y --nogpgcheck $DEPENDENCIES
