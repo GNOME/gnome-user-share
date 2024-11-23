@@ -1,4 +1,7 @@
-This is gnome-user-share 47.0, a system for easy sharing of user files.
+This is gnome-user-share 47.2, a system for easy sharing of user files.
+
+Major changes since 47.0:
+- Fix a compiling issue for non-gnu C toolchain
 
 Major changes since 47.alpha:
 - Translation updates
