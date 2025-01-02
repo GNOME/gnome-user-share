@@ -1,4 +1,10 @@
-This is gnome-user-share 47.0, a system for easy sharing of user files.
+This is gnome-user-share 48.alpha, a system for easy sharing of user files.
+
+Major changes since 47.0:
+- Port the project code from C to the Rust language
+- Reworked CI
+- Make systemd an optional dependency
+- Fix a compiling issue for non-gnu C toolchain
 
 Major changes since 47.alpha:
 - Translation updates
