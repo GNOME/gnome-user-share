@@ -1,4 +1,4 @@
-This is gnome-user-share 48.alpha, a system for easy sharing of user files.
+This is gnome-user-share 48.alpha.1, a system for easy sharing of user files.
 
 Major changes since 47.0:
 - Port the project code from C to the Rust language
