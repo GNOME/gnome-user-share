@@ -1,19 +1,20 @@
 # translation of gnome-user-share to Turkish
-# Copyright (C) 2007-2024 gnome-user-share's COPYRIGHT HOLDER
+# Copyright (C) 2007-2025 gnome-user-share's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Baris Cicek <baris@teamforce.name.tr>, 2007, 2009.
 # Volkan Yalçın <vlyalcin@gmail.com>, 2011.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2013, 2014, 2015.
-# Sabri Ünal <yakushabb@gmail.com>, 2019.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2019-2025.
+# Sabri Ünal <yakushabb@gmail.com>, 2019, 2022-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2024-07-19 15:17+0000\n"
-"PO-Revision-Date: 2024-05-07 11:36+0300\n"
+"POT-Creation-Date: 2025-01-12 23:56+0000\n"
+"PO-Revision-Date: 2025-02-09 17:47+0300\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -32,8 +33,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Parola sor seçildiğinde. Geçerli değerler \"never\" (asla), \"on_write\" "
-"(yazıldığında), ve \"always\" (her zaman)."
+"Parola sor seçildiğinde. Geçerli değerler \"never\" (asla), \"on_write"
+"\" (yazıldığında), ve \"always\" (her zaman)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
@@ -50,23 +51,13 @@ msgid "share;files;http;network;copy;send;"
 msgstr ""
 "share;files;http;network;copy;send;paylaş;dosyalar;http;ağ;kopyala;gönder;"
 
-#. Translators: The %s will get filled in with the user name
-#. of the user, to form a genitive. If this is difficult to
-#. translate correctly so that it will work correctly in your
-#. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:121
-#, c-format
-msgid "%s's public files"
-msgstr "%s kullanıcısının genel dosyaları"
-
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:125
-#, c-format
-msgid "%s's public files on %s"
-msgstr "%s kullanıcısının %s üzerindeki genel dosyaları"
+#: src/http.rs:61
+msgid "{0}'s public files on {1}"
+msgstr "{0} kullanıcısının {1} üzerindeki genel dosyaları"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:193
+msgid "Please log in as the user “guest”"
+msgstr "Lütfen “guest” kullanıcısı olarak oturum açınız"
