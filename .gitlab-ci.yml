@@ -54,6 +54,7 @@ build-fedora-image:
   - .gnome-user-share.fedora:41
   stage: image
   variables:
+    GIT_STRATEGY: none
     FDO_DISTRIBUTION_PACKAGES: $DEPENDENCIES
     FDO_DISTRIBUTION_EXEC: ".gitlab/image-script.sh"
 
