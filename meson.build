@@ -83,6 +83,9 @@ config_h.set_quoted('HTTPD_PROGRAM', httpd_path)
 # Check for SELinux
 libselinux_dep = dependency('libselinux', version: '>= 2.8', required: false)
 have_selinux = libselinux_dep.found() and cc.has_function('is_selinux_enabled', dependencies: libselinux_dep)
+if have_selinux
+  clang = find_program('clang')
+endif
 
 # Check for the HTTPD modules path
 modules_path = get_option('modules_path')
