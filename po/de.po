@@ -8,22 +8,23 @@
 # Bernd Homuth <dev@hmt.im>, 2015.
 # Tim Sabsch <tim@sabsch.com>, 2019.
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2010, 2012, 2019.
+# Jürgen Benvenuti <gastornis@posteo.org>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-08-19 21:10+0200\n"
-"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
+"POT-Creation-Date: 2025-02-13 01:42+0000\n"
+"PO-Revision-Date: 2025-02-22 20:08+0100\n"
+"Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -50,42 +51,33 @@ msgstr "Dateifreigabe starten, wenn aktiv"
 msgid "share;files;http;network;copy;send;"
 msgstr "Freigabe;Dateien;http;Netzwerk;kopieren;Transfer;teilen;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Freigabe"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Einstellungen für Freigabe"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Aktivieren Sie die Dateifreigabe, um den Inhalt dieses Ordners im Netzwerk "
-"zu teilen."
-
-#. Translators: The %s will get filled in with the user name
-#. of the user, to form a genitive. If this is difficult to
-#. translate correctly so that it will work correctly in your
-#. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Öffentliche Dateien von %s"
-
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
+#: src/http.rs:61
+msgid "{0}'s public files on {1}"
+msgstr "{0}s öffentliche Dateien auf {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:193
+msgid "Please log in as the user “guest”"
+msgstr "Bitte melden Sie sich als der Benutzer »guest« an"
+
+#~ msgid "Sharing"
+#~ msgstr "Freigabe"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Einstellungen für Freigabe"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "Aktivieren Sie die Dateifreigabe, um den Inhalt dieses Ordners im "
+#~ "Netzwerk zu teilen."
+
 #, c-format
-msgid "%s's public files on %s"
-msgstr "Öffentliche Dateien von %s auf %s"
+#~ msgid "%s's public files"
+#~ msgstr "Öffentliche Dateien von %s"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Persönliche Dateifreigabe"
