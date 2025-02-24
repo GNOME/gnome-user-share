@@ -4,22 +4,23 @@
 # Maxim Dziumanenko <dziumanenko@gmail.com>, 2005-2010.
 # wanderlust <wanderlust@ukr.net>, 2009.
 # Daniel Korostil <ted.korostiled@gmail.com>, 2013, 2014, 2016.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2019-10-08 11:32+0000\n"
-"PO-Revision-Date: 2020-03-15 18:55+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues"
+"\n"
+"POT-Creation-Date: 2025-02-13 01:42+0000\n"
+"PO-Revision-Date: 2025-02-24 17:21+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
-"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -34,12 +35,10 @@ msgstr ""
 "Коли запитувати пароль. Можливі значення «never», «on_write», та «always»."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-#| msgid "Sharing"
 msgid "File Sharing"
 msgstr "Спільний доступ до файлів"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-#| msgid "Launch Personal File Sharing if enabled"
 msgid "Launch File Sharing if enabled"
 msgstr "Запустити «Спільний доступу до файлів», якщо увімкнено"
 
@@ -48,41 +47,34 @@ msgstr "Запустити «Спільний доступу до файлів»
 msgid "share;files;http;network;copy;send;"
 msgstr "оприлюднити;файли;http;мережа;копіювати;надіслати;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Оприлюднення"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Параметри оприлюднення"
-
-#: src/share-extension.c:117
-#| msgid ""
-#| "Turn on Personal File Sharing to share the contents of this folder over "
-#| "the network."
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Увімкніть «Спільний доступ до файлів» для поширення вмісту цієї теки у мережі."
-
-#. Translators: The %s will get filled in with the user name
-#. of the user, to form a genitive. If this is difficult to
-#. translate correctly so that it will work correctly in your
-#. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Спільні файли %s"
-
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
+#: src/http.rs:61
+#| msgid "%s's public files on %s"
+msgid "{0}'s public files on {1}"
+msgstr "Спільні файли {0} на {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:193
+msgid "Please log in as the user “guest”"
+msgstr "Будь ласка, увійдіть до системи від імені користувача «guest»"
+
+#~ msgid "Sharing"
+#~ msgstr "Оприлюднення"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Параметри оприлюднення"
+
+#~| msgid ""
+#~| "Turn on Personal File Sharing to share the contents of this folder over "
+#~| "the network."
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "Увімкніть «Спільний доступ до файлів» для поширення вмісту цієї теки у "
+#~ "мережі."
+
 #, c-format
-msgid "%s's public files on %s"
-msgstr "Спільні файли %s на %s"
+#~ msgid "%s's public files"
+#~ msgstr "Спільні файли %s"
