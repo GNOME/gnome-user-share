@@ -10,22 +10,23 @@
 # eternalhui <www.eternalhui@gmail.com>, 2013.
 # Jeff Bai <jeffbai@aosc.xyz>, 2016.
 # Dingzhong Chen <wsxy162@gmail.com>, 2019.
+# lumingzh <lumingzh@qq.com>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-04-13 22:13+0800\n"
-"Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
+"POT-Creation-Date: 2025-02-13 01:42+0000\n"
+"PO-Revision-Date: 2025-02-25 10:03+0800\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Gtranslator 47.1\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -52,40 +53,31 @@ msgstr ""
 "share;files;bluetooth;obex;http;network;copy;send;共享;文件;蓝牙;网络;复制;发"
 "送;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "共享"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "共享设置"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr "开启文件共享以在网络上共享此文件夹的内容。"
-
-#. Translators: The %s will get filled in with the user name
-#. of the user, to form a genitive. If this is difficult to
-#. translate correctly so that it will work correctly in your
-#. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "%s 的公开文件"
-
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
+#: src/http.rs:61
+msgid "{0}'s public files on {1}"
+msgstr "{0} 在 {1} 上的公共文件"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:193
+msgid "Please log in as the user “guest”"
+msgstr "请使用“guest”用户登录"
+
+#~ msgid "Sharing"
+#~ msgstr "共享"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "共享设置"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr "开启文件共享以在网络上共享此文件夹的内容。"
+
 #, c-format
-msgid "%s's public files on %s"
-msgstr "%s 在 %s 上的公开文件"
+#~ msgid "%s's public files"
+#~ msgstr "%s 的公开文件"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "个人文件共享"
