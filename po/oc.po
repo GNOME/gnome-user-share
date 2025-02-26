@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2020-06-25 07:14+0000\n"
-"PO-Revision-Date: 2021-05-30 12:02+0200\n"
+"POT-Creation-Date: 2025-02-13 01:42+0000\n"
+"PO-Revision-Date: 2025-02-27 08:44+1100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Tot en òc (totenoc.eu)\n"
 "Language: oc\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.5\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
-msgstr "Quora exigir los senhals"
+msgstr "Quand exigir los senhals"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Quora demandar de senhals. Las valors possiblas son : « never » (pas jamai), "
+"Quand demandar de senhals. Las valors possiblas son : « never » (pas jamai), "
 "« on_write » (a l'escritura) e « always » (totjorn)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
@@ -47,42 +47,32 @@ msgstr ""
 "partejar;fichièrs;http;ret;copiar;mandadís;mandar;partiment;paratge;malhum;"
 "dorsièr;dossièr;local;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Partiment"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Paramètres de partiment"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Activar lo Partiment de fichièrs per partejar lo contengut d'aqueste dorsièr "
-"a travèrs la ret."
-
-#. Translators: The %s will get filled in with the user name
-#. of the user, to form a genitive. If this is difficult to
-#. translate correctly so that it will work correctly in your
-#. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Fichièrs publics de %s"
-
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "Fichièrs publics de %s sus %s"
+#: src/http.rs:61
+msgid "{0}'s public files on {1}"
+msgstr "Fichièrs publics de {0} sus {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:193
+msgid "Please log in as the user “guest”"
+msgstr "Connectatz vos coma utilizaire « guest »"
+
+#~ msgid "Sharing"
+#~ msgstr "Partiment"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Paramètres de partiment"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "Activar lo Partiment de fichièrs per partejar lo contengut d'aqueste "
+#~ "dorsièr a travèrs la ret."
+
+#~ msgid "%s's public files"
+#~ msgstr "Fichièrs publics de %s"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Parteja de fichièrs personals"
