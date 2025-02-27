@@ -17,18 +17,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
-"issues\n"
-"POT-Creation-Date: 2020-06-25 07:14+0000\n"
-"PO-Revision-Date: 2019-08-26 01:07+0200\n"
-"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
+"POT-Creation-Date: 2025-02-13 01:42+0000\n"
+"PO-Revision-Date: 2025-02-27 23:25+0100\n"
+"Last-Translator: Fran Dieguez <fran.dieguez@gnome.org>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.5\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -51,47 +50,38 @@ msgstr "Compartición de ficheiros"
 msgid "Launch File Sharing if enabled"
 msgstr "Inicia a Compartición de ficheiros se está activado"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "compartir;ficheiros;http;rede;copiar;enviar;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Compartición"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Preferencias de compartición"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Activar a Compartición de Ficheiros persoais para compartir contidos deste "
-"cartafol pola rede."
-
-#. Translators: The %s will get filled in with the user name
-#. of the user, to form a genitive. If this is difficult to
-#. translate correctly so that it will work correctly in your
-#. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Ficheiros públicos de %s"
-
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
+#: src/http.rs:61
+msgid "{0}'s public files on {1}"
+msgstr "Ficheiros públicos de {0} en {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:193
+msgid "Please log in as the user “guest”"
+msgstr "Inicie sesión como o usuario «convidado»"
+
+#~ msgid "Sharing"
+#~ msgstr "Compartición"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Preferencias de compartición"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the network."
+#~ msgstr ""
+#~ "Activar a Compartición de Ficheiros persoais para compartir contidos deste "
+#~ "cartafol pola rede."
+
 #, c-format
-msgid "%s's public files on %s"
-msgstr "Ficheiros públicos de %s en %s"
+#~ msgid "%s's public files"
+#~ msgstr "Ficheiros públicos de %s"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Compartir ficheiros persoais"
@@ -100,15 +90,14 @@ msgstr "Ficheiros públicos de %s en %s"
 #~ msgstr "folder-remote"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr ""
-#~ "Se os clientes do Bluetooth poden enviar ficheiros usando o ObexPush."
+#~ msgstr "Se os clientes do Bluetooth poden enviar ficheiros usando o ObexPush."
 
 #~ msgid ""
 #~ "If this is true, Bluetooth devices can send files to the user's Downloads "
 #~ "directory when logged in."
 #~ msgstr ""
-#~ "Se está definido a «true», os dispositivos Bluetooth poden enviar "
-#~ "ficheiros ao cartafol Descargas do usuario cando inicie a sesión."
+#~ "Se está definido a «true», os dispositivos Bluetooth poden enviar ficheiros "
+#~ "ao cartafol Descargas do usuario cando inicie a sesión."
 
 #~ msgid "When to accept files sent over Bluetooth"
 #~ msgstr "Cando aceptar os ficheiros enviados mediante Bluetooth"
@@ -117,8 +106,8 @@ msgstr "Ficheiros públicos de %s en %s"
 #~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
 #~ "\"bonded\" and \"ask\"."
 #~ msgstr ""
-#~ "Cando aceptar os ficheiros enviados mediante Bluetooth. Os valores "
-#~ "posíbeis son \"always\", \"bonded\", e \"ask\"."
+#~ "Cando aceptar os ficheiros enviados mediante Bluetooth. Os valores posíbeis "
+#~ "son \"always\", \"bonded\", e \"ask\"."
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "Se hai que informar sobre os ficheiros recibidos recentemente."
@@ -192,8 +181,8 @@ msgstr "Ficheiros públicos de %s en %s"
 #~ msgstr "Se se lles permite aos clientes Bluetooth escribir ficheiros."
 
 #~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
+#~ "Whether to allow Bluetooth clients to write files, or share the files read-"
+#~ "only."
 #~ msgstr ""
 #~ "Se se lles permite aos clientes de Bluetooth escribir ficheiros ou "
 #~ "compartir os ficheiros de só lectura."
@@ -201,8 +190,8 @@ msgstr "Ficheiros públicos de %s en %s"
 #~ msgid ""
 #~ "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
-#~ "Se os clientes do Bluetooth precisan estar emparellados co computador "
-#~ "para enviar ficheiros."
+#~ "Se os clientes do Bluetooth precisan estar emparellados co computador para "
+#~ "enviar ficheiros."
 
 #~ msgid "Launch Personal File Sharing Preferences"
 #~ msgstr "Iniciar as Preferencias de compartir ficheiros persoais"
@@ -251,8 +240,7 @@ msgstr "Ficheiros públicos de %s en %s"
 
 #~ msgid "Unable to launch the Personal File Sharing Preferences"
 #~ msgstr ""
-#~ "Non é posíbel iniciar as Preferencias de compartición de ficheiros "
-#~ "persoais"
+#~ "Non é posíbel iniciar as Preferencias de compartición de ficheiros persoais"
 
 #~ msgid "No reason"
 #~ msgstr "Non hai motivo"
