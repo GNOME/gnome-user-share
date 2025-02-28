@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2017-07-08 12:08+0100\n"
+"POT-Creation-Date: 2025-02-13 01:42+0000\n"
+"PO-Revision-Date: 2025-02-27 22:29+0100\n"
 "Last-Translator: Francesc Famadas <kiski97@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -46,40 +47,30 @@ msgstr "Executa la compartició de fitxers si està habilitat"
 msgid "share;files;http;network;copy;send;"
 msgstr "comparteix;fitxers;http;xarxa;copia;envia;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Compartició"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Preferències de compartició"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Activa la compartició de fitxers per a compartir el contingut "
-"d'aquesta carpeta a la xarxa."
-
-#. Translators: The %s will get filled in with the user name
-#. of the user, to form a genitive. If this is difficult to
-#. translate correctly so that it will work correctly in your
-#. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Fitxers públics de %s"
-
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "Fitxers públics de %s a %s"
+#: src/http.rs:61
+msgid "{0}'s public files on {1}"
+msgstr "Fitxers públics de {0} a {1}"
 
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:193
+msgid "Please log in as the user “guest”"
+msgstr "Inicieu la sessió com a usuari «guest»"
+
+#~ msgid "Sharing"
+#~ msgstr "Compartició"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Preferències de compartició"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "Activa la compartició de fitxers per a compartir el contingut d'aquesta "
+#~ "carpeta a la xarxa."
+
+#, c-format
+#~ msgid "%s's public files"
+#~ msgstr "Fitxers públics de %s"
