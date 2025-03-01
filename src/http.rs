@@ -50,11 +50,7 @@ static SHARE_NAME: LazyLock<String> = LazyLock::new(|| {
 		// translate correctly so that it will work correctly in your
 		// language, you may use something equivalent to
 		// "Public files of {}", or leave out the {} altogether.
-		// In the latter case, please put "{0}" somewhere in the string,
-		// which will match the user name string passed by the Rust code,
-		// but not put the user name in the final string. This is to
-		// avoid the warning that msgfmt might otherwise generate.
-		gettext!("{}'s public files", user_name)
+		gettext("{}'s public files").replace("{}", &user_name)
 	} else {
 		// Translators: This is similar to the string before, only it
 		// has the hostname in it too.
