@@ -4,3 +4,5 @@
 _build
 src/config.rs
 target
+
+po/gnome-user-share.pot
