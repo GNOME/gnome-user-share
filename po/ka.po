@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2025-02-13 01:42+0000\n"
-"PO-Revision-Date: 2025-02-23 08:00+0100\n"
+"POT-Creation-Date: 2025-03-01 21:31+0000\n"
+"PO-Revision-Date: 2025-03-02 09:00+0100\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: \n"
 "Language: ka\n"
@@ -44,14 +44,23 @@ msgstr "თუ ჩართულია, ფაილების გაზი�
 msgid "share;files;http;network;copy;send;"
 msgstr "share;files;http;network;copy;send;"
 
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "{}-ის საჯარო ფაილები"
+
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.rs:61
+#: src/http.rs:57
 msgid "{0}'s public files on {1}"
 msgstr "{0}-ის საჯარო ფაილები {1}-ზე"
 
 #. Translators: Don't translate the name in quotes!
-#: src/http.rs:193
+#: src/http.rs:189
 msgid "Please log in as the user “guest”"
 msgstr "შედით მომხმარებლით \"guest\""
 
@@ -65,7 +74,3 @@ msgstr "შედით მომხმარებლით \"guest\""
 #~ "Turn on File Sharing to share the contents of this folder over the "
 #~ "network."
 #~ msgstr "ფაილების ქსელში გასაზიარებლად საჭიროა გაზიარების ჩართვა."
-
-#, c-format
-#~ msgid "%s's public files"
-#~ msgstr "%s-ის საჯარო ფაილები"
