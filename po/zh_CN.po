@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2025-02-13 01:42+0000\n"
-"PO-Revision-Date: 2025-02-25 10:03+0800\n"
+"POT-Creation-Date: 2025-03-01 21:31+0000\n"
+"PO-Revision-Date: 2025-03-02 12:29+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -53,14 +53,23 @@ msgstr ""
 "share;files;bluetooth;obex;http;network;copy;send;共享;文件;蓝牙;网络;复制;发"
 "送;"
 
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "{} 的公共文件"
+
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.rs:61
+#: src/http.rs:57
 msgid "{0}'s public files on {1}"
 msgstr "{0} 在 {1} 上的公共文件"
 
 #. Translators: Don't translate the name in quotes!
-#: src/http.rs:193
+#: src/http.rs:189
 msgid "Please log in as the user “guest”"
 msgstr "请使用“guest”用户登录"
 
@@ -74,10 +83,6 @@ msgstr "请使用“guest”用户登录"
 #~ "Turn on File Sharing to share the contents of this folder over the "
 #~ "network."
 #~ msgstr "开启文件共享以在网络上共享此文件夹的内容。"
-
-#, c-format
-#~ msgid "%s's public files"
-#~ msgstr "%s 的公开文件"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "个人文件共享"
