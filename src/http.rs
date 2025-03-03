@@ -102,7 +102,14 @@ static HTTPD_PROGRAM_PATH: LazyLock<PathBuf> = LazyLock::new(|| {
 			&& file.metadata().ok()?.permissions().mode() & 0o111 != 0)
 			.then_some(file)
 	})
-	.expect("Failed to find an httpd server executable file.")
+	.unwrap_or_else(|| {
+		gio::glib::g_error!(
+			LOG_DOMAIN,
+			"Failed to find an httpd server executable file."
+		);
+
+		std::process::exit(libc::EXIT_FAILURE)
+	})
 });
 
 static HTTPD_MODULES: LazyLock<PathBuf> = LazyLock::new(|| {
@@ -119,7 +126,11 @@ static HTTPD_MODULES: LazyLock<PathBuf> = LazyLock::new(|| {
 			&& file.metadata().ok()?.permissions().mode() & 0o111 != 0)
 			.then_some(file)
 	})
-	.expect("Failed to find an httpd modules directory.")
+	.unwrap_or_else(|| {
+		gio::glib::g_error!(LOG_DOMAIN, "Failed to find an httpd modules directory.");
+
+		std::process::exit(libc::EXIT_FAILURE)
+	})
 });
 
 static HTTPD_CONFIG_FILE: LazyLock<PathBuf> = LazyLock::new(|| {
