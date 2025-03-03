@@ -13,4 +13,3 @@ selinux = { version = "0.4.4", optional = true }
 debug = "full"
 lto = true
 codegen-units = 1
-panic = "abort"
