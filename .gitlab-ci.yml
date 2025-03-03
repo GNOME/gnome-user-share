@@ -57,6 +57,7 @@ build-fedora-image:
     - changes:
         - .gitlab-ci.yml
         - .gitlab/**/*
+      when: always
   variables:
     GIT_STRATEGY: none
     FDO_DISTRIBUTION_PACKAGES: $DEPENDENCIES
@@ -67,6 +68,7 @@ cargo-fmt:
   - .fdo.distribution-image@fedora
   - .gnome-user-share.fedora:41
   stage: check
+  needs: [build-fedora-image]
   interruptible: true
   before_script:
     - rustc -Vv && cargo -Vv
@@ -81,6 +83,7 @@ fedora-build:
   - .fdo.distribution-image@fedora
   - .gnome-user-share.fedora:41
   stage: build
+  needs: [build-fedora-image]
   before_script:
     - rustc -Vv && cargo -Vv && gio --version
   script:
