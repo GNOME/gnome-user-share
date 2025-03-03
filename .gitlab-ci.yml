@@ -53,6 +53,10 @@ build-fedora-image:
   - .fdo.container-build@fedora
   - .gnome-user-share.fedora:41
   stage: image
+  rules:
+    - changes:
+        - .gitlab-ci.yml
+        - .gitlab/**/*
   variables:
     GIT_STRATEGY: none
     FDO_DISTRIBUTION_PACKAGES: $DEPENDENCIES
