@@ -10,6 +10,7 @@ libc = "0.2.154"
 selinux = { version = "0.4.4", optional = true }
 
 [profile.release]
+debug = "full"
 lto = true
 codegen-units = 1
 panic = "abort"
