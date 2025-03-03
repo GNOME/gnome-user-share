@@ -1,15 +1,15 @@
 # Persian translation for gnome-user-share.
 # Copyright (C) 2011 Iranian Free Software Users Group (IFSUG.org)translation team.
 # This file is distributed under the same license as the gnome-user-share package.
-# Arash Mousavi <mousavi.arash@gmail.com> 2011, 2012, 2013, 2014, 2015.
-# Danial Behzadi <dani.behzi@ubuntu.com>, 2014.
+# Arash Mousavi <mousavi.arash@gmail.com> 2011-2015.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2015-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-08-17 16:21+0430\n"
+"POT-Creation-Date: 2025-03-01 21:31+0000\n"
+"PO-Revision-Date: 2025-03-03 19:40+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -45,40 +45,35 @@ msgstr "اجرای هم‌رسانی پرونده در صورت فعّال بو�
 msgid "share;files;http;network;copy;send;"
 msgstr "share;files;http;network;copy;send;اشتراک;هم‌رسانی;شبکه;ارسال;فرستادن;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "هم‌رسانی"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "تنظیمات هم‌رسانی"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr "برای هم‌رسانی محتویات این شاخه روی شبکه، هم‌رسانی پرونده را روشن کنید."
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "پرونده‌های عمومی %s"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "پرونده‌های عمومی {}"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "پرونده‌های عمومی %s روی %s"
+#: src/http.rs:57
+msgid "{0}'s public files on {1}"
+msgstr "پرونده‌های عمومی {0} روی {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:189
+msgid "Please log in as the user “guest”"
+msgstr "لطفاً با کاربر guest وارد شوید"
+
+#~ msgid "Sharing"
+#~ msgstr "هم‌رسانی"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "تنظیمات هم‌رسانی"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the network."
+#~ msgstr "برای هم‌رسانی محتویات این شاخه روی شبکه، هم‌رسانی پرونده را روشن کنید."
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "به اشتراک‌گذاری شخصی پرونده"
