@@ -1,6 +1,7 @@
 [package]
 name = "gnome-user-share"
 edition = "2021"
+rust-version = "1.80.0"
 
 [dependencies]
 gio = { version = "0.20", features = ["v2_68"]}
