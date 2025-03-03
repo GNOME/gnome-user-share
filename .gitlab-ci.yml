@@ -68,7 +68,9 @@ cargo-fmt:
   - .fdo.distribution-image@fedora
   - .gnome-user-share.fedora:41
   stage: check
-  needs: [build-fedora-image]
+  needs: 
+    - job: build-fedora-image
+      optional: true
   interruptible: true
   before_script:
     - rustc -Vv && cargo -Vv
@@ -83,7 +85,9 @@ fedora-build:
   - .fdo.distribution-image@fedora
   - .gnome-user-share.fedora:41
   stage: build
-  needs: [build-fedora-image]
+  needs: 
+    - job: build-fedora-image
+      optional: true
   before_script:
     - rustc -Vv && cargo -Vv && gio --version
   script:
