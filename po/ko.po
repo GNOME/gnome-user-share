@@ -3,15 +3,15 @@
 #
 # Young-Ho Cha <ganadist at mizi.com>, 2005, 2007.
 # Namhyung Kim <namhyung@gmail.com>, 2007.
-# Changwoo Ryu <cwryu@debian.org>, 2009-2010, 2012-2015, 2019
+# Changwoo Ryu <cwryu@debian.org>, 2009-2010, 2012-2015, 2019, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-08-25 23:07+0000\n"
-"PO-Revision-Date: 2019-08-29 10:38+0900\n"
+"POT-Creation-Date: 2025-03-01 21:31+0000\n"
+"PO-Revision-Date: 2025-03-02 23:49+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -44,40 +44,36 @@ msgid "share;files;http;network;copy;send;"
 msgstr ""
 "share;공유;files;파일;http;network;네트워크;인터넷;copy;복사;send;보내기;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "공유"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "공유 설정"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr "네트워크를 통해 이 폴더의 내용을 공유하려면 파일 공유를 켜십시오."
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "%s의 공용 파일"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "{}의 공용 파일"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "%2$s에 있는 %1$s의 공용 파일"
+#: src/http.rs:57
+msgid "{0}'s public files on {1}"
+msgstr "{1}에 있는 {0}의 공용 파일"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:189
+msgid "Please log in as the user “guest”"
+msgstr "“guest” 사용자로 로그인하십시오"
+
+#~ msgid "Sharing"
+#~ msgstr "공유"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "공유 설정"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr "네트워크를 통해 이 폴더의 내용을 공유하려면 파일 공유를 켜십시오."
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "개인 파일 공유"
