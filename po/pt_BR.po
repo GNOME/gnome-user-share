@@ -8,15 +8,16 @@
 # Djavan Fagundes <dnoway@gmail.com>, 2009.
 # Enrico Nicoletto <liverig@gmail.com>, 2013, 2015.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2013-2025.
+# Artur Miranda <artcamir12@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2025-02-13 01:42+0000\n"
-"PO-Revision-Date: 2025-02-14 22:32-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"POT-Creation-Date: 2025-03-03 20:11+0000\n"
+"PO-Revision-Date: 2025-03-03 19:36-0300\n"
+"Last-Translator: Artur Miranda <artcamir12@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -50,14 +51,23 @@ msgstr "Inicie o compartilhamento de arquivos, se habilitado"
 msgid "share;files;http;network;copy;send;"
 msgstr "compartilhar;arquivos;http;rede;copiar;enviar;"
 
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "Arquivos públicos de {}"
+
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.rs:61
+#: src/http.rs:57
 msgid "{0}'s public files on {1}"
 msgstr "Arquivos públicos de {0} em {1}"
 
 #. Translators: Don't translate the name in quotes!
-#: src/http.rs:193
+#: src/http.rs:200
 msgid "Please log in as the user “guest”"
 msgstr "Por favor logue-se como o usuário “guest”"
 
@@ -73,10 +83,6 @@ msgstr "Por favor logue-se como o usuário “guest”"
 #~ msgstr ""
 #~ "Ativa o compartilhamento de arquivos para compartilhar o conteúdo desta "
 #~ "pasta através da rede."
-
-#, c-format
-#~ msgid "%s's public files"
-#~ msgstr "Arquivos públicos de %s"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Compartilhamento de arquivos pessoais"
