@@ -6,17 +6,17 @@ msgstr ""
 "Project-Id-Version: gnome-user-share.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2022-07-15 10:25+0000\n"
-"PO-Revision-Date: 2022-10-26 23:15+0300\n"
-"Last-Translator: Launchpad translators\n"
+"POT-Creation-Date: 2025-03-03 20:03+0000\n"
+"PO-Revision-Date: 2025-03-07 12:16+0300\n"
+"Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 3.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 3.5\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -28,8 +28,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Калі запытваць паролі. Магчымыя значэнні: «never» (ніколі), "
-"«on_write» (падчас спробы запісу) і «always» (заўсёды)."
+"Калі запытваць паролі. Магчымыя значэнні: «never» (ніколі), «on_write» "
+"(падчас спробы запісу) і «always» (заўсёды)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
@@ -43,29 +43,29 @@ msgstr "Калі ўключана, запускаецца супольны до�
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr ""
-"супольны;агульнадаступныя;файлы;рэсурс;http;сетка;капіраванне;паслаць;"
-"адпраўка;пасылка;"
+"share;files;http;network;copy;send;супольны;доступ;абагуліць;"
+"агульнадаступныя;файлы;сеткавы;рэсурс;капіраванне;капіяваць;паслаць;адпраўка;"
+"адправіць;"
 
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "%s: публічныя файлы"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "Абагуленыя файлы {}"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "%s: публічныя файлы на %s"
+#: src/http.rs:57
+msgid "{0}'s public files on {1}"
+msgstr "Абагуленыя файлы {0} на {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:200
+msgid "Please log in as the user “guest”"
+msgstr "Увайдзіце як госць (карыстальнік guest)"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Супольны доступ да ўласных файлаў"
@@ -108,8 +108,8 @@ msgstr "%s: публічныя файлы на %s"
 #~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
 #~ "\"bonded\" and \"ask\"."
 #~ msgstr ""
-#~ "Калі прымаць файлы, дасланыя праз Bluetooth. Магчымыя значэнні: \"always"
-#~ "\" (заўсёды), \"bonded\" (толькі ад сяброў) і \"ask\" (спытаць)."
+#~ "Калі прымаць файлы, дасланыя праз Bluetooth. Магчымыя значэнні: "
+#~ "\"always\" (заўсёды), \"bonded\" (толькі ад сяброў) і \"ask\" (спытаць)."
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "Ці паведамляць пра атрыманыя файлы."
