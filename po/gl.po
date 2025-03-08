@@ -17,9 +17,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share.master.gl\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2025-02-13 01:42+0000\n"
-"PO-Revision-Date: 2025-02-27 23:25+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2025-03-03 20:03+0000\n"
+"PO-Revision-Date: 2025-03-08 17:33+0100\n"
 "Last-Translator: Fran Dieguez <fran.dieguez@gnome.org>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -50,20 +51,28 @@ msgstr "Compartición de ficheiros"
 msgid "Launch File Sharing if enabled"
 msgstr "Inicia a Compartición de ficheiros se está activado"
 
-#. Translators: Search terms to find this application. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr "compartir;ficheiros;http;rede;copiar;enviar;"
 
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "Ficheiros públicos de {}"
+
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.rs:61
+#: src/http.rs:57
 msgid "{0}'s public files on {1}"
 msgstr "Ficheiros públicos de {0} en {1}"
 
 #. Translators: Don't translate the name in quotes!
-#: src/http.rs:193
+#: src/http.rs:200
 msgid "Please log in as the user “guest”"
 msgstr "Inicie sesión como o usuario «convidado»"
 
@@ -74,14 +83,11 @@ msgstr "Inicie sesión como o usuario «convidado»"
 #~ msgstr "Preferencias de compartición"
 
 #~ msgid ""
-#~ "Turn on File Sharing to share the contents of this folder over the network."
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
 #~ msgstr ""
-#~ "Activar a Compartición de Ficheiros persoais para compartir contidos deste "
-#~ "cartafol pola rede."
-
-#, c-format
-#~ msgid "%s's public files"
-#~ msgstr "Ficheiros públicos de %s"
+#~ "Activar a Compartición de Ficheiros persoais para compartir contidos "
+#~ "deste cartafol pola rede."
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Compartir ficheiros persoais"
@@ -90,14 +96,15 @@ msgstr "Inicie sesión como o usuario «convidado»"
 #~ msgstr "folder-remote"
 
 #~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr "Se os clientes do Bluetooth poden enviar ficheiros usando o ObexPush."
+#~ msgstr ""
+#~ "Se os clientes do Bluetooth poden enviar ficheiros usando o ObexPush."
 
 #~ msgid ""
 #~ "If this is true, Bluetooth devices can send files to the user's Downloads "
 #~ "directory when logged in."
 #~ msgstr ""
-#~ "Se está definido a «true», os dispositivos Bluetooth poden enviar ficheiros "
-#~ "ao cartafol Descargas do usuario cando inicie a sesión."
+#~ "Se está definido a «true», os dispositivos Bluetooth poden enviar "
+#~ "ficheiros ao cartafol Descargas do usuario cando inicie a sesión."
 
 #~ msgid "When to accept files sent over Bluetooth"
 #~ msgstr "Cando aceptar os ficheiros enviados mediante Bluetooth"
@@ -106,8 +113,8 @@ msgstr "Inicie sesión como o usuario «convidado»"
 #~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
 #~ "\"bonded\" and \"ask\"."
 #~ msgstr ""
-#~ "Cando aceptar os ficheiros enviados mediante Bluetooth. Os valores posíbeis "
-#~ "son \"always\", \"bonded\", e \"ask\"."
+#~ "Cando aceptar os ficheiros enviados mediante Bluetooth. Os valores "
+#~ "posíbeis son \"always\", \"bonded\", e \"ask\"."
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "Se hai que informar sobre os ficheiros recibidos recentemente."
@@ -181,8 +188,8 @@ msgstr "Inicie sesión como o usuario «convidado»"
 #~ msgstr "Se se lles permite aos clientes Bluetooth escribir ficheiros."
 
 #~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files read-"
-#~ "only."
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
 #~ msgstr ""
 #~ "Se se lles permite aos clientes de Bluetooth escribir ficheiros ou "
 #~ "compartir os ficheiros de só lectura."
@@ -190,8 +197,8 @@ msgstr "Inicie sesión como o usuario «convidado»"
 #~ msgid ""
 #~ "Whether Bluetooth clients need to pair with the computer to send files."
 #~ msgstr ""
-#~ "Se os clientes do Bluetooth precisan estar emparellados co computador para "
-#~ "enviar ficheiros."
+#~ "Se os clientes do Bluetooth precisan estar emparellados co computador "
+#~ "para enviar ficheiros."
 
 #~ msgid "Launch Personal File Sharing Preferences"
 #~ msgstr "Iniciar as Preferencias de compartir ficheiros persoais"
@@ -240,7 +247,8 @@ msgstr "Inicie sesión como o usuario «convidado»"
 
 #~ msgid "Unable to launch the Personal File Sharing Preferences"
 #~ msgstr ""
-#~ "Non é posíbel iniciar as Preferencias de compartición de ficheiros persoais"
+#~ "Non é posíbel iniciar as Preferencias de compartición de ficheiros "
+#~ "persoais"
 
 #~ msgid "No reason"
 #~ msgstr "Non hai motivo"
