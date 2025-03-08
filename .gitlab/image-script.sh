@@ -19,7 +19,7 @@ dnf builddep -y gobject-introspection \
 
 dnf builddep -y glib \
     && cd glib \
-    && meson setup _build -Dtests=false --prefix /usr \
+    && meson setup --wipe _build -Dtests=false --prefix /usr \
     && ninja -C _build \
     && ninja install -C _build \
     && cd .. \

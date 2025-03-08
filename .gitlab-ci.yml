@@ -46,7 +46,7 @@ workflow:
 .gnome-user-share.fedora:41:
   variables:
     FDO_DISTRIBUTION_VERSION: 41
-    FDO_DISTRIBUTION_TAG: '2025-03-09.0'
+    FDO_DISTRIBUTION_TAG: '2025-03-09.1'
 
 build-fedora-image:
   extends:
