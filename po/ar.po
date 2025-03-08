@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Automatically generated, 2006, 2009.
 # Khaled Hosny <khaledhosny@eglug.org>, 2009, 2010, 2013.
-# Khalid Abu Shawarib <khalid.shawarib@gmail.com>, 2024.
+# Khalid Abu Shawarib <khalid.shawarib@gmail.com>, 2024-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Project\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2022-07-15 10:25+0000\n"
-"PO-Revision-Date: 2024-07-12 00:06+0300\n"
+"POT-Creation-Date: 2025-03-03 20:03+0000\n"
+"PO-Revision-Date: 2025-03-08 23:31+0300\n"
 "Last-Translator: Khalid Abu Shawarib <khalid.shawarib@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural= n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Gtranslator 46.1\n"
+"X-Generator: Gtranslator 47.1\n"
 "X-DL-Lang: ar\n"
 "X-DL-Module: gnome-user-share\n"
 "X-DL-Branch: master\n"
@@ -36,7 +36,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"متى يتم طلب كلمة السر. القيم الممكنة هي: «never»، و«on_write»، و«always»."
+"متى يتم طلب كلمة السر. القيم الممكنة هي: «never» (مطلقاً)، و«on_write» (عند "
+"الكتابة)، و«always» (دائماً)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
@@ -51,26 +52,25 @@ msgstr "شغِّل مشاركة الملفات إذا كانت مُفعّلة"
 msgid "share;files;http;network;copy;send;"
 msgstr "share;files;http;network;copy;send;مشاركة;ملفات;بلوتوث;شبكة;نسخ;إرسال;"
 
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "ملفات %s العامة"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "ملفات {} العامة"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "ملفات %s العامة على %s"
+#: src/http.rs:57
+msgid "{0}'s public files on {1}"
+msgstr "ملفات {} العامة على {}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:200
+msgid "Please log in as the user “guest”"
+msgstr "من فضلك لج كالمستخدم «guest»"
 
 #~ msgid "Share Public directory over the network"
 #~ msgstr "دليل المشاركة العام عبر الشبكة"
@@ -252,9 +252,6 @@ msgstr "ملفات %s العامة على %s"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "فقط للأجهزة المربوطة والموثوقة"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "من فضلك لج كمستخدم ضيف"
 
 #~ msgid "gtk-help"
 #~ msgstr "مساعدة"
