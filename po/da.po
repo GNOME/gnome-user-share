@@ -1,17 +1,17 @@
 # Danish translation of Gnome User Share
-# Copyright (C) 2005, 2009,10 Red Hat, Inc.
+# Copyright (C) 2005, 2009,10,25 Red Hat, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2005.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2009-10.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2009-10, 2025.
 # Kenneth Nielsen <k.nielsen81@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-09-09 01:38+0200\n"
+"POT-Creation-Date: 2025-03-03 20:03+0000\n"
+"PO-Revision-Date: 2025-03-10 22:39+0100\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -48,40 +48,36 @@ msgstr "Start fildeling hvis aktiveret"
 msgid "share;files;http;network;copy;send;"
 msgstr "del;deling;filer;http;netværk;kopier;send;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Deling"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Indstillinger for deling"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr "Aktivér fildeling for at dele mappens indhold på netværket."
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "%s's offentlige filer"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:53
+msgid "{}'s public files"
+msgstr "Offentlige filer tilhørende {}"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "%ss offentlige filer på %s"
+#: src/http.rs:57
+msgid "{0}'s public files on {1}"
+msgstr "Offentlige filer på {1} tilhørende {0}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:200
+msgid "Please log in as the user “guest”"
+msgstr "Log venligst ind som brugeren “guest”"
+
+#~ msgid "Sharing"
+#~ msgstr "Deling"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Indstillinger for deling"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr "Aktivér fildeling for at dele mappens indhold på netværket."
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Personlig fildeling"
@@ -277,9 +273,6 @@ msgstr "%ss offentlige filer på %s"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "Kun for bundne enheder, der stoles på"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Log venligst ind som gæstebruger"
 
 # ?
 #~ msgid "gtk-help"
