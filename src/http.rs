@@ -23,6 +23,7 @@ use selinux;
 
 use crate::config::*;
 use crate::settings;
+use crate::utilities::warning_exit;
 
 const LOG_DOMAIN: &str = "gnome-user-share: http";
 
@@ -103,12 +104,7 @@ static HTTPD_PROGRAM_PATH: LazyLock<PathBuf> = LazyLock::new(|| {
 			.then_some(file)
 	})
 	.unwrap_or_else(|| {
-		gio::glib::g_error!(
-			LOG_DOMAIN,
-			"Failed to find an httpd server executable file."
-		);
-
-		std::process::exit(libc::EXIT_FAILURE)
+		warning_exit!("Failed to find an httpd server executable file.");
 	})
 });
 
@@ -127,9 +123,7 @@ static HTTPD_MODULES: LazyLock<PathBuf> = LazyLock::new(|| {
 			.then_some(file)
 	})
 	.unwrap_or_else(|| {
-		gio::glib::g_error!(LOG_DOMAIN, "Failed to find an httpd modules directory.");
-
-		std::process::exit(libc::EXIT_FAILURE)
+		warning_exit!("Failed to find an httpd modules directory.");
 	})
 });
 

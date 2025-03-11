@@ -12,6 +12,7 @@ mod application;
 mod config;
 mod http;
 mod settings;
+mod utilities;
 
 use gettextrs::{bind_textdomain_codeset, bindtextdomain, textdomain};
 use gio::glib;
