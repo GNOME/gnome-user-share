@@ -30,7 +30,8 @@ if have_selinux
   cargo_options += ['--features', 'selinux']
 endif
 
-cargo_env = [ 'CARGO_HOME=' + meson.project_build_root() / 'cargo-home' ]
+cargo_env = [
+]
 
 custom_target(
   'cargo-build',
