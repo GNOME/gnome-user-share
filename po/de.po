@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2025-02-13 01:42+0000\n"
-"PO-Revision-Date: 2025-02-22 20:08+0100\n"
+"POT-Creation-Date: 2025-03-15 21:00+0000\n"
+"PO-Revision-Date: 2025-03-21 18:22+0100\n"
 "Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -51,14 +51,23 @@ msgstr "Dateifreigabe starten, wenn aktiv"
 msgid "share;files;http;network;copy;send;"
 msgstr "Freigabe;Dateien;http;Netzwerk;kopieren;Transfer;teilen;"
 
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "Öffentliche Dateien von {}"
+
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.rs:61
+#: src/http.rs:58
 msgid "{0}'s public files on {1}"
-msgstr "{0}s öffentliche Dateien auf {1}"
+msgstr "Öffentliche Dateien von {0} auf {1}"
 
 #. Translators: Don't translate the name in quotes!
-#: src/http.rs:193
+#: src/http.rs:194
 msgid "Please log in as the user “guest”"
 msgstr "Bitte melden Sie sich als der Benutzer »guest« an"
 
@@ -74,10 +83,6 @@ msgstr "Bitte melden Sie sich als der Benutzer »guest« an"
 #~ msgstr ""
 #~ "Aktivieren Sie die Dateifreigabe, um den Inhalt dieses Ordners im "
 #~ "Netzwerk zu teilen."
-
-#, c-format
-#~ msgid "%s's public files"
-#~ msgstr "Öffentliche Dateien von %s"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Persönliche Dateifreigabe"
