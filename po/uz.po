@@ -1,0 +1,64 @@
+# Uzbek (Latin) translation for gnome-user-share.
+# Copyright (C) 2025 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# Baxrom Raxmatov <magdiyevbahrom@gmail.com>,  2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2025-03-15 21:00+0000\n"
+"PO-Revision-Date: 2025-03-20 18:28+0500\n"
+"Last-Translator: \n"
+"Language-Team: Uzbek (Latin) <uz@li.org>\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
+msgid "When to require passwords"
+msgstr "Qachon parollar talab qilinadi"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Qachon parollarni so’rash kerak. Mumkin qiymatlar: “hech qachon”, “on_write” "
+"va “always”."
+
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "File Sharing"
+msgstr "Fayl ulashish"
+
+#: data/gnome-user-share-webdav.desktop.in.in:4
+msgid "Launch File Sharing if enabled"
+msgstr "Agar yoqilgan bo’lsa, Fayl ulashishni ishga tushiring"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
+msgid "share;files;http;network;copy;send;"
+msgstr "ulashish;fayllar;http;tarmoq;nusxa olish;yuborish;"
+
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "{} umumiy fayllari"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "{0}ning umumiy fayllari {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "Iltimos, “mehmon” foydalanuvchisi sifatida tizimga kiring"
