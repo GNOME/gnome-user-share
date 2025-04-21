@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-06-12 12:08+0300\n"
+"POT-Creation-Date: 2025-04-11 03:16+0000\n"
+"PO-Revision-Date: 2025-04-21 10:32+0300\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
 "Language-Team: Ελληνικά <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 3.6\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -48,45 +48,41 @@ msgstr "Εκκίνηση κοινής χρήσης αρχείων, αν είνα
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
 msgstr ""
-"κοινή χρήση;αρχεία;δίκτυο;αντιγραφή;αποστολή;share;files;http;network;copy;"
-"send;"
+"κοινή "
+"χρήση;αρχεία;δίκτυο;αντιγραφή;αποστολή;share;files;http;network;copy;send;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Κοινή χρήση"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Ρυθμίσεις κοινής χρήσης"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Ενεργοποίηση της κοινής χρήσης αρχείων για διαμοιρασμό του περιεχομένου "
-"αυτού του φακέλου στο δίκτυο."
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Δημόσια αρχεία του %s"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "Τα δημόσια αρχεία του {}"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "Δημόσια αρχεία του χρήστη %s στο %s"
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "τα δημόσια αρχεία του {0} στο {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "Παρακαλούμε συνδεθείτε ως χρήστης «guest»"
+
+#~ msgid "Sharing"
+#~ msgstr "Κοινή χρήση"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Ρυθμίσεις κοινής χρήσης"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "Ενεργοποίηση της κοινής χρήσης αρχείων για διαμοιρασμό του περιεχομένου "
+#~ "αυτού του φακέλου στο δίκτυο."
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Κοινή χρήση προσωπικών αρχείων"
@@ -276,9 +272,6 @@ msgstr "Δημόσια αρχεία του χρήστη %s στο %s"
 
 #~ msgid "You can receive files over Bluetooth into this folder"
 #~ msgstr "Μπορείτε να λαμβάνετε αρχεία μέσω bluetooth σε αυτόν τον φάκελο"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Παρακαλώ συνδεθείτε ως χρήστης guest"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "Μόνο για συσκευές που συνθέθηκαν και συσκευές εμπιστοσύνης"
