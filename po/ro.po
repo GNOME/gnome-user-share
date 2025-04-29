@@ -2,23 +2,24 @@
 # Adi Roiban https://launchpad.net/~adiroiban, 2009
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009.
 # Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>, 2018.
+# Antonio Marin <gnmer.6qxyg@slmail.me>, 2025.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-06-26 17:42+0300\n"
-"Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
-"com>\n"
-"Language-Team: Gnome Romanian Translation Team\n"
+"POT-Creation-Date: 2025-04-11 03:16+0000\n"
+"PO-Revision-Date: 2025-04-29 10:57+0200\n"
+"Last-Translator: Antonio Marin <gnmer.6qxyg@slmail.me>\n"
+"Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.2.3\n"
+"20)) ? 1 : 2);\n"
+"X-Generator: Gtranslator 48.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -30,234 +31,38 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Când să se ceară parole. Valorile posibile sunt „never”, „on_write” și "
-"„always”."
+"Când să se ceară parole. Valorile posibile sunt „never” (niciodată), "
+"„on_write” (la scriere) și „always” (mereu)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
-msgstr "Partajarea fișierelor"
+msgstr "Distribuie fișiere"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
 msgid "Launch File Sharing if enabled"
-msgstr "Lansează partajarea fișierelor dacă este activat"
+msgstr "Pornește distribuirea fișierelor dacă este activată"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/gnome-user-share-webdav.desktop.in.in:6
 msgid "share;files;http;network;copy;send;"
-msgstr ""
-"share;files;http;network;copy;send;parajare;partajează;fișiere;rețea;copiere;"
-"copiază;trimitere;trimite;"
+msgstr "share;files;http;network;copy;send;partajare;distribuie;fișiere;rețea;copiază;trimite;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Partajare"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Configurări de partajarea"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"Activați Partajarea de fișiere pentru a partaja conținutul acestui dosar "
-"prin intermediul rețelei."
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Fișierele publice ale utilizatorului %s"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "Fișierele publice ale utilizatorului {}"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "Fișierele publice ale utilizatorului %s pe %s"
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "Fișierele publice ale utilizatorului {0} pe {1}"
 
-#~ msgid "Personal File Sharing"
-#~ msgstr "Partajare de fișiere personale"
-
-#~ msgid "folder-remote"
-#~ msgstr "folder-remote"
-
-#~ msgid ""
-#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
-#~ "directory when logged in."
-#~ msgstr ""
-#~ "La activare, dispozitivele Bluetooth pot trimite fișiere în dosarul "
-#~ "„Descărcări” când utilizatorul este autentificat."
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over Bluetooth when the user is logged in."
-#~ msgstr ""
-#~ "La activare, dosarul „Public” din dosarul personal al utilizatorului va "
-#~ "fi partajat prin Bluetooth când utilizatorul este autentificat."
-
-#~ msgid ""
-#~ "If this is true, the Public directory in the users home directory will be "
-#~ "shared over the network when the user is logged in."
-#~ msgstr ""
-#~ "La activare, dosarul „Public” din dosarul personal al utilizatorului va "
-#~ "fi partajat prin rețea când utilizatorul este autentificat."
-
-#~ msgid "Share Public directory over Bluetooth"
-#~ msgstr "Partajează prin Bluetooth dosarul „Public”"
-
-#~ msgid "Share Public directory over the network"
-#~ msgstr "Partajează în rețea dosarul „Public”"
-
-#~ msgid "When to accept files sent over Bluetooth"
-#~ msgstr "Când să fie acceptate fișierele trimise prin Bluetooth"
-
-#~ msgid ""
-#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
-#~ "\"bonded\" and \"ask\"."
-#~ msgstr ""
-#~ "Când să fie acceptate fișierele trimise prin Bluetooth. Valorile posibile "
-#~ "sunt „always”, „bonded” și „ask”."
-
-#~ msgid "Whether Bluetooth clients can send files using ObexPush."
-#~ msgstr ""
-#~ "Specifică dacă clienții Bluetooth pot trimite fișiere folosind ObexPush."
-
-#~ msgid ""
-#~ "Whether Bluetooth clients need to pair with the computer to send files."
-#~ msgstr ""
-#~ "Specifică dacă clienții Bluetooth trebuie să se asocieze cu acest "
-#~ "calculator pentru a trimite fișiere."
-
-#~ msgid ""
-#~ "Whether to allow Bluetooth clients to write files, or share the files "
-#~ "read-only."
-#~ msgstr ""
-#~ "Specifică dacă se permite scrierea de fișiere clienților Bluetooth sau "
-#~ "dacăfișierele să fie partajate doar pentru citire."
-
-#~ msgid "Whether to allow Bluetooth clients to write files."
-#~ msgstr "Dacă se permite scrierea de fișiere clienților Bluetooth."
-
-#~ msgid "Whether to notify about newly received files."
-#~ msgstr "Dacă să se notifice noile fișiere primite."
-
-#~ msgid "Receive Files over Bluetooth"
-#~ msgstr "Primire de fișiere prin Bluetooth"
-
-#~ msgid "Share Files over Bluetooth"
-#~ msgstr "Partajare de fișiere prin Bluetooth"
-
-#~ msgid "Share Files over the Network"
-#~ msgstr "Partajare de fișiere în rețea"
-
-#~ msgid "Allo_w remote devices to delete files"
-#~ msgstr "_Permite dispozitivelor la distanță să șteargă fișiere"
-
-#~ msgid "Personal File Sharing Preferences"
-#~ msgstr "Preferințe partajare fișiere personale"
-
-#~ msgid "Receive files in _Downloads folder over Bluetooth"
-#~ msgstr "Primește fișiere prin Bluetooth în dosarul _Descărcări"
-
-#~ msgid "Require re_mote devices to bond with this computer"
-#~ msgstr "_Cere dispozitivelor la distanță să se asocieze cu acest calculator"
-
-#~ msgid "Share public files over _Bluetooth"
-#~ msgstr "Partajați fișiere publice prin _Bluetooth"
-
-#~ msgid "_Accept files: "
-#~ msgstr "_Acceptă fișiere:"
-
-#~ msgid "_Notify about received files"
-#~ msgstr "_Notifică fișierele primite"
-
-#~ msgid "_Password:"
-#~ msgstr "_Parolă:"
-
-#~ msgid "_Require password:"
-#~ msgstr "Necesită pa_rolă:"
-
-#~ msgid "_Share public files on network"
-#~ msgstr "Partajare de fișiere publice în _rețea"
-
-#~ msgid "Preferences for sharing of files"
-#~ msgstr "Preferințe pentru partajarea fișierelor"
-
-#~ msgid "Launch Preferences"
-#~ msgstr "Preferințe lansare"
-
-#~ msgid "Launch Personal File Sharing Preferences"
-#~ msgstr ""
-#~ "Lansează o fereastră de configurare a preferințelor partajării fișierelor "
-#~ "personale"
-
-#~ msgid "Unable to launch the Personal File Sharing preferences"
-#~ msgstr ""
-#~ "Nu s-a putut lansa fereastra de configurare a preferințelor partajării "
-#~ "fișierelor personale"
-
-#~ msgid "You can share files from this folder and receive files to it"
-#~ msgstr ""
-#~ "Puteți partaja fișiere din acest dosar și puteți primi fișiere în el"
-
-#~ msgid "You can share files from this folder over the network and Bluetooth"
-#~ msgstr ""
-#~ "Puteți partaja fișiere din acest dosar peste rețea sau prin Bluetooth"
-
-#~ msgid "You can receive files over Bluetooth into this folder"
-#~ msgstr "Puteți primi fișiere prin Bluetooth în acest dosar"
-
-#~ msgid "No reason"
-#~ msgstr "Fără motiv"
-
-#~ msgid "Could not display the help contents."
-#~ msgstr "Nu s-a putut afișa conținutul ajutorului."
-
-#~ msgid "Could not build interface."
-#~ msgstr "Nu s-a putut construi interfața."
-
-#~ msgid "Never"
-#~ msgstr "Niciodată"
-
-#~ msgid "When writing files"
-#~ msgstr "La scrierea fișierelor"
-
-#~ msgid "Always"
-#~ msgstr "Întotdeauna"
-
-#~ msgid "Only for set up devices"
-#~ msgstr "Doar pentru dispozitivele configurate"
-
-#~ msgid "Ask"
-#~ msgstr "Întreabă"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "Autentificați-vă ca utilizator oaspete"
-
-#~ msgid "You received \"%s\" via Bluetooth"
-#~ msgstr "Ați primit „%s” prin Bluetooth"
-
-#~ msgid "You received a file"
-#~ msgstr "Ați primit un fișier"
-
-#~ msgid "Open File"
-#~ msgstr "Deschide fișier"
-
-#~ msgid "Reveal File"
-#~ msgstr "Dezvăluie fișier"
-
-#~ msgid "File reception complete"
-#~ msgstr "Fișierele au fost recepționate complet"
-
-#~ msgid "Only for Bonded and Trusted devices"
-#~ msgstr "Doar pentru dispozitivele asociate și de încredere"
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "Autentifică-te ca utilizator „guest”"
