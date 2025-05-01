@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the gnome-user-share package.
 #
 # Peteris Krisjanis <pecisk@gmail.com>, 2010.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014, 2016, 2019.
+# SPDX-FileCopyrightText: 2012, 2013, 2014, 2016, 2019, 2025 Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-08-24 18:06+0200\n"
+"POT-Creation-Date: 2025-04-11 03:16+0000\n"
+"PO-Revision-Date: 2025-05-01 17:44+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
 " 2);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -29,16 +29,14 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kad prasīt paroles. Iespējamās vērtības ir “never” (nekad), "
-"“on_write” (rakstot) un “always” (vienmēr)."
+"Kad prasīt paroles. Iespējamās vērtības ir “never” (nekad), “on_write” "
+"(rakstot) un “always” (vienmēr)."
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-#| msgid "Sharing"
 msgid "File Sharing"
 msgstr "Datņu koplietošana"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-#| msgid "Launch Personal File Sharing if enabled"
 msgid "Launch File Sharing if enabled"
 msgstr "Palaist datņu koplietošanu (ja tā ir ieslēgta)"
 
@@ -47,40 +45,39 @@ msgstr "Palaist datņu koplietošanu (ja tā ir ieslēgta)"
 msgid "share;files;http;network;copy;send;"
 msgstr "koplietot;datnes;http;tīkls;kopēt;sūtīt;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "Koplietošana"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "Koplietošanas iestatījumi"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr "Ieslēgt datņu koplietošanu, lai koplietotu šīs mapes saturu tīklā."
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "%s publiskās datnes"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+#| msgid "%s's public files"
+msgid "{}'s public files"
+msgstr "{} publiskās datnes"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "%s publiskās datnes uz %s"
+#: src/http.rs:58
+#| msgid "%s's public files on %s"
+msgid "{0}'s public files on {1}"
+msgstr "{0} publiskās datnes uz {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr ""
+
+#~ msgid "Sharing"
+#~ msgstr "Koplietošana"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "Koplietošanas iestatījumi"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr "Ieslēgt datņu koplietošanu, lai koplietotu šīs mapes saturu tīklā."
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Personiskā datņu koplietošana"
+
