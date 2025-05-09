@@ -6,17 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share 2.28.0\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
-"POT-Creation-Date: 2019-09-18 08:38+0000\n"
-"PO-Revision-Date: 2019-10-08 18:58+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2025-03-15 21:00+0000\n"
+"PO-Revision-Date: 2025-04-03 20:58+0800\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.08.1\n"
+"X-Generator: Poedit 3.6\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
@@ -32,12 +33,10 @@ msgstr ""
 "(永遠)。"
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
-#| msgid "Sharing"
 msgid "File Sharing"
 msgstr "檔案分享"
 
 #: data/gnome-user-share-webdav.desktop.in.in:4
-#| msgid "Launch Personal File Sharing if enabled"
 msgid "Launch File Sharing if enabled"
 msgstr "若啟用則執行檔案分享"
 
@@ -46,40 +45,36 @@ msgstr "若啟用則執行檔案分享"
 msgid "share;files;http;network;copy;send;"
 msgstr "share;files;http;network;copy;send;分享;檔案;網路;複製;傳送;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "分享"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "分享設定值"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr "開啟檔案分享以透過網路分享這個資料夾的內容。"
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "%s 的公用檔案"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "{} 的公用檔案"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "%s 的公用檔案於 %s"
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "{0} 在 {1} 的公用檔案"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "請以「guest」使用者登入"
+
+#~ msgid "Sharing"
+#~ msgstr "分享"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "分享設定值"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr "開啟檔案分享以透過網路分享這個資料夾的內容。"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "個人檔案分享"
@@ -261,9 +256,6 @@ msgstr "%s 的公用檔案於 %s"
 
 #~ msgid "You can receive files over Bluetooth into this folder"
 #~ msgstr "您可以透過藍牙接收檔案到這個資料夾裡"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "請以使用者訪客登入"
 
 #~ msgid "Only for Bonded and Trusted devices"
 #~ msgstr "只允許繫結與受信任的裝置"
