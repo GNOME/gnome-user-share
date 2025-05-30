@@ -1,9 +1,9 @@
 # gnome-user-share ja.po.
-# Copyright (C) 2005,2007-2012 Free Software Foundation, Inc.
+# Copyright (C) 2005, 2007-2012, 2014, 2015, 2019, 2025 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-user-share package.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005,2007-2009.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
-# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
+# Kusano Takayuki <https://bsky.app/profile/tkusano.jp>, 2010, 2025.
 # Noriko Mizumoto <noriko@fedoraproject.org>, 2012.
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2013-2014.
 # Ikuya Awashiro <ikuya@fruitsbasket.info>, 2014.
@@ -15,10 +15,10 @@ msgstr ""
 "Project-Id-Version: gnome-user-share master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2019-04-11 16:27+0000\n"
-"PO-Revision-Date: 2019-08-27 22:22+0900\n"
-"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
-"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"POT-Creation-Date: 2025-05-10 18:50+0000\n"
+"PO-Revision-Date: 2025-05-27 23:21+0900\n"
+"Last-Translator: Kusano Takayuki <https://bsky.app/profile/tkusano.jp>\n"
+"Language-Team: Japanese <https://l10n.gnome.org/teams/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,8 +34,8 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write"
-"\"、\"always\"。"
+"いつパスワードを問い合わせるか。設定可能な値: \"never\"、\"on_write\"、"
+"\"always\"。"
 
 #: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "File Sharing"
@@ -52,41 +52,37 @@ msgstr ""
 "share;files;http;network;copy;send;共有;ファイル;ネットワーク;コピー;複製;送"
 "信;"
 
-#. translators: This is the label for the "Sharing" panel in the Settings
-#: src/nautilus-share-bar.c:99
-msgid "Sharing"
-msgstr "共有"
-
-#: src/nautilus-share-bar.c:113
-msgid "Sharing Settings"
-msgstr "共有の設定"
-
-#: src/share-extension.c:117
-msgid ""
-"Turn on File Sharing to share the contents of this folder over the network."
-msgstr ""
-"ファイル共有をオンにするとネットワーク上でこのフォルダーを共有できます。"
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "%s の公開ファイル"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "{} の公開ファイル"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "%s@%s の公開ファイル"
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "{0} の {1} 上の公開ファイル"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "ユーザー “guest” でログインしてください"
+
+#~ msgid "Sharing"
+#~ msgstr "共有"
+
+#~ msgid "Sharing Settings"
+#~ msgstr "共有の設定"
+
+#~ msgid ""
+#~ "Turn on File Sharing to share the contents of this folder over the "
+#~ "network."
+#~ msgstr ""
+#~ "ファイル共有をオンにするとネットワーク上でこのフォルダーを共有できます。"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "パーソナルファイル共有"
@@ -277,6 +273,3 @@ msgstr "%s@%s の公開ファイル"
 
 #~ msgid "You can receive files over Bluetooth into this folder"
 #~ msgstr "このフォルダーに Bluetooth 経由でファイルを受信できます"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "ゲストユーザーでログインしてください"
