@@ -1,0 +1,64 @@
+# Filipino translation for gnome-user-share.
+# Copyright (C) 2025 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# Iverson Briones <ivercoder@proton.me>,  2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2025-05-30 00:36+0000\n"
+"PO-Revision-Date: 2025-06-13 16:24+0800\n"
+"Last-Translator: \n"
+"Language-Team: Filipino <fil@li.org>\n"
+"Language: fil\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
+msgid "When to require passwords"
+msgstr "Kailan mangangailangan ng password"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Kung kailan mangangailangan ng password. Pwedeng \"never\" (hindi "
+"kailanman), \"on_write\" (pagka-write), at \"always\" (palagi)."
+
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "File Sharing"
+msgstr "Pagbabahagi ng File"
+
+#: data/gnome-user-share-webdav.desktop.in.in:4
+msgid "Launch File Sharing if enabled"
+msgstr "Buksan ang Pagbabahagi ng File kung naka-enable"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:6
+msgid "share;files;http;network;copy;send;"
+msgstr "share;files;http;network;copy;send;magbahagi;ibahagi;kopyahin;ipadala;magpadala;"
+
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "Mga pampublikong file ni {}"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "Mga pampublikong file ni {0} sa {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "Mangyaring mag-log in bilang user na si “guest”"
