@@ -1,7 +1,7 @@
 project(
   'gnome-user-share',
   'rust', 'c',
-  version: '48.1',
+  version: '48.2',
   license: 'GPL2',
   meson_version: '>= 0.58.0',
 )
