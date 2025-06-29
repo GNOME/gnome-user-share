@@ -1,4 +1,7 @@
-This is gnome-user-share 48.0, a system for easy sharing of user files.
+This is gnome-user-share 48.1, a system for easy sharing of user files.
+
+Major changes since 48.0:
+- Translation updates
 
 Major changes since 48.alpha.1:
 - Turn some exceptions into exiting with a warning
