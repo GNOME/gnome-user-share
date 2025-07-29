@@ -6,8 +6,12 @@
          xmlns="http://usefulinc.com/ns/doap#">
 
   <name xml:lang="en">User Sharing</name>
-  <shortdesc xml:lang="en">Launch User Sharing if enabled</shortdesc>
-  <description xml:lang="en">Launch User Sharing if enabled</description>
+  <shortdesc xml:lang="en">Share a user's public files over the local network</shortdesc>
+  <description xml:lang="en">
+    A service that enables individual users to share the content of the Public folder over the
+    local network using WebDAV. The shared files can be browsed in a supported file manager without
+    manually setup.
+  </description>
   <download-page rdf:resource="http://download.gnome.org/sources/gnome-user-share/" />
   <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/gnome-user-share/issues" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#core" />

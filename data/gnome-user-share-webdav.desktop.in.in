@@ -9,4 +9,4 @@ Exec=@libexecdir@/gnome-user-share-webdav
 Terminal=false
 Type=Application
 NoDisplay=true
-Categories=
+Categories=Network;FileTransfer
