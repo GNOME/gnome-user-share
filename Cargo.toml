@@ -4,7 +4,7 @@ edition = "2021"
 rust-version = "1.80.0"
 
 [dependencies]
-gio = { version = "0.20", features = ["v2_74"]}
+gio = { version = "0.21", features = ["v2_74"]}
 gettext-rs = { version = "0.7", features = ["gettext-system"] }
 libc = "0.2.154"
 selinux = { version = "0.4.4", optional = true }
