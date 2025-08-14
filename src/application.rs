@@ -89,7 +89,8 @@ mod imp {
 
 glib::wrapper! {
 	pub struct WebdavApplication(ObjectSubclass<imp::WebdavApplication>)
-		@extends gio::Application;
+		@extends gio::Application,
+		@implements gio::ActionGroup, gio::ActionMap;
 }
 
 impl Default for WebdavApplication {
