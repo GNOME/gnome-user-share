@@ -43,15 +43,15 @@ workflow:
           $CI_COMMIT_TITLE !~ /^Update.*translation$/
 
 
-.gnome-user-share.fedora:41:
+.gnome-user-share.fedora:43:
   variables:
-    FDO_DISTRIBUTION_VERSION: 41
-    FDO_DISTRIBUTION_TAG: '2025-03-09.1'
+    FDO_DISTRIBUTION_VERSION: 43
+    FDO_DISTRIBUTION_TAG: '2025-09-03'
 
 build-fedora-image:
   extends:
   - .fdo.container-build@fedora
-  - .gnome-user-share.fedora:41
+  - .gnome-user-share.fedora:43
   stage: image
   rules:
     - changes:
@@ -66,7 +66,7 @@ build-fedora-image:
 cargo-fmt:
   extends:
   - .fdo.distribution-image@fedora
-  - .gnome-user-share.fedora:41
+  - .gnome-user-share.fedora:43
   stage: check
   needs: 
     - job: build-fedora-image
@@ -83,7 +83,7 @@ cargo-fmt:
 fedora-build:
   extends:
   - .fdo.distribution-image@fedora
-  - .gnome-user-share.fedora:41
+  - .gnome-user-share.fedora:43
   stage: build
   needs: 
     - job: build-fedora-image
