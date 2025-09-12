@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the gnome-user-share package.
 # Aisano < >, 2010.
 # Ryan LORTIE <desrt@desrt.ca>, 2013.
-# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010-2023.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-user-share\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
 "issues\n"
-"POT-Creation-Date: 2023-01-25 20:01+0000\n"
-"PO-Revision-Date: 2023-09-24 00:34+0200\n"
+"POT-Creation-Date: 2025-09-10 19:53+0000\n"
+"PO-Revision-Date: 2025-09-12 21:05+0200\n"
 "Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
 "Language-Team: Esperanto <gnome-eo-list@gnome.org>\n"
 "Language: eo\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 42.0\n"
+"X-Generator: Gtranslator 48.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.desktop.file-sharing.gschema.xml:5
@@ -31,42 +31,41 @@ msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
 msgstr ""
-"Kiam peti pasvortojn. Eblaj valoroj estas \"never\" (neniam), "
-"\"on_write\" (por skribi) kaj \"always\" (ĉiam)."
+"Kiam peti pasvortojn. Eblaj valoroj estas \"never\" (neniam), \"on_write\" "
+"(por skribi) kaj \"always\" (ĉiam)."
 
-#: data/gnome-user-share-webdav.desktop.in.in:3
+#: data/gnome-user-share-webdav.desktop.in.in:2
 msgid "File Sharing"
 msgstr "Dosier-kunhavigado"
 
-#: data/gnome-user-share-webdav.desktop.in.in:4
+#: data/gnome-user-share-webdav.desktop.in.in:3
 msgid "Launch File Sharing if enabled"
 msgstr "Lanĉi dosierkunhavigon se ebligita"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/gnome-user-share-webdav.desktop.in.in:6
+#: data/gnome-user-share-webdav.desktop.in.in:5
 msgid "share;files;http;network;copy;send;"
 msgstr "kunhavigi;dosieroj;http;reto;kopii;sendi;"
 
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: src/http.c:124
-#, c-format
-msgid "%s's public files"
-msgstr "Publikaj dosieroj de %s"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "Publikaj dosieroj de {}"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: src/http.c:128
-#, c-format
-msgid "%s's public files on %s"
-msgstr "Publikaj dosieroj de %s sur %s"
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "Publikaj dosieroj de {0} sur {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "Bonvolu ensaluti kiel la uzanto “guest”"
 
 #~ msgid "Personal File Sharing"
 #~ msgstr "Persona dosierkunhavigo"
@@ -133,8 +132,8 @@ msgstr "Publikaj dosieroj de %s sur %s"
 #~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
 #~ "\"bonded\" and \"ask\"."
 #~ msgstr ""
-#~ "Kiam akcepti dosierojn senditajn Bludente. Eblaj valoroj estas "
-#~ "\"always\" (ĉiam), \"bonded\" (ligitajn) kaj \"ask\" (demandi)."
+#~ "Kiam akcepti dosierojn senditajn Bludente. Eblaj valoroj estas \"always\" "
+#~ "(ĉiam), \"bonded\" (ligitajn) kaj \"ask\" (demandi)."
 
 #~ msgid "Whether to notify about newly received files."
 #~ msgstr "Ĉu atentigi pri nove ricevitaj dosieroj?"
