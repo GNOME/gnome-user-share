@@ -4,10 +4,9 @@
 # Gheyret Kenji <gheyret@gmail.com>, 2010.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: gnome-user-share master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-user-share&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-02-09 21:22+0000\n"
+msgstr "Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/issues\n"
+"POT-Creation-Date: 2025-09-10 19:53+0000\n"
 "PO-Revision-Date: 2013-02-16 13:15+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -16,150 +15,141 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:1
-msgid "Share Public directory over the network"
-msgstr "توردا ئاممىۋى مۇندەرىجىنى ھەمبەھىرلە"
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:2
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over the network when the user is logged in."
-msgstr "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى ئىچىدىكى  Public مۇندەرىجىسى تور ئارقىلىق ھەمبەھىر قىلىنىدۇ."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:3
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
 msgid "When to require passwords"
 msgstr "ئىم تەلەپ قىلىدىغان ۋاقىت"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:4
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
 msgid ""
 "When to ask for passwords. Possible values are \"never\", \"on_write\", and "
 "\"always\"."
-msgstr "ئىمنى سورايدىغان ۋاقىت. بەلگىلىگىلى بولىدىغان قىممەتلەر: \"ھەرگىز\"،\"يازغاندا\"،\"ھەمىشە\""
+msgstr "ئىم سورايدىغان ۋاقىت. بەلگىلىگىلى بولىدىغان قىممەتلەر: «never»(ھەرگىز)، «on_write»(يازغاندا) ۋە «always»(ھەمىشە)"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:5
-msgid "Share Public directory over Bluetooth"
-msgstr "كۆكچىشتا ئاشكارا مۇندەرىجىنى ھەمبەھىرلە"
+#: data/gnome-user-share-webdav.desktop.in.in:2
+msgid "File Sharing"
+msgstr "ھۆججەت ھەمبەھىر"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:6
-msgid ""
-"If this is true, the Public directory in the users home directory will be "
-"shared over Bluetooth when the user is logged in."
-msgstr "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى ئىچىدىكى  ئاشكارا مۇندەرىجىسى كۆكچىش ئۈسكۈنىسى ئارقىلىق ھەمبەھىر قىلىنىدۇ."
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "Launch File Sharing if enabled"
+msgstr "ئەگەر قوزغىتىلغان بولسا ھۆججەت ھەمبەھىرنى قوزغىتىدۇ"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:7
-msgid "Whether to allow Bluetooth clients to write files."
-msgstr "كۆكچىش خېرىدار پروگراممىلىرى ھۆججەتكە يازالامدۇ يوق."
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:5
+msgid "share;files;http;network;copy;send;"
+msgstr "share;files;http;network;copy;send;ھەمبەھىر؛ھۆججەت؛تور؛كۆچۈر؛يوللا؛"
 
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:8
-msgid ""
-"Whether to allow Bluetooth clients to write files, or share the files read-"
-"only."
-msgstr "كۆكچىش خېرىدار پروگراممىلىرى ھۆججەتكە يازالامدۇ، ئوقۇشقىلا بولىدىغان ھۆججەتنى ھەمبەھىر قىلالامدۇ يوق."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:9
-msgid "Whether Bluetooth clients need to pair with the computer to send files."
-msgstr "كۆكچىش خېرىدار پروگراممىلىرى ھۆججەت ئەۋەتىلىدىغان چاغدا كومپيۇتېر بىلەن ھەمكارلىشامدۇ يوق."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:10
-msgid "Whether Bluetooth clients can send files using ObexPush."
-msgstr "كۆكچىش خېرىدار پروگراممىلىرى ObexPush نى ئىشلىتىپ ھۆججەت ئەۋەتەلەمدۇ يوق."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:11
-msgid ""
-"If this is true, Bluetooth devices can send files to the user's Downloads "
-"directory when logged in."
-msgstr "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن كۆكچىش ئۈسكۈنىسى ئىشلەتكۈچىنىڭ مۇندەرىجىسىگە ھۆججەت ئەۋەتىدۇ."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:12
-msgid "When to accept files sent over Bluetooth"
-msgstr "كۆكچىش ئارقىلىق ھۆججەت ئەۋەتىدىغان ۋاقىت."
-
-# FIXME: 原文がおかしいと思われる。「bonded」はもう存在しない。
-# "Only for set up devices"=「設定したデバイスのみ」が適当？
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:13
-msgid ""
-"When to accept files sent over Bluetooth. Possible values are \"always\", "
-"\"bonded\" and \"ask\"."
-msgstr "كۆكچىش ئارقىلىق ھۆججەت ئەۋەتىدىغان ۋاقىتنى بەلگىلەڭ. بەلگىلىگىلى بولىدىغان قىممەتلەر: \"ھەمىشە\"،\"بېكىتىلگەن ئۈسكۈنە\"، \"سوراش\"."
-
-#: ../data/org.gnome.desktop.file-sharing.gschema.xml.in.in.h:14
-msgid "Whether to notify about newly received files."
-msgstr "يېڭى ھۆججەت قوبۇل قىلغاندا ئۇقتۇرۇش قىلامدۇ يوق."
-
-#: ../data/gnome-user-share.desktop.in.in.h:1 ../src/nautilus-share-bar.c:102
-msgid "Personal File Sharing"
-msgstr "خۇسۇسىي ھۆججەت ھەمبەھىرى"
-
-#: ../data/gnome-user-share.desktop.in.in.h:2
-msgid "Launch Personal File Sharing if enabled"
-msgstr "قوزغىتىلغان بولسا خۇسۇسىي ھۆججەت ھەمبەھىرنى قوزغات"
-
-#: ../data/gnome-user-share.desktop.in.in.h:3
-msgid "share;files;bluetooth;obex;http;network;copy;send;"
-msgstr "share;files;bluetooth;obex;http;network;copy;send;ھەمبەھىر;ھۆججەتلەر;كۆكچىش;تور;كۆچۈرۈش;ئەۋەتىش;"
-
-#: ../src/nautilus-share-bar.c:116
-msgid "Preferences"
-msgstr "مايىللىق"
-
-#: ../src/nautilus-share-bar.c:120
-msgid "Launch Personal File Sharing Preferences"
-msgstr "خۇسۇسىي ھۆججەت ھەمبەھىرىنىڭ مايىللىقىنى ئىجرا قىل"
-
-#: ../src/share-extension.c:152
-msgid "May be used to share or receive files"
-msgstr "ھۆججەت ھەمبەھىرلەش ياكى قوبۇل قىلىشقا ئىشلىتىلىشى مۇمكىن"
-
-#: ../src/share-extension.c:154
-msgid "May be shared over the network or Bluetooth"
-msgstr "ئىنتېرنېت ياكى كۆكچىشتا ھەمبەھىر قىلىنىشى مۇمكىن"
-
-#: ../src/share-extension.c:158
-msgid "May be used to receive files over Bluetooth"
-msgstr "كۆكچىشتا ھۆججەت قوبۇل قىلىش ئۈچۈن ئىشلىتىلىشى مۇمكىن"
-
-#. Translators: The %s will get filled in with the user name
+#. Translators: The {} will get filled in with the user name
 #. of the user, to form a genitive. If this is difficult to
 #. translate correctly so that it will work correctly in your
 #. language, you may use something equivalent to
-#. "Public files of %s", or leave out the %s altogether.
-#. In the latter case, please put "%.0s" somewhere in the string,
-#. which will match the user name string passed by the C code,
-#. but not put the user name in the final string. This is to
-#. avoid the warning that msgfmt might otherwise generate.
-#: ../src/http.c:133
-#, c-format
-msgid "%s's public files"
-msgstr "%s نىڭ ئاممىۋى ھۆججەتلىرى"
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+msgid "{}'s public files"
+msgstr "{} نىڭ ئاممىۋى ھۆججىتى"
 
 #. Translators: This is similar to the string before, only it
 #. has the hostname in it too.
-#: ../src/http.c:137
+#: src/http.rs:58
+msgid "{0}'s public files on {1}"
+msgstr "{0} نىڭ {1} دىكى ئاممىۋى ھۆججىتى"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "«guest» يەنى مېھمان سۈپىتىدە تىزىمغا كىرىڭ"
+
+#~ msgid "Share Public directory over the network"
+#~ msgstr "توردا ئاممىۋى مۇندەرىجىنى ھەمبەھىرلە"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over the network when the user is logged in."
+#~ msgstr ""
+#~ "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى "
+#~ "ئىچىدىكى  Public مۇندەرىجىسى تور ئارقىلىق ھەمبەھىر قىلىنىدۇ."
+
+#~ msgid "Share Public directory over Bluetooth"
+#~ msgstr "كۆكچىشتا ئاشكارا مۇندەرىجىنى ھەمبەھىرلە"
+
+#~ msgid ""
+#~ "If this is true, the Public directory in the users home directory will be "
+#~ "shared over Bluetooth when the user is logged in."
+#~ msgstr ""
+#~ "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن ئىشلەتكۈچىنىڭ مۇندەرىجىسى "
+#~ "ئىچىدىكى  ئاشكارا مۇندەرىجىسى كۆكچىش ئۈسكۈنىسى ئارقىلىق ھەمبەھىر قىلىنىدۇ."
+
+#~ msgid "Whether to allow Bluetooth clients to write files."
+#~ msgstr "كۆكچىش خېرىدار پروگراممىلىرى ھۆججەتكە يازالامدۇ يوق."
+
+#~ msgid ""
+#~ "Whether to allow Bluetooth clients to write files, or share the files "
+#~ "read-only."
+#~ msgstr ""
+#~ "كۆكچىش خېرىدار پروگراممىلىرى ھۆججەتكە يازالامدۇ، ئوقۇشقىلا بولىدىغان "
+#~ "ھۆججەتنى ھەمبەھىر قىلالامدۇ يوق."
+
+#~ msgid ""
+#~ "Whether Bluetooth clients need to pair with the computer to send files."
+#~ msgstr ""
+#~ "كۆكچىش خېرىدار پروگراممىلىرى ھۆججەت ئەۋەتىلىدىغان چاغدا كومپيۇتېر بىلەن "
+#~ "ھەمكارلىشامدۇ يوق."
+
+#~ msgid "Whether Bluetooth clients can send files using ObexPush."
+#~ msgstr ""
+#~ "كۆكچىش خېرىدار پروگراممىلىرى ObexPush نى ئىشلىتىپ ھۆججەت ئەۋەتەلەمدۇ يوق."
+
+#~ msgid ""
+#~ "If this is true, Bluetooth devices can send files to the user's Downloads "
+#~ "directory when logged in."
+#~ msgstr ""
+#~ "TRUE تاللانسا، ئىشلەتكۈچى كىرگەندىن كېيىن كۆكچىش ئۈسكۈنىسى ئىشلەتكۈچىنىڭ "
+#~ "مۇندەرىجىسىگە ھۆججەت ئەۋەتىدۇ."
+
+#~ msgid "When to accept files sent over Bluetooth"
+#~ msgstr "كۆكچىش ئارقىلىق ھۆججەت ئەۋەتىدىغان ۋاقىت."
+
+# FIXME: 原文がおかしいと思われる。「bonded」はもう存在しない。
+# "Only for set up devices"=「設定したデバイスのみ」が適当？
+#~ msgid ""
+#~ "When to accept files sent over Bluetooth. Possible values are \"always\", "
+#~ "\"bonded\" and \"ask\"."
+#~ msgstr ""
+#~ "كۆكچىش ئارقىلىق ھۆججەت ئەۋەتىدىغان ۋاقىتنى بەلگىلەڭ. بەلگىلىگىلى "
+#~ "بولىدىغان قىممەتلەر: \"ھەمىشە\"،\"بېكىتىلگەن ئۈسكۈنە\"، \"سوراش\"."
+
+#~ msgid "Whether to notify about newly received files."
+#~ msgstr "يېڭى ھۆججەت قوبۇل قىلغاندا ئۇقتۇرۇش قىلامدۇ يوق."
+
+#~ msgid "Preferences"
+#~ msgstr "مايىللىق"
+
+#~ msgid "Launch Personal File Sharing Preferences"
+#~ msgstr "خۇسۇسىي ھۆججەت ھەمبەھىرىنىڭ مايىللىقىنى ئىجرا قىل"
+
+#~ msgid "May be used to share or receive files"
+#~ msgstr "ھۆججەت ھەمبەھىرلەش ياكى قوبۇل قىلىشقا ئىشلىتىلىشى مۇمكىن"
+
+#~ msgid "May be shared over the network or Bluetooth"
+#~ msgstr "ئىنتېرنېت ياكى كۆكچىشتا ھەمبەھىر قىلىنىشى مۇمكىن"
+
+#~ msgid "May be used to receive files over Bluetooth"
+#~ msgstr "كۆكچىشتا ھۆججەت قوبۇل قىلىش ئۈچۈن ئىشلىتىلىشى مۇمكىن"
+
 #, c-format
-msgid "%s's public files on %s"
-msgstr "%s@%s نىڭ ئاممىۋى ھۆججەتلىرى"
+#~ msgid "You received \"%s\" via Bluetooth"
+#~ msgstr "كۆك چىشنى ئىشلىتىپ «%s» نى قوبۇل قىلدىڭىز"
 
-#. Translators: %s is the name of the filename received
-#: ../src/obexpush.c:133
-#, c-format
-msgid "You received \"%s\" via Bluetooth"
-msgstr "كۆك چىشنى ئىشلىتىپ «%s» نى قوبۇل قىلدىڭىز"
+#~ msgid "You received a file"
+#~ msgstr "بىر ھۆججەت قوبۇل قىلدىڭىز"
 
-#: ../src/obexpush.c:135
-msgid "You received a file"
-msgstr "بىر ھۆججەت قوبۇل قىلدىڭىز"
+#~ msgid "Open File"
+#~ msgstr "ھۆججەت ئاچ"
 
-#: ../src/obexpush.c:146
-msgid "Open File"
-msgstr "ھۆججەت ئاچ"
+#~ msgid "Reveal File"
+#~ msgstr "ھۆججەت كۆرسەت"
 
-#: ../src/obexpush.c:150
-msgid "Reveal File"
-msgstr "ھۆججەت كۆرسەت"
-
-#: ../src/obexpush.c:167
-msgid "File reception complete"
-msgstr "ھۆججەت قوبۇل قىلىش تاماملاندى"
+#~ msgid "File reception complete"
+#~ msgstr "ھۆججەت قوبۇل قىلىش تاماملاندى"
 
 #~ msgid "Personal File Sharing Preferences"
 #~ msgstr "خۇسۇسىي ھۆججەت ھەمبەھىر تەڭشىكى"
@@ -239,6 +229,3 @@ msgstr "ھۆججەت قوبۇل قىلىش تاماملاندى"
 
 #~ msgid "You can receive files over Bluetooth into this folder"
 #~ msgstr "بۇ مۇندەرىجىگە Bluetooth ئارقىلىق قوبۇل قىلىنغان ھۆججەتلەر قويۇلىدۇ"
-
-#~ msgid "Please log in as the user guest"
-#~ msgstr "مېھمان سۈپىتىدە سىستېمىغا كىرىڭ"
