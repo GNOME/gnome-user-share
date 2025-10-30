@@ -65,7 +65,7 @@ static PUBLIC_DIR: LazyLock<PathBuf> = LazyLock::new(|| {
 	let path = glib::user_special_dir(glib::UserDirectory::PublicShare)
 		.unwrap_or_else(|| glib::home_dir().join("Public"));
 
-	if glib::mkdir_with_parents(path.clone(), 755) != 0 {
+	if glib::mkdir_with_parents(path.clone(), 0o755) != 0 {
 		glib::g_warning!(
 			LOG_DOMAIN,
 			"Creating a public folder in \"{path:#?}\" has failed!"
@@ -78,7 +78,7 @@ static PUBLIC_DIR: LazyLock<PathBuf> = LazyLock::new(|| {
 static USER_CONFIG_DIR: LazyLock<PathBuf> = LazyLock::new(|| {
 	let path = glib::user_config_dir();
 
-	if glib::mkdir_with_parents(path.join("user-share"), 755) != 0 {
+	if glib::mkdir_with_parents(path.join("user-share"), 0o755) != 0 {
 		glib::g_warning!(
 			LOG_DOMAIN,
 			"Creating a config folder in \"{path:#?}\" has failed!"
