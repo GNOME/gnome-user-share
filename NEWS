@@ -1,4 +1,7 @@
-This is gnome-user-share 48.1, a system for easy sharing of user files.
+This is gnome-user-share 48.2, a system for easy sharing of user files.
+
+Major changes since 48.1:
+- Fixed a bug where the config folder is inaccessible on new installations
 
 Major changes since 48.0:
 - Translation updates
