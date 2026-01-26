@@ -1,0 +1,74 @@
+# Cornish translation for gnome-user-share.
+# Copyright (C) 2026 gnome-user-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-user-share package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Flynn Peck <cirilla@tuta.io>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-user-share master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-user-share/"
+"issues\n"
+"POT-Creation-Date: 2025-10-30 00:03+0000\n"
+"PO-Revision-Date: 2026-01-26 12:53+0000\n"
+"Last-Translator: Flynn Peck <cirilla@tuta.io>\n"
+"Language-Team: kw\n"
+"Language: kw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/gnome-user-share/\n"
+"X-DL-Lang: kw\n"
+"X-DL-Module: gnome-user-share\n"
+"X-DL-Branch: master\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:5
+msgid "When to require passwords"
+msgstr "Pan rekwirya geryow-tremena"
+
+#: data/org.gnome.desktop.file-sharing.gschema.xml:6
+msgid ""
+"When to ask for passwords. Possible values are \"never\", \"on_write\", and "
+"\"always\"."
+msgstr ""
+"Pan peji geryow-tremena. Dalgh galladow yw \"never\", \"on_write\", hag "
+"\"always\"."
+
+#: data/gnome-user-share-webdav.desktop.in.in:2
+msgid "File Sharing"
+msgstr "Kevrenna Restrennow"
+
+#: data/gnome-user-share-webdav.desktop.in.in:3
+msgid "Launch File Sharing if enabled"
+msgstr "Lonchya Kevrenna Restrennow mar byw"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/gnome-user-share-webdav.desktop.in.in:5
+msgid "share;files;http;network;copy;send;"
+msgstr "kevrenna;restrennow;http;rosweyth;kopia;danvon;"
+
+#. Translators: The {} will get filled in with the user name
+#. of the user, to form a genitive. If this is difficult to
+#. translate correctly so that it will work correctly in your
+#. language, you may use something equivalent to
+#. "Public files of {}", or leave out the {} altogether.
+#: src/http.rs:54
+#, rust-format
+msgid "{}'s public files"
+msgstr "An restrennow poblek {}"
+
+#. Translators: This is similar to the string before, only it
+#. has the hostname in it too.
+#: src/http.rs:58
+#, rust-format
+msgid "{0}'s public files on {1}"
+msgstr "An restrennow poblek {0} yn {1}"
+
+#. Translators: Don't translate the name in quotes!
+#: src/http.rs:194
+msgid "Please log in as the user “guest”"
+msgstr "Mar pleg omgelmi avel an usyer “guest”"
