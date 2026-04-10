@@ -190,8 +190,6 @@ fn get_httpd_command() -> Command {
 	let home = glib::home_dir();
 	let port = *HTTPD_PORT;
 	let password_required = settings::Settings::password_required();
-	// Translators: Don't translate the name in quotes!
-	let login_label = &gettext("Please log in as the user “guest”");
 	let mut command = Command::new(HTTPD_PROGRAM_PATH.as_os_str());
 
 	command.current_dir(&home);
@@ -216,7 +214,6 @@ fn get_httpd_command() -> Command {
 		("XDG_PUBLICSHARE_DIR", PUBLIC_DIR.to_str().unwrap()),
 		("XDG_CONFIG_HOME", USER_CONFIG_DIR.to_str().unwrap()),
 		("GUS_SHARE_NAME", &SHARE_NAME),
-		("GUS_LOGIN_LABEL", login_label),
 		("HTTP_MODULES_PATH", HTTPD_MODULES.to_str().unwrap()),
 		("LANG", "C"),
 	] {
